@@ -136,6 +136,14 @@ END COMPONENTS
                 self.assertNotIn(flag, text)
         self.assertIn("--antenna", text)
 
+    def test_bondpad_cdl_matches_public_one_port_view(self):
+        signoff = (ROOT / "scripts/croc_signoff.sh").read_text(encoding="utf-8")
+        cdl = (ROOT / "scripts/cdl/bondpad_70x70.cdl").read_text(encoding="utf-8")
+        self.assertIn("/work/scripts/cdl/bondpad_70x70.cdl", signoff)
+        self.assertIn(".SUBCKT bondpad_70x70 pad", cdl)
+        device_lines = [line for line in cdl.splitlines() if line and line[0].upper() in {"M", "R", "C", "D", "Q", "X"}]
+        self.assertEqual(device_lines, [])
+
     def test_croc_filler_uses_pinned_pdk_read_only(self):
         text = (ROOT / "scripts/croc_flow.sh").read_text(encoding="utf-8")
         self.assertIn('IHP_PDK="${ROOT}/upstream/ihp-open-pdk/ihp-sg13g2"', text)

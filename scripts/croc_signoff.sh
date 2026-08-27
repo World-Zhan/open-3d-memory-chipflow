@@ -29,13 +29,14 @@ PDK_REL="upstream/ihp-open-pdk/ihp-sg13g2"
 STD_CDL="/work/${PDK_REL}/libs.ref/sg13g2_stdcell/cdl/sg13g2_stdcell.cdl"
 IO_CDL="/work/${PDK_REL}/libs.ref/sg13g2_io/cdl/sg13g2_io.cdl"
 SRAM_CDL="/work/${PDK_REL}/libs.ref/sg13g2_sram/cdl/RM_IHPSG13_1P_512x32_c2_bm_bist.cdl"
+BONDPAD_CDL="/work/scripts/cdl/bondpad_70x70.cdl"
 CDL_OUT="/work/runs/${FLOW_RUN_ID}/${SIGNOFF_REL}/croc.cdl"
 
 docker run --rm --user "$(id -u):$(id -g)" --entrypoint /bin/bash \
   -e HOME=/tmp \
   -e CROC_ODB=/work/upstream/croc/openroad/out/croc.odb \
   -e CROC_CDL_OUT="${CDL_OUT}" \
-  -e "CROC_CDL_MASTERS=${STD_CDL}|${IO_CDL}|${SRAM_CDL}" \
+  -e "CROC_CDL_MASTERS=${STD_CDL}|${IO_CDL}|${SRAM_CDL}|${BONDPAD_CDL}" \
   -v "${ROOT}:/work" -w /work "${IMAGE_REF}" \
   -lc 'openroad -exit /work/scripts/write_croc_cdl.tcl'
 

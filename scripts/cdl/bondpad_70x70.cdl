@@ -1,0 +1,9 @@
+* Copyright 2026 World-Zhan
+* SPDX-License-Identifier: Apache-2.0
+*
+* Croc's public LEF and Verilog views expose one inout port named "pad".
+* The IHP Open PDK bondpad model is an empty one-port placeholder because
+* the bond pad contributes geometry but no extracted semiconductor device.
+
+.SUBCKT bondpad_70x70 pad
+.ENDS bondpad_70x70

@@ -181,6 +181,8 @@ DRC 固定使用独立锁定的 IHP Open PDK `run_drc.py`，输入是 `croc.fill
 
 OpenROAD 从最终 ODB 和 IHP master CDL 通过 `write_cdl` 生成 `croc.cdl`。这一步按库定义的真实 pin order 输出实例，避免手写 Verilog→SPICE 映射造成总线顺序错误。
 
+公开 Croc bondpad 视图是一个例外：LEF 与 Verilog 都只暴露单个 `pad` 端口，而 IHP 官方 `sg13g2_bondpad.lib` 明确将 bondpad 定义为无器件的一端口 placeholder。仓库提供同等语义、cell 名匹配 `bondpad_70x70` 的本地 CDL master；它只解决 OpenROAD master 命名对齐，不添加器件、不短接网络，也不改变 LVS 规则。
+
 LVS 输入：
 
 ```text
