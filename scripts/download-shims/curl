@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+# SPDX-License-Identifier: Apache-2.0
+
+set -euo pipefail
+
+# Croc's manifest downloader already verifies SHA-256 and atomically installs
+# each file. Add bounded network recovery without weakening those checks.
+max_attempts=8
+attempt=1
+last_rc=1
+
+while (( attempt <= max_attempts )); do
+  set +e
+  /usr/bin/curl \
+    --ipv4 \
+    --http1.1 \
+    --continue-at - \
+    --connect-timeout 30 \
+    --speed-limit 1024 \
+    --speed-time 60 \
+    --max-time 900 \
+    "$@"
+  last_rc=$?
+  set -e
+
+  if (( last_rc == 0 )); then
+    exit 0
+  fi
+  if (( attempt == max_attempts )); then
+    break
+  fi
+  printf '[curl-shim] attempt %d/%d failed (rc=%d); resuming in 2s\n' \
+    "${attempt}" "${max_attempts}" "${last_rc}" >&2
+  sleep 2
+  attempt=$((attempt + 1))
+done
+
+exit "${last_rc}"

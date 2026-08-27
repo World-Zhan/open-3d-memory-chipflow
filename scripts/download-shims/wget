@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+# SPDX-License-Identifier: Apache-2.0
+
+set -euo pipefail
+
+# The pinned ORFS/OpenROAD installers invoke wget with one plain URL.  GitHub's
+# single CDN connection is unreliable in the audited WSL network, so preserve
+# wget's filename semantics while using bounded, parallel, IPv4-only transfers.
+if [[ $# -eq 1 && "$1" != -* ]] && command -v aria2c >/dev/null 2>&1; then
+  url="$1"
+  filename="${url%%\?*}"
+  filename="${filename##*/}"
+  if [[ -n "${filename}" ]]; then
+    exec aria2c \
+      --continue=true \
+      --max-connection-per-server=16 \
+      --split=16 \
+      --min-split-size=1M \
+      --file-allocation=none \
+      --disable-ipv6=true \
+      --connect-timeout=20 \
+      --timeout=30 \
+      --retry-wait=2 \
+      --max-tries=10 \
+      --auto-file-renaming=false \
+      --allow-overwrite=true \
+      --console-log-level=notice \
+      --summary-interval=10 \
+      --dir="${PWD}" \
+      --out="${filename}" \
+      "${url}"
+  fi
+fi
+
+exec /usr/bin/wget "$@"

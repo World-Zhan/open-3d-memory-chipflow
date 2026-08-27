@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "interface": "OBI-1.6",
+  "data_width_bits": 32,
+  "mode": "mixed",
+  "read_ratio": 0.5,
+  "address": {
+    "base": "0x20001000",
+    "size_bytes": 4096,
+    "alignment_bytes": 4
+  },
+  "length_transactions": 1024,
+  "stride_bytes": 4,
+  "response_latency_cycles": 1,
+  "max_outstanding": 1,
+  "seed": 20260826
+}

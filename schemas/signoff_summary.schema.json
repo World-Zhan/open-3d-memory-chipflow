@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/james-zhan/open-3d-memory-chipflow/schemas/signoff_summary.schema.json",
+  "title": "Open 2D/3D chip-flow signoff summary",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "run_id",
+    "classification",
+    "versions",
+    "timing",
+    "physical",
+    "signoff",
+    "three_d",
+    "power",
+    "limitations",
+    "evidence"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "run_id": {"type": "string", "minLength": 1},
+    "classification": {
+      "enum": ["not_run", "failed", "research_only", "public_rule_candidate", "public_rule_signoff"]
+    },
+    "versions": {"$ref": "#/$defs/versions"},
+    "timing": {"$ref": "#/$defs/timing"},
+    "physical": {"$ref": "#/$defs/physical"},
+    "signoff": {"$ref": "#/$defs/signoff"},
+    "three_d": {"$ref": "#/$defs/three_d"},
+    "power": {"$ref": "#/$defs/power"},
+    "limitations": {"type": "array", "items": {"type": "string"}},
+    "evidence": {"type": "array", "items": {"type": "string"}}
+  },
+  "$defs": {
+    "nullableNumber": {"type": ["number", "null"]},
+    "nullableInteger": {"type": ["integer", "null"]},
+    "nullableBoolean": {"type": ["boolean", "null"]},
+    "nullableString": {"type": ["string", "null"]},
+    "commit": {"type": ["string", "null"], "pattern": "^[0-9a-f]{40}$"},
+    "versions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "repository_commit", "croc_commit", "ihp_pdk_commit", "taiwei_commit",
+        "orfs_commit", "openroad_commit", "container_reference", "container_digest"
+      ],
+      "properties": {
+        "repository_commit": {"$ref": "#/$defs/commit"},
+        "croc_commit": {"$ref": "#/$defs/commit"},
+        "ihp_pdk_commit": {"$ref": "#/$defs/commit"},
+        "taiwei_commit": {"$ref": "#/$defs/commit"},
+        "orfs_commit": {"$ref": "#/$defs/commit"},
+        "openroad_commit": {"$ref": "#/$defs/commit"},
+        "container_reference": {"type": "string"},
+        "container_digest": {"type": ["string", "null"], "pattern": "^sha256:[0-9a-f]{64}$"}
+      }
+    },
+    "timing": {
+      "type": "object", "additionalProperties": false,
+      "required": ["corner", "wns_ns", "tns_ns", "setup_violations", "hold_violations"],
+      "properties": {
+        "corner": {"$ref": "#/$defs/nullableString"},
+        "wns_ns": {"$ref": "#/$defs/nullableNumber"},
+        "tns_ns": {"$ref": "#/$defs/nullableNumber"},
+        "setup_violations": {"$ref": "#/$defs/nullableInteger"},
+        "hold_violations": {"$ref": "#/$defs/nullableInteger"}
+      }
+    },
+    "physical": {
+      "type": "object", "additionalProperties": false,
+      "required": ["die_area_um2", "core_area_um2", "cell_area_um2", "utilization", "unrouted_nets", "pdn_connected"],
+      "properties": {
+        "die_area_um2": {"$ref": "#/$defs/nullableNumber"},
+        "core_area_um2": {"$ref": "#/$defs/nullableNumber"},
+        "cell_area_um2": {"$ref": "#/$defs/nullableNumber"},
+        "utilization": {"$ref": "#/$defs/nullableNumber"},
+        "unrouted_nets": {"$ref": "#/$defs/nullableInteger"},
+        "pdn_connected": {"$ref": "#/$defs/nullableBoolean"}
+      }
+    },
+    "signoff": {
+      "type": "object", "additionalProperties": false,
+      "required": ["drc_unwaived", "antenna_unwaived", "density_unwaived", "offgrid_unwaived", "lvs_exact_match", "disabled_rules"],
+      "properties": {
+        "drc_unwaived": {"$ref": "#/$defs/nullableInteger"},
+        "antenna_unwaived": {"$ref": "#/$defs/nullableInteger"},
+        "density_unwaived": {"$ref": "#/$defs/nullableInteger"},
+        "offgrid_unwaived": {"$ref": "#/$defs/nullableInteger"},
+        "lvs_exact_match": {"$ref": "#/$defs/nullableBoolean"},
+        "disabled_rules": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "three_d": {
+      "type": "object", "additionalProperties": false,
+      "required": ["bottom_instances", "upper_instances", "bottom_utilization", "upper_utilization", "cross_tier_nets", "mixed_fanout_nets", "hbt_count", "max_temperature_c"],
+      "properties": {
+        "bottom_instances": {"$ref": "#/$defs/nullableInteger"},
+        "upper_instances": {"$ref": "#/$defs/nullableInteger"},
+        "bottom_utilization": {"$ref": "#/$defs/nullableNumber"},
+        "upper_utilization": {"$ref": "#/$defs/nullableNumber"},
+        "cross_tier_nets": {"$ref": "#/$defs/nullableInteger"},
+        "mixed_fanout_nets": {"$ref": "#/$defs/nullableInteger"},
+        "hbt_count": {"$ref": "#/$defs/nullableInteger"},
+        "max_temperature_c": {"$ref": "#/$defs/nullableNumber"}
+      }
+    },
+    "power": {
+      "type": "object", "additionalProperties": false,
+      "required": ["estimated_mw", "activity_source", "voltage_v", "frequency_mhz"],
+      "properties": {
+        "estimated_mw": {"$ref": "#/$defs/nullableNumber"},
+        "activity_source": {"$ref": "#/$defs/nullableString"},
+        "voltage_v": {"$ref": "#/$defs/nullableNumber"},
+        "frequency_mhz": {"$ref": "#/$defs/nullableNumber"}
+      }
+    }
+  }
+}

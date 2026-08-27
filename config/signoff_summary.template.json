@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "not-run-template",
+  "classification": "not_run",
+  "versions": {
+    "repository_commit": null,
+    "croc_commit": "968bab17b37e88d9200a0899cb9181e42850ec87",
+    "ihp_pdk_commit": "331c00484213b13414777eec1336ef5c29b969bd",
+    "taiwei_commit": "c85b79352eefc31a588da3ef873e4fd68a3df3f2",
+    "orfs_commit": "568eb04da9173695d6bfc1b10ba868e0b6b8a9fa",
+    "openroad_commit": "305d3ba2ddfd00591924cc586ad408179f566afe",
+    "container_reference": "hpretl/iic-osic-tools:2025.12",
+    "container_digest": null
+  },
+  "timing": {
+    "corner": null,
+    "wns_ns": null,
+    "tns_ns": null,
+    "setup_violations": null,
+    "hold_violations": null
+  },
+  "physical": {
+    "die_area_um2": null,
+    "core_area_um2": null,
+    "cell_area_um2": null,
+    "utilization": null,
+    "unrouted_nets": null,
+    "pdn_connected": null
+  },
+  "signoff": {
+    "drc_unwaived": null,
+    "antenna_unwaived": null,
+    "density_unwaived": null,
+    "offgrid_unwaived": null,
+    "lvs_exact_match": null,
+    "disabled_rules": []
+  },
+  "three_d": {
+    "bottom_instances": null,
+    "upper_instances": null,
+    "bottom_utilization": null,
+    "upper_utilization": null,
+    "cross_tier_nets": null,
+    "mixed_fanout_nets": null,
+    "hbt_count": null,
+    "max_temperature_c": null
+  },
+  "power": {
+    "estimated_mw": null,
+    "activity_source": null,
+    "voltage_v": null,
+    "frequency_mhz": null
+  },
+  "limitations": [
+    "Template only; no EDA run has been performed.",
+    "IHP Open PDK is preview and still requires foundry confirmation for tapeout.",
+    "TaiWei/ASAP7 results are research_only."
+  ],
+  "evidence": []
+}

@@ -1,0 +1,12 @@
+[submodule "upstream/croc"]
+	path = upstream/croc
+	url = https://github.com/pulp-platform/croc.git
+[submodule "upstream/ihp-open-pdk"]
+	path = upstream/ihp-open-pdk
+	url = https://github.com/IHP-GmbH/IHP-Open-PDK.git
+[submodule "upstream/taiwei-pin-3d"]
+	path = upstream/taiwei-pin-3d
+	url = https://github.com/CODA-Team/TaiWei-Pin-3D.git
+[submodule "upstream/orfs-research"]
+	path = upstream/orfs-research
+	url = https://github.com/ieee-ceda-datc/ORFS-Research.git

@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/james-zhan/open-3d-memory-chipflow/schemas/traffic_spec.schema.json",
+  "title": "3D memory traffic specification",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "interface",
+    "data_width_bits",
+    "mode",
+    "read_ratio",
+    "address",
+    "length_transactions",
+    "stride_bytes",
+    "response_latency_cycles",
+    "max_outstanding",
+    "seed"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "interface": {"const": "OBI-1.6"},
+    "data_width_bits": {"type": "integer", "const": 32},
+    "mode": {"enum": ["read", "write", "mixed"]},
+    "read_ratio": {"type": "number", "minimum": 0.0, "maximum": 1.0},
+    "address": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["base", "size_bytes", "alignment_bytes"],
+      "properties": {
+        "base": {"type": "string", "pattern": "^0x[0-9A-Fa-f]{8}$"},
+        "size_bytes": {"type": "integer", "const": 4096},
+        "alignment_bytes": {"type": "integer", "const": 4}
+      }
+    },
+    "length_transactions": {"type": "integer", "minimum": 1},
+    "stride_bytes": {"type": "integer", "minimum": 4, "multipleOf": 4},
+    "response_latency_cycles": {"type": "integer", "minimum": 0},
+    "max_outstanding": {"type": "integer", "minimum": 1},
+    "seed": {"type": "integer", "minimum": 0, "maximum": 4294967295}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"mode": {"const": "read"}}},
+      "then": {"properties": {"read_ratio": {"const": 1.0}}}
+    },
+    {
+      "if": {"properties": {"mode": {"const": "write"}}},
+      "then": {"properties": {"read_ratio": {"const": 0.0}}}
+    },
+    {
+      "if": {"properties": {"mode": {"const": "mixed"}}},
+      "then": {"properties": {"read_ratio": {"exclusiveMinimum": 0.0, "exclusiveMaximum": 1.0}}}
+    }
+  ]
+}

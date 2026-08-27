@@ -1,0 +1,67 @@
+{
+  "as_of": "2026-08-26",
+  "container": {
+    "digest": "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+    "digest_recorded_at": "2026-08-26T02:54:57+00:00",
+    "fallback_amd64_manifest_digest": "sha256:82903a5580d7810a984c5001750f1217442837fe7f69b4486fc636ac95f34678",
+    "fallback_index_digest": "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+    "fallback_reason": "Docker Hub registry is unreachable from the audited WSL network; fallback is accepted only by immutable OCI index digest and inspected provenance.",
+    "fallback_reference": "docker.1ms.run/hpretl/iic-osic-tools@sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+    "local_image_id": "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+    "reference": "hpretl/iic-osic-tools:2025.12",
+    "selected_pull_source": "docker.1ms.run/hpretl/iic-osic-tools@sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521"
+  },
+  "policy": {
+    "croc_classification": "public_rule_signoff_candidate",
+    "croc_pdk": "sg13g2",
+    "max_build_threads": 6,
+    "pin3d_classification": "research_only",
+    "wsl_memory_gib": 10,
+    "wsl_processors": 12,
+    "wsl_swap_gib": 12
+  },
+  "schema_version": 1,
+  "upstreams": {
+    "croc": {
+      "commit": "968bab17b37e88d9200a0899cb9181e42850ec87",
+      "path": "upstream/croc",
+      "url": "https://github.com/pulp-platform/croc.git"
+    },
+    "croc_mlem_tapeout_reference": {
+      "branch": "mlem-tapeout",
+      "commit": "f54fdab3f463181f6b91646e36b29321c39432b1",
+      "path": null,
+      "purpose": "read_only_comparison",
+      "url": "https://github.com/pulp-platform/croc.git"
+    },
+    "ihp_open_pdk": {
+      "commit": "331c00484213b13414777eec1336ef5c29b969bd",
+      "path": "upstream/ihp-open-pdk",
+      "status": "preview",
+      "url": "https://github.com/IHP-GmbH/IHP-Open-PDK.git"
+    },
+    "open3dflow_reference": {
+      "commit": "b25373476eb491206f852e3c056244e79311e93e",
+      "hotspot_harness_compatible": false,
+      "license": "MIT",
+      "path": null,
+      "purpose": "cpu_stacked_sram_tsv_hybrid_bonding_architecture_reference",
+      "url": "https://github.com/chenweiphd/Open3DFlow.git"
+    },
+    "orfs_research": {
+      "commit": "568eb04da9173695d6bfc1b10ba868e0b6b8a9fa",
+      "path": "upstream/orfs-research",
+      "url": "https://github.com/ieee-ceda-datc/ORFS-Research.git"
+    },
+    "pin3d_openroad": {
+      "commit": "305d3ba2ddfd00591924cc586ad408179f566afe",
+      "path": "upstream/orfs-research/tools/OpenROAD"
+    },
+    "taiwei_pin_3d": {
+      "classification": "research_only",
+      "commit": "c85b79352eefc31a588da3ef873e4fd68a3df3f2",
+      "path": "upstream/taiwei-pin-3d",
+      "url": "https://github.com/CODA-Team/TaiWei-Pin-3D.git"
+    }
+  }
+}

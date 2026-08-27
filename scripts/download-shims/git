@@ -1,0 +1,75 @@
+#!/usr/bin/env bash
+# SPDX-License-Identifier: Apache-2.0
+
+set -euo pipefail
+
+# WSL NAT in the audited environment breaks long GitHub smart-HTTP streams.
+# For the installer's shallow, non-recursive GitHub clones, fetch the same ref
+# from GitHub codeload with the finite-retry transfer policy and unpack the
+# working tree.  The upstream command has no commit/checksum verification, so
+# this changes only transport, not its existing trust model.  Recursive clones
+# and every other git operation keep normal git semantics over HTTP/1.1.
+if [[ "${1:-}" == "clone" ]]; then
+  ref=""
+  recursive=false
+  previous=""
+  for argument in "$@"; do
+    if [[ "${previous}" == "-b" || "${previous}" == "--branch" ]]; then
+      ref="${argument}"
+    fi
+    case "${argument}" in
+      --branch=*) ref="${argument#*=}" ;;
+      --recursive|--recurse-submodules) recursive=true ;;
+    esac
+    previous="${argument}"
+  done
+
+  url="${!#}"
+  if [[ "${recursive}" == false && -n "${ref}" && "${url}" == https://github.com/* ]]; then
+    repository_path="${url#https://github.com/}"
+    owner="${repository_path%%/*}"
+    repository="${repository_path#*/}"
+    repository="${repository%.git}"
+    if [[ -n "${owner}" && -n "${repository}" && "${repository}" != */* && ! -e "${repository}" ]]; then
+      archive="${repository}-${ref//\//_}.tar.gz"
+      codeload_url="https://codeload.github.com/${owner}/${repository}/tar.gz/${ref}"
+      if command -v aria2c >/dev/null 2>&1; then
+        aria2c \
+          --continue=true \
+          --max-connection-per-server=16 \
+          --split=16 \
+          --min-split-size=1M \
+          --file-allocation=none \
+          --disable-ipv6=true \
+          --connect-timeout=20 \
+          --timeout=30 \
+          --retry-wait=2 \
+          --max-tries=10 \
+          --auto-file-renaming=false \
+          --allow-overwrite=true \
+          --console-log-level=notice \
+          --summary-interval=10 \
+          --dir="${PWD}" \
+          --out="${archive}" \
+          "${codeload_url}"
+      else
+        curl -4 -fL --retry 5 --retry-all-errors --connect-timeout 20 \
+          --output "${archive}" "${codeload_url}"
+      fi
+      mkdir -- "${repository}"
+      tar -xzf "${archive}" --strip-components=1 -C "${repository}"
+      # GitHub expands export-subst placeholders in codeload archives.  Some
+      # YosysHQ projects derive their installed version from .gittag, so an
+      # archive can otherwise report a newer alias for the same commit (for
+      # example, Eqy requested as v0.58 reported v0.62).  A real
+      # `git clone -b <ref>` would report the requested tag via git describe;
+      # preserve that observable behavior for these archive-backed clones.
+      if [[ -f "${repository}/.gittag" ]]; then
+        printf '%s\n' "${ref}" > "${repository}/.gittag"
+      fi
+      exit 0
+    fi
+  fi
+fi
+
+exec /usr/bin/git -c http.version=HTTP/1.1 "$@"

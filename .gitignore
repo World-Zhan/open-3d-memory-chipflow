@@ -1,0 +1,56 @@
+# SPDX-License-Identifier: Apache-2.0
+
+# Full EDA runs and generated reports
+runs/*
+!runs/.gitkeep
+reports/generated/
+.state/
+.work/
+
+# PDK/tool caches and containers are external to Git
+pdk/
+pdks/
+downloads/
+cache/
+
+# Large physical-design artifacts
+*.gds
+*.gds.gz
+*.oas
+*.oas.gz
+*.odb
+*.def
+*.spef
+*.sdf
+*.vcd
+*.fst
+*.wlf
+*.lyrdb
+*.lvsdb
+
+# Build/runtime output inside pinned upstream submodules
+upstream/*/results/
+upstream/*/reports/
+upstream/*/logs/
+upstream/*/objects/
+upstream/*/run_logs/
+upstream/*/tools/install/
+upstream/*/dependencies/
+
+# Python/editor noise
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.idea/
+.vscode/
+*~
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*
+secrets*
