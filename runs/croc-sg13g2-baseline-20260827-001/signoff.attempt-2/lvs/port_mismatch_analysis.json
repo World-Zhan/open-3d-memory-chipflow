@@ -1,0 +1,2182 @@
+{
+  "analysis_mode": "streaming_spice_headers_no_lvsdb_load",
+  "classification": "failed",
+  "conclusion": "severe_top_level_formal_port_and_net_labeling_mismatch",
+  "extracted_header": {
+    "line": 3,
+    "name": "croc_chip",
+    "port_count": 135057
+  },
+  "generated_at": "2026-08-28T12:34:10.664323+00:00",
+  "inputs": {
+    "extracted": {
+      "bytes": 108294772,
+      "mtime_ns": 1787856627984415165,
+      "path": "runs/croc-sg13g2-baseline-20260827-001/signoff.attempt-2/lvs/croc_extracted.cir"
+    },
+    "log": {
+      "bytes": 37401,
+      "mtime_ns": 1787856584421029638,
+      "path": "runs/croc-sg13g2-baseline-20260827-001/signoff.attempt-2/lvs/croc.log"
+    },
+    "schematic": {
+      "bytes": 6120723,
+      "mtime_ns": 1787844187260857790,
+      "path": "runs/croc-sg13g2-baseline-20260827-001/signoff.attempt-2/croc.cdl"
+    }
+  },
+  "minimum_next_step": [
+    "Do not enable ignore_top_ports_mismatch or implicit nets, and do not start full attempt 3.",
+    "Audit text/pin layer mapping and label propagation for the top, IO pad, standard-cell and SRAM hierarchy.",
+    "Validate deep-mode hierarchy and top-port behavior on the smallest representative IO-plus-standard-cell structure.",
+    "Only after that check produces the intended top port set should the full-chip runner be changed and attempt 3 scheduled."
+  ],
+  "mismatch_classification": {
+    "devices": {
+      "reason": "device pairing is not meaningful before top port/net boundary is repaired",
+      "status": "not_compared"
+    },
+    "nets": {
+      "evidence": "expected top nets and internal cell labels were merged into composite names and promoted to formal ports",
+      "status": "structural_mismatch_before_pairing"
+    },
+    "parameters": {
+      "reason": "parameter comparison requires paired devices",
+      "status": "not_compared"
+    },
+    "subcircuits_macros": {
+      "reason": "flat extraction erased the comparison boundary before macro pairing",
+      "status": "not_compared"
+    },
+    "top_ports": {
+      "evidence": "52 schematic ports versus 135057 extracted formal ports",
+      "status": "mismatch"
+    }
+  },
+  "root_cause_evidence": [
+    "The run log records flat mode, TOP_LVL_PINS=false, strict port mode, and flag_missing_ports enabled.",
+    "No schematic port exists as an exact extracted formal-port token; intended ports occur only as aliases inside composite net names.",
+    "Internal standard-cell labels such as gate|ngate|o are promoted to top-level formal ports.",
+    "This is a top extraction-boundary/label-propagation failure, not evidence of an ordinary device-parameter delta."
+  ],
+  "run_options": {
+    "deck_runtime_seconds": 7997.765614,
+    "flag_missing_ports": true,
+    "ignore_top_ports_mismatch_enabled": false,
+    "ignore_top_ports_mismatch_raw": "",
+    "implicit_nets": null,
+    "netlists_match": false,
+    "netlists_mismatch": true,
+    "peak_memory_kib": 8104608,
+    "run_mode": "flat",
+    "schematic_path_logged": "/work/runs/croc-sg13g2-baseline-20260827-001/signoff.attempt-2/croc.cdl",
+    "simplify_enabled": true,
+    "strict_port_mode": true,
+    "top_level_pins_option": false
+  },
+  "schema_version": "1.0.0",
+  "schematic_header": {
+    "line": 5,
+    "name": "croc_chip",
+    "port_count": 52,
+    "ports": [
+      "VDD",
+      "VDDIO",
+      "VSS",
+      "VSSIO",
+      "clk_i",
+      "gpio0_io",
+      "gpio10_io",
+      "gpio11_io",
+      "gpio12_io",
+      "gpio13_io",
+      "gpio14_io",
+      "gpio15_io",
+      "gpio16_io",
+      "gpio17_io",
+      "gpio18_io",
+      "gpio19_io",
+      "gpio1_io",
+      "gpio20_io",
+      "gpio21_io",
+      "gpio22_io",
+      "gpio23_io",
+      "gpio24_io",
+      "gpio25_io",
+      "gpio26_io",
+      "gpio27_io",
+      "gpio28_io",
+      "gpio29_io",
+      "gpio2_io",
+      "gpio30_io",
+      "gpio31_io",
+      "gpio3_io",
+      "gpio4_io",
+      "gpio5_io",
+      "gpio6_io",
+      "gpio7_io",
+      "gpio8_io",
+      "gpio9_io",
+      "jtag_tck_i",
+      "jtag_tdi_i",
+      "jtag_tdo_o",
+      "jtag_tms_i",
+      "jtag_trst_ni",
+      "ref_clk_i",
+      "rst_ni",
+      "status_o",
+      "testmode_i",
+      "uart_rx_i",
+      "uart_tx_o",
+      "unused0_o",
+      "unused1_o",
+      "unused2_o",
+      "unused3_o"
+    ]
+  },
+  "top_port_analysis": {
+    "abnormal_formal_port_samples_first_100": [
+      {
+        "category": "composite_other_internal",
+        "extracted_formal_port": "gate|out",
+        "index": 16
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "gate|ngate|o",
+        "index": 17
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "gate|ngate|o$1",
+        "index": 18
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "gate|ngate|o$2",
+        "index": 19
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "gate|ngate|o$3",
+        "index": 20
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "gate|ngate|o$4",
+        "index": 21
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "gate|ngate|o$5",
+        "index": 22
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "gate|ngate|o$6",
+        "index": 23
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "gate|ngate|o$7",
+        "index": 24
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "gate|ngate|o$8",
+        "index": 25
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "gate|ngate|o$9",
+        "index": 26
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "gate|ngate|o$10",
+        "index": 27
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "gate|ngate|o$11",
+        "index": 28
+      },
+      {
+        "category": "composite_other_internal",
+        "extracted_formal_port": "gate|out$1",
+        "index": 29
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "gate|o|pgate",
+        "index": 30
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "gate|o|pgate$1",
+        "index": 31
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "gate|o|pgate$2",
+        "index": 32
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "gate|o|pgate$3",
+        "index": 33
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "gate|o|pgate$4",
+        "index": 34
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "gate|o|pgate$5",
+        "index": 35
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "gate|o|pgate$6",
+        "index": 36
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "gate|o|pgate$7",
+        "index": 37
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "gate|o|pgate$8",
+        "index": 38
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "gate|o|pgate$9",
+        "index": 39
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "gate|o|pgate$10",
+        "index": 40
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "gate|o|pgate$11",
+        "index": 41
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i|nq",
+        "index": 42
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i|nq$1",
+        "index": 43
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i|nq$2",
+        "index": 44
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i|nq$3",
+        "index": 45
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i|nq$4",
+        "index": 46
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i|nq$5",
+        "index": 47
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i|nq$6",
+        "index": 48
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i|nq$7",
+        "index": 49
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i|nq$8",
+        "index": 50
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i|nq$9",
+        "index": 51
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i|nq$10",
+        "index": 52
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i|nq$11",
+        "index": 53
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i|nq$12",
+        "index": 54
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i|nq$13",
+        "index": 55
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i|nq$14",
+        "index": 56
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i|nq$15",
+        "index": 57
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i|nq$16",
+        "index": 58
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i|nq$17",
+        "index": 59
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i|nq$18",
+        "index": 60
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i|nq$19",
+        "index": 61
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i|nq$20",
+        "index": 62
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i|nq$21",
+        "index": 63
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i|nq$22",
+        "index": 64
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i|nq$23",
+        "index": 65
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "D|core|p2c",
+        "index": 66
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "D|core|p2c$1",
+        "index": 67
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "D|core|p2c$2",
+        "index": 68
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "D|core|p2c$3",
+        "index": 69
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "D|core|p2c$4",
+        "index": 70
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "D|core|p2c$5",
+        "index": 71
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "D|core|p2c$6",
+        "index": 72
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "D|core|p2c$7",
+        "index": 73
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "D|core|p2c$8",
+        "index": 74
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "D|core|p2c$9",
+        "index": 75
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "D|core|p2c$10",
+        "index": 76
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "D|core|p2c$11",
+        "index": 77
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i1|nq",
+        "index": 78
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i1|nq$1",
+        "index": 79
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i1|nq$2",
+        "index": 80
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i1|nq$3",
+        "index": 81
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i1|nq$4",
+        "index": 82
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i1|nq$5",
+        "index": 83
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i1|nq$6",
+        "index": 84
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i1|nq$7",
+        "index": 85
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i1|nq$8",
+        "index": 86
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i1|nq$9",
+        "index": 87
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i1|nq$10",
+        "index": 88
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "i1|nq$11",
+        "index": 89
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "X|c2p|core|i0",
+        "index": 90
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "B|Y|c2p_en|en|i|i1",
+        "index": 91
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "X|c2p|core|i0$1",
+        "index": 92
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "B|Y|c2p_en|en|i|i1$1",
+        "index": 93
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "X|c2p|core|i0$2",
+        "index": 94
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "B|Y|c2p_en|en|i|i1$2",
+        "index": 95
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "X|c2p|core|i0$3",
+        "index": 96
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "B|Y|c2p_en|en|i|i1$3",
+        "index": 97
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "X|c2p|core|i0$4",
+        "index": 98
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "B|Y|c2p_en|en|i|i1$4",
+        "index": 99
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "X|c2p|core|i0$5",
+        "index": 100
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "B|Y|c2p_en|en|i|i1$5",
+        "index": 101
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "X|c2p|core|i0$6",
+        "index": 102
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "B|Y|c2p_en|en|i|i1$6",
+        "index": 103
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "X|c2p|core|i0$7",
+        "index": 104
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "B|Y|c2p_en|en|i|i1$7",
+        "index": 105
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "X|c2p|core|i0$8",
+        "index": 106
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "B|Y|c2p_en|en|i|i1$8",
+        "index": 107
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "X|c2p|core|i0$9",
+        "index": 108
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "B|Y|c2p_en|en|i|i1$9",
+        "index": 109
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "X|c2p|core|i0$10",
+        "index": 110
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "B|Y|c2p_en|en|i|i1$10",
+        "index": 111
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "X|c2p|core|i0$11",
+        "index": 112
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "B|Y|c2p_en|en|i|i1$11",
+        "index": 113
+      },
+      {
+        "category": "composite_other_internal",
+        "extracted_formal_port": "gate|out$2",
+        "index": 114
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "extracted_formal_port": "A|B2|Q",
+        "index": 115
+      }
+    ],
+    "abnormal_layout_formal_port_count": 135005,
+    "ambiguous_schematic_alias_count": 0,
+    "ambiguous_schematic_aliases": {},
+    "category_counts": {
+      "composite_expected_power_ground": 4,
+      "composite_expected_signal": 48,
+      "composite_generic_cell_pin_labels": 32028,
+      "composite_other_internal": 24058,
+      "single_generic_cell_pin_label": 641,
+      "single_other_internal": 78278
+    },
+    "composite_formal_port_samples_first_100": [
+      {
+        "category": "composite_expected_power_ground",
+        "expected_aliases": [
+          "VSSIO"
+        ],
+        "extracted_formal_port": "VSSIO|anode|cathode|guard|iovss",
+        "index": 0
+      },
+      {
+        "category": "composite_expected_signal",
+        "expected_aliases": [
+          "gpio0_io"
+        ],
+        "extracted_formal_port": "anode|cathode|core|gpio0_io|pad",
+        "index": 1
+      },
+      {
+        "category": "composite_expected_signal",
+        "expected_aliases": [
+          "gpio1_io"
+        ],
+        "extracted_formal_port": "anode|cathode|core|gpio1_io|pad",
+        "index": 2
+      },
+      {
+        "category": "composite_expected_signal",
+        "expected_aliases": [
+          "gpio2_io"
+        ],
+        "extracted_formal_port": "anode|cathode|core|gpio2_io|pad",
+        "index": 3
+      },
+      {
+        "category": "composite_expected_signal",
+        "expected_aliases": [
+          "gpio3_io"
+        ],
+        "extracted_formal_port": "anode|cathode|core|gpio3_io|pad",
+        "index": 4
+      },
+      {
+        "category": "composite_expected_signal",
+        "expected_aliases": [
+          "gpio4_io"
+        ],
+        "extracted_formal_port": "anode|cathode|core|gpio4_io|pad",
+        "index": 5
+      },
+      {
+        "category": "composite_expected_signal",
+        "expected_aliases": [
+          "gpio5_io"
+        ],
+        "extracted_formal_port": "anode|cathode|core|gpio5_io|pad",
+        "index": 6
+      },
+      {
+        "category": "composite_expected_signal",
+        "expected_aliases": [
+          "gpio6_io"
+        ],
+        "extracted_formal_port": "anode|cathode|core|gpio6_io|pad",
+        "index": 7
+      },
+      {
+        "category": "composite_expected_signal",
+        "expected_aliases": [
+          "gpio7_io"
+        ],
+        "extracted_formal_port": "anode|cathode|core|gpio7_io|pad",
+        "index": 8
+      },
+      {
+        "category": "composite_expected_signal",
+        "expected_aliases": [
+          "gpio8_io"
+        ],
+        "extracted_formal_port": "anode|cathode|core|gpio8_io|pad",
+        "index": 9
+      },
+      {
+        "category": "composite_expected_signal",
+        "expected_aliases": [
+          "gpio9_io"
+        ],
+        "extracted_formal_port": "anode|cathode|core|gpio9_io|pad",
+        "index": 10
+      },
+      {
+        "category": "composite_expected_signal",
+        "expected_aliases": [
+          "gpio10_io"
+        ],
+        "extracted_formal_port": "anode|cathode|core|gpio10_io|pad",
+        "index": 11
+      },
+      {
+        "category": "composite_expected_signal",
+        "expected_aliases": [
+          "gpio11_io"
+        ],
+        "extracted_formal_port": "anode|cathode|core|gpio11_io|pad",
+        "index": 12
+      },
+      {
+        "category": "composite_expected_power_ground",
+        "expected_aliases": [
+          "VSS"
+        ],
+        "extracted_formal_port": "VSS|VSS!|anode|cathode|vss",
+        "index": 13
+      },
+      {
+        "category": "composite_expected_power_ground",
+        "expected_aliases": [
+          "VDD"
+        ],
+        "extracted_formal_port": "VDD|VDD!|VDDARRAY!|in|pad|pin1|pin2|supply|vdd",
+        "index": 14
+      },
+      {
+        "category": "composite_expected_power_ground",
+        "expected_aliases": [
+          "VDDIO"
+        ],
+        "extracted_formal_port": "VDDIO|cathode|guard|in|iovdd|pad|pin1|pin2|supply",
+        "index": 15
+      },
+      {
+        "category": "composite_other_internal",
+        "expected_aliases": [],
+        "extracted_formal_port": "gate|out",
+        "index": 16
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "gate|ngate|o",
+        "index": 17
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "gate|ngate|o$1",
+        "index": 18
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "gate|ngate|o$2",
+        "index": 19
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "gate|ngate|o$3",
+        "index": 20
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "gate|ngate|o$4",
+        "index": 21
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "gate|ngate|o$5",
+        "index": 22
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "gate|ngate|o$6",
+        "index": 23
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "gate|ngate|o$7",
+        "index": 24
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "gate|ngate|o$8",
+        "index": 25
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "gate|ngate|o$9",
+        "index": 26
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "gate|ngate|o$10",
+        "index": 27
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "gate|ngate|o$11",
+        "index": 28
+      },
+      {
+        "category": "composite_other_internal",
+        "expected_aliases": [],
+        "extracted_formal_port": "gate|out$1",
+        "index": 29
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "gate|o|pgate",
+        "index": 30
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "gate|o|pgate$1",
+        "index": 31
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "gate|o|pgate$2",
+        "index": 32
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "gate|o|pgate$3",
+        "index": 33
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "gate|o|pgate$4",
+        "index": 34
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "gate|o|pgate$5",
+        "index": 35
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "gate|o|pgate$6",
+        "index": 36
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "gate|o|pgate$7",
+        "index": 37
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "gate|o|pgate$8",
+        "index": 38
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "gate|o|pgate$9",
+        "index": 39
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "gate|o|pgate$10",
+        "index": 40
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "gate|o|pgate$11",
+        "index": 41
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i|nq",
+        "index": 42
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i|nq$1",
+        "index": 43
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i|nq$2",
+        "index": 44
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i|nq$3",
+        "index": 45
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i|nq$4",
+        "index": 46
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i|nq$5",
+        "index": 47
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i|nq$6",
+        "index": 48
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i|nq$7",
+        "index": 49
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i|nq$8",
+        "index": 50
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i|nq$9",
+        "index": 51
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i|nq$10",
+        "index": 52
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i|nq$11",
+        "index": 53
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i|nq$12",
+        "index": 54
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i|nq$13",
+        "index": 55
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i|nq$14",
+        "index": 56
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i|nq$15",
+        "index": 57
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i|nq$16",
+        "index": 58
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i|nq$17",
+        "index": 59
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i|nq$18",
+        "index": 60
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i|nq$19",
+        "index": 61
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i|nq$20",
+        "index": 62
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i|nq$21",
+        "index": 63
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i|nq$22",
+        "index": 64
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i|nq$23",
+        "index": 65
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "D|core|p2c",
+        "index": 66
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "D|core|p2c$1",
+        "index": 67
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "D|core|p2c$2",
+        "index": 68
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "D|core|p2c$3",
+        "index": 69
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "D|core|p2c$4",
+        "index": 70
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "D|core|p2c$5",
+        "index": 71
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "D|core|p2c$6",
+        "index": 72
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "D|core|p2c$7",
+        "index": 73
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "D|core|p2c$8",
+        "index": 74
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "D|core|p2c$9",
+        "index": 75
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "D|core|p2c$10",
+        "index": 76
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "D|core|p2c$11",
+        "index": 77
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i1|nq",
+        "index": 78
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i1|nq$1",
+        "index": 79
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i1|nq$2",
+        "index": 80
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i1|nq$3",
+        "index": 81
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i1|nq$4",
+        "index": 82
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i1|nq$5",
+        "index": 83
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i1|nq$6",
+        "index": 84
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i1|nq$7",
+        "index": 85
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i1|nq$8",
+        "index": 86
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i1|nq$9",
+        "index": 87
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i1|nq$10",
+        "index": 88
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "i1|nq$11",
+        "index": 89
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "X|c2p|core|i0",
+        "index": 90
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "B|Y|c2p_en|en|i|i1",
+        "index": 91
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "X|c2p|core|i0$1",
+        "index": 92
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "B|Y|c2p_en|en|i|i1$1",
+        "index": 93
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "X|c2p|core|i0$2",
+        "index": 94
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "B|Y|c2p_en|en|i|i1$2",
+        "index": 95
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "X|c2p|core|i0$3",
+        "index": 96
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "B|Y|c2p_en|en|i|i1$3",
+        "index": 97
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "X|c2p|core|i0$4",
+        "index": 98
+      },
+      {
+        "category": "composite_generic_cell_pin_labels",
+        "expected_aliases": [],
+        "extracted_formal_port": "B|Y|c2p_en|en|i|i1$4",
+        "index": 99
+      }
+    ],
+    "exact_shared_count": 0,
+    "exact_shared_ports": [],
+    "formal_port_count_delta": 135005,
+    "layout_extracted_formal_port_count": 135057,
+    "layout_tokens_containing_expected_alias": 52,
+    "missing_schematic_aliases": [],
+    "recovered_alias_order_matches_schematic": false,
+    "schematic_port_count": 52,
+    "schematic_ports_recovered_as_aliases": 52,
+    "schematic_to_extracted_mapping": [
+      {
+        "matches": [
+          {
+            "aliases": [
+              "VDD",
+              "VDD!",
+              "VDDARRAY!",
+              "in",
+              "pad",
+              "pin1",
+              "pin2",
+              "supply",
+              "vdd"
+            ],
+            "extracted_formal_port": "VDD|VDD!|VDDARRAY!|in|pad|pin1|pin2|supply|vdd",
+            "index": 14
+          }
+        ],
+        "schematic_port": "VDD",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "VDDIO",
+              "cathode",
+              "guard",
+              "in",
+              "iovdd",
+              "pad",
+              "pin1",
+              "pin2",
+              "supply"
+            ],
+            "extracted_formal_port": "VDDIO|cathode|guard|in|iovdd|pad|pin1|pin2|supply",
+            "index": 15
+          }
+        ],
+        "schematic_port": "VDDIO",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "VSS",
+              "VSS!",
+              "anode",
+              "cathode",
+              "vss"
+            ],
+            "extracted_formal_port": "VSS|VSS!|anode|cathode|vss",
+            "index": 13
+          }
+        ],
+        "schematic_port": "VSS",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "VSSIO",
+              "anode",
+              "cathode",
+              "guard",
+              "iovss"
+            ],
+            "extracted_formal_port": "VSSIO|anode|cathode|guard|iovss",
+            "index": 0
+          }
+        ],
+        "schematic_port": "VSSIO",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "clk_i",
+              "core",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|clk_i|core|pad",
+            "index": 19618
+          }
+        ],
+        "schematic_port": "clk_i",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio0_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio0_io|pad",
+            "index": 1
+          }
+        ],
+        "schematic_port": "gpio0_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio10_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio10_io|pad",
+            "index": 11
+          }
+        ],
+        "schematic_port": "gpio10_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio11_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio11_io|pad",
+            "index": 12
+          }
+        ],
+        "schematic_port": "gpio11_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio12_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio12_io|pad",
+            "index": 260
+          }
+        ],
+        "schematic_port": "gpio12_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio13_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio13_io|pad",
+            "index": 1066
+          }
+        ],
+        "schematic_port": "gpio13_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio14_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio14_io|pad",
+            "index": 3664
+          }
+        ],
+        "schematic_port": "gpio14_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio15_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio15_io|pad",
+            "index": 6760
+          }
+        ],
+        "schematic_port": "gpio15_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio16_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio16_io|pad",
+            "index": 9758
+          }
+        ],
+        "schematic_port": "gpio16_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio17_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio17_io|pad",
+            "index": 13036
+          }
+        ],
+        "schematic_port": "gpio17_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio18_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio18_io|pad",
+            "index": 16330
+          }
+        ],
+        "schematic_port": "gpio18_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio19_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio19_io|pad",
+            "index": 19643
+          }
+        ],
+        "schematic_port": "gpio19_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio1_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio1_io|pad",
+            "index": 2
+          }
+        ],
+        "schematic_port": "gpio1_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio20_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio20_io|pad",
+            "index": 23960
+          }
+        ],
+        "schematic_port": "gpio20_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio21_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio21_io|pad",
+            "index": 28008
+          }
+        ],
+        "schematic_port": "gpio21_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio22_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio22_io|pad",
+            "index": 31455
+          }
+        ],
+        "schematic_port": "gpio22_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio23_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio23_io|pad",
+            "index": 34493
+          }
+        ],
+        "schematic_port": "gpio23_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio24_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio24_io|pad",
+            "index": 135056
+          }
+        ],
+        "schematic_port": "gpio24_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio25_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio25_io|pad",
+            "index": 135055
+          }
+        ],
+        "schematic_port": "gpio25_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio26_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio26_io|pad",
+            "index": 135054
+          }
+        ],
+        "schematic_port": "gpio26_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio27_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio27_io|pad",
+            "index": 135053
+          }
+        ],
+        "schematic_port": "gpio27_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio28_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio28_io|pad",
+            "index": 135052
+          }
+        ],
+        "schematic_port": "gpio28_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio29_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio29_io|pad",
+            "index": 135051
+          }
+        ],
+        "schematic_port": "gpio29_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio2_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio2_io|pad",
+            "index": 3
+          }
+        ],
+        "schematic_port": "gpio2_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio30_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio30_io|pad",
+            "index": 135050
+          }
+        ],
+        "schematic_port": "gpio30_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio31_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio31_io|pad",
+            "index": 135049
+          }
+        ],
+        "schematic_port": "gpio31_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio3_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio3_io|pad",
+            "index": 4
+          }
+        ],
+        "schematic_port": "gpio3_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio4_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio4_io|pad",
+            "index": 5
+          }
+        ],
+        "schematic_port": "gpio4_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio5_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio5_io|pad",
+            "index": 6
+          }
+        ],
+        "schematic_port": "gpio5_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio6_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio6_io|pad",
+            "index": 7
+          }
+        ],
+        "schematic_port": "gpio6_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio7_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio7_io|pad",
+            "index": 8
+          }
+        ],
+        "schematic_port": "gpio7_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio8_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio8_io|pad",
+            "index": 9
+          }
+        ],
+        "schematic_port": "gpio8_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "gpio9_io",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|gpio9_io|pad",
+            "index": 10
+          }
+        ],
+        "schematic_port": "gpio9_io",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "jtag_tck_i",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|jtag_tck_i|pad",
+            "index": 9757
+          }
+        ],
+        "schematic_port": "jtag_tck_i",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "jtag_tdi_i",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|jtag_tdi_i|pad",
+            "index": 1026
+          }
+        ],
+        "schematic_port": "jtag_tdi_i",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "jtag_tdo_o",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|jtag_tdo_o|pad",
+            "index": 261
+          }
+        ],
+        "schematic_port": "jtag_tdo_o",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "jtag_tms_i",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|jtag_tms_i|pad",
+            "index": 3663
+          }
+        ],
+        "schematic_port": "jtag_tms_i",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "jtag_trst_ni",
+              "pad"
+            ],
+            "extracted_formal_port": "anode|cathode|core|jtag_trst_ni|pad",
+            "index": 6697
+          }
+        ],
+        "schematic_port": "jtag_trst_ni",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "pad",
+              "ref_clk_i"
+            ],
+            "extracted_formal_port": "anode|cathode|core|pad|ref_clk_i",
+            "index": 16323
+          }
+        ],
+        "schematic_port": "ref_clk_i",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "pad",
+              "rst_ni"
+            ],
+            "extracted_formal_port": "anode|cathode|core|pad|rst_ni",
+            "index": 13008
+          }
+        ],
+        "schematic_port": "rst_ni",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "pad",
+              "status_o"
+            ],
+            "extracted_formal_port": "anode|cathode|pad|status_o",
+            "index": 24029
+          }
+        ],
+        "schematic_port": "status_o",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "pad",
+              "testmode_i"
+            ],
+            "extracted_formal_port": "anode|cathode|core|pad|testmode_i",
+            "index": 27943
+          }
+        ],
+        "schematic_port": "testmode_i",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "core",
+              "pad",
+              "uart_rx_i"
+            ],
+            "extracted_formal_port": "anode|cathode|core|pad|uart_rx_i",
+            "index": 34482
+          }
+        ],
+        "schematic_port": "uart_rx_i",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "pad",
+              "uart_tx_o"
+            ],
+            "extracted_formal_port": "anode|cathode|pad|uart_tx_o",
+            "index": 31456
+          }
+        ],
+        "schematic_port": "uart_tx_o",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "pad",
+              "unused0_o"
+            ],
+            "extracted_formal_port": "anode|cathode|pad|unused0_o",
+            "index": 135048
+          }
+        ],
+        "schematic_port": "unused0_o",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "pad",
+              "unused1_o"
+            ],
+            "extracted_formal_port": "anode|cathode|pad|unused1_o",
+            "index": 135047
+          }
+        ],
+        "schematic_port": "unused1_o",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "pad",
+              "unused2_o"
+            ],
+            "extracted_formal_port": "anode|cathode|pad|unused2_o",
+            "index": 135046
+          }
+        ],
+        "schematic_port": "unused2_o",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "anode",
+              "cathode",
+              "pad",
+              "unused3_o"
+            ],
+            "extracted_formal_port": "anode|cathode|pad|unused3_o",
+            "index": 135045
+          }
+        ],
+        "schematic_port": "unused3_o",
+        "status": "mapped_as_alias"
+      }
+    ]
+  }
+}

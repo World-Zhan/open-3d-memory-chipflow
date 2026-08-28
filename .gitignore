@@ -3,6 +3,15 @@
 # Full EDA runs and generated reports
 runs/*
 !runs/.gitkeep
+!runs/*/
+runs/*/*
+!runs/*/MILESTONE.md
+!runs/*/milestone.json
+!runs/*/signoff.attempt-*/
+runs/*/signoff.attempt-*/*
+!runs/*/signoff.attempt-*/lvs/
+runs/*/signoff.attempt-*/lvs/*
+!runs/*/signoff.attempt-*/lvs/port_mismatch_analysis.json
 reports/generated/
 .state/
 .work/

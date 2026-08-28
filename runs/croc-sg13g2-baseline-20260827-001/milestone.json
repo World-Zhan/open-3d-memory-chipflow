@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-08-28T12:30:00Z",
+  "run_id": "croc-sg13g2-baseline-20260827-001",
+  "overall_classification": "failed",
+  "public_rule_signoff": false,
+  "foundry_tapeout_ready": false,
+  "tracks": {
+    "A_croc_ihp": {
+      "status": "in_progress_signoff_failed",
+      "rtl": "pass",
+      "synthesis": "pass",
+      "gate_level_simulation": "pass",
+      "apr": "pass",
+      "gds": "pass_attempt_4",
+      "drc": "fail",
+      "lvs": "fail"
+    },
+    "B_pin3d": {
+      "status": "not_started",
+      "classification": "research_only"
+    },
+    "C_sram_3d_memory_extension": {
+      "status": "not_started"
+    }
+  },
+  "versions": {
+    "repository_commit_at_run": "16e49c36c27f8c3adf6919c639b6d242c3a7947d",
+    "croc_commit": "968bab17b37e88d9200a0899cb9181e42850ec87",
+    "mlem_tapeout_reference_commit": "f54fdab3f463181f6b91646e36b29321c39432b1",
+    "ihp_pdk_commit": "331c00484213b13414777eec1336ef5c29b969bd",
+    "taiwei_pin3d_commit": "c85b79352eefc31a588da3ef873e4fd68a3df3f2",
+    "orfs_research_commit": "568eb04da9173695d6bfc1b10ba868e0b6b8a9fa",
+    "pin3d_openroad_commit": "305d3ba2ddfd00591924cc586ad408179f566afe",
+    "container_reference": "hpretl/iic-osic-tools:2025.12",
+    "container_digest": "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+    "pdk_status": "preview"
+  },
+  "stages": [
+    {
+      "name": "croc-rtl",
+      "status": "pass",
+      "actual_command": "bash scripts/croc_flow.sh rtl",
+      "front_door": "make RUN_ID=croc-sg13g2-baseline-20260827-001 croc-rtl",
+      "evidence": ["logs/croc-rtl.log", "stage_evidence/croc-rtl.json"]
+    },
+    {
+      "name": "croc-netlist-sim",
+      "status": "pass",
+      "actual_command": "bash scripts/croc_flow.sh netlist-sim",
+      "front_door": "make RUN_ID=croc-sg13g2-baseline-20260827-001 croc-netlist-sim",
+      "evidence": ["logs/croc-netlist-sim.log", "stage_evidence/croc-netlist-sim.json"]
+    },
+    {
+      "name": "croc-pnr",
+      "status": "pass",
+      "actual_command": "bash scripts/croc_flow.sh pnr",
+      "front_door": "make RUN_ID=croc-sg13g2-baseline-20260827-001 croc-pnr",
+      "evidence": ["logs/croc-pnr.log", "stage_evidence/croc-pnr.json"]
+    },
+    {
+      "name": "croc-gds",
+      "status": "pass_attempt_4",
+      "actual_command": "bash scripts/croc_flow.sh gds",
+      "front_door": "make RUN_ID=croc-sg13g2-baseline-20260827-001 croc-gds",
+      "evidence": ["logs/croc-gds.attempt-4.log", "stage_evidence/croc-gds.attempt-4.json"]
+    },
+    {
+      "name": "croc-signoff",
+      "status": "fail_attempt_2",
+      "actual_command": "bash scripts/croc_signoff.sh",
+      "front_door": "make RUN_ID=croc-sg13g2-baseline-20260827-001 croc-signoff",
+      "evidence": ["logs/croc-signoff.attempt-2.log", "stage_evidence/croc-signoff.attempt-2.json", "signoff.attempt-2/signoff_summary.json"]
+    }
+  ],
+  "physical": {
+    "unrouted_nets": 0,
+    "pdn_connected": true,
+    "wns_ns": 0.0,
+    "tns_ns": 0.0,
+    "setup_violations": 0,
+    "hold_violations": 0
+  },
+  "drc": {
+    "status": "fail",
+    "marker_total": 1585,
+    "nonempty_rule_categories": 12,
+    "source_lyrdb": "signoff.attempt-2/drc/croc.filled.gds_croc_chip_sealed_full.lyrdb",
+    "maximal_raw_error_count": 652,
+    "maximal_count_source": "logs/croc-signoff.attempt-2.log: Number of DRC errors for maximum rule set: 652",
+    "maximal_count_components": {"Pad.kR": 576, "Pad.d1R": 72, "Pad.dR": 4},
+    "density_unwaived": 8,
+    "disabled_rules": [],
+    "waivers": [],
+    "rules": [
+      {"rule": "Pad.fR_M2", "count": 581, "scope": "pad_io_boundary_m2_exit", "sample": "croc_chip top edge y=1839..1843um"},
+      {"rule": "Pad.kR", "count": 576, "scope": "bondpad_topvia2_under_pad", "sample": "bondpad local y=-11.43..-10.53um"},
+      {"rule": "Pad.fR_TM2", "count": 88, "scope": "pad_io_boundary_tm2_exit", "sample": "croc_chip top edge y=1839..1843um"},
+      {"rule": "Pad.d1R", "count": 72, "scope": "pad_to_io_ring_active", "sample": "top edge y=1839.688..1848.447um"},
+      {"rule": "Pad.fR_M3", "count": 64, "scope": "pad_io_boundary_m3_exit"},
+      {"rule": "Pad.fR_M4", "count": 64, "scope": "pad_io_boundary_m4_exit"},
+      {"rule": "Pad.fR_M5", "count": 64, "scope": "pad_io_boundary_m5_exit"},
+      {"rule": "Pad.fR_TM1", "count": 64, "scope": "pad_io_boundary_tm1_exit"},
+      {"rule": "Pad.dR", "count": 4, "scope": "bondpad_to_sealring", "sample": "bondpad local pad y=2.135 vs seal edge y=-5.6um"},
+      {"rule": "M2Fil.h", "count": 3, "scope": "core_density_800x800um", "minimum_ratio_percent": 19.878},
+      {"rule": "M3Fil.h", "count": 3, "scope": "core_density_800x800um", "minimum_ratio_percent": 21.762},
+      {"rule": "M1Fil.h", "count": 2, "scope": "core_density_800x800um", "minimum_ratio_percent": 20.726}
+    ]
+  },
+  "lvs": {
+    "status": "fail",
+    "exact_match": false,
+    "outcome": "ERROR : Netlists don't match",
+    "runner_runtime_seconds": 8114.558,
+    "deck_runtime_seconds": 7997.765614,
+    "peak_memory_log_kib": 8104608,
+    "strict_port_mode": true,
+    "flag_missing_ports": true,
+    "ignore_top_ports_mismatch": false,
+    "implicit_nets": null,
+    "simplify_enabled": true,
+    "run_mode": "flat",
+    "top_level_pins_option": false,
+    "analysis_mode": "streaming_spice_headers_no_lvsdb_load",
+    "schematic_formal_ports": 52,
+    "extracted_formal_ports": 135057,
+    "exact_shared_ports": 0,
+    "expected_ports_recovered_as_composite_aliases": 52,
+    "abnormal_extracted_formal_ports": 135005,
+    "formal_port_categories": {
+      "composite_expected_power_ground": 4,
+      "composite_expected_signal": 48,
+      "composite_generic_cell_pin_labels": 32028,
+      "composite_other_internal": 24058,
+      "single_generic_cell_pin_label": 641,
+      "single_other_internal": 78278
+    },
+    "mismatch_classification": {
+      "top_ports": "mismatch",
+      "nets": "structural_mismatch_before_pairing",
+      "devices": "not_compared",
+      "subcircuits_macros": "not_compared",
+      "parameters": "not_compared"
+    },
+    "evidence": [
+      "signoff.attempt-2/croc.cdl",
+      "signoff.attempt-2/lvs/croc.log",
+      "signoff.attempt-2/lvs/lvs_run_2026_08_27_16_36_24.log",
+      "signoff.attempt-2/lvs/croc.lvsdb",
+      "signoff.attempt-2/lvs/croc_extracted.cir",
+      "signoff.attempt-2/lvs/port_mismatch_analysis.json"
+    ]
+  },
+  "root_cause_evidence": [
+    "scripts/croc_signoff.sh runs full-chip LVS in flat mode",
+    "IHP deck reads metal text on datatype 25 and connects it to conductive nets",
+    "attempt 2 flat extraction observed 352964 M1, 1673352 M2 and 716860 M3 text labels",
+    "TOP_LVL_PINS=false only skips make_top_level_pins after extraction",
+    "Croc IHP LibreLane reference configuration selects deep LVS"
+  ],
+  "minimum_fix_hypotheses": [
+    "validate deep hierarchy on a small IO-plus-standard-cell structure, then switch full-chip LVS to deep only if its top ports are exact",
+    "if deep still leaks ports, audit datatype-25 text and datatype-2 pin propagation at top, IO, SRAM and standard-cell boundaries",
+    "verify stream-out emits only intended chip-level pin texts at the top boundary"
+  ],
+  "forbidden_shortcuts": [
+    "ignore_top_ports_mismatch",
+    "implicit_nets",
+    "disable_strict_ports",
+    "disable_simplify",
+    "start_attempt_3_before_small_validation"
+  ],
+  "limitations": [
+    "IHP Open PDK is preview; foundry tapeout requires IHP confirmation of frozen PDK, decks and waivers.",
+    "Pin3D has not started and any future result is research_only.",
+    "No open 3D DRAM process, hybrid-bonding deck or packaging signoff is claimed."
+  ]
+}
