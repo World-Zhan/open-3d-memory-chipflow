@@ -185,6 +185,33 @@ schematic 把同一个 `iovss` 用于 `LevelDown`、`DCNDiode`、`DCPDiode` 和 
 - 支持“IO 库层次/父级 ring 连接语义是关键变量”，但还未证明是哪一处实现错误；
 - 下一实验必须显式复现父级 IO-ring 连接，不能通过 implicit nets 或忽略端口掩盖。
 
+### 5. Croc 代表性五-pad 父级 wrapper 与小型 LVSDB 交叉引用
+
+`lvs-iopad-parent-wrapper-20260829-001/summary.json` 记录 Croc 实际一段顺序 `IOPadIOVss → IOPadIOVdd → IOPadIn → IOPadVss → IOPadVdd`。五个 80 µm、R0 pad 单元连续 abut，总宽 400 µm；父级只放置 6 个显式 datatype-25 标签。两种既有运行均保持 strict-deep、`flag_missing_ports=true`、simplify 开启、无 implicit nets、无 waiver：
+
+| variant | schematic/extracted formal ports | 顶层端口集合 | strict LVS | deck runtime / peak RSS |
+|---|---:|---|---|---:|
+| baseline | 6 / 6 | exact | **FAIL** | 5.109 s / 534,216 KiB |
+| `--combine_devices` | 6 / 6 | exact | **FAIL** | 4.664 s / 530,080 KiB |
+
+父级 pad abutment 因此消除了 standalone `IOPadIn` 的 `iovss$1` 顶层 formal-port 增量，但没有得到 LVS exact match。`--combine_devices` 也没有改变失败类型，不能当作修复。
+
+受限分析器只加载 7,485,910-byte 小型 LVSDB，并拒绝 609,009,139-byte full-chip LVSDB。baseline 与 `--combine_devices` 的交叉引用计数逐项相同：
+
+| 对象 | Match | layout-only | schematic-only | paired mismatch |
+|---|---:|---:|---:|---:|
+| device | 4 | 32 | 5 | 1 |
+| net | 4 | 36 | 10 | 3 |
+| pin | 6 | 37 | 7 | 0 |
+
+5 个 leaf circuit 为 `NoMatch`：`sg13g2_Clamp_N43N43D4R`、`sg13g2_DCNDiode`、`sg13g2_DCPDiode`、`sg13g2_RCClampInverter`、`sg13g2_SecondaryProtection`。代表性证据包括：
+
+- `DCNDiode` schematic 两个 dantenna 共用 `cathode`，layout extraction 出现 `cathode` / `cathode$1` 分裂；`DCPDiode` 同样出现 `anode` / `anode$1`。
+- `SecondaryProtection` schematic 的 `rppd` 在 extracted 侧缺失，并出现 `core|pad` 合并网络。
+- `Clamp_N43N43D4R` 的 172 个 4.4 µm NMOS 指与 extracted 合并器件/`pad$N` 网络无法配对；启用 `combine_devices` 后计数仍完全相同。
+
+这把小型 fixture 的剩余失败部分定位到 IO leaf 提取/器件归一化与局部网络分裂，但证据仍不足以把 full-chip 135,057-port mismatch 全归因于 IO。full-chip flat child-label promotion 与小型 deep IO-leaf mismatch 是两个同时存在的问题，`root_cause_state=partially_localized_to_io_leaf_extraction_not_fully_identified`。
+
 ## 直接生成原因与最小修复假设
 
 源码与运行证据形成闭环：
@@ -194,23 +221,25 @@ schematic 把同一个 `iovss` 用于 `LevelDown`、`DCNDiode`、`DCPDiode` 和 
 3. attempt 2 在 flat 视图看到 M1/M2/M3 text 分别为 352,964 / 1,673,352 / 716,860 个；子层标准单元、IO pad 和宏的 pin text 被展平到 top extraction context，最终把大量内部 label-net 变成顶层 formal ports。
 4. `TOP_LVL_PINS=false` 只让后处理跳过 `netlist.make_top_level_pins`；它不会删除提取阶段已经由 GDS label 形成的 formal ports。
 5. Croc 自带 IHP LibreLane 配置明确把 `KLAYOUT_LVS_OPTIONS` 设为 `run_mode deep`，SRAM support 的手工回归脚本也使用 deep。这支持“full-chip 应先验证 deep hierarchy”这一最小假设。
+6. 五-pad strict-deep wrapper 已恢复 6/6 exact 顶层端口，但 leaf netlists 仍不匹配；因此“端口边界已正确”不等于“LVS exact match”。
+7. `--combine_devices` 与 baseline 的 5 NoMatch / 7 Skipped circuit、device/net/pin 分类计数完全相同；器件合并不是当前最小修复。
 
 按证据优先级排列的最小修复假设：
 
-1. **首选**：构建最小父级 wrapper，用代表性的 IO-ring 金属真实连接所有重复 IOVSS/IOVDD access region；要求 strict-deep LVS exact match。
-2. 将该 wrapper 与 Croc 实际 IO-ring routing/top text 对比，区分父级连接意图、deck label promotion 与 substrate/guard split；不得先验选择一种解释。
-3. 只有小 wrapper exact 后，才允许把 full-chip runner 改为 deep 并安排新的 full attempt。
+1. **首选**：逐个核对 5 个 `NoMatch` leaf 的官方 CDL/SPICE、GDS 提取与 deck 器件归一化规则，先用 `DCNDiode`/`DCPDiode` 的单 leaf strict-deep case 解释 `cathode$1`/`anode$1` 分裂。
+2. 仅使用 PDK 文档明确支持的 IO hierarchy/abstract/局部 flatten 机制做小型 wrapper A/B；不得把 extracted netlist 当 reference，也不得隐藏 guard/substrate 设备。
+3. 如果公开 PDK/deck 无法让官方 IO GDS 与官方 schematic 严格匹配，把它记录为 PDK IO-library/deck blocker 并准备最小可复现 upstream issue；不要用 full-chip attempt 试错。
 
 明确禁止：`ignore_top_ports_mismatch`、implicit nets、关闭 strict port、关闭 simplify，或在未完成小型验证前启动 full attempt 3。
 
 ## 下一步门槛
 
-1. 完成并提交当前 A/B、IOPad library 诊断脚本、测试和里程碑；公开远端仍需单独发布授权。
-2. 建立连接多个 IOVSS/IOVDD access region 的最小父级 IO-ring wrapper，继续 strict-deep LVS；必须保留真实 guard/substrate/ptap 设备。
-3. wrapper exact 前不得修改 full-chip runner，不得启动 attempt 3；wrapper exact 后仍需审查 Croc 52 个 top pin text 与实际 ring connectivity。
-4. 新 full-chip LVS 只有 exact match 才能继续处理 pad/sealring 与 density DRC；不得把 deep 10/10 port-set exact 当作 LVS exact。
+1. 用一个 `DCNDiode`/`DCPDiode` 最小 strict-deep case 区分标签连通分量、guard/substrate split 与器件参数/归一化差异，并要求 exact match；不得重跑 15-cell sweep。
+2. 检查公开 deck/PDK 是否有受支持的 IO leaf abstract、hierarchy 或 selective flatten 用法；没有文档证据就不启用。
+3. 小型 IO leaf/wrapper strict LVS exact 前不得修改 full-chip runner，不得启动 attempt 3；exact 后仍需审查 Croc 52 个 top pin text 与实际 ring connectivity。
+4. 新 full-chip LVS 只有 exact match 才能继续处理 pad/sealring 与 density DRC；不得把 6/6 或 10/10 port-set exact 当作 LVS exact。
 5. 只有 DRC=0、顶层 LVS exact match、无未布通网络、STA/PDN 证据齐全时，A 轨才可称公开规则签核级。
-6. A 轨收敛后才启动 B 轨；B 始终标记 `research_only`。C 轨仍需等待两条原版流程跑绿。
+6. A 轨收敛后才启动 B 轨；B 始终标记 `research_only/not_started`。C 轨仍为 `not_started`。
 
 ## 查看方式
 

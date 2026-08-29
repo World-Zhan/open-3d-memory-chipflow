@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-08-29T03:41:42Z",
+  "generated_at": "2026-08-29T09:40:00Z",
   "run_id": "croc-sg13g2-baseline-20260827-001",
   "overall_classification": "failed",
   "public_rule_signoff": false,
@@ -92,6 +92,17 @@
       "actual_command": "docker run --rm -v /home/james_zhan/projects/open-3d-memory-chipflow:/work hpretl/iic-osic-tools:2025.12 --skip python3 /work/scripts/run_lvs_iopad_diagnostic.py --repo-root /work --run-dir /work/runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-diagnostic-20260829-001",
       "front_door": "python3 scripts/run_lvs_iopad_diagnostic.py --help",
       "evidence": ["lvs-iopad-diagnostic-20260829-001/summary.json", "lvs-iopad-diagnostic-20260829-001/iopad_in_detail.json"]
+    },
+    {
+      "name": "lvs-iopad-parent-wrapper",
+      "status": "diagnostic_complete_ports_exact_lvs_fail_root_cause_not_fully_identified",
+      "actual_command": "docker run --rm -v /home/james_zhan/projects/open-3d-memory-chipflow:/work hpretl/iic-osic-tools:2025.12 --skip python3 /work/scripts/run_lvs_iopad_parent_wrapper.py --repo-root /work --run-dir /work/runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-parent-wrapper-20260829-001",
+      "front_door": "python3 scripts/run_lvs_iopad_parent_wrapper.py --help",
+      "evidence": [
+        "lvs-iopad-parent-wrapper-20260829-001/summary.json",
+        "lvs-iopad-parent-wrapper-20260829-001/lvsdb_cross_reference.json",
+        "lvs-iopad-parent-wrapper-20260829-001/lvsdb_cross_reference_combine_devices.json"
+      ]
     }
   ],
   "physical": {
@@ -306,6 +317,65 @@
       "root_cause_fully_identified": false,
       "full_chip_135057_port_mismatch_attributed_to_io_only": false
     },
+    "iopad_parent_wrapper": {
+      "run_dir": "lvs-iopad-parent-wrapper-20260829-001",
+      "fixture": "five abutted R0 pads in Croc edge order: IOPadIOVss, IOPadIOVdd, IOPadIn, IOPadVss, IOPadVdd",
+      "strictness": {
+        "run_mode": "deep",
+        "strict_port_mode": true,
+        "flag_missing_ports": true,
+        "ignore_top_ports_mismatch": false,
+        "implicit_nets": null,
+        "simplify_enabled": true,
+        "disabled_or_weakened_checks": []
+      },
+      "variants": [
+        {
+          "name": "strict_deep_baseline",
+          "strict_lvs": "fail",
+          "schematic_formal_ports": 6,
+          "extracted_formal_ports": 6,
+          "top_port_set_exact": true,
+          "deck_runtime_seconds": 5.109193,
+          "peak_memory_kib": 534216
+        },
+        {
+          "name": "strict_deep_combine_devices",
+          "strict_lvs": "fail",
+          "schematic_formal_ports": 6,
+          "extracted_formal_ports": 6,
+          "top_port_set_exact": true,
+          "deck_runtime_seconds": 4.664489,
+          "peak_memory_kib": 530080
+        }
+      ],
+      "lvsdb_source_bytes": 7485910,
+      "lvsdb_full_chip_size_guard_bytes": 609009139,
+      "circuit_status_counts": {"NoMatch": 5, "Skipped": 7},
+      "object_pair_classification_counts": {
+        "device": {"match": 4, "layout_only": 32, "schematic_only": 5, "paired_mismatch": 1},
+        "net": {"match": 4, "layout_only": 36, "schematic_only": 10, "paired_mismatch": 3},
+        "pin": {"match": 6, "layout_only": 37, "schematic_only": 7, "paired_mismatch": 0}
+      },
+      "leaf_nomatch_circuits": [
+        "sg13g2_Clamp_N43N43D4R",
+        "sg13g2_DCNDiode",
+        "sg13g2_DCPDiode",
+        "sg13g2_RCClampInverter",
+        "sg13g2_SecondaryProtection"
+      ],
+      "combine_devices_changes_cross_reference_counts": false,
+      "parent_abutment_eliminates_standalone_extra_top_port": true,
+      "parent_wrapper_strict_lvs_exact_match": false,
+      "root_cause_state": "partially_localized_to_io_leaf_extraction_not_fully_identified",
+      "full_chip_135057_port_mismatch_attributed_to_io_only": false,
+      "full_chip_attempt_3_authorized": false,
+      "evidence": [
+        "lvs-iopad-parent-wrapper-20260829-001/summary.json",
+        "lvs-iopad-parent-wrapper-20260829-001/lvsdb_cross_reference.json",
+        "lvs-iopad-parent-wrapper-20260829-001/lvsdb_cross_reference_combine_devices.json"
+      ]
+    },
     "iopad_in_evidence": {
       "schematic_iovss_connection_count": 4,
       "extracted_logical_iovss_component_count": 2,
@@ -328,8 +398,10 @@
     },
     "hypothesis_assessment": {
       "single_iopad_cell_corruption": "not_supported_by_15_cell_control",
-      "parent_io_ring_connectivity_required": "supported_but_not_yet_proven",
+      "parent_io_ring_connectivity_required": "top_port_split_removed_by_five_pad_abutment_but_strict_lvs_still_fails",
       "deck_label_promotion_or_substrate_split": "still_possible",
+      "io_leaf_extraction_or_device_normalization": "supported_by_five_leaf_nomatch_cross_reference_but_not_fully_identified",
+      "combine_devices_as_fix": "not_supported_by_identical_cross_reference_counts",
       "full_chip_attempt_3_authorized": false
     }
   },
@@ -341,12 +413,14 @@
     "Croc IHP LibreLane reference configuration selects deep LVS",
     "minimal combined fixture: deep preserves the exact ten-port top set while flat yields 11 composite/internal formal ports; all four strict comparisons still fail",
     "direct sg13g2_inv_1 strict deep LVS passes 4/4 exactly; direct sg13g2_IOPadIn fails 6/7 with extra iovss$1",
-    "all 15 IOPad cells fail as standalone strict-deep tops; iovdd$1 repeats in ten and iovss$1 repeats in four, so a single IOPadIn data defect is not supported"
+    "all 15 IOPad cells fail as standalone strict-deep tops; iovdd$1 repeats in ten and iovss$1 repeats in four, so a single IOPadIn data defect is not supported",
+    "five-pad parent wrapper restores an exact 6/6 top port set but strict LVS still fails in baseline and combine_devices variants",
+    "bounded small-LVSDB cross-reference finds five NoMatch IO leaf circuits; device/net/pin classifications are unchanged by combine_devices"
   ],
   "minimum_fix_hypotheses": [
-    "build a minimal parent wrapper that physically joins every duplicated IOVSS/IOVDD access region using representative IO-ring metal, then require strict-deep exact match",
-    "compare the wrapper with Croc's actual IO-ring routing and top text placement to distinguish parent-connectivity intent from deck label promotion or substrate/guard splitting",
-    "only after that small wrapper is exact may the full-chip runner be changed to deep and a new full attempt be scheduled"
+    "compare official CDL and SPICE plus deck device normalization for the five NoMatch IO leaf circuits, starting with a minimal DCNDiode/DCPDiode strict-deep exact-match case",
+    "use only PDK-documented IO hierarchy, abstract, or selective-flatten behavior in any next small A/B; never hide guard/substrate devices or use extracted netlists as reference",
+    "if official IO GDS and schematic cannot strict-match with the public deck, record a PDK IO-library/deck blocker and prepare a minimal upstream reproducer instead of launching full-chip attempt 3"
   ],
   "forbidden_shortcuts": [
     "ignore_top_ports_mismatch",
