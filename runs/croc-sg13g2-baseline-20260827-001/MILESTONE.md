@@ -1,6 +1,6 @@
 # Croc / IHP SG13G2 基线里程碑（Attempt 2 终局）
 
-生成日期：2026-08-28<br>
+生成日期：2026-08-29<br>
 Run ID：`croc-sg13g2-baseline-20260827-001`<br>
 总体结论：**未签核通过**。RTL、门级仿真、APR 和 GDS 已跑通；公开 DRC 与顶层 LVS 均失败。不得称为 `public_rule_signoff` 或 foundry tapeout-ready。
 
@@ -212,6 +212,61 @@ schematic 把同一个 `iovss` 用于 `LevelDown`、`DCNDiode`、`DCPDiode` 和 
 
 这把小型 fixture 的剩余失败部分定位到 IO leaf 提取/器件归一化与局部网络分裂，但证据仍不足以把 full-chip 135,057-port mismatch 全归因于 IO。full-chip flat child-label promotion 与小型 deep IO-leaf mismatch 是两个同时存在的问题，`root_cause_state=partially_localized_to_io_leaf_extraction_not_fully_identified`。
 
+## 官方 DCN/DCP leaf blocker：已最小复现，未公开发布
+
+`lvs-iopad-leaf-diagnostic-20260829-001/summary.json` 对官方
+`sg13g2_DCNDiode` 与 `sg13g2_DCPDiode` 各运行一次 strict-deep LVS；没有
+重跑 15-cell sweep 或五-pad wrapper。两次运行都保留 strict ports、
+`flag_missing_ports=true`、simplify、tap extraction；没有使用 implicit
+nets、waiver、`ignore_top_ports_mismatch`、`--layout_netlist` 或修改 deck。
+
+| leaf | schematic formal ports | extracted formal ports | strict LVS | leaf cross-reference |
+|---|---|---|---|---|
+| `sg13g2_DCNDiode` | 3：`anode cathode guard` | 3：`anode cathode cathode$1` | **FAIL**；`guard` 缺失、`cathode$1` 额外 | circuit `NoMatch=1`；device 3 layout-only / 1 schematic-only；net 4 / 2；pin Match 4 |
+| `sg13g2_DCPDiode` | 3：`anode cathode guard` | 4：`guard cathode anode anode$1` | **FAIL**；`anode$1` 额外 | circuit `NoMatch=1`；device 3 layout-only / 1 schematic-only；net 5 / 2；pin Match 6 |
+
+官方 CDL 与官方 SPICE 对两颗 leaf 的网络意图一致：DCN 的两个
+`dantenna` 共用一个 `cathode`，DCP 的两个 `dpantenna` 共用一个
+`anode`。但 strict-deep extraction 分别把其中一个器件放到
+`cathode$1` / `anode$1`。因为器件和网络没有形成 paired match，当前
+不能把它降格为单纯参数容差问题。
+
+可复现输入与小型数据库：
+
+| leaf | 最小 GDS / CDL SHA-256 | 小型 LVSDB |
+|---|---|---|
+| DCN | `aa14969a...ea81f` / `e6beb7b9...e43` | 54,778 B，`d47e30b7...b07d` |
+| DCP | `ca9ff63f...e5f4f` / `4179ad18...6708` | 64,085 B，`a9b5782f...a98f` |
+
+完整命令、完整 SHA-256、输入路径和 cross-reference 分类已保存于：
+
+- `docs/issues/ihp-sg13g2-io-diode-strict-lvs-blocker.md`：本地上游 issue 草稿；**未发布**。
+- `reports/blockers/ihp-sg13g2-io-diode-strict-lvs.json`：机读 blocker 索引。
+- `lvs-iopad-leaf-diagnostic-20260829-001/summary.json`：两颗 leaf 的完整结果。
+- 两颗 leaf 目录内的 `.lvsdb`、extracted netlist、log 和 bounded cross-reference JSON：运行大文件按 `.gitignore` 保留在本地，不进入 Git。
+
+### 官方父级直接 M1 几何门槛
+
+`lvs-iopad-parent-metal-closure-20260829-001/official_parent_connectivity.json`
+在固定容器内对官方 `sg13g2_IOPadIn` 做了受限只读几何分析。deck 的
+M1 conductor 为 `8/0 + 8/22`，文本为 `8/25`：
+
+- DCN 两个 `cathode` access component 分别接触 parent component 1 与 0；shared set 为空。
+- DCP 两个 `anode` access component 分别接触 parent component 7 与 6；shared set 为空。
+- 两颗 leaf 均为 `official_parent_direct_m1_closure_observed=false`，所以
+  `parent_metal_closure_lvs_ab_gate_open=false`。
+
+该证据文件为 5,952 B，SHA-256
+`9c183265fb2070d58380ae378001c0281580f671cb26fda361721e67203846de`。
+没有公开父级直接 M1 闭合证据，因此没有凭空画 bridge，也没有运行
+speculative closure LVS A/B。
+
+当前分类是：**官方 IO leaf GDS/CDL/SPICE 与公开 strict-deep LVS deck
+之间存在可复现 blocker，但应由上游确认是库数据、deck 提取还是受支持
+hierarchy 用法问题**。这不等于已完全识别根因；也不等于 full-chip
+135,057-port mismatch 全由 IO 引起。两者并存：前者是小型 deep leaf
+结构 mismatch，后者首先是 full-chip flat child-label promotion。
+
 ## 直接生成原因与最小修复假设
 
 源码与运行证据形成闭环：
@@ -226,18 +281,18 @@ schematic 把同一个 `iovss` 用于 `LevelDown`、`DCNDiode`、`DCPDiode` 和 
 
 按证据优先级排列的最小修复假设：
 
-1. **首选**：逐个核对 5 个 `NoMatch` leaf 的官方 CDL/SPICE、GDS 提取与 deck 器件归一化规则，先用 `DCNDiode`/`DCPDiode` 的单 leaf strict-deep case 解释 `cathode$1`/`anode$1` 分裂。
-2. 仅使用 PDK 文档明确支持的 IO hierarchy/abstract/局部 flatten 机制做小型 wrapper A/B；不得把 extracted netlist 当 reference，也不得隐藏 guard/substrate 设备。
-3. 如果公开 PDK/deck 无法让官方 IO GDS 与官方 schematic 严格匹配，把它记录为 PDK IO-library/deck blocker 并准备最小可复现 upstream issue；不要用 full-chip attempt 试错。
+1. `DCNDiode`/`DCPDiode` 的官方 leaf strict-deep mismatch 已独立复现并打包为本地上游 blocker；下一步是由 IHP PDK 维护者确认库数据、deck 或受支持 hierarchy 用法。
+2. 只有拿到上游明确支持的修复或用法后，才重跑这两个 leaf；不得猜改 pin text、guard/substrate、tap extraction 或器件归一化。
+3. 两个 leaf strict exact 后，仍须让最小父级 IO fixture strict exact，再考虑新的 full-chip deep 验证；不能用 full-chip attempt 试错。
 
-明确禁止：`ignore_top_ports_mismatch`、implicit nets、关闭 strict port、关闭 simplify，或在未完成小型验证前启动 full attempt 3。
+明确禁止：`ignore_top_ports_mismatch`、implicit nets、关闭 strict port、关闭 simplify、凭空增加 parent metal，或在未完成上游支持的小型验证前启动 full attempt 3。
 
 ## 下一步门槛
 
-1. 用一个 `DCNDiode`/`DCPDiode` 最小 strict-deep case 区分标签连通分量、guard/substrate split 与器件参数/归一化差异，并要求 exact match；不得重跑 15-cell sweep。
-2. 检查公开 deck/PDK 是否有受支持的 IO leaf abstract、hierarchy 或 selective flatten 用法；没有文档证据就不启用。
-3. 小型 IO leaf/wrapper strict LVS exact 前不得修改 full-chip runner，不得启动 attempt 3；exact 后仍需审查 Croc 52 个 top pin text 与实际 ring connectivity。
-4. 新 full-chip LVS 只有 exact match 才能继续处理 pad/sealring 与 density DRC；不得把 6/6 或 10/10 port-set exact 当作 LVS exact。
+1. 保留本地 blocker 草稿，不发布；由用户另行授权后才能向 IHP/GitHub 公开提交。
+2. 获得上游支持的 PDK/library/deck 解决方案后，只重跑 DCN/DCP 两个 strict-deep leaf case，目标必须是 LVS exact match。
+3. 两颗 leaf exact 后再运行一个最小父级 IO strict-deep fixture；在此之前不得修改 full-chip runner，不得启动 attempt 3。
+4. 后续 full-chip LVS 只有 exact match 才能继续处理 pad/sealring 与 density DRC；不得把 6/6 或 10/10 port-set exact 当作 LVS exact。
 5. 只有 DRC=0、顶层 LVS exact match、无未布通网络、STA/PDN 证据齐全时，A 轨才可称公开规则签核级。
 6. A 轨收敛后才启动 B 轨；B 始终标记 `research_only/not_started`。C 轨仍为 `not_started`。
 
@@ -245,6 +300,8 @@ schematic 把同一个 `iovss` 用于 `LevelDown`、`DCNDiode`、`DCPDiode` 和 
 
 - 文本/JSON：`less runs/croc-sg13g2-baseline-20260827-001/MILESTONE.md`；`python3 -m json.tool .../milestone.json | less`
 - 端口映射：`python3 -m json.tool .../signoff.attempt-2/lvs/port_mismatch_analysis.json | less`
+- IO leaf blocker：`less docs/issues/ihp-sg13g2-io-diode-strict-lvs-blocker.md`；`python3 -m json.tool reports/blockers/ihp-sg13g2-io-diode-strict-lvs.json | less`
+- 父级 M1 几何：`python3 -m json.tool .../lvs-iopad-parent-metal-closure-20260829-001/official_parent_connectivity.json | less`
 - DRC：在 KLayout Marker Browser 中打开 `...full.lyrdb`，并同时加载 `upstream/croc/klayout/out/croc.filled.gds.gz`。
 - LVS：在 KLayout LVS Browser 中打开 `croc.lvsdb`；该文件很大，优先使用已生成的 40 KiB 流式摘要。
 - APR：用 OpenROAD GUI 打开 `upstream/croc/openroad/out/croc.odb`，报告见 `upstream/croc/openroad/reports/`。

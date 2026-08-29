@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-08-29T09:40:00Z",
+  "generated_at": "2026-08-29T14:15:14Z",
   "run_id": "croc-sg13g2-baseline-20260827-001",
   "overall_classification": "failed",
   "public_rule_signoff": false,
@@ -376,6 +376,91 @@
         "lvs-iopad-parent-wrapper-20260829-001/lvsdb_cross_reference_combine_devices.json"
       ]
     },
+    "iopad_leaf_blocker": {
+      "run_dir": "lvs-iopad-leaf-diagnostic-20260829-001",
+      "status": "complete_reproducible_upstream_blocker_not_published",
+      "strictness": {
+        "run_mode": "deep",
+        "strict_port_mode": true,
+        "flag_missing_ports": true,
+        "simplify_enabled": true,
+        "tap_extraction_enabled": true,
+        "ignore_top_ports_mismatch": false,
+        "implicit_nets": null,
+        "waivers": [],
+        "deck_modified": false
+      },
+      "cases": [
+        {
+          "cell": "sg13g2_DCNDiode",
+          "strict_lvs": "fail",
+          "schematic_formal_ports": 3,
+          "extracted_formal_ports": 3,
+          "exact_shared_ports": 2,
+          "missing_schematic_ports": ["guard"],
+          "extra_extracted_ports": ["cathode$1"],
+          "split_net": "cathode$1",
+          "circuit_status_counts": {"NoMatch": 1},
+          "object_pair_classification_counts": {
+            "device": {"layout_only": 3, "schematic_only": 1},
+            "net": {"layout_only": 4, "schematic_only": 2},
+            "pin": {"match": 4}
+          },
+          "small_lvsdb_bytes": 54778,
+          "small_lvsdb_sha256": "d47e30b72e521e2c416bd250d8317929bd75ff2ed337584d6276b3589db9b07d"
+        },
+        {
+          "cell": "sg13g2_DCPDiode",
+          "strict_lvs": "fail",
+          "schematic_formal_ports": 3,
+          "extracted_formal_ports": 4,
+          "exact_shared_ports": 3,
+          "missing_schematic_ports": [],
+          "extra_extracted_ports": ["anode$1"],
+          "split_net": "anode$1",
+          "circuit_status_counts": {"NoMatch": 1},
+          "object_pair_classification_counts": {
+            "device": {"layout_only": 3, "schematic_only": 1},
+            "net": {"layout_only": 5, "schematic_only": 2},
+            "pin": {"match": 6}
+          },
+          "small_lvsdb_bytes": 64085,
+          "small_lvsdb_sha256": "a9b5782f3d1673a48b82c60b9e2d49254957ebc1be2f04f8f92e18513b38a98f"
+        }
+      ],
+      "official_cdl_and_spice_single_net_intent_agree": true,
+      "parameter_comparison_blocked_by_unpaired_devices": true,
+      "root_cause_fully_identified": false,
+      "full_chip_135057_port_mismatch_attributed_to_io_only": false,
+      "full_chip_attempt_3_authorized": false,
+      "issue_draft": "docs/issues/ihp-sg13g2-io-diode-strict-lvs-blocker.md",
+      "machine_report": "reports/blockers/ihp-sg13g2-io-diode-strict-lvs.json"
+    },
+    "iopad_parent_m1_geometry_gate": {
+      "run_dir": "lvs-iopad-parent-metal-closure-20260829-001",
+      "analysis_mode": "bounded_read_only_direct_parent_geometry",
+      "parent_cell": "sg13g2_IOPadIn",
+      "m1_conductor_layers": [[8, 0], [8, 22]],
+      "m1_text_layer": [8, 25],
+      "cases": [
+        {
+          "leaf_cell": "sg13g2_DCNDiode",
+          "touching_parent_component_ids_by_access": [[1], [0]],
+          "shared_parent_component_ids": [],
+          "official_parent_direct_m1_closure_observed": false
+        },
+        {
+          "leaf_cell": "sg13g2_DCPDiode",
+          "touching_parent_component_ids_by_access": [[7], [6]],
+          "shared_parent_component_ids": [],
+          "official_parent_direct_m1_closure_observed": false
+        }
+      ],
+      "evidence_sha256": "9c183265fb2070d58380ae378001c0281580f671cb26fda361721e67203846de",
+      "parent_metal_closure_lvs_ab_gate_open": false,
+      "speculative_parent_metal_added": false,
+      "closure_lvs_ab_run": false
+    },
     "iopad_in_evidence": {
       "schematic_iovss_connection_count": 4,
       "extracted_logical_iovss_component_count": 2,
@@ -398,10 +483,12 @@
     },
     "hypothesis_assessment": {
       "single_iopad_cell_corruption": "not_supported_by_15_cell_control",
-      "parent_io_ring_connectivity_required": "top_port_split_removed_by_five_pad_abutment_but_strict_lvs_still_fails",
+      "parent_io_ring_connectivity_required": "five_pad_abutment_restores_top_ports_but_official_iopadin_has_no_direct_m1_closure_for_dcn_dcp_duplicate_access_regions",
       "deck_label_promotion_or_substrate_split": "still_possible",
-      "io_leaf_extraction_or_device_normalization": "supported_by_five_leaf_nomatch_cross_reference_but_not_fully_identified",
+      "io_leaf_extraction_or_device_normalization": "official_dcn_dcp_strict_deep_nomatch_reproduced_but_library_vs_deck_resolution_not_identified",
       "combine_devices_as_fix": "not_supported_by_identical_cross_reference_counts",
+      "upstream_blocker_packaged": true,
+      "parent_metal_closure_lvs_ab_gate_open": false,
       "full_chip_attempt_3_authorized": false
     }
   },
@@ -415,19 +502,22 @@
     "direct sg13g2_inv_1 strict deep LVS passes 4/4 exactly; direct sg13g2_IOPadIn fails 6/7 with extra iovss$1",
     "all 15 IOPad cells fail as standalone strict-deep tops; iovdd$1 repeats in ten and iovss$1 repeats in four, so a single IOPadIn data defect is not supported",
     "five-pad parent wrapper restores an exact 6/6 top port set but strict LVS still fails in baseline and combine_devices variants",
-    "bounded small-LVSDB cross-reference finds five NoMatch IO leaf circuits; device/net/pin classifications are unchanged by combine_devices"
+    "bounded small-LVSDB cross-reference finds five NoMatch IO leaf circuits; device/net/pin classifications are unchanged by combine_devices",
+    "official DCN and DCP leaves independently reproduce cathode$1 and anode$1 strict-deep splits with NoMatch circuit cross-references",
+    "official sg13g2_IOPadIn direct M1 geometry does not place the duplicated DCN or DCP access regions on a shared parent component"
   ],
   "minimum_fix_hypotheses": [
-    "compare official CDL and SPICE plus deck device normalization for the five NoMatch IO leaf circuits, starting with a minimal DCNDiode/DCPDiode strict-deep exact-match case",
-    "use only PDK-documented IO hierarchy, abstract, or selective-flatten behavior in any next small A/B; never hide guard/substrate devices or use extracted netlists as reference",
-    "if official IO GDS and schematic cannot strict-match with the public deck, record a PDK IO-library/deck blocker and prepare a minimal upstream reproducer instead of launching full-chip attempt 3"
+    "obtain an upstream-supported PDK library or deck resolution for the packaged DCNDiode and DCPDiode strict-deep reproducer",
+    "after an upstream resolution, rerun only the two leaf cases and require exact LVS before any parent fixture",
+    "require a minimal parent IO strict-deep exact match before considering a new full-chip deep validation; do not launch full-chip attempt 3 as diagnosis"
   ],
   "forbidden_shortcuts": [
     "ignore_top_ports_mismatch",
     "implicit_nets",
     "disable_strict_ports",
     "disable_simplify",
-    "start_attempt_3_before_small_validation"
+    "speculative_parent_metal",
+    "start_attempt_3_before_upstream_supported_small_validation"
   ],
   "limitations": [
     "IHP Open PDK is preview; foundry tapeout requires IHP confirmation of frozen PDK, decks and waivers.",

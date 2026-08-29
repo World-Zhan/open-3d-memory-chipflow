@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-08-29T14:15:14.303130+00:00",
+  "classification": "local_upstream_issue_draft_not_published",
+  "title": "Official SG13G2 IO diode leaves fail strict-deep LVS",
+  "versions": {
+    "ihp_open_pdk_commit": "331c00484213b13414777eec1336ef5c29b969bd",
+    "container_reference": "hpretl/iic-osic-tools:2025.12",
+    "container_digest": "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521"
+  },
+  "strictness": {
+    "run_mode": "deep",
+    "strict_port_mode": true,
+    "flag_missing_ports": true,
+    "simplify_enabled": true,
+    "tap_extraction_enabled": true,
+    "ignore_top_ports_mismatch": false,
+    "implicit_nets": null,
+    "layout_netlist_bypass": false,
+    "waivers": [],
+    "deck_modified": false,
+    "full_chip_attempt_3": false
+  },
+  "official_inputs": {
+    "io_gds": {
+      "bytes": 71424000,
+      "sha256": "4281a855377b6a1ca46356e9391258dc14e8efc3b8051a65befc0fe9db3c7825",
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/gds/sg13g2_io.gds"
+    },
+    "io_cdl": {
+      "bytes": 38738,
+      "sha256": "7a30e902099e8a8f85e0ae853167904df3793357a793a7b4dc82237b72b3eec4",
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/cdl/sg13g2_io.cdl"
+    },
+    "io_spice": {
+      "bytes": 41078,
+      "sha256": "1d53ab7df431b717ef5aff43e1117c0224681d5cc84886da37a319280ee958d6",
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/spice/sg13g2_io.spice"
+    },
+    "lvs_runner": {
+      "bytes": 32007,
+      "sha256": "1079e9ac83f5b1b97a2c77c11143783556a391780772126ac3e5c5c300210ef3",
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/run_lvs.py"
+    },
+    "layer_definitions": {
+      "bytes": 43846,
+      "sha256": "2165a344d178eff60c2c79ad73108d74b8a1d2b1a5183e8b3492aa249887e58c",
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/layers_definitions.lvs"
+    },
+    "general_connections": {
+      "bytes": 2112,
+      "sha256": "bb61656b3564cf08558b83cf27d09854049eb30b5b7ade6610045d43c4b53e97",
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/general_connections.lvs"
+    },
+    "croc_parent_usage": {
+      "bytes": 10152,
+      "sha256": "c2ff7cecb54afd00baf1730596df2da7d32c0d374f9cda75fbafcb6fe4224c41",
+      "path": "upstream/croc/rtl/croc_chip.sv"
+    },
+    "croc_pad_ring": {
+      "bytes": 10538,
+      "sha256": "4bca60b59e8b4cd887c05342e98365ac5c8a03dafcf837ce58c8a91410fde0fa",
+      "path": "upstream/croc/openroad/src/padring.tcl"
+    }
+  },
+  "leaf_cases": [
+    {
+      "cell": "sg13g2_DCNDiode",
+      "status": "fail",
+      "schematic_ports": ["anode", "cathode", "guard"],
+      "extracted_ports": ["anode", "cathode", "cathode$1"],
+      "exact_shared_ports": 2,
+      "missing_schematic_ports": ["guard"],
+      "extra_extracted_ports": ["cathode$1"],
+      "expected_single_net": "cathode",
+      "observed_split_net": "cathode$1",
+      "minimal_inputs": {
+        "gds": {
+          "bytes": 114798,
+          "sha256": "aa14969a06a07d45e27316cfbccc46a262b943842474a85f26159da6841ea81f"
+        },
+        "cdl": {
+          "bytes": 349,
+          "sha256": "e6beb7b9b6eb3ac828ae597aebb68e8773ee5c0408ab3f0ca1867f652d930e43"
+        }
+      },
+      "cross_reference": {
+        "circuit_status": {"NoMatch": 1},
+        "device": {"layout_only": 3, "schematic_only": 1},
+        "net": {"layout_only": 4, "schematic_only": 2},
+        "pin": {"match": 4},
+        "parameter_comparison": "blocked_by_unpaired_devices"
+      },
+      "small_lvsdb": {
+        "bytes": 54778,
+        "sha256": "d47e30b72e521e2c416bd250d8317929bd75ff2ed337584d6276b3589db9b07d",
+        "path": "runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-leaf-diagnostic-20260829-001/sg13g2_DCNDiode/sg13g2_DCNDiode.lvsdb"
+      },
+      "command": "/usr/bin/python3 /work/upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/run_lvs.py --layout=/work/runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-leaf-diagnostic-20260829-001/sg13g2_DCNDiode/inputs/sg13g2_DCNDiode.gds --netlist=/work/runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-leaf-diagnostic-20260829-001/sg13g2_DCNDiode/inputs/sg13g2_DCNDiode.cdl --run_dir=/work/runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-leaf-diagnostic-20260829-001/sg13g2_DCNDiode --topcell=sg13g2_DCNDiode --run_mode=deep"
+    },
+    {
+      "cell": "sg13g2_DCPDiode",
+      "status": "fail",
+      "schematic_ports": ["anode", "cathode", "guard"],
+      "extracted_ports": ["guard", "cathode", "anode", "anode$1"],
+      "exact_shared_ports": 3,
+      "missing_schematic_ports": [],
+      "extra_extracted_ports": ["anode$1"],
+      "expected_single_net": "anode",
+      "observed_split_net": "anode$1",
+      "minimal_inputs": {
+        "gds": {
+          "bytes": 114836,
+          "sha256": "ca9ff63fc89df9056fd19dd3efd93add6d2fa79fa813072c6fe7bf49e42e5f4f"
+        },
+        "cdl": {
+          "bytes": 352,
+          "sha256": "4179ad18e54dd2b5a94bd019d2f38665d66ee690a0c0d7d7945e9a65d7026708"
+        }
+      },
+      "cross_reference": {
+        "circuit_status": {"NoMatch": 1},
+        "device": {"layout_only": 3, "schematic_only": 1},
+        "net": {"layout_only": 5, "schematic_only": 2},
+        "pin": {"match": 6},
+        "parameter_comparison": "blocked_by_unpaired_devices"
+      },
+      "small_lvsdb": {
+        "bytes": 64085,
+        "sha256": "a9b5782f3d1673a48b82c60b9e2d49254957ebc1be2f04f8f92e18513b38a98f",
+        "path": "runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-leaf-diagnostic-20260829-001/sg13g2_DCPDiode/sg13g2_DCPDiode.lvsdb"
+      },
+      "command": "/usr/bin/python3 /work/upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/run_lvs.py --layout=/work/runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-leaf-diagnostic-20260829-001/sg13g2_DCPDiode/inputs/sg13g2_DCPDiode.gds --netlist=/work/runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-leaf-diagnostic-20260829-001/sg13g2_DCPDiode/inputs/sg13g2_DCPDiode.cdl --run_dir=/work/runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-leaf-diagnostic-20260829-001/sg13g2_DCPDiode --topcell=sg13g2_DCPDiode --run_mode=deep"
+    }
+  ],
+  "parent_geometry": {
+    "parent_cell": "sg13g2_IOPadIn",
+    "m1_conductor_layers": [[8, 0], [8, 22]],
+    "m1_text_layer": [8, 25],
+    "cases": [
+      {
+        "leaf_cell": "sg13g2_DCNDiode",
+        "instance_transform": "r90 11920,7660",
+        "touching_parent_component_ids_by_access": [[1], [0]],
+        "shared_parent_component_ids": [],
+        "official_parent_direct_m1_closure_observed": false
+      },
+      {
+        "leaf_cell": "sg13g2_DCPDiode",
+        "instance_transform": "r90 11920,66660",
+        "touching_parent_component_ids_by_access": [[7], [6]],
+        "shared_parent_component_ids": [],
+        "official_parent_direct_m1_closure_observed": false
+      }
+    ],
+    "evidence": {
+      "bytes": 5952,
+      "sha256": "9c183265fb2070d58380ae378001c0281580f671cb26fda361721e67203846de",
+      "path": "runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-parent-metal-closure-20260829-001/official_parent_connectivity.json"
+    },
+    "speculative_parent_metal_added": false,
+    "closure_lvs_ab_run": false
+  },
+  "coexisting_full_chip_flat_mismatch": {
+    "schematic_formal_ports": 52,
+    "extracted_formal_ports": 135057,
+    "exact_shared_ports": 0,
+    "cause_boundary": "flat_child_label_promotion",
+    "attributed_to_io_leaf_blocker_only": false,
+    "evidence": "runs/croc-sg13g2-baseline-20260827-001/signoff.attempt-2/lvs/port_mismatch_analysis.json"
+  },
+  "artifacts": {
+    "leaf_summary": "runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-leaf-diagnostic-20260829-001/summary.json",
+    "parent_geometry": "runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-parent-metal-closure-20260829-001/official_parent_connectivity.json",
+    "issue_draft": "docs/issues/ihp-sg13g2-io-diode-strict-lvs-blocker.md"
+  },
+  "publication": {
+    "github_issue_created": false,
+    "remote_repository_created": false,
+    "pushed": false,
+    "authorization_required": true
+  },
+  "conclusion": {
+    "io_leaf_blocker_reproducible": true,
+    "root_cause_fully_identified": false,
+    "supported_io_leaf_abstract_or_selective_flatten_found": false,
+    "parent_metal_closure_lvs_ab_gate_open": false,
+    "full_chip_attempt_3_authorized": false,
+    "next_gate": "obtain an upstream-supported PDK/library/deck resolution, then rerun only the two strict-deep leaf cases"
+  }
+}
