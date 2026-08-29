@@ -77,6 +77,16 @@ X0 VDD VSS foo
         self.assertEqual(result["ignore_top_ports_mismatch_raw"], "")
         self.assertFalse(result["ignore_top_ports_mismatch_enabled"])
 
+    def test_top_level_pins_boolean_is_observed_from_log(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "lvs.log"
+            path.write_text("Selected TOP_LVL_PINS option: true\n", encoding="utf-8")
+            self.assertTrue(analyze.parse_log_options(path)["top_level_pins_option"])
+            path.write_text("Selected TOP_LVL_PINS option: false\n", encoding="utf-8")
+            self.assertFalse(analyze.parse_log_options(path)["top_level_pins_option"])
+            path.write_text("no top pin option in legacy log\n", encoding="utf-8")
+            self.assertIsNone(analyze.parse_log_options(path)["top_level_pins_option"])
+
     def test_attempt2_checkpoint_invariants(self):
         run = ROOT / "runs/croc-sg13g2-baseline-20260827-001"
         port_report = json.loads(

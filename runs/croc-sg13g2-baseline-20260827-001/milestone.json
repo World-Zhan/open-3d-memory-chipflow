@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-08-28T12:30:00Z",
+  "generated_at": "2026-08-29T03:41:42Z",
   "run_id": "croc-sg13g2-baseline-20260827-001",
   "overall_classification": "failed",
   "public_rule_signoff": false,
@@ -71,6 +71,27 @@
       "actual_command": "bash scripts/croc_signoff.sh",
       "front_door": "make RUN_ID=croc-sg13g2-baseline-20260827-001 croc-signoff",
       "evidence": ["logs/croc-signoff.attempt-2.log", "stage_evidence/croc-signoff.attempt-2.json", "signoff.attempt-2/signoff_summary.json"]
+    },
+    {
+      "name": "lvs-pin-boundary-ab",
+      "status": "diagnostic_pass_boundary_localized_lvs_fail",
+      "actual_command": "docker run --rm -v /home/james_zhan/projects/open-3d-memory-chipflow:/work hpretl/iic-osic-tools:2025.12 --skip python3 /work/scripts/run_lvs_pin_boundary_ab.py --repo-root /work --run-dir /work/runs/croc-sg13g2-baseline-20260827-001/lvs-pin-boundary-ab",
+      "front_door": "python3 scripts/run_lvs_pin_boundary_ab.py --help",
+      "evidence": ["lvs-pin-boundary-ab/input_manifest.json", "lvs-pin-boundary-ab/summary.json"]
+    },
+    {
+      "name": "lvs-iopad-isolation",
+      "status": "diagnostic_complete_root_cause_not_fully_identified",
+      "actual_command": "docker run --rm -v /home/james_zhan/projects/open-3d-memory-chipflow:/work hpretl/iic-osic-tools:2025.12 --skip python3 /work/scripts/run_lvs_pin_boundary_isolation.py --repo-root /work --run-dir /work/runs/croc-sg13g2-baseline-20260827-001/lvs-pin-boundary-isolation-20260829-001",
+      "front_door": "python3 scripts/run_lvs_pin_boundary_isolation.py --help",
+      "evidence": ["lvs-pin-boundary-isolation-20260829-001/summary.json"]
+    },
+    {
+      "name": "lvs-iopad-library-diagnostic",
+      "status": "diagnostic_complete_root_cause_not_fully_identified",
+      "actual_command": "docker run --rm -v /home/james_zhan/projects/open-3d-memory-chipflow:/work hpretl/iic-osic-tools:2025.12 --skip python3 /work/scripts/run_lvs_iopad_diagnostic.py --repo-root /work --run-dir /work/runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-diagnostic-20260829-001",
+      "front_door": "python3 scripts/run_lvs_iopad_diagnostic.py --help",
+      "evidence": ["lvs-iopad-diagnostic-20260829-001/summary.json", "lvs-iopad-diagnostic-20260829-001/iopad_in_detail.json"]
     }
   ],
   "physical": {
@@ -151,17 +172,181 @@
       "signoff.attempt-2/lvs/port_mismatch_analysis.json"
     ]
   },
+  "lvs_pin_boundary_diagnostics": {
+    "status": "complete_root_cause_not_fully_identified",
+    "strictness": {
+      "run_mode": "deep_and_flat_controlled_ab",
+      "strict_port_mode": true,
+      "flag_missing_ports": true,
+      "ignore_top_ports_mismatch": false,
+      "implicit_nets": null,
+      "simplify_enabled": true,
+      "disabled_or_weakened_checks": []
+    },
+    "combined_io_inverter_ab": {
+      "run_dir": "lvs-pin-boundary-ab",
+      "fixture": "one sg13g2_IOPadIn plus one sg13g2_inv_1 with ten explicit parent labels",
+      "variants": [
+        {
+          "name": "deep_top_pins_off",
+          "strict_lvs": "fail",
+          "schematic_formal_ports": 10,
+          "extracted_formal_ports": 10,
+          "exact_shared_ports": 10,
+          "top_port_set_exact": true
+        },
+        {
+          "name": "flat_top_pins_off",
+          "strict_lvs": "fail",
+          "schematic_formal_ports": 10,
+          "extracted_formal_ports": 11,
+          "exact_shared_ports": 0,
+          "top_port_set_exact": false,
+          "extra_formal_port": "guard|iovss|minus"
+        },
+        {
+          "name": "deep_top_pins_on",
+          "strict_lvs": "fail",
+          "schematic_formal_ports": 10,
+          "extracted_formal_ports": 10,
+          "exact_shared_ports": 10,
+          "top_port_set_exact": true
+        },
+        {
+          "name": "flat_top_pins_on",
+          "strict_lvs": "fail",
+          "schematic_formal_ports": 10,
+          "extracted_formal_ports": 11,
+          "exact_shared_ports": 0,
+          "top_port_set_exact": false,
+          "extra_formal_port": "guard|iovss|minus"
+        }
+      ],
+      "conclusion": "deep prevents flat child-label promotion at the fixture top boundary; exact top port set is not an LVS exact match",
+      "top_level_pins_effect_on_counts": "none_observed"
+    },
+    "direct_cell_isolation": {
+      "run_dir": "lvs-pin-boundary-isolation-20260829-001",
+      "inverter": {
+        "cell": "sg13g2_inv_1",
+        "strict_lvs": "pass",
+        "schematic_formal_ports": 4,
+        "extracted_formal_ports": 4,
+        "top_port_set_exact": true
+      },
+      "io_pad": {
+        "cell": "sg13g2_IOPadIn",
+        "strict_lvs": "fail",
+        "schematic_formal_ports": 6,
+        "extracted_formal_ports": 7,
+        "exact_shared_ports": 6,
+        "extra_extracted_formal_port": "iovss$1"
+      },
+      "scope_narrowed_to_io_pad_hierarchy": true,
+      "remaining_mismatch_isolated_to_io_substrate_boundary": false,
+      "root_cause_fully_identified": false
+    },
+    "iopad_library_diagnostic": {
+      "run_dir": "lvs-iopad-diagnostic-20260829-001",
+      "tested_cell_count": 15,
+      "strict_lvs_pass_count": 0,
+      "strict_lvs_fail_count": 15,
+      "extra_formal_port_frequency": {
+        "iovdd$1": 10,
+        "iovss$1": 4,
+        "pad|padres": 1
+      },
+      "cells_with_extra_iovss_component": [
+        "sg13g2_IOPadIOVdd",
+        "sg13g2_IOPadIn",
+        "sg13g2_IOPadVdd",
+        "sg13g2_IOPadVss"
+      ],
+      "cells_with_extra_iovdd_component": [
+        "sg13g2_IOPadAnalog",
+        "sg13g2_IOPadInOut16mA",
+        "sg13g2_IOPadInOut30mA",
+        "sg13g2_IOPadInOut4mA",
+        "sg13g2_IOPadOut16mA",
+        "sg13g2_IOPadOut30mA",
+        "sg13g2_IOPadOut4mA",
+        "sg13g2_IOPadTriOut16mA",
+        "sg13g2_IOPadTriOut30mA",
+        "sg13g2_IOPadTriOut4mA"
+      ],
+      "cells_with_composite_formal_ports": {
+        "sg13g2_IOPadAnalog": ["pad|padres"]
+      },
+      "cells_with_missing_schematic_ports": {
+        "sg13g2_IOPadAnalog": ["pad", "padres", "vdd"],
+        "sg13g2_IOPadIOVdd": ["vdd"],
+        "sg13g2_IOPadIOVss": ["vdd"],
+        "sg13g2_IOPadVdd": ["iovdd"],
+        "sg13g2_IOPadVss": ["vdd"]
+      },
+      "strict_lvs_fail_cells": [
+        "sg13g2_IOPadAnalog",
+        "sg13g2_IOPadIOVdd",
+        "sg13g2_IOPadIOVss",
+        "sg13g2_IOPadIn",
+        "sg13g2_IOPadInOut16mA",
+        "sg13g2_IOPadInOut30mA",
+        "sg13g2_IOPadInOut4mA",
+        "sg13g2_IOPadOut16mA",
+        "sg13g2_IOPadOut30mA",
+        "sg13g2_IOPadOut4mA",
+        "sg13g2_IOPadTriOut16mA",
+        "sg13g2_IOPadTriOut30mA",
+        "sg13g2_IOPadTriOut4mA",
+        "sg13g2_IOPadVdd",
+        "sg13g2_IOPadVss"
+      ],
+      "single_cell_data_problem_supported": false,
+      "repeated_across_iopad_library": true,
+      "root_cause_fully_identified": false,
+      "full_chip_135057_port_mismatch_attributed_to_io_only": false
+    },
+    "iopad_in_evidence": {
+      "schematic_iovss_connection_count": 4,
+      "extracted_logical_iovss_component_count": 2,
+      "extracted_components": {
+        "iovss": ["sg13g2_DCNDiode"],
+        "iovss$1": ["sg13g2_LevelDown", "sg13g2_DCPDiode", "ptap1"]
+      },
+      "substrate_guard_net": "$1",
+      "substrate_guard_connections": ["sg13g2_DCNDiode", "sg13g2_LevelDown", "sg13g2_DCPDiode", "vss-ptap1", "iovss$1-ptap1"],
+      "direct_iovss_text_count": 15,
+      "direct_iovss_text_layers": [
+        {"name": "Metal3", "gds_layer_datatype": "30/25", "count": 3},
+        {"name": "Metal4", "gds_layer_datatype": "50/25", "count": 3},
+        {"name": "Metal5", "gds_layer_datatype": "67/25", "count": 3},
+        {"name": "TopMetal1", "gds_layer_datatype": "126/25", "count": 3},
+        {"name": "TopMetal2", "gds_layer_datatype": "134/25", "count": 3}
+      ],
+      "coordinate_unit": "dbu_0.001um",
+      "detail": "lvs-iopad-diagnostic-20260829-001/iopad_in_detail.json"
+    },
+    "hypothesis_assessment": {
+      "single_iopad_cell_corruption": "not_supported_by_15_cell_control",
+      "parent_io_ring_connectivity_required": "supported_but_not_yet_proven",
+      "deck_label_promotion_or_substrate_split": "still_possible",
+      "full_chip_attempt_3_authorized": false
+    }
+  },
   "root_cause_evidence": [
     "scripts/croc_signoff.sh runs full-chip LVS in flat mode",
     "IHP deck reads metal text on datatype 25 and connects it to conductive nets",
     "attempt 2 flat extraction observed 352964 M1, 1673352 M2 and 716860 M3 text labels",
     "TOP_LVL_PINS=false only skips make_top_level_pins after extraction",
-    "Croc IHP LibreLane reference configuration selects deep LVS"
+    "Croc IHP LibreLane reference configuration selects deep LVS",
+    "minimal combined fixture: deep preserves the exact ten-port top set while flat yields 11 composite/internal formal ports; all four strict comparisons still fail",
+    "direct sg13g2_inv_1 strict deep LVS passes 4/4 exactly; direct sg13g2_IOPadIn fails 6/7 with extra iovss$1",
+    "all 15 IOPad cells fail as standalone strict-deep tops; iovdd$1 repeats in ten and iovss$1 repeats in four, so a single IOPadIn data defect is not supported"
   ],
   "minimum_fix_hypotheses": [
-    "validate deep hierarchy on a small IO-plus-standard-cell structure, then switch full-chip LVS to deep only if its top ports are exact",
-    "if deep still leaks ports, audit datatype-25 text and datatype-2 pin propagation at top, IO, SRAM and standard-cell boundaries",
-    "verify stream-out emits only intended chip-level pin texts at the top boundary"
+    "build a minimal parent wrapper that physically joins every duplicated IOVSS/IOVDD access region using representative IO-ring metal, then require strict-deep exact match",
+    "compare the wrapper with Croc's actual IO-ring routing and top text placement to distinguish parent-connectivity intent from deck label promotion or substrate/guard splitting",
+    "only after that small wrapper is exact may the full-chip runner be changed to deep and a new full attempt be scheduled"
   ],
   "forbidden_shortcuts": [
     "ignore_top_ports_mismatch",

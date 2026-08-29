@@ -114,6 +114,77 @@ formal-port 分类：
 - `signoff.attempt-2/croc.cdl`（6,120,723 bytes）
 - `signoff.attempt-2/lvs/port_mismatch_analysis.json`
 
+## Strict-LVS pin/extraction boundary 定点诊断（2026-08-29）
+
+本节是诊断检查点，不改变 A 轨验收状态：full-chip attempt 2 仍为 **DRC FAIL / LVS FAIL**。以下任一“端口集合 exact”都不能写成 LVS exact match。
+
+所有用例保持：strict port mode、`flag_missing_ports=true`、simplify 开启、`ignore_top_ports_mismatch=false`、无 implicit nets、无 waiver，且没有启动 full-chip attempt 3。
+
+### 1. IO + inverter 的 deep/flat × TOP_LVL_PINS A/B
+
+输入由一个 `sg13g2_IOPadIn`、一个 `sg13g2_inv_1` 和 10 个显式父级标签组成。命令与完整结果见：
+
+- `lvs-pin-boundary-ab/input_manifest.json`
+- `lvs-pin-boundary-ab/summary.json`
+- 每个变体的 `variants/<name>/command.txt`、`.log`、extracted netlist 和小型 `.lvsdb`
+
+| 变体 | schematic ports | extracted ports | exact shared | 顶层端口集合 | strict LVS |
+|---|---:|---:|---:|---|---|
+| deep / TOP_LVL_PINS off | 10 | 10 | 10 | exact | **FAIL** |
+| flat / TOP_LVL_PINS off | 10 | 11 | 0 | composite + `guard\|iovss\|minus` 泄漏 | **FAIL** |
+| deep / TOP_LVL_PINS on | 10 | 10 | 10 | exact | **FAIL** |
+| flat / TOP_LVL_PINS on | 10 | 11 | 0 | composite + `guard\|iovss\|minus` 泄漏 | **FAIL** |
+
+结论：`deep` 确实阻止了本 fixture 的 flat child-label promotion；`TOP_LVL_PINS` 对端口计数没有可观察影响。但是两个 deep 用例仍为 `ERROR : Netlists don't match`，所以只能说“顶层 pin boundary 已正确”，不能说 LVS 通过。
+
+### 2. inverter-only 与 IOPadIn-only 隔离
+
+结果见 `lvs-pin-boundary-isolation-20260829-001/summary.json`：
+
+| 直接 PDK cell | schematic ports | extracted ports | strict deep LVS | 结论 |
+|---|---:|---:|---|---|
+| `sg13g2_inv_1` | 4 | 4 | **PASS** | 叶级标准单元与 deck 可 exact match |
+| `sg13g2_IOPadIn` | 6 | 7 | **FAIL** | 6 个预期端口均存在，另有 `iovss$1` |
+
+这只把范围缩小到 IO pad 层次；`remaining_mismatch_isolated_to_io_substrate_boundary=false`，根因尚未完全确定。
+
+### 3. IOPadIn 文本、连通分量与 guard/substrate 证据
+
+低内存明细位于 `lvs-iopad-diagnostic-20260829-001/iopad_in_detail.json`。GDS DBU 为 0.001 µm；IOPadIn 有 15 个直接 `iovss` datatype-25 文本：Metal3=`30/25`、Metal4=`50/25`、Metal5=`67/25`、TopMetal1=`126/25`、TopMetal2=`134/25` 各 3 个。完整坐标均在该 JSON；示例为：
+
+| 层 | 示例文本坐标（µm） |
+|---|---|
+| Metal3 `30/25` | `(42.150,24.180)`、`(41.350,51.070)`、`(41.690,132.015)` |
+| Metal4 `50/25` | `(41.275,22.280)`、`(41.800,50.075)`、`(39.615,131.455)` |
+| Metal5 `67/25` | `(42.065,22.195)`、`(40.840,49.815)`、`(41.190,131.455)` |
+| TopMetal1 `126/25` | `(41.800,22.545)`、`(41.015,50.340)`、`(42.150,131.975)` |
+| TopMetal2 `134/25` | `(47.220,15.815)`、`(42.325,43.170)`、`(54.125,130.230)` |
+
+schematic 把同一个 `iovss` 用于 `LevelDown`、`DCNDiode`、`DCPDiode` 和 IOVSS `ptap1`。deep extracted netlist 却形成两个 formal component：
+
+- `iovss`：只连接 `sg13g2_DCNDiode`；
+- `iovss$1`：连接 `sg13g2_LevelDown`、`sg13g2_DCPDiode` 和面积 `5379.0466 p` 的 `ptap1`；
+- 局部 substrate/guard net `$1` 同时连接上述三个子电路、`vss` ptap 和 `iovss$1` ptap。
+
+这证明 IOVSS 在 standalone cell extraction 中分成两个连通分量，但尚不能仅凭此判定是 GDS cell 错误、deck label promotion，还是原本就要求父级 IO-ring 金属将多个 access region 合并。
+
+### 4. 同库 15 个 IOPad cell 对照
+
+`lvs-iopad-diagnostic-20260829-001/summary.json` 记录全部命令与结果：15/15 standalone IOPad strict-deep LVS 均 FAIL；`iovdd$1` 在 10 个 cell 重复，`iovss$1` 在 4 个 cell 重复，`pad\|padres` 在 analog pad 出现 1 次。由此：
+
+| 观测类别 | 具体 IOPad cell |
+|---|---|
+| extra `iovss$1` | `sg13g2_IOPadIOVdd`、`sg13g2_IOPadIn`、`sg13g2_IOPadVdd`、`sg13g2_IOPadVss` |
+| extra `iovdd$1` | `sg13g2_IOPadAnalog`、`sg13g2_IOPadInOut16mA/30mA/4mA`、`sg13g2_IOPadOut16mA/30mA/4mA`、`sg13g2_IOPadTriOut16mA/30mA/4mA` |
+| composite `pad\|padres` | `sg13g2_IOPadAnalog` |
+| 无 extra，但缺 schematic `vdd` | `sg13g2_IOPadIOVss` |
+
+全部 15 个 cell 的 strict-LVS 结论都是 **FAIL**，没有 PASS。上述重复性排除了“只有 IOPadIn 一颗 cell 异常”，但不能把 full-chip 的 135,057 个 formal ports 全部归因于 IO：full-chip flat extraction 还明确包含标准单元和其他内部标签提升，故 `full_chip_135057_port_mismatch_attributed_to_io_only=false`。
+
+- 不支持“仅 `sg13g2_IOPadIn` 单 cell 数据损坏”；
+- 支持“IO 库层次/父级 ring 连接语义是关键变量”，但还未证明是哪一处实现错误；
+- 下一实验必须显式复现父级 IO-ring 连接，不能通过 implicit nets 或忽略端口掩盖。
+
 ## 直接生成原因与最小修复假设
 
 源码与运行证据形成闭环：
@@ -126,19 +197,20 @@ formal-port 分类：
 
 按证据优先级排列的最小修复假设：
 
-1. **首选**：在小型 IO+标准单元代表结构上验证 `deep` 能保留层次并只暴露预期顶层端口；通过后再把本项目 full-chip LVS 从 flat 改为 deep。
-2. 若 deep 仍产生额外端口，只检查 top/IO/macro 的 datatype-25 label 与 datatype-2 pin shape 传播，限制错误的子层 label 暴露；不删除真实顶层端口。
-3. 核对 OpenROAD/KLayout stream-out 的 top pin text 是否只包含 52 个芯片端口，并让 pad-side、core-side alias 在层次边界内正确连接。
+1. **首选**：构建最小父级 wrapper，用代表性的 IO-ring 金属真实连接所有重复 IOVSS/IOVDD access region；要求 strict-deep LVS exact match。
+2. 将该 wrapper 与 Croc 实际 IO-ring routing/top text 对比，区分父级连接意图、deck label promotion 与 substrate/guard split；不得先验选择一种解释。
+3. 只有小 wrapper exact 后，才允许把 full-chip runner 改为 deep 并安排新的 full attempt。
 
 明确禁止：`ignore_top_ports_mismatch`、implicit nets、关闭 strict port、关闭 simplify，或在未完成小型验证前启动 full attempt 3。
 
 ## 下一步门槛
 
-1. 先提交并推送本诊断脚本、测试和里程碑。
-2. 对最小代表结构做 deep/flat pin-boundary A/B 验证；预期 deep 顶层 formal ports 等于该结构的 schematic 端口集合。
-3. 通过后才修改 full-chip runner 并安排 attempt 3；随后再处理 pad/sealring 和 density DRC。
-4. 只有 DRC=0、顶层 LVS exact match、无未布通网络、STA/PDN 证据齐全时，A 轨才可称公开规则签核级。
-5. A 轨收敛后才启动 B 轨；B 始终标记 `research_only`。C 轨仍需等待两条原版流程跑绿。
+1. 完成并提交当前 A/B、IOPad library 诊断脚本、测试和里程碑；公开远端仍需单独发布授权。
+2. 建立连接多个 IOVSS/IOVDD access region 的最小父级 IO-ring wrapper，继续 strict-deep LVS；必须保留真实 guard/substrate/ptap 设备。
+3. wrapper exact 前不得修改 full-chip runner，不得启动 attempt 3；wrapper exact 后仍需审查 Croc 52 个 top pin text 与实际 ring connectivity。
+4. 新 full-chip LVS 只有 exact match 才能继续处理 pad/sealring 与 density DRC；不得把 deep 10/10 port-set exact 当作 LVS exact。
+5. 只有 DRC=0、顶层 LVS exact match、无未布通网络、STA/PDN 证据齐全时，A 轨才可称公开规则签核级。
+6. A 轨收敛后才启动 B 轨；B 始终标记 `research_only`。C 轨仍需等待两条原版流程跑绿。
 
 ## 查看方式
 

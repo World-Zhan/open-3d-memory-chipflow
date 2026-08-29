@@ -142,10 +142,11 @@ def parse_log_options(path: Path) -> dict[str, Any]:
     runtime_match = re.search(r"LVS Total Run time\s+([0-9.]+)\s+seconds", text)
     memory_values = [int(value) for value in re.findall(r"Memory Usage \((\d+)K\)", text)]
     ignore_value = re.search(r"Selected IGNORE_TOP_PORTS_MISMATCH option:[ \t]*([^\r\n]*)", text)
+    top_pins_value = re.search(r"Selected TOP_LVL_PINS option:[ \t]*(true|false)", text, re.IGNORECASE)
     return {
         "run_mode": mode_match.group(1) if mode_match else None,
         "schematic_path_logged": netlist_match.group(1).strip() if netlist_match else None,
-        "top_level_pins_option": False if "Selected TOP_LVL_PINS option: false" in text else None,
+        "top_level_pins_option": None if top_pins_value is None else top_pins_value.group(1).lower() == "true",
         "strict_port_mode": "Comparison in strict port mode" in text,
         "flag_missing_ports": "flag_missing_ports enabled" in text,
         "ignore_top_ports_mismatch_raw": ignore_value.group(1).strip() if ignore_value else None,
