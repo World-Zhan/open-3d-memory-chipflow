@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-08-29T14:15:14Z",
+  "generated_at": "2026-08-30T09:03:24Z",
   "run_id": "croc-sg13g2-baseline-20260827-001",
   "overall_classification": "failed",
   "public_rule_signoff": false,
@@ -35,6 +35,20 @@
     "container_reference": "hpretl/iic-osic-tools:2025.12",
     "container_digest": "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
     "pdk_status": "preview"
+  },
+  "publication": {
+    "source_repository": "World-Zhan/open-3d-memory-chipflow",
+    "source_repository_url": "https://github.com/World-Zhan/open-3d-memory-chipflow",
+    "visibility": "PUBLIC",
+    "default_branch": "main",
+    "initial_remote_commit": "864da1c28b89cb7aa134cbadad24496b746d659c",
+    "upstream_repository": "IHP-GmbH/IHP-Open-PDK",
+    "upstream_repository_url": "https://github.com/IHP-GmbH/IHP-Open-PDK",
+    "upstream_issue_number": 1130,
+    "upstream_issue_url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/1130",
+    "upstream_issue_state_at_recording": "OPEN",
+    "published_at": "2026-08-30T09:03:24Z",
+    "technical_conclusion_changed": false
   },
   "stages": [
     {
@@ -378,7 +392,7 @@
     },
     "iopad_leaf_blocker": {
       "run_dir": "lvs-iopad-leaf-diagnostic-20260829-001",
-      "status": "complete_reproducible_upstream_blocker_not_published",
+      "status": "complete_reproducible_upstream_issue_1130_published",
       "strictness": {
         "run_mode": "deep",
         "strict_port_mode": true,
@@ -434,7 +448,10 @@
       "full_chip_135057_port_mismatch_attributed_to_io_only": false,
       "full_chip_attempt_3_authorized": false,
       "issue_draft": "docs/issues/ihp-sg13g2-io-diode-strict-lvs-blocker.md",
-      "machine_report": "reports/blockers/ihp-sg13g2-io-diode-strict-lvs.json"
+      "machine_report": "reports/blockers/ihp-sg13g2-io-diode-strict-lvs.json",
+      "upstream_issue_number": 1130,
+      "upstream_issue_url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/1130",
+      "published": true
     },
     "iopad_parent_m1_geometry_gate": {
       "run_dir": "lvs-iopad-parent-metal-closure-20260829-001",

@@ -15,16 +15,25 @@ class IopadBlockerReportTests(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.report = json.loads(REPORT.read_text(encoding="utf-8"))
 
-    def test_report_is_local_and_not_published(self) -> None:
+    def test_report_records_publication_without_changing_conclusion(self) -> None:
         self.assertEqual(
             self.report["classification"],
-            "local_upstream_issue_draft_not_published",
+            "upstream_issue_published",
         )
         publication = self.report["publication"]
-        self.assertFalse(publication["github_issue_created"])
-        self.assertFalse(publication["remote_repository_created"])
-        self.assertFalse(publication["pushed"])
-        self.assertTrue(publication["authorization_required"])
+        self.assertTrue(publication["github_issue_created"])
+        self.assertEqual(publication["github_issue_number"], 1130)
+        self.assertEqual(
+            publication["github_issue_url"],
+            "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/1130",
+        )
+        self.assertTrue(publication["remote_repository_created"])
+        self.assertEqual(publication["remote_repository_visibility"], "PUBLIC")
+        self.assertEqual(publication["remote_default_branch"], "main")
+        self.assertTrue(publication["pushed"])
+        self.assertFalse(publication["authorization_required"])
+        self.assertFalse(self.report["conclusion"]["root_cause_fully_identified"])
+        self.assertFalse(self.report["conclusion"]["full_chip_attempt_3_authorized"])
 
     def test_two_official_leaf_failures_are_preserved(self) -> None:
         cases = {case["cell"]: case for case in self.report["leaf_cases"]}

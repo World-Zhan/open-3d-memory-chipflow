@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-08-30T08:48:35.531066+00:00",
-  "classification": "local_upstream_issue_draft_not_published",
+  "generated_at": "2026-08-30T09:03:24Z",
+  "classification": "upstream_issue_published",
   "title": "Official SG13G2 IO diode leaves fail strict-deep LVS",
   "versions": {
     "ihp_open_pdk_commit": "331c00484213b13414777eec1336ef5c29b969bd",
@@ -241,10 +241,20 @@
     "issue_draft": "docs/issues/ihp-sg13g2-io-diode-strict-lvs-blocker.md"
   },
   "publication": {
-    "github_issue_created": false,
-    "remote_repository_created": false,
-    "pushed": false,
-    "authorization_required": true
+    "github_issue_created": true,
+    "github_issue_number": 1130,
+    "github_issue_url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/1130",
+    "github_issue_state_at_recording": "OPEN",
+    "github_issue_created_at": "2026-08-30T09:03:24Z",
+    "upstream_repository": "IHP-GmbH/IHP-Open-PDK",
+    "upstream_repository_url": "https://github.com/IHP-GmbH/IHP-Open-PDK",
+    "remote_repository_created": true,
+    "remote_repository_url": "https://github.com/World-Zhan/open-3d-memory-chipflow",
+    "remote_repository_visibility": "PUBLIC",
+    "remote_default_branch": "main",
+    "initial_remote_commit": "864da1c28b89cb7aa134cbadad24496b746d659c",
+    "pushed": true,
+    "authorization_required": false
   },
   "conclusion": {
     "io_leaf_blocker_reproducible": true,

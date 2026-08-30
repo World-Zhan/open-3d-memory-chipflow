@@ -1,6 +1,6 @@
 # Croc / IHP SG13G2 基线里程碑（Attempt 2 终局）
 
-生成日期：2026-08-29<br>
+生成日期：2026-08-30<br>
 Run ID：`croc-sg13g2-baseline-20260827-001`<br>
 总体结论：**未签核通过**。RTL、门级仿真、APR 和 GDS 已跑通；公开 DRC 与顶层 LVS 均失败。不得称为 `public_rule_signoff` 或 foundry tapeout-ready。
 
@@ -240,7 +240,7 @@ nets、waiver、`ignore_top_ports_mismatch`、`--layout_netlist` 或修改 deck�
 
 完整命令、完整 SHA-256、输入路径和 cross-reference 分类已保存于：
 
-- `docs/issues/ihp-sg13g2-io-diode-strict-lvs-blocker.md`：本地上游 issue 草稿；**未发布**。
+- `docs/issues/ihp-sg13g2-io-diode-strict-lvs-blocker.md`：已发布为 [IHP-Open-PDK #1130](https://github.com/IHP-GmbH/IHP-Open-PDK/issues/1130)。
 - `reports/blockers/ihp-sg13g2-io-diode-strict-lvs.json`：机读 blocker 索引。
 - `lvs-iopad-leaf-diagnostic-20260829-001/summary.json`：两颗 leaf 的完整结果。
 - 两颗 leaf 目录内的 `.lvsdb`、extracted netlist、log 和 bounded cross-reference JSON：运行大文件按 `.gitignore` 保留在本地，不进入 Git。
@@ -267,6 +267,15 @@ hierarchy 用法问题**。这不等于已完全识别根因；也不等于 full
 135,057-port mismatch 全由 IO 引起。两者并存：前者是小型 deep leaf
 结构 mismatch，后者首先是 full-chip flat child-label promotion。
 
+## 公开发布检查点
+
+- 公开复现仓库：[World-Zhan/open-3d-memory-chipflow](https://github.com/World-Zhan/open-3d-memory-chipflow)，visibility=`PUBLIC`，默认分支 `main`。
+- 首次远端 commit：`864da1c28b89cb7aa134cbadad24496b746d659c`。
+- 上游仓库：[IHP-GmbH/IHP-Open-PDK](https://github.com/IHP-GmbH/IHP-Open-PDK)，由 pinned submodule URL 核实。
+- 上游问题：[IHP-Open-PDK #1130](https://github.com/IHP-GmbH/IHP-Open-PDK/issues/1130)，状态记录为 `OPEN`。
+- 公开发布不改变技术结论：A 轨仍为 DRC/LVS FAIL；`652` 与 `1585/12` 仍是不同 DRC 口径；full-chip strict LVS 仍为 `52 vs 135057`、exact shared `0`。
+- 未运行新的 KLayout/OpenROAD/LVS/DRC，也未授权 full-chip attempt 3。
+
 ## 直接生成原因与最小修复假设
 
 源码与运行证据形成闭环：
@@ -289,7 +298,7 @@ hierarchy 用法问题**。这不等于已完全识别根因；也不等于 full
 
 ## 下一步门槛
 
-1. 保留本地 blocker 草稿，不发布；由用户另行授权后才能向 IHP/GitHub 公开提交。
+1. 跟踪已发布的 [IHP-Open-PDK #1130](https://github.com/IHP-GmbH/IHP-Open-PDK/issues/1130)，等待上游确认库数据、deck 或受支持 hierarchy 用法。
 2. 获得上游支持的 PDK/library/deck 解决方案后，只重跑 DCN/DCP 两个 strict-deep leaf case，目标必须是 LVS exact match。
 3. 两颗 leaf exact 后再运行一个最小父级 IO strict-deep fixture；在此之前不得修改 full-chip runner，不得启动 attempt 3。
 4. 后续 full-chip LVS 只有 exact match 才能继续处理 pad/sealring 与 density DRC；不得把 6/6 或 10/10 port-set exact 当作 LVS exact。

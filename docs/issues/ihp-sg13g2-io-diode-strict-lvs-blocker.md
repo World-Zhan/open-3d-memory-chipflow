@@ -1,9 +1,15 @@
-# [Draft] SG13G2 IO diode leaves do not strict-deep LVS-match the official schematics
+# SG13G2 IO diode leaves do not strict-deep LVS-match the official schematics
 
-Status: **local upstream issue draft; not published**. This document records a
-minimal reproducer for discussion with the IHP Open PDK maintainers. It does
-not authorize a GitHub issue, repository publication, deck change, waiver, or
-full-chip signoff attempt.
+This report records a minimal reproducer for discussion with the IHP Open PDK
+maintainers. It does not request a deck change, waiver, weakened rule, or
+full-chip retry.
+
+Published upstream: https://github.com/IHP-GmbH/IHP-Open-PDK/issues/1130
+Public reproduction repository: https://github.com/World-Zhan/open-3d-memory-chipflow
+
+**Suggested priority:** Medium. The mismatch blocks strict LVS of the official
+IO leaves in the public preview PDK, but this report does not claim a production
+foundry-flow regression.
 
 ## Summary
 
@@ -24,6 +30,26 @@ Observed extraction:
 Both KLayout cross-references classify the leaf circuit as `NoMatch`.
 Devices and nets are layout-only versus schematic-only, so this is not a
 paired parameter-tolerance failure.
+
+## Scope and non-claims
+
+- In the related full-chip run, `maximal_raw_error_count=652` is the raw count
+  from the maximal-rule log. The merged `*_full.lyrdb` independently contains
+  `marker_total=1585` markers in `nonempty_rule_categories=12`; these are
+  different DRC scopes and are not interchangeable.
+- The separate flat full-chip LVS boundary is a strict mismatch: 52 schematic
+  formal ports versus 135,057 extracted formal ports, with zero exact-name
+  shared ports.
+- A deep combined fixture can recover an exact top-port set while its netlists
+  still mismatch. Port-set equality is not LVS exact match.
+- All 15 official standalone IOPad cells tested with strict-deep extraction
+  failed (`0/15` strict pass). This excludes a single-IOPadIn-only defect, but
+  does not prove one common cause for all pads.
+- The DCN/DCP leaf blocker and the 135,057-port flat label-promotion symptom
+  coexist. The IO leaf blocker is not claimed as the sole cause of the
+  full-chip mismatch, and the root cause is not fully identified.
+- No waiver, implicit net, `ignore_top_ports_mismatch`, disabled tap extraction,
+  relaxed comparison, or modified deck is requested or used.
 
 ## Environment and immutable inputs
 
@@ -140,3 +166,10 @@ flow and provide a matching regression. Please clarify:
 Until an upstream-supported resolution exists, the project will not change
 the deck, hide guard/substrate devices, add implicit nets, or start Croc
 full-chip attempt 3.
+
+## Public evidence
+
+- Reproduction repository: https://github.com/World-Zhan/open-3d-memory-chipflow
+- Machine-readable blocker report: https://github.com/World-Zhan/open-3d-memory-chipflow/blob/864da1c28b89cb7aa134cbadad24496b746d659c/reports/blockers/ihp-sg13g2-io-diode-strict-lvs.json
+- Auditable milestone and separate DRC scopes: https://github.com/World-Zhan/open-3d-memory-chipflow/blob/864da1c28b89cb7aa134cbadad24496b746d659c/runs/croc-sg13g2-baseline-20260827-001/MILESTONE.md
+- Full-chip streaming port analysis: https://github.com/World-Zhan/open-3d-memory-chipflow/blob/864da1c28b89cb7aa134cbadad24496b746d659c/runs/croc-sg13g2-baseline-20260827-001/signoff.attempt-2/lvs/port_mismatch_analysis.json
