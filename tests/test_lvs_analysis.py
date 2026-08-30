@@ -87,6 +87,35 @@ X0 VDD VSS foo
             path.write_text("no top pin option in legacy log\n", encoding="utf-8")
             self.assertIsNone(analyze.parse_log_options(path)["top_level_pins_option"])
 
+    def test_negative_deck_runtime_is_null_but_raw_log_is_preserved(self):
+        line = (
+            "2026-08-30 10:37:06 +0200: Memory Usage (474824K) : "
+            "LVS Total Run time -1.431181 seconds"
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "lvs.log"
+            path.write_text(line + "\n", encoding="utf-8")
+            result = analyze.parse_log_options(path)
+        self.assertIsNone(result["deck_runtime_seconds"])
+        self.assertEqual(result["deck_runtime_raw_seconds"], -1.431181)
+        self.assertFalse(result["deck_runtime_valid"])
+        self.assertEqual(
+            result["deck_runtime_invalid_reason"],
+            "negative_runtime_reported_by_deck",
+        )
+        self.assertEqual(result["deck_runtime_log_line"], line)
+
+    def test_nonnegative_deck_runtime_remains_valid(self):
+        line = "LVS Total Run time 0.979272 seconds"
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "lvs.log"
+            path.write_text(line + "\n", encoding="utf-8")
+            result = analyze.parse_log_options(path)
+        self.assertEqual(result["deck_runtime_seconds"], 0.979272)
+        self.assertEqual(result["deck_runtime_raw_seconds"], 0.979272)
+        self.assertTrue(result["deck_runtime_valid"])
+        self.assertIsNone(result["deck_runtime_invalid_reason"])
+
     def test_attempt2_checkpoint_invariants(self):
         run = ROOT / "runs/croc-sg13g2-baseline-20260827-001"
         port_report = json.loads(

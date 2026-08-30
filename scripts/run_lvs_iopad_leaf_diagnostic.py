@@ -234,6 +234,46 @@ def export_minimal_gds(
     }
 
 
+def build_gds_input_identity(
+    source_gds_record: dict[str, Any],
+    generated_gds_record: dict[str, Any],
+    layout_manifest: dict[str, Any],
+    cell_name: str,
+) -> dict[str, Any]:
+    """Separate stable source identity from run-specific GDSII file bytes."""
+    return {
+        "identity_semantics": (
+            "stable identity is the pinned official source GDS SHA-256, PDK commit, "
+            "source cell name, and recorded geometry facts; it is not the generated "
+            "GDS raw SHA-256"
+        ),
+        "stable_source_cell_identity": {
+            "ihp_pdk_commit": PDK_COMMIT,
+            "official_source_gds_sha256": source_gds_record["sha256"],
+            "official_source_gds_bytes": source_gds_record["bytes"],
+            "source_cell": cell_name,
+            "source_layout_dbu": layout_manifest["source_layout_dbu"],
+            "source_cell_bbox_dbu": layout_manifest["bbox_dbu"],
+            "direct_shape_counts_by_layer_datatype": layout_manifest[
+                "direct_shape_counts_by_layer_datatype"
+            ],
+            "direct_text_label_count": len(layout_manifest["direct_text_labels"]),
+            "export_selection": layout_manifest["export_selection"],
+        },
+        "run_specific_generated_file": {
+            "path": generated_gds_record["path"],
+            "bytes": generated_gds_record["bytes"],
+            "raw_sha256": generated_gds_record["sha256"],
+            "raw_sha256_scope": (
+                "run-specific byte identity; GDSII BGNLIB/BGNSTR timestamps may change "
+                "across equivalent exports"
+            ),
+            "bitwise_deterministic_across_exports": False,
+        },
+        "semantic_geometry_digest_claimed": False,
+    }
+
+
 def build_leaf_detail(
     cell_name: str,
     split_net: str,
@@ -359,6 +399,8 @@ def main() -> int:
     source_cdl = pdk / "libs.ref/sg13g2_io/cdl/sg13g2_io.cdl"
     runner = pdk / "libs.tech/klayout/tech/lvs/run_lvs.py"
     library_text = source_cdl.read_text(encoding="utf-8", errors="replace")
+    source_gds_record = file_record(source_gds, repo)
+    source_cdl_record = file_record(source_cdl, repo)
     support = collect_public_support(repo)
     summary: dict[str, Any] = {
         "schema_version": "1.0.0",
@@ -378,8 +420,8 @@ def main() -> int:
             "forbidden_or_unused_options": list(FORBIDDEN_OR_UNUSED_OPTIONS),
         },
         "official_inputs": {
-            "io_gds": file_record(source_gds, repo),
-            "io_cdl": file_record(source_cdl, repo),
+            "io_gds": source_gds_record,
+            "io_cdl": source_cdl_record,
             "runner": file_record(runner, repo),
         },
         "public_pdk_deck_support_audit": support,
@@ -399,6 +441,7 @@ def main() -> int:
         schematic_path.write_text(
             build_minimal_cdl(library_text, cell_name), encoding="utf-8"
         )
+        generated_layout_record = file_record(layout_path, repo)
         command = build_variant_command(
             sys.executable,
             runner,
@@ -461,9 +504,22 @@ def main() -> int:
             "split_net": specification["split_net"],
             "device_class": specification["device_class"],
             "inputs": {
-                "generated_layout": file_record(layout_path, repo),
+                "generated_layout": {
+                    **generated_layout_record,
+                    "sha256_scope": (
+                        "run-specific byte identity; GDSII BGNLIB/BGNSTR timestamps "
+                        "may change across equivalent exports"
+                    ),
+                    "bitwise_deterministic_across_exports": False,
+                },
                 "generated_schematic": file_record(schematic_path, repo),
             },
+            "gds_input_identity": build_gds_input_identity(
+                source_gds_record,
+                generated_layout_record,
+                layout_manifest,
+                cell_name,
+            ),
             "layout_manifest": layout_manifest,
             "result": result,
             "detail": detail,

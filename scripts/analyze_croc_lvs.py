@@ -139,7 +139,13 @@ def parse_log_options(path: Path) -> dict[str, Any]:
     text = path.read_text(encoding="utf-8", errors="replace")
     mode_match = re.search(r"\b(flat|deep)\s+mode is enabled", text)
     netlist_match = re.search(r"Netlist file:\s*(.+)", text)
-    runtime_match = re.search(r"LVS Total Run time\s+([0-9.]+)\s+seconds", text)
+    runtime_match = re.search(
+        r"^.*LVS Total Run time\s+([+-]?[0-9]+(?:\.[0-9]+)?)\s+seconds.*$",
+        text,
+        re.MULTILINE,
+    )
+    runtime_raw = float(runtime_match.group(1)) if runtime_match else None
+    runtime_valid = runtime_raw is not None and runtime_raw >= 0
     memory_values = [int(value) for value in re.findall(r"Memory Usage \((\d+)K\)", text)]
     ignore_value = re.search(r"Selected IGNORE_TOP_PORTS_MISMATCH option:[ \t]*([^\r\n]*)", text)
     top_pins_value = re.search(r"Selected TOP_LVL_PINS option:[ \t]*(true|false)", text, re.IGNORECASE)
@@ -155,7 +161,19 @@ def parse_log_options(path: Path) -> dict[str, Any]:
         "simplify_enabled": "Selected SIMPLIFY option: true" in text,
         "netlists_match": "Congratulations! Netlists match." in text,
         "netlists_mismatch": "ERROR : Netlists don't match" in text,
-        "deck_runtime_seconds": float(runtime_match.group(1)) if runtime_match else None,
+        "deck_runtime_seconds": runtime_raw if runtime_valid else None,
+        "deck_runtime_raw_seconds": runtime_raw,
+        "deck_runtime_valid": runtime_valid,
+        "deck_runtime_invalid_reason": (
+            None
+            if runtime_valid
+            else (
+                "negative_runtime_reported_by_deck"
+                if runtime_raw is not None
+                else "runtime_not_reported"
+            )
+        ),
+        "deck_runtime_log_line": runtime_match.group(0).strip() if runtime_match else None,
         "peak_memory_kib": max(memory_values) if memory_values else None,
     }
 

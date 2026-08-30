@@ -47,6 +47,33 @@ R0 a b 1
         self.assertNotIn(".SUBCKT unrelated", text)
         self.assertEqual(text.lower().count(".subckt"), 1)
 
+    def test_gds_identity_separates_stable_source_from_run_specific_bytes(self) -> None:
+        identity = MODULE.build_gds_input_identity(
+            {"sha256": "source-hash", "bytes": 1234},
+            {"path": "leaf.gds", "sha256": "export-hash", "bytes": 456},
+            {
+                "source_layout_dbu": 0.001,
+                "bbox_dbu": [0, 0, 10, 20],
+                "direct_shape_counts_by_layer_datatype": {"8/0": 2},
+                "direct_text_labels": [{"text": "anode"}],
+                "export_selection": "leaf only",
+            },
+            "sg13g2_DCNDiode",
+        )
+        stable = identity["stable_source_cell_identity"]
+        generated = identity["run_specific_generated_file"]
+        self.assertEqual(stable["ihp_pdk_commit"], MODULE.PDK_COMMIT)
+        self.assertEqual(stable["official_source_gds_sha256"], "source-hash")
+        self.assertEqual(stable["source_cell"], "sg13g2_DCNDiode")
+        self.assertEqual(stable["source_cell_bbox_dbu"], [0, 0, 10, 20])
+        self.assertEqual(
+            stable["direct_shape_counts_by_layer_datatype"], {"8/0": 2}
+        )
+        self.assertEqual(generated["raw_sha256"], "export-hash")
+        self.assertFalse(generated["bitwise_deterministic_across_exports"])
+        self.assertIn("run-specific", generated["raw_sha256_scope"])
+        self.assertFalse(identity["semantic_geometry_digest_claimed"])
+
     def test_public_support_scan_does_not_invent_io_abstract_option(self) -> None:
         result = MODULE.scan_public_support(
             "parser.add_argument('--run_mode')\nparser.add_argument('--layout_netlist')",
