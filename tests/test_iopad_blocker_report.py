@@ -41,6 +41,33 @@ class IopadBlockerReportTests(unittest.TestCase):
         )
         self.assertEqual(cases["sg13g2_DCPDiode"]["missing_schematic_ports"], [])
 
+    def test_generated_gds_hashes_are_explicitly_run_specific(self) -> None:
+        contract = self.report["generated_minimal_gds_identity_contract"]
+        self.assertTrue(contract["raw_sha256_is_run_specific"])
+        self.assertFalse(contract["bitwise_deterministic_across_exports"])
+        self.assertFalse(contract["semantic_geometry_digest_claimed"])
+        self.assertEqual(
+            self.report["official_inputs"]["io_gds"]["sha256"],
+            "4281a855377b6a1ca46356e9391258dc14e8efc3b8051a65befc0fe9db3c7825",
+        )
+        for case in self.report["leaf_cases"]:
+            generated = case["minimal_inputs"]["gds"]
+            self.assertFalse(generated["bitwise_deterministic_across_exports"])
+            self.assertIn("run-specific", generated["sha256_scope"])
+
+    def test_latest_reverification_preserves_runtime_validity(self) -> None:
+        rerun = self.report["latest_reverification"]
+        self.assertEqual(len(rerun["cases"]), 2)
+        self.assertTrue(all(case["status"] == "fail" for case in rerun["cases"]))
+        self.assertTrue(
+            all(case["deck_runtime_valid"] for case in rerun["cases"])
+        )
+        invalid = rerun["invalid_runtime_evidence"]
+        self.assertLess(invalid["raw_seconds"], 0)
+        self.assertIsNone(invalid["normalized_seconds"])
+        self.assertFalse(invalid["valid"])
+        self.assertEqual(invalid["reason"], "negative_runtime_reported_by_deck")
+
     def test_parent_geometry_gate_remains_closed(self) -> None:
         parent = self.report["parent_geometry"]
         self.assertFalse(parent["speculative_parent_metal_added"])

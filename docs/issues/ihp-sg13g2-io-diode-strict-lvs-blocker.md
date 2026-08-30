@@ -67,6 +67,24 @@ Generated minimal-input hashes:
 | DCN | `aa14969a06a07d45e27316cfbccc46a262b943842474a85f26159da6841ea81f` (114,798 B) | `e6beb7b9b6eb3ac828ae597aebb68e8773ee5c0408ab3f0ca1867f652d930e43` (349 B) |
 | DCP | `ca9ff63fc89df9056fd19dd3efd93add6d2fa79fa813072c6fe7bf49e42e5f4f` (114,836 B) | `4179ad18e54dd2b5a94bd019d2f38665d66ee690a0c0d7d7945e9a65d7026708` (352 B) |
 
+The generated minimal-GDS raw SHA-256 values above identify the retained
+2026-08-29 files only. They are **not** a bitwise-determinism contract:
+KLayout refreshes GDSII `BGNLIB`/`BGNSTR` timestamps when exporting an
+equivalent selected cell. Stable input identity is instead the pinned IHP PDK
+commit, the official source IO-GDS SHA-256, the source cell name, and the
+recorded DBU/bounding-box/direct-shape facts in `summary.json`. The generated
+CDL is text and retained a stable raw SHA-256 across reruns. No semantic
+geometry digest is claimed.
+
+A two-leaf-only reverification on 2026-08-30 is retained at
+`runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-leaf-diagnostic-20260830-rerun-002/`.
+It reproduced the same port splits and cross-reference counts. The deck
+reported valid runtimes of 1.766733 s for DCN and 1.674267 s for DCP; the whole
+container invocation took 16.21 s wall clock. An earlier rerun made the deck
+emit `LVS Total Run time -1.431181 seconds` for DCP. That negative value is
+preserved as raw log evidence but normalized to `deck_runtime_seconds=null`,
+`deck_runtime_valid=false`; it is not reported as elapsed time.
+
 ## Cross-reference evidence
 
 | Cell | circuit | devices | nets | pins | Small LVSDB |

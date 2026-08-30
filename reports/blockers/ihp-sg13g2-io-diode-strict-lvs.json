@@ -1,12 +1,74 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-08-29T14:15:14.303130+00:00",
+  "generated_at": "2026-08-30T08:48:35.531066+00:00",
   "classification": "local_upstream_issue_draft_not_published",
   "title": "Official SG13G2 IO diode leaves fail strict-deep LVS",
   "versions": {
     "ihp_open_pdk_commit": "331c00484213b13414777eec1336ef5c29b969bd",
     "container_reference": "hpretl/iic-osic-tools:2025.12",
     "container_digest": "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521"
+  },
+  "generated_minimal_gds_identity_contract": {
+    "raw_sha256_is_run_specific": true,
+    "bitwise_deterministic_across_exports": false,
+    "reason": "KLayout GDS export refreshes GDSII BGNLIB/BGNSTR timestamps across equivalent selected-cell exports",
+    "stable_identity_fields": [
+      "versions.ihp_open_pdk_commit",
+      "official_inputs.io_gds.sha256",
+      "leaf_cases[].cell",
+      "leaf rerun summary cases[].gds_input_identity.stable_source_cell_identity"
+    ],
+    "semantic_geometry_digest_claimed": false
+  },
+  "latest_reverification": {
+    "generated_at": "2026-08-30T08:48:35.531066+00:00",
+    "scope": "exactly the two official DCN/DCP strict-deep leaf fixtures; no 15-cell sweep, five-pad wrapper, or full-chip run",
+    "run_dir": "runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-leaf-diagnostic-20260830-rerun-002",
+    "container_wall_seconds": 16.21,
+    "cases": [
+      {
+        "cell": "sg13g2_DCNDiode",
+        "status": "fail",
+        "schematic_ports": ["anode", "cathode", "guard"],
+        "extracted_ports": ["anode", "cathode", "cathode$1"],
+        "deck_runtime_seconds": 1.766733,
+        "deck_runtime_raw_seconds": 1.766733,
+        "deck_runtime_valid": true,
+        "generated_gds_raw_sha256": "88b37db301c78b051f74fd8d7c851fb8fb237964bde4b7b6a60657faa2ed11e4",
+        "generated_gds_raw_sha256_scope": "run-specific byte identity",
+        "cross_reference": {
+          "circuit_status": {"NoMatch": 1},
+          "device": {"layout_only": 3, "schematic_only": 1},
+          "net": {"layout_only": 4, "schematic_only": 2},
+          "pin": {"match": 4}
+        }
+      },
+      {
+        "cell": "sg13g2_DCPDiode",
+        "status": "fail",
+        "schematic_ports": ["anode", "cathode", "guard"],
+        "extracted_ports": ["guard", "cathode", "anode", "anode$1"],
+        "deck_runtime_seconds": 1.674267,
+        "deck_runtime_raw_seconds": 1.674267,
+        "deck_runtime_valid": true,
+        "generated_gds_raw_sha256": "9279af521a7ba6f61b57c625edad6b7c4f1e6f7f2b8824e1ab23a22d5390ccf0",
+        "generated_gds_raw_sha256_scope": "run-specific byte identity",
+        "cross_reference": {
+          "circuit_status": {"NoMatch": 1},
+          "device": {"layout_only": 3, "schematic_only": 1},
+          "net": {"layout_only": 5, "schematic_only": 2},
+          "pin": {"match": 6}
+        }
+      }
+    ],
+    "invalid_runtime_evidence": {
+      "path": "runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-leaf-diagnostic-20260830-rerun-001/sg13g2_DCPDiode/sg13g2_DCPDiode.log",
+      "raw_seconds": -1.431181,
+      "normalized_seconds": null,
+      "valid": false,
+      "reason": "negative_runtime_reported_by_deck",
+      "raw_log_line": "2026-08-30 10:37:06 +0200: Memory Usage (474824K) : LVS Total Run time -1.431181 seconds"
+    }
   },
   "strictness": {
     "run_mode": "deep",
@@ -77,7 +139,9 @@
       "minimal_inputs": {
         "gds": {
           "bytes": 114798,
-          "sha256": "aa14969a06a07d45e27316cfbccc46a262b943842474a85f26159da6841ea81f"
+          "sha256": "aa14969a06a07d45e27316cfbccc46a262b943842474a85f26159da6841ea81f",
+          "sha256_scope": "run-specific byte identity; GDSII timestamps may change across equivalent exports",
+          "bitwise_deterministic_across_exports": false
         },
         "cdl": {
           "bytes": 349,
@@ -111,7 +175,9 @@
       "minimal_inputs": {
         "gds": {
           "bytes": 114836,
-          "sha256": "ca9ff63fc89df9056fd19dd3efd93add6d2fa79fa813072c6fe7bf49e42e5f4f"
+          "sha256": "ca9ff63fc89df9056fd19dd3efd93add6d2fa79fa813072c6fe7bf49e42e5f4f",
+          "sha256_scope": "run-specific byte identity; GDSII timestamps may change across equivalent exports",
+          "bitwise_deterministic_across_exports": false
         },
         "cdl": {
           "bytes": 352,
