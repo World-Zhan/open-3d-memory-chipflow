@@ -1,0 +1,123 @@
+{
+  "checks": {
+    "all_pin_access_passes_have_zero_missing_ap": true,
+    "antenna_net_violations_zero": true,
+    "antenna_pin_violations_zero": true,
+    "command_exit_zero": true,
+    "detail_route_completed": true,
+    "no_pin_access_option_present": false,
+    "original_drt_0073_errors_absent": true,
+    "route_drc_zero": false,
+    "route_outputs_present": true,
+    "strict_pin_access_enabled": true,
+    "unrouted_error_absent": true
+  },
+  "classification": "research_only",
+  "conclusion": {
+    "full_smoke_gate_open": false,
+    "pin_access_patch_effective": true,
+    "reason": "pin access succeeds, but route DRC is nonzero and 3D closure metrics are zero or unavailable",
+    "route_pass": false,
+    "three_dimensional_closure": false
+  },
+  "forbidden_shortcuts": {
+    "min_access_points_zero": false,
+    "no_pin_access": false,
+    "rule_relaxation": false,
+    "waiver": false
+  },
+  "generated_at": "2026-09-01T15:28:39.250181+00:00",
+  "inputs": {
+    "upstream/taiwei-pin-3d/results/asap7_3D/gcd/openroad/4_cts.def": "6eb99d49687d2651ee7c92fa10c00fc62c6ff75c77ffedd675d1ce80889afd95",
+    "upstream/taiwei-pin-3d/results/asap7_3D/gcd/openroad/4_cts.odb": "d3e6b4110947a294e1bcb1ef8ce736c02b41d6e1cd3d185260898f135c5e9140",
+    "upstream/taiwei-pin-3d/results/asap7_3D/gcd/openroad/4_cts.sdc": "40ca0d2c06a47c90cbf43e64edcdc5591327caec2751adc6b0b5a055466eb7e3",
+    "upstream/taiwei-pin-3d/results/asap7_3D/gcd/openroad/4_cts.v": "07df857f8faf606e3cc3312ad7dd11a3c38a849c51444335abb7391d4c586bbe"
+  },
+  "metrics": {
+    "antenna_net_violations": 0,
+    "antenna_pin_violations": 0,
+    "bottom_tier_instances": null,
+    "cross_tier_route_after": {
+      "BIO": 0,
+      "UB": 0,
+      "UBIO": 0,
+      "UIO": 0,
+      "UNK": 0,
+      "all": 0
+    },
+    "drt_0073_count": 0,
+    "final_route_drc": 642,
+    "hbt_count": null,
+    "pin_access_pass_count": 2,
+    "route_drc_by_layer": {
+      "M1_m": 104,
+      "M3_m": 2,
+      "M4_m": 4,
+      "M5": 1,
+      "M5_m": 1,
+      "hb_layer": 530
+    },
+    "route_drc_by_type": {
+      "Corner Spacing": 11,
+      "Cut Spacing": 530,
+      "Metal Spacing": 19,
+      "Short": 82
+    },
+    "route_iteration_drc_counts": [
+      859,
+      719,
+      694,
+      655,
+      646,
+      642
+    ],
+    "std_cell_pin_count_values": [
+      1485,
+      1485
+    ],
+    "std_cell_pin_no_ap_values": [
+      0,
+      0
+    ],
+    "tns_ns": null,
+    "unrouted_error_count": 0,
+    "upper_tier_instances": null,
+    "wns_ns": null
+  },
+  "outputs": {
+    "upstream/taiwei-pin-3d/reports/asap7_3D/gcd/openroad/5_route_drc.rpt": "c7e99c0881c5d2f1effe4dcfcd8a9b0f910dad20b37011a529834fcd5940c2ba",
+    "upstream/taiwei-pin-3d/results/asap7_3D/gcd/openroad/5_1_grt.odb": "6620743c857fc3b2d143116f2867910f8f74c50efe26c0175bc8f07a6a9dc4c4",
+    "upstream/taiwei-pin-3d/results/asap7_3D/gcd/openroad/5_route.def": "bd08c62792e608601c5bcb0040e24b78890d926912f1ed00c5e6a81133eb6e90",
+    "upstream/taiwei-pin-3d/results/asap7_3D/gcd/openroad/5_route.odb": "a36992d3743ff6ff49d401565a7bf05d341aaa4eed9557ce95449ca3bfb00dad",
+    "upstream/taiwei-pin-3d/results/asap7_3D/gcd/openroad/5_route.sdc": "eb3f7df79a7371f5faf3abb7199608f5897462db6afcde52d94844c3086935c9",
+    "upstream/taiwei-pin-3d/results/asap7_3D/gcd/openroad/5_route.v": "1664f16b2a1e9bac68ddbaf7cd968502b067ee7c94c96d5e320c7e27bfdf2701"
+  },
+  "run_id": "pin3d-openroad-pa-ab-20260901-003",
+  "schema_version": "1.0.0",
+  "source": {
+    "command": [
+      "env",
+      "ORFS_DIR=/home/james_zhan/projects/open-3d-memory-chipflow/upstream/orfs-research",
+      "OPENROAD_EXE=/home/james_zhan/projects/open-3d-memory-chipflow/upstream/orfs-research/tools/install/OpenROAD/bin/openroad",
+      "STA_EXE=/home/james_zhan/projects/open-3d-memory-chipflow/upstream/orfs-research/tools/install/OpenROAD/bin/sta",
+      "YOSYS_EXE=/home/james_zhan/projects/open-3d-memory-chipflow/upstream/orfs-research/tools/install/yosys/bin/yosys",
+      "NUM_CORES=6",
+      "FLOW_VARIANT=openroad",
+      "USE_FLOW=openroad",
+      "MAX_ROUTING_LAYER=M1_m",
+      "DETAILED_ROUTE_ARGS=-or_k 1.0 -droute_end_iter 5 -verbose 1 -drc_report_iter_step 5",
+      "bash",
+      "-lc",
+      "cd /home/james_zhan/projects/open-3d-memory-chipflow/upstream/taiwei-pin-3d && bash test/common/run_stage.sh asap7_3D openroad openroad gcd ord-route"
+    ],
+    "drc_report": "upstream/taiwei-pin-3d/reports/asap7_3D/gcd/openroad/5_route_drc.rpt",
+    "log": "runs/pin3d-openroad-pa-ab-20260901-003/logs/route-down-via-strict-pa.log",
+    "manifest": "runs/pin3d-openroad-pa-ab-20260901-003/manifest.json",
+    "openroad_binary_sha256": "0aecb1463da5e58f25b1446fa967a9b7c229a2983567039119e33cecb8115ffd",
+    "openroad_commit": "305d3ba2ddfd00591924cc586ad408179f566afe",
+    "patch": "patches/openroad/0001-top-routing-layer-standard-cell-down-via.patch",
+    "patch_sha256": "6ec57668f46208da43cf4c59aa267f4986020f190ac1d7ecfb1c1494d5409f2b"
+  },
+  "status": "failed",
+  "track_status": "diagnostic_started_route_failed"
+}

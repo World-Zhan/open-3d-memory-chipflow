@@ -15,7 +15,7 @@ Run ID：`croc-sg13g2-baseline-20260827-001`<br>
 | 轨道 | 当前状态 | 可制造性口径 | 不能声称的内容 |
 |---|---|---|---|
 | A：Croc/IHP 可制造学习基线 | **进行中；signoff FAIL** | APR/GDS 已过；DRC=1,585、LVS mismatch | 尚不是公开规则签核级 GDS；IHP 开放 PDK仍为 preview |
-| B：TaiWei-Pin-3D | **未开始** | 未来结果只能标记 `research_only` | 不是真实 3D PDK/送厂包 |
+| B：TaiWei-Pin-3D | **诊断已启动；route FAIL** | 永久标记 `research_only`；pin-access 定点修复有效但 route DRC=642 | 不是 route PASS、3D closure 或真实 3D PDK/送厂包 |
 | C：SRAM/3D-memory 扩展 | **未开始** | 必须等 A/B 原版流程稳定后再改 RTL | 尚无 OBI traffic endpoint 或 3D SRAM 映射结果 |
 
 ## 阶段检查点
@@ -43,6 +43,39 @@ APR 证据：`unrouted_nets=0`，VDD/VSS PDN connected，WNS/TNS=`0.0/0.0 ns`，
 - ORFS-Research：`568eb04da9173695d6bfc1b10ba868e0b6b8a9fa`
 - Pin3D OpenROAD：`305d3ba2ddfd00591924cc586ad408179f566afe`
 - 容器：`hpretl/iic-osic-tools:2025.12`，镜像 ID/digest `sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521`
+
+## Pin3D route-only 诊断（2026-09-01，research_only）
+
+该检查点只复用 `ASAP7_3D/GCD` 已有 `4_cts.*`，没有重跑 Croc、LVS、
+DRC 或 full smoke。原始 upper-tier placement 先因 `MAX_ROUTING_LAYER=M2_m`
+排除 pin 所在 `M1_m` 而报 `GRT-0029`；固定 `M1_m` 后，route 又对 6 个
+upper-tier 标准单元输入 pin 报 `DRT-0073`。OpenROAD 定点 patch 只在 pin
+已经处于路由栈顶时为标准单元尝试相邻 DOWN via；没有关闭 pin-access、
+没有把 `min_access_points` 设为 0，也没有 waiver 或规则弱化。
+
+受控 strict-pin-access A/B：
+
+| 指标 | 结果 | 验收解释 |
+|---|---:|---|
+| `stdCellPinCnt` | 1,485（global/detail 各一次） | 输入 pin 数量已实际扫描 |
+| `stdCellPinNoAp` | 0 / 0 | 原 6 个 `DRT-0073` 消失；pin-access 定点修复有效 |
+| detailed routing | 完成，命令 exit 0 | 只说明工具完成，不等于 route PASS |
+| antenna net/pin violations | 0 / 0 | 天线检查通过 |
+| final route DRC | **642** | route 验收失败，禁止 full smoke |
+| DRC 类型 | Cut Spacing 530；Short 82；Metal Spacing 19；Corner Spacing 11 | 530 个集中在 `hb_layer`；M1_m 共 104 个 marker |
+| cross-tier route-after | all/UB/UIO/BIO/UBIO/UNK 均为 0 | 不能声称 HBT/cross-tier closure |
+| HBT、上下层实例、WNS/TNS | `null` | 缺失指标不能当成 0 或 PASS |
+
+证据：
+
+- `runs/pin3d-openroad-pa-ab-20260901-003/summary.json`：结构化检查、类型/层计数、输入输出 SHA-256。
+- `runs/pin3d-openroad-pa-ab-20260901-003/logs/route-down-via-strict-pa.log`：实际 strict-pin-access 命令日志。
+- `upstream/taiwei-pin-3d/reports/asap7_3D/gcd/openroad/5_route_drc.rpt`：642 个 route marker（生成大文件，不进 Git）。
+- `patches/openroad/0001-top-routing-layer-standard-cell-down-via.patch`：可从 pinned OpenROAD 正向应用、构建后恢复源码 clean 的最小 patch。
+
+结论必须写成 `diagnostic_started_route_failed`：pin-access blocker 已缩小并修复，
+但 route DRC 非零且 3D closure 指标为 0/null，所以 B 轨仍 FAIL，下一门槛
+是先解释并消除 hybrid-bond/M1_m route DRC，不是启动 full smoke。
 
 ## DRC：FAIL，两个计数口径不得混用
 

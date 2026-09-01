@@ -17,8 +17,46 @@
       "lvs": "fail"
     },
     "B_pin3d": {
-      "status": "not_started",
-      "classification": "research_only"
+      "status": "diagnostic_started_route_failed",
+      "classification": "research_only",
+      "run_id": "pin3d-openroad-pa-ab-20260901-003",
+      "summary": "runs/pin3d-openroad-pa-ab-20260901-003/summary.json",
+      "pin_access": {
+        "strict_enabled": true,
+        "no_pin_access_option_present": false,
+        "std_cell_pin_count_values": [
+          1485,
+          1485
+        ],
+        "std_cell_pin_no_ap_values": [
+          0,
+          0
+        ],
+        "original_drt_0073_count": 0,
+        "patch_effective": true
+      },
+      "route": {
+        "command_exit_zero": true,
+        "detail_route_completed": true,
+        "antenna_net_violations": 0,
+        "antenna_pin_violations": 0,
+        "drc": 642,
+        "drc_by_type": {
+          "Cut Spacing": 530,
+          "Short": 82,
+          "Metal Spacing": 19,
+          "Corner Spacing": 11
+        },
+        "cross_tier_route_after_all": 0,
+        "hbt_count": null,
+        "upper_tier_instances": null,
+        "bottom_tier_instances": null,
+        "wns_ns": null,
+        "tns_ns": null,
+        "route_pass": false,
+        "three_dimensional_closure": false,
+        "full_smoke_gate_open": false
+      }
     },
     "C_sram_3d_memory_extension": {
       "status": "not_started"
@@ -538,7 +576,7 @@
   ],
   "limitations": [
     "IHP Open PDK is preview; foundry tapeout requires IHP confirmation of frozen PDK, decks and waivers.",
-    "Pin3D has not started and any future result is research_only.",
+    "Pin3D route-only diagnostics have started, but route DRC is 642 and 3D closure metrics are zero or unavailable; all results remain research_only.",
     "No open 3D DRAM process, hybrid-bonding deck or packaging signoff is claimed."
   ]
 }

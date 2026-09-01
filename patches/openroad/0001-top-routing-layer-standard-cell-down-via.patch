@@ -1,0 +1,28 @@
+From: open-3d-memory-chipflow maintainers
+Subject: [PATCH] drt: consider down vias for standard-cell pins at top layer
+
+TaiWei-Pin-3D mirrors the upper tier, placing upper-tier standard-cell pins
+on M1_m at the top of the unified routing stack. FlexPA historically tries a
+DOWN via only for IO terminals, so six ordinary upper-tier input pins in the
+ASAP7 GCD case have no access point even though VIA12_m connects M1_m to M2_m.
+
+Keep the existing IO behavior and also consider the adjacent DOWN via when a
+pin layer has no routing layer above it. This does not disable pin access or
+relax any DRC rule.
+---
+ src/drt/src/pa/FlexPA_acc_point.cpp | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+
+diff --git a/src/drt/src/pa/FlexPA_acc_point.cpp b/src/drt/src/pa/FlexPA_acc_point.cpp
+index d146df97e0..051c5ad788 100644
+--- a/src/drt/src/pa/FlexPA_acc_point.cpp
++++ b/src/drt/src/pa/FlexPA_acc_point.cpp
+@@ -908,3 +908,6 @@ void FlexPA::filterViaAccess(
+-    // DOWN Vias
+-    if (isIOTerm(inst_term)) {
++    // Mirrored 3D stacks can place standard-cell pins on the top routing
++    // layer. There is no UP via in that case, so also consider the adjacent
++    // DOWN via instead of rejecting every access point for the pin.
++    if (isIOTerm(inst_term)
++        || layer_num + 1 > router_cfg_->TOP_ROUTING_LAYER) {
+       collect_vias(layer_num - 1, max_num_via_trial);

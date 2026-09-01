@@ -12,6 +12,7 @@ runs/*/signoff.attempt-*/*
 !runs/*/signoff.attempt-*/lvs/
 runs/*/signoff.attempt-*/lvs/*
 !runs/*/signoff.attempt-*/lvs/port_mismatch_analysis.json
+!runs/pin3d-openroad-pa-ab-*/summary.json
 reports/generated/
 .state/
 .work/
