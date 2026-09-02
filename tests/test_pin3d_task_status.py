@@ -27,10 +27,13 @@ class Pin3dTaskStatusTests(unittest.TestCase):
         self.assertEqual(STATUS.task_exit_code({"status": "running", "dispatch_rc": None}), STATUS.STATUS_ERROR)
         self.assertEqual(STATUS.task_exit_code({"status": "ok", "dispatch_rc": True}), STATUS.STATUS_ERROR)
 
-    def test_wrapper_includes_upper_pin_layer_and_status_gate(self):
+    def test_wrapper_includes_upper_pin_layer_status_and_hbt_gates(self):
         wrapper = (ROOT / "scripts/pin3d_flow.sh").read_text(encoding="utf-8")
         self.assertIn('MAX_ROUTING_LAYER="${MAX_ROUTING_LAYER:-M1_m}"', wrapper)
         self.assertIn("check_pin3d_task_status.py", wrapper)
+        self.assertIn("analyze_pin3d_hbt_spacing.py", wrapper)
+        self.assertIn('HBT_RC=$?', wrapper)
+        self.assertLess(wrapper.index("analyze_pin3d_hbt_spacing.py"), wrapper.index('"${MODE}" == "full"'))
 
 
 if __name__ == "__main__":

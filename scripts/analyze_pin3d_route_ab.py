@@ -70,6 +70,7 @@ def analyze(
     patch_path: Path,
     cts_paths: list[Path],
     route_paths: list[Path],
+    hbt_analysis: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     log_text = log_path.read_text(encoding="utf-8", errors="replace")
@@ -150,7 +151,11 @@ def analyze(
             "antenna_pin_violations": antenna_pin,
             "unrouted_error_count": unrouted_error_count,
             "cross_tier_route_after": parse_cross_tier(log_text),
-            "hbt_count": None,
+            "hbt_count": (
+                hbt_analysis.get("route_geometry", {}).get("hbt_via_count")
+                if hbt_analysis is not None
+                else None
+            ),
             "upper_tier_instances": None,
             "bottom_tier_instances": None,
             "wns_ns": None,
@@ -187,6 +192,12 @@ def main() -> int:
     pin3d = ROOT / "upstream" / "taiwei-pin-3d"
     results = pin3d / "results" / "asap7_3D" / "gcd" / "openroad"
     reports = pin3d / "reports" / "asap7_3D" / "gcd" / "openroad"
+    hbt_analysis_path = run_dir / "hbt_spacing_analysis.json"
+    hbt_analysis = (
+        json.loads(hbt_analysis_path.read_text(encoding="utf-8"))
+        if hbt_analysis_path.is_file()
+        else None
+    )
     payload = analyze(
         run_id=args.run_id,
         manifest_path=run_dir / "manifest.json",
@@ -197,7 +208,10 @@ def main() -> int:
         cts_paths=[results / name for name in ("4_cts.odb", "4_cts.sdc", "4_cts.v", "4_cts.def")],
         route_paths=[results / name for name in ("5_1_grt.odb", "5_route.odb", "5_route.def", "5_route.v", "5_route.sdc")]
         + [reports / "5_route_drc.rpt"],
+        hbt_analysis=hbt_analysis,
     )
+    if hbt_analysis is not None:
+        payload["source"]["hbt_spacing_analysis"] = str(hbt_analysis_path.relative_to(ROOT))
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     print(f"[write] {output}")

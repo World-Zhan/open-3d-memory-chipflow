@@ -26,7 +26,7 @@
     "rule_relaxation": false,
     "waiver": false
   },
-  "generated_at": "2026-09-01T15:28:39.250181+00:00",
+  "generated_at": "2026-09-02T16:44:52.118644+00:00",
   "inputs": {
     "upstream/taiwei-pin-3d/results/asap7_3D/gcd/openroad/4_cts.def": "6eb99d49687d2651ee7c92fa10c00fc62c6ff75c77ffedd675d1ce80889afd95",
     "upstream/taiwei-pin-3d/results/asap7_3D/gcd/openroad/4_cts.odb": "d3e6b4110947a294e1bcb1ef8ce736c02b41d6e1cd3d185260898f135c5e9140",
@@ -47,7 +47,7 @@
     },
     "drt_0073_count": 0,
     "final_route_drc": 642,
-    "hbt_count": null,
+    "hbt_count": 70,
     "pin_access_pass_count": 2,
     "route_drc_by_layer": {
       "M1_m": 104,
@@ -111,6 +111,7 @@
       "cd /home/james_zhan/projects/open-3d-memory-chipflow/upstream/taiwei-pin-3d && bash test/common/run_stage.sh asap7_3D openroad openroad gcd ord-route"
     ],
     "drc_report": "upstream/taiwei-pin-3d/reports/asap7_3D/gcd/openroad/5_route_drc.rpt",
+    "hbt_spacing_analysis": "runs/pin3d-openroad-pa-ab-20260901-003/hbt_spacing_analysis.json",
     "log": "runs/pin3d-openroad-pa-ab-20260901-003/logs/route-down-via-strict-pa.log",
     "manifest": "runs/pin3d-openroad-pa-ab-20260901-003/manifest.json",
     "openroad_binary_sha256": "0aecb1463da5e58f25b1446fa967a9b7c229a2983567039119e33cecb8115ffd",

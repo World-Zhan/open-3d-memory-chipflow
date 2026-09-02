@@ -48,7 +48,7 @@
           "Corner Spacing": 11
         },
         "cross_tier_route_after_all": 0,
-        "hbt_count": null,
+        "hbt_count": 70,
         "upper_tier_instances": null,
         "bottom_tier_instances": null,
         "wns_ns": null,
@@ -56,6 +56,34 @@
         "route_pass": false,
         "three_dimensional_closure": false,
         "full_smoke_gate_open": false
+      },
+      "hbt_spacing_diagnostic": {
+        "status": "failed_root_cause_proven_for_530_of_642_markers",
+        "evidence": "runs/pin3d-openroad-pa-ab-20260901-003/hbt_spacing_analysis.json",
+        "hbt_via_count": 70,
+        "unique_hbt_nets": 70,
+        "unique_hbt_coordinates": 70,
+        "route_track_pitch_um": 0.064,
+        "tech_lef": "upstream/taiwei-pin-3d/platforms/asap7_3D/lef/asap7_tech_1x_2A6M7M.lef",
+        "tech_cut_width_um": 0.032,
+        "tech_minimum_edge_spacing_um": 1.568,
+        "tech_legal_square_pitch_um": 1.6,
+        "legal_square_grid_capacity": 25,
+        "partition_configured_width_um": 0.5,
+        "partition_configured_spacing_um": 0.5,
+        "partition_configured_pitch_um": 1.0,
+        "partition_selected_cut": 62,
+        "partition_selected_feasible": false,
+        "route_hb_cut_spacing_markers": 530,
+        "geometry_predicted_cut_spacing_pairs": 530,
+        "predicted_pair_set_exact_match": true,
+        "missing_predicted_pairs": 0,
+        "extra_reported_pairs": 0,
+        "remaining_non_hb_route_markers": 112,
+        "hb_cut_spacing_root_cause_proven": true,
+        "all_route_drc_root_causes_proven": false,
+        "full_smoke_gate_open": false,
+        "next_gate": "derive HBT budget from actual TECH_LEF, fail closed on infeasible partitioning, and add legal HBT site/capacity planning before reroute"
       }
     },
     "C_sram_3d_memory_extension": {
@@ -576,7 +604,7 @@
   ],
   "limitations": [
     "IHP Open PDK is preview; foundry tapeout requires IHP confirmation of frozen PDK, decks and waivers.",
-    "Pin3D route-only diagnostics have started, but route DRC is 642 and 3D closure metrics are zero or unavailable; all results remain research_only.",
+    "Pin3D route-only diagnostics have started; 530 of 642 route markers are exactly explained by an HBT spacing/capacity contract mismatch, but 112 markers and 3D closure remain unresolved; all results remain research_only.",
     "No open 3D DRAM process, hybrid-bonding deck or packaging signoff is claimed."
   ]
 }

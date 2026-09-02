@@ -64,7 +64,8 @@ upper-tier 标准单元输入 pin 报 `DRT-0073`。OpenROAD 定点 patch 只在 
 | final route DRC | **642** | route 验收失败，禁止 full smoke |
 | DRC 类型 | Cut Spacing 530；Short 82；Metal Spacing 19；Corner Spacing 11 | 530 个集中在 `hb_layer`；M1_m 共 104 个 marker |
 | cross-tier route-after | all/UB/UIO/BIO/UBIO/UNK 均为 0 | 不能声称 HBT/cross-tier closure |
-| HBT、上下层实例、WNS/TNS | `null` | 缺失指标不能当成 0 或 PASS |
+| HBT via | 70 | 从最终 `5_route.def` 的 70 个不同网络、不同坐标 `hb_layer_0` 实例直接计数 |
+| 上下层实例、WNS/TNS | `null` | 缺失指标不能当成 0 或 PASS |
 
 证据：
 
@@ -75,7 +76,30 @@ upper-tier 标准单元输入 pin 报 `DRT-0073`。OpenROAD 定点 patch 只在 
 
 结论必须写成 `diagnostic_started_route_failed`：pin-access blocker 已缩小并修复，
 但 route DRC 非零且 3D closure 指标为 0/null，所以 B 轨仍 FAIL，下一门槛
-是先解释并消除 hybrid-bond/M1_m route DRC，不是启动 full smoke。
+是先消除 hybrid-bond/M1_m route DRC，不是启动 full smoke。
+
+### HBT spacing 根因检查点（2026-09-03）
+
+对现有 DEF、实际 TECH_LEF、partition 日志和 route DRC 做了纯文本、低内存
+交叉验证，没有重跑 OpenROAD：
+
+- `5_route.def` 有 70 个 `hb_layer_0`，分别属于 70 个网络和 70 个坐标；全部落在
+  M7 的 64 DBU（0.064 µm）routing-track 网格上。
+- 实际日志确认使用 `asap7_tech_1x_2A6M7M.lef`。其中 HBT cut 为
+  0.032×0.032 µm，边到边最小间距 1.568 µm，对应合法方形 pitch 1.6 µm。
+- 用矩形边到边欧氏距离逐对计算 70 个 cut，预测 530 个违规网络对；与
+  `5_route_drc.rpt` 的 530 个 `Cut Spacing@hb_layer` 网络对逐项完全一致，
+  `missing=0`、`extra=0`。因此这 530/642 个 marker 的直接几何根因已证明。
+- partition 却使用硬编码 `width=0.5 / spacing=0.5 / pitch=1.0 µm`，且所有候选
+  均 `feasible=0`；最终仍传递 cut=62 的方案，后续 CTS/route 增长为 70 个 HBT。
+- 当前 6.676×6.676 µm die 在 1.6 µm 方形 pitch 下只有 5×5=25 个 site，
+  明显小于 70；不能靠关闭 DRC、减小阈值或 waiver 解决容量合同错误。
+
+结构化证据为
+`runs/pin3d-openroad-pa-ab-20260901-003/hbt_spacing_analysis.json`。
+它只证明 530 个 HBT marker；剩余 112 个 M1_m/其他金属 marker 仍未闭环。
+下一门槛是让 partition 从实际 TECH_LEF 派生 HBT budget、对 infeasible 结果
+fail closed，并在任何 reroute 前完成合法 HBT site/面积容量规划。
 
 ## DRC：FAIL，两个计数口径不得混用
 

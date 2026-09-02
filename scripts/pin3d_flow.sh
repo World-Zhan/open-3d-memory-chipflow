@@ -59,6 +59,21 @@ if [[ ${TOOL_RC} -eq 0 && ${TASK_RC} -ne 0 ]]; then
   TOOL_RC=${TASK_RC}
 fi
 
+# Route completion alone is not acceptance.  When the bounded route outputs
+# exist, reproduce every hb_layer cut-spacing pair from DEF plus TECH_LEF and
+# fail closed if the HBT contract or spacing is invalid.
+HBT_DEF="${PIN3D}/results/asap7_3D/gcd/openroad/5_route.def"
+HBT_DRC="${PIN3D}/reports/asap7_3D/gcd/openroad/5_route_drc.rpt"
+HBT_PARTITION_LOG="${PIN3D}/logs/asap7_3D/gcd/openroad/2_tritonpart.log"
+if [[ -f "${HBT_DEF}" && -f "${HBT_DRC}" && -f "${HBT_PARTITION_LOG}" ]]; then
+  python3 "${ROOT}/scripts/analyze_pin3d_hbt_spacing.py" \
+    --output "${FLOW_RUN_DIR}/hbt_spacing_analysis.json"
+  HBT_RC=$?
+  if [[ ${TOOL_RC} -eq 0 && ${HBT_RC} -ne 0 ]]; then
+    TOOL_RC=${HBT_RC}
+  fi
+fi
+
 if [[ ${TOOL_RC} -eq 0 && "${MODE}" == "full" ]]; then
   HOTSPOT_DIR="${ROOT}/upstream/open3dflow/HotSpot"
   if [[ ! -f "${HOTSPOT_DIR}/scripts/divide_def.py" || ! -f "${HOTSPOT_DIR}/examples/thermal/run.sh" ]]; then

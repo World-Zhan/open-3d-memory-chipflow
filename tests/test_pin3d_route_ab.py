@@ -69,10 +69,12 @@ violation type: Short
                 patch_path=patch,
                 cts_paths=[cts],
                 route_paths=[route, drc],
+                hbt_analysis={"route_geometry": {"hbt_via_count": 3}},
             )
             self.assertEqual(payload["status"], "failed")
             self.assertFalse(payload["checks"]["route_drc_zero"])
             self.assertTrue(payload["conclusion"]["pin_access_patch_effective"])
+            self.assertEqual(payload["metrics"]["hbt_count"], 3)
             self.assertFalse(payload["conclusion"]["full_smoke_gate_open"])
 
 

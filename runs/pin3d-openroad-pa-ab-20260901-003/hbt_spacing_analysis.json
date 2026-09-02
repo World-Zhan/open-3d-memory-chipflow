@@ -1,0 +1,101 @@
+{
+  "checks": {
+    "all_hbt_vias_on_m7_track_grid": true,
+    "hb_cut_spacing_zero": false,
+    "hbt_via_coordinates_unique": true,
+    "hbt_vias_present": true,
+    "one_unique_net_per_hbt_via": true,
+    "partition_hbt_rule_matches_tech_lef": false,
+    "partition_selected_feasible": false,
+    "predicted_pairs_exactly_match_drc": true
+  },
+  "classification": "research_only",
+  "conclusion": {
+    "all_route_drc_root_causes_proven": false,
+    "full_smoke_gate_open": false,
+    "hb_cut_spacing_root_cause_proven": true,
+    "next_gate": "derive the partition HBT budget from the selected TECH_LEF, fail closed on infeasible partitioning, and add legal HBT site/capacity planning before any reroute",
+    "proven_scope_markers": 530,
+    "root_cause": "70 distinct-network HBT vias were placed on the 0.064um M7 routing grid while the actual TECH_LEF requires 1.568um edge spacing between 0.032um cuts; DEF/LEF geometry reproduces all 530 reported hb_layer net pairs exactly",
+    "upstream_contract_mismatch": "partition budget used 0.5um width plus 0.5um spacing and propagated a feasible=0 solution, but route used a TECH_LEF with 0.032um width plus 1.568um spacing"
+  },
+  "drc": {
+    "cut_spacing_markers": 530,
+    "extra_reported_pairs": [],
+    "missing_predicted_pairs": [],
+    "predicted_cut_spacing_pairs": 530,
+    "reported_unique_cut_spacing_pairs": 530,
+    "total_markers": 642,
+    "unexplained_non_hb_route_markers": 112
+  },
+  "forbidden_shortcuts": {
+    "drc_rule_disabled": false,
+    "no_pin_access": false,
+    "spacing_rule_changed": false,
+    "waiver": false
+  },
+  "generated_at": "2026-09-02T16:44:52.082260+00:00",
+  "partition_contract": {
+    "configured_pitch_um": 1.0,
+    "configured_spacing_um": 0.5,
+    "configured_width_um": 0.5,
+    "density": 0.5,
+    "layer": "hb_layer",
+    "selected_cut": 62,
+    "selected_feasible": false,
+    "target_cut": 41
+  },
+  "route_geometry": {
+    "all_hbt_vias_on_track_grid": true,
+    "dbu_per_micron": 1000,
+    "die_area_dbu": [
+      0,
+      0,
+      6676,
+      6676
+    ],
+    "die_height_um": 6.676,
+    "die_width_um": 6.676,
+    "hbt_via_count": 70,
+    "legal_square_grid_capacity": 25,
+    "legal_square_grid_capacity_x": 5,
+    "legal_square_grid_capacity_y": 5,
+    "track_layer": "M7",
+    "tracks": {
+      "X": {
+        "count": 104,
+        "offset_dbu": 16,
+        "step_dbu": 64
+      },
+      "Y": {
+        "count": 104,
+        "offset_dbu": 16,
+        "step_dbu": 64
+      }
+    },
+    "unique_hbt_coordinates": 70,
+    "unique_hbt_nets": 70
+  },
+  "run_id": "pin3d-openroad-pa-ab-20260901-003",
+  "schema_version": "1.0.0",
+  "source": {
+    "drc_report": "upstream/taiwei-pin-3d/reports/asap7_3D/gcd/openroad/5_route_drc.rpt",
+    "partition_log": "upstream/taiwei-pin-3d/logs/asap7_3D/gcd/openroad/2_tritonpart.log",
+    "route_def": "upstream/taiwei-pin-3d/results/asap7_3D/gcd/openroad/5_route.def",
+    "sha256": {
+      "upstream/taiwei-pin-3d/logs/asap7_3D/gcd/openroad/2_tritonpart.log": "655032d8d18072756b5cf715a384310659a3ec9207af191f545a4aec41666e56",
+      "upstream/taiwei-pin-3d/platforms/asap7_3D/lef/asap7_tech_1x_2A6M7M.lef": "9e0666c62b572a10a31fc59452a2447e98aa831697f4c041e3af2d7180704e89",
+      "upstream/taiwei-pin-3d/reports/asap7_3D/gcd/openroad/5_route_drc.rpt": "c7e99c0881c5d2f1effe4dcfcd8a9b0f910dad20b37011a529834fcd5940c2ba",
+      "upstream/taiwei-pin-3d/results/asap7_3D/gcd/openroad/5_route.def": "bd08c62792e608601c5bcb0040e24b78890d926912f1ed00c5e6a81133eb6e90"
+    },
+    "tech_lef": "upstream/taiwei-pin-3d/platforms/asap7_3D/lef/asap7_tech_1x_2A6M7M.lef"
+  },
+  "status": "failed",
+  "tech_rule": {
+    "cut_rect_height_um": 0.032,
+    "cut_rect_width_um": 0.032,
+    "layer_width_um": 0.032,
+    "legal_square_pitch_um": 1.6,
+    "minimum_edge_spacing_um": 1.568
+  }
+}
