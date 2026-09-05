@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "as_of": "2026-09-05",
+  "overview": "CURRENT_STATUS.md",
+  "public_rule_signoff": false,
+  "foundry_signoff": false,
+  "tracks": {
+    "A_croc_ihp": {
+      "historical_apr_execution": "passed",
+      "current_electrical_acceptance": "failed",
+      "drc": "failed",
+      "lvs": "failed",
+      "audit": "runs/croc-acceptance-audit-20260905-001/summary.json",
+      "postroute_extracted_sta_proven": false,
+      "complete_corner_mode_coverage_proven": false
+    },
+    "B_pin3d": {
+      "classification": "research_only",
+      "capacity_status": "floorplan_contract_ab_passed_route_not_run",
+      "last_route_drc": 642,
+      "legal_lattice_placement_proven": false,
+      "new_route_performed": false,
+      "evidence": "runs/pin3d-hbt-capacity-contract-20260903-001/stage_ab.json"
+    },
+    "C_memory": {
+      "status": "specification_and_verification_plan_ready",
+      "rtl": "not_started",
+      "simulation": "not_run",
+      "synthesis": "not_run",
+      "physical_design": "not_run",
+      "specification": "docs/05_memory_spec_zh.md"
+    }
+  },
+  "next_actions": [
+    "Qualify supported IHP strict leaf/parent fixes before any full-chip attempt 3.",
+    "Check Pin3D legal-lattice and pin-access windows before new placement/route.",
+    "Implement and verify the isolated C1 OBI endpoint from specification v0.1."
+  ]
+}

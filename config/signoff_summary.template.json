@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "run_id": "not-run-template",
   "classification": "not_run",
   "versions": {
@@ -17,7 +17,10 @@
     "wns_ns": null,
     "tns_ns": null,
     "setup_violations": null,
-    "hold_violations": null
+    "hold_violations": null,
+    "max_slew_violations": null,
+    "max_capacitance_violations": null,
+    "max_fanout_violations": null
   },
   "physical": {
     "die_area_um2": null,

@@ -18,7 +18,7 @@
     "evidence"
   ],
   "properties": {
-    "schema_version": {"const": "1.0.0"},
+    "schema_version": {"enum": ["1.0.0", "1.1.0"]},
     "run_id": {"type": "string", "minLength": 1},
     "classification": {
       "enum": ["not_run", "failed", "research_only", "public_rule_candidate", "public_rule_signoff"]
@@ -32,6 +32,12 @@
     "limitations": {"type": "array", "items": {"type": "string"}},
     "evidence": {"type": "array", "items": {"type": "string"}}
   },
+  "allOf": [
+    {
+      "if": {"properties": {"schema_version": {"const": "1.1.0"}}},
+      "then": {"properties": {"timing": {"required": ["max_slew_violations", "max_capacitance_violations", "max_fanout_violations"]}}}
+    }
+  ],
   "$defs": {
     "nullableNumber": {"type": ["number", "null"]},
     "nullableInteger": {"type": ["integer", "null"]},
@@ -63,8 +69,11 @@
         "corner": {"$ref": "#/$defs/nullableString"},
         "wns_ns": {"$ref": "#/$defs/nullableNumber"},
         "tns_ns": {"$ref": "#/$defs/nullableNumber"},
-        "setup_violations": {"$ref": "#/$defs/nullableInteger"},
-        "hold_violations": {"$ref": "#/$defs/nullableInteger"}
+        "setup_violations": {"$ref": "#/$defs/nullableInteger", "minimum": 0},
+        "hold_violations": {"$ref": "#/$defs/nullableInteger", "minimum": 0},
+        "max_slew_violations": {"$ref": "#/$defs/nullableInteger", "minimum": 0},
+        "max_capacitance_violations": {"$ref": "#/$defs/nullableInteger", "minimum": 0},
+        "max_fanout_violations": {"$ref": "#/$defs/nullableInteger", "minimum": 0}
       }
     },
     "physical": {

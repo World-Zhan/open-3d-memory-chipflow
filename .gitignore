@@ -16,6 +16,7 @@ runs/*/signoff.attempt-*/lvs/*
 !runs/pin3d-openroad-pa-ab-*/hbt_spacing_analysis.json
 !runs/pin3d-hbt-capacity-contract-*/summary.json
 !runs/pin3d-hbt-capacity-contract-*/stage_ab.json
+!runs/croc-acceptance-audit-*/summary.json
 reports/generated/
 .state/
 .work/

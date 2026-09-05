@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from pathlib import Path
 
 
@@ -20,6 +21,15 @@ def read_json(path: Path) -> dict | None:
 
 
 def find_summary(run_dir: Path) -> tuple[Path | None, dict | None]:
+    # A newer attempt without a valid summary must not inherit an older PASS.
+    attempts = []
+    for path in run_dir.glob("signoff.attempt-*"):
+        match = re.fullmatch(r"signoff\.attempt-([0-9]+)", path.name)
+        if match and path.is_dir():
+            attempts.append((int(match.group(1)), path))
+    if attempts:
+        path = max(attempts)[1] / "signoff_summary.json"
+        return path, read_json(path)
     candidates = [
         run_dir / "signoff/signoff_summary.json",
         run_dir / "pin3d_signoff_summary.json",
@@ -29,6 +39,16 @@ def find_summary(run_dir: Path) -> tuple[Path | None, dict | None]:
         if data is not None:
             return path, data
     return None, None
+
+
+def acceptance_audits(runs_root: Path) -> list[dict]:
+    records = []
+    for path in sorted(runs_root.glob("croc-acceptance-audit-*/summary.json")):
+        data = read_json(path)
+        if data is not None:
+            records.append({"audit_run_id": path.parent.name,
+                            "path": str(path.relative_to(runs_root)), "summary": data})
+    return records
 
 
 def main() -> int:
@@ -42,6 +62,7 @@ def main() -> int:
 
     records = []
     images = []
+    audits = acceptance_audits(runs_root)
     for manifest_path in sorted(runs_root.glob("*/manifest.json")):
         manifest = read_json(manifest_path)
         if manifest is None:
@@ -55,6 +76,8 @@ def main() -> int:
             "summary_path": str(summary_path.relative_to(ROOT)) if summary_path else None,
             "classification": summary.get("classification") if summary else None,
             "signoff_summary": summary,
+            "acceptance_audits": [item for item in audits
+                                  if item["summary"].get("source_run_id") == manifest.get("run_id", run_dir.name)],
         }
         records.append(record)
         for image in sorted(run_dir.rglob("*.png")):
@@ -63,6 +86,7 @@ def main() -> int:
     aggregate = {
         "schema_version": "1.0.0",
         "run_count": len(records),
+        "acceptance_audits": audits,
         "runs": records,
         "image_count": len(images),
         "images": images,
@@ -72,9 +96,9 @@ def main() -> int:
     lines = [
         "# 芯片流程运行汇总",
         "",
-        "本页只汇总实际存在的 manifest。`classification` 为空表示尚未产生签核汇总；它不等于通过。",
+        "阶段表保留历史 manifest；执行 passed 不等于 route 或芯片验收通过。最新验收复核单列在下方。`classification` 为空表示尚未产生有效签核汇总；它不等于通过。",
         "",
-        "| Run ID | 阶段 | 状态 | 分类 | 关键指标 |",
+        "| Run ID | 历史阶段 | 历史执行状态 | 分类 | 关键指标 |",
         "|---|---|---|---|---|",
     ]
     for record in records:
@@ -99,6 +123,19 @@ def main() -> int:
         lines.append(f"| `{record['run_id']}` | {stages} | {'passed' if all(s.get('status') == 'passed' for s in record['stages']) else 'incomplete/failed'} | `{classification}` | {', '.join(metrics) or '—'} |")
     if not records:
         lines.append("| — | — | 没有实际运行 | `not_run` | — |")
+
+    lines.extend(["", "## 归档报告验收复核", "",
+                  "复核不修改历史阶段、不代表新的 EDA 运行；历史 APR passed 不能覆盖复核发现的电气违规。",
+                  "", "| 审计 Run ID | 原始 Run ID | 当前电气验收 | slew / cap / fanout |",
+                  "|---|---|---|---|"])
+    for item in audits:
+        data = item["summary"]
+        timing = data.get("observed_timing", {})
+        counts = " / ".join(str(timing.get(key)) for key in
+                            ("max_slew_violations", "max_capacitance_violations", "max_fanout_violations"))
+        lines.append(f"| `{item['audit_run_id']}` | `{data.get('source_run_id')}` | `{data.get('status')}` | {counts} |")
+    if not audits:
+        lines.append("| — | — | not_run | — |")
 
     lines.extend(
         [

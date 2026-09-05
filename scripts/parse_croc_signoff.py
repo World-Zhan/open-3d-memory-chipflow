@@ -11,7 +11,7 @@ from pathlib import Path
 import subprocess
 import xml.etree.ElementTree as ET
 
-from collect_croc_evidence import final_timing
+from collect_croc_evidence import final_timing, timing_checks
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -87,7 +87,9 @@ def main() -> int:
         "container_digest": lock["container"]["digest"],
     }
     summary["timing"].update(timing)
-    summary["timing"]["corner"] = "tt"
+    # The final report aggregates paths and does not declare one summary corner.
+    # Loading TT/FF libraries is not proof that every mode/corner was checked.
+    summary["timing"]["corner"] = None
     summary["physical"]["unrouted_nets"] = 0 if routed else None
     summary["physical"]["pdn_connected"] = pdn
     summary["signoff"].update(
@@ -111,6 +113,7 @@ def main() -> int:
         "IHP Open PDK is preview; foundry tapeout still requires IHP confirmation of the frozen PDK, decks and waivers.",
         "LVS checks the electrical croc_chip GDS before mechanical seal-ring and fill insertion; full DRC checks croc.filled.gds.gz.",
         "Power is a tool estimate unless an activity source is recorded; no silicon power claim is made.",
+        "Final timing aggregates observed report metrics; corner/mode coverage and post-route extracted-parasitic STA must be qualified separately.",
     ]
 
     hard_checks = {
@@ -120,11 +123,8 @@ def main() -> int:
         "lvs_exact_match": lvs_match,
         "fully_routed": routed,
         "pdn_connected": pdn,
-        "wns_nonnegative": timing["wns_ns"] is not None and timing["wns_ns"] >= 0,
-        "tns_nonnegative": timing["tns_ns"] is not None and timing["tns_ns"] >= 0,
-        "setup_clean": timing["setup_violations"] in (None, 0),
-        "hold_clean": timing["hold_violations"] in (None, 0),
     }
+    hard_checks.update(timing_checks(timing))
     passed = all(hard_checks.values())
     summary["classification"] = "public_rule_signoff" if passed else "failed"
     summary_path = signoff_dir / "signoff_summary.json"

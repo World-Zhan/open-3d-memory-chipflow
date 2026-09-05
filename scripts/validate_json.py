@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 from pathlib import Path
 import re
 
@@ -59,8 +60,17 @@ def nullable(value: object, kind: type) -> bool:
 def validate_signoff(data: dict) -> None:
     expected = {"schema_version", "run_id", "classification", "versions", "timing", "physical", "signoff", "three_d", "power", "limitations", "evidence"}
     require(set(data) == expected, "signoff_summary top-level keys do not match schema")
-    require(data["schema_version"] == "1.0.0", "unsupported signoff schema")
+    require(data["schema_version"] in {"1.0.0", "1.1.0"}, "unsupported signoff schema")
     require(data["classification"] in {"not_run", "failed", "research_only", "public_rule_candidate", "public_rule_signoff"}, "invalid classification")
+    timing = data["timing"]
+    electrical_counts = ("max_slew_violations", "max_capacitance_violations", "max_fanout_violations")
+    if data["schema_version"] == "1.1.0":
+        require(all(key in timing for key in electrical_counts),
+                "schema 1.1.0 requires electrical count fields, nullable when not observed")
+    for key in ("setup_violations", "hold_violations", *electrical_counts):
+        value = timing.get(key)
+        require(value is None or (type(value) is int and value >= 0),
+                f"{key} must be null or a non-negative integer")
     versions = data["versions"]
     for key in ("repository_commit", "croc_commit", "ihp_pdk_commit", "taiwei_commit", "orfs_commit", "openroad_commit"):
         value = versions[key]
@@ -81,10 +91,15 @@ def validate_signoff(data: dict) -> None:
         require(signoff["lvs_exact_match"] is True, "public_rule_signoff requires exact LVS")
         require(data["physical"]["unrouted_nets"] == 0, "public_rule_signoff requires zero unrouted nets")
         require(data["physical"]["pdn_connected"] is True, "public_rule_signoff requires connected VDD/VSS PDN")
-        require(data["timing"]["wns_ns"] is not None and data["timing"]["wns_ns"] >= 0, "public_rule_signoff requires non-negative WNS")
-        require(data["timing"]["tns_ns"] is not None and data["timing"]["tns_ns"] >= 0, "public_rule_signoff requires non-negative TNS")
-        for key in ("setup_violations", "hold_violations"):
-            require(data["timing"][key] in (None, 0), f"public_rule_signoff requires {key}=0 when reported")
+        for key in ("wns_ns", "tns_ns"):
+            value = data["timing"].get(key)
+            require(type(value) in (int, float) and math.isfinite(value) and value >= 0,
+                    f"public_rule_signoff requires finite non-negative {key}")
+        for key in ("setup_violations", "hold_violations", "max_slew_violations",
+                    "max_capacitance_violations", "max_fanout_violations"):
+            value = data["timing"].get(key)
+            require(type(value) is int and value == 0,
+                    f"public_rule_signoff requires observed {key}=0")
         require(bool(data["evidence"]), "public_rule_signoff requires evidence paths")
     if data["classification"] == "research_only":
         require(any("research" in item.lower() for item in data["limitations"]), "research_only must state its limitation")

@@ -20,13 +20,17 @@ ASAP7/TaiWei 永久是 `research_only`。
 4. `design_is_routed` 为 true；
 5. VDD/VSS `check_power_grid` 均成功；
 6. WNS/TNS 可解析且非负；
-7. setup/hold 报告若存在 violation count，必须为 0；
+7. setup/hold/max slew/max capacitance/max fanout 五类 violation count 必须明确报告为整数 0；任何字段缺失或无法解析都失败；
 8. GDS、sealed GDS、metal-filled GDS、active-filled GDS 都非空；
 9. 完整 IHP main+density+antenna DRC 的未豁免违规为 0；
 10. 顶层 LVS exact match；
 11. `disabled_rules` 为空。
 
-任何“未知/没生成/没解析到”都不等于通过。
+任何“未知/没生成/没解析到”都不等于通过。signoff schema 1.1.0 增加三类电气违规计数；旧 1.0.0 失败报告仍可读取，但缺失新指标不能提升为当前签核通过。
+
+这些自动门槛仍是范围有限的公开流程检查。当前时序报告汇总多次观测，并不建立 corner/mode 覆盖证明；已加载 TT/FF 库不能替代逐模式/角落检查。Croc finishing 的 RCX/SPEF 路径尚未启用，需单独补提取后 STA、未约束路径/例外审核和完整约束覆盖。PDN connectivity 不代表 IR-drop/EM。任何未来通过声明也必须明确这些资格范围。
+
+2026-09-05 对原基线的只读[复核](../runs/croc-acceptance-audit-20260905-001/summary.json)发现 slew/cap/fanout=76/71/200；历史 APR passed 只记录当时执行与旧验收结果。原始报告不改写，以独立 audit 和[当前状态](../CURRENT_STATUS.md)表达新结论。
 
 ## 3. 明令禁止的跑绿手段
 

@@ -10,6 +10,12 @@ Run ID：`croc-sg13g2-baseline-20260827-001`<br>
 - `signoff.attempt-2/lvs/port_mismatch_analysis.json`：流式、低内存的 52→composite 端口映射、135,057 formal-port 分类和前 100 个异常样本。
 - `signoff.attempt-2/signoff_summary.json`：attempt 2 原始严格验收汇总。
 
+## 2026-09-05 验收与扩展复核
+
+下表和阶段 PASS 为历史记录。最新解释见[当前状态](../../CURRENT_STATUS.md)和[独立电气 audit](../croc-acceptance-audit-20260905-001/summary.json)：原 final report 的 slew/cap/fanout 为 **76/71/200**，因此当前电气验收 FAIL。未改写原 manifest、stage_evidence、时序报告或 signoff 结果，也没有新 EDA 运行。
+
+C 轨现已建立[最小规格/验证计划](../../docs/05_memory_spec_zh.md)，RTL 尚未实现。其独立 C1 模块工作可以开始；本页旧有“全部等 A/B 稳定”的表述不再作为独立规格、模块 RTL 和验证的前置条件。实际基线集成/物理运行继续遵守对应门槛。
+
 ## 三轨总体状态
 
 | 轨道 | 当前状态 | 可制造性口径 | 不能声称的内容 |

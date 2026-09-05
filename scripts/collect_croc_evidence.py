@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import os
 from pathlib import Path
 import re
@@ -16,37 +17,62 @@ ROOT = Path(__file__).resolve().parents[1]
 NUMBER = r"[-+]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][-+]?\d+)?"
 
 
+TIMING_COUNTS = {
+    "setup_violations": "setup violation count",
+    "hold_violations": "hold violation count",
+    "max_slew_violations": "max slew violation count",
+    "max_capacitance_violations": "max cap violation count",
+    "max_fanout_violations": "max fanout violation count",
+}
+
+
 def final_timing(report: Path) -> dict:
-    values = {"wns_ns": None, "tns_ns": None, "setup_violations": None, "hold_violations": None}
+    """Read explicit final-report metrics; missing or malformed data stays unknown.
+
+    If a report contains several corner results, retain the worst observed
+    value. These aggregate metrics do not establish corner/mode coverage.
+    """
+    values = {key: None for key in ("wns_ns", "tns_ns", *TIMING_COUNTS)}
     if not report.is_file():
         return values
     text = report.read_text(encoding="utf-8", errors="replace")
-    patterns = {
-        "setup_violations": r"setup violation count\s+(\d+)",
-        "hold_violations": r"hold violation count\s+(\d+)",
-    }
-    for key, pattern in patterns.items():
-        match = re.search(pattern, text, re.IGNORECASE)
-        if match:
-            values[key] = int(match.group(1))
-
-    sections = {
-        "wns_ns": r"report_wns\s*\n-+\s*\n\s*(" + NUMBER + r")",
-        "tns_ns": r"report_tns\s*\n-+\s*\n\s*(" + NUMBER + r")",
-    }
-    for key, pattern in sections.items():
-        match = re.search(pattern, text, re.IGNORECASE)
-        if match:
-            values[key] = float(match.group(1))
-    if values["wns_ns"] is None:
-        match = re.search(r"(?:wns|worst\s+slack)[^\n]*?(" + NUMBER + r")", text, re.IGNORECASE)
-        if match:
-            values["wns_ns"] = float(match.group(1))
-    if values["tns_ns"] is None:
-        match = re.search(r"\btns\b[^\n]*?(" + NUMBER + r")", text, re.IGNORECASE)
-        if match:
-            values["tns_ns"] = float(match.group(1))
+    for key, label in TIMING_COUNTS.items():
+        tokens = re.findall(r"^[ \t]*" + re.escape(label) + r"\b[ \t]*([^\r\n]*)$", text, re.MULTILINE | re.IGNORECASE)
+        if tokens and all(re.fullmatch(r"[0-9]+", item.strip()) for item in tokens):
+            values[key] = max(int(item) for item in tokens)
+    for key, label in (("wns_ns", "wns"), ("tns_ns", "tns")):
+        tokens = re.findall(
+            r"^[ \t]*" + label + r"(?:[ \t]+(?:max|min))?\b[ \t]*([^\r\n]*)$",
+            text, re.MULTILINE | re.IGNORECASE,
+        )
+        tokens += re.findall(
+            r"\breport_" + label + r"[^\n]*\n-+\s*\n\s*(\S+)\s*(?:\n|$)",
+            text, re.IGNORECASE,
+        )
+        # A named metric line under a heading was already collected above.
+        tokens = [item for item in tokens if item.lower() != label]
+        try:
+            numbers = [float(item) for item in tokens]
+        except ValueError:
+            numbers = []
+        if numbers and all(math.isfinite(value) for value in numbers):
+            values[key] = min(numbers)
     return values
+
+
+def timing_checks(timing: dict) -> dict[str, bool]:
+    """Shared stage/signoff gates: every required metric must be present."""
+    checks = {}
+    for key in ("wns_ns", "tns_ns"):
+        value = timing.get(key)
+        checks[key + "_nonnegative"] = (
+            isinstance(value, (int, float)) and not isinstance(value, bool)
+            and math.isfinite(value) and value >= 0
+        )
+    for key in TIMING_COUNTS:
+        value = timing.get(key)
+        checks[key + "_zero"] = type(value) is int and value == 0
+    return checks
 
 
 def write_evidence(stage: str, payload: dict) -> None:
@@ -132,14 +158,11 @@ def main() -> int:
             failures.append("VDD/VSS power-grid connectivity was not proven")
         timing = final_timing(required[-1])
         evidence["timing"] = timing
-        for key in ("wns_ns", "tns_ns"):
-            if timing[key] is None:
-                failures.append(f"could not parse {key} from final report")
-            elif timing[key] < 0:
-                failures.append(f"{key} is negative: {timing[key]}")
-        for key in ("setup_violations", "hold_violations"):
-            if timing[key] is not None and timing[key] != 0:
-                failures.append(f"{key} is nonzero: {timing[key]}")
+        metric_checks = timing_checks(timing)
+        evidence["checks"].update(metric_checks)
+        for name, passed in metric_checks.items():
+            if not passed:
+                failures.append(f"final timing/electrical check failed or missing: {name}")
 
     elif args.stage == "gds":
         names = ["croc.gds.gz", "croc.sealed.gds.gz", "croc.metfilled.gds.gz", "croc.filled.gds.gz"]

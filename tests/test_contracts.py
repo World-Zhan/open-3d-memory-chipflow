@@ -35,6 +35,7 @@ class ContractTests(unittest.TestCase):
         data["versions"]["repository_commit"] = "0" * 40
         data["versions"]["container_digest"] = "sha256:" + "0" * 64
         data["timing"].update({"wns_ns": 0.0, "tns_ns": 0.0, "setup_violations": 0, "hold_violations": 0})
+        data["timing"].update({"max_slew_violations": 0, "max_capacitance_violations": 0, "max_fanout_violations": 0})
         data["physical"].update({"unrouted_nets": 0, "pdn_connected": True})
         data["signoff"].update(
             {
@@ -83,6 +84,48 @@ class ContractTests(unittest.TestCase):
 
     def test_complete_public_signoff_contract_passes(self):
         validate_json.validate_signoff(self.passing_public_summary())
+
+    def test_public_signoff_rejects_missing_or_nonzero_electrical_metrics(self):
+        for key in collect_croc.TIMING_COUNTS:
+            for value in (None, 1, -1, True, "0"):
+                with self.subTest(key=key, value=value):
+                    data = self.passing_public_summary()
+                    data["timing"][key] = value
+                    with self.assertRaises(ValueError):
+                        validate_json.validate_signoff(data)
+
+    def test_public_signoff_rejects_nonfinite_timing(self):
+        for value in (float("inf"), float("nan"), -0.01):
+            data = self.passing_public_summary()
+            data["timing"]["wns_ns"] = value
+            with self.assertRaises(ValueError):
+                validate_json.validate_signoff(data)
+
+    def test_old_failed_summary_remains_readable(self):
+        data = self.passing_public_summary()
+        data["schema_version"] = "1.0.0"
+        data["classification"] = "failed"
+        for key in ("max_slew_violations", "max_capacitance_violations", "max_fanout_violations"):
+            del data["timing"][key]
+        validate_json.validate_signoff(data)
+
+    def test_new_failed_summary_requires_electrical_fields(self):
+        for key in ("max_slew_violations", "max_capacitance_violations", "max_fanout_violations"):
+            data = self.passing_public_summary()
+            data["classification"] = "failed"
+            del data["timing"][key]
+            with self.assertRaises(ValueError):
+                validate_json.validate_signoff(data)
+            data["timing"][key] = None
+            validate_json.validate_signoff(data)
+
+    def test_failed_summary_rejects_invalid_electrical_count_type(self):
+        for value in (-1, True, "0", 0.5):
+            data = self.passing_public_summary()
+            data["classification"] = "failed"
+            data["timing"]["max_slew_violations"] = value
+            with self.assertRaises(ValueError):
+                validate_json.validate_signoff(data)
 
     def test_run_id_policy(self):
         self.assertTrue(RUN_ID_RE.fullmatch("croc-baseline-001"))

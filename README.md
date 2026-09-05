@@ -11,6 +11,10 @@ SPDX-License-Identifier: Apache-2.0
 它不会把预测性 ASAP7 版图说成可制造，也不会把 IHP 开放 PDK preview 说成 foundry 最终签核。真实投片仍需要 IHP 对冻结 PDK、rule deck、waiver、封装和 MPW 入口复核。
 已审计的 Open3DFlow 提交并不包含 TaiWei `ord-hotspot` 所需的完整脚本集合，因此不能用其中单独的 thermal demo 冒充兼容 harness。
 
+## 当前进度与扩展规范
+
+先读[当前状态](CURRENT_STATUS.md)：历史 APR/GDS 已执行，但新电气复核、DRC/LVS 尚未通过。自研存储扩展已建立[最小规格与验证计划](docs/05_memory_spec_zh.md)，RTL 尚未开始。[AI 芯片 skill 筛选](docs/04_ai_chip_skills_zh.md)给出固定版本来源、适用阶段与限制。
+
 ## 目录
 
 ```text

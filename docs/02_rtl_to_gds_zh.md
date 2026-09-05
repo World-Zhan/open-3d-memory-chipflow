@@ -136,11 +136,11 @@ Global routing 先分配粗略通道并估计拥塞；detailed routing 在每个
 
 - WNS >= 0；
 - TNS >= 0；
-- setup/hold violation 为 0（若工具报告该字段）；
+- setup/hold/max slew/max capacitance/max fanout violation count 均明确为整数 0；
 - 未布通网络为 0；
 - VDD/VSS power grid 连通。
 
-如果 WNS/TNS 无法从报告解析，验收也失败，不能把“未知”当成 0。
+如果 WNS/TNS 或任何必需 violation count 无法解析，验收也失败，不能把“未知”当成 0。基线复核已发现 WNS/TNS=0 但 slew/cap/fanout=76/71/200，详见[当前状态](../CURRENT_STATUS.md)。现有 estimated-parasitic timing 也不能替代 extracted-SPEF 和完整 corner/mode STA。
 
 ## 7. GDS、seal ring 和 fill：从逻辑几何到完整芯片几何
 
@@ -238,4 +238,4 @@ make pin3d-full RUN_ID=pin3d-gcd-thermal-001
 make report
 ```
 
-每个 stage 的 stdout/stderr、命令、开始/结束时间、退出码、锁定版本和 evidence 都在 `runs/<run-id>/manifest.json`。`report` 只汇总实际存在的数据；缺失指标显示为空，不会补 0。
+每个 stage 的 stdout/stderr、命令、开始/结束时间、退出码、锁定版本和 evidence 都在 `runs/<run-id>/manifest.json`。`report` 只汇总实际存在的数据；缺失指标显示为空，不会补 0。它优先显示最新 signoff attempt，并单列归档电气复核；历史 stage status 不会因新解释而被改写。

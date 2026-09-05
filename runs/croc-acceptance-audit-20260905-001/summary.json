@@ -1,0 +1,45 @@
+{
+  "checks": {
+    "hold_violations_zero": true,
+    "max_capacitance_violations_zero": false,
+    "max_fanout_violations_zero": false,
+    "max_slew_violations_zero": false,
+    "setup_violations_zero": true,
+    "tns_ns_nonnegative": true,
+    "wns_ns_nonnegative": true
+  },
+  "eda_rerun_performed": false,
+  "gates": {
+    "complete_corner_mode_coverage_proven": false,
+    "electrical_acceptance_passed": false,
+    "postroute_extracted_sta_proven": false,
+    "public_rule_signoff": false
+  },
+  "generated_at": "2026-09-05T07:09:11.766237+00:00",
+  "historical_stage_status": "passed",
+  "limitations": [
+    "Reassessment preserves historical stage records; no physical repair or EDA rerun is implied.",
+    "Library loading and aggregate WNS/TNS do not prove full corner/mode coverage.",
+    "The audited baseline uses estimated parasitics; final extracted-SPEF timing was not established.",
+    "PDN connectivity does not establish IR-drop/EM or complete IO supply integrity.",
+    "A-track DRC and LVS remain failed; this audit never promotes the design to signoff."
+  ],
+  "observed_timing": {
+    "hold_violations": 0,
+    "max_capacitance_violations": 71,
+    "max_fanout_violations": 200,
+    "max_slew_violations": 76,
+    "setup_violations": 0,
+    "tns_ns": 0.0,
+    "wns_ns": 0.0
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "sha256": {
+      "runs/croc-sg13g2-baseline-20260827-001/artifacts/pnr/upstream/croc/openroad/reports/05_croc.final.rpt": "d97ab51b4ef09bb2934717ad0797057a58bea7978dee66e0defa13292a77cacc",
+      "runs/croc-sg13g2-baseline-20260827-001/stage_evidence/croc-pnr.json": "2e98202eb342d751fb992554aa2c9792e184fa1bae41e08f4803876541706267"
+    }
+  },
+  "source_run_id": "croc-sg13g2-baseline-20260827-001",
+  "status": "electrical_acceptance_failed"
+}
