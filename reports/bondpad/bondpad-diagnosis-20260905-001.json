@@ -1,0 +1,802 @@
+{
+  "classification": "geometry_diagnostic_not_signoff",
+  "drc_count_interpretation": {
+    "merged_density_markers": 8,
+    "merged_pad_kr_markers": 576,
+    "merged_pad_markers": 1577,
+    "merged_total_markers": 1585,
+    "note": "Hierarchy/orientation-compressed marker count and physical cut multiplicity are distinct; do not equate 576 markers with 9216 cuts.",
+    "physical_topvia2_cuts_fully_inside_openings": 9216,
+    "source_macro_topvia2_cuts_per_pad": 144
+  },
+  "exit_geometry": {
+    "layer_area_counts": {
+      "Metal2": [
+        {
+          "missing_area_um2": 270.92,
+          "pads": 9,
+          "present_area_um2": 219.08
+        },
+        {
+          "missing_area_um2": 258.88,
+          "pads": 32,
+          "present_area_um2": 231.12
+        },
+        {
+          "missing_area_um2": 246.24,
+          "pads": 7,
+          "present_area_um2": 243.76
+        },
+        {
+          "missing_area_um2": 220.76,
+          "pads": 8,
+          "present_area_um2": 269.24
+        },
+        {
+          "missing_area_um2": 52.64,
+          "pads": 8,
+          "present_area_um2": 437.36
+        }
+      ],
+      "Metal3": [
+        {
+          "missing_area_um2": 280.0,
+          "pads": 17,
+          "present_area_um2": 210.0
+        },
+        {
+          "missing_area_um2": 279.09,
+          "pads": 7,
+          "present_area_um2": 210.91
+        },
+        {
+          "missing_area_um2": 278.544,
+          "pads": 32,
+          "present_area_um2": 211.456
+        },
+        {
+          "missing_area_um2": 276.37,
+          "pads": 8,
+          "present_area_um2": 213.63
+        }
+      ],
+      "Metal4": [
+        {
+          "missing_area_um2": 280.0,
+          "pads": 64,
+          "present_area_um2": 210.0
+        }
+      ],
+      "Metal5": [
+        {
+          "missing_area_um2": 280.0,
+          "pads": 64,
+          "present_area_um2": 210.0
+        }
+      ],
+      "TopMetal1": [
+        {
+          "missing_area_um2": 280.0,
+          "pads": 64,
+          "present_area_um2": 210.0
+        }
+      ],
+      "TopMetal2": [
+        {
+          "missing_area_um2": 280.0,
+          "pads": 56,
+          "present_area_um2": 210.0
+        },
+        {
+          "missing_area_um2": 60.04,
+          "pads": 8,
+          "present_area_um2": 429.96
+        }
+      ]
+    },
+    "manifest": {
+      "checked_at": "2026-09-05T09:05:30.741452+00:00",
+      "classification": "read_only_geometry_diagnostic",
+      "container_running_verified_after_timeout": true,
+      "full_chip_drc_lvs_performed": false,
+      "limitation": "Wrapper timed out; final container exit code unavailable after --rm. Output parsed and 64 pad strip area sums validated; not a process-pass or DRC claim.",
+      "probe_sha256": "fb17ee8c51ea4c9d7ad6c9976c58e62ddafd662615c59859e848819c8c242620",
+      "returncode": null,
+      "run_id": "bondpad-exit-geometry-20260905-001",
+      "source_gds_path": "runs/croc-sg13g2-baseline-20260827-001/artifacts/gds.attempt-4/upstream/croc/klayout/out/croc.filled.gds.gz",
+      "source_gds_sha256": "a529f11fd712ecdfb9abe66f2842838e8ffa38582d647c8f5ed612298e32ee09",
+      "status": "output_available_and_validated_after_wrapper_timeout",
+      "subsequent_stop_result": "No such container; container had already exited",
+      "summary_sha256": "17aa4baa11ef2a578a055f8d76da36b12ef4215d2abd9ab51eacecb6fd9c21b2",
+      "wrapper_time_limit_seconds": 90
+    },
+    "pad_count": 64,
+    "run_id": "bondpad-exit-geometry-20260905-001",
+    "sample": {
+      "expected_exit_length_um": 7,
+      "layers": {
+        "Metal2": {
+          "missing_area_um2": 52.64,
+          "missing_bbox_um": "(255.17,73;306.53,77)",
+          "present_area_um2": 437.35999999999996,
+          "strip_area_um2": 490.0
+        },
+        "Metal3": {
+          "missing_area_um2": 280.0,
+          "missing_bbox_um": "(255,73;325,77)",
+          "present_area_um2": 210.0,
+          "strip_area_um2": 490.0
+        },
+        "Metal4": {
+          "missing_area_um2": 280.0,
+          "missing_bbox_um": "(255,73;325,77)",
+          "present_area_um2": 210.0,
+          "strip_area_um2": 490.0
+        },
+        "Metal5": {
+          "missing_area_um2": 280.0,
+          "missing_bbox_um": "(255,73;325,77)",
+          "present_area_um2": 210.0,
+          "strip_area_um2": 490.0
+        },
+        "TopMetal1": {
+          "missing_area_um2": 280.0,
+          "missing_bbox_um": "(255,73;325,77)",
+          "present_area_um2": 210.0,
+          "strip_area_um2": 490.0
+        },
+        "TopMetal2": {
+          "missing_area_um2": 280.0,
+          "missing_bbox_um": "(255,73;325,77)",
+          "present_area_um2": 210.0,
+          "strip_area_um2": 490.0
+        }
+      },
+      "pad_bbox_um": "(255,0;325,70)",
+      "pad_index": 0,
+      "side": "bottom",
+      "strip_bbox_um": "(255,70;325,77)"
+    },
+    "strip_length_um": 7,
+    "strip_width_um": 70
+  },
+  "fixture_hypothesis": {
+    "candidate": "official_m2_square70.gds",
+    "candidate_run": "bondpad-geometry-20260905-003",
+    "control": "original Croc bondpad_70x70.gds",
+    "integration_requirements": [
+      "Translate centered official geometry by +35um,+35um before matching the original 0..70um origin.",
+      "Use ring-shaped Metal2..TopMetal1 LEF ports/obstructions matching generated GDS; original full-square lower-metal ports are not compatible.",
+      "Keep TopMetal2/Passiv/dfpad and wirebond policy coherent; do not select fill=t or FlipChip=yes merely to pass a different rule set.",
+      "Verify at least one adjacent IO/pad/lead fixture for 7um exits and 11.2um Activ gap before full-chip integration."
+    ],
+    "parameters": {
+      "FlipChip": "no",
+      "bottomMetal": "2",
+      "diameter": "70u",
+      "fill": "nil",
+      "padType": "bondpad",
+      "shape": "square",
+      "stack": "t"
+    },
+    "predicted_scope": "Test whether official perimeter-via construction removes Pad.kR on an isolated macro with unchanged public/recommended rules; do not predict full-chip PASS."
+  },
+  "geometry": {
+    "archived_drc_category_counts": {
+      "'M1Fil.h'": 2,
+      "'M2Fil.h'": 3,
+      "'M3Fil.h'": 3,
+      "'Pad.d1R'": 72,
+      "'Pad.dR'": 4,
+      "'Pad.fR_M2'": 581,
+      "'Pad.fR_M3'": 64,
+      "'Pad.fR_M4'": 64,
+      "'Pad.fR_M5'": 64,
+      "'Pad.fR_TM1'": 64,
+      "'Pad.fR_TM2'": 88,
+      "'Pad.kR'": 576
+    },
+    "chip": {
+      "bbox_um": "(0,0;2000,2000)",
+      "dbu_um": 0.001,
+      "top_cell": "croc_chip_sealed",
+      "topvia2_count_by_source_cell": {
+        "VIA_via6_7_18000_13330_6_9_1960_1960": 3024,
+        "VIA_via6_7_3000_8000_4_1_1960_1960": 88,
+        "VIA_via6_7_8000_13330_6_4_1960_1960": 1344,
+        "VIA_via6_7_8000_8000_4_4_1960_1960": 128,
+        "bondpad_CDNS_701964819630": 9216,
+        "sealring_top": 8,
+        "sg13g2_IOPadIOVdd": 3684,
+        "sg13g2_IOPadIOVss": 6372,
+        "sg13g2_IOPadIn": 14337,
+        "sg13g2_IOPadInOut30mA": 50976,
+        "sg13g2_IOPadOut16mA": 11151,
+        "sg13g2_IOPadVdd": 1772,
+        "sg13g2_IOPadVss": 6372
+      },
+      "topvia2_fully_inside_pad_opening_by_source_cell": {
+        "bondpad_CDNS_701964819630": 9216
+      },
+      "topvia2_inside_opening_samples": [
+        {
+          "bbox_um": "(1919.885,1491.215;1920.785,1492.115)",
+          "source_cell": "bondpad_CDNS_701964819630"
+        },
+        {
+          "bbox_um": "(1914.545,1491.215;1915.445,1492.115)",
+          "source_cell": "bondpad_CDNS_701964819630"
+        },
+        {
+          "bbox_um": "(1909.205,1491.215;1910.105,1492.115)",
+          "source_cell": "bondpad_CDNS_701964819630"
+        },
+        {
+          "bbox_um": "(1903.87,1491.215;1904.77,1492.115)",
+          "source_cell": "bondpad_CDNS_701964819630"
+        },
+        {
+          "bbox_um": "(1898.53,1491.215;1899.43,1492.115)",
+          "source_cell": "bondpad_CDNS_701964819630"
+        },
+        {
+          "bbox_um": "(1893.19,1491.215;1894.09,1492.115)",
+          "source_cell": "bondpad_CDNS_701964819630"
+        },
+        {
+          "bbox_um": "(1919.885,1496.555;1920.785,1497.455)",
+          "source_cell": "bondpad_CDNS_701964819630"
+        },
+        {
+          "bbox_um": "(1914.545,1496.555;1915.445,1497.455)",
+          "source_cell": "bondpad_CDNS_701964819630"
+        },
+        {
+          "bbox_um": "(1909.205,1496.555;1910.105,1497.455)",
+          "source_cell": "bondpad_CDNS_701964819630"
+        },
+        {
+          "bbox_um": "(1903.87,1496.555;1904.77,1497.455)",
+          "source_cell": "bondpad_CDNS_701964819630"
+        },
+        {
+          "bbox_um": "(1898.53,1496.555;1899.43,1497.455)",
+          "source_cell": "bondpad_CDNS_701964819630"
+        },
+        {
+          "bbox_um": "(1893.19,1496.555;1894.09,1497.455)",
+          "source_cell": "bondpad_CDNS_701964819630"
+        }
+      ]
+    },
+    "classification": "geometry_diagnostic_not_signoff",
+    "croc_macro": {
+      "bbox_um": "(0,0;70,70)",
+      "cell": "bondpad_70x70",
+      "dbu_um": 0.001,
+      "layers": {
+        "Activ": {
+          "bbox_um": "()",
+          "gds_pair": [
+            1,
+            0
+          ],
+          "merged_area_um2": 0.0,
+          "polygon_count": 0
+        },
+        "EdgeSeal": {
+          "bbox_um": "()",
+          "gds_pair": [
+            39,
+            0
+          ],
+          "merged_area_um2": 0.0,
+          "polygon_count": 0
+        },
+        "Metal1": {
+          "bbox_um": "()",
+          "gds_pair": [
+            8,
+            0
+          ],
+          "merged_area_um2": 0.0,
+          "polygon_count": 0
+        },
+        "Metal2": {
+          "bbox_um": "(0,0;70,70)",
+          "gds_pair": [
+            10,
+            0
+          ],
+          "merged_area_um2": 4900.0,
+          "polygon_count": 1
+        },
+        "Metal3": {
+          "bbox_um": "(0,0;70,70)",
+          "gds_pair": [
+            30,
+            0
+          ],
+          "merged_area_um2": 4900.0,
+          "polygon_count": 1
+        },
+        "Metal4": {
+          "bbox_um": "(0,0;70,70)",
+          "gds_pair": [
+            50,
+            0
+          ],
+          "merged_area_um2": 4900.0,
+          "polygon_count": 1
+        },
+        "Metal5": {
+          "bbox_um": "(0,0;70,70)",
+          "gds_pair": [
+            67,
+            0
+          ],
+          "merged_area_um2": 4900.0,
+          "polygon_count": 1
+        },
+        "Passiv": {
+          "bbox_um": "(2.135,2.135;67.865,67.865)",
+          "gds_pair": [
+            9,
+            0
+          ],
+          "merged_area_um2": 4320.4329,
+          "polygon_count": 1
+        },
+        "TopMetal1": {
+          "bbox_um": "(0,0;70,70)",
+          "gds_pair": [
+            126,
+            0
+          ],
+          "merged_area_um2": 4900.0,
+          "polygon_count": 1
+        },
+        "TopMetal2": {
+          "bbox_um": "(0,0;70,70)",
+          "gds_pair": [
+            134,
+            0
+          ],
+          "merged_area_um2": 4900.0,
+          "polygon_count": 1
+        },
+        "TopVia1": {
+          "bbox_um": "(3.07,3.07;66.93,66.93)",
+          "gds_pair": [
+            125,
+            0
+          ],
+          "merged_area_um2": 169.5204,
+          "polygon_count": 961
+        },
+        "TopVia2": {
+          "bbox_um": "(5.19,5.19;64.81,64.81)",
+          "gds_pair": [
+            133,
+            0
+          ],
+          "merged_area_um2": 116.64,
+          "polygon_count": 144
+        },
+        "dfpad": {
+          "bbox_um": "(0,0;70,70)",
+          "gds_pair": [
+            41,
+            0
+          ],
+          "merged_area_um2": 4900.0,
+          "polygon_count": 1
+        }
+      },
+      "topvia2_fully_inside_pad_opening": 144,
+      "topvia2_intersecting_pad_opening": 144,
+      "topvia2_overlap_opening_area_um2": 116.64
+    },
+    "klayout_version": "0.30.5",
+    "layer_map": {
+      "Activ": [
+        1,
+        0
+      ],
+      "EdgeSeal": [
+        39,
+        0
+      ],
+      "Metal1": [
+        8,
+        0
+      ],
+      "Metal2": [
+        10,
+        0
+      ],
+      "Metal3": [
+        30,
+        0
+      ],
+      "Metal4": [
+        50,
+        0
+      ],
+      "Metal5": [
+        67,
+        0
+      ],
+      "Passiv": [
+        9,
+        0
+      ],
+      "TopMetal1": [
+        126,
+        0
+      ],
+      "TopMetal2": [
+        134,
+        0
+      ],
+      "TopVia1": [
+        125,
+        0
+      ],
+      "TopVia2": [
+        133,
+        0
+      ],
+      "dfpad": [
+        41,
+        0
+      ]
+    },
+    "limitations": [
+      "Geometry and archived-marker review only; no full-chip DRC/LVS executed.",
+      "Generated PCell variants are isolated fixture artifacts, not substituted into Croc.",
+      "No signoff, bonding/packaging acceptance, or repaired-route claim is made."
+    ],
+    "official_pcell_parameters": {
+      "FlipChip": "no",
+      "addFillerEx": "nil",
+      "bottomMetal": "3",
+      "diameter": "80.00u",
+      "fill": "nil",
+      "hwquota": "1",
+      "model": "bondpad",
+      "padPin": "PAD",
+      "padType": "bondpad",
+      "passEncl": "2.1u",
+      "shape": "octagon",
+      "stack": "t",
+      "topMetal": "TM2"
+    },
+    "official_variants": {
+      "official_default_square70": {
+        "bbox_um": "(-35,-35;35,35)",
+        "cell": "official_default_square70",
+        "dbu_um": 0.001,
+        "explicit_parameters": {
+          "diameter": "70u",
+          "shape": "square"
+        },
+        "generated_gds_sha256": "84ae6304b1f1e739742160a4c467668f558d1177a9deb6345092d37b35472fae",
+        "layers": {
+          "Activ": {
+            "bbox_um": "()",
+            "gds_pair": [
+              1,
+              0
+            ],
+            "merged_area_um2": 0.0,
+            "polygon_count": 0
+          },
+          "EdgeSeal": {
+            "bbox_um": "()",
+            "gds_pair": [
+              39,
+              0
+            ],
+            "merged_area_um2": 0.0,
+            "polygon_count": 0
+          },
+          "Metal1": {
+            "bbox_um": "()",
+            "gds_pair": [
+              8,
+              0
+            ],
+            "merged_area_um2": 0.0,
+            "polygon_count": 0
+          },
+          "Metal2": {
+            "bbox_um": "()",
+            "gds_pair": [
+              10,
+              0
+            ],
+            "merged_area_um2": 0.0,
+            "polygon_count": 0
+          },
+          "Metal3": {
+            "bbox_um": "(-35,-35;35,35)",
+            "gds_pair": [
+              30,
+              0
+            ],
+            "merged_area_um2": 1073.3404,
+            "polygon_count": 1
+          },
+          "Metal4": {
+            "bbox_um": "(-35,-35;35,35)",
+            "gds_pair": [
+              50,
+              0
+            ],
+            "merged_area_um2": 1073.3404,
+            "polygon_count": 1
+          },
+          "Metal5": {
+            "bbox_um": "(-35,-35;35,35)",
+            "gds_pair": [
+              67,
+              0
+            ],
+            "merged_area_um2": 1073.3404,
+            "polygon_count": 1
+          },
+          "Passiv": {
+            "bbox_um": "(-32.9,-32.9;32.9,32.9)",
+            "gds_pair": [
+              9,
+              0
+            ],
+            "merged_area_um2": 4329.639999999999,
+            "polygon_count": 1
+          },
+          "TopMetal1": {
+            "bbox_um": "(-35,-35;35,35)",
+            "gds_pair": [
+              126,
+              0
+            ],
+            "merged_area_um2": 1073.3404,
+            "polygon_count": 1
+          },
+          "TopMetal2": {
+            "bbox_um": "(-35,-35;35,35)",
+            "gds_pair": [
+              134,
+              0
+            ],
+            "merged_area_um2": 4900.0,
+            "polygon_count": 1
+          },
+          "TopVia1": {
+            "bbox_um": "(-33.175,-33.175;33.175,33.175)",
+            "gds_pair": [
+              125,
+              0
+            ],
+            "merged_area_um2": 55.0368,
+            "polygon_count": 312
+          },
+          "TopVia2": {
+            "bbox_um": "(-33.415,-33.415;33.415,33.415)",
+            "gds_pair": [
+              133,
+              0
+            ],
+            "merged_area_um2": 106.92,
+            "polygon_count": 132
+          },
+          "dfpad": {
+            "bbox_um": "(-35,-35;35,35)",
+            "gds_pair": [
+              41,
+              0
+            ],
+            "merged_area_um2": 4900.0,
+            "polygon_count": 1
+          }
+        },
+        "topvia2_fully_inside_pad_opening": 0,
+        "topvia2_intersecting_pad_opening": 132,
+        "topvia2_overlap_opening_area_um2": 44.9449
+      },
+      "official_m2_square70": {
+        "bbox_um": "(-35,-35;35,35)",
+        "cell": "official_m2_square70",
+        "dbu_um": 0.001,
+        "explicit_parameters": {
+          "FlipChip": "no",
+          "bottomMetal": "2",
+          "diameter": "70u",
+          "fill": "nil",
+          "padType": "bondpad",
+          "shape": "square",
+          "stack": "t"
+        },
+        "generated_gds_sha256": "d3c1879ff1f3040dca9fe2edf65eae2e0265af9ae2ab9c66bd0c3de68d862a80",
+        "layers": {
+          "Activ": {
+            "bbox_um": "()",
+            "gds_pair": [
+              1,
+              0
+            ],
+            "merged_area_um2": 0.0,
+            "polygon_count": 0
+          },
+          "EdgeSeal": {
+            "bbox_um": "()",
+            "gds_pair": [
+              39,
+              0
+            ],
+            "merged_area_um2": 0.0,
+            "polygon_count": 0
+          },
+          "Metal1": {
+            "bbox_um": "()",
+            "gds_pair": [
+              8,
+              0
+            ],
+            "merged_area_um2": 0.0,
+            "polygon_count": 0
+          },
+          "Metal2": {
+            "bbox_um": "(-35,-35;35,35)",
+            "gds_pair": [
+              10,
+              0
+            ],
+            "merged_area_um2": 1073.3404,
+            "polygon_count": 1
+          },
+          "Metal3": {
+            "bbox_um": "(-35,-35;35,35)",
+            "gds_pair": [
+              30,
+              0
+            ],
+            "merged_area_um2": 1073.3404,
+            "polygon_count": 1
+          },
+          "Metal4": {
+            "bbox_um": "(-35,-35;35,35)",
+            "gds_pair": [
+              50,
+              0
+            ],
+            "merged_area_um2": 1073.3404,
+            "polygon_count": 1
+          },
+          "Metal5": {
+            "bbox_um": "(-35,-35;35,35)",
+            "gds_pair": [
+              67,
+              0
+            ],
+            "merged_area_um2": 1073.3404,
+            "polygon_count": 1
+          },
+          "Passiv": {
+            "bbox_um": "(-32.9,-32.9;32.9,32.9)",
+            "gds_pair": [
+              9,
+              0
+            ],
+            "merged_area_um2": 4329.639999999999,
+            "polygon_count": 1
+          },
+          "TopMetal1": {
+            "bbox_um": "(-35,-35;35,35)",
+            "gds_pair": [
+              126,
+              0
+            ],
+            "merged_area_um2": 1073.3404,
+            "polygon_count": 1
+          },
+          "TopMetal2": {
+            "bbox_um": "(-35,-35;35,35)",
+            "gds_pair": [
+              134,
+              0
+            ],
+            "merged_area_um2": 4900.0,
+            "polygon_count": 1
+          },
+          "TopVia1": {
+            "bbox_um": "(-33.175,-33.175;33.175,33.175)",
+            "gds_pair": [
+              125,
+              0
+            ],
+            "merged_area_um2": 55.0368,
+            "polygon_count": 312
+          },
+          "TopVia2": {
+            "bbox_um": "(-33.415,-33.415;33.415,33.415)",
+            "gds_pair": [
+              133,
+              0
+            ],
+            "merged_area_um2": 106.92,
+            "polygon_count": 132
+          },
+          "dfpad": {
+            "bbox_um": "(-35,-35;35,35)",
+            "gds_pair": [
+              41,
+              0
+            ],
+            "merged_area_um2": 4900.0,
+            "polygon_count": 1
+          }
+        },
+        "topvia2_fully_inside_pad_opening": 0,
+        "topvia2_intersecting_pad_opening": 132,
+        "topvia2_overlap_opening_area_um2": 44.9449
+      }
+    },
+    "schema_version": "1.0.0",
+    "source_sha256": {
+      "runs/croc-sg13g2-baseline-20260827-001/artifacts/gds.attempt-4/upstream/croc/klayout/out/croc.filled.gds.gz": "a529f11fd712ecdfb9abe66f2842838e8ffa38582d647c8f5ed612298e32ee09",
+      "runs/croc-sg13g2-baseline-20260827-001/signoff.attempt-2/drc/croc.filled.gds_croc_chip_sealed_full.lyrdb": "7b7b1ef44b7aa06e99216b5fd58e24d2386af8cecb644d3482973f02ca672932",
+      "upstream/croc/technology/gds/bondpad_70x70.gds": "e33eb26e835a6cf38b07cd52458d90e1382f49f37361b5671c7b183add43ffec",
+      "upstream/croc/technology/lef/bondpad_70x70.lef": "3a08d296380b6808fffbb8f9ee25b4991198e341f78326f9a9b91fd58f0476f3",
+      "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/python/sg13g2_pycell_lib/ihp/bondpad_code.py": "e3924f692e7e1cc7a235d9419badad86bf11a27fc96a97cc137de123c1c56f48",
+      "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/python/sg13g2_pycell_lib/sg13g2_tech.json": "193f2af37d2d80ea28f88052298e91ed7650413dc6ca774cae6f8ed6a95e35ba",
+      "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/sg13g2.lyp": "c9fd698498f3f798c2d3dc40f1aa0e0fcf646bd0a6e9e7522a008200487d5222"
+    }
+  },
+  "geometry_run": {
+    "manifest_path": "runs/bondpad-geometry-20260905-003/manifest.json",
+    "manifest_sha256": "d18a9c60d450fe5fe986d661f1b3a8a04614b76dbc3356622818b083db6ce5c3",
+    "returncode": 0,
+    "run_id": "bondpad-geometry-20260905-003",
+    "summary_path": "runs/bondpad-geometry-20260905-003/geometry_summary.json",
+    "summary_sha256": "bde2f1a78d8a2a038341d290acd3471cc164b3cbb251764ec4586eab0ef3020d"
+  },
+  "limitations": [
+    "This agent did not execute any full-chip DRC/LVS or edit source GDS/PDK.",
+    "Official fixture geometry has zero fully-inside TV2 cuts but132 intersecting edge cuts; full DRC must decide the exact rule semantics.",
+    "Geometry run003 completed; exit-strip wrapper timed out before container exited, so exit strips are validated output observations with unavailable process return code, not a PASS.",
+    "No fixture is an approved replacement, tapeout candidate or whole-chip PPA improvement."
+  ],
+  "ppa_scope": {
+    "area_change_claim": false,
+    "electrical_def_die_area_mm2": 3.671056,
+    "fixture_power_or_performance_claim": false,
+    "sealed_bbox_area_mm2": 4.0,
+    "sealed_gds_bbox_um": [
+      0,
+      0,
+      2000,
+      2000
+    ],
+    "source_gds": "runs/croc-sg13g2-baseline-20260827-001/artifacts/gds.attempt-4/upstream/croc/klayout/out/croc.filled.gds.gz",
+    "source_gds_sha256": "a529f11fd712ecdfb9abe66f2842838e8ffa38582d647c8f5ed612298e32ee09",
+    "whole_chip_power_reference": "reports/ppa/croc-ppa-rcx-20260905-001.json"
+  },
+  "report_id": "bondpad-diagnosis-20260905-001",
+  "root_causes": {
+    "Pad.d1R": "Active-to-opening proximity from pad/IO placement; source macro contains no Activ.",
+    "Pad.dR": "Opening-to-EdgeSeal proximity from pad/sealring placement; source macro contains no EdgeSeal. Archived example perpendicular gap is 7.735um vs recommended25um.",
+    "Pad.fR": "Integrated metal exits at the inward pad boundary are too short; M4/M5/TM1 have 3um-equivalent full-width metal in every 7um strip. Full deck remains authoritative.",
+    "Pad.kR": "All physically observed under-opening TopVia2 cuts originate in the Croc bondpad macro, not routed-via source cells."
+  },
+  "schema_version": "1.0.0",
+  "source_macro_pad_count_in_chip": 64,
+  "versions": {
+    "container_digest": "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+    "ihp_open_pdk": "331c00484213b13414777eec1336ef5c29b969bd",
+    "klayout": "0.30.5",
+    "pycell4klayout_api": "21c055516645d2f8f00335d81e92084e88b3c7b0",
+    "pypreprocessor": "cf1ff9bad0fb5338cf1c5b990b2b816b1ea01a64"
+  }
+}

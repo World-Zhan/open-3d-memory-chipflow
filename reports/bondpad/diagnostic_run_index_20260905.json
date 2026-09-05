@@ -1,0 +1,246 @@
+{
+  "classification": "diagnostic_run_index_not_signoff",
+  "full_chip_drc_lvs_performed": false,
+  "geometry_runs": [
+    {
+      "executed_probe.py": {
+        "bytes": 6740,
+        "path": "runs/bondpad-geometry-20260905-001/executed_probe.py",
+        "sha256": "1d09dcafb5a6cd845a427ff23fd677a15645a1c4c61fa02f8e1785cdeb6dd41a"
+      },
+      "interpretation": "Failed PCell preprocessor namespace import; no accepted geometry result.",
+      "manifest_path": "runs/bondpad-geometry-20260905-001/manifest.json",
+      "manifest_sha256": "a9e08fa8f0a7d55520e11db751c768aa8c33e8635825167b09fe3e5e4899d810",
+      "original_manifest": {
+        "classification": "geometry_diagnostic_not_signoff",
+        "command": [
+          "docker",
+          "run",
+          "--rm",
+          "--name",
+          "bondpad-geometry-20260905-001",
+          "--cpus",
+          "2",
+          "--memory",
+          "2g",
+          "--user",
+          "1000:1000",
+          "--entrypoint",
+          "python3",
+          "-e",
+          "PYTHONDONTWRITEBYTECODE=1",
+          "-v",
+          "/home/james_zhan/projects/open-3d-memory-chipflow:/work:ro",
+          "-v",
+          "/home/james_zhan/projects/open-3d-memory-chipflow/runs/bondpad-geometry-20260905-001:/output:rw",
+          "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+          "/work/reports/bondpad/bondpad_geometry_probe.py",
+          "--include-chip"
+        ],
+        "finished_at": "2026-09-05T08:55:16.300724+00:00",
+        "full_chip_drc_lvs_performed": false,
+        "returncode": 1,
+        "run_id": "bondpad-geometry-20260905-001",
+        "script_sha256": "1d09dcafb5a6cd845a427ff23fd677a15645a1c4c61fa02f8e1785cdeb6dd41a",
+        "started_at": "2026-09-05T08:55:14.881785+00:00",
+        "status": "failed"
+      },
+      "run_id": "bondpad-geometry-20260905-001",
+      "tool.log": {
+        "bytes": 460,
+        "path": "runs/bondpad-geometry-20260905-001/tool.log",
+        "sha256": "d2bdd6c566728d962066cdae1fbab5fc943779f3572d8d80b7513f4246b62126"
+      }
+    },
+    {
+      "executed_probe.py": {
+        "bytes": 6709,
+        "path": "runs/bondpad-geometry-20260905-002/executed_probe.py",
+        "sha256": "1d256e71b5eadc94665311e145d6a95dd098bfb5a583eae9c75108b9b7a525bf"
+      },
+      "interpretation": "Failed because fallback tech JSON Layers was empty; generated GDSs are not promoted.",
+      "manifest_path": "runs/bondpad-geometry-20260905-002/manifest.json",
+      "manifest_sha256": "efaf72a0967a087cc82ce7974f92a0e018135ff8fb972182a1bb4c117b1c9889",
+      "original_manifest": {
+        "classification": "geometry_diagnostic_not_signoff",
+        "command": [
+          "docker",
+          "run",
+          "--rm",
+          "--name",
+          "bondpad-geometry-20260905-002",
+          "--cpus",
+          "2",
+          "--memory",
+          "2g",
+          "--user",
+          "1000:1000",
+          "--entrypoint",
+          "python3",
+          "-e",
+          "PYTHONDONTWRITEBYTECODE=1",
+          "-v",
+          "/home/james_zhan/projects/open-3d-memory-chipflow:/work:ro",
+          "-v",
+          "/home/james_zhan/projects/open-3d-memory-chipflow/runs/bondpad-geometry-20260905-002:/output:rw",
+          "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+          "/output/executed_probe.py",
+          "--include-chip"
+        ],
+        "finished_at": "2026-09-05T08:56:41.058482+00:00",
+        "full_chip_drc_lvs_performed": false,
+        "returncode": 1,
+        "run_id": "bondpad-geometry-20260905-002",
+        "script_sha256": "1d256e71b5eadc94665311e145d6a95dd098bfb5a583eae9c75108b9b7a525bf",
+        "started_at": "2026-09-05T08:56:38.530664+00:00",
+        "status": "failed"
+      },
+      "run_id": "bondpad-geometry-20260905-002",
+      "tool.log": {
+        "bytes": 395,
+        "path": "runs/bondpad-geometry-20260905-002/tool.log",
+        "sha256": "8084fbc61e77232399f086540f6343d72d8bee9f117d968b6ad9d5e84106f5f5"
+      }
+    },
+    {
+      "executed_probe.py": {
+        "bytes": 6935,
+        "path": "runs/bondpad-geometry-20260905-003/executed_probe.py",
+        "sha256": "cd4127a8b86b5b1ede67986c2fe20b8b9b779d269f0f2cc6cc1ea7e84a083fb3"
+      },
+      "geometry_summary.json": {
+        "bytes": 14183,
+        "path": "runs/bondpad-geometry-20260905-003/geometry_summary.json",
+        "sha256": "bde2f1a78d8a2a038341d290acd3471cc164b3cbb251764ec4586eab0ef3020d"
+      },
+      "interpretation": "Successful fixed-LYP geometry audit; source/output hashes checked.",
+      "manifest_path": "runs/bondpad-geometry-20260905-003/manifest.json",
+      "manifest_sha256": "d18a9c60d450fe5fe986d661f1b3a8a04614b76dbc3356622818b083db6ce5c3",
+      "original_manifest": {
+        "classification": "geometry_diagnostic_not_signoff",
+        "command": [
+          "docker",
+          "run",
+          "--rm",
+          "--name",
+          "bondpad-geometry-20260905-003",
+          "--cpus",
+          "2",
+          "--memory",
+          "2g",
+          "--user",
+          "1000:1000",
+          "--entrypoint",
+          "python3",
+          "-e",
+          "PYTHONDONTWRITEBYTECODE=1",
+          "-v",
+          "/home/james_zhan/projects/open-3d-memory-chipflow:/work:ro",
+          "-v",
+          "/home/james_zhan/projects/open-3d-memory-chipflow/runs/bondpad-geometry-20260905-003:/output:rw",
+          "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+          "/output/executed_probe.py",
+          "--include-chip"
+        ],
+        "finished_at": "2026-09-05T08:59:09.883519+00:00",
+        "full_chip_drc_lvs_performed": false,
+        "returncode": 0,
+        "run_id": "bondpad-geometry-20260905-003",
+        "script_sha256": "cd4127a8b86b5b1ede67986c2fe20b8b9b779d269f0f2cc6cc1ea7e84a083fb3",
+        "started_at": "2026-09-05T08:59:06.509902+00:00",
+        "status": "completed"
+      },
+      "run_id": "bondpad-geometry-20260905-003",
+      "tool.log": {
+        "bytes": 143,
+        "path": "runs/bondpad-geometry-20260905-003/tool.log",
+        "sha256": "e9374bae7860d754b1a083183824ffc55d6c03873e82c06ebcd7962a1e9a885c"
+      }
+    },
+    {
+      "interpretation": "Wrapper timeout, output later available, final container exit code unavailable; output-only geometric corroboration.",
+      "manifest_path": "runs/bondpad-exit-geometry-20260905-001/manifest.json",
+      "manifest_sha256": "3667ee16808f32edf068e86fe6c2bf54658b50c77b7a418e2eb03ddf2779eed0",
+      "original_manifest": {
+        "checked_at": "2026-09-05T09:05:30.741452+00:00",
+        "classification": "read_only_geometry_diagnostic",
+        "container_running_verified_after_timeout": true,
+        "full_chip_drc_lvs_performed": false,
+        "limitation": "Wrapper timed out; final container exit code unavailable after --rm. Output parsed and 64 pad strip area sums validated; not a process-pass or DRC claim.",
+        "probe_sha256": "fb17ee8c51ea4c9d7ad6c9976c58e62ddafd662615c59859e848819c8c242620",
+        "returncode": null,
+        "run_id": "bondpad-exit-geometry-20260905-001",
+        "source_gds_path": "runs/croc-sg13g2-baseline-20260827-001/artifacts/gds.attempt-4/upstream/croc/klayout/out/croc.filled.gds.gz",
+        "source_gds_sha256": "a529f11fd712ecdfb9abe66f2842838e8ffa38582d647c8f5ed612298e32ee09",
+        "status": "output_available_and_validated_after_wrapper_timeout",
+        "subsequent_stop_result": "No such container; container had already exited",
+        "summary_sha256": "17aa4baa11ef2a578a055f8d76da36b12ef4215d2abd9ab51eacecb6fd9c21b2",
+        "wrapper_time_limit_seconds": 90
+      },
+      "probe.py": {
+        "bytes": 2026,
+        "path": "runs/bondpad-exit-geometry-20260905-001/probe.py",
+        "sha256": "fb17ee8c51ea4c9d7ad6c9976c58e62ddafd662615c59859e848819c8c242620"
+      },
+      "run_id": "bondpad-exit-geometry-20260905-001",
+      "summary.json": {
+        "bytes": 87792,
+        "path": "runs/bondpad-exit-geometry-20260905-001/summary.json",
+        "sha256": "17aa4baa11ef2a578a055f8d76da36b12ef4215d2abd9ab51eacecb6fd9c21b2"
+      },
+      "tool.log": {
+        "bytes": 0,
+        "path": "runs/bondpad-exit-geometry-20260905-001/tool.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ],
+  "independent_fixture_drc": {
+    "all_manifest_output_hashes_verified": true,
+    "arms": [
+      {
+        "antenna_category_count": 31,
+        "density_markers": 9,
+        "fixture_drc_passed": false,
+        "full_report_sha256": "c5970e2370acf2a66648ad9ae5df007b1ac5e934a5d99c3f8e05c0f9a2285cd0",
+        "merged_markers": 153,
+        "name": "control",
+        "non_density_markers": 144,
+        "rule_execution_complete": true,
+        "rule_tasks": 40,
+        "runner_returncode": 1
+      },
+      {
+        "antenna_category_count": 31,
+        "density_markers": 9,
+        "fixture_drc_passed": false,
+        "full_report_sha256": "65b5d3b58f3bb61d0a6e2bc7dad7e78ee8cb77f4693fd03c250bcd4ce662376d",
+        "merged_markers": 9,
+        "name": "official_default_square70",
+        "non_density_markers": 0,
+        "rule_execution_complete": true,
+        "rule_tasks": 40,
+        "runner_returncode": 1
+      },
+      {
+        "antenna_category_count": 31,
+        "density_markers": 9,
+        "fixture_drc_passed": false,
+        "full_report_sha256": "98c0e89fce8368023a12103bb4434eee57127b0efed6b7a7eed9184f797c038a",
+        "merged_markers": 9,
+        "name": "official_m2_square70",
+        "non_density_markers": 0,
+        "rule_execution_complete": true,
+        "rule_tasks": 40,
+        "runner_returncode": 1
+      }
+    ],
+    "audit_path": "runs/croc-bondpad-drc-ab-20260905-002/audit.json",
+    "audit_sha256": "46c48e1bc776afc04dc87bc116250cb78be6bb0e3b6841b270333c4a88928f24",
+    "original_manifest_status_retained": true,
+    "run_id": "croc-bondpad-drc-ab-20260905-002",
+    "source_manifest_sha256": "c9f121042c7cc986e75d6aa1227dac5800b8f9c26720171369555029f5a4017d"
+  },
+  "no_new_whole_chip_layout_or_ppa": true,
+  "schema_version": "1.0.0"
+}

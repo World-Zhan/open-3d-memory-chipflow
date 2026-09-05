@@ -45,5 +45,25 @@
       "facts": {"flow": "Yosys/OpenSTA", "documented_library": "Nangate45 / NangateOpenCellLibrary_typical.lib"},
       "limitations": ["This open synthesis reference is not a silicon node comparison or a SG13G2 mapping; do not convert its kGE directly to local mm2."]
     }
-  ]
+  ],
+  "local_physical_boundary_evidence": {
+    "bbox_area_mm2": 4.0,
+    "bbox_um": [
+      0,
+      0,
+      2000,
+      2000
+    ],
+    "dbu_um": 0.001,
+    "diagnosis_report_path": "reports/bondpad/bondpad-diagnosis-20260905-001.json",
+    "diagnosis_report_sha256": "df1d08232239b63b10a8820a6f965f9356335a8f650bcdba4b62397169e71c21",
+    "electrical_def_area_mm2": 3.671056,
+    "geometry_report_path": "runs/bondpad-geometry-20260905-003/geometry_summary.json",
+    "geometry_report_sha256": "bde2f1a78d8a2a038341d290acd3471cc164b3cbb251764ec4586eab0ef3020d",
+    "interpretation": "Same archived layout, newly verified sealed bounding-box scope; not an area improvement. Different SRAM/peripherals and outline definitions still prevent a superiority ratio vs MLEM.",
+    "measurement_date": "2026-09-05",
+    "source_gds_path": "runs/croc-sg13g2-baseline-20260827-001/artifacts/gds.attempt-4/upstream/croc/klayout/out/croc.filled.gds.gz",
+    "source_gds_sha256": "a529f11fd712ecdfb9abe66f2842838e8ffa38582d647c8f5ed612298e32ee09",
+    "top_cell": "croc_chip_sealed"
+  }
 }

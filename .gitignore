@@ -21,6 +21,10 @@ runs/*/signoff.attempt-*/lvs/*
 !runs/croc-cts-fanout-ab-20260905-001/manifest.json
 !runs/croc-cts-branch-eco-20260905-00[123]/manifest.json
 !runs/croc-cts-branch-eco-20260905-00[23]/structural_validation.json
+!runs/bondpad-geometry-20260905-003/manifest.json
+!runs/bondpad-geometry-20260905-003/geometry_summary.json
+!runs/croc-bondpad-drc-ab-20260905-00[12]/manifest.json
+!runs/croc-bondpad-drc-ab-20260905-002/audit.json
 reports/generated/
 .state/
 .work/

@@ -28,6 +28,13 @@ SPDX-License-Identifier: Apache-2.0
 - `make report` 显示独立复核，并选择最新 signoff attempt；较新 attempt 没有有效汇总时，不回退成旧结果通过。
 - 建立[AI skill 筛选](docs/04_ai_chip_skills_zh.md)、[项目 skill](.agents/skills/chipflow-evidence/SKILL.md)和[最小存储规格/验证计划](docs/05_memory_spec_zh.md)。第三方工具尚未安装或本地复现。
 
+## 最新焊盘 DRC 诊断与候选验证
+
+- 固定官方 PCell 已生成独立候选；完整公开规则 40 项任务逐项复核完成，包含推荐规则、density、antenna、offgrid。原焊盘 fixture 为 153 markers（144 个 Pad.kR + 9 个全局密度），两个官方候选均为 9 markers（全部全局密度），**Pad.kR 144→0；fixture 整体仍 FAIL**。见[完整 DRC 复核](runs/croc-bondpad-drc-ab-20260905-002/audit.json)。
+- 原整芯片开窗下的 9,216 颗 TopVia2 来自 64 个焊盘宏（每个 144），并非路由新加的 via。这个物理过孔数与历史 merged Pad.kR=576 是不同口径。官方宏的下层金属是环形，不能直接搭配原 LEF 的全 70×70 µm 引脚区域；坐标原点也需平移。见[焊盘诊断](docs/07_bondpad_diagnosis_zh.md)。
+- 退出金属的几何分析发现部分层只有 3 µm，低于 7 µm 要求；Pad.dR/d1R 又涉及 IO 与 sealring 的间距，替换宏本身不能解决。下一实验应验证匹配 LEF 的官方焊盘、7 µm 退出连接及相邻 IO，再评估整芯片重布线。
+- 本轮没有替换整芯片版图，因此无新全芯片 PPA 或 DRC/LVS 结果。实际 filled GDS 含 sealring 的外边界为 2×2 mm=4.0 mm²，与 DEF 电气布局 3.671056 mm² 并列记录；这是边界口径补全，不是面积变化。
+
 ## 当前最需要改进的内容
 
 1. **补齐验收质量。** 本次已堵住电气违规漏检。还需逐 corner/mode 审核时序约束、例外、未约束路径和寄生来源。历史 finishing 中 RCX/SPEF 被注释；本轮独立补做单 typ RC 提取/读回，但 TT/FF 库并不等于完整 MMMC。仍需验证真实 corner/mode、约束覆盖及 RC 模型资格。VDD/VSS connected 也不等于 IR-drop/EM 通过。

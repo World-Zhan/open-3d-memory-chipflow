@@ -41,7 +41,32 @@
         "pad_merged": 1577,
         "density_merged": 8
       },
-      "ppa_report": "reports/ppa/20260905_review_zh.md"
+      "ppa_report": "reports/ppa/20260905_review_zh.md",
+      "bondpad_fixture": {
+        "run_id": "croc-bondpad-drc-ab-20260905-002",
+        "audit": "runs/croc-bondpad-drc-ab-20260905-002/audit.json",
+        "public_rule_tasks_per_arm": 40,
+        "control_pad_kr": 144,
+        "official_pad_kr": 0,
+        "control_total_markers": 153,
+        "official_total_markers": 9,
+        "official_remaining_all_global_density": true,
+        "fixture_drc_passed": false,
+        "integrated_in_chip": false,
+        "whole_chip_drc_lvs_rerun": false
+      },
+      "layout_boundaries": {
+        "def_electrical_die_um": [
+          1916,
+          1916
+        ],
+        "sealed_gds_bbox_um": [
+          2000,
+          2000
+        ],
+        "boundary_change_is_not_ppa_optimization": true,
+        "source": "runs/bondpad-geometry-20260905-003/geometry_summary.json"
+      }
     },
     "B_pin3d": {
       "classification": "research_only",
