@@ -11,7 +11,7 @@ SPDX-License-Identifier: Apache-2.0
 | 架构分析 | 复用原 Croc；非新架构 PPA 达标证明 | GCD/F2F 研究；HBT 真实 pitch/容量合同已验证 | 最小 C1/C2/C3 规格与验收矩阵已建立 |
 | RTL 与功能验证 | 原 Hello World RTL/门级仿真通过；不等于新增 IP 完整覆盖 | 复用 GCD；无自研 3D memory RTL | C1 OBI endpoint 尚未实现/仿真 |
 | 综合 | 原版 Yosys+Slang 通过 | 研究 flow 的既有网表 | not_run |
-| 后端 | APR/GDS 已生成；新复核电气 FAIL | strict pin access 已修复；旧 route DRC=642；新容量 A/B 未布线 | not_run |
+| 后端 | 原 APR/GDS 电气 FAIL；新完整 floorplan/物理端子/限定 PG 通过，尚未新 placement/route | strict pin access 已修复；旧 route DRC=642；新容量 A/B 未布线 | not_run |
 | 验证/签核 | merged DRC=1585/12 类；maximal raw=652；LVS mismatch | research_only；route/3D closure 未完成 | 测试计划已写，RTL/综合/物理结果均未产生 |
 
 ## 本次推进
@@ -30,11 +30,13 @@ SPDX-License-Identifier: Apache-2.0
 
 ## 最新完整 IO 环与严格 LVS A/B
 
-- **完整真实 IO 环 GDS 已生成并核验。** 192 个实例，64 IO/64 官方焊盘/60 filler/4 corner；90 µm pitch、4.2 µm 间隙与 384 个实际引线矩形均已核对。160 个原信号端子、512 个 PG 端子、64 个焊盘连接显式保留。候选不含核心逻辑/核心路线/密度填充。
-- **DRC：** 原合并报告有 131 个密度 marker（8 全局、123 局部窗口），Pad/其他非密度为 0，但最大规则在报告 0 后 Signal 11 崩溃。相同输入/deck 的 flat/单线程重跑实际 exit 137，规则执行仍不完整；不能将该原合并计数当成完整 DRC 结果或 PASS。
-- **PG 金属/过孔连通性 PASS：** 4095 个实际金属分量、6016 条过孔连接；四路供电各一个独立分量，覆盖全部 128 宏 PG 区域及各自 4 个供电焊盘，混网 0。没有以同名标签虚接；不包含核心 PDN、well/substrate/contact、电路 LVS、IR/EM 或封装连接。
-- **严格 LVS：** 受支持 upstream purge 修复的两叶 × A/B 四次仍全部 FAIL，提取网表/匹配摘要未变。IO GDS/CDL 在 pinned/main/dev blob 相同。下一步追踪实际父级上层金属回路和 guard 推导，尚未启动 full-chip attempt 3。
-- **本轮 PPA：** 候选电气边界 3.896676 mm²，含封环 4.235364 mm²（较原 4.0 增加 **5.8841%**）；IO+cover 实例面积增加 0.01008 mm²。无新整芯片功耗/Fmax/active。见[完整实现与证据](docs/10_io_ring_implementation_zh.md)及[本轮 PPA](reports/ppa/croc-ppa-io-ring-20260905-001.json)。
+- **完整功能 floorplan 已实现。** 新 [005 候选](runs/croc-full-io-floorplan-20260905-005/manifest.json)包含原 Croc 核心、两颗 SRAM 和完整真实 IO 环；30,474 个原实例、111,658 个非 PG 引脚、52 个顶层端口保留，61,334 个供电引脚显式连接。192 个 IO 环实例与已验证试件一致，64 条引线共 384 个金属矩形。新候选尚未 placement/CTS/信号布线，未继承旧 CTS ECO。
+- **物理端子与 floorplanning PG 通过独立读回。** 64 个真实 TopMetal2 引脚 box 逐端口/net/几何与焊盘对应；VDD/VSS 均有实际 `PSM-0040 All shapes ... connected`。新增[纯读审计](reports/floorplan/full-io-readback-audit-20260905-001.json)验证 105 个唯一文件哈希。PG PASS 仅限定 `-floorplanning`，不覆盖放置后标准单元、完整混网短路、IR/EM 或 LVS。
+- **时序诊断仍有问题。** floorplan 中已有布局前报告：reset endpoint 在两个组的 slack 为 −67.43/−70.35 ns，PG 类型修正前有四路供电端口延迟/未约束警告。重复打印不重复计数；完整 hold/slew/cap/fanout 未知。新布局后/寄生 STA 尚未执行，不能报 timing PASS。
+- **IO-only DRC 规则执行已补齐，整体仍 FAIL。** 同源 deep 单线程 maximal 实际 exit 0、0 marker、无 OOM；[v3 组合审计](reports/bondpad/io-ring-composite-drc-20260905-003.json)覆盖 39 项原健康任务 + 1 项独立 maximal，共 131 个 density marker（8 全局、123 局部），Pad/其他非密度为 0。原 Signal 11、flat exit 137 与 v1/v2 失败保持；该结果不属于新的完整功能 floorplan。
+- **IO-only PG 金属/过孔连通性仍为限定 PASS。** 四路供电各一个独立分量，覆盖 128 宏 PG 区域与各自供电焊盘，混网 0；不含 well/substrate/contact、电路 LVS、IR/EM 或封装连接。
+- **严格 LVS 根因更清楚，仍 FAIL。** 实际父级通过 M1→Via1→M2 接通两个 DCN cathode / DCP anode；guard 确有 288 contacts 与普通 ntap/nwell 路径。历史 strict-deep 父级整体 FAIL，3 个 NoMatch、2 个 Skipped；下一步是观测 reader/extract/align/simplify 中 guard/tap 丢失的阶段，无虚接、无新 full-chip attempt 3。
+- **同阶段 PPA：** CORE+BLOCK 为 0.6539563296 mm²，与原 floorplan 相同；PAD_SPACER 增加 0.010080 mm²。新电气边界 3.896676 mm²，规划含封环 4.235364 mm²（较历史 4.0 增加 5.8841%）；新完整 sealed GDS、功耗/Fmax 尚无结果。见[本轮完整说明](docs/11_full_floorplan_readback_zh.md)与[PPA JSON](reports/ppa/croc-ppa-full-floorplan-20260905-001.json)。
 
 ## 已归档焊盘局部诊断
 
@@ -50,7 +52,7 @@ SPDX-License-Identifier: Apache-2.0
 ## 当前最需要改进的内容
 
 1. **补齐验收质量。** 本次已堵住电气违规漏检。还需逐 corner/mode 审核时序约束、例外、未约束路径和寄生来源。历史 finishing 中 RCX/SPEF 被注释；本轮独立补做单 typ RC 提取/读回，但 TT/FF 库并不等于完整 MMMC。仍需验证真实 corner/mode、约束覆盖及 RC 模型资格。VDD/VSS connected 也不等于 IR-drop/EM 通过。
-2. **按根因处理 A 轨。** 电气上保留 15 pF IO 负载：71 个 slew 违规集中在输出 pad，提取后还观察到 25 个 SRAM 输出 cap 违规；不能静默降低负载或放宽库限制。DRC 的 1585 merged 包含 1577 个 Pad 类 marker 和 8 个 density marker，先做独立焊盘几何/规则 fixture，再考虑整芯片重跑。 [IHP #1130](https://github.com/IHP-GmbH/IHP-Open-PDK/issues/1130)本次检索仍 open，无评论。需受支持修复使 DCN/DCP strict-deep leaf exact，再最小父级 fixture exact，才考虑 full-chip attempt 3。历史 flat 的 52/135057 端口问题与 IO leaf mismatch 分别记录。未完成这些门槛前，不重跑 full-chip。
+2. **按根因处理 A 轨。** 电气上保留 15 pF IO 负载：71 个 slew 违规集中在输出 pad，提取后还观察到 25 个 SRAM 输出 cap 违规；不能静默降低负载或放宽库限制。DRC 的 1585 merged 包含 1577 个 Pad 类 marker 和 8 个 density marker，先做独立焊盘几何/规则 fixture，再考虑整芯片重跑。 [IHP #1130](https://github.com/IHP-GmbH/IHP-Open-PDK/issues/1130)本次检索仍 open，无评论。现已证实叶重复电极依赖真实父级金属闭合；需先定位 guard/tap 的提取与清理阶段，再用受支持、保留真实层次连接的最小 fixture 达到 strict exact，才考虑 full-chip attempt 3。历史 flat 的 52/135057 端口问题与 IO leaf mismatch 分别记录。未完成这些门槛前，不重跑 full-chip。
 3. **推进 B 轨几何合法性。** 530/642 个 cut-spacing 已有逐对几何证据；容量扩展解决了可容纳数量的问题，但未证明 HBT 落在 1.6 µm legal lattice 和合法访问窗口。下一步做受限 lattice/window 检查，再决定 placement；不直接 full route/full smoke，剩余 112 个金属 marker 仍须独立处理。
 4. **让 C 轨开始形成自己的功能证据。** 下一实施单元是 C1 OBI CSR endpoint，先独立测试与模块综合，再以 patch/新 run 集成。无需等 A/B 全部通过才能编写模块；物理整合仍受对应门槛约束。
 

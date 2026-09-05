@@ -1,0 +1,29 @@
+{
+  "observed_at": "2026-09-05T10:39:44.864923+00:00",
+  "resources": {
+    "BlockIO": "0B / 0B",
+    "CPUPerc": "0.00%",
+    "Container": "croc-io-ring-maximal-deep1-20260905-001",
+    "ID": "22b2ff09ba0c",
+    "MemPerc": "0.00%",
+    "MemUsage": "0B / 0B",
+    "Name": "croc-io-ring-maximal-deep1-20260905-001",
+    "NetIO": "0B / 0B",
+    "PIDs": "0"
+  },
+  "resources_returncode": 0,
+  "state": {
+    "Dead": false,
+    "Error": "",
+    "ExitCode": 0,
+    "FinishedAt": "2026-09-05T10:39:44.682103377Z",
+    "OOMKilled": false,
+    "Paused": false,
+    "Pid": 0,
+    "Restarting": false,
+    "Running": false,
+    "StartedAt": "2026-09-05T10:33:52.24413955Z",
+    "Status": "exited"
+  },
+  "state_returncode": 0
+}

@@ -1,0 +1,392 @@
+{
+  "classification": "exact_reviewed_archive_inventory_not_staging",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 2742,
+      "sha256": "27cba360d4f9889a622946ddee6c4c583ea069c9b6327d65bcf1a548d98b9996"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 11854,
+      "sha256": "4b486900659fbe5dbff8ef0ea6e2e3f54a1bae407a33070aa8a3e989e6885396"
+    },
+    {
+      "path": "CURRENT_STATUS.md",
+      "bytes": 11719,
+      "sha256": "fdde28c48b6a2f29bf2cb10ecf47ca46bf65b76b8e77694781fc36e15f150665"
+    },
+    {
+      "path": "docs/10_io_ring_implementation_zh.md",
+      "bytes": 7672,
+      "sha256": "19c3431d5978d69b7223d22eb121ae705072b7daf65ae80f928d7ff3dc6495f8"
+    },
+    {
+      "path": "docs/11_full_floorplan_readback_zh.md",
+      "bytes": 9696,
+      "sha256": "87c033c7cf57ce339bd3d782b754f00c98ea49bb2ea4cb776188db0ca7931e68"
+    },
+    {
+      "path": "reports/bondpad/io-ring-composite-drc-20260905-003.json",
+      "bytes": 21482,
+      "sha256": "185e7b4273b031d96c1e0315e920da27c3151758eb88f268a95bf5547397dd0f"
+    },
+    {
+      "path": "reports/bondpad/io-ring-composite-drc-validation-20260905-003.json",
+      "bytes": 15455,
+      "sha256": "31af67d9d80509db80451f12e3edeef35319f970a8757593f76c314e7db73126"
+    },
+    {
+      "path": "reports/current_status.json",
+      "bytes": 9616,
+      "sha256": "5a8fefd5dbec27086f6f0e7e939151b62090fe13f42bf4a04ab2e038f533bc9d"
+    },
+    {
+      "path": "reports/floorplan/full-io-readback-audit-20260905-001.json",
+      "bytes": 15458,
+      "sha256": "0978b430de0db83f5c59082367717b9a8e46cd33dfe4eeee7e9be9cfb64ec4d3"
+    },
+    {
+      "path": "reports/lvs/iopadin-electrode-guard-20260905-001.json",
+      "bytes": 23493,
+      "sha256": "8cd3608c5b7f36519fd0c06c1a9a100a476872fabbafa1973849153878aedc70"
+    },
+    {
+      "path": "reports/lvs/iopadin-electrode-guard-validation-20260905-001.json",
+      "bytes": 15693,
+      "sha256": "08d044308a4e43006e5316381fc28056622a3828972db2ef2a07d564c32066c5"
+    },
+    {
+      "path": "reports/lvs/iopadin-electrode-publication-files-20260905-001.json",
+      "bytes": 3589,
+      "sha256": "ba20ab776d7e43ce2714969f1e7591cfd2e2d658b82edc7ab4928c48cc4310ad"
+    },
+    {
+      "path": "reports/lvs/probe_iopadin_electrodes.py",
+      "bytes": 16197,
+      "sha256": "d20db500046cb44ed21959e0b6b7831dc0378b5a9d8170d51e159aec0598498e"
+    },
+    {
+      "path": "reports/ppa/20260905_review_zh.md",
+      "bytes": 15507,
+      "sha256": "539e8ecc7b0f5607710b3c200055bcd4ea48c204ab545c35d095966f6311593e"
+    },
+    {
+      "path": "reports/ppa/croc-ppa-full-floorplan-20260905-001.json",
+      "bytes": 5255,
+      "sha256": "398c8e6e06d2a25d142aab29ebcd5d5c1d2e14973c39e3dc82325388489905d0"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-20260905-001/add_full_io_leads.tcl",
+      "bytes": 2673,
+      "sha256": "2791ee981f8d82e50a0d73c0c332a818b06ef51f8f17201a094319333550711f"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-20260905-001/manifest.json",
+      "bytes": 14991,
+      "sha256": "9c6b1daf0fd14b28cedfe657a0021dbf49c64083ed8e44b82710268043f839d8"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-20260905-001/tool.log",
+      "bytes": 8607,
+      "sha256": "7da402da3c857d47d702e68a81f221f56798376ebde552018cd8ccc352a58ff9"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-20260905-002/add_full_io_leads.tcl",
+      "bytes": 2673,
+      "sha256": "2791ee981f8d82e50a0d73c0c332a818b06ef51f8f17201a094319333550711f"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-20260905-002/manifest.json",
+      "bytes": 15387,
+      "sha256": "b24e85d10080ab64ea84c068dec4a8c2b2e9a0fb9e9a6bc24d73fc5c93da25a3"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-20260905-002/tool.log",
+      "bytes": 5931,
+      "sha256": "c8e48c883d041fbc21da7282411ef8e537a9936ff5d809a46dda57a61d1ce160"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-20260905-003/add_full_io_leads.tcl",
+      "bytes": 2673,
+      "sha256": "2791ee981f8d82e50a0d73c0c332a818b06ef51f8f17201a094319333550711f"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-20260905-003/manifest.json",
+      "bytes": 15491,
+      "sha256": "9d3a372e4e1afdadc9658976d23264f8e87ed400cd95f8adf140c450b4fb6471"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-20260905-003/tool.log",
+      "bytes": 5931,
+      "sha256": "c8e48c883d041fbc21da7282411ef8e537a9936ff5d809a46dda57a61d1ce160"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-20260905-004/add_full_io_leads.tcl",
+      "bytes": 2673,
+      "sha256": "2791ee981f8d82e50a0d73c0c332a818b06ef51f8f17201a094319333550711f"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-20260905-004/manifest.json",
+      "bytes": 15671,
+      "sha256": "a28ee5cce07d796b5a8a9f9326ec62cacfcc5e947845f450ba09fc5f898fb4f1"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-20260905-004/tool.log",
+      "bytes": 5980,
+      "sha256": "1e683fb5a84a3c04f5f53e00f7bb4214a20246a55becdd2ed4223ff055a32551"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-20260905-005/add_full_io_leads.tcl",
+      "bytes": 3153,
+      "sha256": "80d13541651f151f22d2e2ce6c76ac35f80a49ba8fac021a188dd1a663cda662"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-20260905-005/io_instances.tsv",
+      "bytes": 13477,
+      "sha256": "0088fff13be04fb96aab09cbdd551af1f9158a96fbceaa619aad1aba6f8a0ed6"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-20260905-005/lead_boxes.tsv",
+      "bytes": 30458,
+      "sha256": "5a078be96f532180f0b2cc918e1e3e81f40539f633083c416d0ba15c185c15ad"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-20260905-005/manifest.json",
+      "bytes": 16279,
+      "sha256": "9aeb3d38558632eb94d311d9d55d338e641a0dc9c2cf3504ffaa6c4c86ee926a"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-20260905-005/master_areas.tsv",
+      "bytes": 3896,
+      "sha256": "769846b820b01a6d4b395d61982cb97b43f9c2f108955277ec042ca8eb81fce1"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-20260905-005/pg_port_binding.tsv",
+      "bytes": 102,
+      "sha256": "cd960ff38760c9ea247445ffcaa5efe9a6048c9d650e63fc0d5b6fd5be1fd18c"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-20260905-005/structural_summary.tsv",
+      "bytes": 193,
+      "sha256": "ec49d8756b063b66e0df0280518b9870b0fb594ec49c804692d2218780855e26"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-20260905-005/summary.json",
+      "bytes": 2679,
+      "sha256": "4bf80e6eee814375e3cfb14bab76e27607526ac65d35231d55aa767fcd8fa4f7"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-20260905-005/tool.log",
+      "bytes": 6421,
+      "sha256": "7977d486b8cc6aeaa76435be527c1940be919c4e5312eb367da7ae73d6e83ce5"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-20260905-005/work/openroad/reports/01-01_croc_checks.rpt",
+      "bytes": 3956,
+      "sha256": "23bf09811701de9a8fe05c868e3da2a2199b752552e468a0a3291e9c2ee1fe3b"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-20260905-005/work/openroad/scripts/01_floorplan.tcl",
+      "bytes": 12840,
+      "sha256": "6c5de3b2bfc325bb3f0635af8f76a635582cb9e1bc048859aafe45d1ae0cbd90"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-20260905-005/work/openroad/scripts/startup.tcl",
+      "bytes": 1291,
+      "sha256": "8615a3bf457e4a0de057717d057a7b71858e1c3fef1a014d79817db36a6acc5d"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-20260905-005/work/openroad/src/padring.tcl",
+      "bytes": 10538,
+      "sha256": "bd9ebef404dc20f1afc3e5ecc3ff6de88487cde28d86eba9df8dc1f57e7b9f19"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-readback-20260905-001/bondpad_boxes.tsv",
+      "bytes": 3769,
+      "sha256": "31577b25aadbd87ae80c27229ead7a8a46a131603013d161863b56e80014158a"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-readback-20260905-001/manifest.json",
+      "bytes": 2617,
+      "sha256": "5ad179e07dadc24200e6f9ec4f239a13dea96ede18aeb6aecd498469edc71c32"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-readback-20260905-001/pg_checks.tsv",
+      "bytes": 43,
+      "sha256": "6347b9bf0daf359f56fe1de3d6fc7801b3f35955c0307ad0bde724f742fd5d6d"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-readback-20260905-001/readback.tcl",
+      "bytes": 1453,
+      "sha256": "53b3917dfb2408d79268b5f44bf0f5084e08d27113fbb0f09d3b88b6791d8972"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-readback-20260905-001/summary.json",
+      "bytes": 1447,
+      "sha256": "0b397c924e859ceac5ed9caedce1a0c43a2aeef784f2d96aae97d595c742d262"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-readback-20260905-001/tool.log",
+      "bytes": 1219,
+      "sha256": "f8274d204ce152590cd407896cd3e401d15f4efe8c3cdc327560dd2c00042a3f"
+    },
+    {
+      "path": "runs/croc-full-io-floorplan-readback-20260905-001/top_pin_boxes.tsv",
+      "bytes": 4815,
+      "sha256": "d094acf6aa25fd4dff203dc5773faa4e5bd0b40cb437b63899240d915d29a252"
+    },
+    {
+      "path": "runs/croc-io-ring-maximal-deep1-20260905-001/manifest.json",
+      "bytes": 15864,
+      "sha256": "ec15594da9025d19f17476a94c43615b3e3ba1b2e3a034b522d9f4fad6864cc3"
+    },
+    {
+      "path": "runs/croc-io-ring-maximal-deep1-20260905-001/maximal.log",
+      "bytes": 912,
+      "sha256": "2f70d77753c5de987310290c71988677970ffc138e0981822589db69c53ee817"
+    },
+    {
+      "path": "runs/croc-io-ring-maximal-deep1-20260905-001/maximal.lyrdb",
+      "bytes": 46894,
+      "sha256": "41f7a26b13b43de6ba7eb6b639952e02ce44ae2b7bb87c6b21078f3639ac6940"
+    },
+    {
+      "path": "runs/croc-io-ring-maximal-deep1-20260905-001/resource_samples.json",
+      "bytes": 10285,
+      "sha256": "460bf08431cf2c0a20efe3c5fd64a076623aacb72531fcdf326cd32a9431a47b"
+    },
+    {
+      "path": "runs/croc-io-ring-maximal-deep1-20260905-001/terminal_observation.json",
+      "bytes": 718,
+      "sha256": "859a68e8a9af0b911515fb22d957c378d3adabdc79d76b7d3c2f5034ba72c43b"
+    },
+    {
+      "path": "runs/croc-io-ring-maximal-deep1-20260905-001/tool.log",
+      "bytes": 8816,
+      "sha256": "21193b86f9a81904a7a795c1b70a6da5a920428f7f7a185ae241798f9a9ea89b"
+    },
+    {
+      "path": "runs/croc-lvs-electrode-parent-geometry-20260905-001/electrode_guard_geometry.json",
+      "bytes": 84715,
+      "sha256": "2e6d3a345a16b2c2ccc4007ee05e1a55894bd68fc87dc205fb99b6989e54c29c"
+    },
+    {
+      "path": "runs/croc-lvs-electrode-parent-geometry-20260905-001/manifest.json",
+      "bytes": 10689,
+      "sha256": "ccb690e0be2a4154febaf89cc91db48ecf42dcef8c50a4f7aaa448d1e86a26d7"
+    },
+    {
+      "path": "runs/croc-lvs-electrode-parent-geometry-20260905-001/probe_io_ring_pg.py",
+      "bytes": 13367,
+      "sha256": "ae93cf003e0b49d3828bab5313faf1a2e9383d4ff8c06ff8fee090886045a9e8"
+    },
+    {
+      "path": "runs/croc-lvs-electrode-parent-geometry-20260905-001/probe_io_ring_pg_vias.py",
+      "bytes": 17403,
+      "sha256": "7bcb315d86346a52ad8908e38b60cf3c0ff3a51f5b489244613a6d3b4a62bbaa"
+    },
+    {
+      "path": "runs/croc-lvs-electrode-parent-geometry-20260905-001/probe_iopadin_electrodes.py",
+      "bytes": 16197,
+      "sha256": "d20db500046cb44ed21959e0b6b7831dc0378b5a9d8170d51e159aec0598498e"
+    },
+    {
+      "path": "runs/croc-lvs-electrode-parent-geometry-20260905-001/run_iopadin_electrodes.py",
+      "bytes": 2931,
+      "sha256": "31d26128180f064b0f117f0c695558957220a4e834040cfe5900b54e521861a1"
+    },
+    {
+      "path": "runs/croc-lvs-iopadin-parent-reassessment-20260905-001/analyze_small_lvsdb.py",
+      "bytes": 8629,
+      "sha256": "3d780670fb6fff8653e866b1d8cee524b008a7ea2dfe92cddd320da953951e36"
+    },
+    {
+      "path": "runs/croc-lvs-iopadin-parent-reassessment-20260905-001/cross_reference.json",
+      "bytes": 22129,
+      "sha256": "66877e66e14a76d228cfc662b6406e648598a1ebeaf8ec74a02b70c99352fbdf"
+    },
+    {
+      "path": "runs/croc-lvs-iopadin-parent-reassessment-20260905-001/historical_case.json",
+      "bytes": 4751,
+      "sha256": "759afcb785f2229cf49b5adc1124a99496e4cedd6939bda798c2a8c42fabe3f0"
+    },
+    {
+      "path": "runs/croc-lvs-iopadin-parent-reassessment-20260905-001/historical_command.txt",
+      "bytes": 410,
+      "sha256": "3c971d95680ea2051c53d69eca268827ab0e12f58e1f46845edc6379e9b2af6c"
+    },
+    {
+      "path": "runs/croc-lvs-iopadin-parent-reassessment-20260905-001/historical_iopadin_extracted.cir",
+      "bytes": 2055,
+      "sha256": "8d4ce1a2b551f7af0f4ca37869fc2f18dda937e8a3c2d53b69c8069772611d9a"
+    },
+    {
+      "path": "runs/croc-lvs-iopadin-parent-reassessment-20260905-001/manifest.json",
+      "bytes": 4273,
+      "sha256": "dc65045a0b01106e6445d1a4282c6e8465c3f8d1f3171dedb1ccedd9c68c8d14"
+    },
+    {
+      "path": "runs/croc-lvs-iopadin-parent-reassessment-20260905-001/reassess_iopadin_parent.py",
+      "bytes": 4545,
+      "sha256": "e13f24083d89cce8ac1d1189c34fbdd7946452291c7f9ee247e1ed4c6fabbcd0"
+    },
+    {
+      "path": "scripts/audit_full_io_floorplan.py",
+      "bytes": 6929,
+      "sha256": "76a07777a2cb413c03f148d796e1e2badc502a232c9c821326f6dc3ec8fe94b0"
+    },
+    {
+      "path": "scripts/audit_io_ring_composite_v3.py",
+      "bytes": 14875,
+      "sha256": "311dae1fc7f78d2ab0024756e8cbea4e5fb1a6275c3f91de562e01c58d95b059"
+    },
+    {
+      "path": "scripts/check_full_io_floorplan.py",
+      "bytes": 7325,
+      "sha256": "48fe70c2c1bb5bab95b972609f9550376803142fec9ffa781807522e4bc58558"
+    },
+    {
+      "path": "scripts/run_croc_io_floorplan.py",
+      "bytes": 13881,
+      "sha256": "c1081cad53a7a3368133b5d122ff8c650f02fd49bebda64f15adfceaaada62b9"
+    },
+    {
+      "path": "scripts/run_croc_io_floorplan_headless.py",
+      "bytes": 14057,
+      "sha256": "51e7e3c4e385c942794b61d09cdc3c527ee6cc8f7d20f39a0dfdee7efcb9a686"
+    },
+    {
+      "path": "scripts/run_croc_io_floorplan_pg_snapshot.py",
+      "bytes": 14177,
+      "sha256": "c4666056e5dd5777d7bab28aeb88f9aca37afc76d3fdc45a40293ade082fb43b"
+    },
+    {
+      "path": "scripts/run_croc_io_floorplan_port_diagnostic.py",
+      "bytes": 14276,
+      "sha256": "037c712f6426f4e0ba0f740613ef46315b2872a39d695aef29ae7a69c25c4ab4"
+    },
+    {
+      "path": "scripts/run_croc_io_floorplan_terminals.py",
+      "bytes": 15407,
+      "sha256": "3ce091afc859e1639803f9e6c7e95e818f995357b9a5db59fd8e2a5c6114f1ac"
+    },
+    {
+      "path": "scripts/run_io_ring_maximal_diagnostic.py",
+      "bytes": 7928,
+      "sha256": "07a9a6d73ed1b354933b8af45527cc111e0d96c70a9eff718fca3dfb5e08b677"
+    },
+    {
+      "path": "tests/test_full_io_floorplan.py",
+      "bytes": 3818,
+      "sha256": "1f33bc56eb053e623da07b870290d1b38de9e061cbfa287f955277b816d1d1cf"
+    },
+    {
+      "path": "tests/test_io_ring_composite_v3.py",
+      "bytes": 9914,
+      "sha256": "c5323b75cba63e00461a83e146b5b6622f9890b1f2fadd50369976571059bece"
+    }
+  ],
+  "large_inputs_kept_local": true,
+  "public_rule_signoff": false
+}

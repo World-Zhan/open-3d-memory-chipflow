@@ -1,0 +1,379 @@
+[
+  {
+    "observed_at": "2026-09-05T10:34:16.911086+00:00",
+    "resources": {
+      "BlockIO": "352MB / 0B",
+      "CPUPerc": "99.87%",
+      "Container": "croc-io-ring-maximal-deep1-20260905-001",
+      "ID": "22b2ff09ba0c",
+      "MemPerc": "6.32%",
+      "MemUsage": "518.1MiB / 8GiB",
+      "Name": "croc-io-ring-maximal-deep1-20260905-001",
+      "NetIO": "1.18kB / 126B",
+      "PIDs": "4"
+    },
+    "resources_returncode": 0,
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 664,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-05T10:33:52.24413955Z",
+      "Status": "running"
+    },
+    "state_returncode": 0
+  },
+  {
+    "observed_at": "2026-09-05T10:34:43.286561+00:00",
+    "resources": {
+      "BlockIO": "352MB / 4.1kB",
+      "CPUPerc": "100.08%",
+      "Container": "croc-io-ring-maximal-deep1-20260905-001",
+      "ID": "22b2ff09ba0c",
+      "MemPerc": "7.10%",
+      "MemUsage": "581.6MiB / 8GiB",
+      "Name": "croc-io-ring-maximal-deep1-20260905-001",
+      "NetIO": "1.25kB / 126B",
+      "PIDs": "4"
+    },
+    "resources_returncode": 0,
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 664,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-05T10:33:52.24413955Z",
+      "Status": "running"
+    },
+    "state_returncode": 0
+  },
+  {
+    "observed_at": "2026-09-05T10:35:09.882209+00:00",
+    "resources": {
+      "BlockIO": "352MB / 4.1kB",
+      "CPUPerc": "99.17%",
+      "Container": "croc-io-ring-maximal-deep1-20260905-001",
+      "ID": "22b2ff09ba0c",
+      "MemPerc": "11.80%",
+      "MemUsage": "966.9MiB / 8GiB",
+      "Name": "croc-io-ring-maximal-deep1-20260905-001",
+      "NetIO": "1.32kB / 126B",
+      "PIDs": "4"
+    },
+    "resources_returncode": 0,
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 664,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-05T10:33:52.24413955Z",
+      "Status": "running"
+    },
+    "state_returncode": 0
+  },
+  {
+    "observed_at": "2026-09-05T10:35:36.336445+00:00",
+    "resources": {
+      "BlockIO": "352MB / 4.1kB",
+      "CPUPerc": "99.57%",
+      "Container": "croc-io-ring-maximal-deep1-20260905-001",
+      "ID": "22b2ff09ba0c",
+      "MemPerc": "17.47%",
+      "MemUsage": "1.397GiB / 8GiB",
+      "Name": "croc-io-ring-maximal-deep1-20260905-001",
+      "NetIO": "1.32kB / 126B",
+      "PIDs": "2"
+    },
+    "resources_returncode": 0,
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 664,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-05T10:33:52.24413955Z",
+      "Status": "running"
+    },
+    "state_returncode": 0
+  },
+  {
+    "observed_at": "2026-09-05T10:36:02.795847+00:00",
+    "resources": {
+      "BlockIO": "352MB / 4.1kB",
+      "CPUPerc": "100.05%",
+      "Container": "croc-io-ring-maximal-deep1-20260905-001",
+      "ID": "22b2ff09ba0c",
+      "MemPerc": "19.76%",
+      "MemUsage": "1.581GiB / 8GiB",
+      "Name": "croc-io-ring-maximal-deep1-20260905-001",
+      "NetIO": "1.32kB / 126B",
+      "PIDs": "2"
+    },
+    "resources_returncode": 0,
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 664,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-05T10:33:52.24413955Z",
+      "Status": "running"
+    },
+    "state_returncode": 0
+  },
+  {
+    "observed_at": "2026-09-05T10:36:29.166744+00:00",
+    "resources": {
+      "BlockIO": "352MB / 4.1kB",
+      "CPUPerc": "100.28%",
+      "Container": "croc-io-ring-maximal-deep1-20260905-001",
+      "ID": "22b2ff09ba0c",
+      "MemPerc": "28.23%",
+      "MemUsage": "2.258GiB / 8GiB",
+      "Name": "croc-io-ring-maximal-deep1-20260905-001",
+      "NetIO": "1.39kB / 126B",
+      "PIDs": "4"
+    },
+    "resources_returncode": 0,
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 664,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-05T10:33:52.24413955Z",
+      "Status": "running"
+    },
+    "state_returncode": 0
+  },
+  {
+    "observed_at": "2026-09-05T10:36:55.877195+00:00",
+    "resources": {
+      "BlockIO": "352MB / 4.1kB",
+      "CPUPerc": "100.04%",
+      "Container": "croc-io-ring-maximal-deep1-20260905-001",
+      "ID": "22b2ff09ba0c",
+      "MemPerc": "44.77%",
+      "MemUsage": "3.581GiB / 8GiB",
+      "Name": "croc-io-ring-maximal-deep1-20260905-001",
+      "NetIO": "1.39kB / 126B",
+      "PIDs": "4"
+    },
+    "resources_returncode": 0,
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 664,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-05T10:33:52.24413955Z",
+      "Status": "running"
+    },
+    "state_returncode": 0
+  },
+  {
+    "observed_at": "2026-09-05T10:37:22.294470+00:00",
+    "resources": {
+      "BlockIO": "352MB / 4.1kB",
+      "CPUPerc": "99.95%",
+      "Container": "croc-io-ring-maximal-deep1-20260905-001",
+      "ID": "22b2ff09ba0c",
+      "MemPerc": "44.92%",
+      "MemUsage": "3.594GiB / 8GiB",
+      "Name": "croc-io-ring-maximal-deep1-20260905-001",
+      "NetIO": "1.52kB / 126B",
+      "PIDs": "4"
+    },
+    "resources_returncode": 0,
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 664,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-05T10:33:52.24413955Z",
+      "Status": "running"
+    },
+    "state_returncode": 0
+  },
+  {
+    "observed_at": "2026-09-05T10:37:48.708845+00:00",
+    "resources": {
+      "BlockIO": "352MB / 4.1kB",
+      "CPUPerc": "99.79%",
+      "Container": "croc-io-ring-maximal-deep1-20260905-001",
+      "ID": "22b2ff09ba0c",
+      "MemPerc": "44.93%",
+      "MemUsage": "3.594GiB / 8GiB",
+      "Name": "croc-io-ring-maximal-deep1-20260905-001",
+      "NetIO": "1.52kB / 126B",
+      "PIDs": "4"
+    },
+    "resources_returncode": 0,
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 664,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-05T10:33:52.24413955Z",
+      "Status": "running"
+    },
+    "state_returncode": 0
+  },
+  {
+    "observed_at": "2026-09-05T10:38:15.178393+00:00",
+    "resources": {
+      "BlockIO": "352MB / 4.1kB",
+      "CPUPerc": "99.40%",
+      "Container": "croc-io-ring-maximal-deep1-20260905-001",
+      "ID": "22b2ff09ba0c",
+      "MemPerc": "21.17%",
+      "MemUsage": "1.694GiB / 8GiB",
+      "Name": "croc-io-ring-maximal-deep1-20260905-001",
+      "NetIO": "1.52kB / 126B",
+      "PIDs": "2"
+    },
+    "resources_returncode": 0,
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 664,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-05T10:33:52.24413955Z",
+      "Status": "running"
+    },
+    "state_returncode": 0
+  },
+  {
+    "observed_at": "2026-09-05T10:38:41.643843+00:00",
+    "resources": {
+      "BlockIO": "352MB / 4.1kB",
+      "CPUPerc": "99.84%",
+      "Container": "croc-io-ring-maximal-deep1-20260905-001",
+      "ID": "22b2ff09ba0c",
+      "MemPerc": "21.58%",
+      "MemUsage": "1.726GiB / 8GiB",
+      "Name": "croc-io-ring-maximal-deep1-20260905-001",
+      "NetIO": "1.71kB / 126B",
+      "PIDs": "4"
+    },
+    "resources_returncode": 0,
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 664,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-05T10:33:52.24413955Z",
+      "Status": "running"
+    },
+    "state_returncode": 0
+  },
+  {
+    "observed_at": "2026-09-05T10:39:08.293361+00:00",
+    "resources": {
+      "BlockIO": "352MB / 4.1kB",
+      "CPUPerc": "99.64%",
+      "Container": "croc-io-ring-maximal-deep1-20260905-001",
+      "ID": "22b2ff09ba0c",
+      "MemPerc": "20.94%",
+      "MemUsage": "1.675GiB / 8GiB",
+      "Name": "croc-io-ring-maximal-deep1-20260905-001",
+      "NetIO": "1.71kB / 126B",
+      "PIDs": "4"
+    },
+    "resources_returncode": 0,
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 664,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-05T10:33:52.24413955Z",
+      "Status": "running"
+    },
+    "state_returncode": 0
+  },
+  {
+    "observed_at": "2026-09-05T10:39:34.722457+00:00",
+    "resources": {
+      "BlockIO": "352MB / 4.1kB",
+      "CPUPerc": "99.79%",
+      "Container": "croc-io-ring-maximal-deep1-20260905-001",
+      "ID": "22b2ff09ba0c",
+      "MemPerc": "21.64%",
+      "MemUsage": "1.731GiB / 8GiB",
+      "Name": "croc-io-ring-maximal-deep1-20260905-001",
+      "NetIO": "1.71kB / 126B",
+      "PIDs": "4"
+    },
+    "resources_returncode": 0,
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 664,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-05T10:33:52.24413955Z",
+      "Status": "running"
+    },
+    "state_returncode": 0
+  }
+]

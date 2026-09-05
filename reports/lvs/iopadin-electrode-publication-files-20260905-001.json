@@ -1,0 +1,92 @@
+{
+  "classification": "exact_small_file_review_list_not_staging",
+  "files": [
+    {
+      "bytes": 16197,
+      "path": "reports/lvs/probe_iopadin_electrodes.py",
+      "sha256": "d20db500046cb44ed21959e0b6b7831dc0378b5a9d8170d51e159aec0598498e"
+    },
+    {
+      "bytes": 23493,
+      "path": "reports/lvs/iopadin-electrode-guard-20260905-001.json",
+      "sha256": "8cd3608c5b7f36519fd0c06c1a9a100a476872fabbafa1973849153878aedc70"
+    },
+    {
+      "bytes": 15693,
+      "path": "reports/lvs/iopadin-electrode-guard-validation-20260905-001.json",
+      "sha256": "08d044308a4e43006e5316381fc28056622a3828972db2ef2a07d564c32066c5"
+    },
+    {
+      "bytes": 10689,
+      "path": "runs/croc-lvs-electrode-parent-geometry-20260905-001/manifest.json",
+      "sha256": "ccb690e0be2a4154febaf89cc91db48ecf42dcef8c50a4f7aaa448d1e86a26d7"
+    },
+    {
+      "bytes": 16197,
+      "path": "runs/croc-lvs-electrode-parent-geometry-20260905-001/probe_iopadin_electrodes.py",
+      "sha256": "d20db500046cb44ed21959e0b6b7831dc0378b5a9d8170d51e159aec0598498e"
+    },
+    {
+      "bytes": 13367,
+      "path": "runs/croc-lvs-electrode-parent-geometry-20260905-001/probe_io_ring_pg.py",
+      "sha256": "ae93cf003e0b49d3828bab5313faf1a2e9383d4ff8c06ff8fee090886045a9e8"
+    },
+    {
+      "bytes": 17403,
+      "path": "runs/croc-lvs-electrode-parent-geometry-20260905-001/probe_io_ring_pg_vias.py",
+      "sha256": "7bcb315d86346a52ad8908e38b60cf3c0ff3a51f5b489244613a6d3b4a62bbaa"
+    },
+    {
+      "bytes": 2931,
+      "path": "runs/croc-lvs-electrode-parent-geometry-20260905-001/run_iopadin_electrodes.py",
+      "sha256": "31d26128180f064b0f117f0c695558957220a4e834040cfe5900b54e521861a1"
+    },
+    {
+      "bytes": 84715,
+      "path": "runs/croc-lvs-electrode-parent-geometry-20260905-001/electrode_guard_geometry.json",
+      "sha256": "2e6d3a345a16b2c2ccc4007ee05e1a55894bd68fc87dc205fb99b6989e54c29c"
+    },
+    {
+      "bytes": 4273,
+      "path": "runs/croc-lvs-iopadin-parent-reassessment-20260905-001/manifest.json",
+      "sha256": "dc65045a0b01106e6445d1a4282c6e8465c3f8d1f3171dedb1ccedd9c68c8d14"
+    },
+    {
+      "bytes": 8629,
+      "path": "runs/croc-lvs-iopadin-parent-reassessment-20260905-001/analyze_small_lvsdb.py",
+      "sha256": "3d780670fb6fff8653e866b1d8cee524b008a7ea2dfe92cddd320da953951e36"
+    },
+    {
+      "bytes": 4751,
+      "path": "runs/croc-lvs-iopadin-parent-reassessment-20260905-001/historical_case.json",
+      "sha256": "759afcb785f2229cf49b5adc1124a99496e4cedd6939bda798c2a8c42fabe3f0"
+    },
+    {
+      "bytes": 410,
+      "path": "runs/croc-lvs-iopadin-parent-reassessment-20260905-001/historical_command.txt",
+      "sha256": "3c971d95680ea2051c53d69eca268827ab0e12f58e1f46845edc6379e9b2af6c"
+    },
+    {
+      "bytes": 2055,
+      "path": "runs/croc-lvs-iopadin-parent-reassessment-20260905-001/historical_iopadin_extracted.cir",
+      "sha256": "8d4ce1a2b551f7af0f4ca37869fc2f18dda937e8a3c2d53b69c8069772611d9a"
+    },
+    {
+      "bytes": 4545,
+      "path": "runs/croc-lvs-iopadin-parent-reassessment-20260905-001/reassess_iopadin_parent.py",
+      "sha256": "e13f24083d89cce8ac1d1189c34fbdd7946452291c7f9ee247e1ed4c6fabbcd0"
+    },
+    {
+      "bytes": 22129,
+      "path": "runs/croc-lvs-iopadin-parent-reassessment-20260905-001/cross_reference.json",
+      "sha256": "66877e66e14a76d228cfc662b6406e648598a1ebeaf8ec74a02b70c99352fbdf"
+    }
+  ],
+  "local_only": [
+    "original GDS/CDL/PDK sources",
+    "historical 1.8MB LVSDB",
+    "tool logs"
+  ],
+  "local_only_hashes_in_manifests": true,
+  "nothing_staged_or_committed": true
+}

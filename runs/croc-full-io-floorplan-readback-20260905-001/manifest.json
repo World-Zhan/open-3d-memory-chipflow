@@ -1,0 +1,54 @@
+{
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "--name",
+    "croc-full-io-floorplan-readback-20260905-001",
+    "--cpus",
+    "2",
+    "--memory",
+    "4g",
+    "--ulimit",
+    "core=0",
+    "--user",
+    "1000:1000",
+    "-e",
+    "HOME=/tmp",
+    "--entrypoint",
+    "/bin/bash",
+    "-v",
+    "/home/james_zhan/projects/open-3d-memory-chipflow/runs/croc-full-io-floorplan-readback-20260905-001:/output:rw",
+    "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+    "-lc",
+    "timeout --verbose --signal=TERM --kill-after=10s 120s openroad -exit /output/readback.tcl"
+  ],
+  "finished_at": "2026-09-05T10:48:03.588494+00:00",
+  "input_sha256": {
+    "inputs/01_croc.floorplan.def": "c9cfdad387eb5a6a74afbb60c9c6ec70a1d0589037c9bbf5e989f41d52e386de",
+    "inputs/01_croc.floorplan.odb": "f8d7657f3d7524ecd9d0df89db099b34a5173525bae2388ff6dcf0c29e6abb60"
+  },
+  "outputs_sha256": {
+    "bondpad_boxes.tsv": "31577b25aadbd87ae80c27229ead7a8a46a131603013d161863b56e80014158a",
+    "inputs/01_croc.floorplan.def": "c9cfdad387eb5a6a74afbb60c9c6ec70a1d0589037c9bbf5e989f41d52e386de",
+    "inputs/01_croc.floorplan.odb": "f8d7657f3d7524ecd9d0df89db099b34a5173525bae2388ff6dcf0c29e6abb60",
+    "pg_checks.tsv": "6347b9bf0daf359f56fe1de3d6fc7801b3f35955c0307ad0bde724f742fd5d6d",
+    "readback.tcl": "53b3917dfb2408d79268b5f44bf0f5084e08d27113fbb0f09d3b88b6791d8972",
+    "tool.log": "f8274d204ce152590cd407896cd3e401d15f4efe8c3cdc327560dd2c00042a3f",
+    "top_pin_boxes.tsv": "d094acf6aa25fd4dff203dc5773faa4e5bd0b40cb437b63899240d915d29a252"
+  },
+  "public_rule_signoff": false,
+  "readback_tcl_sha256": "53b3917dfb2408d79268b5f44bf0f5084e08d27113fbb0f09d3b88b6791d8972",
+  "returncode": 0,
+  "run_id": "croc-full-io-floorplan-readback-20260905-001",
+  "source_run": "croc-full-io-floorplan-20260905-005",
+  "source_sha256": {
+    "runs/croc-full-io-floorplan-20260905-005/inputs/baseline_floorplan.def": "b2c44fd5fbc670ada392dbd54740a6b28af783aeff794c66b717a7a04de02525",
+    "runs/croc-full-io-floorplan-20260905-005/io_instances.tsv": "0088fff13be04fb96aab09cbdd551af1f9158a96fbceaa619aad1aba6f8a0ed6",
+    "runs/croc-full-io-floorplan-20260905-005/manifest.json": "9aeb3d38558632eb94d311d9d55d338e641a0dc9c2cf3504ffaa6c4c86ee926a",
+    "runs/croc-full-io-floorplan-20260905-005/work/openroad/save/01_croc.floorplan.zip": "ee56fcffd8fd35c8071b948ec8c706ca62fb716eb4fc7628030286a1856de4be",
+    "scripts/check_full_io_floorplan.py": "48fe70c2c1bb5bab95b972609f9550376803142fec9ffa781807522e4bc58558"
+  },
+  "started_at": "2026-09-05T10:48:02.038536+00:00",
+  "status": "completed"
+}

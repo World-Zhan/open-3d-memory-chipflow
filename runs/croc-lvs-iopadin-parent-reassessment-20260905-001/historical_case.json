@@ -1,0 +1,178 @@
+{
+  "artifacts": {
+    "command": "sg13g2_IOPadIn/command.txt",
+    "extracted_netlist": "sg13g2_IOPadIn/sg13g2_io_extracted.cir",
+    "layout_log": "sg13g2_IOPadIn/sg13g2_io.log",
+    "lvsdb": "sg13g2_IOPadIn/sg13g2_io.lvsdb",
+    "runner_console_log": "sg13g2_IOPadIn/runner-console.log"
+  },
+  "boundary_classification": "top_port_leakage_or_loss",
+  "command": "/usr/bin/python3 /work/upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/run_lvs.py --layout=/work/upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/gds/sg13g2_io.gds --netlist=/work/upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/cdl/sg13g2_io.cdl --run_dir=/work/runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-diagnostic-20260829-001/sg13g2_IOPadIn --topcell=sg13g2_IOPadIn --run_mode=deep",
+  "exact_shared_ports": 6,
+  "extra_extracted_formal_ports": [
+    "iovss$1"
+  ],
+  "extracted_formal_ports": 7,
+  "extracted_port_order": [
+    "pad",
+    "iovss",
+    "iovss$1",
+    "iovdd",
+    "vdd",
+    "vss",
+    "p2c"
+  ],
+  "extracted_port_set_exact": false,
+  "formal_port_count_delta": 1,
+  "name": "sg13g2_IOPadIn",
+  "observed_log_options": {
+    "deck_runtime_seconds": 3.057724,
+    "flag_missing_ports": true,
+    "ignore_top_ports_mismatch_enabled": false,
+    "ignore_top_ports_mismatch_raw": "",
+    "implicit_nets": null,
+    "netlists_match": false,
+    "netlists_mismatch": true,
+    "peak_memory_kib": 524960,
+    "run_mode": "deep",
+    "schematic_path_logged": "/work/upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/cdl/sg13g2_io.cdl",
+    "simplify_enabled": true,
+    "strict_port_mode": true,
+    "top_level_pins_option": false
+  },
+  "port_analysis": {
+    "abnormal_formal_port_samples_first_100": [
+      {
+        "category": "single_generic_cell_pin_label",
+        "extracted_formal_port": "iovss$1",
+        "index": 2
+      }
+    ],
+    "abnormal_layout_formal_port_count": 1,
+    "ambiguous_schematic_alias_count": 0,
+    "ambiguous_schematic_aliases": {},
+    "category_counts": {
+      "exact_expected_signal": 6,
+      "single_generic_cell_pin_label": 1
+    },
+    "composite_formal_port_samples_first_100": [],
+    "exact_shared_count": 6,
+    "exact_shared_ports": [
+      "iovdd",
+      "iovss",
+      "p2c",
+      "pad",
+      "vdd",
+      "vss"
+    ],
+    "formal_port_count_delta": 1,
+    "layout_extracted_formal_port_count": 7,
+    "layout_tokens_containing_expected_alias": 6,
+    "missing_schematic_aliases": [],
+    "recovered_alias_order_matches_schematic": false,
+    "schematic_port_count": 6,
+    "schematic_ports_recovered_as_aliases": 6,
+    "schematic_to_extracted_mapping": [
+      {
+        "matches": [
+          {
+            "aliases": [
+              "pad"
+            ],
+            "extracted_formal_port": "pad",
+            "index": 0
+          }
+        ],
+        "schematic_port": "pad",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "p2c"
+            ],
+            "extracted_formal_port": "p2c",
+            "index": 6
+          }
+        ],
+        "schematic_port": "p2c",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "vdd"
+            ],
+            "extracted_formal_port": "vdd",
+            "index": 4
+          }
+        ],
+        "schematic_port": "vdd",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "vss"
+            ],
+            "extracted_formal_port": "vss",
+            "index": 5
+          }
+        ],
+        "schematic_port": "vss",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "iovdd"
+            ],
+            "extracted_formal_port": "iovdd",
+            "index": 3
+          }
+        ],
+        "schematic_port": "iovdd",
+        "status": "mapped_as_alias"
+      },
+      {
+        "matches": [
+          {
+            "aliases": [
+              "iovss"
+            ],
+            "extracted_formal_port": "iovss",
+            "index": 1
+          }
+        ],
+        "schematic_port": "iovss",
+        "status": "mapped_as_alias"
+      }
+    ]
+  },
+  "requested_options": {
+    "disabled_or_weakened_checks": [],
+    "flag_missing_ports": true,
+    "ignore_top_ports_mismatch": false,
+    "implicit_nets": null,
+    "run_mode": "deep",
+    "simplify_enabled": true,
+    "strict_port_mode": true,
+    "top_level_pins_option": false
+  },
+  "runner_returncode": 0,
+  "schematic_formal_ports": 6,
+  "schematic_port_order": [
+    "pad",
+    "p2c",
+    "vdd",
+    "vss",
+    "iovdd",
+    "iovss"
+  ],
+  "status": "FAIL",
+  "top_cell": "sg13g2_IOPadIn"
+}

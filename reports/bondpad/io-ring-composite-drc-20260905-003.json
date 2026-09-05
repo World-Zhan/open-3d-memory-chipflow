@@ -1,0 +1,343 @@
+{
+  "all_rule_switches_and_source_hashes_unchanged": true,
+  "auditor_version": 3,
+  "causal_limit": "The successful single-task replay also uses a different Docker CPU limit and timeout envelope from the original full runner; it does not isolate multithreading as the cause of the original signal-11 failure.",
+  "classification": "io_only_ring_composite_task_audit_not_full_chip_signoff",
+  "composite_density_marker_counts": {
+    "AFil.g": 1,
+    "AFil.g2": 25,
+    "GFil.g": 1,
+    "M1.j": 1,
+    "M1Fil.h": 25,
+    "M2.j": 1,
+    "M2Fil.h": 25,
+    "M3.j": 1,
+    "M3Fil.h": 16,
+    "M4.j": 1,
+    "M4Fil.h": 16,
+    "M5.j": 1,
+    "M5Fil.h": 16,
+    "TM2.c": 1
+  },
+  "composite_density_marker_scopes": {
+    "global": 8,
+    "local_window": 123
+  },
+  "composite_marker_inventory_complete": true,
+  "composite_merged_markers": 131,
+  "composite_non_density_markers": 0,
+  "composite_pad_markers": 0,
+  "composite_rule_execution_complete": true,
+  "documented_argument_changes": [
+    [
+      "threads=4",
+      "threads=1"
+    ],
+    [
+      "report=/output/io_ring_sealed_io_ring_sealed_sg13g2_maximal.lyrdb",
+      "report=/output/maximal.lyrdb"
+    ],
+    [
+      "log=/output/io_ring_sealed_io_ring_sealed_sg13g2_maximal.log",
+      "log=/output/maximal.log"
+    ]
+  ],
+  "fixture_drc_passed": false,
+  "full_chip_drc_lvs_performed": false,
+  "generated_at": "2026-09-05T10:54:24.048211+00:00",
+  "maximal_report_category_count": 272,
+  "original_exception_tasks": [
+    "sg13g2_maximal"
+  ],
+  "original_healthy_tasks": {
+    "activ": {
+      "log_sha256": "05301bbc01b8cf770bf1b3ad20214e9127fa33ddff7603e661fa1ca5e75e9089",
+      "terminal_log_complete_and_error_free": true
+    },
+    "activfiller": {
+      "log_sha256": "0536d4ac38a958577d5d646d26c80e42f76b8af3300570db71820b2066b33517",
+      "terminal_log_complete_and_error_free": true
+    },
+    "angle": {
+      "log_sha256": "8c2283da10cd702217eb832bdd1221c37a5477a8ec80bbecca5d9d1882d7aac7",
+      "terminal_log_complete_and_error_free": true
+    },
+    "antenna": {
+      "log_sha256": "28e57d608c58b9b6287b20aa93f87b5c469ede009bbe4606062094220df5a8e3",
+      "terminal_log_complete_and_error_free": true
+    },
+    "cont": {
+      "log_sha256": "157814cc14e21f1e4e2d3530c89ad2d397cb8c150cfc6c9ec72c680096da29da",
+      "terminal_log_complete_and_error_free": true
+    },
+    "contbar": {
+      "log_sha256": "4b642bf073dfbd25eee31d16d65834bdcd4b5cb2030bbc3de87b4ad0934b19cf",
+      "terminal_log_complete_and_error_free": true
+    },
+    "copperpillar": {
+      "log_sha256": "57d6edffbedeac6cc0ae7f03014f6ef752c3765bd38c7ea94885ad79846d85a5",
+      "terminal_log_complete_and_error_free": true
+    },
+    "density": {
+      "log_sha256": "7ec79b2970e30232e7ba005411d165c00f86f9ee3cd3d6408d8e4650f2bf69f8",
+      "terminal_log_complete_and_error_free": true
+    },
+    "forbidden": {
+      "log_sha256": "14d13210a673aad408082e3983a8b74cbe94f3f7008162ecf319f2b1ad13cba1",
+      "terminal_log_complete_and_error_free": true
+    },
+    "gatpoly": {
+      "log_sha256": "f269a7f195e680195ba57cc25fdba316c24e01f1c20f15b4a97a92a6a08acbec",
+      "terminal_log_complete_and_error_free": true
+    },
+    "gatpolyfiller": {
+      "log_sha256": "d6b4c899e6a84561557ed2359ab160652b4cb86d5f1fd74534c4f7b59828d492",
+      "terminal_log_complete_and_error_free": true
+    },
+    "latchup": {
+      "log_sha256": "bb12ca242e296ab19425a96767b5ab922574b0aeea020238e83576d4d926a9b5",
+      "terminal_log_complete_and_error_free": true
+    },
+    "lbe": {
+      "log_sha256": "d178889d0c924e38977e1980d5d2f2b232b56739fdc95de90985dbfd132926ae",
+      "terminal_log_complete_and_error_free": true
+    },
+    "metal1": {
+      "log_sha256": "4c267ca65f08918e369655a9901bc5fef69531060c631d1ce9fc8f6ac80f6ee0",
+      "terminal_log_complete_and_error_free": true
+    },
+    "metaln": {
+      "log_sha256": "4990b089c67241149021695559eea3da5a8d00062ccda5650c58508c59ee23ff",
+      "terminal_log_complete_and_error_free": true
+    },
+    "metalnfiller": {
+      "log_sha256": "d4797273970feb0b5dc46d70608617edaf3c451df8dfbabc8d189542e662aa11",
+      "terminal_log_complete_and_error_free": true
+    },
+    "metalslits": {
+      "log_sha256": "14e72b89a407f00563826aa247b939dd2175f78e9dd1f37c68e8af5dfa44e846",
+      "terminal_log_complete_and_error_free": true
+    },
+    "mim": {
+      "log_sha256": "e3926b39bdfc064b72396d74f767ec95f4d29943327ec798e4cc7b299e2f4df3",
+      "terminal_log_complete_and_error_free": true
+    },
+    "nbulay": {
+      "log_sha256": "52c5de4d23cf15f9c96d35e8134a0509486bb607457d0911ac2b3e2c17509f3f",
+      "terminal_log_complete_and_error_free": true
+    },
+    "npnsubstratetie": {
+      "log_sha256": "dd4da839a57c1aa3fe3e67b6a7814c5fd85931fdd99ff22693e6c34696941c89",
+      "terminal_log_complete_and_error_free": true
+    },
+    "nwell": {
+      "log_sha256": "15165b482f621996ab2f6e02921c67bbbe1d7aaf359ebcf253f5b1dde8fa6061",
+      "terminal_log_complete_and_error_free": true
+    },
+    "offgrid": {
+      "log_sha256": "bb7ef772a3fb97d6461d026dc43383ad2ffac8ca5a4560f6f8a6a8f7302d08e3",
+      "terminal_log_complete_and_error_free": true
+    },
+    "pad": {
+      "log_sha256": "368e1915a2eea8c3719d1c6004999027af5f013f57bf182735d3d0b09e06ccda",
+      "terminal_log_complete_and_error_free": true
+    },
+    "passiv": {
+      "log_sha256": "3f84c6de9853f44f358179b963c32efdab51abcd3386155fcb525085ee2f345e",
+      "terminal_log_complete_and_error_free": true
+    },
+    "pin": {
+      "log_sha256": "e1eade6020dba1d3e8e1fb8047dac1afa823bb990c5dd7df406712a58eb63e1e",
+      "terminal_log_complete_and_error_free": true
+    },
+    "psd": {
+      "log_sha256": "3491fb914de656a955a687c5a78b830cfde4bf5c5d45591124eaba7bba26f060",
+      "terminal_log_complete_and_error_free": true
+    },
+    "pwellblock": {
+      "log_sha256": "e59d6960c9e99ea6a147edc4345bfca1d4783d20ee595933e6915e46d283b38a",
+      "terminal_log_complete_and_error_free": true
+    },
+    "schottkydiode": {
+      "log_sha256": "79c4292dd369612884c9c41da44c7b2a5626fc3922d29f4af6314cc566fdad76",
+      "terminal_log_complete_and_error_free": true
+    },
+    "sealring": {
+      "log_sha256": "bc55ddac76e94d3ba9f709279801251e2e4b5a56df99eff30023377f7a72fbc2",
+      "terminal_log_complete_and_error_free": true
+    },
+    "solderbump": {
+      "log_sha256": "72c0f4fcd3a5c2f85a34b51b347ce5e918882c1eb322443f4382f46819f11568",
+      "terminal_log_complete_and_error_free": true
+    },
+    "thickgateox": {
+      "log_sha256": "2ca0305a109f6f5cc634c23e1136f5a65dfdf528f4c962e7027c12eb067792f7",
+      "terminal_log_complete_and_error_free": true
+    },
+    "topmetal1": {
+      "log_sha256": "b262f1c001a33e7b59e79f658d32f9d4a51017e16878c52641fa0e6ee8381ce1",
+      "terminal_log_complete_and_error_free": true
+    },
+    "topmetal1filler": {
+      "log_sha256": "e69744cf109139f1d72f87d2b590f93f2caefab27039e41370522802a270e20d",
+      "terminal_log_complete_and_error_free": true
+    },
+    "topmetal2": {
+      "log_sha256": "ae8387cf63eb3bd23d915d88bdc9fefa6a0d1db0fddc4055f489ae8012d059d6",
+      "terminal_log_complete_and_error_free": true
+    },
+    "topmetal2filler": {
+      "log_sha256": "2ee7834506718ade1b8d7a88677b6d8847e34de22274162493ced6f6e9aa3f0d",
+      "terminal_log_complete_and_error_free": true
+    },
+    "topvia1": {
+      "log_sha256": "a4ec6063aff2742e7f880a697a8d3295edd518a3ff511b0b24e465d9b86fa1d7",
+      "terminal_log_complete_and_error_free": true
+    },
+    "topvia2": {
+      "log_sha256": "0034e41f53972452149f8861636c547aefd4390ae058792371fbdf4f9af67f94",
+      "terminal_log_complete_and_error_free": true
+    },
+    "via1": {
+      "log_sha256": "4bff3d5ad3b51d81d00ec6a7d1a6e07b68bd63631e501aefc7acc9174962d9e2",
+      "terminal_log_complete_and_error_free": true
+    },
+    "vian": {
+      "log_sha256": "c9ace8644894ea96e1bb72df5d520ee112c6615683423892ea5bd7427e5d4529",
+      "terminal_log_complete_and_error_free": true
+    }
+  },
+  "original_merged_markers": 131,
+  "original_run": "croc-io-ring-drc-20260905-001",
+  "original_run_execution_complete": false,
+  "original_runner_returncode": 1,
+  "preserved_flat_replay": {
+    "error_free": true,
+    "markers": null,
+    "missing_required_output_hashes": [
+      "maximal.lyrdb"
+    ],
+    "report_error": "missing maximal.lyrdb; incomplete, marker count unknown",
+    "report_structure_valid": false,
+    "required_output_hashes_verified": false,
+    "returncode": 137,
+    "run": "croc-io-ring-maximal-flat-20260905-001",
+    "source_identity_verified": true,
+    "terminal_completion": false
+  },
+  "preserved_v2_recomputed_exactly_except_timestamp": true,
+  "preserved_v2_report": "reports/bondpad/io-ring-composite-drc-20260905-002.json",
+  "public_rule_signoff": false,
+  "replay": {
+    "container_id": "22b2ff09ba0c",
+    "error_free": true,
+    "markers": 0,
+    "memory_peak_scope": "Maximum of periodic Docker samples, not a continuous peak measurement.",
+    "missing_required_output_hashes": [],
+    "report_error": null,
+    "report_structure_valid": true,
+    "required_output_hashes_verified": true,
+    "resource_samples_verified": true,
+    "returncode": 0,
+    "sample_count": 13,
+    "sampled_max_memory_mib": 3680.256,
+    "source_identity_verified": true,
+    "terminal_completion": true,
+    "terminal_container_state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "2026-09-05T10:39:44.682103377Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 0,
+      "Restarting": false,
+      "Running": false,
+      "StartedAt": "2026-09-05T10:33:52.24413955Z",
+      "Status": "exited"
+    },
+    "terminal_container_state_verified": true
+  },
+  "replay_run": "croc-io-ring-maximal-deep1-20260905-001",
+  "run_mode_unchanged": "deep",
+  "schema_version": "1.0.0",
+  "scope": "IO-only ring: 39 original successful tasks plus one successful deep maximal replay. Original signal-11 and flat exit-137 runs remain failed. No core, full-chip DRC/LVS, or signoff.",
+  "source_sha256": {
+    "reports/bondpad/io-ring-composite-drc-20260905-002.json": "7018b4ad76d99a53968b059be5fc7fc5596da892f21e88765f92c9aaf13f07ab",
+    "runs/croc-io-ring-drc-20260905-001/audit.json": "d70964a7adb660a20abe97ce945b9412afb166dcb78e352019b6af1a3e57c8d4",
+    "runs/croc-io-ring-drc-20260905-001/inputs/io_ring_sealed.gds": "d9d7e598c3df2316e4c48b3f0d12328b39b929dbfeac257cecad193fc33b1b79",
+    "runs/croc-io-ring-drc-20260905-001/io_ring_sealed/io_ring_sealed_io_ring_sealed_full.lyrdb": "01352b779e2bbbbafcc2f2cd29d6e1429e0e8b767e82375eab10c9e509f9eb5c",
+    "runs/croc-io-ring-drc-20260905-001/io_ring_sealed/tool.log": "35fd0e29d6aadfa4b0aa52217fa45b9ae041dacc277d41f8ab5c0eac2f27f460",
+    "runs/croc-io-ring-drc-20260905-001/manifest.json": "12d94117caec1d6c3a6b38b8c593da2cfef146f24677649b05b2922272382942",
+    "runs/croc-io-ring-maximal-deep1-20260905-001/manifest.json": "ec15594da9025d19f17476a94c43615b3e3ba1b2e3a034b522d9f4fad6864cc3",
+    "runs/croc-io-ring-maximal-deep1-20260905-001/maximal.log": "2f70d77753c5de987310290c71988677970ffc138e0981822589db69c53ee817",
+    "runs/croc-io-ring-maximal-deep1-20260905-001/maximal.lyrdb": "41f7a26b13b43de6ba7eb6b639952e02ce44ae2b7bb87c6b21078f3639ac6940",
+    "runs/croc-io-ring-maximal-deep1-20260905-001/resource_samples.json": "460bf08431cf2c0a20efe3c5fd64a076623aacb72531fcdf326cd32a9431a47b",
+    "runs/croc-io-ring-maximal-deep1-20260905-001/terminal_observation.json": "859a68e8a9af0b911515fb22d957c378d3adabdc79d76b7d3c2f5034ba72c43b",
+    "runs/croc-io-ring-maximal-deep1-20260905-001/tool.log": "21193b86f9a81904a7a795c1b70a6da5a920428f7f7a185ae241798f9a9ea89b",
+    "runs/croc-io-ring-maximal-flat-20260905-001/manifest.json": "495c1c6666116d7b5ed4fb9742e718daa60eaa80674977681e4fdb56b841ba47",
+    "runs/croc-io-ring-maximal-flat-20260905-001/tool.log": "53cf873c4d0f609bd4bea850cb31b0e9dd5072446a4996b37ba1fc5d160a08b6",
+    "runs/croc-io-ring-physical-20260905-002/geometry_audit.json": "e2a1d0fc290d57c9babd36125497fe493fe7609f94ecea443797bf9879d79242",
+    "runs/croc-io-ring-physical-20260905-002/io_ring_sealed.gds": "d9d7e598c3df2316e4c48b3f0d12328b39b929dbfeac257cecad193fc33b1b79",
+    "runs/croc-io-ring-physical-20260905-002/manifest.json": "e25f7b7382189e5947b8b48b40edb58a99f57ea7d8a3eba9abd00015ea6afeb5",
+    "scripts/audit_bondpad_drc.py": "8a937b782ede760ba0ce441dec066f2b7a9dd13af6dd7f46b4c2f2b929ff1dc9",
+    "scripts/audit_bondpad_integration.py": "0b6e4cedd6a07d952e218312ae454ddd35186b254c6c9ca259a08baa3515067d",
+    "scripts/audit_io_ring_composite.py": "19efaded412836ea93faedc62ceda0143eb32bec78564ad1ec9c2a0b9d5c2adb",
+    "scripts/audit_io_ring_composite_v2.py": "a8a5ae900f16f374df4f8416040b3f2537fb42fe61ce800624e384db0e227a3d",
+    "scripts/audit_io_ring_composite_v3.py": "311dae1fc7f78d2ab0024756e8cbea4e5fb1a6275c3f91de562e01c58d95b059",
+    "scripts/replay_io_ring_maximal.py": "06a585504869811fdb8f665fb6b26eeff8142916a35b323b5b19d0231fafa550",
+    "scripts/run_io_ring_drc.py": "29c7e1ed33c596615ee96be61d25217aa7687d0df167c784ec910072e7708bf1",
+    "scripts/run_io_ring_floorplan.py": "978cf4f2db202a26a0df7d6e5e8f0cf35a2a82658b79653ac6e5dae6288a8998",
+    "scripts/run_io_ring_maximal_diagnostic.py": "07a9a6d73ed1b354933b8af45527cc111e0d96c70a9eff718fca3dfb5e08b677",
+    "tests/test_io_ring_composite_v3.py": "c5323b75cba63e00461a83e146b5b6622f9890b1f2fadd50369976571059bece",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/python/sg13g2_pycell_lib/sg13g2_tech_mod.json": "229029e23785f3ae58c9645d47acfe326c56f0ec41d940bf9383c7063380f9ff",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/ihp-sg13g2.drc": "22a570bfb43d564b7ce3de9d7df0795197be79f86c8a484b4959932c8dd75961",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/antenna.drc": "e3e925d918d2d4e2067751326122fd1a9be9bc3cb4fa10a8aca2fc9349975362",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/5_16_metal1.drc": "82a0ffa3d6412e88de6caf103c3b1eb1a4cf09b6cfa1857da8c67740f56c5ed0",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/5_17_metaln.drc": "0023b4dfc61eb71e14d2d4b3b003078d3f8121c732445ad80a9bca187279fb6e",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/5_18_metalnfiller.drc": "75db77192540e65fa5065a614b6872a90d967447b5a3dade0e0d2cc1630ee83d",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/5_19_via1.drc": "d86d04e1f8cda3c045dc8caafe85cec64bde15413d0ab521765021153a59ec0e",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/5_20_vian.drc": "769a1169bf187d88c14e989dd7be8e3e3204cd72edb2a3d70eb45c943a56e2bd",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/5_21_topvia1.drc": "2a749744b68134b5fd9686dcdf6180a0d3acbed5ecdb1e4d5ac8499f8071e813",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/5_22_topmetal1.drc": "907319b08f719536f8487c326ca54d55a2fa0ffea0156c3277ab8b073e4a3c60",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/5_23_topmetal1filler.drc": "0a3bf97c0a34cd5be5cefb3259994f53800a16ba86f69d54aa80e7aa366375fa",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/5_24_topvia2.drc": "0d5124c2fd6ddefe7161bb55c82cd738db6236feaa7bb39901f08c77145021d1",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/5_25_topmetal2.drc": "356c09fdb4963e8157b9ee60efabf0d521474cd8c70a8ae17b4a2cd61eaff42e",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/5_26_topmetal2filler.drc": "da26c6b473924538a0d9fc3e98b1fb77d5496c494de7d3738520d5daed39793e",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/5_27_passiv.drc": "eb6565030fddb0789be4f4fadb4c4fa3ed690f0d52f83c4b8bfe6780298a3574",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/6_10_sealring.drc": "15802b4d6e32ceb262c1a0c042660f667cf93f804491d73151c4a24de05aa5d4",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/6_11_mim.drc": "0b41a9e4ff1342940920ff6763093aff39f986a8b2f7bfcf2b5dad47fa9da40d",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/6_9_copperpillar.drc": "4ff342d047743695f3ce5c2a9daddd011752489097b7337c24401de2b56e4bbb",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/6_9_pad.drc": "a9a8f450ea73bff364a2c6312575038ef023577d28d1196563d5a834a2790047",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/6_9_solderbump.drc": "57931abfc4d186fd6ae9b54a6c1683679de6f34b21ab225abdb098d7f3aeb9cb",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/7_3_metalslits.drc": "51457f1a8c6e312e9dbb39a65adf8fe716f57978a4a213f038b2473ae4bb8e4c",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/9_1_lbe.drc": "c501e565e2bc172143e048c19bc8c36813972e8604c307977112b1e1791cf2af",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/density.drc": "ef143b293fbbb1722f590d59cd3d942fec5bde6ae216e8a8224d46b87010f8dd",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/feol/5_10_psd.drc": "66ef753d801e82ab43e930d46f90fe9b4c84085ce62f71e7ea502acac5ab3d62",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/feol/5_14_cont.drc": "1f541374c9b12f74bf806d2013e87aacc368535edec07e0c55661f6b4a7b821f",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/feol/5_15_contbar.drc": "83dee69ea9f0949d0bacf78fedaa9073d312d20ead432ba6ce628ded6d1553b3",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/feol/5_1_nwell.drc": "7f0d27bd5507fbc530d55f5b7b2e1adeb65b39294b76b1c85530bc3e9338035d",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/feol/5_2_pwellblock.drc": "3dfb01b5b353013f6b322ab0ff20d52d3325f925504e7cd6e85a0615792d60d7",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/feol/5_3_nbulay.drc": "31a92ec448a6948d7400850f2bc37bb5a7590c0f7cce787ce46c731022edb5cb",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/feol/5_5_activ.drc": "ab899d25d0a1dbef1a6a6b327353c80ae84331273e0ed0f239497727cf7fec6c",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/feol/5_6_activfiller.drc": "c48ec245d0bf36dac15e55db4865b05e6cee96c258607d75e386bc8e3fcf783d",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/feol/5_7_thickgateox.drc": "aa42686a8d1468f549afcbaea2311cb38c893c0cc1d11b5a09a488af76d64ae0",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/feol/5_8_gatpoly.drc": "19154ca2432427086fa8fbee0941d8875126d3345487018d833b02025de65529",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/feol/5_9_gatpolyfiller.drc": "288a02299408399ccd94573200948cf01bfb3500915c021d2bedaa355bd2016f",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/feol/6_1_npnsubstratetie.drc": "4826fe274df4f16f8310bee5f3933375fa8a675de691283ae28675fb512e6bfc",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/feol/6_7_schottkydiode.drc": "7e48869e6d92679f5a877f02a7c48f9ca77826fc1121cfc290eb962fd71e8052",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/feol/7_2_latchup.drc": "e1bf94abb6be10d243c84b0f2c71dcce29020e0941087e32113e5f4a8606b931",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/forbidden/3_2_forbidden.drc": "1e4aba916a0ebbddc58533cf641401f12da8da4959387f693d4e278786cd0486",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/geometry/3_1_offgrid.drc": "dc5eb236c1229efb48df98b256a1b3fd3b08cb793db021e4fee889756f292f1d",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/geometry/3_2_angle.drc": "f1a4d08eb5c2b617d04cf73013700a450a3668dae9b5293c0d4c7d988d73efb4",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/layers_def.drc": "a71a4f6250b0220a5608c6d6cc6ef7a9b0a4a8f3f2820208216630528e163147",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/pin/7_4_pin.drc": "508ee712c468f14bd5458b276af3449fcfd167707fc0efb72e27e13189fe5742",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/sg13g2_maximal.drc": "d12e1947f570ce16f04dfd94769f2c38fdbda3920c5f7479272ef517864eae4b",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/sg13g2_tech_default.json": "07930b016cdffe14c2cb82b47fbec193643347607db6d44aa1abfdece056cd2f",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/run_drc.py": "6d7246f125d1eb1e77a0340e3b1ffaa7233e0b3a2d4368f39207d6bac3dcdcef",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/testing/gen_golden.py": "96292ebaf762a57f99a94b997aacc5c0bb1881290c2d335d94b23f5327a71307",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/testing/run_regression.py": "ae748b5b1af5ebdbbb68187f6b731eb50f3c345bc705fd0f0611bacca0c4fbd4",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/testing/run_regression_cells.py": "dba6d368fc818dba875eb2e050e6a0e62b79af8d2bfc901a4774693ef9fa0f2f"
+  },
+  "tool_image": "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521"
+}

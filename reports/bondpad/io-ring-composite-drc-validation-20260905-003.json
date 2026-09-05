@@ -1,0 +1,329 @@
+{
+  "all_source_hashes_verified": true,
+  "ast_and_whitespace_checks_passed": true,
+  "audit_report": "reports/bondpad/io-ring-composite-drc-20260905-003.json",
+  "audit_report_sha256": "185e7b4273b031d96c1e0315e920da27c3151758eb88f268a95bf5547397dd0f",
+  "checks": [
+    {
+      "path": "reports/bondpad/io-ring-composite-drc-20260905-002.json",
+      "sha256": "7018b4ad76d99a53968b059be5fc7fc5596da892f21e88765f92c9aaf13f07ab"
+    },
+    {
+      "path": "runs/croc-io-ring-drc-20260905-001/audit.json",
+      "sha256": "d70964a7adb660a20abe97ce945b9412afb166dcb78e352019b6af1a3e57c8d4"
+    },
+    {
+      "path": "runs/croc-io-ring-drc-20260905-001/inputs/io_ring_sealed.gds",
+      "sha256": "d9d7e598c3df2316e4c48b3f0d12328b39b929dbfeac257cecad193fc33b1b79"
+    },
+    {
+      "path": "runs/croc-io-ring-drc-20260905-001/io_ring_sealed/io_ring_sealed_io_ring_sealed_full.lyrdb",
+      "sha256": "01352b779e2bbbbafcc2f2cd29d6e1429e0e8b767e82375eab10c9e509f9eb5c"
+    },
+    {
+      "path": "runs/croc-io-ring-drc-20260905-001/io_ring_sealed/tool.log",
+      "sha256": "35fd0e29d6aadfa4b0aa52217fa45b9ae041dacc277d41f8ab5c0eac2f27f460"
+    },
+    {
+      "path": "runs/croc-io-ring-drc-20260905-001/manifest.json",
+      "sha256": "12d94117caec1d6c3a6b38b8c593da2cfef146f24677649b05b2922272382942"
+    },
+    {
+      "path": "runs/croc-io-ring-maximal-deep1-20260905-001/manifest.json",
+      "sha256": "ec15594da9025d19f17476a94c43615b3e3ba1b2e3a034b522d9f4fad6864cc3"
+    },
+    {
+      "path": "runs/croc-io-ring-maximal-deep1-20260905-001/maximal.log",
+      "sha256": "2f70d77753c5de987310290c71988677970ffc138e0981822589db69c53ee817"
+    },
+    {
+      "path": "runs/croc-io-ring-maximal-deep1-20260905-001/maximal.lyrdb",
+      "sha256": "41f7a26b13b43de6ba7eb6b639952e02ce44ae2b7bb87c6b21078f3639ac6940"
+    },
+    {
+      "path": "runs/croc-io-ring-maximal-deep1-20260905-001/resource_samples.json",
+      "sha256": "460bf08431cf2c0a20efe3c5fd64a076623aacb72531fcdf326cd32a9431a47b"
+    },
+    {
+      "path": "runs/croc-io-ring-maximal-deep1-20260905-001/terminal_observation.json",
+      "sha256": "859a68e8a9af0b911515fb22d957c378d3adabdc79d76b7d3c2f5034ba72c43b"
+    },
+    {
+      "path": "runs/croc-io-ring-maximal-deep1-20260905-001/tool.log",
+      "sha256": "21193b86f9a81904a7a795c1b70a6da5a920428f7f7a185ae241798f9a9ea89b"
+    },
+    {
+      "path": "runs/croc-io-ring-maximal-flat-20260905-001/manifest.json",
+      "sha256": "495c1c6666116d7b5ed4fb9742e718daa60eaa80674977681e4fdb56b841ba47"
+    },
+    {
+      "path": "runs/croc-io-ring-maximal-flat-20260905-001/tool.log",
+      "sha256": "53cf873c4d0f609bd4bea850cb31b0e9dd5072446a4996b37ba1fc5d160a08b6"
+    },
+    {
+      "path": "runs/croc-io-ring-physical-20260905-002/geometry_audit.json",
+      "sha256": "e2a1d0fc290d57c9babd36125497fe493fe7609f94ecea443797bf9879d79242"
+    },
+    {
+      "path": "runs/croc-io-ring-physical-20260905-002/io_ring_sealed.gds",
+      "sha256": "d9d7e598c3df2316e4c48b3f0d12328b39b929dbfeac257cecad193fc33b1b79"
+    },
+    {
+      "path": "runs/croc-io-ring-physical-20260905-002/manifest.json",
+      "sha256": "e25f7b7382189e5947b8b48b40edb58a99f57ea7d8a3eba9abd00015ea6afeb5"
+    },
+    {
+      "path": "scripts/audit_bondpad_drc.py",
+      "sha256": "8a937b782ede760ba0ce441dec066f2b7a9dd13af6dd7f46b4c2f2b929ff1dc9"
+    },
+    {
+      "path": "scripts/audit_bondpad_integration.py",
+      "sha256": "0b6e4cedd6a07d952e218312ae454ddd35186b254c6c9ca259a08baa3515067d"
+    },
+    {
+      "path": "scripts/audit_io_ring_composite.py",
+      "sha256": "19efaded412836ea93faedc62ceda0143eb32bec78564ad1ec9c2a0b9d5c2adb"
+    },
+    {
+      "path": "scripts/audit_io_ring_composite_v2.py",
+      "sha256": "a8a5ae900f16f374df4f8416040b3f2537fb42fe61ce800624e384db0e227a3d"
+    },
+    {
+      "path": "scripts/audit_io_ring_composite_v3.py",
+      "sha256": "311dae1fc7f78d2ab0024756e8cbea4e5fb1a6275c3f91de562e01c58d95b059"
+    },
+    {
+      "path": "scripts/replay_io_ring_maximal.py",
+      "sha256": "06a585504869811fdb8f665fb6b26eeff8142916a35b323b5b19d0231fafa550"
+    },
+    {
+      "path": "scripts/run_io_ring_drc.py",
+      "sha256": "29c7e1ed33c596615ee96be61d25217aa7687d0df167c784ec910072e7708bf1"
+    },
+    {
+      "path": "scripts/run_io_ring_floorplan.py",
+      "sha256": "978cf4f2db202a26a0df7d6e5e8f0cf35a2a82658b79653ac6e5dae6288a8998"
+    },
+    {
+      "path": "scripts/run_io_ring_maximal_diagnostic.py",
+      "sha256": "07a9a6d73ed1b354933b8af45527cc111e0d96c70a9eff718fca3dfb5e08b677"
+    },
+    {
+      "path": "tests/test_io_ring_composite_v3.py",
+      "sha256": "c5323b75cba63e00461a83e146b5b6622f9890b1f2fadd50369976571059bece"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/python/sg13g2_pycell_lib/sg13g2_tech_mod.json",
+      "sha256": "229029e23785f3ae58c9645d47acfe326c56f0ec41d940bf9383c7063380f9ff"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/ihp-sg13g2.drc",
+      "sha256": "22a570bfb43d564b7ce3de9d7df0795197be79f86c8a484b4959932c8dd75961"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/antenna.drc",
+      "sha256": "e3e925d918d2d4e2067751326122fd1a9be9bc3cb4fa10a8aca2fc9349975362"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/5_16_metal1.drc",
+      "sha256": "82a0ffa3d6412e88de6caf103c3b1eb1a4cf09b6cfa1857da8c67740f56c5ed0"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/5_17_metaln.drc",
+      "sha256": "0023b4dfc61eb71e14d2d4b3b003078d3f8121c732445ad80a9bca187279fb6e"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/5_18_metalnfiller.drc",
+      "sha256": "75db77192540e65fa5065a614b6872a90d967447b5a3dade0e0d2cc1630ee83d"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/5_19_via1.drc",
+      "sha256": "d86d04e1f8cda3c045dc8caafe85cec64bde15413d0ab521765021153a59ec0e"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/5_20_vian.drc",
+      "sha256": "769a1169bf187d88c14e989dd7be8e3e3204cd72edb2a3d70eb45c943a56e2bd"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/5_21_topvia1.drc",
+      "sha256": "2a749744b68134b5fd9686dcdf6180a0d3acbed5ecdb1e4d5ac8499f8071e813"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/5_22_topmetal1.drc",
+      "sha256": "907319b08f719536f8487c326ca54d55a2fa0ffea0156c3277ab8b073e4a3c60"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/5_23_topmetal1filler.drc",
+      "sha256": "0a3bf97c0a34cd5be5cefb3259994f53800a16ba86f69d54aa80e7aa366375fa"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/5_24_topvia2.drc",
+      "sha256": "0d5124c2fd6ddefe7161bb55c82cd738db6236feaa7bb39901f08c77145021d1"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/5_25_topmetal2.drc",
+      "sha256": "356c09fdb4963e8157b9ee60efabf0d521474cd8c70a8ae17b4a2cd61eaff42e"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/5_26_topmetal2filler.drc",
+      "sha256": "da26c6b473924538a0d9fc3e98b1fb77d5496c494de7d3738520d5daed39793e"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/5_27_passiv.drc",
+      "sha256": "eb6565030fddb0789be4f4fadb4c4fa3ed690f0d52f83c4b8bfe6780298a3574"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/6_10_sealring.drc",
+      "sha256": "15802b4d6e32ceb262c1a0c042660f667cf93f804491d73151c4a24de05aa5d4"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/6_11_mim.drc",
+      "sha256": "0b41a9e4ff1342940920ff6763093aff39f986a8b2f7bfcf2b5dad47fa9da40d"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/6_9_copperpillar.drc",
+      "sha256": "4ff342d047743695f3ce5c2a9daddd011752489097b7337c24401de2b56e4bbb"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/6_9_pad.drc",
+      "sha256": "a9a8f450ea73bff364a2c6312575038ef023577d28d1196563d5a834a2790047"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/6_9_solderbump.drc",
+      "sha256": "57931abfc4d186fd6ae9b54a6c1683679de6f34b21ab225abdb098d7f3aeb9cb"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/7_3_metalslits.drc",
+      "sha256": "51457f1a8c6e312e9dbb39a65adf8fe716f57978a4a213f038b2473ae4bb8e4c"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/9_1_lbe.drc",
+      "sha256": "c501e565e2bc172143e048c19bc8c36813972e8604c307977112b1e1791cf2af"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/density.drc",
+      "sha256": "ef143b293fbbb1722f590d59cd3d942fec5bde6ae216e8a8224d46b87010f8dd"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/feol/5_10_psd.drc",
+      "sha256": "66ef753d801e82ab43e930d46f90fe9b4c84085ce62f71e7ea502acac5ab3d62"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/feol/5_14_cont.drc",
+      "sha256": "1f541374c9b12f74bf806d2013e87aacc368535edec07e0c55661f6b4a7b821f"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/feol/5_15_contbar.drc",
+      "sha256": "83dee69ea9f0949d0bacf78fedaa9073d312d20ead432ba6ce628ded6d1553b3"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/feol/5_1_nwell.drc",
+      "sha256": "7f0d27bd5507fbc530d55f5b7b2e1adeb65b39294b76b1c85530bc3e9338035d"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/feol/5_2_pwellblock.drc",
+      "sha256": "3dfb01b5b353013f6b322ab0ff20d52d3325f925504e7cd6e85a0615792d60d7"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/feol/5_3_nbulay.drc",
+      "sha256": "31a92ec448a6948d7400850f2bc37bb5a7590c0f7cce787ce46c731022edb5cb"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/feol/5_5_activ.drc",
+      "sha256": "ab899d25d0a1dbef1a6a6b327353c80ae84331273e0ed0f239497727cf7fec6c"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/feol/5_6_activfiller.drc",
+      "sha256": "c48ec245d0bf36dac15e55db4865b05e6cee96c258607d75e386bc8e3fcf783d"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/feol/5_7_thickgateox.drc",
+      "sha256": "aa42686a8d1468f549afcbaea2311cb38c893c0cc1d11b5a09a488af76d64ae0"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/feol/5_8_gatpoly.drc",
+      "sha256": "19154ca2432427086fa8fbee0941d8875126d3345487018d833b02025de65529"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/feol/5_9_gatpolyfiller.drc",
+      "sha256": "288a02299408399ccd94573200948cf01bfb3500915c021d2bedaa355bd2016f"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/feol/6_1_npnsubstratetie.drc",
+      "sha256": "4826fe274df4f16f8310bee5f3933375fa8a675de691283ae28675fb512e6bfc"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/feol/6_7_schottkydiode.drc",
+      "sha256": "7e48869e6d92679f5a877f02a7c48f9ca77826fc1121cfc290eb962fd71e8052"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/feol/7_2_latchup.drc",
+      "sha256": "e1bf94abb6be10d243c84b0f2c71dcce29020e0941087e32113e5f4a8606b931"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/forbidden/3_2_forbidden.drc",
+      "sha256": "1e4aba916a0ebbddc58533cf641401f12da8da4959387f693d4e278786cd0486"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/geometry/3_1_offgrid.drc",
+      "sha256": "dc5eb236c1229efb48df98b256a1b3fd3b08cb793db021e4fee889756f292f1d"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/geometry/3_2_angle.drc",
+      "sha256": "f1a4d08eb5c2b617d04cf73013700a450a3668dae9b5293c0d4c7d988d73efb4"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/layers_def.drc",
+      "sha256": "a71a4f6250b0220a5608c6d6cc6ef7a9b0a4a8f3f2820208216630528e163147"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/pin/7_4_pin.drc",
+      "sha256": "508ee712c468f14bd5458b276af3449fcfd167707fc0efb72e27e13189fe5742"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/sg13g2_maximal.drc",
+      "sha256": "d12e1947f570ce16f04dfd94769f2c38fdbda3920c5f7479272ef517864eae4b"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/sg13g2_tech_default.json",
+      "sha256": "07930b016cdffe14c2cb82b47fbec193643347607db6d44aa1abfdece056cd2f"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/run_drc.py",
+      "sha256": "6d7246f125d1eb1e77a0340e3b1ffaa7233e0b3a2d4368f39207d6bac3dcdcef"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/testing/gen_golden.py",
+      "sha256": "96292ebaf762a57f99a94b997aacc5c0bb1881290c2d335d94b23f5327a71307"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/testing/run_regression.py",
+      "sha256": "ae748b5b1af5ebdbbb68187f6b731eb50f3c345bc705fd0f0611bacca0c4fbd4"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/testing/run_regression_cells.py",
+      "sha256": "dba6d368fc818dba875eb2e050e6a0e62b79af8d2bfc901a4774693ef9fa0f2f"
+    }
+  ],
+  "classification": "lightweight_evidence_validation_not_eda_or_signoff",
+  "composite_markers": 131,
+  "composite_rule_execution_complete": true,
+  "eda_invoked_for_audit": false,
+  "fixture_drc_passed": false,
+  "generated_at": "2026-09-05T10:55:22.026782+00:00",
+  "git_staging_or_commit_performed": false,
+  "new_publication_files": [
+    "scripts/audit_io_ring_composite_v3.py",
+    "tests/test_io_ring_composite_v3.py",
+    "reports/bondpad/io-ring-composite-drc-20260905-003.json",
+    "reports/bondpad/io-ring-composite-drc-validation-20260905-003.json"
+  ],
+  "new_v3_test_methods": 12,
+  "schema_version": "1.0.0",
+  "source_hash_checks": 75,
+  "unit_tests_passed": 176,
+  "validation_command": "PYTHONDONTWRITEBYTECODE=1 make test validate-contracts",
+  "validation_log_retained_in_review_staging": true,
+  "validation_log_sha256": "6573d6335a35a0e67353f072a61eca5f08fb8a26748304b9ee0a3d5886b4a93b",
+  "validation_returncode": 0
+}

@@ -1,0 +1,94 @@
+[INFO] Final PATH variable: /foss/tools/bin:/foss/tools/sak:/usr/local/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/foss/tools/kactus2:/foss/tools/klayout:/foss/tools/osic-multitool
+[INFO] Final PYTHONPATH variable: /usr/lib/python312.zip:/usr/lib/python3.12:/usr/lib/python3.12/lib-dynload:/usr/local/lib/python3.12/dist-packages:/usr/lib/python3/dist-packages:/foss/tools/ngspyce/local/lib/python3.12/dist-packages:/foss/tools/openems/local/lib/python3.12/dist-packages:/foss/tools/yosys/share/yosys/python3:/foss/tools/klayout/pymod
+[INFO][ENV] Croc root: /work/upstream/croc
+[INFO][ENV] Skipping technology setup
+[INFO][ENV] PDK root: /work/upstream/croc/technology
+[INFO][ENV] Croc PDK: sg13g2
+[INFO][ENV] Active technology view: public mirror
+[INFO][ENV] KLayout path: /work/upstream/croc/ihp13/sg13g2/ihp-sg13g2/libs.tech/klayout
+[INFO][ENV] Bender PDK args: <none>
+[INFO][ENV] Tech LEF: sg13g2_tech.lef
+[INFO][ENV] IO LEF/GDS: sg13g2_io.lef/sg13g2_io.gds
+[INFO][ENV] IO Liberty tt/ff: sg13g2_io_typ_1p2V_3p3V_25C.lib/sg13g2_io_fast_1p32V_3p6V_m40C.lib
+[INFO][ENV] Bondpad cell: bondpad_70x70 (bondpad_70x70.lef/bondpad_70x70.gds)
+OpenROAD v2.0-27244-gfecb04286 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Setting up project croc
+ - Netlist: /output/inputs/croc_yosys.v
+ - Project: croc
+ - Top design: croc_chip
+ - Report directory: reports
+ - Save directory: save
+ - Output directory: out
+Init standard cells
+Init IO cells
+Init SRAM macros
+Init tech-lef
+[INFO ODB-0227] LEF file: /work/upstream/croc/technology/lef/sg13g2_tech.lef, created 19 layers, 70 vias
+Init cell-lef
+[INFO ODB-0227] LEF file: /work/upstream/croc/technology/lef/sg13g2_stdcell.lef, created 84 library cells
+[INFO ODB-0227] LEF file: /work/upstream/croc/technology/lef/sg13g2_io.lef, created 22 library cells
+[INFO ODB-0227] LEF file: /work/upstream/croc/technology/lef/bondpad_70x70.lef, created 1 library cells
+[INFO ODB-0227] LEF file: /work/upstream/croc/technology/lef/RM_IHPSG13_1P_256x64_c2_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: /work/upstream/croc/technology/lef/RM_IHPSG13_1P_256x48_c2_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: /work/upstream/croc/technology/lef/RM_IHPSG13_1P_1024x64_c2_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: /work/upstream/croc/technology/lef/RM_IHPSG13_1P_512x64_c2_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: /work/upstream/croc/technology/lef/RM_IHPSG13_1P_2048x64_c2_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: /work/upstream/croc/technology/lef/RM_IHPSG13_1P_512x32_c2_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: /work/upstream/croc/technology/lef/RM_IHPSG13_1P_64x64_c2_bm_bist.lef, created 1 library cells
+[INFO ORD-0030] Using 2 thread(s).
+[INFO ODB-0227] LEF file: /reference/bondpad70_m2_ring.lef, created 1 library cells
+###############################################################################
+# Stage 01: FLOORPLAN
+###############################################################################
+###############################################################################
+# 01-01: Initialization
+###############################################################################
+Read netlist: /output/inputs/croc_yosys.v
+Read constraints
+Clocks...
+CDC/Sync...
+Input/Outputs...
+JTAG...
+GPIO...
+UART...
+Check constraints
+Connect global nets (power)
+###############################################################################
+# 01-02: Core and Die Area
+###############################################################################
+Initialize Chip
+[WARNING IFP-0028] Core area lower left (352.000, 352.000) snapped to (352.320, 355.320).
+[INFO IFP-0001] Added 335 rows of 2645 site CoreSite.
+###############################################################################
+# 01-03: Padring
+###############################################################################
+###############################################################################
+# 01-04: Macro Placement
+###############################################################################
+Macro Names
+Place Macros
+placing i_croc_soc/i_croc/gen_sram_bank\[0\].i_sram/gen_512x32xBx1.i_cut at {372.32 1410.28} R0
+placing i_croc_soc/i_croc/gen_sram_bank\[1\].i_sram/gen_512x32xBx1.i_cut at {1185.2800000000002 1410.28} R0
+SRAM macro box: width 416.64 height 191.34
+SRAM bank0 bbox: (372.32, 1410.28) - (788.96, 1601.62) R0
+SRAM bank1 bbox: (1185.2800000000002, 1410.28) - (1601.92, 1601.62) R0
+SRAM horizontal gaps to core boundary: left 20.0 between 396.32000000000016 right 20.0
+SRAM vertical gap to core boundary: top 20.0
+SRAM row-cut halo: x 10.0 y 10.0
+[INFO ODB-0303] The initial 335 rows (886075 sites) were cut with 2 shapes for a total of 449 rows (782221 sites).
+saving image to reports/01-04_croc.pre_pdn.png
+[WARNING GUI-0076] QStandardPaths: runtime directory '/tmp/runtime-default' is not owned by UID 1000, but a directory permissions 0777 owned by UID 0 GID 0
+###############################################################################
+# 01-05: Power Grid
+###############################################################################
+Power Grid
+stripe_dist of RM_IHPSG13_1P_512x32_c2_bm_bist: 144.34
+[INFO PDN-0001] Inserting grid: core_grid
+[INFO PDN-0001] Inserting grid: sram_512x32_grid - i_croc_soc/i_croc/gen_sram_bank\[0\].i_sram/gen_512x32xBx1.i_cut
+[INFO PDN-0001] Inserting grid: sram_512x32_grid - i_croc_soc/i_croc/gen_sram_bank\[1\].i_sram/gen_512x32xBx1.i_cut
+[INFO ORD-0030] Using 2 thread(s).
+FULL_IO_LEADS_COMPLETE: 64 leads across six layers; full core floorplan present, signal placement/routing not run
+Error: 01_floorplan.tcl, 222 Original port changed: VDD

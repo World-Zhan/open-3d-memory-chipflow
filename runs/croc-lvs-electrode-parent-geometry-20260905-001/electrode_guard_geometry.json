@@ -1,0 +1,3305 @@
+{
+  "PDK_modified": false,
+  "classification": "actual_IOPadIn_electrode_paths_and_public_guard_geometry_not_LVS",
+  "elapsed_seconds": 2.909851056999969,
+  "full_chip_attempt_3": false,
+  "geometry_failure_cases": {
+    "cases": [
+      "same_actual_cut_joins_two_overlapping_metals",
+      "two_different_cuts_cannot_create_a_cross_layer_bridge",
+      "edge_only_cut_contact_is_not_positive_area_connection",
+      "MIM_TopVia1_removed_while_unrelated_TopVia1_remains",
+      "identical_expected_supply_names_do_not_union_disconnected_nodes",
+      "actual_cross_supply_edge_is_detectable_without_hiding_disconnected_pin"
+    ],
+    "cases_passed": 6,
+    "classification": "synthetic_geometry_failure_cases_not_chip_validation"
+  },
+  "implicit_connections": false,
+  "klayout_version": "0.30.5",
+  "limitations": [
+    "Static guard derivation does not identify the exact netlist cleanup step losing guard.",
+    "Metal/via connectivity is not device correspondence or strict hierarchical LVS.",
+    "No fabricated parent metal, no relaxed strict ports, no disabled tap extraction."
+  ],
+  "lvs_performed": false,
+  "official_cdl": {
+    "sg13g2_DCNDiode": ".SUBCKT sg13g2_DCNDiode anode cathode guard\n*.PININFO anode:B cathode:B guard:B\nDD1 sub! cathode dantenna m=1 w=1.26u l=27.78u a=35.003p p=58.08u\nDD0 sub! cathode dantenna m=1 w=1.26u l=27.78u a=35.003p p=58.08u\nXR0 anode sub! ptap1 A=141.253p P=47.54u\n.ENDS",
+    "sg13g2_DCPDiode": ".SUBCKT sg13g2_DCPDiode anode cathode guard\n*.PININFO anode:B cathode:B guard:B\nDD1 anode cathode dpantenna m=1 w=1.26u l=27.78u a=35.003p p=58.08u\nDD0 anode cathode dpantenna m=1 w=1.26u l=27.78u a=35.003p p=58.08u\nXR0 guard sub! ptap1 A=33.524p P=23.16u\n.ENDS",
+    "sg13g2_IOPadIn": ".SUBCKT sg13g2_IOPadIn pad p2c vdd vss iovdd iovss\n*.PININFO pad:I p2c:O iovdd:B iovss:B vdd:B vss:B\nXI0 p2c pad iovdd iovss vdd vss / sg13g2_LevelDown\nXI2 iovss pad iovdd / sg13g2_DCNDiode\nXI1 pad iovdd iovss / sg13g2_DCPDiode\nXR0 vss sub! ptap1 A=21.252p P=18.44u\nXR1 iovss sub! ptap1 A=5.35n P=292.58u\n.ENDS"
+  },
+  "source_hashes_unchanged": true,
+  "source_sha256": {
+    "reports/bondpad/probe_io_ring_pg.py": "ae93cf003e0b49d3828bab5313faf1a2e9383d4ff8c06ff8fee090886045a9e8",
+    "reports/bondpad/probe_io_ring_pg_vias.py": "7bcb315d86346a52ad8908e38b60cf3c0ff3a51f5b489244613a6d3b4a62bbaa",
+    "upstream/croc/technology/gds/sg13g2_io.gds": "8bb45016e5a99e48b1df1ea52c97d6813d96f6afeb905a72a956ddc2c018565f",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/cdl/sg13g2_io.cdl": "7a30e902099e8a8f85e0ae853167904df3793357a793a7b4dc82237b72b3eec4",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/gds/sg13g2_io.gds": "4281a855377b6a1ca46356e9391258dc14e8efc3b8051a65befc0fe9db3c7825",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_derivations.lvs": "2122ca992df4983e32dda8e85fdffabab2bc90eed0cebc1372c4069c78ef1157",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/diode_connections.lvs": "a55896d567a14240ae33faa8799daed545b06bd777245c3731fa4c632e9833f3",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/diode_derivations.lvs": "aa366ee04f0ab5030131d12d26e421c9bdf7dc4d7b0840f0ac43309557b411bf",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/general_connections.lvs": "bb61656b3564cf08558b83cf27d09854049eb30b5b7ade6610045d43c4b53e97",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/general_derivations.lvs": "d386598b10809388bfa690644b5a6a8f49c532b9d04caf9d2d014f4de12db043",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/layers_definitions.lvs": "2165a344d178eff60c2c79ad73108d74b8a1d2b1a5183e8b3492aa249887e58c",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/tap_connections.lvs": "b78c5b3cf4e328c915d52f210c6457790ec7ef56eb08d88dedb825ca3bc59b3b",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/tap_derivations.lvs": "b6e9ff382b6f8c392ab699d09832ea7e0ad120bc1b35b51a778e8b188b0ce6c2",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/tap_extraction.lvs": "e17c779eacdcab3bfa2287ca265d7836dde0e9e7fec4b4e7bf79bf2b2dd9120b",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/sg13g2.lvs": "9107409a7027a6b9982b1bfa9053970fd03e52af388045c440d6dc11f1c97ae7"
+  },
+  "versions": {
+    "croc_actual": {
+      "DCN_guard_leaf": {
+        "cell": "sg13g2_DCNDiode",
+        "guard_M1_contact_ntap_nwell_path_observed": true,
+        "guard_contact_witnesses_bbox_dbu": [
+          [
+            16450,
+            -1570,
+            16610,
+            -1410
+          ],
+          [
+            -1570,
+            5050,
+            -1410,
+            5210
+          ],
+          [
+            34470,
+            5050,
+            34630,
+            5210
+          ],
+          [
+            16450,
+            11670,
+            16610,
+            11830
+          ]
+        ],
+        "guard_label_points_dbu": [
+          [
+            16530,
+            11750
+          ],
+          [
+            16530,
+            -1490
+          ]
+        ],
+        "ntap_base_removed_by_ntap1_marker_um2": 0.0,
+        "ntap_base_removed_by_recog_diode_um2": 0.0,
+        "raw_text_labels": [
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              16530,
+              7380
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "dant"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              630,
+              630
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "sub!"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              16530,
+              2880
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "dant"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              16530,
+              11750
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "guard"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              16530,
+              -1490
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "guard"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              16530,
+              5130
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "anode"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              16530,
+              630
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "anode"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              16530,
+              9630
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "anode"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              16530,
+              7380
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "cathode"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              16530,
+              2880
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "cathode"
+          }
+        ],
+        "region_derivation": "nactiv=(activ_drw+activ_filler)-(psd+nsd_block); ntap=nactiv&nwell-ntap1_mk-recog_diode-gatpoly; ntap1 marker requires actual well text 63/0.",
+        "regions": {
+          "guard_M1_contacts": {
+            "area_um2": 7.372800000000001,
+            "bbox_dbu": [
+              -1570,
+              -1570,
+              34630,
+              11830
+            ],
+            "components": 288
+          },
+          "guard_connected_nwell": {
+            "area_um2": 155.72480000000002,
+            "bbox_dbu": [
+              -2280,
+              -2280,
+              35340,
+              12540
+            ],
+            "components": 1
+          },
+          "guard_contact_to_ntap": {
+            "area_um2": 7.372800000000001,
+            "bbox_dbu": [
+              -1570,
+              -1570,
+              34630,
+              11830
+            ],
+            "components": 288
+          },
+          "guard_m1": {
+            "area_um2": 33.510400000000004,
+            "bbox_dbu": [
+              -1660,
+              -1660,
+              34720,
+              11920
+            ],
+            "components": 1
+          },
+          "guard_public_ntap": {
+            "area_um2": 33.510400000000004,
+            "bbox_dbu": [
+              -1660,
+              -1660,
+              34720,
+              11920
+            ],
+            "components": 1
+          },
+          "guard_raw_nactive_nwell_taps": {
+            "area_um2": 33.510400000000004,
+            "bbox_dbu": [
+              -1660,
+              -1660,
+              34720,
+              11920
+            ],
+            "components": 1
+          },
+          "ntap": {
+            "area_um2": 33.510400000000004,
+            "bbox_dbu": [
+              -1660,
+              -1660,
+              34720,
+              11920
+            ],
+            "components": 1
+          },
+          "ntap1_marker": {
+            "area_um2": 0.0,
+            "bbox_dbu": null,
+            "components": 0
+          },
+          "ntap1_tie": {
+            "area_um2": 0.0,
+            "bbox_dbu": null,
+            "components": 0
+          },
+          "ntap_base": {
+            "area_um2": 33.510400000000004,
+            "bbox_dbu": [
+              -1660,
+              -1660,
+              34720,
+              11920
+            ],
+            "components": 1
+          },
+          "nwell": {
+            "area_um2": 155.72480000000002,
+            "bbox_dbu": [
+              -2280,
+              -2280,
+              35340,
+              12540
+            ],
+            "components": 1
+          },
+          "recog_diode": {
+            "area_um2": 72.33200000000001,
+            "bbox_dbu": [
+              2620,
+              2230,
+              30440,
+              8030
+            ],
+            "components": 2
+          }
+        },
+        "scope": "Static geometry of public ntap/ntap1 derivations; no device extraction or simplification-stage diagnosis."
+      },
+      "DCN_guard_parent": {
+        "cell": "sg13g2_IOPadIn",
+        "guard_M1_contact_ntap_nwell_path_observed": true,
+        "guard_contact_witnesses_bbox_dbu": [
+          [
+            90,
+            33290,
+            250,
+            33450
+          ],
+          [
+            13330,
+            33290,
+            13490,
+            33450
+          ],
+          [
+            39920,
+            42610,
+            40080,
+            42770
+          ],
+          [
+            39920,
+            42970,
+            40080,
+            43130
+          ]
+        ],
+        "guard_label_points_dbu": [
+          [
+            170,
+            24190
+          ],
+          [
+            13410,
+            24190
+          ]
+        ],
+        "ntap_base_removed_by_ntap1_marker_um2": 0.0,
+        "ntap_base_removed_by_recog_diode_um2": 0.0,
+        "parent_direct_net_labels_on_guard_root": [],
+        "raw_text_labels": [
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              9040,
+              66660
+            ],
+            "source_cell": "sg13g2_IOPadIn",
+            "text": "PAD"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              9040,
+              7660
+            ],
+            "source_cell": "sg13g2_IOPadIn",
+            "text": "PAD"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              6120,
+              8485
+            ],
+            "source_cell": "sg13g2_LevelDown",
+            "text": "sub!"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              3365,
+              0
+            ],
+            "source_cell": "sg13g2_LevelDown",
+            "text": "iovdd"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              3365,
+              18500
+            ],
+            "source_cell": "sg13g2_LevelDown",
+            "text": "vdd"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              3365,
+              8500
+            ],
+            "source_cell": "sg13g2_LevelDown",
+            "text": "vss"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              255,
+              13510
+            ],
+            "source_cell": "sg13g2_LevelDown",
+            "text": "core"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              4510,
+              170
+            ],
+            "source_cell": "sg13g2_SecondaryProtection",
+            "text": "sub!"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              170,
+              170
+            ],
+            "source_cell": "sg13g2_SecondaryProtection",
+            "text": "sub!"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              3310,
+              7340
+            ],
+            "source_cell": "sg13g2_SecondaryProtection",
+            "text": "dpant"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              1440,
+              2370
+            ],
+            "source_cell": "sg13g2_SecondaryProtection",
+            "text": "rppd r=793.834"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              5480,
+              2370
+            ],
+            "source_cell": "sg13g2_SecondaryProtection",
+            "text": "dant"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              3405,
+              8295
+            ],
+            "source_cell": "sg13g2_SecondaryProtection",
+            "text": "iovdd"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              -7320,
+              7160
+            ],
+            "source_cell": "sg13g2_DCPDiode",
+            "text": "dpant"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              -2840,
+              7040
+            ],
+            "source_cell": "sg13g2_DCPDiode",
+            "text": "dpant"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              300,
+              -1490
+            ],
+            "source_cell": "sg13g2_DCPDiode",
+            "text": "sub!"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              -11750,
+              16530
+            ],
+            "source_cell": "sg13g2_DCPDiode",
+            "text": "guard"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              1490,
+              16530
+            ],
+            "source_cell": "sg13g2_DCPDiode",
+            "text": "guard"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              -5130,
+              16530
+            ],
+            "source_cell": "sg13g2_DCPDiode",
+            "text": "cathode"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              -630,
+              16530
+            ],
+            "source_cell": "sg13g2_DCPDiode",
+            "text": "cathode"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              -9630,
+              16530
+            ],
+            "source_cell": "sg13g2_DCPDiode",
+            "text": "cathode"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              -7380,
+              16530
+            ],
+            "source_cell": "sg13g2_DCPDiode",
+            "text": "anode"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              -2880,
+              16530
+            ],
+            "source_cell": "sg13g2_DCPDiode",
+            "text": "anode"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              -7380,
+              16530
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "dant"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              -630,
+              630
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "sub!"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              -2880,
+              16530
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "dant"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              -11750,
+              16530
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "guard"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              1490,
+              16530
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "guard"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              -5130,
+              16530
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "anode"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              -630,
+              16530
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "anode"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              -9630,
+              16530
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "anode"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              -7380,
+              16530
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "cathode"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              -2880,
+              16530
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "cathode"
+          }
+        ],
+        "region_derivation": "nactiv=(activ_drw+activ_filler)-(psd+nsd_block); ntap=nactiv&nwell-ntap1_mk-recog_diode-gatpoly; ntap1 marker requires actual well text 63/0.",
+        "regions": {
+          "guard_M1_contacts": {
+            "area_um2": 748.1088000000001,
+            "bbox_dbu": [
+              90,
+              6090,
+              79810,
+              60770
+            ],
+            "components": 29223
+          },
+          "guard_connected_nwell": {
+            "area_um2": 4167.134,
+            "bbox_dbu": [
+              -620,
+              5380,
+              80620,
+              61620
+            ],
+            "components": 1
+          },
+          "guard_contact_to_ntap": {
+            "area_um2": 748.1088000000001,
+            "bbox_dbu": [
+              90,
+              6090,
+              79810,
+              60770
+            ],
+            "components": 29223
+          },
+          "guard_m1": {
+            "area_um2": 3873.21,
+            "bbox_dbu": [
+              0,
+              6000,
+              80000,
+              61000
+            ],
+            "components": 1
+          },
+          "guard_public_ntap": {
+            "area_um2": 3873.2000000000003,
+            "bbox_dbu": [
+              0,
+              6000,
+              80000,
+              61000
+            ],
+            "components": 1
+          },
+          "guard_raw_nactive_nwell_taps": {
+            "area_um2": 3873.2000000000003,
+            "bbox_dbu": [
+              0,
+              6000,
+              80000,
+              61000
+            ],
+            "components": 1
+          },
+          "ntap": {
+            "area_um2": 4066.1,
+            "bbox_dbu": [
+              0,
+              6000,
+              80000,
+              167150
+            ],
+            "components": 4
+          },
+          "ntap1_marker": {
+            "area_um2": 0.0,
+            "bbox_dbu": null,
+            "components": 0
+          },
+          "ntap1_tie": {
+            "area_um2": 0.0,
+            "bbox_dbu": null,
+            "components": 0
+          },
+          "ntap_base": {
+            "area_um2": 4066.1,
+            "bbox_dbu": [
+              0,
+              6000,
+              80000,
+              167150
+            ],
+            "components": 4
+          },
+          "nwell": {
+            "area_um2": 4869.049100000001,
+            "bbox_dbu": [
+              -620,
+              5380,
+              80620,
+              167770
+            ],
+            "components": 4
+          },
+          "recog_diode": {
+            "area_um2": 150.21280000000002,
+            "bbox_dbu": [
+              3890,
+              10280,
+              45565,
+              147850
+            ],
+            "components": 6
+          }
+        },
+        "scope": "Static geometry of public ntap/ntap1 derivations; no device extraction or simplification-stage diagnosis."
+      },
+      "dbu_um": 0.001,
+      "leaf_graphs": {
+        "sg13g2_DCNDiode": {
+          "direct_cell_labels_on_reachable_graph": [
+            {
+              "layer": "Metal1",
+              "node": "Metal1:2436115084bbb9d3bca6",
+              "point_dbu": [
+                16530,
+                11750
+              ],
+              "root": "Metal1:2436115084bbb9d3bca6",
+              "text": "guard"
+            },
+            {
+              "layer": "Metal1",
+              "node": "Metal1:2436115084bbb9d3bca6",
+              "point_dbu": [
+                16530,
+                -1490
+              ],
+              "root": "Metal1:2436115084bbb9d3bca6",
+              "text": "guard"
+            },
+            {
+              "layer": "Metal1",
+              "node": "Metal1:1b99438c37deaa505773",
+              "point_dbu": [
+                16530,
+                7380
+              ],
+              "root": "Metal1:1b99438c37deaa505773",
+              "text": "cathode"
+            },
+            {
+              "layer": "Metal1",
+              "node": "Metal1:58e441de6cde80568ae4",
+              "point_dbu": [
+                16530,
+                2880
+              ],
+              "root": "Metal1:58e441de6cde80568ae4",
+              "text": "cathode"
+            }
+          ],
+          "edges": [],
+          "nodes": {
+            "Metal1:1b99438c37deaa505773": {
+              "area_um2": 35.0028,
+              "bbox_dbu": [
+                2640,
+                6750,
+                30420,
+                8010
+              ],
+              "layer": "Metal1",
+              "root": "Metal1:1b99438c37deaa505773"
+            },
+            "Metal1:2436115084bbb9d3bca6": {
+              "area_um2": 33.510400000000004,
+              "bbox_dbu": [
+                -1660,
+                -1660,
+                34720,
+                11920
+              ],
+              "layer": "Metal1",
+              "root": "Metal1:2436115084bbb9d3bca6"
+            },
+            "Metal1:58e441de6cde80568ae4": {
+              "area_um2": 35.0028,
+              "bbox_dbu": [
+                2640,
+                2250,
+                30420,
+                3510
+              ],
+              "layer": "Metal1",
+              "root": "Metal1:58e441de6cde80568ae4"
+            }
+          },
+          "seed_nodes": {
+            "DCN_guard:0": "Metal1:2436115084bbb9d3bca6",
+            "DCN_guard:1": "Metal1:2436115084bbb9d3bca6",
+            "sg13g2_DCNDiode:cathode:0": "Metal1:1b99438c37deaa505773",
+            "sg13g2_DCNDiode:cathode:1": "Metal1:58e441de6cde80568ae4"
+          },
+          "seed_roots": {
+            "DCN_guard:0": "Metal1:2436115084bbb9d3bca6",
+            "DCN_guard:1": "Metal1:2436115084bbb9d3bca6",
+            "sg13g2_DCNDiode:cathode:0": "Metal1:1b99438c37deaa505773",
+            "sg13g2_DCNDiode:cathode:1": "Metal1:58e441de6cde80568ae4"
+          }
+        },
+        "sg13g2_DCPDiode": {
+          "direct_cell_labels_on_reachable_graph": [
+            {
+              "layer": "Metal1",
+              "node": "Metal1:1b99438c37deaa505773",
+              "point_dbu": [
+                16530,
+                7380
+              ],
+              "root": "Metal1:1b99438c37deaa505773",
+              "text": "anode"
+            },
+            {
+              "layer": "Metal1",
+              "node": "Metal1:58e441de6cde80568ae4",
+              "point_dbu": [
+                16530,
+                2880
+              ],
+              "root": "Metal1:58e441de6cde80568ae4",
+              "text": "anode"
+            }
+          ],
+          "edges": [],
+          "nodes": {
+            "Metal1:1b99438c37deaa505773": {
+              "area_um2": 35.0028,
+              "bbox_dbu": [
+                2640,
+                6750,
+                30420,
+                8010
+              ],
+              "layer": "Metal1",
+              "root": "Metal1:1b99438c37deaa505773"
+            },
+            "Metal1:58e441de6cde80568ae4": {
+              "area_um2": 35.0028,
+              "bbox_dbu": [
+                2640,
+                2250,
+                30420,
+                3510
+              ],
+              "layer": "Metal1",
+              "root": "Metal1:58e441de6cde80568ae4"
+            }
+          },
+          "seed_nodes": {
+            "sg13g2_DCPDiode:anode:0": "Metal1:1b99438c37deaa505773",
+            "sg13g2_DCPDiode:anode:1": "Metal1:58e441de6cde80568ae4"
+          },
+          "seed_roots": {
+            "sg13g2_DCPDiode:anode:0": "Metal1:1b99438c37deaa505773",
+            "sg13g2_DCPDiode:anode:1": "Metal1:58e441de6cde80568ae4"
+          }
+        }
+      },
+      "parent_graph": {
+        "direct_cell_labels_on_reachable_graph": [
+          {
+            "layer": "Metal2",
+            "node": "Metal2:d1d84bfd3a84afc6f81e",
+            "point_dbu": [
+              36475,
+              1765
+            ],
+            "root": "Metal1:2a2d90fb287b5d6c767d",
+            "text": "pad"
+          },
+          {
+            "layer": "Metal3",
+            "node": "Metal3:658516f094693cdd3691",
+            "point_dbu": [
+              48455,
+              1995
+            ],
+            "root": "Metal1:2a2d90fb287b5d6c767d",
+            "text": "pad"
+          },
+          {
+            "layer": "Metal4",
+            "node": "Metal4:658516f094693cdd3691",
+            "point_dbu": [
+              50365,
+              1565
+            ],
+            "root": "Metal1:2a2d90fb287b5d6c767d",
+            "text": "pad"
+          },
+          {
+            "layer": "Metal5",
+            "node": "Metal5:658516f094693cdd3691",
+            "point_dbu": [
+              48970,
+              2005
+            ],
+            "root": "Metal1:2a2d90fb287b5d6c767d",
+            "text": "pad"
+          },
+          {
+            "layer": "TopMetal1",
+            "node": "TopMetal1:658516f094693cdd3691",
+            "point_dbu": [
+              49055,
+              1830
+            ],
+            "root": "Metal1:2a2d90fb287b5d6c767d",
+            "text": "pad"
+          },
+          {
+            "layer": "TopMetal2",
+            "node": "TopMetal2:658516f094693cdd3691",
+            "point_dbu": [
+              52990,
+              1655
+            ],
+            "root": "Metal1:2a2d90fb287b5d6c767d",
+            "text": "pad"
+          }
+        ],
+        "edges": [
+          {
+            "nodes": [
+              "Metal1:2a2d90fb287b5d6c767d",
+              "Metal2:d1d84bfd3a84afc6f81e"
+            ],
+            "via": "Via1",
+            "via_polygons": 171,
+            "witness_bbox_dbu": [
+              8455,
+              24095,
+              8645,
+              24285
+            ],
+            "witness_bbox_um": [
+              8.455,
+              24.095,
+              8.645,
+              24.285
+            ]
+          },
+          {
+            "nodes": [
+              "Metal1:717243f767717baa287b",
+              "Metal2:d1d84bfd3a84afc6f81e"
+            ],
+            "via": "Via1",
+            "via_polygons": 204,
+            "witness_bbox_dbu": [
+              8535,
+              90270,
+              8725,
+              90460
+            ],
+            "witness_bbox_um": [
+              8.535,
+              90.27,
+              8.725,
+              90.46000000000001
+            ]
+          },
+          {
+            "nodes": [
+              "Metal1:9d2bab6aadf381a76e97",
+              "Metal2:d1d84bfd3a84afc6f81e"
+            ],
+            "via": "Via1",
+            "via_polygons": 204,
+            "witness_bbox_dbu": [
+              4035,
+              90270,
+              4225,
+              90460
+            ],
+            "witness_bbox_um": [
+              4.035,
+              90.27,
+              4.225,
+              90.46000000000001
+            ]
+          },
+          {
+            "nodes": [
+              "Metal1:c24c9f366c2b36d06104",
+              "Metal2:d1d84bfd3a84afc6f81e"
+            ],
+            "via": "Via1",
+            "via_polygons": 171,
+            "witness_bbox_dbu": [
+              3955,
+              24095,
+              4145,
+              24285
+            ],
+            "witness_bbox_um": [
+              3.955,
+              24.095,
+              4.1450000000000005,
+              24.285
+            ]
+          },
+          {
+            "nodes": [
+              "Metal1:a03d57e5484b590f20b2",
+              "Metal2:d1d84bfd3a84afc6f81e"
+            ],
+            "via": "Via1",
+            "via_polygons": 2,
+            "witness_bbox_dbu": [
+              40885,
+              141180,
+              41075,
+              141370
+            ],
+            "witness_bbox_um": [
+              40.885,
+              141.18,
+              41.075,
+              141.37
+            ]
+          },
+          {
+            "nodes": [
+              "Metal2:d1d84bfd3a84afc6f81e",
+              "Metal3:658516f094693cdd3691"
+            ],
+            "via": "Via2",
+            "via_polygons": 858,
+            "witness_bbox_dbu": [
+              39905,
+              180,
+              40095,
+              370
+            ],
+            "witness_bbox_um": [
+              39.905,
+              0.18,
+              40.095,
+              0.37
+            ]
+          },
+          {
+            "nodes": [
+              "Metal3:658516f094693cdd3691",
+              "Metal4:658516f094693cdd3691"
+            ],
+            "via": "Via3",
+            "via_polygons": 70,
+            "witness_bbox_dbu": [
+              5905,
+              405,
+              6095,
+              595
+            ],
+            "witness_bbox_um": [
+              5.905,
+              0.405,
+              6.095,
+              0.595
+            ]
+          },
+          {
+            "nodes": [
+              "Metal4:658516f094693cdd3691",
+              "Metal5:658516f094693cdd3691"
+            ],
+            "via": "Via4",
+            "via_polygons": 70,
+            "witness_bbox_dbu": [
+              5905,
+              405,
+              6095,
+              595
+            ],
+            "witness_bbox_um": [
+              5.905,
+              0.405,
+              6.095,
+              0.595
+            ]
+          },
+          {
+            "nodes": [
+              "Metal5:658516f094693cdd3691",
+              "TopMetal1:658516f094693cdd3691"
+            ],
+            "via": "TopVia1",
+            "via_polygons": 35,
+            "witness_bbox_dbu": [
+              5790,
+              1290,
+              6210,
+              1710
+            ],
+            "witness_bbox_um": [
+              5.79,
+              1.29,
+              6.21,
+              1.71
+            ]
+          },
+          {
+            "nodes": [
+              "TopMetal1:658516f094693cdd3691",
+              "TopMetal2:658516f094693cdd3691"
+            ],
+            "via": "TopVia2",
+            "via_polygons": 35,
+            "witness_bbox_dbu": [
+              5550,
+              1050,
+              6450,
+              1950
+            ],
+            "witness_bbox_um": [
+              5.55,
+              1.05,
+              6.45,
+              1.95
+            ]
+          }
+        ],
+        "nodes": {
+          "Metal1:2a2d90fb287b5d6c767d": {
+            "area_um2": 35.0028,
+            "bbox_dbu": [
+              8410,
+              10300,
+              9670,
+              38080
+            ],
+            "layer": "Metal1",
+            "root": "Metal1:2a2d90fb287b5d6c767d"
+          },
+          "Metal1:717243f767717baa287b": {
+            "area_um2": 35.0028,
+            "bbox_dbu": [
+              8410,
+              69300,
+              9670,
+              97080
+            ],
+            "layer": "Metal1",
+            "root": "Metal1:2a2d90fb287b5d6c767d"
+          },
+          "Metal1:9d2bab6aadf381a76e97": {
+            "area_um2": 35.0028,
+            "bbox_dbu": [
+              3910,
+              69300,
+              5170,
+              97080
+            ],
+            "layer": "Metal1",
+            "root": "Metal1:2a2d90fb287b5d6c767d"
+          },
+          "Metal1:a03d57e5484b590f20b2": {
+            "area_um2": 0.26880000000000004,
+            "bbox_dbu": [
+              40765,
+              141100,
+              41605,
+              141420
+            ],
+            "layer": "Metal1",
+            "root": "Metal1:2a2d90fb287b5d6c767d"
+          },
+          "Metal1:bbe9319cf8e1170ee6d4": {
+            "area_um2": 3873.21,
+            "bbox_dbu": [
+              0,
+              6000,
+              80000,
+              61000
+            ],
+            "layer": "Metal1",
+            "root": "Metal1:bbe9319cf8e1170ee6d4"
+          },
+          "Metal1:c24c9f366c2b36d06104": {
+            "area_um2": 35.0028,
+            "bbox_dbu": [
+              3910,
+              10300,
+              5170,
+              38080
+            ],
+            "layer": "Metal1",
+            "root": "Metal1:2a2d90fb287b5d6c767d"
+          },
+          "Metal2:d1d84bfd3a84afc6f81e": {
+            "area_um2": 1205.9421000000002,
+            "bbox_dbu": [
+              3910,
+              0,
+              75000,
+              141420
+            ],
+            "layer": "Metal2",
+            "root": "Metal1:2a2d90fb287b5d6c767d"
+          },
+          "Metal3:658516f094693cdd3691": {
+            "area_um2": 210.0,
+            "bbox_dbu": [
+              5000,
+              0,
+              75000,
+              3000
+            ],
+            "layer": "Metal3",
+            "root": "Metal1:2a2d90fb287b5d6c767d"
+          },
+          "Metal4:658516f094693cdd3691": {
+            "area_um2": 210.0,
+            "bbox_dbu": [
+              5000,
+              0,
+              75000,
+              3000
+            ],
+            "layer": "Metal4",
+            "root": "Metal1:2a2d90fb287b5d6c767d"
+          },
+          "Metal5:658516f094693cdd3691": {
+            "area_um2": 210.0,
+            "bbox_dbu": [
+              5000,
+              0,
+              75000,
+              3000
+            ],
+            "layer": "Metal5",
+            "root": "Metal1:2a2d90fb287b5d6c767d"
+          },
+          "TopMetal1:658516f094693cdd3691": {
+            "area_um2": 210.0,
+            "bbox_dbu": [
+              5000,
+              0,
+              75000,
+              3000
+            ],
+            "layer": "TopMetal1",
+            "root": "Metal1:2a2d90fb287b5d6c767d"
+          },
+          "TopMetal2:658516f094693cdd3691": {
+            "area_um2": 210.0,
+            "bbox_dbu": [
+              5000,
+              0,
+              75000,
+              3000
+            ],
+            "layer": "TopMetal2",
+            "root": "Metal1:2a2d90fb287b5d6c767d"
+          }
+        },
+        "seed_nodes": {
+          "DCN_guard:0": "Metal1:bbe9319cf8e1170ee6d4",
+          "DCN_guard:1": "Metal1:bbe9319cf8e1170ee6d4",
+          "sg13g2_DCNDiode:cathode:0": "Metal1:c24c9f366c2b36d06104",
+          "sg13g2_DCNDiode:cathode:1": "Metal1:2a2d90fb287b5d6c767d",
+          "sg13g2_DCPDiode:anode:0": "Metal1:9d2bab6aadf381a76e97",
+          "sg13g2_DCPDiode:anode:1": "Metal1:717243f767717baa287b"
+        },
+        "seed_roots": {
+          "DCN_guard:0": "Metal1:bbe9319cf8e1170ee6d4",
+          "DCN_guard:1": "Metal1:bbe9319cf8e1170ee6d4",
+          "sg13g2_DCNDiode:cathode:0": "Metal1:2a2d90fb287b5d6c767d",
+          "sg13g2_DCNDiode:cathode:1": "Metal1:2a2d90fb287b5d6c767d",
+          "sg13g2_DCPDiode:anode:0": "Metal1:2a2d90fb287b5d6c767d",
+          "sg13g2_DCPDiode:anode:1": "Metal1:2a2d90fb287b5d6c767d"
+        }
+      },
+      "targets": {
+        "sg13g2_DCNDiode": {
+          "electrode": "cathode",
+          "labels": [
+            {
+              "key": "sg13g2_DCNDiode:cathode:0",
+              "leaf_point_dbu": [
+                16530,
+                7380
+              ],
+              "parent_point_dbu": [
+                4540,
+                24190
+              ],
+              "parent_point_um": [
+                4.54,
+                24.19
+              ]
+            },
+            {
+              "key": "sg13g2_DCNDiode:cathode:1",
+              "leaf_point_dbu": [
+                16530,
+                2880
+              ],
+              "parent_point_dbu": [
+                9040,
+                24190
+              ],
+              "parent_point_um": [
+                9.040000000000001,
+                24.19
+              ]
+            }
+          ],
+          "leaf_electrodes_physically_joined": false,
+          "leaf_metal_via_path": null,
+          "parent_direct_net_labels_on_electrode_root": [
+            "pad"
+          ],
+          "parent_electrodes_physically_joined": true,
+          "parent_metal_via_path": {
+            "layer_sequence": [
+              "Metal1",
+              "Metal2",
+              "Metal1"
+            ],
+            "node_sequence": [
+              "Metal1:c24c9f366c2b36d06104",
+              "Metal2:d1d84bfd3a84afc6f81e",
+              "Metal1:2a2d90fb287b5d6c767d"
+            ],
+            "via_edges": [
+              {
+                "nodes": [
+                  "Metal1:c24c9f366c2b36d06104",
+                  "Metal2:d1d84bfd3a84afc6f81e"
+                ],
+                "via": "Via1",
+                "via_polygons": 171,
+                "witness_bbox_dbu": [
+                  3955,
+                  24095,
+                  4145,
+                  24285
+                ],
+                "witness_bbox_um": [
+                  3.955,
+                  24.095,
+                  4.1450000000000005,
+                  24.285
+                ]
+              },
+              {
+                "nodes": [
+                  "Metal1:2a2d90fb287b5d6c767d",
+                  "Metal2:d1d84bfd3a84afc6f81e"
+                ],
+                "via": "Via1",
+                "via_polygons": 171,
+                "witness_bbox_dbu": [
+                  8455,
+                  24095,
+                  8645,
+                  24285
+                ],
+                "witness_bbox_um": [
+                  8.455,
+                  24.095,
+                  8.645,
+                  24.285
+                ]
+              }
+            ]
+          },
+          "transform": "r90 11920,7660"
+        },
+        "sg13g2_DCPDiode": {
+          "electrode": "anode",
+          "labels": [
+            {
+              "key": "sg13g2_DCPDiode:anode:0",
+              "leaf_point_dbu": [
+                16530,
+                7380
+              ],
+              "parent_point_dbu": [
+                4540,
+                83190
+              ],
+              "parent_point_um": [
+                4.54,
+                83.19
+              ]
+            },
+            {
+              "key": "sg13g2_DCPDiode:anode:1",
+              "leaf_point_dbu": [
+                16530,
+                2880
+              ],
+              "parent_point_dbu": [
+                9040,
+                83190
+              ],
+              "parent_point_um": [
+                9.040000000000001,
+                83.19
+              ]
+            }
+          ],
+          "leaf_electrodes_physically_joined": false,
+          "leaf_metal_via_path": null,
+          "parent_direct_net_labels_on_electrode_root": [
+            "pad"
+          ],
+          "parent_electrodes_physically_joined": true,
+          "parent_metal_via_path": {
+            "layer_sequence": [
+              "Metal1",
+              "Metal2",
+              "Metal1"
+            ],
+            "node_sequence": [
+              "Metal1:9d2bab6aadf381a76e97",
+              "Metal2:d1d84bfd3a84afc6f81e",
+              "Metal1:717243f767717baa287b"
+            ],
+            "via_edges": [
+              {
+                "nodes": [
+                  "Metal1:9d2bab6aadf381a76e97",
+                  "Metal2:d1d84bfd3a84afc6f81e"
+                ],
+                "via": "Via1",
+                "via_polygons": 204,
+                "witness_bbox_dbu": [
+                  4035,
+                  90270,
+                  4225,
+                  90460
+                ],
+                "witness_bbox_um": [
+                  4.035,
+                  90.27,
+                  4.225,
+                  90.46000000000001
+                ]
+              },
+              {
+                "nodes": [
+                  "Metal1:717243f767717baa287b",
+                  "Metal2:d1d84bfd3a84afc6f81e"
+                ],
+                "via": "Via1",
+                "via_polygons": 204,
+                "witness_bbox_dbu": [
+                  8535,
+                  90270,
+                  8725,
+                  90460
+                ],
+                "witness_bbox_um": [
+                  8.535,
+                  90.27,
+                  8.725,
+                  90.46000000000001
+                ]
+              }
+            ]
+          },
+          "transform": "r90 11920,66660"
+        }
+      }
+    },
+    "official_pinned": {
+      "DCN_guard_leaf": {
+        "cell": "sg13g2_DCNDiode",
+        "guard_M1_contact_ntap_nwell_path_observed": true,
+        "guard_contact_witnesses_bbox_dbu": [
+          [
+            16450,
+            -1570,
+            16610,
+            -1410
+          ],
+          [
+            -1570,
+            5050,
+            -1410,
+            5210
+          ],
+          [
+            34470,
+            5050,
+            34630,
+            5210
+          ],
+          [
+            16450,
+            11670,
+            16610,
+            11830
+          ]
+        ],
+        "guard_label_points_dbu": [
+          [
+            16530,
+            11750
+          ],
+          [
+            16530,
+            -1490
+          ]
+        ],
+        "ntap_base_removed_by_ntap1_marker_um2": 0.0,
+        "ntap_base_removed_by_recog_diode_um2": 0.0,
+        "raw_text_labels": [
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              16530,
+              7380
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "dant"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              630,
+              630
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "sub!"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              16530,
+              2880
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "dant"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              16530,
+              11750
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "guard"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              16530,
+              -1490
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "guard"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              16530,
+              5130
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "anode"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              16530,
+              630
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "anode"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              16530,
+              9630
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "anode"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              16530,
+              7380
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "cathode"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              16530,
+              2880
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "cathode"
+          }
+        ],
+        "region_derivation": "nactiv=(activ_drw+activ_filler)-(psd+nsd_block); ntap=nactiv&nwell-ntap1_mk-recog_diode-gatpoly; ntap1 marker requires actual well text 63/0.",
+        "regions": {
+          "guard_M1_contacts": {
+            "area_um2": 7.372800000000001,
+            "bbox_dbu": [
+              -1570,
+              -1570,
+              34630,
+              11830
+            ],
+            "components": 288
+          },
+          "guard_connected_nwell": {
+            "area_um2": 155.72480000000002,
+            "bbox_dbu": [
+              -2280,
+              -2280,
+              35340,
+              12540
+            ],
+            "components": 1
+          },
+          "guard_contact_to_ntap": {
+            "area_um2": 7.372800000000001,
+            "bbox_dbu": [
+              -1570,
+              -1570,
+              34630,
+              11830
+            ],
+            "components": 288
+          },
+          "guard_m1": {
+            "area_um2": 33.510400000000004,
+            "bbox_dbu": [
+              -1660,
+              -1660,
+              34720,
+              11920
+            ],
+            "components": 1
+          },
+          "guard_public_ntap": {
+            "area_um2": 33.510400000000004,
+            "bbox_dbu": [
+              -1660,
+              -1660,
+              34720,
+              11920
+            ],
+            "components": 1
+          },
+          "guard_raw_nactive_nwell_taps": {
+            "area_um2": 33.510400000000004,
+            "bbox_dbu": [
+              -1660,
+              -1660,
+              34720,
+              11920
+            ],
+            "components": 1
+          },
+          "ntap": {
+            "area_um2": 33.510400000000004,
+            "bbox_dbu": [
+              -1660,
+              -1660,
+              34720,
+              11920
+            ],
+            "components": 1
+          },
+          "ntap1_marker": {
+            "area_um2": 0.0,
+            "bbox_dbu": null,
+            "components": 0
+          },
+          "ntap1_tie": {
+            "area_um2": 0.0,
+            "bbox_dbu": null,
+            "components": 0
+          },
+          "ntap_base": {
+            "area_um2": 33.510400000000004,
+            "bbox_dbu": [
+              -1660,
+              -1660,
+              34720,
+              11920
+            ],
+            "components": 1
+          },
+          "nwell": {
+            "area_um2": 155.72480000000002,
+            "bbox_dbu": [
+              -2280,
+              -2280,
+              35340,
+              12540
+            ],
+            "components": 1
+          },
+          "recog_diode": {
+            "area_um2": 72.33200000000001,
+            "bbox_dbu": [
+              2620,
+              2230,
+              30440,
+              8030
+            ],
+            "components": 2
+          }
+        },
+        "scope": "Static geometry of public ntap/ntap1 derivations; no device extraction or simplification-stage diagnosis."
+      },
+      "DCN_guard_parent": {
+        "cell": "sg13g2_IOPadIn",
+        "guard_M1_contact_ntap_nwell_path_observed": true,
+        "guard_contact_witnesses_bbox_dbu": [
+          [
+            90,
+            33290,
+            250,
+            33450
+          ],
+          [
+            13330,
+            33290,
+            13490,
+            33450
+          ],
+          [
+            39920,
+            42610,
+            40080,
+            42770
+          ],
+          [
+            39920,
+            42970,
+            40080,
+            43130
+          ]
+        ],
+        "guard_label_points_dbu": [
+          [
+            170,
+            24190
+          ],
+          [
+            13410,
+            24190
+          ]
+        ],
+        "ntap_base_removed_by_ntap1_marker_um2": 0.0,
+        "ntap_base_removed_by_recog_diode_um2": 0.0,
+        "parent_direct_net_labels_on_guard_root": [],
+        "raw_text_labels": [
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              9040,
+              66660
+            ],
+            "source_cell": "sg13g2_IOPadIn",
+            "text": "PAD"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              9040,
+              7660
+            ],
+            "source_cell": "sg13g2_IOPadIn",
+            "text": "PAD"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              10550,
+              -8275
+            ],
+            "source_cell": "sg13g2_LevelDown",
+            "text": "sub!"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              10840,
+              -2230
+            ],
+            "source_cell": "sg13g2_LevelDown",
+            "text": "pmosHV"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              9180,
+              -2230
+            ],
+            "source_cell": "sg13g2_LevelDown",
+            "text": "pmosHV"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              10840,
+              -6630
+            ],
+            "source_cell": "sg13g2_LevelDown",
+            "text": "nmosHV"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              10010,
+              -6630
+            ],
+            "source_cell": "sg13g2_LevelDown",
+            "text": "nmosHV"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              6120,
+              8485
+            ],
+            "source_cell": "sg13g2_LevelDown",
+            "text": "sub!"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              3365,
+              0
+            ],
+            "source_cell": "sg13g2_LevelDown",
+            "text": "iovdd"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              3365,
+              18500
+            ],
+            "source_cell": "sg13g2_LevelDown",
+            "text": "vdd"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              3365,
+              8500
+            ],
+            "source_cell": "sg13g2_LevelDown",
+            "text": "vss"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              255,
+              13510
+            ],
+            "source_cell": "sg13g2_LevelDown",
+            "text": "core"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              4510,
+              170
+            ],
+            "source_cell": "sg13g2_SecondaryProtection",
+            "text": "sub!"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              170,
+              170
+            ],
+            "source_cell": "sg13g2_SecondaryProtection",
+            "text": "sub!"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              3310,
+              7340
+            ],
+            "source_cell": "sg13g2_SecondaryProtection",
+            "text": "dpant"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              1440,
+              2370
+            ],
+            "source_cell": "sg13g2_SecondaryProtection",
+            "text": "rppd r=793.834"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              5480,
+              2370
+            ],
+            "source_cell": "sg13g2_SecondaryProtection",
+            "text": "dant"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              3405,
+              8295
+            ],
+            "source_cell": "sg13g2_SecondaryProtection",
+            "text": "plus"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              -7320,
+              7160
+            ],
+            "source_cell": "sg13g2_DCPDiode",
+            "text": "dpant"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              -2840,
+              7040
+            ],
+            "source_cell": "sg13g2_DCPDiode",
+            "text": "dpant"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              300,
+              -1490
+            ],
+            "source_cell": "sg13g2_DCPDiode",
+            "text": "sub!"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              -11750,
+              16530
+            ],
+            "source_cell": "sg13g2_DCPDiode",
+            "text": "guard"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              1490,
+              16530
+            ],
+            "source_cell": "sg13g2_DCPDiode",
+            "text": "guard"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              -5130,
+              16530
+            ],
+            "source_cell": "sg13g2_DCPDiode",
+            "text": "cathode"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              -630,
+              16530
+            ],
+            "source_cell": "sg13g2_DCPDiode",
+            "text": "cathode"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              -9630,
+              16530
+            ],
+            "source_cell": "sg13g2_DCPDiode",
+            "text": "cathode"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              -7380,
+              16530
+            ],
+            "source_cell": "sg13g2_DCPDiode",
+            "text": "anode"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              -2880,
+              16530
+            ],
+            "source_cell": "sg13g2_DCPDiode",
+            "text": "anode"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              -7380,
+              16530
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "dant"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              -630,
+              630
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "sub!"
+          },
+          {
+            "layer": [
+              63,
+              0
+            ],
+            "point_dbu": [
+              -2880,
+              16530
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "dant"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              -11750,
+              16530
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "guard"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              1490,
+              16530
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "guard"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              -5130,
+              16530
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "anode"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              -630,
+              16530
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "anode"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              -9630,
+              16530
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "anode"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              -7380,
+              16530
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "cathode"
+          },
+          {
+            "layer": [
+              8,
+              25
+            ],
+            "point_dbu": [
+              -2880,
+              16530
+            ],
+            "source_cell": "sg13g2_DCNDiode",
+            "text": "cathode"
+          }
+        ],
+        "region_derivation": "nactiv=(activ_drw+activ_filler)-(psd+nsd_block); ntap=nactiv&nwell-ntap1_mk-recog_diode-gatpoly; ntap1 marker requires actual well text 63/0.",
+        "regions": {
+          "guard_M1_contacts": {
+            "area_um2": 748.1088000000001,
+            "bbox_dbu": [
+              90,
+              6090,
+              79810,
+              60770
+            ],
+            "components": 29223
+          },
+          "guard_connected_nwell": {
+            "area_um2": 4167.134,
+            "bbox_dbu": [
+              -620,
+              5380,
+              80620,
+              61620
+            ],
+            "components": 1
+          },
+          "guard_contact_to_ntap": {
+            "area_um2": 748.1088000000001,
+            "bbox_dbu": [
+              90,
+              6090,
+              79810,
+              60770
+            ],
+            "components": 29223
+          },
+          "guard_m1": {
+            "area_um2": 3873.21,
+            "bbox_dbu": [
+              0,
+              6000,
+              80000,
+              61000
+            ],
+            "components": 1
+          },
+          "guard_public_ntap": {
+            "area_um2": 3873.2000000000003,
+            "bbox_dbu": [
+              0,
+              6000,
+              80000,
+              61000
+            ],
+            "components": 1
+          },
+          "guard_raw_nactive_nwell_taps": {
+            "area_um2": 3873.2000000000003,
+            "bbox_dbu": [
+              0,
+              6000,
+              80000,
+              61000
+            ],
+            "components": 1
+          },
+          "ntap": {
+            "area_um2": 4066.1,
+            "bbox_dbu": [
+              0,
+              6000,
+              80000,
+              167150
+            ],
+            "components": 4
+          },
+          "ntap1_marker": {
+            "area_um2": 0.0,
+            "bbox_dbu": null,
+            "components": 0
+          },
+          "ntap1_tie": {
+            "area_um2": 0.0,
+            "bbox_dbu": null,
+            "components": 0
+          },
+          "ntap_base": {
+            "area_um2": 4066.1,
+            "bbox_dbu": [
+              0,
+              6000,
+              80000,
+              167150
+            ],
+            "components": 4
+          },
+          "nwell": {
+            "area_um2": 4889.660375,
+            "bbox_dbu": [
+              -620,
+              5380,
+              80620,
+              167770
+            ],
+            "components": 4
+          },
+          "recog_diode": {
+            "area_um2": 150.21280000000002,
+            "bbox_dbu": [
+              3890,
+              10280,
+              45565,
+              147850
+            ],
+            "components": 6
+          }
+        },
+        "scope": "Static geometry of public ntap/ntap1 derivations; no device extraction or simplification-stage diagnosis."
+      },
+      "dbu_um": 0.001,
+      "leaf_graphs": {
+        "sg13g2_DCNDiode": {
+          "direct_cell_labels_on_reachable_graph": [
+            {
+              "layer": "Metal1",
+              "node": "Metal1:2436115084bbb9d3bca6",
+              "point_dbu": [
+                16530,
+                11750
+              ],
+              "root": "Metal1:2436115084bbb9d3bca6",
+              "text": "guard"
+            },
+            {
+              "layer": "Metal1",
+              "node": "Metal1:2436115084bbb9d3bca6",
+              "point_dbu": [
+                16530,
+                -1490
+              ],
+              "root": "Metal1:2436115084bbb9d3bca6",
+              "text": "guard"
+            },
+            {
+              "layer": "Metal1",
+              "node": "Metal1:1b99438c37deaa505773",
+              "point_dbu": [
+                16530,
+                7380
+              ],
+              "root": "Metal1:1b99438c37deaa505773",
+              "text": "cathode"
+            },
+            {
+              "layer": "Metal1",
+              "node": "Metal1:58e441de6cde80568ae4",
+              "point_dbu": [
+                16530,
+                2880
+              ],
+              "root": "Metal1:58e441de6cde80568ae4",
+              "text": "cathode"
+            }
+          ],
+          "edges": [],
+          "nodes": {
+            "Metal1:1b99438c37deaa505773": {
+              "area_um2": 35.0028,
+              "bbox_dbu": [
+                2640,
+                6750,
+                30420,
+                8010
+              ],
+              "layer": "Metal1",
+              "root": "Metal1:1b99438c37deaa505773"
+            },
+            "Metal1:2436115084bbb9d3bca6": {
+              "area_um2": 33.510400000000004,
+              "bbox_dbu": [
+                -1660,
+                -1660,
+                34720,
+                11920
+              ],
+              "layer": "Metal1",
+              "root": "Metal1:2436115084bbb9d3bca6"
+            },
+            "Metal1:58e441de6cde80568ae4": {
+              "area_um2": 35.0028,
+              "bbox_dbu": [
+                2640,
+                2250,
+                30420,
+                3510
+              ],
+              "layer": "Metal1",
+              "root": "Metal1:58e441de6cde80568ae4"
+            }
+          },
+          "seed_nodes": {
+            "DCN_guard:0": "Metal1:2436115084bbb9d3bca6",
+            "DCN_guard:1": "Metal1:2436115084bbb9d3bca6",
+            "sg13g2_DCNDiode:cathode:0": "Metal1:1b99438c37deaa505773",
+            "sg13g2_DCNDiode:cathode:1": "Metal1:58e441de6cde80568ae4"
+          },
+          "seed_roots": {
+            "DCN_guard:0": "Metal1:2436115084bbb9d3bca6",
+            "DCN_guard:1": "Metal1:2436115084bbb9d3bca6",
+            "sg13g2_DCNDiode:cathode:0": "Metal1:1b99438c37deaa505773",
+            "sg13g2_DCNDiode:cathode:1": "Metal1:58e441de6cde80568ae4"
+          }
+        },
+        "sg13g2_DCPDiode": {
+          "direct_cell_labels_on_reachable_graph": [
+            {
+              "layer": "Metal1",
+              "node": "Metal1:1b99438c37deaa505773",
+              "point_dbu": [
+                16530,
+                7380
+              ],
+              "root": "Metal1:1b99438c37deaa505773",
+              "text": "anode"
+            },
+            {
+              "layer": "Metal1",
+              "node": "Metal1:58e441de6cde80568ae4",
+              "point_dbu": [
+                16530,
+                2880
+              ],
+              "root": "Metal1:58e441de6cde80568ae4",
+              "text": "anode"
+            }
+          ],
+          "edges": [],
+          "nodes": {
+            "Metal1:1b99438c37deaa505773": {
+              "area_um2": 35.0028,
+              "bbox_dbu": [
+                2640,
+                6750,
+                30420,
+                8010
+              ],
+              "layer": "Metal1",
+              "root": "Metal1:1b99438c37deaa505773"
+            },
+            "Metal1:58e441de6cde80568ae4": {
+              "area_um2": 35.0028,
+              "bbox_dbu": [
+                2640,
+                2250,
+                30420,
+                3510
+              ],
+              "layer": "Metal1",
+              "root": "Metal1:58e441de6cde80568ae4"
+            }
+          },
+          "seed_nodes": {
+            "sg13g2_DCPDiode:anode:0": "Metal1:1b99438c37deaa505773",
+            "sg13g2_DCPDiode:anode:1": "Metal1:58e441de6cde80568ae4"
+          },
+          "seed_roots": {
+            "sg13g2_DCPDiode:anode:0": "Metal1:1b99438c37deaa505773",
+            "sg13g2_DCPDiode:anode:1": "Metal1:58e441de6cde80568ae4"
+          }
+        }
+      },
+      "parent_graph": {
+        "direct_cell_labels_on_reachable_graph": [
+          {
+            "layer": "Metal2",
+            "node": "Metal2:d1d84bfd3a84afc6f81e",
+            "point_dbu": [
+              36475,
+              1765
+            ],
+            "root": "Metal1:2a2d90fb287b5d6c767d",
+            "text": "pad"
+          },
+          {
+            "layer": "Metal3",
+            "node": "Metal3:658516f094693cdd3691",
+            "point_dbu": [
+              48455,
+              1995
+            ],
+            "root": "Metal1:2a2d90fb287b5d6c767d",
+            "text": "pad"
+          },
+          {
+            "layer": "Metal4",
+            "node": "Metal4:658516f094693cdd3691",
+            "point_dbu": [
+              50365,
+              1565
+            ],
+            "root": "Metal1:2a2d90fb287b5d6c767d",
+            "text": "pad"
+          },
+          {
+            "layer": "Metal5",
+            "node": "Metal5:658516f094693cdd3691",
+            "point_dbu": [
+              48970,
+              2005
+            ],
+            "root": "Metal1:2a2d90fb287b5d6c767d",
+            "text": "pad"
+          },
+          {
+            "layer": "TopMetal1",
+            "node": "TopMetal1:658516f094693cdd3691",
+            "point_dbu": [
+              49055,
+              1830
+            ],
+            "root": "Metal1:2a2d90fb287b5d6c767d",
+            "text": "pad"
+          },
+          {
+            "layer": "TopMetal2",
+            "node": "TopMetal2:658516f094693cdd3691",
+            "point_dbu": [
+              52990,
+              1655
+            ],
+            "root": "Metal1:2a2d90fb287b5d6c767d",
+            "text": "pad"
+          }
+        ],
+        "edges": [
+          {
+            "nodes": [
+              "Metal1:2a2d90fb287b5d6c767d",
+              "Metal2:d1d84bfd3a84afc6f81e"
+            ],
+            "via": "Via1",
+            "via_polygons": 171,
+            "witness_bbox_dbu": [
+              8455,
+              24095,
+              8645,
+              24285
+            ],
+            "witness_bbox_um": [
+              8.455,
+              24.095,
+              8.645,
+              24.285
+            ]
+          },
+          {
+            "nodes": [
+              "Metal1:717243f767717baa287b",
+              "Metal2:d1d84bfd3a84afc6f81e"
+            ],
+            "via": "Via1",
+            "via_polygons": 204,
+            "witness_bbox_dbu": [
+              8535,
+              90270,
+              8725,
+              90460
+            ],
+            "witness_bbox_um": [
+              8.535,
+              90.27,
+              8.725,
+              90.46000000000001
+            ]
+          },
+          {
+            "nodes": [
+              "Metal1:9d2bab6aadf381a76e97",
+              "Metal2:d1d84bfd3a84afc6f81e"
+            ],
+            "via": "Via1",
+            "via_polygons": 204,
+            "witness_bbox_dbu": [
+              4035,
+              90270,
+              4225,
+              90460
+            ],
+            "witness_bbox_um": [
+              4.035,
+              90.27,
+              4.225,
+              90.46000000000001
+            ]
+          },
+          {
+            "nodes": [
+              "Metal1:c24c9f366c2b36d06104",
+              "Metal2:d1d84bfd3a84afc6f81e"
+            ],
+            "via": "Via1",
+            "via_polygons": 171,
+            "witness_bbox_dbu": [
+              3955,
+              24095,
+              4145,
+              24285
+            ],
+            "witness_bbox_um": [
+              3.955,
+              24.095,
+              4.1450000000000005,
+              24.285
+            ]
+          },
+          {
+            "nodes": [
+              "Metal1:a03d57e5484b590f20b2",
+              "Metal2:d1d84bfd3a84afc6f81e"
+            ],
+            "via": "Via1",
+            "via_polygons": 2,
+            "witness_bbox_dbu": [
+              40885,
+              141180,
+              41075,
+              141370
+            ],
+            "witness_bbox_um": [
+              40.885,
+              141.18,
+              41.075,
+              141.37
+            ]
+          },
+          {
+            "nodes": [
+              "Metal2:d1d84bfd3a84afc6f81e",
+              "Metal3:658516f094693cdd3691"
+            ],
+            "via": "Via2",
+            "via_polygons": 858,
+            "witness_bbox_dbu": [
+              39905,
+              180,
+              40095,
+              370
+            ],
+            "witness_bbox_um": [
+              39.905,
+              0.18,
+              40.095,
+              0.37
+            ]
+          },
+          {
+            "nodes": [
+              "Metal3:658516f094693cdd3691",
+              "Metal4:658516f094693cdd3691"
+            ],
+            "via": "Via3",
+            "via_polygons": 70,
+            "witness_bbox_dbu": [
+              5905,
+              405,
+              6095,
+              595
+            ],
+            "witness_bbox_um": [
+              5.905,
+              0.405,
+              6.095,
+              0.595
+            ]
+          },
+          {
+            "nodes": [
+              "Metal4:658516f094693cdd3691",
+              "Metal5:658516f094693cdd3691"
+            ],
+            "via": "Via4",
+            "via_polygons": 70,
+            "witness_bbox_dbu": [
+              5905,
+              405,
+              6095,
+              595
+            ],
+            "witness_bbox_um": [
+              5.905,
+              0.405,
+              6.095,
+              0.595
+            ]
+          },
+          {
+            "nodes": [
+              "Metal5:658516f094693cdd3691",
+              "TopMetal1:658516f094693cdd3691"
+            ],
+            "via": "TopVia1",
+            "via_polygons": 35,
+            "witness_bbox_dbu": [
+              5790,
+              1290,
+              6210,
+              1710
+            ],
+            "witness_bbox_um": [
+              5.79,
+              1.29,
+              6.21,
+              1.71
+            ]
+          },
+          {
+            "nodes": [
+              "TopMetal1:658516f094693cdd3691",
+              "TopMetal2:658516f094693cdd3691"
+            ],
+            "via": "TopVia2",
+            "via_polygons": 35,
+            "witness_bbox_dbu": [
+              5550,
+              1050,
+              6450,
+              1950
+            ],
+            "witness_bbox_um": [
+              5.55,
+              1.05,
+              6.45,
+              1.95
+            ]
+          }
+        ],
+        "nodes": {
+          "Metal1:2a2d90fb287b5d6c767d": {
+            "area_um2": 35.0028,
+            "bbox_dbu": [
+              8410,
+              10300,
+              9670,
+              38080
+            ],
+            "layer": "Metal1",
+            "root": "Metal1:2a2d90fb287b5d6c767d"
+          },
+          "Metal1:717243f767717baa287b": {
+            "area_um2": 35.0028,
+            "bbox_dbu": [
+              8410,
+              69300,
+              9670,
+              97080
+            ],
+            "layer": "Metal1",
+            "root": "Metal1:2a2d90fb287b5d6c767d"
+          },
+          "Metal1:9d2bab6aadf381a76e97": {
+            "area_um2": 35.0028,
+            "bbox_dbu": [
+              3910,
+              69300,
+              5170,
+              97080
+            ],
+            "layer": "Metal1",
+            "root": "Metal1:2a2d90fb287b5d6c767d"
+          },
+          "Metal1:a03d57e5484b590f20b2": {
+            "area_um2": 0.26880000000000004,
+            "bbox_dbu": [
+              40765,
+              141100,
+              41605,
+              141420
+            ],
+            "layer": "Metal1",
+            "root": "Metal1:2a2d90fb287b5d6c767d"
+          },
+          "Metal1:bbe9319cf8e1170ee6d4": {
+            "area_um2": 3873.21,
+            "bbox_dbu": [
+              0,
+              6000,
+              80000,
+              61000
+            ],
+            "layer": "Metal1",
+            "root": "Metal1:bbe9319cf8e1170ee6d4"
+          },
+          "Metal1:c24c9f366c2b36d06104": {
+            "area_um2": 35.0028,
+            "bbox_dbu": [
+              3910,
+              10300,
+              5170,
+              38080
+            ],
+            "layer": "Metal1",
+            "root": "Metal1:2a2d90fb287b5d6c767d"
+          },
+          "Metal2:d1d84bfd3a84afc6f81e": {
+            "area_um2": 1205.9421000000002,
+            "bbox_dbu": [
+              3910,
+              0,
+              75000,
+              141420
+            ],
+            "layer": "Metal2",
+            "root": "Metal1:2a2d90fb287b5d6c767d"
+          },
+          "Metal3:658516f094693cdd3691": {
+            "area_um2": 210.0,
+            "bbox_dbu": [
+              5000,
+              0,
+              75000,
+              3000
+            ],
+            "layer": "Metal3",
+            "root": "Metal1:2a2d90fb287b5d6c767d"
+          },
+          "Metal4:658516f094693cdd3691": {
+            "area_um2": 210.0,
+            "bbox_dbu": [
+              5000,
+              0,
+              75000,
+              3000
+            ],
+            "layer": "Metal4",
+            "root": "Metal1:2a2d90fb287b5d6c767d"
+          },
+          "Metal5:658516f094693cdd3691": {
+            "area_um2": 210.0,
+            "bbox_dbu": [
+              5000,
+              0,
+              75000,
+              3000
+            ],
+            "layer": "Metal5",
+            "root": "Metal1:2a2d90fb287b5d6c767d"
+          },
+          "TopMetal1:658516f094693cdd3691": {
+            "area_um2": 210.0,
+            "bbox_dbu": [
+              5000,
+              0,
+              75000,
+              3000
+            ],
+            "layer": "TopMetal1",
+            "root": "Metal1:2a2d90fb287b5d6c767d"
+          },
+          "TopMetal2:658516f094693cdd3691": {
+            "area_um2": 210.0,
+            "bbox_dbu": [
+              5000,
+              0,
+              75000,
+              3000
+            ],
+            "layer": "TopMetal2",
+            "root": "Metal1:2a2d90fb287b5d6c767d"
+          }
+        },
+        "seed_nodes": {
+          "DCN_guard:0": "Metal1:bbe9319cf8e1170ee6d4",
+          "DCN_guard:1": "Metal1:bbe9319cf8e1170ee6d4",
+          "sg13g2_DCNDiode:cathode:0": "Metal1:c24c9f366c2b36d06104",
+          "sg13g2_DCNDiode:cathode:1": "Metal1:2a2d90fb287b5d6c767d",
+          "sg13g2_DCPDiode:anode:0": "Metal1:9d2bab6aadf381a76e97",
+          "sg13g2_DCPDiode:anode:1": "Metal1:717243f767717baa287b"
+        },
+        "seed_roots": {
+          "DCN_guard:0": "Metal1:bbe9319cf8e1170ee6d4",
+          "DCN_guard:1": "Metal1:bbe9319cf8e1170ee6d4",
+          "sg13g2_DCNDiode:cathode:0": "Metal1:2a2d90fb287b5d6c767d",
+          "sg13g2_DCNDiode:cathode:1": "Metal1:2a2d90fb287b5d6c767d",
+          "sg13g2_DCPDiode:anode:0": "Metal1:2a2d90fb287b5d6c767d",
+          "sg13g2_DCPDiode:anode:1": "Metal1:2a2d90fb287b5d6c767d"
+        }
+      },
+      "targets": {
+        "sg13g2_DCNDiode": {
+          "electrode": "cathode",
+          "labels": [
+            {
+              "key": "sg13g2_DCNDiode:cathode:0",
+              "leaf_point_dbu": [
+                16530,
+                7380
+              ],
+              "parent_point_dbu": [
+                4540,
+                24190
+              ],
+              "parent_point_um": [
+                4.54,
+                24.19
+              ]
+            },
+            {
+              "key": "sg13g2_DCNDiode:cathode:1",
+              "leaf_point_dbu": [
+                16530,
+                2880
+              ],
+              "parent_point_dbu": [
+                9040,
+                24190
+              ],
+              "parent_point_um": [
+                9.040000000000001,
+                24.19
+              ]
+            }
+          ],
+          "leaf_electrodes_physically_joined": false,
+          "leaf_metal_via_path": null,
+          "parent_direct_net_labels_on_electrode_root": [
+            "pad"
+          ],
+          "parent_electrodes_physically_joined": true,
+          "parent_metal_via_path": {
+            "layer_sequence": [
+              "Metal1",
+              "Metal2",
+              "Metal1"
+            ],
+            "node_sequence": [
+              "Metal1:c24c9f366c2b36d06104",
+              "Metal2:d1d84bfd3a84afc6f81e",
+              "Metal1:2a2d90fb287b5d6c767d"
+            ],
+            "via_edges": [
+              {
+                "nodes": [
+                  "Metal1:c24c9f366c2b36d06104",
+                  "Metal2:d1d84bfd3a84afc6f81e"
+                ],
+                "via": "Via1",
+                "via_polygons": 171,
+                "witness_bbox_dbu": [
+                  3955,
+                  24095,
+                  4145,
+                  24285
+                ],
+                "witness_bbox_um": [
+                  3.955,
+                  24.095,
+                  4.1450000000000005,
+                  24.285
+                ]
+              },
+              {
+                "nodes": [
+                  "Metal1:2a2d90fb287b5d6c767d",
+                  "Metal2:d1d84bfd3a84afc6f81e"
+                ],
+                "via": "Via1",
+                "via_polygons": 171,
+                "witness_bbox_dbu": [
+                  8455,
+                  24095,
+                  8645,
+                  24285
+                ],
+                "witness_bbox_um": [
+                  8.455,
+                  24.095,
+                  8.645,
+                  24.285
+                ]
+              }
+            ]
+          },
+          "transform": "r90 11920,7660"
+        },
+        "sg13g2_DCPDiode": {
+          "electrode": "anode",
+          "labels": [
+            {
+              "key": "sg13g2_DCPDiode:anode:0",
+              "leaf_point_dbu": [
+                16530,
+                7380
+              ],
+              "parent_point_dbu": [
+                4540,
+                83190
+              ],
+              "parent_point_um": [
+                4.54,
+                83.19
+              ]
+            },
+            {
+              "key": "sg13g2_DCPDiode:anode:1",
+              "leaf_point_dbu": [
+                16530,
+                2880
+              ],
+              "parent_point_dbu": [
+                9040,
+                83190
+              ],
+              "parent_point_um": [
+                9.040000000000001,
+                83.19
+              ]
+            }
+          ],
+          "leaf_electrodes_physically_joined": false,
+          "leaf_metal_via_path": null,
+          "parent_direct_net_labels_on_electrode_root": [
+            "pad"
+          ],
+          "parent_electrodes_physically_joined": true,
+          "parent_metal_via_path": {
+            "layer_sequence": [
+              "Metal1",
+              "Metal2",
+              "Metal1"
+            ],
+            "node_sequence": [
+              "Metal1:9d2bab6aadf381a76e97",
+              "Metal2:d1d84bfd3a84afc6f81e",
+              "Metal1:717243f767717baa287b"
+            ],
+            "via_edges": [
+              {
+                "nodes": [
+                  "Metal1:9d2bab6aadf381a76e97",
+                  "Metal2:d1d84bfd3a84afc6f81e"
+                ],
+                "via": "Via1",
+                "via_polygons": 204,
+                "witness_bbox_dbu": [
+                  4035,
+                  90270,
+                  4225,
+                  90460
+                ],
+                "witness_bbox_um": [
+                  4.035,
+                  90.27,
+                  4.225,
+                  90.46000000000001
+                ]
+              },
+              {
+                "nodes": [
+                  "Metal1:717243f767717baa287b",
+                  "Metal2:d1d84bfd3a84afc6f81e"
+                ],
+                "via": "Via1",
+                "via_polygons": 204,
+                "witness_bbox_dbu": [
+                  8535,
+                  90270,
+                  8725,
+                  90460
+                ],
+                "witness_bbox_um": [
+                  8.535,
+                  90.27,
+                  8.725,
+                  90.46000000000001
+                ]
+              }
+            ]
+          },
+          "transform": "r90 11920,66660"
+        }
+      }
+    }
+  }
+}

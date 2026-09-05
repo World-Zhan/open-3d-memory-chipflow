@@ -18,3 +18,23 @@ runs/croc-lvs-leaf-purge-ab-20260905-001/official_purge_fix_blob.json -text whit
 runs/croc-lvs-leaf-purge-ab-20260905-001/official_purge_fix_commit.json -text whitespace=cr-at-eol
 # Source whitespace is independently checked with git apply --check --whitespace=error.
 runs/croc-lvs-leaf-purge-ab-20260905-001/upstream_purge_removal.patch whitespace=-blank-at-eol
+
+# Exact executed logs and Tcl retain source bytes; not hand-edited source.
+runs/croc-full-io-floorplan-20260905-001/add_full_io_leads.tcl -text whitespace=-blank-at-eol
+runs/croc-full-io-floorplan-20260905-001/tool.log -text whitespace=-blank-at-eol
+runs/croc-full-io-floorplan-20260905-002/add_full_io_leads.tcl -text whitespace=-blank-at-eol
+runs/croc-full-io-floorplan-20260905-002/tool.log -text whitespace=-blank-at-eol
+runs/croc-full-io-floorplan-20260905-003/add_full_io_leads.tcl -text whitespace=-blank-at-eol
+runs/croc-full-io-floorplan-20260905-003/tool.log -text whitespace=-blank-at-eol
+runs/croc-full-io-floorplan-20260905-004/add_full_io_leads.tcl -text whitespace=-blank-at-eol
+runs/croc-full-io-floorplan-20260905-004/tool.log -text whitespace=-blank-at-eol
+runs/croc-full-io-floorplan-20260905-005/add_full_io_leads.tcl -text whitespace=-blank-at-eol
+runs/croc-full-io-floorplan-20260905-005/tool.log -text whitespace=-blank-at-eol
+runs/croc-full-io-floorplan-20260905-005/work/openroad/reports/01-01_croc_checks.rpt -text whitespace=-blank-at-eol,-blank-at-eof
+runs/croc-full-io-floorplan-20260905-005/work/openroad/scripts/01_floorplan.tcl -text whitespace=-blank-at-eol
+runs/croc-full-io-floorplan-20260905-005/work/openroad/scripts/startup.tcl -text whitespace=-blank-at-eol
+runs/croc-full-io-floorplan-20260905-005/work/openroad/src/padring.tcl -text whitespace=-blank-at-eol
+runs/croc-full-io-floorplan-readback-20260905-001/readback.tcl -text whitespace=-blank-at-eol
+runs/croc-full-io-floorplan-readback-20260905-001/tool.log -text whitespace=-blank-at-eol
+runs/croc-io-ring-maximal-deep1-20260905-001/maximal.log -text whitespace=-blank-at-eol
+runs/croc-io-ring-maximal-deep1-20260905-001/tool.log -text whitespace=-blank-at-eol

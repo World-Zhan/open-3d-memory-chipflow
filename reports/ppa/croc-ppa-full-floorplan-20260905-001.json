@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0.0",
+  "iteration": "full_floorplan_20260905_001",
+  "classification": "full_functional_floorplan_same_stage_area_no_new_postplacement_power_or_fmax",
+  "source_run": "croc-full-io-floorplan-20260905-005",
+  "source_sha256": {
+    "runs/croc-full-io-floorplan-20260905-005/manifest.json": "9aeb3d38558632eb94d311d9d55d338e641a0dc9c2cf3504ffaa6c4c86ee926a",
+    "runs/croc-full-io-floorplan-20260905-005/summary.json": "4bf80e6eee814375e3cfb14bab76e27607526ac65d35231d55aa767fcd8fa4f7",
+    "runs/croc-full-io-floorplan-20260905-005/master_areas.tsv": "769846b820b01a6d4b395d61982cb97b43f9c2f108955277ec042ca8eb81fce1",
+    "runs/croc-full-io-floorplan-20260905-005/structural_summary.tsv": "ec49d8756b063b66e0df0280518b9870b0fb594ec49c804692d2218780855e26",
+    "runs/croc-full-io-floorplan-20260905-005/io_instances.tsv": "0088fff13be04fb96aab09cbdd551af1f9158a96fbceaa619aad1aba6f8a0ed6",
+    "runs/croc-full-io-floorplan-20260905-005/work/openroad/reports/01-01_croc_checks.rpt": "23bf09811701de9a8fe05c868e3da2a2199b752552e468a0a3291e9c2ee1fe3b",
+    "runs/croc-full-io-floorplan-readback-20260905-001/manifest.json": "5ad179e07dadc24200e6f9ec4f239a13dea96ede18aeb6aecd498469edc71c32",
+    "runs/croc-full-io-floorplan-readback-20260905-001/summary.json": "0b397c924e859ceac5ed9caedce1a0c43a2aeef784f2d96aae97d595c742d262",
+    "reports/floorplan/full-io-readback-audit-20260905-001.json": "0978b430de0db83f5c59082367717b9a8e46cd33dfe4eeee7e9be9cfb64ec4d3",
+    "reports/bondpad/io-ring-composite-drc-20260905-003.json": "185e7b4273b031d96c1e0315e920da27c3151758eb88f268a95bf5547397dd0f",
+    "reports/lvs/iopadin-electrode-guard-20260905-001.json": "8cd3608c5b7f36519fd0c06c1a9a100a476872fabbafa1973849153878aedc70",
+    "reports/ppa/comparison_sources_20260905.json": "d0406baa7db243590b57ed592f65bf41ac72a79eb34d30e2abf73c6f38adc6ae",
+    "reports/ppa/croc-ppa-rcx-20260905-001.json": "c64f128bb03bdfcc7cc8b9088c06e76a0538ad2132b86ce1a81f0910fcd1099c",
+    "reports/ppa/croc-ppa-cts-branch-eco-20260905-003.json": "1701884db281b20e7245a85c4334b86551c0656d65f87fba482e65db154cd3ac"
+  },
+  "original_layout_modified": false,
+  "core_logic_included": true,
+  "inherited_cts_eco": false,
+  "stage": "floorplan",
+  "signal_placement_performed": false,
+  "signal_routing_performed": false,
+  "same_stage_area": {
+    "baseline_area_um2_by_master_type": {
+      "BLOCK": 159439.7952,
+      "CORE": 494516.53439999995,
+      "COVER": 313600.0,
+      "PAD_INOUT": 460800.0,
+      "PAD_INPUT": 129600.0,
+      "PAD_OUTPUT": 100800.0,
+      "PAD_POWER": 230400.0,
+      "PAD_SPACER": 227520.0
+    },
+    "candidate_area_um2_by_master_type": {
+      "BLOCK": 159439.7952,
+      "CORE": 494516.5344,
+      "COVER": 313600.0,
+      "PAD_INOUT": 460800.0,
+      "PAD_INPUT": 129600.0,
+      "PAD_OUTPUT": 100800.0,
+      "PAD_POWER": 230400.0,
+      "PAD_SPACER": 237600.0
+    },
+    "baseline_active_area_mm2": 0.6539563296,
+    "candidate_active_area_mm2": 0.6539563296,
+    "pad_spacer_delta_um2": 10080.0,
+    "candidate_core_placement_region_mm2": 1.6076944800000001,
+    "baseline_electrical_die_mm2": 3.671056,
+    "candidate_electrical_die_mm2": 3.896676,
+    "historical_baseline_sealed_gds_mm2": 4.0,
+    "candidate_planned_sealed_area_mm2": 4.235364,
+    "candidate_full_sealed_gds_generated": false,
+    "planned_sealed_delta_percent": 5.8841
+  },
+  "new_power_mw": null,
+  "new_fmax_mhz": null,
+  "clock_constraint_mhz": 100,
+  "io_load_pf": 15,
+  "new_extracted_sta_performed": false,
+  "prelayout_checks": {
+    "report": "runs/croc-full-io-floorplan-20260905-005/work/openroad/reports/01-01_croc_checks.rpt",
+    "diagnostic_reset_endpoint_slack_ns_by_group": {
+      "asynchronous": -67.43,
+      "clk_sys": -70.35
+    },
+    "repeated_print_groups_are_not_independent_violations": true,
+    "input_delay_warning_ports": 4,
+    "output_delay_warning_ports": 4,
+    "unconstrained_warning_endpoints": 4,
+    "warning_ports": [
+      "VDD",
+      "VDDIO",
+      "VSS",
+      "VSSIO"
+    ],
+    "warning_stage": "before_explicit_PG_port_type_binding",
+    "complete_hold_slew_cap_fanout_counts": null,
+    "timing_passed": false
+  },
+  "static_core_pg_floorplanning_result": "PASS",
+  "placed_stdcell_pg_result": "not_run",
+  "new_full_chip_drc": "not_run",
+  "new_full_chip_lvs": "not_run",
+  "distinct_io_only_fixture_drc": {
+    "audit": "reports/bondpad/io-ring-composite-drc-20260905-003.json",
+    "complete_rule_inventory": true,
+    "merged_markers": 131,
+    "global_density": 8,
+    "local_density": 123,
+    "non_density": 0,
+    "fixture_drc_passed": false
+  },
+  "unchanged_routed_reference": {
+    "active_power_is_not_candidate_power": true,
+    "tt_tool_power_mw": 43.6,
+    "workload_activity_loaded": false
+  },
+  "distinct_cts_reference": {
+    "inherited": false,
+    "active_area_mm2": 0.7208351136,
+    "tt_tool_power_mw": 56.4,
+    "route": "not_run"
+  },
+  "peer_reference": {
+    "name": "ETH MLEM/Croc",
+    "process": "IHP 130nm",
+    "sram_kib": 24,
+    "area_mm2": 4.995225,
+    "reported_typical_mhz": 80,
+    "reported_voltage_v": 1.2,
+    "comparable_power_mw": null,
+    "local_advantage_ratio": null
+  },
+  "local_sram_kib": 4,
+  "public_rule_signoff": false,
+  "foundry_signoff": false
+}

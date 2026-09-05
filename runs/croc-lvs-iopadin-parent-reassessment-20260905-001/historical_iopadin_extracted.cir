@@ -1,0 +1,49 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 29/08/2026 05:40
+
+.SUBCKT sg13g2_IOPadIn pad iovss iovss$1 iovdd vdd vss p2c
+X$1 \$1 iovss pad pad sg13g2_DCNDiode
+X$2 \$1 iovss$1 pad iovdd vss p2c vdd sg13g2_LevelDown
+X$3 \$1 iovss$1 iovdd pad pad sg13g2_DCPDiode
+R$1 vss \$1 ptap1 A=21.981p P=147.74u
+R$3 iovss$1 \$1 ptap1 A=5379.0466p P=677.04u
+.ENDS sg13g2_IOPadIn
+
+.SUBCKT sg13g2_DCNDiode \$2 anode cathode cathode$1
+D$1 \$2 cathode$1 dantenna A=35.0028p P=58.08u m=1
+D$2 \$2 cathode dantenna A=35.0028p P=58.08u m=1
+R$3 anode \$2 ptap1 A=141.2964p P=221.76u
+.ENDS sg13g2_DCNDiode
+
+.SUBCKT sg13g2_DCPDiode \$1 guard cathode anode anode$1
+D$1 anode$1 cathode dpantenna A=35.0028p P=58.08u m=1
+D$2 anode cathode dpantenna A=35.0028p P=58.08u m=1
+R$3 guard \$1 ptap1 A=33.5104p P=197.12u
+.ENDS sg13g2_DCPDiode
+
+.SUBCKT sg13g2_LevelDown \$1 iovss pad iovdd vss core vdd
+X$1 \$1 iovss pad iovdd sg13g2_SecondaryProtection
+M$1 core \$21 vss \$1 sg13_lv_nmos L=0.13u W=2.75u AS=0.935p AD=0.935p PS=6.18u
++ PD=6.18u rfmode=0
+M$2 vss \$8 \$21 \$1 sg13_hv_nmos L=0.45u W=2.65u AS=0.901p AD=0.5035p PS=5.98u
++ PD=3.03u rfmode=0
+M$3 \$21 \$7 vdd \$1 sg13_hv_nmos L=0.45u W=2.65u AS=0.5035p AD=0.901p PS=3.03u
++ PD=5.98u rfmode=0
+M$4 \$7 pad iovss \$1 sg13_hv_nmos L=0.45u W=1.3u AS=0.442p AD=0.247p PS=3.28u
++ PD=1.68u rfmode=0
+M$5 iovss \$7 \$8 \$1 sg13_hv_nmos L=0.45u W=1.3u AS=0.247p AD=0.442p PS=1.68u
++ PD=3.28u rfmode=0
+M$6 core \$21 vdd vdd sg13_lv_pmos L=0.13u W=4.75u AS=1.615p AD=1.615p
++ PS=10.18u PD=10.18u rfmode=0
+M$8 iovdd pad \$7 iovdd sg13_hv_pmos L=0.45u W=4.6u AS=1.219p AD=0.874p
++ PS=7.96u PD=5.36u rfmode=0
+M$10 iovdd \$7 \$8 iovdd sg13_hv_pmos L=0.45u W=4.6u AS=0.874p AD=1.219p
++ PS=5.36u PD=7.96u rfmode=0
+R$12 vss \$1 ptap1 A=2.019p P=14.06u
+R$13 iovss \$1 ptap1 A=0.804p P=5.96u
+.ENDS sg13g2_LevelDown
+
+.SUBCKT sg13g2_SecondaryProtection \$1 minus core|pad plus
+D$1 \$1 core|pad dantenna A=1.984p P=7.48u m=1
+D$2 core|pad plus dpantenna A=3.1872p P=11.24u m=1
+R$3 minus \$1 ptap1 A=9.0304p P=53.12u
+.ENDS sg13g2_SecondaryProtection

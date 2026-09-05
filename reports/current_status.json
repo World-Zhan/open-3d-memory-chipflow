@@ -119,13 +119,20 @@
         "ir_em_proven": false,
         "pg_via_evidence": "reports/bondpad/io-ring-pg-vias-20260905-001.json",
         "original_drc_execution_complete": false,
-        "maximal_replay_exit": 137,
-        "composite_drc_execution_complete": false,
-        "composite_merged_markers": null,
+        "maximal_replay_exit": 0,
+        "composite_drc_execution_complete": true,
+        "composite_merged_markers": 131,
         "fixture_drc_passed": false,
-        "full_chip_integrated": false,
+        "full_chip_integrated": true,
         "ppa": "reports/ppa/croc-ppa-io-ring-20260905-001.json",
-        "report": "docs/10_io_ring_implementation_zh.md"
+        "report": "docs/10_io_ring_implementation_zh.md",
+        "preserved_flat_replay_exit": 137,
+        "maximal_replay_run": "croc-io-ring-maximal-deep1-20260905-001",
+        "composite_density_global": 8,
+        "composite_density_local": 123,
+        "composite_audit": "reports/bondpad/io-ring-composite-drc-20260905-003.json",
+        "full_chip_integration_stage": "independent_floorplan_only",
+        "full_chip_candidate_run": "croc-full-io-floorplan-20260905-005"
       },
       "strict_lvs_purge_ab": {
         "run_id": "croc-lvs-leaf-purge-ab-20260905-001",
@@ -135,6 +142,52 @@
         "source_pdk_modified": false,
         "full_chip_attempt_3_performed": false,
         "report": "reports/lvs/strict-leaf-next-step-20260905-001.json"
+      },
+      "full_floorplan_candidate": {
+        "run_id": "croc-full-io-floorplan-20260905-005",
+        "manifest": "runs/croc-full-io-floorplan-20260905-005/manifest.json",
+        "readback": "runs/croc-full-io-floorplan-readback-20260905-001/summary.json",
+        "audit": "reports/floorplan/full-io-readback-audit-20260905-001.json",
+        "core_logic_included": true,
+        "inherited_cts_eco": false,
+        "functional_connectivity_contract_passed": true,
+        "physical_top_pin_contract_passed": true,
+        "original_instances_preserved": 30474,
+        "original_non_pg_pins_preserved": 111658,
+        "original_top_ports_preserved": 52,
+        "physical_pin_boxes": 64,
+        "explicit_pg_pins": 61334,
+        "static_core_pg_floorplanning_result": "PASS",
+        "placed_stdcell_pg_result": "not_run",
+        "signal_placement": "not_run",
+        "cts": "not_run",
+        "signal_route": "not_run",
+        "postplacement_sta": "not_run",
+        "prelayout_checks": "warnings_and_negative_reset_slack_observed_before_PG_port_type_binding",
+        "prelayout_report": "runs/croc-full-io-floorplan-20260905-005/work/openroad/reports/01-01_croc_checks.rpt",
+        "full_chip_drc": "not_run",
+        "full_chip_lvs": "not_run",
+        "ir_em": "not_run",
+        "active_floorplan_area_mm2": 0.6539563296,
+        "electrical_die_mm2": 3.896676,
+        "planned_sealed_area_mm2": 4.235364,
+        "power_mw": null,
+        "fmax_mhz": null,
+        "ppa": "reports/ppa/croc-ppa-full-floorplan-20260905-001.json",
+        "report": "docs/11_full_floorplan_readback_zh.md"
+      },
+      "strict_lvs_parent_electrode_diagnosis": {
+        "report": "reports/lvs/iopadin-electrode-guard-20260905-001.json",
+        "actual_parent_duplicated_electrodes_joined": true,
+        "guard_ordinary_ntap_contact_nwell_path": true,
+        "guard_loss_stage": "unknown",
+        "historical_parent_strict_result": "FAIL",
+        "circuit_status_counts": {
+          "NoMatch": 3,
+          "Skipped": 2
+        },
+        "new_lvs_execution": false,
+        "full_chip_attempt_3_performed": false
       }
     },
     "B_pin3d": {
@@ -155,12 +208,12 @@
     }
   },
   "next_actions": [
-    "Resolve IO-ring maximal DRC execution failure; preserve the original crash and bounded replay outcome. IO-ring PG metal/via graph passed, excluding core PDN, wells/substrate/contact, LVS and IR/EM.",
-    "Qualify actual core placement, explicit PG, density fill and routing in an independent complete-chip candidate; the current IO-only GDS is not that candidate.",
-    "Trace actual diode parent upper-metal/via return paths and DCN guard extraction before a supported minimum-parent strict LVS; do not start full-chip attempt 3 yet.",
-    "Retain 15 pF IO load; resolve pad driver and SRAM output electrical violations and CTS PPA cost.",
-    "Rerun qualified routed candidate RCX/STA and strict DRC/LVS with per-iteration PPA; complete activity, corner/mode, IR/EM, DFT and actual MPW requirements.",
-    "Keep Pin3D research_only; C1 development does not replace A-track physical closure."
+    "Use independently verified full floorplan 005 for bounded placement after reviewing constraints with correct PG port types; recheck structure, legal placement, supply connectivity and electrical limits.",
+    "Preserve complete IO-only DRC composite: 131 density markers, still FAIL. Route/fill/seal the new full-chip candidate before full-chip DRC/RCX; old IO-only evidence cannot pass the new layout.",
+    "Capture observation-only reader/extraction/align/simplify snapshots to locate guard/tap loss; use actual parent/abutment geometry and strict rules, without implicit nets or full-chip LVS attempt 3.",
+    "Retain 15 pF IO load and library limits; resolve reset/pad/SRAM electrical issues and reassess CTS changes on this candidate with same-stage PPA.",
+    "Complete qualified corner/mode/activity, IR/EM, DFT and actual MPW requirements before claiming tapeout readiness.",
+    "Keep Pin3D research_only; C1 development does not replace A-track backend closure."
   ],
   "objective": "Strict backend closure toward tapeout readiness, with per-iteration PPA and source-backed peer comparisons."
 }

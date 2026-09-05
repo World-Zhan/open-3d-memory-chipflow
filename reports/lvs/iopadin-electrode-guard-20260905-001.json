@@ -1,0 +1,796 @@
+{
+  "PDK_modified": false,
+  "classification": "real_parent_electrode_closure_proven_strict_LVS_still_blocked",
+  "full_chip_attempt_3": false,
+  "geometry_elapsed_seconds": 2.909851056999969,
+  "geometry_limits": {
+    "container_internal_timeout_seconds": 180,
+    "cpus": 2,
+    "memory_gb": 4
+  },
+  "geometry_returncode": 0,
+  "geometry_run": "croc-lvs-electrode-parent-geometry-20260905-001",
+  "implicit_connections": false,
+  "interpretation": [
+    "In both actual Croc and pinned official libraries the two DCN cathodes and two DCP anodes are disconnected inside the leaf but physically closed through parent Via1/Metal2 on the pad net.",
+    "The exact historical official IOPadIn deep run already passes pad twice to each duplicated child electrode. Repeating the same run is unnecessary.",
+    "The historical strict run remains FAIL. DCN/DCP/SecondaryProtection are NoMatch; IOPadIn and LevelDown comparisons are Skipped, not completed matches or separately completed NoMatch cases.",
+    "DCN guard has a real ordinary ntap/contact/nwell path. No well marker selects an ntap1 device in this geometry, so missing ntap1 is not established as the problem.",
+    "The parent guard metal-via component stays on M1 and has no direct named parent PG label; its CDL connection to iovdd and larger-ring abutment must be distinguished from local cell geometry.",
+    "The exact cleanup stage losing guard is unknown. Default simplify includes make_top_level_pins, purge, combine_devices and purge_nets; explicit option SKIPPED does not exclude those implicit simplify operations.",
+    "The DCN schematic comparison view has one combined diode and CATHODE/SUB! participating nets. Raw CDL guard/anode/tap declarations must not be conflated with that simplified comparison view.",
+    "compare && flag_missing_ports can short-circuit. The strict option is selected, but the failure log alone does not prove guard independently triggered flag_missing_ports."
+  ],
+  "new_LVS_execution": false,
+  "new_full_chip_PPA": false,
+  "next_bounded_diagnostics_not_run": [
+    "Capture netlist snapshots before/after extraction, alignment and simplify using observation-only additions to a copied deck while preserving strict defaults, to locate schematic tap/guard removal and leaf combination differences.",
+    "Use existing exact parent-wrapper or real ring evidence before any new abutment run; trace guard/iovss to explicit supply IOs, without virtual same-name joins.",
+    "Inspect SecondaryProtection resistor/tap and paired diode mismatch independently; the two electrode return paths do not explain all remaining NoMatch circuits."
+  ],
+  "source_sha256": {
+    "reports/lvs/upstream-review-20260905-001.json": "e274652b4f3e4e747f27544c75e989938caa7b0ca2fe6fef58a8185c9b8cad39",
+    "runs/croc-lvs-electrode-parent-geometry-20260905-001/electrode_guard_geometry.json": "2e6d3a345a16b2c2ccc4007ee05e1a55894bd68fc87dc205fb99b6989e54c29c",
+    "runs/croc-lvs-electrode-parent-geometry-20260905-001/manifest.json": "ccb690e0be2a4154febaf89cc91db48ecf42dcef8c50a4f7aaa448d1e86a26d7",
+    "runs/croc-lvs-iopadin-parent-reassessment-20260905-001/cross_reference.json": "66877e66e14a76d228cfc662b6406e648598a1ebeaf8ec74a02b70c99352fbdf",
+    "runs/croc-lvs-iopadin-parent-reassessment-20260905-001/historical_iopadin_extracted.cir": "8d4ce1a2b551f7af0f4ca37869fc2f18dda937e8a3c2d53b69c8069772611d9a",
+    "runs/croc-lvs-iopadin-parent-reassessment-20260905-001/manifest.json": "dc65045a0b01106e6445d1a4282c6e8465c3f8d1f3171dedb1ccedd9c68c8d14",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/README.md": "50bccaaf677b9648ceb472189c41c013230488c9871765dff039d20fb68e501b"
+  },
+  "strict_parent_reuse": {
+    "PDK_commit": "331c00484213b13414777eec1336ef5c29b969bd",
+    "cross_reference_summary": {
+      "circuit_pair_count": 5,
+      "circuit_status_counts": {
+        "NoMatch": 3,
+        "Skipped": 2
+      },
+      "classification_semantics": {
+        "layout_only": "layout object present, schematic object absent",
+        "match": "KLayout marked the object pair Match",
+        "paired_mismatch": "both objects present but KLayout did not mark the pair Match",
+        "schematic_only": "schematic object present, layout object absent"
+      },
+      "comparison_blocked_at_leaf_circuit_pairing": true,
+      "no_match_layout_circuits": [
+        "sg13g2_DCNDiode",
+        "sg13g2_DCPDiode",
+        "sg13g2_SecondaryProtection"
+      ],
+      "object_pair_classification_counts": {
+        "device": {
+          "layout_only": 7,
+          "match": 1,
+          "paired_mismatch": 1,
+          "schematic_only": 3
+        },
+        "net": {
+          "layout_only": 11,
+          "match": 1,
+          "paired_mismatch": 1,
+          "schematic_only": 6
+        },
+        "pin": {
+          "layout_only": 11,
+          "match": 2,
+          "schematic_only": 4
+        },
+        "subcircuit": {}
+      },
+      "object_pair_status_counts": {
+        "device": {
+          "Match": 1,
+          "Mismatch": 11
+        },
+        "net": {
+          "Match": 1,
+          "Mismatch": 18
+        },
+        "pin": {
+          "Match": 2,
+          "Mismatch": 15
+        },
+        "subcircuit": {}
+      },
+      "parameter_comparison": "partly_blocked_by_unpaired_devices",
+      "skipped_layout_circuits": [
+        "sg13g2_IOPadIn",
+        "sg13g2_LevelDown"
+      ]
+    },
+    "historical_run": "runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-diagnostic-20260829-001/sg13g2_IOPadIn",
+    "historical_runner_returncode": 0,
+    "same_GDS_CDL_and_LVS_tree_verified": true,
+    "strict_LVS_result": "FAIL"
+  },
+  "supported_hierarchy_evidence": {
+    "comment_scope": "IOPadVss/IOPadIOVdd actual abutment; not proof that standalone IOPadIn is LVS-clean; virtual ties are not used.",
+    "official_CDL_DCN_parent_statement": "XI2 iovss pad iovdd / sg13g2_DCNDiode",
+    "official_CDL_DCP_parent_statement": "XI1 pad iovdd iovss / sg13g2_DCPDiode",
+    "upstream_IOPadVss_guard_abutment_comment": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/714#issuecomment-3388578658"
+  },
+  "versions": {
+    "croc_actual": {
+      "DCN_guard": {
+        "guard_loss_stage": "not_identified",
+        "leaf_M1_contact_ntap_nwell_path": true,
+        "leaf_label_points_dbu": [
+          [
+            16530,
+            11750
+          ],
+          [
+            16530,
+            -1490
+          ]
+        ],
+        "leaf_regions": {
+          "guard_M1_contacts": {
+            "area_um2": 7.372800000000001,
+            "bbox_dbu": [
+              -1570,
+              -1570,
+              34630,
+              11830
+            ],
+            "components": 288
+          },
+          "guard_connected_nwell": {
+            "area_um2": 155.72480000000002,
+            "bbox_dbu": [
+              -2280,
+              -2280,
+              35340,
+              12540
+            ],
+            "components": 1
+          },
+          "guard_contact_to_ntap": {
+            "area_um2": 7.372800000000001,
+            "bbox_dbu": [
+              -1570,
+              -1570,
+              34630,
+              11830
+            ],
+            "components": 288
+          },
+          "guard_m1": {
+            "area_um2": 33.510400000000004,
+            "bbox_dbu": [
+              -1660,
+              -1660,
+              34720,
+              11920
+            ],
+            "components": 1
+          },
+          "guard_public_ntap": {
+            "area_um2": 33.510400000000004,
+            "bbox_dbu": [
+              -1660,
+              -1660,
+              34720,
+              11920
+            ],
+            "components": 1
+          },
+          "guard_raw_nactive_nwell_taps": {
+            "area_um2": 33.510400000000004,
+            "bbox_dbu": [
+              -1660,
+              -1660,
+              34720,
+              11920
+            ],
+            "components": 1
+          },
+          "ntap": {
+            "area_um2": 33.510400000000004,
+            "bbox_dbu": [
+              -1660,
+              -1660,
+              34720,
+              11920
+            ],
+            "components": 1
+          },
+          "ntap1_marker": {
+            "area_um2": 0.0,
+            "bbox_dbu": null,
+            "components": 0
+          },
+          "ntap1_tie": {
+            "area_um2": 0.0,
+            "bbox_dbu": null,
+            "components": 0
+          },
+          "ntap_base": {
+            "area_um2": 33.510400000000004,
+            "bbox_dbu": [
+              -1660,
+              -1660,
+              34720,
+              11920
+            ],
+            "components": 1
+          },
+          "nwell": {
+            "area_um2": 155.72480000000002,
+            "bbox_dbu": [
+              -2280,
+              -2280,
+              35340,
+              12540
+            ],
+            "components": 1
+          },
+          "recog_diode": {
+            "area_um2": 72.33200000000001,
+            "bbox_dbu": [
+              2620,
+              2230,
+              30440,
+              8030
+            ],
+            "components": 2
+          }
+        },
+        "parent_M1_contact_ntap_nwell_path": true,
+        "parent_direct_PG_labels": [],
+        "parent_guard_metal_bbox_dbu": [
+          0,
+          6000,
+          80000,
+          61000
+        ],
+        "parent_guard_reachable_metal_layers": [
+          "Metal1"
+        ],
+        "parent_label_points_dbu": [
+          [
+            170,
+            24190
+          ],
+          [
+            13410,
+            24190
+          ]
+        ]
+      },
+      "targets": {
+        "sg13g2_DCNDiode": {
+          "electrode": "cathode",
+          "labels": [
+            {
+              "key": "sg13g2_DCNDiode:cathode:0",
+              "leaf_point_dbu": [
+                16530,
+                7380
+              ],
+              "parent_point_dbu": [
+                4540,
+                24190
+              ],
+              "parent_point_um": [
+                4.54,
+                24.19
+              ]
+            },
+            {
+              "key": "sg13g2_DCNDiode:cathode:1",
+              "leaf_point_dbu": [
+                16530,
+                2880
+              ],
+              "parent_point_dbu": [
+                9040,
+                24190
+              ],
+              "parent_point_um": [
+                9.040000000000001,
+                24.19
+              ]
+            }
+          ],
+          "leaf_electrodes_physically_joined": false,
+          "parent_direct_net_labels_on_electrode_root": [
+            "pad"
+          ],
+          "parent_electrodes_physically_joined": true,
+          "parent_metal_via_path": {
+            "layer_sequence": [
+              "Metal1",
+              "Metal2",
+              "Metal1"
+            ],
+            "node_sequence": [
+              "Metal1:c24c9f366c2b36d06104",
+              "Metal2:d1d84bfd3a84afc6f81e",
+              "Metal1:2a2d90fb287b5d6c767d"
+            ],
+            "via_edges": [
+              {
+                "nodes": [
+                  "Metal1:c24c9f366c2b36d06104",
+                  "Metal2:d1d84bfd3a84afc6f81e"
+                ],
+                "via": "Via1",
+                "via_polygons": 171,
+                "witness_bbox_dbu": [
+                  3955,
+                  24095,
+                  4145,
+                  24285
+                ],
+                "witness_bbox_um": [
+                  3.955,
+                  24.095,
+                  4.1450000000000005,
+                  24.285
+                ]
+              },
+              {
+                "nodes": [
+                  "Metal1:2a2d90fb287b5d6c767d",
+                  "Metal2:d1d84bfd3a84afc6f81e"
+                ],
+                "via": "Via1",
+                "via_polygons": 171,
+                "witness_bbox_dbu": [
+                  8455,
+                  24095,
+                  8645,
+                  24285
+                ],
+                "witness_bbox_um": [
+                  8.455,
+                  24.095,
+                  8.645,
+                  24.285
+                ]
+              }
+            ]
+          },
+          "transform": "r90 11920,7660"
+        },
+        "sg13g2_DCPDiode": {
+          "electrode": "anode",
+          "labels": [
+            {
+              "key": "sg13g2_DCPDiode:anode:0",
+              "leaf_point_dbu": [
+                16530,
+                7380
+              ],
+              "parent_point_dbu": [
+                4540,
+                83190
+              ],
+              "parent_point_um": [
+                4.54,
+                83.19
+              ]
+            },
+            {
+              "key": "sg13g2_DCPDiode:anode:1",
+              "leaf_point_dbu": [
+                16530,
+                2880
+              ],
+              "parent_point_dbu": [
+                9040,
+                83190
+              ],
+              "parent_point_um": [
+                9.040000000000001,
+                83.19
+              ]
+            }
+          ],
+          "leaf_electrodes_physically_joined": false,
+          "parent_direct_net_labels_on_electrode_root": [
+            "pad"
+          ],
+          "parent_electrodes_physically_joined": true,
+          "parent_metal_via_path": {
+            "layer_sequence": [
+              "Metal1",
+              "Metal2",
+              "Metal1"
+            ],
+            "node_sequence": [
+              "Metal1:9d2bab6aadf381a76e97",
+              "Metal2:d1d84bfd3a84afc6f81e",
+              "Metal1:717243f767717baa287b"
+            ],
+            "via_edges": [
+              {
+                "nodes": [
+                  "Metal1:9d2bab6aadf381a76e97",
+                  "Metal2:d1d84bfd3a84afc6f81e"
+                ],
+                "via": "Via1",
+                "via_polygons": 204,
+                "witness_bbox_dbu": [
+                  4035,
+                  90270,
+                  4225,
+                  90460
+                ],
+                "witness_bbox_um": [
+                  4.035,
+                  90.27,
+                  4.225,
+                  90.46000000000001
+                ]
+              },
+              {
+                "nodes": [
+                  "Metal1:717243f767717baa287b",
+                  "Metal2:d1d84bfd3a84afc6f81e"
+                ],
+                "via": "Via1",
+                "via_polygons": 204,
+                "witness_bbox_dbu": [
+                  8535,
+                  90270,
+                  8725,
+                  90460
+                ],
+                "witness_bbox_um": [
+                  8.535,
+                  90.27,
+                  8.725,
+                  90.46000000000001
+                ]
+              }
+            ]
+          },
+          "transform": "r90 11920,66660"
+        }
+      }
+    },
+    "official_pinned": {
+      "DCN_guard": {
+        "guard_loss_stage": "not_identified",
+        "leaf_M1_contact_ntap_nwell_path": true,
+        "leaf_label_points_dbu": [
+          [
+            16530,
+            11750
+          ],
+          [
+            16530,
+            -1490
+          ]
+        ],
+        "leaf_regions": {
+          "guard_M1_contacts": {
+            "area_um2": 7.372800000000001,
+            "bbox_dbu": [
+              -1570,
+              -1570,
+              34630,
+              11830
+            ],
+            "components": 288
+          },
+          "guard_connected_nwell": {
+            "area_um2": 155.72480000000002,
+            "bbox_dbu": [
+              -2280,
+              -2280,
+              35340,
+              12540
+            ],
+            "components": 1
+          },
+          "guard_contact_to_ntap": {
+            "area_um2": 7.372800000000001,
+            "bbox_dbu": [
+              -1570,
+              -1570,
+              34630,
+              11830
+            ],
+            "components": 288
+          },
+          "guard_m1": {
+            "area_um2": 33.510400000000004,
+            "bbox_dbu": [
+              -1660,
+              -1660,
+              34720,
+              11920
+            ],
+            "components": 1
+          },
+          "guard_public_ntap": {
+            "area_um2": 33.510400000000004,
+            "bbox_dbu": [
+              -1660,
+              -1660,
+              34720,
+              11920
+            ],
+            "components": 1
+          },
+          "guard_raw_nactive_nwell_taps": {
+            "area_um2": 33.510400000000004,
+            "bbox_dbu": [
+              -1660,
+              -1660,
+              34720,
+              11920
+            ],
+            "components": 1
+          },
+          "ntap": {
+            "area_um2": 33.510400000000004,
+            "bbox_dbu": [
+              -1660,
+              -1660,
+              34720,
+              11920
+            ],
+            "components": 1
+          },
+          "ntap1_marker": {
+            "area_um2": 0.0,
+            "bbox_dbu": null,
+            "components": 0
+          },
+          "ntap1_tie": {
+            "area_um2": 0.0,
+            "bbox_dbu": null,
+            "components": 0
+          },
+          "ntap_base": {
+            "area_um2": 33.510400000000004,
+            "bbox_dbu": [
+              -1660,
+              -1660,
+              34720,
+              11920
+            ],
+            "components": 1
+          },
+          "nwell": {
+            "area_um2": 155.72480000000002,
+            "bbox_dbu": [
+              -2280,
+              -2280,
+              35340,
+              12540
+            ],
+            "components": 1
+          },
+          "recog_diode": {
+            "area_um2": 72.33200000000001,
+            "bbox_dbu": [
+              2620,
+              2230,
+              30440,
+              8030
+            ],
+            "components": 2
+          }
+        },
+        "parent_M1_contact_ntap_nwell_path": true,
+        "parent_direct_PG_labels": [],
+        "parent_guard_metal_bbox_dbu": [
+          0,
+          6000,
+          80000,
+          61000
+        ],
+        "parent_guard_reachable_metal_layers": [
+          "Metal1"
+        ],
+        "parent_label_points_dbu": [
+          [
+            170,
+            24190
+          ],
+          [
+            13410,
+            24190
+          ]
+        ]
+      },
+      "targets": {
+        "sg13g2_DCNDiode": {
+          "electrode": "cathode",
+          "labels": [
+            {
+              "key": "sg13g2_DCNDiode:cathode:0",
+              "leaf_point_dbu": [
+                16530,
+                7380
+              ],
+              "parent_point_dbu": [
+                4540,
+                24190
+              ],
+              "parent_point_um": [
+                4.54,
+                24.19
+              ]
+            },
+            {
+              "key": "sg13g2_DCNDiode:cathode:1",
+              "leaf_point_dbu": [
+                16530,
+                2880
+              ],
+              "parent_point_dbu": [
+                9040,
+                24190
+              ],
+              "parent_point_um": [
+                9.040000000000001,
+                24.19
+              ]
+            }
+          ],
+          "leaf_electrodes_physically_joined": false,
+          "parent_direct_net_labels_on_electrode_root": [
+            "pad"
+          ],
+          "parent_electrodes_physically_joined": true,
+          "parent_metal_via_path": {
+            "layer_sequence": [
+              "Metal1",
+              "Metal2",
+              "Metal1"
+            ],
+            "node_sequence": [
+              "Metal1:c24c9f366c2b36d06104",
+              "Metal2:d1d84bfd3a84afc6f81e",
+              "Metal1:2a2d90fb287b5d6c767d"
+            ],
+            "via_edges": [
+              {
+                "nodes": [
+                  "Metal1:c24c9f366c2b36d06104",
+                  "Metal2:d1d84bfd3a84afc6f81e"
+                ],
+                "via": "Via1",
+                "via_polygons": 171,
+                "witness_bbox_dbu": [
+                  3955,
+                  24095,
+                  4145,
+                  24285
+                ],
+                "witness_bbox_um": [
+                  3.955,
+                  24.095,
+                  4.1450000000000005,
+                  24.285
+                ]
+              },
+              {
+                "nodes": [
+                  "Metal1:2a2d90fb287b5d6c767d",
+                  "Metal2:d1d84bfd3a84afc6f81e"
+                ],
+                "via": "Via1",
+                "via_polygons": 171,
+                "witness_bbox_dbu": [
+                  8455,
+                  24095,
+                  8645,
+                  24285
+                ],
+                "witness_bbox_um": [
+                  8.455,
+                  24.095,
+                  8.645,
+                  24.285
+                ]
+              }
+            ]
+          },
+          "transform": "r90 11920,7660"
+        },
+        "sg13g2_DCPDiode": {
+          "electrode": "anode",
+          "labels": [
+            {
+              "key": "sg13g2_DCPDiode:anode:0",
+              "leaf_point_dbu": [
+                16530,
+                7380
+              ],
+              "parent_point_dbu": [
+                4540,
+                83190
+              ],
+              "parent_point_um": [
+                4.54,
+                83.19
+              ]
+            },
+            {
+              "key": "sg13g2_DCPDiode:anode:1",
+              "leaf_point_dbu": [
+                16530,
+                2880
+              ],
+              "parent_point_dbu": [
+                9040,
+                83190
+              ],
+              "parent_point_um": [
+                9.040000000000001,
+                83.19
+              ]
+            }
+          ],
+          "leaf_electrodes_physically_joined": false,
+          "parent_direct_net_labels_on_electrode_root": [
+            "pad"
+          ],
+          "parent_electrodes_physically_joined": true,
+          "parent_metal_via_path": {
+            "layer_sequence": [
+              "Metal1",
+              "Metal2",
+              "Metal1"
+            ],
+            "node_sequence": [
+              "Metal1:9d2bab6aadf381a76e97",
+              "Metal2:d1d84bfd3a84afc6f81e",
+              "Metal1:717243f767717baa287b"
+            ],
+            "via_edges": [
+              {
+                "nodes": [
+                  "Metal1:9d2bab6aadf381a76e97",
+                  "Metal2:d1d84bfd3a84afc6f81e"
+                ],
+                "via": "Via1",
+                "via_polygons": 204,
+                "witness_bbox_dbu": [
+                  4035,
+                  90270,
+                  4225,
+                  90460
+                ],
+                "witness_bbox_um": [
+                  4.035,
+                  90.27,
+                  4.225,
+                  90.46000000000001
+                ]
+              },
+              {
+                "nodes": [
+                  "Metal1:717243f767717baa287b",
+                  "Metal2:d1d84bfd3a84afc6f81e"
+                ],
+                "via": "Via1",
+                "via_polygons": 204,
+                "witness_bbox_dbu": [
+                  8535,
+                  90270,
+                  8725,
+                  90460
+                ],
+                "witness_bbox_um": [
+                  8.535,
+                  90.27,
+                  8.725,
+                  90.46000000000001
+                ]
+              }
+            ]
+          },
+          "transform": "r90 11920,66660"
+        }
+      }
+    }
+  }
+}

@@ -2,6 +2,8 @@
 
 SPDX-License-Identifier: Apache-2.0
 
+后续进展见[完整功能 floorplan 与 DRC v3](11_full_floorplan_readback_zh.md)。下文保留本轮 IO-only 实验当时的结果；新的独立 deep replay 已补齐规则清单，仍有 131 个 density marker、整体 FAIL。
+
 2026-09-05。**已从单个 IO 试件推进到真实的完整 IO 环和封环 GDS，仍未达到可流片状态。** 本候选包含全部 64 个原 Croc IO 及其实际信号名，省略核心逻辑、核心路线和密度填充。不能把它的 DRC、面积或连通性直接推广到整芯片。
 
 ## 实际实现与验收范围

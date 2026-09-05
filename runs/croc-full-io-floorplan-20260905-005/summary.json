@@ -1,0 +1,83 @@
+{
+  "baseline_floorplan_area_um2_by_master_type": {
+    "BLOCK": 159439.7952,
+    "CORE": 494516.53439999995,
+    "COVER": 313600.0,
+    "PAD_INOUT": 460800.0,
+    "PAD_INPUT": 129600.0,
+    "PAD_OUTPUT": 100800.0,
+    "PAD_POWER": 230400.0,
+    "PAD_SPACER": 227520.0
+  },
+  "baseline_floorplan_instance_count": 30726,
+  "candidate_core_area_mm2": 1.6076944800000001,
+  "candidate_core_bbox_um": [
+    352.32,
+    355.32,
+    1621.92,
+    1621.62
+  ],
+  "candidate_electrical_area_mm2": 3.896676,
+  "candidate_floorplan_area_um2_by_master_type": {
+    "BLOCK": 159439.7952,
+    "CORE": 494516.5344,
+    "COVER": 313600.0,
+    "PAD_INOUT": 460800.0,
+    "PAD_INPUT": 129600.0,
+    "PAD_OUTPUT": 100800.0,
+    "PAD_POWER": 230400.0,
+    "PAD_SPACER": 237600.0
+  },
+  "candidate_floorplan_instance_count": 30602,
+  "classification": "full_floorplan_structural_and_area_evidence_not_signoff",
+  "io_edges": {
+    "east": {
+      "count": 16,
+      "first_dbu": 272000,
+      "last_dbu": 1622000,
+      "pitch_um": 90
+    },
+    "north": {
+      "count": 16,
+      "first_dbu": 272000,
+      "last_dbu": 1622000,
+      "pitch_um": 90
+    },
+    "south": {
+      "count": 16,
+      "first_dbu": 272000,
+      "last_dbu": 1622000,
+      "pitch_um": 90
+    },
+    "west": {
+      "count": 16,
+      "first_dbu": 272000,
+      "last_dbu": 1622000,
+      "pitch_um": 90
+    }
+  },
+  "io_only_instance_count": 192,
+  "new_fmax_mhz": null,
+  "new_power_mw": null,
+  "pdn_geometry_created": true,
+  "physical_core_pdn_connectivity_proven": false,
+  "placement_routing_sta_drc_lvs": "not_run",
+  "planned_sealed_area_mm2": 4.235364,
+  "public_rule_signoff": false,
+  "run_id": "croc-full-io-floorplan-20260905-005",
+  "source_sha256": {
+    "runs/croc-full-io-floorplan-20260905-005/inputs/baseline_floorplan.def": "b2c44fd5fbc670ada392dbd54740a6b28af783aeff794c66b717a7a04de02525",
+    "runs/croc-full-io-floorplan-20260905-005/io_instances.tsv": "0088fff13be04fb96aab09cbdd551af1f9158a96fbceaa619aad1aba6f8a0ed6",
+    "runs/croc-full-io-floorplan-20260905-005/manifest.json": "9aeb3d38558632eb94d311d9d55d338e641a0dc9c2cf3504ffaa6c4c86ee926a",
+    "runs/croc-full-io-floorplan-20260905-005/master_areas.tsv": "769846b820b01a6d4b395d61982cb97b43f9c2f108955277ec042ca8eb81fce1",
+    "runs/croc-full-io-floorplan-20260905-005/structural_summary.tsv": "ec49d8756b063b66e0df0280518b9870b0fb594ec49c804692d2218780855e26"
+  },
+  "structural_checks": {
+    "core_bbox_um": "352.32 355.32 1621.92 1621.62",
+    "explicit_pg_pins": "61334",
+    "functional_connectivity_preserved": "true",
+    "original_instances": "30474",
+    "original_signal_pins": "111658",
+    "original_top_ports": "52"
+  }
+}

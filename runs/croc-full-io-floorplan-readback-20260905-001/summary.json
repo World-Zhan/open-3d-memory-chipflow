@@ -1,0 +1,33 @@
+{
+  "bondpad_boxes": 64,
+  "classification": "full_floorplan_physical_terminal_and_static_pg_readback_not_signoff",
+  "each_top_pin_box_matches_actual_bondpad_metal_bbox": true,
+  "new_fmax_mhz": null,
+  "new_power_mw": null,
+  "pg_checks": [
+    {
+      "message": "1",
+      "net": "VDD",
+      "tcl_catch_code": "0"
+    },
+    {
+      "message": "1",
+      "net": "VSS",
+      "tcl_catch_code": "0"
+    }
+  ],
+  "pg_interpretation": "Retain raw command output. floorplanning-mode checks are not placed standard-cell connectivity, IR/EM, or LVS.",
+  "physical_top_pin_boxes": 64,
+  "physical_top_ports": 52,
+  "public_rule_signoff": false,
+  "run_id": "croc-full-io-floorplan-readback-20260905-001",
+  "source_run": "croc-full-io-floorplan-20260905-005",
+  "source_sha256": {
+    "runs/croc-full-io-floorplan-readback-20260905-001/bondpad_boxes.tsv": "31577b25aadbd87ae80c27229ead7a8a46a131603013d161863b56e80014158a",
+    "runs/croc-full-io-floorplan-readback-20260905-001/manifest.json": "5ad179e07dadc24200e6f9ec4f239a13dea96ede18aeb6aecd498469edc71c32",
+    "runs/croc-full-io-floorplan-readback-20260905-001/pg_checks.tsv": "6347b9bf0daf359f56fe1de3d6fc7801b3f35955c0307ad0bde724f742fd5d6d",
+    "runs/croc-full-io-floorplan-readback-20260905-001/top_pin_boxes.tsv": "d094acf6aa25fd4dff203dc5773faa4e5bd0b40cb437b63899240d915d29a252"
+  },
+  "top_pin_geometry_contract_passed": true,
+  "top_port_signatures_match_original_floorplan": true
+}
