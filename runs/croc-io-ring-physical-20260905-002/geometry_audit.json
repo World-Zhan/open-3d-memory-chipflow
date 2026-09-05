@@ -1,0 +1,3508 @@
+{
+  "bondpad_count": 64,
+  "classification": "io_ring_stream_geometry_not_signoff",
+  "direct_metal_xor_area_um2": {
+    "Metal2": 0.0,
+    "Metal3": 0.0,
+    "Metal4": 0.0,
+    "Metal5": 0.0,
+    "TopMetal1": 0.0,
+    "TopMetal2": 0.0
+  },
+  "electrical_network_extraction_performed": false,
+  "full_chip_modified": false,
+  "geometry_contract_passed": true,
+  "input_output_hashes_verified": true,
+  "instance_count": 192,
+  "instance_master_counts": {
+    "bondpad70_m2_ring": 64,
+    "sg13g2_Corner": 4,
+    "sg13g2_Filler2000": 60,
+    "sg13g2_IOPadIOVdd": 4,
+    "sg13g2_IOPadIOVss": 4,
+    "sg13g2_IOPadIn": 9,
+    "sg13g2_IOPadInOut30mA": 32,
+    "sg13g2_IOPadOut16mA": 7,
+    "sg13g2_IOPadVdd": 4,
+    "sg13g2_IOPadVss": 4
+  },
+  "lead_checks": [
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_clk_i",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "clk_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_clk_i",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "clk_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_clk_i",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "clk_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_clk_i",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "clk_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_clk_i",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "clk_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_clk_i",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "clk_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio0_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio0_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio0_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio0_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio0_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio0_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio0_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio0_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio0_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio0_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio0_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio0_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio10_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio10_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio10_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio10_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio10_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio10_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio10_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio10_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio10_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio10_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio10_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio10_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio11_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio11_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio11_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio11_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio11_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio11_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio11_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio11_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio11_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio11_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio11_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio11_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio12_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio12_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio12_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio12_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio12_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio12_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio12_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio12_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio12_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio12_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio12_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio12_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio13_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio13_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio13_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio13_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio13_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio13_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio13_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio13_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio13_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio13_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio13_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio13_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio14_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio14_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio14_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio14_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio14_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio14_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio14_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio14_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio14_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio14_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio14_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio14_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio15_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio15_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio15_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio15_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio15_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio15_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio15_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio15_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio15_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio15_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio15_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio15_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio16_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio16_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio16_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio16_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio16_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio16_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio16_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio16_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio16_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio16_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio16_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio16_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio17_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio17_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio17_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio17_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio17_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio17_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio17_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio17_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio17_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio17_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio17_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio17_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio18_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio18_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio18_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio18_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio18_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio18_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio18_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio18_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio18_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio18_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio18_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio18_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio19_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio19_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio19_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio19_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio19_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio19_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio19_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio19_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio19_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio19_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio19_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio19_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio1_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio1_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio1_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio1_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio1_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio1_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio1_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio1_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio1_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio1_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio1_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio1_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio20_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio20_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio20_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio20_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio20_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio20_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio20_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio20_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio20_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio20_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio20_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio20_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio21_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio21_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio21_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio21_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio21_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio21_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio21_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio21_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio21_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio21_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio21_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio21_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio22_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio22_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio22_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio22_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio22_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio22_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio22_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio22_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio22_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio22_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio22_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio22_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio23_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio23_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio23_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio23_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio23_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio23_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio23_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio23_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio23_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio23_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio23_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio23_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio24_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio24_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio24_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio24_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio24_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio24_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio24_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio24_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio24_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio24_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio24_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio24_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio25_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio25_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio25_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio25_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio25_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio25_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio25_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio25_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio25_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio25_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio25_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio25_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio26_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio26_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio26_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio26_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio26_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio26_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio26_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio26_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio26_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio26_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio26_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio26_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio27_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio27_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio27_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio27_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio27_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio27_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio27_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio27_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio27_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio27_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio27_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio27_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio28_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio28_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio28_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio28_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio28_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio28_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio28_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio28_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio28_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio28_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio28_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio28_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio29_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio29_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio29_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio29_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio29_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio29_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio29_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio29_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio29_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio29_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio29_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio29_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio2_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio2_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio2_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio2_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio2_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio2_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio2_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio2_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio2_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio2_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio2_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio2_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio30_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio30_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio30_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio30_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio30_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio30_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio30_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio30_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio30_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio30_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio30_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio30_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio31_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio31_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio31_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio31_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio31_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio31_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio31_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio31_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio31_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio31_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio31_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio31_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio3_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio3_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio3_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio3_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio3_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio3_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio3_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio3_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio3_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio3_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio3_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio3_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio4_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio4_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio4_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio4_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio4_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio4_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio4_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio4_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio4_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio4_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio4_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio4_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio5_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio5_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio5_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio5_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio5_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio5_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio5_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio5_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio5_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio5_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio5_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio5_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio6_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio6_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio6_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio6_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio6_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio6_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio6_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio6_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio6_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio6_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio6_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio6_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio7_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio7_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio7_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio7_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio7_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio7_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio7_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio7_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio7_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio7_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio7_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio7_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio8_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio8_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio8_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio8_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio8_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio8_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio8_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio8_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio8_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio8_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio8_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio8_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio9_io",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio9_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio9_io",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio9_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio9_io",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio9_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio9_io",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio9_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio9_io",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio9_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_gpio9_io",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "gpio9_io",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_tck_i",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_tck_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_tck_i",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_tck_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_tck_i",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_tck_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_tck_i",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_tck_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_tck_i",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_tck_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_tck_i",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_tck_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_tdi_i",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_tdi_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_tdi_i",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_tdi_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_tdi_i",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_tdi_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_tdi_i",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_tdi_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_tdi_i",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_tdi_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_tdi_i",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_tdi_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_tdo_o",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_tdo_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_tdo_o",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_tdo_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_tdo_o",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_tdo_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_tdo_o",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_tdo_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_tdo_o",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_tdo_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_tdo_o",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_tdo_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_tms_i",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_tms_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_tms_i",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_tms_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_tms_i",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_tms_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_tms_i",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_tms_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_tms_i",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_tms_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_tms_i",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_tms_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_trst_ni",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_trst_ni",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_trst_ni",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_trst_ni",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_trst_ni",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_trst_ni",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_trst_ni",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_trst_ni",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_trst_ni",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_trst_ni",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_jtag_trst_ni",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "jtag_trst_ni",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_ref_clk_i",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "ref_clk_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_ref_clk_i",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "ref_clk_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_ref_clk_i",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "ref_clk_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_ref_clk_i",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "ref_clk_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_ref_clk_i",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "ref_clk_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_ref_clk_i",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "ref_clk_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_rst_ni",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "rst_ni",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_rst_ni",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "rst_ni",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_rst_ni",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "rst_ni",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_rst_ni",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "rst_ni",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_rst_ni",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "rst_ni",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_rst_ni",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "rst_ni",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_status_o",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "status_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_status_o",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "status_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_status_o",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "status_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_status_o",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "status_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_status_o",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "status_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_status_o",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "status_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_testmode_i",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "testmode_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_testmode_i",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "testmode_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_testmode_i",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "testmode_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_testmode_i",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "testmode_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_testmode_i",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "testmode_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_testmode_i",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "testmode_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_uart_rx_i",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "uart_rx_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_uart_rx_i",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "uart_rx_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_uart_rx_i",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "uart_rx_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_uart_rx_i",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "uart_rx_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_uart_rx_i",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "uart_rx_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_uart_rx_i",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "uart_rx_i",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_uart_tx_o",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "uart_tx_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_uart_tx_o",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "uart_tx_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_uart_tx_o",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "uart_tx_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_uart_tx_o",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "uart_tx_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_uart_tx_o",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "uart_tx_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_uart_tx_o",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "uart_tx_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_unused0_o",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "unused0_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_unused0_o",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "unused0_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_unused0_o",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "unused0_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_unused0_o",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "unused0_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_unused0_o",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "unused0_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_unused0_o",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "unused0_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_unused1_o",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "unused1_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_unused1_o",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "unused1_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_unused1_o",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "unused1_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_unused1_o",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "unused1_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_unused1_o",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "unused1_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_unused1_o",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "unused1_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_unused2_o",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "unused2_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_unused2_o",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "unused2_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_unused2_o",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "unused2_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_unused2_o",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "unused2_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_unused2_o",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "unused2_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_unused2_o",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "unused2_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_unused3_o",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "unused3_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_unused3_o",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "unused3_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_unused3_o",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "unused3_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_unused3_o",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "unused3_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_unused3_o",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "unused3_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_unused3_o",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "unused3_o",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vdd0",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDD",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vdd0",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDD",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vdd0",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDD",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vdd0",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDD",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vdd0",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDD",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vdd0",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDD",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vdd1",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDD",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vdd1",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDD",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vdd1",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDD",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vdd1",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDD",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vdd1",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDD",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vdd1",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDD",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vdd2",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDD",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vdd2",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDD",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vdd2",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDD",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vdd2",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDD",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vdd2",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDD",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vdd2",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDD",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vdd3",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDD",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vdd3",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDD",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vdd3",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDD",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vdd3",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDD",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vdd3",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDD",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vdd3",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDD",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vddio0",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDDIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vddio0",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDDIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vddio0",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDDIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vddio0",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDDIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vddio0",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDDIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vddio0",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDDIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vddio1",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDDIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vddio1",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDDIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vddio1",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDDIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vddio1",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDDIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vddio1",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDDIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vddio1",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDDIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vddio2",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDDIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vddio2",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDDIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vddio2",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDDIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vddio2",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDDIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vddio2",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDDIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vddio2",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDDIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vddio3",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDDIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vddio3",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDDIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vddio3",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDDIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vddio3",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDDIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vddio3",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDDIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vddio3",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VDDIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vss0",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSS",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vss0",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSS",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vss0",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSS",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vss0",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSS",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vss0",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSS",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vss0",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSS",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vss1",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSS",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vss1",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSS",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vss1",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSS",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vss1",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSS",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vss1",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSS",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vss1",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSS",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vss2",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSS",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vss2",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSS",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vss2",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSS",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vss2",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSS",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vss2",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSS",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vss2",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSS",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vss3",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSS",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vss3",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSS",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vss3",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSS",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vss3",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSS",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vss3",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSS",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vss3",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSS",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vssio0",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSSIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vssio0",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSSIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vssio0",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSSIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vssio0",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSSIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vssio0",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSSIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vssio0",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSSIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vssio1",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSSIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vssio1",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSSIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vssio1",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSSIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vssio1",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSSIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vssio1",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSSIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vssio1",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSSIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vssio2",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSSIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vssio2",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSSIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vssio2",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSSIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vssio2",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSSIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vssio2",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSSIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vssio2",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSSIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vssio3",
+      "layer": "Metal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSSIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vssio3",
+      "layer": "Metal3",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSSIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vssio3",
+      "layer": "Metal4",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSSIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vssio3",
+      "layer": "Metal5",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSSIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vssio3",
+      "layer": "TopMetal1",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSSIO",
+      "pad_lead_io_pin_connected": true
+    },
+    {
+      "actual_io_covers_pin": true,
+      "io": "pad_vssio3",
+      "layer": "TopMetal2",
+      "lead_overlap_other_io_metal_area_um2": 0.0,
+      "lead_present_in_gds": true,
+      "net": "VSSIO",
+      "pad_lead_io_pin_connected": true
+    }
+  ],
+  "lead_count": 384,
+  "opening_count": 64,
+  "placements_equal": true,
+  "public_rule_signoff": false,
+  "seal_bbox_um": "(0,0;2058,2058)",
+  "seal_geometry_scope_passed": true,
+  "seal_transforms": {
+    "io_ring": "r0 42000,42000",
+    "sealring_top": "r0 0,0"
+  },
+  "sealed_bbox_area_mm2": 4.235364,
+  "source_sha256": {
+    "runs/croc-bondpad-io-ab-20260905-001/inputs/bondpad70_m2_ring.lef": "8d717917dc1e1c15efc677c0f61af0ab82d3f47c15b5c8f392de7e475ec5117f",
+    "runs/croc-io-ring-floorplan-20260905-001/instances.tsv": "0088fff13be04fb96aab09cbdd551af1f9158a96fbceaa619aad1aba6f8a0ed6",
+    "runs/croc-io-ring-physical-20260905-002/io_ring.gds": "d08c65f165d5ca9d5b0d1a7959a7ded99f053e41c153352dd2ba3cf0fa3ec351",
+    "runs/croc-io-ring-physical-20260905-002/io_ring_sealed.gds": "d9d7e598c3df2316e4c48b3f0d12328b39b929dbfeac257cecad193fc33b1b79",
+    "runs/croc-io-ring-physical-20260905-002/lead_boxes.tsv": "5a078be96f532180f0b2cc918e1e3e81f40539f633083c416d0ba15c185c15ad",
+    "runs/croc-io-ring-physical-20260905-002/manifest.json": "e25f7b7382189e5947b8b48b40edb58a99f57ea7d8a3eba9abd00015ea6afeb5",
+    "scripts/check_io_ring_geometry_lef.py": "1c0e2360d1eda76cd7d591815afbf1be2e26e81eec4a6b3a8d858159cb00a6d2",
+    "upstream/croc/technology/lef/sg13g2_io.lef": "8b3dc3960960c08e07a1cde3dd9cd0484f5b12df07c4628726fff551bb775c0c"
+  }
+}

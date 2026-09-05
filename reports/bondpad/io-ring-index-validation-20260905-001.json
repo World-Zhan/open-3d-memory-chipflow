@@ -1,0 +1,438 @@
+{
+  "cached_diff_check_passed": true,
+  "classification": "git_index_byte_identity_and_archive_checks_not_chip_signoff",
+  "exact_raw_json_line_endings_preserved": true,
+  "file_count_before_this_audit": 85,
+  "files": [
+    {
+      "bytes": 985,
+      "path": ".gitattributes",
+      "sha256": "45efe4d5f17c3ba838fe914493ad2ad160178a192feefc4446eb568e932b103a"
+    },
+    {
+      "bytes": 7793,
+      "path": ".gitignore",
+      "sha256": "136dce453e6b41bb1b144eae3975895e6ba345cddda7acce6a116e46557c3f8c"
+    },
+    {
+      "bytes": 10467,
+      "path": "CURRENT_STATUS.md",
+      "sha256": "210341978b12f80f5e5c1b23575bace32eb0581baf1064f91cb7ca9ff20ef5b9"
+    },
+    {
+      "bytes": 7437,
+      "path": "docs/10_io_ring_implementation_zh.md",
+      "sha256": "e73862426e423fbc954d105b6891a37781c6d17c41814798d2893b2dc1555f39"
+    },
+    {
+      "bytes": 8539,
+      "path": "reports/bondpad/io-ring-composite-drc-20260905-001.json",
+      "sha256": "12a806faccd86d2d9772310fa17ac6bbe202bb7bc523cf3b64b94341f44230cd"
+    },
+    {
+      "bytes": 9072,
+      "path": "reports/bondpad/io-ring-composite-drc-20260905-002.json",
+      "sha256": "7018b4ad76d99a53968b059be5fc7fc5596da892f21e88765f92c9aaf13f07ab"
+    },
+    {
+      "bytes": 1419,
+      "path": "reports/bondpad/io-ring-maximal-execution-failure-20260905-001.json",
+      "sha256": "d194c0270800730bb7230119d84df582cbbd862c48615c807d8bc2a71140586b"
+    },
+    {
+      "bytes": 7857,
+      "path": "reports/bondpad/io-ring-pg-20260905-001.json",
+      "sha256": "bdb3ef81bf595c933f8492553baefd14405ec75614c5253f2a04564914014c48"
+    },
+    {
+      "bytes": 75735,
+      "path": "reports/bondpad/io-ring-pg-and-lvs-archive-validation-20260905-001.json",
+      "sha256": "464423baa1d560103f89b3ceb002e3225bed38c3d02c0cddee92b7aaa36d8103"
+    },
+    {
+      "bytes": 6858,
+      "path": "reports/bondpad/io-ring-pg-vias-20260905-001.json",
+      "sha256": "c84ce9cc0385cdf131e84b3dbf58aa4e3d0b7e5566ccb91dc0c313a57ac641e7"
+    },
+    {
+      "bytes": 3348,
+      "path": "reports/bondpad/io-ring-pg-vias-validation-20260905-001.json",
+      "sha256": "abe312ca6fd12aa7141b58088ac53fe87e45412acecbf467585279e9e639c591"
+    },
+    {
+      "bytes": 16083,
+      "path": "reports/bondpad/io-ring-publication-files-20260905-001.json",
+      "sha256": "a3feed34dce01ae3a5fdee9d3d30604831fdda7afdea09bbe132c8e0dad4ebb2"
+    },
+    {
+      "bytes": 8918,
+      "path": "reports/bondpad/pg-lvs-publication-files-20260905-001.json",
+      "sha256": "ed0aed90f5c6455842241810442ee70e9e9f8bf8ddaf93d030bd04c49414228a"
+    },
+    {
+      "bytes": 13367,
+      "path": "reports/bondpad/probe_io_ring_pg.py",
+      "sha256": "ae93cf003e0b49d3828bab5313faf1a2e9383d4ff8c06ff8fee090886045a9e8"
+    },
+    {
+      "bytes": 17403,
+      "path": "reports/bondpad/probe_io_ring_pg_vias.py",
+      "sha256": "7bcb315d86346a52ad8908e38b60cf3c0ff3a51f5b489244613a6d3b4a62bbaa"
+    },
+    {
+      "bytes": 6989,
+      "path": "reports/current_status.json",
+      "sha256": "bfc3e4811b13a110eba164d3bdaa03a6f0385133fa55f06a3f58fbe973f28a71"
+    },
+    {
+      "bytes": 3158,
+      "path": "reports/lvs/analyze_lvs_purge_ab.py",
+      "sha256": "2963f0b96f70abd556763178de7203ecad8d07cd3db9bfa08360e595dd0459f5"
+    },
+    {
+      "bytes": 3241,
+      "path": "reports/lvs/probe_lvs_leaf_source_identity.py",
+      "sha256": "26ee37211c53c7961423db4736e504034744982536a6af892c7dd93e44c99e63"
+    },
+    {
+      "bytes": 7905,
+      "path": "reports/lvs/run_lvs_purge_ab.py",
+      "sha256": "23c1c8c609b8e2427a4a795344db2fbac3093287d8f4b3ca2292a4095b686b5b"
+    },
+    {
+      "bytes": 9798,
+      "path": "reports/lvs/strict-leaf-next-step-20260905-001.json",
+      "sha256": "8f6cb0fbfdbe7f0e809121cfb35d58a84c892458b6c019b351931fb9f1fc7e47"
+    },
+    {
+      "bytes": 713,
+      "path": "reports/lvs/upstream-io-cdl-objects-20260905-001.json",
+      "sha256": "dcf21e10c3cf9e80f93f76fae97ec77861f4bc067dc04607c4b0cb740aea47ed"
+    },
+    {
+      "bytes": 69276,
+      "path": "reports/lvs/upstream-review-20260905-001.json",
+      "sha256": "e274652b4f3e4e747f27544c75e989938caa7b0ca2fe6fef58a8185c9b8cad39"
+    },
+    {
+      "bytes": 14619,
+      "path": "reports/ppa/20260905_review_zh.md",
+      "sha256": "4161ffc04b5122d6098b357077b9cc4c1fc26c15035b695e580e90d70b1e2275"
+    },
+    {
+      "bytes": 4549,
+      "path": "reports/ppa/croc-ppa-io-ring-20260905-001.json",
+      "sha256": "af91affae47a36138f868cefd4de0902724b263af62c8a3bb165c4d5d189199d"
+    },
+    {
+      "bytes": 3394,
+      "path": "runs/croc-io-ring-drc-20260905-001/audit.json",
+      "sha256": "d70964a7adb660a20abe97ce945b9412afb166dcb78e352019b6af1a3e57c8d4"
+    },
+    {
+      "bytes": 460,
+      "path": "runs/croc-io-ring-drc-20260905-001/inputs/fixture_summary.json",
+      "sha256": "d63c5f88818f004fea91335fb4236166241bf8323907cfcf03bd5bc92fc2d0f9"
+    },
+    {
+      "bytes": 17733,
+      "path": "runs/croc-io-ring-drc-20260905-001/manifest.json",
+      "sha256": "12d94117caec1d6c3a6b38b8c593da2cfef146f24677649b05b2922272382942"
+    },
+    {
+      "bytes": 1343,
+      "path": "runs/croc-io-ring-floorplan-20260905-001/build_io_ring.tcl",
+      "sha256": "8e0a546a146de13e798749e7f19ee6fce1c30fb81ad1a775d62ba4d9aa5bb3a7"
+    },
+    {
+      "bytes": 13477,
+      "path": "runs/croc-io-ring-floorplan-20260905-001/instances.tsv",
+      "sha256": "0088fff13be04fb96aab09cbdd551af1f9158a96fbceaa619aad1aba6f8a0ed6"
+    },
+    {
+      "bytes": 37970,
+      "path": "runs/croc-io-ring-floorplan-20260905-001/io_ring.def",
+      "sha256": "27b6974e25c806a73287bf0de76edba10927a6206cc4eb64aa126857d0678076"
+    },
+    {
+      "bytes": 17435,
+      "path": "runs/croc-io-ring-floorplan-20260905-001/io_ring_input.def",
+      "sha256": "a30e416cb7cc12f6d41c9d9bb7921ff7f75aa22e413f46fb7b6dcc7fb49e649a"
+    },
+    {
+      "bytes": 22204,
+      "path": "runs/croc-io-ring-floorplan-20260905-001/manifest.json",
+      "sha256": "dd29f4a2bbd8511ffa0b8779e0a9ec4af4342a2406e9b25265a921f20cd85169"
+    },
+    {
+      "bytes": 10538,
+      "path": "runs/croc-io-ring-floorplan-20260905-001/padring_candidate.tcl",
+      "sha256": "bd9ebef404dc20f1afc3e5ecc3ff6de88487cde28d86eba9df8dc1f57e7b9f19"
+    },
+    {
+      "bytes": 21443,
+      "path": "runs/croc-io-ring-floorplan-20260905-001/terminals.tsv",
+      "sha256": "bc7347dc5a7fcf2315f3a46fa02ac76ed2b61cc00c7e6179a075b8bdf3dbb912"
+    },
+    {
+      "bytes": 13225,
+      "path": "runs/croc-io-ring-maximal-flat-20260905-001/manifest.json",
+      "sha256": "495c1c6666116d7b5ed4fb9742e718daa60eaa80674977681e4fdb56b841ba47"
+    },
+    {
+      "bytes": 1357,
+      "path": "runs/croc-io-ring-pg-20260905-001/manifest.json",
+      "sha256": "11596569000939a641fbc4b57aade14fa279d7f7b78da140e090e3c84a916acc"
+    },
+    {
+      "bytes": 13367,
+      "path": "runs/croc-io-ring-pg-20260905-001/probe_io_ring_pg.py",
+      "sha256": "ae93cf003e0b49d3828bab5313faf1a2e9383d4ff8c06ff8fee090886045a9e8"
+    },
+    {
+      "bytes": 2070,
+      "path": "runs/croc-io-ring-pg-20260905-001/run_io_ring_pg.py",
+      "sha256": "28cec991813dd4499b5f3bc14afd9297789171a72040b6c4861697aa484a7c57"
+    },
+    {
+      "bytes": 1581,
+      "path": "runs/croc-io-ring-pg-vias-20260905-001/manifest.json",
+      "sha256": "4531ef286a1a0466b2a558408edc0f22491a2d5ce94512354557bc12e8a84216"
+    },
+    {
+      "bytes": 13367,
+      "path": "runs/croc-io-ring-pg-vias-20260905-001/probe_io_ring_pg.py",
+      "sha256": "ae93cf003e0b49d3828bab5313faf1a2e9383d4ff8c06ff8fee090886045a9e8"
+    },
+    {
+      "bytes": 17403,
+      "path": "runs/croc-io-ring-pg-vias-20260905-001/probe_io_ring_pg_vias.py",
+      "sha256": "7bcb315d86346a52ad8908e38b60cf3c0ff3a51f5b489244613a6d3b4a62bbaa"
+    },
+    {
+      "bytes": 2189,
+      "path": "runs/croc-io-ring-pg-vias-20260905-001/run_io_ring_pg_vias.py",
+      "sha256": "844a7fb35e3495a2e2eaf02c53276eded5a8bb1f06c519a1e6a8731e8d6cafcf"
+    },
+    {
+      "bytes": 499,
+      "path": "runs/croc-io-ring-pg-vias-20260905-001/validation_cases.json",
+      "sha256": "79a163f0f4f18dc5dc9545f30f91ddd3168ee0a196a3a5ca113b4949c454ff2e"
+    },
+    {
+      "bytes": 19064,
+      "path": "runs/croc-io-ring-physical-20260905-001/manifest.json",
+      "sha256": "66a2d7727a8a0d0fd04a992a3fbbeddc09a1383dfdf5256c6c703c44dd215fd7"
+    },
+    {
+      "bytes": 99433,
+      "path": "runs/croc-io-ring-physical-20260905-002/geometry_audit.json",
+      "sha256": "e2a1d0fc290d57c9babd36125497fe493fe7609f94ecea443797bf9879d79242"
+    },
+    {
+      "bytes": 70493,
+      "path": "runs/croc-io-ring-physical-20260905-002/io_ring.def",
+      "sha256": "8505c09dd55a87dc03b1c0a9b576d05b12912a92e391ee2e11b0dbfa2f47bddd"
+    },
+    {
+      "bytes": 30458,
+      "path": "runs/croc-io-ring-physical-20260905-002/lead_boxes.tsv",
+      "sha256": "5a078be96f532180f0b2cc918e1e3e81f40539f633083c416d0ba15c185c15ad"
+    },
+    {
+      "bytes": 25170,
+      "path": "runs/croc-io-ring-physical-20260905-002/manifest.json",
+      "sha256": "e25f7b7382189e5947b8b48b40edb58a99f57ea7d8a3eba9abd00015ea6afeb5"
+    },
+    {
+      "bytes": 2273,
+      "path": "runs/croc-io-ring-physical-20260905-002/plan_audit.json",
+      "sha256": "3eba4871e3afef3d23789114ae3187ea6563e4bb9c5031d2f29c88fd8bc44042"
+    },
+    {
+      "bytes": 15740,
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/analysis/summary.json",
+      "sha256": "f3962b2c57d8a1534974cb9bfc5b75f6b41be630eed580c35e0d238c84c36811"
+    },
+    {
+      "bytes": 3158,
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/analyze_lvs_purge_ab.py",
+      "sha256": "2963f0b96f70abd556763178de7203ecad8d07cd3db9bfa08360e595dd0459f5"
+    },
+    {
+      "bytes": 5612,
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/control/sg13g2_DCNDiode/cross_reference.json",
+      "sha256": "9132036eff11db197d8cbb2b84ee95b4cdd76ec64740f5410d7bd8593ed6a3fa"
+    },
+    {
+      "bytes": 281,
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/control/sg13g2_DCNDiode/sg13g2_DCNDiode_extracted.cir",
+      "sha256": "16d7dcb09bf2f37e5d2347c1c2a4985b836c7a8b20ed29b4d4fd7132b4cfa806"
+    },
+    {
+      "bytes": 5904,
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/control/sg13g2_DCPDiode/cross_reference.json",
+      "sha256": "12517dbd546d1e172e0afbe4d6bba761a68079b9ee795572b4816bfae110a507"
+    },
+    {
+      "bytes": 290,
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/control/sg13g2_DCPDiode/sg13g2_DCPDiode_extracted.cir",
+      "sha256": "83a800f6b56003c908ab7f629104fc00863414f26b9ea2b1372907b7f19b9920"
+    },
+    {
+      "bytes": 147,
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/versions.txt",
+      "sha256": "a534833d68283a94cc95d7233f2cb1e6201d6b0e21983870153b56c3f4daa930"
+    },
+    {
+      "bytes": 147,
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/versions.txt",
+      "sha256": "a534833d68283a94cc95d7233f2cb1e6201d6b0e21983870153b56c3f4daa930"
+    },
+    {
+      "bytes": 349,
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/inputs/sg13g2_DCNDiode/sg13g2_DCNDiode.cdl",
+      "sha256": "e6beb7b9b6eb3ac828ae597aebb68e8773ee5c0408ab3f0ca1867f652d930e43"
+    },
+    {
+      "bytes": 352,
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/inputs/sg13g2_DCPDiode/sg13g2_DCPDiode.cdl",
+      "sha256": "4179ad18e54dd2b5a94bd019d2f38665d66ee690a0c0d7d7945e9a65d7026708"
+    },
+    {
+      "bytes": 39827,
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/leaf_source_identity.json",
+      "sha256": "22bfc0510a10c289d0c465ad4ff6007059fe02d2b11119825d6d2bfdf7a02973"
+    },
+    {
+      "bytes": 52858,
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/manifest.json",
+      "sha256": "a0d46d08b0dce5d8e0e4a4d769561b02330f33df1ee01122492c8373073c4da2"
+    },
+    {
+      "bytes": 7825,
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/official_purge_fix_blob.json",
+      "sha256": "5dc33fd47ae00f91d85ec715a3a51689c4cdc352602b1e09da2e87b00b69adb6"
+    },
+    {
+      "bytes": 686,
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/official_purge_fix_commit.json",
+      "sha256": "46a3406e162a119f4f0b8be022f11a22622e9467460492a5d5a8fed6ea214287"
+    },
+    {
+      "bytes": 3241,
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/probe_lvs_leaf_source_identity.py",
+      "sha256": "26ee37211c53c7961423db4736e504034744982536a6af892c7dd93e44c99e63"
+    },
+    {
+      "bytes": 7905,
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/run_lvs_purge_ab.py",
+      "sha256": "23c1c8c609b8e2427a4a795344db2fbac3093287d8f4b3ca2292a4095b686b5b"
+    },
+    {
+      "bytes": 5612,
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/upstream_purge_fix/sg13g2_DCNDiode/cross_reference.json",
+      "sha256": "9132036eff11db197d8cbb2b84ee95b4cdd76ec64740f5410d7bd8593ed6a3fa"
+    },
+    {
+      "bytes": 281,
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/upstream_purge_fix/sg13g2_DCNDiode/sg13g2_DCNDiode_extracted.cir",
+      "sha256": "16d7dcb09bf2f37e5d2347c1c2a4985b836c7a8b20ed29b4d4fd7132b4cfa806"
+    },
+    {
+      "bytes": 5904,
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/upstream_purge_fix/sg13g2_DCPDiode/cross_reference.json",
+      "sha256": "12517dbd546d1e172e0afbe4d6bba761a68079b9ee795572b4816bfae110a507"
+    },
+    {
+      "bytes": 290,
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/upstream_purge_fix/sg13g2_DCPDiode/sg13g2_DCPDiode_extracted.cir",
+      "sha256": "83a800f6b56003c908ab7f629104fc00863414f26b9ea2b1372907b7f19b9920"
+    },
+    {
+      "bytes": 377,
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/upstream_purge_removal.patch",
+      "sha256": "14f7e23cfdbbfeab85734a14bb99385a14452b5ba47e9493bee149da150c0c52"
+    },
+    {
+      "bytes": 2723,
+      "path": "scripts/add_io_ring_connected_leads.tcl",
+      "sha256": "909c8f88836ab2a528381af1100e61bbb58e46abd3f1448d75474198621475af"
+    },
+    {
+      "bytes": 2014,
+      "path": "scripts/add_io_ring_leads.tcl",
+      "sha256": "7e52188c1408863aa2e0ddf6d708d1d74c45a64e257b15d1e8d8179790e0be76"
+    },
+    {
+      "bytes": 8149,
+      "path": "scripts/audit_io_ring_composite.py",
+      "sha256": "19efaded412836ea93faedc62ceda0143eb32bec78564ad1ec9c2a0b9d5c2adb"
+    },
+    {
+      "bytes": 12039,
+      "path": "scripts/audit_io_ring_composite_v2.py",
+      "sha256": "a8a5ae900f16f374df4f8416040b3f2537fb42fe61ce800624e384db0e227a3d"
+    },
+    {
+      "bytes": 6177,
+      "path": "scripts/audit_io_ring_plan.py",
+      "sha256": "10c6e7caac6f6e213f676d26cafd3d4eab234d6e828954dc98b9ade431facb93"
+    },
+    {
+      "bytes": 5978,
+      "path": "scripts/check_io_ring_geometry.py",
+      "sha256": "1c56220e3efc351cfc7d59575106ba3a85a5814c1bfbbaf899509f4f97f68ce4"
+    },
+    {
+      "bytes": 6342,
+      "path": "scripts/check_io_ring_geometry_lef.py",
+      "sha256": "1c0e2360d1eda76cd7d591815afbf1be2e26e81eec4a6b3a8d858159cb00a6d2"
+    },
+    {
+      "bytes": 4299,
+      "path": "scripts/replay_io_ring_maximal.py",
+      "sha256": "06a585504869811fdb8f665fb6b26eeff8142916a35b323b5b19d0231fafa550"
+    },
+    {
+      "bytes": 5535,
+      "path": "scripts/run_io_ring_drc.py",
+      "sha256": "29c7e1ed33c596615ee96be61d25217aa7687d0df167c784ec910072e7708bf1"
+    },
+    {
+      "bytes": 6895,
+      "path": "scripts/run_io_ring_floorplan.py",
+      "sha256": "978cf4f2db202a26a0df7d6e5e8f0cf35a2a82658b79653ac6e5dae6288a8998"
+    },
+    {
+      "bytes": 5699,
+      "path": "scripts/run_io_ring_physical.py",
+      "sha256": "a2c6973cfb71c70ff1f8e1ce63d31a2b564d87ae526ea8a52f1a5c7e043649fc"
+    },
+    {
+      "bytes": 5729,
+      "path": "scripts/run_io_ring_physical_connected.py",
+      "sha256": "55c59b6ca3723406a8e60a1809e911c47bbadb31c6ad12c61be14e97b58f40c6"
+    },
+    {
+      "bytes": 2269,
+      "path": "tests/test_io_ring_composite.py",
+      "sha256": "f62603ba8dcb0cb60bc9d567ff507a43d94fc2a158f27b39c3f1f6ad67464297"
+    },
+    {
+      "bytes": 4554,
+      "path": "tests/test_io_ring_composite_v2.py",
+      "sha256": "390410209a52ad94412dc5dbdcc6e79cb0757624612d1b6612b458e963064421"
+    },
+    {
+      "bytes": 1895,
+      "path": "tests/test_io_ring_plan.py",
+      "sha256": "fe4d489c1c5937807fc0dbbe70a5aa97848b50a2241db8965a257f6aadf8f7b8"
+    }
+  ],
+  "format_attributes": "Four exact raw JSON paths retain CRLF with cr-at-eol; the exact unified patch follows the existing blank-context convention. Actual source whitespace is independently checked.",
+  "index_bytes_equal_worktree": true,
+  "patch_source_whitespace_checked": "git apply --check --whitespace=error against pinned source",
+  "public_rule_signoff": false,
+  "raw_patch_unchanged_and_apply_check_passed": true
+}

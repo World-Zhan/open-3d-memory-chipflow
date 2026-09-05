@@ -1,0 +1,36 @@
+{
+  "archived_bytes_verified_after_checkout": 85,
+  "classification": "index_export_reproducibility_check_not_chip_signoff",
+  "command": [
+    "make",
+    "test",
+    "validate-contracts"
+  ],
+  "exported_index_and_pinned_test_dependencies_only": true,
+  "index_tree_before_this_report": "4d71f054d87938cd596c2e4dc5a4e007913fccc7",
+  "json_contracts_passed": 2,
+  "large_ignored_eda_files_not_copied": true,
+  "pinned_submodule": {
+    "commit": "c85b79352eefc31a588da3ef873e4fd68a3df3f2",
+    "path": "upstream/taiwei-pin-3d",
+    "source_sha256": {
+      "Makefile": "b1306b0ec36b5d470984d646c9d675c7f6c0259bd5fe3de2c2cc3dc69df11465",
+      "platforms/asap7_3D/config.mk": "2e5778b5deafbc18568f5a4a95f362a3399809b5e55f6ef44a72ace344b57ee8",
+      "scripts_openroad/floorplan_3d.tcl": "aecb8b1cb35d08daba7c101589e5b2be61635666f34f3a52d91bbcd3ff120b58",
+      "scripts_openroad/tier_partition.tcl": "252e3ccb15fc616947b896476829d176bcc0c5af6d7e47ddc62db9da8856d4ff",
+      "scripts_openroad/tier_partition_helpers.tcl": "9b5166e6e4b2e2e4f783f9941c8525948fcb467ce673cfe040f8f56aa4572f8a"
+    }
+  },
+  "prior_index_only_trial": {
+    "log_retained": false,
+    "note": "Temporary export no longer present when archiving; the missing-dependency failure was observed in the tool output.",
+    "outcome": "157 tests ran; 1 error and 1 failure because gitlinks do not export the TaiWei submodule tree. Five exact pinned tracked test dependencies were then supplied.",
+    "path": "/tmp/chipflow-io-index-validation-x8emffpv"
+  },
+  "public_rule_signoff": false,
+  "returncode": 0,
+  "temporary_export_path": "/tmp/chipflow-io-index-validation-soevlis7",
+  "unit_tests_passed": 157,
+  "validation_log_path": "runs/croc-io-ring-checkout-validation-20260905-001/validation.log",
+  "validation_log_sha256": "e7afb0ba2ee3c44fa7485528d9f1aefc0f07289e16860dfb28ce66c611ee0667"
+}

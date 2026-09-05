@@ -1,0 +1,15 @@
+{
+  "arms": [
+    {
+      "gds_sha256": "d9d7e598c3df2316e4c48b3f0d12328b39b929dbfeac257cecad193fc33b1b79",
+      "name": "io_ring_sealed",
+      "topcell": "io_ring_sealed"
+    }
+  ],
+  "classification": "complete_io_only_ring_not_full_chip",
+  "outputs_sha256": {
+    "io_ring_sealed.gds": "d9d7e598c3df2316e4c48b3f0d12328b39b929dbfeac257cecad193fc33b1b79"
+  },
+  "physical_source_run": "croc-io-ring-physical-20260905-002",
+  "whole_chip_modified": false
+}

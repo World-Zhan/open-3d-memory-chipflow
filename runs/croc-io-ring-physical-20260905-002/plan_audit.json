@@ -1,0 +1,63 @@
+{
+  "classification": "io_only_ring_placement_and_explicit_net_audit_not_signoff",
+  "connectivity": {
+    "explicit_bondpad_connections": 64,
+    "explicit_candidate_pg_terminals": 512,
+    "original_signal_terminals_preserved": 160
+  },
+  "core_logic_included": false,
+  "edges": {
+    "east": {
+      "count": 16,
+      "first_dbu": 272000,
+      "last_dbu": 1622000,
+      "pitch_um": 90
+    },
+    "north": {
+      "count": 16,
+      "first_dbu": 272000,
+      "last_dbu": 1622000,
+      "pitch_um": 90
+    },
+    "south": {
+      "count": 16,
+      "first_dbu": 272000,
+      "last_dbu": 1622000,
+      "pitch_um": 90
+    },
+    "west": {
+      "count": 16,
+      "first_dbu": 272000,
+      "last_dbu": 1622000,
+      "pitch_um": 90
+    }
+  },
+  "input_output_hashes_verified": true,
+  "physical_pg_connectivity_proven_by_this_audit": false,
+  "placement_and_explicit_net_contract_passed": true,
+  "ppa": {
+    "baseline_io_instance_area_total_um2": 1462720.0,
+    "baseline_sealed_bbox_area_mm2": 4.0,
+    "candidate_electrical_bbox_area_mm2": 3.896676,
+    "candidate_io_instance_area_total_um2": 1472800.0,
+    "candidate_io_instance_area_um2": {
+      "cover": 313600.0,
+      "pad": 1159200.0
+    },
+    "candidate_sealed_bbox_area_mm2": 4.235364,
+    "io_instance_area_delta_um2": 10080.0,
+    "new_whole_chip_active_area_mm2": null,
+    "new_whole_chip_fmax_mhz": null,
+    "new_whole_chip_power_mw": null,
+    "sealed_bbox_delta_percent": 5.884099999999992
+  },
+  "public_rule_signoff": false,
+  "source_sha256": {
+    "reports/ppa/croc-ppa-rcx-20260905-001.json": "c64f128bb03bdfcc7cc8b9088c06e76a0538ad2132b86ce1a81f0910fcd1099c",
+    "runs/croc-io-ring-floorplan-20260905-001/instances.tsv": "0088fff13be04fb96aab09cbdd551af1f9158a96fbceaa619aad1aba6f8a0ed6",
+    "runs/croc-io-ring-floorplan-20260905-001/manifest.json": "dd29f4a2bbd8511ffa0b8779e0a9ec4af4342a2406e9b25265a921f20cd85169",
+    "runs/croc-io-ring-physical-20260905-002/io_ring.def": "8505c09dd55a87dc03b1c0a9b576d05b12912a92e391ee2e11b0dbfa2f47bddd",
+    "runs/croc-io-ring-physical-20260905-002/manifest.json": "e25f7b7382189e5947b8b48b40edb58a99f57ea7d8a3eba9abd00015ea6afeb5",
+    "scripts/audit_io_ring_plan.py": "10c6e7caac6f6e213f676d26cafd3d4eab234d6e828954dc98b9ade431facb93"
+  }
+}

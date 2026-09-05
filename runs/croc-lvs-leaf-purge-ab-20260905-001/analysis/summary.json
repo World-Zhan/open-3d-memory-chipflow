@@ -1,0 +1,348 @@
+{
+  "both_fixed_leaves_pass": false,
+  "cases": [
+    {
+      "arm": "control",
+      "artifact_sha256": {
+        "cross_reference.json": "9132036eff11db197d8cbb2b84ee95b4cdd76ec64740f5410d7bd8593ed6a3fa",
+        "sg13g2_DCNDiode.log": "14b3cc40c296b6195a0b17033ca6fb4737747aebc454d3797ee578f33dad73d0",
+        "sg13g2_DCNDiode.lvsdb": "1cc55b825568d776b42e49b0f1c78e2ed715a55e9bfe7c7ff2d0d1738d05f717",
+        "sg13g2_DCNDiode_extracted.cir": "16d7dcb09bf2f37e5d2347c1c2a4985b836c7a8b20ed29b4d4fd7132b4cfa806"
+      },
+      "cell": "sg13g2_DCNDiode",
+      "cross_reference_summary": {
+        "circuit_pair_count": 1,
+        "circuit_status_counts": {
+          "NoMatch": 1
+        },
+        "classification_semantics": {
+          "layout_only": "layout object present, schematic object absent",
+          "match": "KLayout marked the object pair Match",
+          "paired_mismatch": "both objects present but KLayout did not mark the pair Match",
+          "schematic_only": "schematic object present, layout object absent"
+        },
+        "comparison_blocked_at_leaf_circuit_pairing": true,
+        "no_match_layout_circuits": [
+          "sg13g2_DCNDiode"
+        ],
+        "object_pair_classification_counts": {
+          "device": {
+            "layout_only": 3,
+            "schematic_only": 1
+          },
+          "net": {
+            "layout_only": 4,
+            "schematic_only": 2
+          },
+          "pin": {
+            "match": 4
+          },
+          "subcircuit": {}
+        },
+        "object_pair_status_counts": {
+          "device": {
+            "Mismatch": 4
+          },
+          "net": {
+            "Mismatch": 6
+          },
+          "pin": {
+            "Match": 4
+          },
+          "subcircuit": {}
+        },
+        "parameter_comparison": "partly_blocked_by_unpaired_devices",
+        "skipped_layout_circuits": []
+      },
+      "devices": [
+        "D$1 \\$2 cathode$1 dantenna A=35.0028p P=58.08u m=1",
+        "D$2 \\$2 cathode dantenna A=35.0028p P=58.08u m=1",
+        "R$3 anode \\$2 ptap1 A=141.2964p P=221.76u"
+      ],
+      "extracted_ports": [
+        "anode",
+        "cathode",
+        "cathode$1"
+      ],
+      "lvs_passed": false,
+      "option_evidence_lines": [
+        "2026-09-05 11:49:43 +0200: Memory Usage (440824K) : Selected IGNORE_TOP_PORTS_MISMATCH option: ",
+        "2026-09-05 11:49:43 +0200: Memory Usage (440824K) : Selected IMPLICIT_NETS option: (none)",
+        "2026-09-05 11:49:43 +0200: Memory Usage (440824K) : Selected SIMPLIFY option: true",
+        "2026-09-05 11:49:43 +0200: Memory Usage (440824K) : Selected DISABLE_TAP_EXTRACTION option: false",
+        "2026-09-05 11:49:44 +0200: Memory Usage (472904K) : Starting SG13G2 LVS RF MOS Model Mapping",
+        "2026-09-05 11:49:44 +0200: Memory Usage (472904K) : [layout_netlist] Apply RF MOS model mapping and rfmode parameter.",
+        "2026-09-05 11:49:44 +0200: Memory Usage (472904K) : [layout_netlist] purge: SKIPPED",
+        "2026-09-05 11:49:44 +0200: Memory Usage (472904K) : [layout_netlist] purge_nets: SKIPPED",
+        "2026-09-05 11:49:44 +0200: Memory Usage (472904K) : [schematic_netlist] purge: SKIPPED",
+        "2026-09-05 11:49:44 +0200: Memory Usage (472904K) : [schematic_netlist] purge_nets: SKIPPED",
+        "2026-09-05 11:49:44 +0200: Memory Usage (472904K) : Starting SG13G2 LVS Comparison in strict port mode.",
+        "2026-09-05 11:49:44 +0200: Memory Usage (472904K) : flag_missing_ports enabled: missing/mislabeled top-level ports are treated as errors.",
+        "2026-09-05 11:49:44 +0200: Memory Usage (473032K) : ERROR : Netlists don't match"
+      ],
+      "runner_returncode": 0,
+      "status": "FAIL",
+      "strict_mode_observed": true
+    },
+    {
+      "arm": "control",
+      "artifact_sha256": {
+        "cross_reference.json": "12517dbd546d1e172e0afbe4d6bba761a68079b9ee795572b4816bfae110a507",
+        "sg13g2_DCPDiode.log": "e79d864c07183678e606730de4dae35e5448ffdc8ecd327f6751ef1174fe5b2f",
+        "sg13g2_DCPDiode.lvsdb": "9313d055a95b65c25e58223e2e014b519d5cc14e34057c7b7a5212896afc53b6",
+        "sg13g2_DCPDiode_extracted.cir": "83a800f6b56003c908ab7f629104fc00863414f26b9ea2b1372907b7f19b9920"
+      },
+      "cell": "sg13g2_DCPDiode",
+      "cross_reference_summary": {
+        "circuit_pair_count": 1,
+        "circuit_status_counts": {
+          "NoMatch": 1
+        },
+        "classification_semantics": {
+          "layout_only": "layout object present, schematic object absent",
+          "match": "KLayout marked the object pair Match",
+          "paired_mismatch": "both objects present but KLayout did not mark the pair Match",
+          "schematic_only": "schematic object present, layout object absent"
+        },
+        "comparison_blocked_at_leaf_circuit_pairing": true,
+        "no_match_layout_circuits": [
+          "sg13g2_DCPDiode"
+        ],
+        "object_pair_classification_counts": {
+          "device": {
+            "layout_only": 3,
+            "schematic_only": 1
+          },
+          "net": {
+            "layout_only": 5,
+            "schematic_only": 2
+          },
+          "pin": {
+            "match": 6
+          },
+          "subcircuit": {}
+        },
+        "object_pair_status_counts": {
+          "device": {
+            "Mismatch": 4
+          },
+          "net": {
+            "Mismatch": 7
+          },
+          "pin": {
+            "Match": 6
+          },
+          "subcircuit": {}
+        },
+        "parameter_comparison": "partly_blocked_by_unpaired_devices",
+        "skipped_layout_circuits": []
+      },
+      "devices": [
+        "D$1 anode$1 cathode dpantenna A=35.0028p P=58.08u m=1",
+        "D$2 anode cathode dpantenna A=35.0028p P=58.08u m=1",
+        "R$3 guard \\$1 ptap1 A=33.5104p P=197.12u"
+      ],
+      "extracted_ports": [
+        "guard",
+        "cathode",
+        "anode",
+        "anode$1"
+      ],
+      "lvs_passed": false,
+      "option_evidence_lines": [
+        "2026-09-05 11:49:46 +0200: Memory Usage (440848K) : Selected IGNORE_TOP_PORTS_MISMATCH option: ",
+        "2026-09-05 11:49:46 +0200: Memory Usage (440848K) : Selected IMPLICIT_NETS option: (none)",
+        "2026-09-05 11:49:46 +0200: Memory Usage (440848K) : Selected SIMPLIFY option: true",
+        "2026-09-05 11:49:46 +0200: Memory Usage (440848K) : Selected DISABLE_TAP_EXTRACTION option: false",
+        "2026-09-05 11:49:47 +0200: Memory Usage (472668K) : Starting SG13G2 LVS RF MOS Model Mapping",
+        "2026-09-05 11:49:47 +0200: Memory Usage (472668K) : [layout_netlist] Apply RF MOS model mapping and rfmode parameter.",
+        "2026-09-05 11:49:47 +0200: Memory Usage (472844K) : [layout_netlist] purge: SKIPPED",
+        "2026-09-05 11:49:47 +0200: Memory Usage (472844K) : [layout_netlist] purge_nets: SKIPPED",
+        "2026-09-05 11:49:47 +0200: Memory Usage (472844K) : [schematic_netlist] purge: SKIPPED",
+        "2026-09-05 11:49:47 +0200: Memory Usage (472844K) : [schematic_netlist] purge_nets: SKIPPED",
+        "2026-09-05 11:49:47 +0200: Memory Usage (472844K) : Starting SG13G2 LVS Comparison in strict port mode.",
+        "2026-09-05 11:49:47 +0200: Memory Usage (472844K) : flag_missing_ports enabled: missing/mislabeled top-level ports are treated as errors.",
+        "2026-09-05 11:49:47 +0200: Memory Usage (472972K) : ERROR : Netlists don't match"
+      ],
+      "runner_returncode": 0,
+      "status": "FAIL",
+      "strict_mode_observed": true
+    },
+    {
+      "arm": "upstream_purge_fix",
+      "artifact_sha256": {
+        "cross_reference.json": "9132036eff11db197d8cbb2b84ee95b4cdd76ec64740f5410d7bd8593ed6a3fa",
+        "sg13g2_DCNDiode.log": "93dae106a00f0510ee39cc2f99744606a7907fbec7978047a1fc1b2474b14938",
+        "sg13g2_DCNDiode.lvsdb": "f379c581dcb1f94e3f61a16561809003cda55d90c6162d84b091b90047c60f57",
+        "sg13g2_DCNDiode_extracted.cir": "16d7dcb09bf2f37e5d2347c1c2a4985b836c7a8b20ed29b4d4fd7132b4cfa806"
+      },
+      "cell": "sg13g2_DCNDiode",
+      "cross_reference_summary": {
+        "circuit_pair_count": 1,
+        "circuit_status_counts": {
+          "NoMatch": 1
+        },
+        "classification_semantics": {
+          "layout_only": "layout object present, schematic object absent",
+          "match": "KLayout marked the object pair Match",
+          "paired_mismatch": "both objects present but KLayout did not mark the pair Match",
+          "schematic_only": "schematic object present, layout object absent"
+        },
+        "comparison_blocked_at_leaf_circuit_pairing": true,
+        "no_match_layout_circuits": [
+          "sg13g2_DCNDiode"
+        ],
+        "object_pair_classification_counts": {
+          "device": {
+            "layout_only": 3,
+            "schematic_only": 1
+          },
+          "net": {
+            "layout_only": 4,
+            "schematic_only": 2
+          },
+          "pin": {
+            "match": 4
+          },
+          "subcircuit": {}
+        },
+        "object_pair_status_counts": {
+          "device": {
+            "Mismatch": 4
+          },
+          "net": {
+            "Mismatch": 6
+          },
+          "pin": {
+            "Match": 4
+          },
+          "subcircuit": {}
+        },
+        "parameter_comparison": "partly_blocked_by_unpaired_devices",
+        "skipped_layout_circuits": []
+      },
+      "devices": [
+        "D$1 \\$2 cathode$1 dantenna A=35.0028p P=58.08u m=1",
+        "D$2 \\$2 cathode dantenna A=35.0028p P=58.08u m=1",
+        "R$3 anode \\$2 ptap1 A=141.2964p P=221.76u"
+      ],
+      "extracted_ports": [
+        "anode",
+        "cathode",
+        "cathode$1"
+      ],
+      "lvs_passed": false,
+      "option_evidence_lines": [
+        "2026-09-05 11:49:49 +0200: Memory Usage (441352K) : SG13G2 Klayout LVS runset output at: /output/upstream_purge_fix/sg13g2_DCNDiode/sg13g2_DCNDiode.lvsdb",
+        "2026-09-05 11:49:49 +0200: Memory Usage (441352K) : Selected IGNORE_TOP_PORTS_MISMATCH option: ",
+        "2026-09-05 11:49:49 +0200: Memory Usage (441352K) : Selected IMPLICIT_NETS option: (none)",
+        "2026-09-05 11:49:49 +0200: Memory Usage (441352K) : Selected SIMPLIFY option: true",
+        "2026-09-05 11:49:49 +0200: Memory Usage (441352K) : Selected DISABLE_TAP_EXTRACTION option: false",
+        "2026-09-05 11:49:49 +0200: Memory Usage (441608K) : LVS extracted netlist at: /output/upstream_purge_fix/sg13g2_DCNDiode/sg13g2_DCNDiode_extracted.cir",
+        "2026-09-05 11:49:50 +0200: Memory Usage (472360K) : Starting SG13G2 LVS RF MOS Model Mapping",
+        "2026-09-05 11:49:50 +0200: Memory Usage (472488K) : [layout_netlist] Apply RF MOS model mapping and rfmode parameter.",
+        "2026-09-05 11:49:50 +0200: Memory Usage (472488K) : [layout_netlist] purge: SKIPPED",
+        "2026-09-05 11:49:50 +0200: Memory Usage (472488K) : [layout_netlist] purge_nets: SKIPPED",
+        "2026-09-05 11:49:50 +0200: Memory Usage (472488K) : [schematic_netlist] purge: SKIPPED",
+        "2026-09-05 11:49:50 +0200: Memory Usage (472488K) : [schematic_netlist] purge_nets: SKIPPED",
+        "2026-09-05 11:49:50 +0200: Memory Usage (472488K) : Starting SG13G2 LVS Comparison in strict port mode.",
+        "2026-09-05 11:49:50 +0200: Memory Usage (472488K) : flag_missing_ports enabled: missing/mislabeled top-level ports are treated as errors.",
+        "2026-09-05 11:49:50 +0200: Memory Usage (472616K) : ERROR : Netlists don't match"
+      ],
+      "runner_returncode": 0,
+      "status": "FAIL",
+      "strict_mode_observed": true
+    },
+    {
+      "arm": "upstream_purge_fix",
+      "artifact_sha256": {
+        "cross_reference.json": "12517dbd546d1e172e0afbe4d6bba761a68079b9ee795572b4816bfae110a507",
+        "sg13g2_DCPDiode.log": "de7a2e2c9b500e9af0e2cafc9e67ba04b89494e7a4e0ca7ec1dab4f5a9e4c4f6",
+        "sg13g2_DCPDiode.lvsdb": "93934b9ad5e7f83d74ec2440f2ae71fdfdc654c74a5fe5577f1b054c2c39b72c",
+        "sg13g2_DCPDiode_extracted.cir": "83a800f6b56003c908ab7f629104fc00863414f26b9ea2b1372907b7f19b9920"
+      },
+      "cell": "sg13g2_DCPDiode",
+      "cross_reference_summary": {
+        "circuit_pair_count": 1,
+        "circuit_status_counts": {
+          "NoMatch": 1
+        },
+        "classification_semantics": {
+          "layout_only": "layout object present, schematic object absent",
+          "match": "KLayout marked the object pair Match",
+          "paired_mismatch": "both objects present but KLayout did not mark the pair Match",
+          "schematic_only": "schematic object present, layout object absent"
+        },
+        "comparison_blocked_at_leaf_circuit_pairing": true,
+        "no_match_layout_circuits": [
+          "sg13g2_DCPDiode"
+        ],
+        "object_pair_classification_counts": {
+          "device": {
+            "layout_only": 3,
+            "schematic_only": 1
+          },
+          "net": {
+            "layout_only": 5,
+            "schematic_only": 2
+          },
+          "pin": {
+            "match": 6
+          },
+          "subcircuit": {}
+        },
+        "object_pair_status_counts": {
+          "device": {
+            "Mismatch": 4
+          },
+          "net": {
+            "Mismatch": 7
+          },
+          "pin": {
+            "Match": 6
+          },
+          "subcircuit": {}
+        },
+        "parameter_comparison": "partly_blocked_by_unpaired_devices",
+        "skipped_layout_circuits": []
+      },
+      "devices": [
+        "D$1 anode$1 cathode dpantenna A=35.0028p P=58.08u m=1",
+        "D$2 anode cathode dpantenna A=35.0028p P=58.08u m=1",
+        "R$3 guard \\$1 ptap1 A=33.5104p P=197.12u"
+      ],
+      "extracted_ports": [
+        "guard",
+        "cathode",
+        "anode",
+        "anode$1"
+      ],
+      "lvs_passed": false,
+      "option_evidence_lines": [
+        "2026-09-05 11:49:52 +0200: Memory Usage (440856K) : SG13G2 Klayout LVS runset output at: /output/upstream_purge_fix/sg13g2_DCPDiode/sg13g2_DCPDiode.lvsdb",
+        "2026-09-05 11:49:52 +0200: Memory Usage (440856K) : Selected IGNORE_TOP_PORTS_MISMATCH option: ",
+        "2026-09-05 11:49:52 +0200: Memory Usage (440856K) : Selected IMPLICIT_NETS option: (none)",
+        "2026-09-05 11:49:52 +0200: Memory Usage (440856K) : Selected SIMPLIFY option: true",
+        "2026-09-05 11:49:52 +0200: Memory Usage (440856K) : Selected DISABLE_TAP_EXTRACTION option: false",
+        "2026-09-05 11:49:52 +0200: Memory Usage (440984K) : LVS extracted netlist at: /output/upstream_purge_fix/sg13g2_DCPDiode/sg13g2_DCPDiode_extracted.cir",
+        "2026-09-05 11:49:52 +0200: Memory Usage (472992K) : Starting SG13G2 LVS RF MOS Model Mapping",
+        "2026-09-05 11:49:52 +0200: Memory Usage (472992K) : [layout_netlist] Apply RF MOS model mapping and rfmode parameter.",
+        "2026-09-05 11:49:52 +0200: Memory Usage (473248K) : [layout_netlist] purge: SKIPPED",
+        "2026-09-05 11:49:52 +0200: Memory Usage (473248K) : [layout_netlist] purge_nets: SKIPPED",
+        "2026-09-05 11:49:52 +0200: Memory Usage (473248K) : [schematic_netlist] purge: SKIPPED",
+        "2026-09-05 11:49:52 +0200: Memory Usage (473248K) : [schematic_netlist] purge_nets: SKIPPED",
+        "2026-09-05 11:49:52 +0200: Memory Usage (473248K) : Starting SG13G2 LVS Comparison in strict port mode.",
+        "2026-09-05 11:49:52 +0200: Memory Usage (473248K) : flag_missing_ports enabled: missing/mislabeled top-level ports are treated as errors.",
+        "2026-09-05 11:49:52 +0200: Memory Usage (473376K) : ERROR : Netlists don't match"
+      ],
+      "runner_returncode": 0,
+      "status": "FAIL",
+      "strict_mode_observed": true
+    }
+  ],
+  "classification": "two_leaf_strict_lvs_supported_purge_fix_ab_not_chip_signoff",
+  "full_chip_lvs_performed": false,
+  "pdk_sources_modified": false,
+  "public_rule_signoff": false,
+  "schema_version": "1.0.0"
+}

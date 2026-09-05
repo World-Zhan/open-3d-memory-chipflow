@@ -1,0 +1,24 @@
+{
+  "classification": "tool_execution_failure_not_rule_waiver",
+  "docker_event_observation": "A bounded docker events query returned no matching retained events after auto-removal; no OOM state claimed.",
+  "inner_timeout_seconds": 600,
+  "next_diagnostic": "Use an independent bounded run retaining container inspect/events and resource samples before cleanup; keep the exact GDS/deck and unchanged rules. Diagnose maximal task only, not the full-chip flow.",
+  "original_failed_report_preserved": true,
+  "original_maximal_reported_raw_errors": 0,
+  "original_maximal_terminal_signal": 11,
+  "original_run": "croc-io-ring-drc-20260905-001",
+  "original_runner_exit": 1,
+  "outer_timeout_seconds": 640,
+  "public_rule_signoff": false,
+  "replay_exit": 137,
+  "replay_report_present": false,
+  "replay_run": "croc-io-ring-maximal-flat-20260905-001",
+  "replay_terminal_completion": false,
+  "replay_wall_seconds": 616.433399,
+  "source_sha256": {
+    "runs/croc-io-ring-drc-20260905-001/manifest.json": "12d94117caec1d6c3a6b38b8c593da2cfef146f24677649b05b2922272382942",
+    "runs/croc-io-ring-maximal-flat-20260905-001/manifest.json": "495c1c6666116d7b5ed4fb9742e718daa60eaa80674977681e4fdb56b841ba47"
+  },
+  "term_to_kill_grace_seconds": 15,
+  "termination_reason": "SIGKILL exit137; elapsed is consistent with internal timeout plus kill-after grace. Timeout escalation versus OOM was not independently captured."
+}

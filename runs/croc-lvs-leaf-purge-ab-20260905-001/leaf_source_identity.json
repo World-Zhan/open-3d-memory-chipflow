@@ -1,0 +1,1457 @@
+{
+  "classification": "read_only_two_leaf_source_identity_not_lvs",
+  "helper_sha256": "a72610443b6a8094d190cafa9ec4f40cc919f3eac3703a020a0e2985d879f3ab",
+  "layout_modified": false,
+  "lvs_performed": false,
+  "parent_direct_children": {
+    "croc": [
+      {
+        "bbox_dbu": [
+          39125,
+          139990,
+          47095,
+          167770
+        ],
+        "cell": "sg13g2_LevelDown",
+        "intersects_previous_13_layer_delta_bbox": true,
+        "transform": "r0 *1 39745,148500"
+      },
+      {
+        "bbox_dbu": [
+          -180,
+          64820,
+          13760,
+          101560
+        ],
+        "cell": "sg13g2_DCPDiode",
+        "intersects_previous_13_layer_delta_bbox": false,
+        "transform": "r90 *1 11920,66660"
+      },
+      {
+        "bbox_dbu": [
+          -620,
+          5380,
+          14200,
+          43000
+        ],
+        "cell": "sg13g2_DCNDiode",
+        "intersects_previous_13_layer_delta_bbox": false,
+        "transform": "r90 *1 11920,7660"
+      }
+    ],
+    "pinned_pdk": [
+      {
+        "bbox_dbu": [
+          39125,
+          139990,
+          53650,
+          167770
+        ],
+        "cell": "sg13g2_LevelDown",
+        "intersects_previous_13_layer_delta_bbox": true,
+        "transform": "r0 *1 39745,148500"
+      },
+      {
+        "bbox_dbu": [
+          -180,
+          64820,
+          13760,
+          101560
+        ],
+        "cell": "sg13g2_DCPDiode",
+        "intersects_previous_13_layer_delta_bbox": false,
+        "transform": "r90 *1 11920,66660"
+      },
+      {
+        "bbox_dbu": [
+          -620,
+          5380,
+          14200,
+          43000
+        ],
+        "cell": "sg13g2_DCNDiode",
+        "intersects_previous_13_layer_delta_bbox": false,
+        "transform": "r90 *1 11920,7660"
+      }
+    ]
+  },
+  "previous_parent_geometry_delta_bbox_um": [
+    40.31,
+    140.17,
+    53.65,
+    166.895
+  ],
+  "schema_version": "1.0.0",
+  "sources": {
+    "croc": {
+      "path": "upstream/croc/technology/gds/sg13g2_io.gds",
+      "sha256": "8bb45016e5a99e48b1df1ea52c97d6813d96f6afeb905a72a956ddc2c018565f"
+    },
+    "pinned_pdk": {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/gds/sg13g2_io.gds",
+      "sha256": "4281a855377b6a1ca46356e9391258dc14e8efc3b8051a65befc0fe9db3c7825"
+    }
+  },
+  "targets": [
+    {
+      "bboxes_dbu": {
+        "croc": [
+          -2280,
+          -2280,
+          35340,
+          12540
+        ],
+        "pinned_pdk": [
+          -2280,
+          -2280,
+          35340,
+          12540
+        ]
+      },
+      "cell": "sg13g2_DCNDiode",
+      "geometry_equal": true,
+      "labels_equal": true,
+      "layers": [
+        {
+          "datatype": 0,
+          "geometry_equal": true,
+          "labels_equal": true,
+          "layer": 1,
+          "source_evidence": {
+            "croc": {
+              "area_dbu2": 244812400,
+              "area_um2": 244.8124,
+              "bbox_dbu": [
+                -1660,
+                -1660,
+                34720,
+                11920
+              ],
+              "expanded_shapes": {
+                "box": 2,
+                "polygon": 2
+              },
+              "labels": [],
+              "merged_polygons": 4
+            },
+            "pinned_pdk": {
+              "area_dbu2": 244812400,
+              "area_um2": 244.8124,
+              "bbox_dbu": [
+                -1660,
+                -1660,
+                34720,
+                11920
+              ],
+              "expanded_shapes": {
+                "box": 2,
+                "polygon": 2
+              },
+              "labels": [],
+              "merged_polygons": 4
+            }
+          },
+          "xor_area_um2": 0.0
+        },
+        {
+          "datatype": 0,
+          "geometry_equal": true,
+          "labels_equal": true,
+          "layer": 6,
+          "source_evidence": {
+            "croc": {
+              "area_dbu2": 44928000,
+              "area_um2": 44.928,
+              "bbox_dbu": [
+                -1570,
+                -1570,
+                34630,
+                11830
+              ],
+              "expanded_shapes": {
+                "box": 1755
+              },
+              "labels": [],
+              "merged_polygons": 1755
+            },
+            "pinned_pdk": {
+              "area_dbu2": 44928000,
+              "area_um2": 44.928,
+              "bbox_dbu": [
+                -1570,
+                -1570,
+                34630,
+                11830
+              ],
+              "expanded_shapes": {
+                "box": 1755
+              },
+              "labels": [],
+              "merged_polygons": 1755
+            }
+          },
+          "xor_area_um2": 0.0
+        },
+        {
+          "datatype": 0,
+          "geometry_equal": true,
+          "labels_equal": true,
+          "layer": 8,
+          "source_evidence": {
+            "croc": {
+              "area_dbu2": 244812400,
+              "area_um2": 244.8124,
+              "bbox_dbu": [
+                -1660,
+                -1660,
+                34720,
+                11920
+              ],
+              "expanded_shapes": {
+                "box": 4,
+                "polygon": 2
+              },
+              "labels": [],
+              "merged_polygons": 4
+            },
+            "pinned_pdk": {
+              "area_dbu2": 244812400,
+              "area_um2": 244.8124,
+              "bbox_dbu": [
+                -1660,
+                -1660,
+                34720,
+                11920
+              ],
+              "expanded_shapes": {
+                "box": 4,
+                "polygon": 2
+              },
+              "labels": [],
+              "merged_polygons": 4
+            }
+          },
+          "xor_area_um2": 0.0
+        },
+        {
+          "datatype": 2,
+          "geometry_equal": true,
+          "labels_equal": true,
+          "layer": 8,
+          "source_evidence": {
+            "croc": {
+              "area_dbu2": 219710800,
+              "area_um2": 219.7108,
+              "bbox_dbu": [
+                -1660,
+                -1660,
+                34720,
+                11920
+              ],
+              "expanded_shapes": {
+                "box": 7
+              },
+              "labels": [],
+              "merged_polygons": 7
+            },
+            "pinned_pdk": {
+              "area_dbu2": 219710800,
+              "area_um2": 219.7108,
+              "bbox_dbu": [
+                -1660,
+                -1660,
+                34720,
+                11920
+              ],
+              "expanded_shapes": {
+                "box": 7
+              },
+              "labels": [],
+              "merged_polygons": 7
+            }
+          },
+          "xor_area_um2": 0.0
+        },
+        {
+          "datatype": 25,
+          "geometry_equal": true,
+          "labels_equal": true,
+          "layer": 8,
+          "source_evidence": {
+            "croc": {
+              "area_dbu2": 0,
+              "area_um2": 0.0,
+              "bbox_dbu": null,
+              "expanded_shapes": {
+                "text": 7
+              },
+              "labels": [
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    -1490
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "guard",
+                  "valign": "NoVAlign"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    11750
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "guard",
+                  "valign": "NoVAlign"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    2880
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "cathode",
+                  "valign": "NoVAlign"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    5130
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "anode",
+                  "valign": "NoVAlign"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    630
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "anode",
+                  "valign": "NoVAlign"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    7380
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "cathode",
+                  "valign": "NoVAlign"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    9630
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "anode",
+                  "valign": "NoVAlign"
+                }
+              ],
+              "merged_polygons": 0
+            },
+            "pinned_pdk": {
+              "area_dbu2": 0,
+              "area_um2": 0.0,
+              "bbox_dbu": null,
+              "expanded_shapes": {
+                "text": 7
+              },
+              "labels": [
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    -1490
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "guard",
+                  "valign": "NoVAlign"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    11750
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "guard",
+                  "valign": "NoVAlign"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    2880
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "cathode",
+                  "valign": "NoVAlign"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    5130
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "anode",
+                  "valign": "NoVAlign"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    630
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "anode",
+                  "valign": "NoVAlign"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    7380
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "cathode",
+                  "valign": "NoVAlign"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    9630
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "anode",
+                  "valign": "NoVAlign"
+                }
+              ],
+              "merged_polygons": 0
+            }
+          },
+          "xor_area_um2": 0.0
+        },
+        {
+          "datatype": 0,
+          "geometry_equal": true,
+          "labels_equal": true,
+          "layer": 14,
+          "source_evidence": {
+            "croc": {
+              "area_dbu2": 233730000,
+              "area_um2": 233.73,
+              "bbox_dbu": [
+                -420,
+                -420,
+                33480,
+                10680
+              ],
+              "expanded_shapes": {
+                "polygon": 1
+              },
+              "labels": [],
+              "merged_polygons": 1
+            },
+            "pinned_pdk": {
+              "area_dbu2": 233730000,
+              "area_um2": 233.73,
+              "bbox_dbu": [
+                -420,
+                -420,
+                33480,
+                10680
+              ],
+              "expanded_shapes": {
+                "polygon": 1
+              },
+              "labels": [],
+              "merged_polygons": 1
+            }
+          },
+          "xor_area_um2": 0.0
+        },
+        {
+          "datatype": 0,
+          "geometry_equal": true,
+          "labels_equal": true,
+          "layer": 31,
+          "source_evidence": {
+            "croc": {
+              "area_dbu2": 155724800,
+              "area_um2": 155.7248,
+              "bbox_dbu": [
+                -2280,
+                -2280,
+                35340,
+                12540
+              ],
+              "expanded_shapes": {
+                "polygon": 1
+              },
+              "labels": [],
+              "merged_polygons": 1
+            },
+            "pinned_pdk": {
+              "area_dbu2": 155724800,
+              "area_um2": 155.7248,
+              "bbox_dbu": [
+                -2280,
+                -2280,
+                35340,
+                12540
+              ],
+              "expanded_shapes": {
+                "polygon": 1
+              },
+              "labels": [],
+              "merged_polygons": 1
+            }
+          },
+          "xor_area_um2": 0.0
+        },
+        {
+          "datatype": 0,
+          "geometry_equal": true,
+          "labels_equal": true,
+          "layer": 40,
+          "source_evidence": {
+            "croc": {
+              "area_dbu2": 141296400,
+              "area_um2": 141.2964,
+              "bbox_dbu": [
+                0,
+                0,
+                33060,
+                10260
+              ],
+              "expanded_shapes": {
+                "polygon": 1
+              },
+              "labels": [],
+              "merged_polygons": 1
+            },
+            "pinned_pdk": {
+              "area_dbu2": 141296400,
+              "area_um2": 141.2964,
+              "bbox_dbu": [
+                0,
+                0,
+                33060,
+                10260
+              ],
+              "expanded_shapes": {
+                "polygon": 1
+              },
+              "labels": [],
+              "merged_polygons": 1
+            }
+          },
+          "xor_area_um2": 0.0
+        },
+        {
+          "datatype": 0,
+          "geometry_equal": true,
+          "labels_equal": true,
+          "layer": 63,
+          "source_evidence": {
+            "croc": {
+              "area_dbu2": 0,
+              "area_um2": 0.0,
+              "bbox_dbu": null,
+              "expanded_shapes": {
+                "text": 3
+              },
+              "labels": [
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    2880
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "dant",
+                  "valign": "NoVAlign"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    7380
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "dant",
+                  "valign": "NoVAlign"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    630,
+                    630
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "sub!",
+                  "valign": "NoVAlign"
+                }
+              ],
+              "merged_polygons": 0
+            },
+            "pinned_pdk": {
+              "area_dbu2": 0,
+              "area_um2": 0.0,
+              "bbox_dbu": null,
+              "expanded_shapes": {
+                "text": 3
+              },
+              "labels": [
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    2880
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "dant",
+                  "valign": "NoVAlign"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    7380
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "dant",
+                  "valign": "NoVAlign"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    630,
+                    630
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "sub!",
+                  "valign": "NoVAlign"
+                }
+              ],
+              "merged_polygons": 0
+            }
+          },
+          "xor_area_um2": 0.0
+        },
+        {
+          "datatype": 31,
+          "geometry_equal": true,
+          "labels_equal": true,
+          "layer": 99,
+          "source_evidence": {
+            "croc": {
+              "area_dbu2": 72332000,
+              "area_um2": 72.332,
+              "bbox_dbu": [
+                2620,
+                2230,
+                30440,
+                8030
+              ],
+              "expanded_shapes": {
+                "box": 2
+              },
+              "labels": [],
+              "merged_polygons": 2
+            },
+            "pinned_pdk": {
+              "area_dbu2": 72332000,
+              "area_um2": 72.332,
+              "bbox_dbu": [
+                2620,
+                2230,
+                30440,
+                8030
+              ],
+              "expanded_shapes": {
+                "box": 2
+              },
+              "labels": [],
+              "merged_polygons": 2
+            }
+          },
+          "xor_area_um2": 0.0
+        }
+      ]
+    },
+    {
+      "bboxes_dbu": {
+        "croc": [
+          -1840,
+          -1840,
+          34900,
+          12100
+        ],
+        "pinned_pdk": [
+          -1840,
+          -1840,
+          34900,
+          12100
+        ]
+      },
+      "cell": "sg13g2_DCPDiode",
+      "geometry_equal": true,
+      "labels_equal": true,
+      "layers": [
+        {
+          "datatype": 0,
+          "geometry_equal": true,
+          "labels_equal": true,
+          "layer": 1,
+          "source_evidence": {
+            "croc": {
+              "area_dbu2": 244812400,
+              "area_um2": 244.8124,
+              "bbox_dbu": [
+                -1660,
+                -1660,
+                34720,
+                11920
+              ],
+              "expanded_shapes": {
+                "box": 2,
+                "polygon": 2
+              },
+              "labels": [],
+              "merged_polygons": 4
+            },
+            "pinned_pdk": {
+              "area_dbu2": 244812400,
+              "area_um2": 244.8124,
+              "bbox_dbu": [
+                -1660,
+                -1660,
+                34720,
+                11920
+              ],
+              "expanded_shapes": {
+                "box": 2,
+                "polygon": 2
+              },
+              "labels": [],
+              "merged_polygons": 4
+            }
+          },
+          "xor_area_um2": 0.0
+        },
+        {
+          "datatype": 0,
+          "geometry_equal": true,
+          "labels_equal": true,
+          "layer": 6,
+          "source_evidence": {
+            "croc": {
+              "area_dbu2": 44928000,
+              "area_um2": 44.928,
+              "bbox_dbu": [
+                -1570,
+                -1570,
+                34630,
+                11830
+              ],
+              "expanded_shapes": {
+                "box": 1755
+              },
+              "labels": [],
+              "merged_polygons": 1755
+            },
+            "pinned_pdk": {
+              "area_dbu2": 44928000,
+              "area_um2": 44.928,
+              "bbox_dbu": [
+                -1570,
+                -1570,
+                34630,
+                11830
+              ],
+              "expanded_shapes": {
+                "box": 1755
+              },
+              "labels": [],
+              "merged_polygons": 1755
+            }
+          },
+          "xor_area_um2": 0.0
+        },
+        {
+          "datatype": 0,
+          "geometry_equal": true,
+          "labels_equal": true,
+          "layer": 8,
+          "source_evidence": {
+            "croc": {
+              "area_dbu2": 244812400,
+              "area_um2": 244.8124,
+              "bbox_dbu": [
+                -1660,
+                -1660,
+                34720,
+                11920
+              ],
+              "expanded_shapes": {
+                "box": 4,
+                "polygon": 2
+              },
+              "labels": [],
+              "merged_polygons": 4
+            },
+            "pinned_pdk": {
+              "area_dbu2": 244812400,
+              "area_um2": 244.8124,
+              "bbox_dbu": [
+                -1660,
+                -1660,
+                34720,
+                11920
+              ],
+              "expanded_shapes": {
+                "box": 4,
+                "polygon": 2
+              },
+              "labels": [],
+              "merged_polygons": 4
+            }
+          },
+          "xor_area_um2": 0.0
+        },
+        {
+          "datatype": 2,
+          "geometry_equal": true,
+          "labels_equal": true,
+          "layer": 8,
+          "source_evidence": {
+            "croc": {
+              "area_dbu2": 219710800,
+              "area_um2": 219.7108,
+              "bbox_dbu": [
+                -1660,
+                -1660,
+                34720,
+                11920
+              ],
+              "expanded_shapes": {
+                "box": 7
+              },
+              "labels": [],
+              "merged_polygons": 7
+            },
+            "pinned_pdk": {
+              "area_dbu2": 219710800,
+              "area_um2": 219.7108,
+              "bbox_dbu": [
+                -1660,
+                -1660,
+                34720,
+                11920
+              ],
+              "expanded_shapes": {
+                "box": 7
+              },
+              "labels": [],
+              "merged_polygons": 7
+            }
+          },
+          "xor_area_um2": 0.0
+        },
+        {
+          "datatype": 25,
+          "geometry_equal": true,
+          "labels_equal": true,
+          "layer": 8,
+          "source_evidence": {
+            "croc": {
+              "area_dbu2": 0,
+              "area_um2": 0.0,
+              "bbox_dbu": null,
+              "expanded_shapes": {
+                "text": 7
+              },
+              "labels": [
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    -1490
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "guard",
+                  "valign": "NoVAlign"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    11750
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "guard",
+                  "valign": "NoVAlign"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    2880
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "anode",
+                  "valign": "NoVAlign"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    5130
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "cathode",
+                  "valign": "NoVAlign"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    630
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "cathode",
+                  "valign": "NoVAlign"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    7380
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "anode",
+                  "valign": "NoVAlign"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    9630
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "cathode",
+                  "valign": "NoVAlign"
+                }
+              ],
+              "merged_polygons": 0
+            },
+            "pinned_pdk": {
+              "area_dbu2": 0,
+              "area_um2": 0.0,
+              "bbox_dbu": null,
+              "expanded_shapes": {
+                "text": 7
+              },
+              "labels": [
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    -1490
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "guard",
+                  "valign": "NoVAlign"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    11750
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "guard",
+                  "valign": "NoVAlign"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    2880
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "anode",
+                  "valign": "NoVAlign"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    5130
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "cathode",
+                  "valign": "NoVAlign"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    630
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "cathode",
+                  "valign": "NoVAlign"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    7380
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "anode",
+                  "valign": "NoVAlign"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    16530,
+                    9630
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "cathode",
+                  "valign": "NoVAlign"
+                }
+              ],
+              "merged_polygons": 0
+            }
+          },
+          "xor_area_um2": 0.0
+        },
+        {
+          "datatype": 0,
+          "geometry_equal": true,
+          "labels_equal": true,
+          "layer": 14,
+          "source_evidence": {
+            "croc": {
+              "area_dbu2": 189196000,
+              "area_um2": 189.196,
+              "bbox_dbu": [
+                -1840,
+                -1840,
+                34900,
+                12100
+              ],
+              "expanded_shapes": {
+                "box": 2,
+                "polygon": 1
+              },
+              "labels": [],
+              "merged_polygons": 3
+            },
+            "pinned_pdk": {
+              "area_dbu2": 189196000,
+              "area_um2": 189.196,
+              "bbox_dbu": [
+                -1840,
+                -1840,
+                34900,
+                12100
+              ],
+              "expanded_shapes": {
+                "box": 2,
+                "polygon": 1
+              },
+              "labels": [],
+              "merged_polygons": 3
+            }
+          },
+          "xor_area_um2": 0.0
+        },
+        {
+          "datatype": 0,
+          "geometry_equal": true,
+          "labels_equal": true,
+          "layer": 31,
+          "source_evidence": {
+            "croc": {
+              "area_dbu2": 394450000,
+              "area_um2": 394.45,
+              "bbox_dbu": [
+                -620,
+                -620,
+                33680,
+                10880
+              ],
+              "expanded_shapes": {
+                "box": 1
+              },
+              "labels": [],
+              "merged_polygons": 13
+            },
+            "pinned_pdk": {
+              "area_dbu2": 394450000,
+              "area_um2": 394.45,
+              "bbox_dbu": [
+                -620,
+                -620,
+                33680,
+                10880
+              ],
+              "expanded_shapes": {
+                "box": 1
+              },
+              "labels": [],
+              "merged_polygons": 13
+            }
+          },
+          "xor_area_um2": 0.0
+        },
+        {
+          "datatype": 0,
+          "geometry_equal": true,
+          "labels_equal": true,
+          "layer": 40,
+          "source_evidence": {
+            "croc": {
+              "area_dbu2": 33510400,
+              "area_um2": 33.5104,
+              "bbox_dbu": [
+                -1660,
+                -1660,
+                34720,
+                11920
+              ],
+              "expanded_shapes": {
+                "polygon": 1
+              },
+              "labels": [],
+              "merged_polygons": 1
+            },
+            "pinned_pdk": {
+              "area_dbu2": 33510400,
+              "area_um2": 33.5104,
+              "bbox_dbu": [
+                -1660,
+                -1660,
+                34720,
+                11920
+              ],
+              "expanded_shapes": {
+                "polygon": 1
+              },
+              "labels": [],
+              "merged_polygons": 1
+            }
+          },
+          "xor_area_um2": 0.0
+        },
+        {
+          "datatype": 0,
+          "geometry_equal": true,
+          "labels_equal": true,
+          "layer": 63,
+          "source_evidence": {
+            "croc": {
+              "area_dbu2": 0,
+              "area_um2": 0.0,
+              "bbox_dbu": null,
+              "expanded_shapes": {
+                "text": 3
+              },
+              "labels": [
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "HAlignCenter",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    7040,
+                    2840
+                  ],
+                  "size_dbu": 200.0,
+                  "string": "dpant",
+                  "valign": "VAlignCenter"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "HAlignCenter",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    7160,
+                    7320
+                  ],
+                  "size_dbu": 200.0,
+                  "string": "dpant",
+                  "valign": "VAlignCenter"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    -1490,
+                    -300
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "sub!",
+                  "valign": "NoVAlign"
+                }
+              ],
+              "merged_polygons": 0
+            },
+            "pinned_pdk": {
+              "area_dbu2": 0,
+              "area_um2": 0.0,
+              "bbox_dbu": null,
+              "expanded_shapes": {
+                "text": 3
+              },
+              "labels": [
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "HAlignCenter",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    7040,
+                    2840
+                  ],
+                  "size_dbu": 200.0,
+                  "string": "dpant",
+                  "valign": "VAlignCenter"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "HAlignCenter",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    7160,
+                    7320
+                  ],
+                  "size_dbu": 200.0,
+                  "string": "dpant",
+                  "valign": "VAlignCenter"
+                },
+                {
+                  "angle_deg": 0.0,
+                  "font": -1,
+                  "halign": "NoHAlign",
+                  "magnification": 1.0,
+                  "mirror": false,
+                  "position_dbu": [
+                    -1490,
+                    -300
+                  ],
+                  "size_dbu": 0.0,
+                  "string": "sub!",
+                  "valign": "NoVAlign"
+                }
+              ],
+              "merged_polygons": 0
+            }
+          },
+          "xor_area_um2": 0.0
+        },
+        {
+          "datatype": 31,
+          "geometry_equal": true,
+          "labels_equal": true,
+          "layer": 99,
+          "source_evidence": {
+            "croc": {
+              "area_dbu2": 72332000,
+              "area_um2": 72.332,
+              "bbox_dbu": [
+                2620,
+                2230,
+                30440,
+                8030
+              ],
+              "expanded_shapes": {
+                "box": 2
+              },
+              "labels": [],
+              "merged_polygons": 2
+            },
+            "pinned_pdk": {
+              "area_dbu2": 72332000,
+              "area_um2": 72.332,
+              "bbox_dbu": [
+                2620,
+                2230,
+                30440,
+                8030
+              ],
+              "expanded_shapes": {
+                "box": 2
+              },
+              "labels": [],
+              "merged_polygons": 2
+            }
+          },
+          "xor_area_um2": 0.0
+        }
+      ]
+    }
+  ]
+}

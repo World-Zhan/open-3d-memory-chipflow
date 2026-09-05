@@ -1,0 +1,1391 @@
+{
+  "PG_full_electrical_closure": "NOT_PROVEN",
+  "checks": [
+    {
+      "category": "pg_artifacts",
+      "path": "runs/croc-io-ring-pg-20260905-001/pg_geometry.json",
+      "sha256": "ca98a78c4c3312daa5cb3f89985ca791a73a9a7f2d845791dcb2db6c3126476a"
+    },
+    {
+      "category": "pg_artifacts",
+      "path": "runs/croc-io-ring-pg-20260905-001/probe_io_ring_pg.py",
+      "sha256": "ae93cf003e0b49d3828bab5313faf1a2e9383d4ff8c06ff8fee090886045a9e8"
+    },
+    {
+      "category": "pg_artifacts",
+      "path": "runs/croc-io-ring-pg-20260905-001/run_io_ring_pg.py",
+      "sha256": "28cec991813dd4499b5f3bc14afd9297789171a72040b6c4861697aa484a7c57"
+    },
+    {
+      "category": "pg_artifacts",
+      "path": "runs/croc-io-ring-pg-20260905-001/tool.log",
+      "sha256": "dfe1bb42df862d60b86a4a16077269dbbf40167d68d9f94aae84f823a6a22a01"
+    },
+    {
+      "category": "pg_sources",
+      "path": "runs/croc-io-ring-floorplan-20260905-001/instances.tsv",
+      "sha256": "0088fff13be04fb96aab09cbdd551af1f9158a96fbceaa619aad1aba6f8a0ed6"
+    },
+    {
+      "category": "pg_sources",
+      "path": "runs/croc-io-ring-floorplan-20260905-001/terminals.tsv",
+      "sha256": "bc7347dc5a7fcf2315f3a46fa02ac76ed2b61cc00c7e6179a075b8bdf3dbb912"
+    },
+    {
+      "category": "pg_sources",
+      "path": "runs/croc-io-ring-physical-20260905-002/io_ring.def",
+      "sha256": "8505c09dd55a87dc03b1c0a9b576d05b12912a92e391ee2e11b0dbfa2f47bddd"
+    },
+    {
+      "category": "pg_sources",
+      "path": "runs/croc-io-ring-physical-20260905-002/io_ring.gds",
+      "sha256": "d08c65f165d5ca9d5b0d1a7959a7ded99f053e41c153352dd2ba3cf0fa3ec351"
+    },
+    {
+      "category": "pg_sources",
+      "path": "upstream/croc/technology/lef/sg13g2_io.lef",
+      "sha256": "8b3dc3960960c08e07a1cde3dd9cd0484f5b12df07c4628726fff551bb775c0c"
+    },
+    {
+      "category": "pg_sources",
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/general_derivations.lvs",
+      "sha256": "d386598b10809388bfa690644b5a6a8f49c532b9d04caf9d2d014f4de12db043"
+    },
+    {
+      "category": "pg_sources",
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/layers_definitions.lvs",
+      "sha256": "2165a344d178eff60c2c79ad73108d74b8a1d2b1a5183e8b3492aa249887e58c"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/bjt_connections.lvs",
+      "sha256": "0b3f536a25d8b8d5b37dc5eeb8e1bc8554e78694bb4398f6dd48ac3d9e528c8c"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/bjt_derivations.lvs",
+      "sha256": "03fa1f8a2d22639d4e5e478fb89cdc818de8a45ee81fed7a2c799b95b5a94c0b"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/bjt_extraction.lvs",
+      "sha256": "8989e8263a6de8cb40077b5995b559fb938025fd991a3e4f7a52a7ab89d524a3"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_cmomf_connections.lvs",
+      "sha256": "6d62d634122eb8fe78f4f4382e9d1353d88c67aa6ce225ed46a76722d89fd80f"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_cmomf_derivations.lvs",
+      "sha256": "061c5e94be5cef7074f311d60196a2f39298978648f57151c18d3ac9f71caa1c"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_cmomi_connections.lvs",
+      "sha256": "87bbea2850a7594859ddddae0b0db56bc4642bd0edc61ee7e89bef935fc8216b"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_cmomi_derivations.lvs",
+      "sha256": "291f94fdd77012f381a6e0bc9eaa030889f01d8365a24f536d033f692b697786"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_connections.lvs",
+      "sha256": "adba1f9e036ec47b6f431615c1538073aafbab51087ba57dee6b0080699face6"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_derivations.lvs",
+      "sha256": "2122ca992df4983e32dda8e85fdffabab2bc90eed0cebc1372c4069c78ef1157"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_extraction.lvs",
+      "sha256": "ae5cd8746f7dd4772c7fa618ed09bf009bd394d801a19928ea3c9c0d6ab5b226"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_bjt_extractor.lvs",
+      "sha256": "0cd07122454e4ffefb702861e1c11bdc0cef779a9564649462bbb750d9b4229b"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_classes.lvs",
+      "sha256": "65eb31e73784b6d5df279b6e9f4a0beca378b4c0ddccc105f6c4312faf8215b1"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_combiner.lvs",
+      "sha256": "2e9f341023b96ab64ef83110d0a57d5f8be8a6906e67db60edbb62cfadeed56d"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_devices.lvs",
+      "sha256": "b062c2ed0bb15a41fd21b38e5e6e74a1a5cf3abf463f8535b946a2f662453b63"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_extractor.lvs",
+      "sha256": "6bde15ff3d3702eac7ab372c74b21752c179b66c21c076350d258397986fc8ba"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_isolbox_extractor.lvs",
+      "sha256": "1ca2293fa3c5c45f04c15e277b0b1fa0ac21735e0504911269580e4afd77499e"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_mim_extractor.lvs",
+      "sha256": "2e4a47be7bf2ec9ba87611e2ab32e97d5369f726ded328d2e291d94e845f40dd"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_mom_extractor.lvs",
+      "sha256": "c59d8439058eb434ec0feb2ea495f6e78e5fcbefd51072e50db4b47254624ca7"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_moscap_extractor.lvs",
+      "sha256": "47ab35e77bcf6bdc807ca93ec8b9b5fd9ebabfb7ba5a3c4214a311f560998255"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_reader.lvs",
+      "sha256": "c71b6713d8a62055d3d8e9e75a7f5f78140001bf76e3fa573b9883fab5e49f06"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_writer.lvs",
+      "sha256": "bada63cfda80316f64ffbd1f6ed2a9cc06cd337b7244fe7d608ae4a20dfc0c36"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/devices_connections.lvs",
+      "sha256": "f8ddc90801d104b0a517ca90773c7f03b13b95f4bac95b77ebcf96f53513801b"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/diode_connections.lvs",
+      "sha256": "a55896d567a14240ae33faa8799daed545b06bd777245c3731fa4c632e9833f3"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/diode_derivations.lvs",
+      "sha256": "aa366ee04f0ab5030131d12d26e421c9bdf7dc4d7b0840f0ac43309557b411bf"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/diode_extraction.lvs",
+      "sha256": "9d060ddb655bf8fce7363aabb02800ffe8138b745aa9cff724b34c248770e006"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/esd_connections.lvs",
+      "sha256": "cdd0aad08c99bfdda7f38ced6a87531192bb4e2051e84c8fb6a6cb35f782f27c"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/esd_derivations.lvs",
+      "sha256": "b1c584735c3228bb6abb178da577d1495debb15669748f5879c9261710757ffd"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/esd_extraction.lvs",
+      "sha256": "93a26d226548c5a4b871f5016de21ce812eca1d561af781f2909521659d82a86"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/general_connections.lvs",
+      "sha256": "bb61656b3564cf08558b83cf27d09854049eb30b5b7ade6610045d43c4b53e97"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/general_derivations.lvs",
+      "sha256": "d386598b10809388bfa690644b5a6a8f49c532b9d04caf9d2d014f4de12db043"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/globals.lvs",
+      "sha256": "170fe4fd4b796a1a4db9626506c304fb5c01716070a0ae1903166d75470ed758"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/ind_connections.lvs",
+      "sha256": "05682e9e05c6a18bc67b512276e0d6b5bb90c051e4982dab44a7a3bc34a33b92"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/ind_derivations.lvs",
+      "sha256": "af116ba0df67f771852bc4f6e68e480ce3fb356aced52348636b0171512c3da5"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/ind_extraction.lvs",
+      "sha256": "bcf182be57689e2571d3748973bad31b4e084837faf3cbcc3a9a72c6acc63a2a"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/layers_definitions.lvs",
+      "sha256": "2165a344d178eff60c2c79ad73108d74b8a1d2b1a5183e8b3492aa249887e58c"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/mos_connections.lvs",
+      "sha256": "f53e17c1f315f49fc973b8ec949ae343e2bb99c2862a51acdaa3f37f49907770"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/mos_derivations.lvs",
+      "sha256": "ec4ea7cd367ad32d83ebb64234967b13c3dc4c0482570722e8c0a48135b90828"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/mos_extraction.lvs",
+      "sha256": "dea4df60fced945fb182e2d2e511a73b6b2863d70acfbbb9875e8535bc0caa49"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/res_connections.lvs",
+      "sha256": "a42d02de14a62c239850946bd0f1831408b9076ee43c5a38bb261c72659bc448"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/res_derivations.lvs",
+      "sha256": "3c32e371d71ddbb7190769db6aac4676d65f75eff1ca994fbf720ceb06255754"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/res_extraction.lvs",
+      "sha256": "f3913114d4eafc36f6baf8c47a5de4867270e41955572af7f25c5f498ccec4b1"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/rfmos_connections.lvs",
+      "sha256": "88d8335742119b8b88811f408defb789cc8fbde2c910c1deb33d9a4837a5b2d3"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/rfmos_derivations.lvs",
+      "sha256": "5ae022be71ec90487ebf4636820563bc665815dfc12a36068b331d9571f54677"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/rfmos_extraction.lvs",
+      "sha256": "114bafea13d39aff60411442efb768f45b9460068b0fa25f85e36762ee89e3cd"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/rfmos_model_mapping.lvs",
+      "sha256": "9cba1b823a1b805bb82dacb31cc5f18b3135da44db1b87f683b248713cde8584"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/sram_integration.lvs",
+      "sha256": "447e02305b8896fde8b3ce71de31a686775953695322b88298f04949b4f123de"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/tap_connections.lvs",
+      "sha256": "b78c5b3cf4e328c915d52f210c6457790ec7ef56eb08d88dedb825ca3bc59b3b"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/tap_derivations.lvs",
+      "sha256": "b6e9ff382b6f8c392ab699d09832ea7e0ad120bc1b35b51a778e8b188b0ce6c2"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/tap_extraction.lvs",
+      "sha256": "e17c779eacdcab3bfa2287ca265d7836dde0e9e7fec4b4e7bf79bf2b2dd9120b"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/run_lvs.py",
+      "sha256": "1079e9ac83f5b1b97a2c77c11143783556a391780772126ac3e5c5c300210ef3"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/sg13g2.lvs",
+      "sha256": "9107409a7027a6b9982b1bfa9053970fd03e52af388045c440d6dc11f1c97ae7"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/versions.txt",
+      "sha256": "a534833d68283a94cc95d7233f2cb1e6201d6b0e21983870153b56c3f4daa930"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/bjt_connections.lvs",
+      "sha256": "0b3f536a25d8b8d5b37dc5eeb8e1bc8554e78694bb4398f6dd48ac3d9e528c8c"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/bjt_derivations.lvs",
+      "sha256": "03fa1f8a2d22639d4e5e478fb89cdc818de8a45ee81fed7a2c799b95b5a94c0b"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/bjt_extraction.lvs",
+      "sha256": "8989e8263a6de8cb40077b5995b559fb938025fd991a3e4f7a52a7ab89d524a3"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_cmomf_connections.lvs",
+      "sha256": "6d62d634122eb8fe78f4f4382e9d1353d88c67aa6ce225ed46a76722d89fd80f"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_cmomf_derivations.lvs",
+      "sha256": "061c5e94be5cef7074f311d60196a2f39298978648f57151c18d3ac9f71caa1c"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_cmomi_connections.lvs",
+      "sha256": "87bbea2850a7594859ddddae0b0db56bc4642bd0edc61ee7e89bef935fc8216b"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_cmomi_derivations.lvs",
+      "sha256": "291f94fdd77012f381a6e0bc9eaa030889f01d8365a24f536d033f692b697786"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_connections.lvs",
+      "sha256": "adba1f9e036ec47b6f431615c1538073aafbab51087ba57dee6b0080699face6"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_derivations.lvs",
+      "sha256": "2122ca992df4983e32dda8e85fdffabab2bc90eed0cebc1372c4069c78ef1157"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_extraction.lvs",
+      "sha256": "ae5cd8746f7dd4772c7fa618ed09bf009bd394d801a19928ea3c9c0d6ab5b226"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_bjt_extractor.lvs",
+      "sha256": "0cd07122454e4ffefb702861e1c11bdc0cef779a9564649462bbb750d9b4229b"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_classes.lvs",
+      "sha256": "65eb31e73784b6d5df279b6e9f4a0beca378b4c0ddccc105f6c4312faf8215b1"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_combiner.lvs",
+      "sha256": "2e9f341023b96ab64ef83110d0a57d5f8be8a6906e67db60edbb62cfadeed56d"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_devices.lvs",
+      "sha256": "b062c2ed0bb15a41fd21b38e5e6e74a1a5cf3abf463f8535b946a2f662453b63"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_extractor.lvs",
+      "sha256": "6bde15ff3d3702eac7ab372c74b21752c179b66c21c076350d258397986fc8ba"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_isolbox_extractor.lvs",
+      "sha256": "1ca2293fa3c5c45f04c15e277b0b1fa0ac21735e0504911269580e4afd77499e"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_mim_extractor.lvs",
+      "sha256": "2e4a47be7bf2ec9ba87611e2ab32e97d5369f726ded328d2e291d94e845f40dd"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_mom_extractor.lvs",
+      "sha256": "c59d8439058eb434ec0feb2ea495f6e78e5fcbefd51072e50db4b47254624ca7"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_moscap_extractor.lvs",
+      "sha256": "47ab35e77bcf6bdc807ca93ec8b9b5fd9ebabfb7ba5a3c4214a311f560998255"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_reader.lvs",
+      "sha256": "c71b6713d8a62055d3d8e9e75a7f5f78140001bf76e3fa573b9883fab5e49f06"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_writer.lvs",
+      "sha256": "bada63cfda80316f64ffbd1f6ed2a9cc06cd337b7244fe7d608ae4a20dfc0c36"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/devices_connections.lvs",
+      "sha256": "f8ddc90801d104b0a517ca90773c7f03b13b95f4bac95b77ebcf96f53513801b"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/diode_connections.lvs",
+      "sha256": "a55896d567a14240ae33faa8799daed545b06bd777245c3731fa4c632e9833f3"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/diode_derivations.lvs",
+      "sha256": "aa366ee04f0ab5030131d12d26e421c9bdf7dc4d7b0840f0ac43309557b411bf"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/diode_extraction.lvs",
+      "sha256": "9d060ddb655bf8fce7363aabb02800ffe8138b745aa9cff724b34c248770e006"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/esd_connections.lvs",
+      "sha256": "cdd0aad08c99bfdda7f38ced6a87531192bb4e2051e84c8fb6a6cb35f782f27c"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/esd_derivations.lvs",
+      "sha256": "b1c584735c3228bb6abb178da577d1495debb15669748f5879c9261710757ffd"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/esd_extraction.lvs",
+      "sha256": "93a26d226548c5a4b871f5016de21ce812eca1d561af781f2909521659d82a86"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/general_connections.lvs",
+      "sha256": "bb61656b3564cf08558b83cf27d09854049eb30b5b7ade6610045d43c4b53e97"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/general_derivations.lvs",
+      "sha256": "d386598b10809388bfa690644b5a6a8f49c532b9d04caf9d2d014f4de12db043"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/globals.lvs",
+      "sha256": "170fe4fd4b796a1a4db9626506c304fb5c01716070a0ae1903166d75470ed758"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/ind_connections.lvs",
+      "sha256": "05682e9e05c6a18bc67b512276e0d6b5bb90c051e4982dab44a7a3bc34a33b92"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/ind_derivations.lvs",
+      "sha256": "af116ba0df67f771852bc4f6e68e480ce3fb356aced52348636b0171512c3da5"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/ind_extraction.lvs",
+      "sha256": "bcf182be57689e2571d3748973bad31b4e084837faf3cbcc3a9a72c6acc63a2a"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/layers_definitions.lvs",
+      "sha256": "2165a344d178eff60c2c79ad73108d74b8a1d2b1a5183e8b3492aa249887e58c"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/mos_connections.lvs",
+      "sha256": "f53e17c1f315f49fc973b8ec949ae343e2bb99c2862a51acdaa3f37f49907770"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/mos_derivations.lvs",
+      "sha256": "ec4ea7cd367ad32d83ebb64234967b13c3dc4c0482570722e8c0a48135b90828"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/mos_extraction.lvs",
+      "sha256": "dea4df60fced945fb182e2d2e511a73b6b2863d70acfbbb9875e8535bc0caa49"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/res_connections.lvs",
+      "sha256": "a42d02de14a62c239850946bd0f1831408b9076ee43c5a38bb261c72659bc448"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/res_derivations.lvs",
+      "sha256": "3c32e371d71ddbb7190769db6aac4676d65f75eff1ca994fbf720ceb06255754"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/res_extraction.lvs",
+      "sha256": "f3913114d4eafc36f6baf8c47a5de4867270e41955572af7f25c5f498ccec4b1"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/rfmos_connections.lvs",
+      "sha256": "88d8335742119b8b88811f408defb789cc8fbde2c910c1deb33d9a4837a5b2d3"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/rfmos_derivations.lvs",
+      "sha256": "5ae022be71ec90487ebf4636820563bc665815dfc12a36068b331d9571f54677"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/rfmos_extraction.lvs",
+      "sha256": "114bafea13d39aff60411442efb768f45b9460068b0fa25f85e36762ee89e3cd"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/rfmos_model_mapping.lvs",
+      "sha256": "effbefbe9c0007bc2df0d23e1ebb7585487a6bf6dc0a7e11c4167765fee8d33f"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/sram_integration.lvs",
+      "sha256": "447e02305b8896fde8b3ce71de31a686775953695322b88298f04949b4f123de"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/tap_connections.lvs",
+      "sha256": "b78c5b3cf4e328c915d52f210c6457790ec7ef56eb08d88dedb825ca3bc59b3b"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/tap_derivations.lvs",
+      "sha256": "b6e9ff382b6f8c392ab699d09832ea7e0ad120bc1b35b51a778e8b188b0ce6c2"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/tap_extraction.lvs",
+      "sha256": "e17c779eacdcab3bfa2287ca265d7836dde0e9e7fec4b4e7bf79bf2b2dd9120b"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/run_lvs.py",
+      "sha256": "1079e9ac83f5b1b97a2c77c11143783556a391780772126ac3e5c5c300210ef3"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/sg13g2.lvs",
+      "sha256": "9107409a7027a6b9982b1bfa9053970fd03e52af388045c440d6dc11f1c97ae7"
+    },
+    {
+      "category": "lvs_copied_deck_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/versions.txt",
+      "sha256": "a534833d68283a94cc95d7233f2cb1e6201d6b0e21983870153b56c3f4daa930"
+    },
+    {
+      "category": "lvs_input_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/inputs/sg13g2_DCNDiode/sg13g2_DCNDiode.cdl",
+      "sha256": "e6beb7b9b6eb3ac828ae597aebb68e8773ee5c0408ab3f0ca1867f652d930e43"
+    },
+    {
+      "category": "lvs_input_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/inputs/sg13g2_DCNDiode/sg13g2_DCNDiode.gds",
+      "sha256": "88b37db301c78b051f74fd8d7c851fb8fb237964bde4b7b6a60657faa2ed11e4"
+    },
+    {
+      "category": "lvs_input_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/inputs/sg13g2_DCPDiode/sg13g2_DCPDiode.cdl",
+      "sha256": "4179ad18e54dd2b5a94bd019d2f38665d66ee690a0c0d7d7945e9a65d7026708"
+    },
+    {
+      "category": "lvs_input_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/inputs/sg13g2_DCPDiode/sg13g2_DCPDiode.gds",
+      "sha256": "9279af521a7ba6f61b57c625edad6b7c4f1e6f7f2b8824e1ab23a22d5390ccf0"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/analysis/summary.json",
+      "sha256": "f3962b2c57d8a1534974cb9bfc5b75f6b41be630eed580c35e0d238c84c36811"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/analysis/tool.log",
+      "sha256": "14934204d536d35327bf536b4b6b638456d6d0c9c9b2c5db650b27f9c68ee818"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/analyze_lvs_purge_ab.py",
+      "sha256": "2963f0b96f70abd556763178de7203ecad8d07cd3db9bfa08360e595dd0459f5"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/control/sg13g2_DCNDiode/cross_reference.json",
+      "sha256": "9132036eff11db197d8cbb2b84ee95b4cdd76ec64740f5410d7bd8593ed6a3fa"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/control/sg13g2_DCNDiode/lvs_run_2026_09_05_09_49_42.log",
+      "sha256": "e8644e4ed91ca6e6c2a822aea3b726ff43cc0d8393e3d1c3e2aeb5c9d3f08cb7"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/control/sg13g2_DCNDiode/sg13g2_DCNDiode.log",
+      "sha256": "14b3cc40c296b6195a0b17033ca6fb4737747aebc454d3797ee578f33dad73d0"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/control/sg13g2_DCNDiode/sg13g2_DCNDiode.lvsdb",
+      "sha256": "1cc55b825568d776b42e49b0f1c78e2ed715a55e9bfe7c7ff2d0d1738d05f717"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/control/sg13g2_DCNDiode/sg13g2_DCNDiode_extracted.cir",
+      "sha256": "16d7dcb09bf2f37e5d2347c1c2a4985b836c7a8b20ed29b4d4fd7132b4cfa806"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/control/sg13g2_DCNDiode/tool.log",
+      "sha256": "912d8c13578ef349b5d39376fb617f7b8c3857eba761630faa5f4bea768a0183"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/control/sg13g2_DCPDiode/cross_reference.json",
+      "sha256": "12517dbd546d1e172e0afbe4d6bba761a68079b9ee795572b4816bfae110a507"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/control/sg13g2_DCPDiode/lvs_run_2026_09_05_09_49_45.log",
+      "sha256": "fb2c5e4ca07ae7eee174d09c49e6be84edfcd92b9d81819972406f7a8c553936"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/control/sg13g2_DCPDiode/sg13g2_DCPDiode.log",
+      "sha256": "e79d864c07183678e606730de4dae35e5448ffdc8ecd327f6751ef1174fe5b2f"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/control/sg13g2_DCPDiode/sg13g2_DCPDiode.lvsdb",
+      "sha256": "9313d055a95b65c25e58223e2e014b519d5cc14e34057c7b7a5212896afc53b6"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/control/sg13g2_DCPDiode/sg13g2_DCPDiode_extracted.cir",
+      "sha256": "83a800f6b56003c908ab7f629104fc00863414f26b9ea2b1372907b7f19b9920"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/control/sg13g2_DCPDiode/tool.log",
+      "sha256": "e7edb5963ee93c3b2c966b7726c8a81414292f726fe666904d1ee27ad021a2fa"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/bjt_connections.lvs",
+      "sha256": "0b3f536a25d8b8d5b37dc5eeb8e1bc8554e78694bb4398f6dd48ac3d9e528c8c"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/bjt_derivations.lvs",
+      "sha256": "03fa1f8a2d22639d4e5e478fb89cdc818de8a45ee81fed7a2c799b95b5a94c0b"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/bjt_extraction.lvs",
+      "sha256": "8989e8263a6de8cb40077b5995b559fb938025fd991a3e4f7a52a7ab89d524a3"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_cmomf_connections.lvs",
+      "sha256": "6d62d634122eb8fe78f4f4382e9d1353d88c67aa6ce225ed46a76722d89fd80f"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_cmomf_derivations.lvs",
+      "sha256": "061c5e94be5cef7074f311d60196a2f39298978648f57151c18d3ac9f71caa1c"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_cmomi_connections.lvs",
+      "sha256": "87bbea2850a7594859ddddae0b0db56bc4642bd0edc61ee7e89bef935fc8216b"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_cmomi_derivations.lvs",
+      "sha256": "291f94fdd77012f381a6e0bc9eaa030889f01d8365a24f536d033f692b697786"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_connections.lvs",
+      "sha256": "adba1f9e036ec47b6f431615c1538073aafbab51087ba57dee6b0080699face6"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_derivations.lvs",
+      "sha256": "2122ca992df4983e32dda8e85fdffabab2bc90eed0cebc1372c4069c78ef1157"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_extraction.lvs",
+      "sha256": "ae5cd8746f7dd4772c7fa618ed09bf009bd394d801a19928ea3c9c0d6ab5b226"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_bjt_extractor.lvs",
+      "sha256": "0cd07122454e4ffefb702861e1c11bdc0cef779a9564649462bbb750d9b4229b"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_classes.lvs",
+      "sha256": "65eb31e73784b6d5df279b6e9f4a0beca378b4c0ddccc105f6c4312faf8215b1"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_combiner.lvs",
+      "sha256": "2e9f341023b96ab64ef83110d0a57d5f8be8a6906e67db60edbb62cfadeed56d"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_devices.lvs",
+      "sha256": "b062c2ed0bb15a41fd21b38e5e6e74a1a5cf3abf463f8535b946a2f662453b63"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_extractor.lvs",
+      "sha256": "6bde15ff3d3702eac7ab372c74b21752c179b66c21c076350d258397986fc8ba"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_isolbox_extractor.lvs",
+      "sha256": "1ca2293fa3c5c45f04c15e277b0b1fa0ac21735e0504911269580e4afd77499e"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_mim_extractor.lvs",
+      "sha256": "2e4a47be7bf2ec9ba87611e2ab32e97d5369f726ded328d2e291d94e845f40dd"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_mom_extractor.lvs",
+      "sha256": "c59d8439058eb434ec0feb2ea495f6e78e5fcbefd51072e50db4b47254624ca7"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_moscap_extractor.lvs",
+      "sha256": "47ab35e77bcf6bdc807ca93ec8b9b5fd9ebabfb7ba5a3c4214a311f560998255"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_reader.lvs",
+      "sha256": "c71b6713d8a62055d3d8e9e75a7f5f78140001bf76e3fa573b9883fab5e49f06"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_writer.lvs",
+      "sha256": "bada63cfda80316f64ffbd1f6ed2a9cc06cd337b7244fe7d608ae4a20dfc0c36"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/devices_connections.lvs",
+      "sha256": "f8ddc90801d104b0a517ca90773c7f03b13b95f4bac95b77ebcf96f53513801b"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/diode_connections.lvs",
+      "sha256": "a55896d567a14240ae33faa8799daed545b06bd777245c3731fa4c632e9833f3"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/diode_derivations.lvs",
+      "sha256": "aa366ee04f0ab5030131d12d26e421c9bdf7dc4d7b0840f0ac43309557b411bf"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/diode_extraction.lvs",
+      "sha256": "9d060ddb655bf8fce7363aabb02800ffe8138b745aa9cff724b34c248770e006"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/esd_connections.lvs",
+      "sha256": "cdd0aad08c99bfdda7f38ced6a87531192bb4e2051e84c8fb6a6cb35f782f27c"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/esd_derivations.lvs",
+      "sha256": "b1c584735c3228bb6abb178da577d1495debb15669748f5879c9261710757ffd"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/esd_extraction.lvs",
+      "sha256": "93a26d226548c5a4b871f5016de21ce812eca1d561af781f2909521659d82a86"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/general_connections.lvs",
+      "sha256": "bb61656b3564cf08558b83cf27d09854049eb30b5b7ade6610045d43c4b53e97"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/general_derivations.lvs",
+      "sha256": "d386598b10809388bfa690644b5a6a8f49c532b9d04caf9d2d014f4de12db043"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/globals.lvs",
+      "sha256": "170fe4fd4b796a1a4db9626506c304fb5c01716070a0ae1903166d75470ed758"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/ind_connections.lvs",
+      "sha256": "05682e9e05c6a18bc67b512276e0d6b5bb90c051e4982dab44a7a3bc34a33b92"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/ind_derivations.lvs",
+      "sha256": "af116ba0df67f771852bc4f6e68e480ce3fb356aced52348636b0171512c3da5"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/ind_extraction.lvs",
+      "sha256": "bcf182be57689e2571d3748973bad31b4e084837faf3cbcc3a9a72c6acc63a2a"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/layers_definitions.lvs",
+      "sha256": "2165a344d178eff60c2c79ad73108d74b8a1d2b1a5183e8b3492aa249887e58c"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/mos_connections.lvs",
+      "sha256": "f53e17c1f315f49fc973b8ec949ae343e2bb99c2862a51acdaa3f37f49907770"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/mos_derivations.lvs",
+      "sha256": "ec4ea7cd367ad32d83ebb64234967b13c3dc4c0482570722e8c0a48135b90828"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/mos_extraction.lvs",
+      "sha256": "dea4df60fced945fb182e2d2e511a73b6b2863d70acfbbb9875e8535bc0caa49"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/res_connections.lvs",
+      "sha256": "a42d02de14a62c239850946bd0f1831408b9076ee43c5a38bb261c72659bc448"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/res_derivations.lvs",
+      "sha256": "3c32e371d71ddbb7190769db6aac4676d65f75eff1ca994fbf720ceb06255754"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/res_extraction.lvs",
+      "sha256": "f3913114d4eafc36f6baf8c47a5de4867270e41955572af7f25c5f498ccec4b1"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/rfmos_connections.lvs",
+      "sha256": "88d8335742119b8b88811f408defb789cc8fbde2c910c1deb33d9a4837a5b2d3"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/rfmos_derivations.lvs",
+      "sha256": "5ae022be71ec90487ebf4636820563bc665815dfc12a36068b331d9571f54677"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/rfmos_extraction.lvs",
+      "sha256": "114bafea13d39aff60411442efb768f45b9460068b0fa25f85e36762ee89e3cd"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/rfmos_model_mapping.lvs",
+      "sha256": "9cba1b823a1b805bb82dacb31cc5f18b3135da44db1b87f683b248713cde8584"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/sram_integration.lvs",
+      "sha256": "447e02305b8896fde8b3ce71de31a686775953695322b88298f04949b4f123de"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/tap_connections.lvs",
+      "sha256": "b78c5b3cf4e328c915d52f210c6457790ec7ef56eb08d88dedb825ca3bc59b3b"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/tap_derivations.lvs",
+      "sha256": "b6e9ff382b6f8c392ab699d09832ea7e0ad120bc1b35b51a778e8b188b0ce6c2"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/tap_extraction.lvs",
+      "sha256": "e17c779eacdcab3bfa2287ca265d7836dde0e9e7fec4b4e7bf79bf2b2dd9120b"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/run_lvs.py",
+      "sha256": "1079e9ac83f5b1b97a2c77c11143783556a391780772126ac3e5c5c300210ef3"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/sg13g2.lvs",
+      "sha256": "9107409a7027a6b9982b1bfa9053970fd03e52af388045c440d6dc11f1c97ae7"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/versions.txt",
+      "sha256": "a534833d68283a94cc95d7233f2cb1e6201d6b0e21983870153b56c3f4daa930"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/bjt_connections.lvs",
+      "sha256": "0b3f536a25d8b8d5b37dc5eeb8e1bc8554e78694bb4398f6dd48ac3d9e528c8c"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/bjt_derivations.lvs",
+      "sha256": "03fa1f8a2d22639d4e5e478fb89cdc818de8a45ee81fed7a2c799b95b5a94c0b"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/bjt_extraction.lvs",
+      "sha256": "8989e8263a6de8cb40077b5995b559fb938025fd991a3e4f7a52a7ab89d524a3"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_cmomf_connections.lvs",
+      "sha256": "6d62d634122eb8fe78f4f4382e9d1353d88c67aa6ce225ed46a76722d89fd80f"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_cmomf_derivations.lvs",
+      "sha256": "061c5e94be5cef7074f311d60196a2f39298978648f57151c18d3ac9f71caa1c"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_cmomi_connections.lvs",
+      "sha256": "87bbea2850a7594859ddddae0b0db56bc4642bd0edc61ee7e89bef935fc8216b"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_cmomi_derivations.lvs",
+      "sha256": "291f94fdd77012f381a6e0bc9eaa030889f01d8365a24f536d033f692b697786"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_connections.lvs",
+      "sha256": "adba1f9e036ec47b6f431615c1538073aafbab51087ba57dee6b0080699face6"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_derivations.lvs",
+      "sha256": "2122ca992df4983e32dda8e85fdffabab2bc90eed0cebc1372c4069c78ef1157"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_extraction.lvs",
+      "sha256": "ae5cd8746f7dd4772c7fa618ed09bf009bd394d801a19928ea3c9c0d6ab5b226"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_bjt_extractor.lvs",
+      "sha256": "0cd07122454e4ffefb702861e1c11bdc0cef779a9564649462bbb750d9b4229b"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_classes.lvs",
+      "sha256": "65eb31e73784b6d5df279b6e9f4a0beca378b4c0ddccc105f6c4312faf8215b1"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_combiner.lvs",
+      "sha256": "2e9f341023b96ab64ef83110d0a57d5f8be8a6906e67db60edbb62cfadeed56d"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_devices.lvs",
+      "sha256": "b062c2ed0bb15a41fd21b38e5e6e74a1a5cf3abf463f8535b946a2f662453b63"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_extractor.lvs",
+      "sha256": "6bde15ff3d3702eac7ab372c74b21752c179b66c21c076350d258397986fc8ba"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_isolbox_extractor.lvs",
+      "sha256": "1ca2293fa3c5c45f04c15e277b0b1fa0ac21735e0504911269580e4afd77499e"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_mim_extractor.lvs",
+      "sha256": "2e4a47be7bf2ec9ba87611e2ab32e97d5369f726ded328d2e291d94e845f40dd"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_mom_extractor.lvs",
+      "sha256": "c59d8439058eb434ec0feb2ea495f6e78e5fcbefd51072e50db4b47254624ca7"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_moscap_extractor.lvs",
+      "sha256": "47ab35e77bcf6bdc807ca93ec8b9b5fd9ebabfb7ba5a3c4214a311f560998255"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_reader.lvs",
+      "sha256": "c71b6713d8a62055d3d8e9e75a7f5f78140001bf76e3fa573b9883fab5e49f06"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_writer.lvs",
+      "sha256": "bada63cfda80316f64ffbd1f6ed2a9cc06cd337b7244fe7d608ae4a20dfc0c36"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/devices_connections.lvs",
+      "sha256": "f8ddc90801d104b0a517ca90773c7f03b13b95f4bac95b77ebcf96f53513801b"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/diode_connections.lvs",
+      "sha256": "a55896d567a14240ae33faa8799daed545b06bd777245c3731fa4c632e9833f3"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/diode_derivations.lvs",
+      "sha256": "aa366ee04f0ab5030131d12d26e421c9bdf7dc4d7b0840f0ac43309557b411bf"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/diode_extraction.lvs",
+      "sha256": "9d060ddb655bf8fce7363aabb02800ffe8138b745aa9cff724b34c248770e006"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/esd_connections.lvs",
+      "sha256": "cdd0aad08c99bfdda7f38ced6a87531192bb4e2051e84c8fb6a6cb35f782f27c"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/esd_derivations.lvs",
+      "sha256": "b1c584735c3228bb6abb178da577d1495debb15669748f5879c9261710757ffd"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/esd_extraction.lvs",
+      "sha256": "93a26d226548c5a4b871f5016de21ce812eca1d561af781f2909521659d82a86"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/general_connections.lvs",
+      "sha256": "bb61656b3564cf08558b83cf27d09854049eb30b5b7ade6610045d43c4b53e97"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/general_derivations.lvs",
+      "sha256": "d386598b10809388bfa690644b5a6a8f49c532b9d04caf9d2d014f4de12db043"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/globals.lvs",
+      "sha256": "170fe4fd4b796a1a4db9626506c304fb5c01716070a0ae1903166d75470ed758"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/ind_connections.lvs",
+      "sha256": "05682e9e05c6a18bc67b512276e0d6b5bb90c051e4982dab44a7a3bc34a33b92"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/ind_derivations.lvs",
+      "sha256": "af116ba0df67f771852bc4f6e68e480ce3fb356aced52348636b0171512c3da5"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/ind_extraction.lvs",
+      "sha256": "bcf182be57689e2571d3748973bad31b4e084837faf3cbcc3a9a72c6acc63a2a"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/layers_definitions.lvs",
+      "sha256": "2165a344d178eff60c2c79ad73108d74b8a1d2b1a5183e8b3492aa249887e58c"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/mos_connections.lvs",
+      "sha256": "f53e17c1f315f49fc973b8ec949ae343e2bb99c2862a51acdaa3f37f49907770"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/mos_derivations.lvs",
+      "sha256": "ec4ea7cd367ad32d83ebb64234967b13c3dc4c0482570722e8c0a48135b90828"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/mos_extraction.lvs",
+      "sha256": "dea4df60fced945fb182e2d2e511a73b6b2863d70acfbbb9875e8535bc0caa49"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/res_connections.lvs",
+      "sha256": "a42d02de14a62c239850946bd0f1831408b9076ee43c5a38bb261c72659bc448"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/res_derivations.lvs",
+      "sha256": "3c32e371d71ddbb7190769db6aac4676d65f75eff1ca994fbf720ceb06255754"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/res_extraction.lvs",
+      "sha256": "f3913114d4eafc36f6baf8c47a5de4867270e41955572af7f25c5f498ccec4b1"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/rfmos_connections.lvs",
+      "sha256": "88d8335742119b8b88811f408defb789cc8fbde2c910c1deb33d9a4837a5b2d3"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/rfmos_derivations.lvs",
+      "sha256": "5ae022be71ec90487ebf4636820563bc665815dfc12a36068b331d9571f54677"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/rfmos_extraction.lvs",
+      "sha256": "114bafea13d39aff60411442efb768f45b9460068b0fa25f85e36762ee89e3cd"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/rfmos_model_mapping.lvs",
+      "sha256": "effbefbe9c0007bc2df0d23e1ebb7585487a6bf6dc0a7e11c4167765fee8d33f"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/sram_integration.lvs",
+      "sha256": "447e02305b8896fde8b3ce71de31a686775953695322b88298f04949b4f123de"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/tap_connections.lvs",
+      "sha256": "b78c5b3cf4e328c915d52f210c6457790ec7ef56eb08d88dedb825ca3bc59b3b"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/tap_derivations.lvs",
+      "sha256": "b6e9ff382b6f8c392ab699d09832ea7e0ad120bc1b35b51a778e8b188b0ce6c2"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/tap_extraction.lvs",
+      "sha256": "e17c779eacdcab3bfa2287ca265d7836dde0e9e7fec4b4e7bf79bf2b2dd9120b"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/run_lvs.py",
+      "sha256": "1079e9ac83f5b1b97a2c77c11143783556a391780772126ac3e5c5c300210ef3"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/ihp-sg13g2/libs.tech/klayout/tech/lvs/sg13g2.lvs",
+      "sha256": "9107409a7027a6b9982b1bfa9053970fd03e52af388045c440d6dc11f1c97ae7"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/upstream_purge_fix/versions.txt",
+      "sha256": "a534833d68283a94cc95d7233f2cb1e6201d6b0e21983870153b56c3f4daa930"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/inputs/sg13g2_DCNDiode/sg13g2_DCNDiode.cdl",
+      "sha256": "e6beb7b9b6eb3ac828ae597aebb68e8773ee5c0408ab3f0ca1867f652d930e43"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/inputs/sg13g2_DCNDiode/sg13g2_DCNDiode.gds",
+      "sha256": "88b37db301c78b051f74fd8d7c851fb8fb237964bde4b7b6a60657faa2ed11e4"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/inputs/sg13g2_DCPDiode/sg13g2_DCPDiode.cdl",
+      "sha256": "4179ad18e54dd2b5a94bd019d2f38665d66ee690a0c0d7d7945e9a65d7026708"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/inputs/sg13g2_DCPDiode/sg13g2_DCPDiode.gds",
+      "sha256": "9279af521a7ba6f61b57c625edad6b7c4f1e6f7f2b8824e1ab23a22d5390ccf0"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/leaf_source_identity.json",
+      "sha256": "22bfc0510a10c289d0c465ad4ff6007059fe02d2b11119825d6d2bfdf7a02973"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/official_purge_fix_blob.json",
+      "sha256": "5dc33fd47ae00f91d85ec715a3a51689c4cdc352602b1e09da2e87b00b69adb6"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/official_purge_fix_commit.json",
+      "sha256": "46a3406e162a119f4f0b8be022f11a22622e9467460492a5d5a8fed6ea214287"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/probe_lvs_leaf_source_identity.py",
+      "sha256": "26ee37211c53c7961423db4736e504034744982536a6af892c7dd93e44c99e63"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/run_lvs_purge_ab.py",
+      "sha256": "23c1c8c609b8e2427a4a795344db2fbac3093287d8f4b3ca2292a4095b686b5b"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/source-probe/tool.log",
+      "sha256": "5e9fc10800b8c3b9daa3250b356bc5fd42faea7c896d771fe3d3c2a75bd78fc0"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/upstream_purge_fix/sg13g2_DCNDiode/cross_reference.json",
+      "sha256": "9132036eff11db197d8cbb2b84ee95b4cdd76ec64740f5410d7bd8593ed6a3fa"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/upstream_purge_fix/sg13g2_DCNDiode/lvs_run_2026_09_05_09_49_48.log",
+      "sha256": "3f72bf57999068e1be0461b4bc1c340f9394054c78a0be58067667c691471823"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/upstream_purge_fix/sg13g2_DCNDiode/sg13g2_DCNDiode.log",
+      "sha256": "93dae106a00f0510ee39cc2f99744606a7907fbec7978047a1fc1b2474b14938"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/upstream_purge_fix/sg13g2_DCNDiode/sg13g2_DCNDiode.lvsdb",
+      "sha256": "f379c581dcb1f94e3f61a16561809003cda55d90c6162d84b091b90047c60f57"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/upstream_purge_fix/sg13g2_DCNDiode/sg13g2_DCNDiode_extracted.cir",
+      "sha256": "16d7dcb09bf2f37e5d2347c1c2a4985b836c7a8b20ed29b4d4fd7132b4cfa806"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/upstream_purge_fix/sg13g2_DCNDiode/tool.log",
+      "sha256": "7745c43703851737899c7d73f3f450f55704abd05d37b7d105b6082aa48866c0"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/upstream_purge_fix/sg13g2_DCPDiode/cross_reference.json",
+      "sha256": "12517dbd546d1e172e0afbe4d6bba761a68079b9ee795572b4816bfae110a507"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/upstream_purge_fix/sg13g2_DCPDiode/lvs_run_2026_09_05_09_49_51.log",
+      "sha256": "95357f2ea4cedced2d4febc1c7646166c3bfbb4ba0f2b7d897e92bb15d500221"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/upstream_purge_fix/sg13g2_DCPDiode/sg13g2_DCPDiode.log",
+      "sha256": "de7a2e2c9b500e9af0e2cafc9e67ba04b89494e7a4e0ca7ec1dab4f5a9e4c4f6"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/upstream_purge_fix/sg13g2_DCPDiode/sg13g2_DCPDiode.lvsdb",
+      "sha256": "93934b9ad5e7f83d74ec2440f2ae71fdfdc654c74a5fe5577f1b054c2c39b72c"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/upstream_purge_fix/sg13g2_DCPDiode/sg13g2_DCPDiode_extracted.cir",
+      "sha256": "83a800f6b56003c908ab7f629104fc00863414f26b9ea2b1372907b7f19b9920"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/upstream_purge_fix/sg13g2_DCPDiode/tool.log",
+      "sha256": "725a2b7091f01aa3f49b5ec25a2d5a11527778c2f7a0a9c70532f1f955402a59"
+    },
+    {
+      "category": "lvs_run_artifact_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/upstream_purge_removal.patch",
+      "sha256": "14f7e23cfdbbfeab85734a14bb99385a14452b5ba47e9493bee149da150c0c52"
+    },
+    {
+      "category": "lvs_script_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/analyze_lvs_purge_ab.py",
+      "sha256": "2963f0b96f70abd556763178de7203ecad8d07cd3db9bfa08360e595dd0459f5"
+    },
+    {
+      "category": "lvs_script_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/probe_lvs_leaf_source_identity.py",
+      "sha256": "26ee37211c53c7961423db4736e504034744982536a6af892c7dd93e44c99e63"
+    },
+    {
+      "category": "lvs_script_sha256",
+      "path": "runs/croc-lvs-leaf-purge-ab-20260905-001/run_lvs_purge_ab.py",
+      "sha256": "23c1c8c609b8e2427a4a795344db2fbac3093287d8f4b3ca2292a4095b686b5b"
+    },
+    {
+      "category": "lvs_sources",
+      "path": "reports/bondpad/compare_input_io_cell.py",
+      "sha256": "a72610443b6a8094d190cafa9ec4f40cc919f3eac3703a020a0e2985d879f3ab"
+    },
+    {
+      "category": "lvs_sources",
+      "path": "runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-leaf-diagnostic-20260830-rerun-002/sg13g2_DCNDiode/inputs/sg13g2_DCNDiode.cdl",
+      "sha256": "e6beb7b9b6eb3ac828ae597aebb68e8773ee5c0408ab3f0ca1867f652d930e43"
+    },
+    {
+      "category": "lvs_sources",
+      "path": "runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-leaf-diagnostic-20260830-rerun-002/sg13g2_DCNDiode/inputs/sg13g2_DCNDiode.gds",
+      "sha256": "88b37db301c78b051f74fd8d7c851fb8fb237964bde4b7b6a60657faa2ed11e4"
+    },
+    {
+      "category": "lvs_sources",
+      "path": "runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-leaf-diagnostic-20260830-rerun-002/sg13g2_DCPDiode/inputs/sg13g2_DCPDiode.cdl",
+      "sha256": "4179ad18e54dd2b5a94bd019d2f38665d66ee690a0c0d7d7945e9a65d7026708"
+    },
+    {
+      "category": "lvs_sources",
+      "path": "runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-leaf-diagnostic-20260830-rerun-002/sg13g2_DCPDiode/inputs/sg13g2_DCPDiode.gds",
+      "sha256": "9279af521a7ba6f61b57c625edad6b7c4f1e6f7f2b8824e1ab23a22d5390ccf0"
+    },
+    {
+      "category": "lvs_sources",
+      "path": "scripts/analyze_small_lvsdb.py",
+      "sha256": "3d780670fb6fff8653e866b1d8cee524b008a7ea2dfe92cddd320da953951e36"
+    },
+    {
+      "category": "lvs_sources",
+      "path": "upstream/croc/technology/gds/sg13g2_io.gds",
+      "sha256": "8bb45016e5a99e48b1df1ea52c97d6813d96f6afeb905a72a956ddc2c018565f"
+    },
+    {
+      "category": "lvs_sources",
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/gds/sg13g2_io.gds",
+      "sha256": "4281a855377b6a1ca46356e9391258dc14e8efc3b8051a65befc0fe9db3c7825"
+    },
+    {
+      "category": "lvs_sources",
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/rfmos_model_mapping.lvs",
+      "sha256": "9cba1b823a1b805bb82dacb31cc5f18b3135da44db1b87f683b248713cde8584"
+    },
+    {
+      "category": "lvs_sources",
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/run_lvs.py",
+      "sha256": "1079e9ac83f5b1b97a2c77c11143783556a391780772126ac3e5c5c300210ef3"
+    },
+    {
+      "category": "lvs_sources",
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/sg13g2.lvs",
+      "sha256": "9107409a7027a6b9982b1bfa9053970fd03e52af388045c440d6dc11f1c97ae7"
+    },
+    {
+      "category": "lvs_sources",
+      "path": "upstream/ihp-open-pdk/versions.txt",
+      "sha256": "a534833d68283a94cc95d7233f2cb1e6201d6b0e21983870153b56c3f4daa930"
+    }
+  ],
+  "checks_passed": 276,
+  "python_AST_files_passed": 6,
+  "summary_path": "reports/bondpad/io-ring-pg-20260905-001.json",
+  "summary_sha256": "bdb3ef81bf595c933f8492553baefd14405ec75614c5253f2a04564914014c48",
+  "unique_files_verified": 165,
+  "validated_at": "2026-09-05T10:05:33.217325+00:00"
+}

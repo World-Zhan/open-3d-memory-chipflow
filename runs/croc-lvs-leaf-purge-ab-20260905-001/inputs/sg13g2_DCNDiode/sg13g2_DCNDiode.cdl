@@ -1,0 +1,8 @@
+* Exact official sg13g2_io leaf extracted for strict-deep LVS
+* Top cell: sg13g2_DCNDiode
+.SUBCKT sg13g2_DCNDiode anode cathode guard
+*.PININFO anode:B cathode:B guard:B
+DD1 sub! cathode dantenna m=1 w=1.26u l=27.78u a=35.003p p=58.08u
+DD0 sub! cathode dantenna m=1 w=1.26u l=27.78u a=35.003p p=58.08u
+XR0 anode sub! ptap1 A=141.253p P=47.54u
+.ENDS

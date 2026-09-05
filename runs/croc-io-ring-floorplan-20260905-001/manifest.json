@@ -1,0 +1,1075 @@
+{
+  "bondpad_gap_um": 4.2,
+  "classification": "io_only_ring_floorplan_not_full_chip",
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "--name",
+    "croc-io-ring-floorplan-20260905-001",
+    "--cpus",
+    "2",
+    "--memory",
+    "4g",
+    "--user",
+    "1000:1000",
+    "-e",
+    "HOME=/tmp",
+    "-e",
+    "CROC_PDK=sg13g2",
+    "-e",
+    "CROC_SKIP_TECH_SETUP=1",
+    "--entrypoint",
+    "/bin/bash",
+    "-v",
+    "/home/james_zhan/projects/open-3d-memory-chipflow:/work:ro",
+    "-v",
+    "/home/james_zhan/projects/open-3d-memory-chipflow/upstream/croc:/fosic/designs/croc:ro",
+    "-v",
+    "/home/james_zhan/projects/open-3d-memory-chipflow/runs/croc-bondpad-io-ab-20260905-001/inputs:/reference:ro",
+    "-v",
+    "/home/james_zhan/projects/open-3d-memory-chipflow/runs/croc-io-ring-floorplan-20260905-001:/output:rw",
+    "-w",
+    "/work/upstream/croc/openroad",
+    "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+    "-lc",
+    "source ../env.sh && timeout --signal=TERM --kill-after=10s 90s openroad -exit /output/build_io_ring.tcl"
+  ],
+  "core_instances_and_core_routes_included": false,
+  "electrical_die_um": [
+    1974,
+    1974
+  ],
+  "explicit_candidate_pg_mapping": {
+    "VDD": "vdd",
+    "VDDIO": "iovdd",
+    "VSS": "vss",
+    "VSSIO": "iovss"
+  },
+  "finished_at": "2026-09-05T09:47:38.159287+00:00",
+  "io_instance_count": 64,
+  "io_offset_um": 92,
+  "io_pitch_um": 90,
+  "original_signal_net_connections_retained": {
+    "clk_i": [
+      [
+        "pad_clk_i",
+        "pad"
+      ]
+    ],
+    "gpio0_io": [
+      [
+        "pad_gpio0_io",
+        "pad"
+      ]
+    ],
+    "gpio10_io": [
+      [
+        "pad_gpio10_io",
+        "pad"
+      ]
+    ],
+    "gpio11_io": [
+      [
+        "pad_gpio11_io",
+        "pad"
+      ]
+    ],
+    "gpio12_io": [
+      [
+        "pad_gpio12_io",
+        "pad"
+      ]
+    ],
+    "gpio13_io": [
+      [
+        "pad_gpio13_io",
+        "pad"
+      ]
+    ],
+    "gpio14_io": [
+      [
+        "pad_gpio14_io",
+        "pad"
+      ]
+    ],
+    "gpio15_io": [
+      [
+        "pad_gpio15_io",
+        "pad"
+      ]
+    ],
+    "gpio16_io": [
+      [
+        "pad_gpio16_io",
+        "pad"
+      ]
+    ],
+    "gpio17_io": [
+      [
+        "pad_gpio17_io",
+        "pad"
+      ]
+    ],
+    "gpio18_io": [
+      [
+        "pad_gpio18_io",
+        "pad"
+      ]
+    ],
+    "gpio19_io": [
+      [
+        "pad_gpio19_io",
+        "pad"
+      ]
+    ],
+    "gpio1_io": [
+      [
+        "pad_gpio1_io",
+        "pad"
+      ]
+    ],
+    "gpio20_io": [
+      [
+        "pad_gpio20_io",
+        "pad"
+      ]
+    ],
+    "gpio21_io": [
+      [
+        "pad_gpio21_io",
+        "pad"
+      ]
+    ],
+    "gpio22_io": [
+      [
+        "pad_gpio22_io",
+        "pad"
+      ]
+    ],
+    "gpio23_io": [
+      [
+        "pad_gpio23_io",
+        "pad"
+      ]
+    ],
+    "gpio24_io": [
+      [
+        "pad_gpio24_io",
+        "pad"
+      ]
+    ],
+    "gpio25_io": [
+      [
+        "pad_gpio25_io",
+        "pad"
+      ]
+    ],
+    "gpio26_io": [
+      [
+        "pad_gpio26_io",
+        "pad"
+      ]
+    ],
+    "gpio27_io": [
+      [
+        "pad_gpio27_io",
+        "pad"
+      ]
+    ],
+    "gpio28_io": [
+      [
+        "pad_gpio28_io",
+        "pad"
+      ]
+    ],
+    "gpio29_io": [
+      [
+        "pad_gpio29_io",
+        "pad"
+      ]
+    ],
+    "gpio2_io": [
+      [
+        "pad_gpio2_io",
+        "pad"
+      ]
+    ],
+    "gpio30_io": [
+      [
+        "pad_gpio30_io",
+        "pad"
+      ]
+    ],
+    "gpio31_io": [
+      [
+        "pad_gpio31_io",
+        "pad"
+      ]
+    ],
+    "gpio3_io": [
+      [
+        "pad_gpio3_io",
+        "pad"
+      ]
+    ],
+    "gpio4_io": [
+      [
+        "pad_gpio4_io",
+        "pad"
+      ]
+    ],
+    "gpio5_io": [
+      [
+        "pad_gpio5_io",
+        "pad"
+      ]
+    ],
+    "gpio6_io": [
+      [
+        "pad_gpio6_io",
+        "pad"
+      ]
+    ],
+    "gpio7_io": [
+      [
+        "pad_gpio7_io",
+        "pad"
+      ]
+    ],
+    "gpio8_io": [
+      [
+        "pad_gpio8_io",
+        "pad"
+      ]
+    ],
+    "gpio9_io": [
+      [
+        "pad_gpio9_io",
+        "pad"
+      ]
+    ],
+    "jtag_tck_i": [
+      [
+        "pad_jtag_tck_i",
+        "pad"
+      ]
+    ],
+    "jtag_tdi_i": [
+      [
+        "pad_jtag_tdi_i",
+        "pad"
+      ]
+    ],
+    "jtag_tdo_o": [
+      [
+        "pad_jtag_tdo_o",
+        "pad"
+      ]
+    ],
+    "jtag_tms_i": [
+      [
+        "pad_jtag_tms_i",
+        "pad"
+      ]
+    ],
+    "jtag_trst_ni": [
+      [
+        "pad_jtag_trst_ni",
+        "pad"
+      ]
+    ],
+    "net11632": [
+      [
+        "pad_unused3_o",
+        "c2p"
+      ],
+      [
+        "pad_unused2_o",
+        "c2p"
+      ],
+      [
+        "pad_unused1_o",
+        "c2p"
+      ],
+      [
+        "pad_unused0_o",
+        "c2p"
+      ]
+    ],
+    "ref_clk_i": [
+      [
+        "pad_ref_clk_i",
+        "pad"
+      ]
+    ],
+    "rst_ni": [
+      [
+        "pad_rst_ni",
+        "pad"
+      ]
+    ],
+    "soc_clk_i": [
+      [
+        "pad_clk_i",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_0_": [
+      [
+        "pad_gpio0_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_10_": [
+      [
+        "pad_gpio10_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_11_": [
+      [
+        "pad_gpio11_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_12_": [
+      [
+        "pad_gpio12_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_13_": [
+      [
+        "pad_gpio13_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_14_": [
+      [
+        "pad_gpio14_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_15_": [
+      [
+        "pad_gpio15_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_16_": [
+      [
+        "pad_gpio16_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_17_": [
+      [
+        "pad_gpio17_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_18_": [
+      [
+        "pad_gpio18_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_19_": [
+      [
+        "pad_gpio19_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_1_": [
+      [
+        "pad_gpio1_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_20_": [
+      [
+        "pad_gpio20_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_21_": [
+      [
+        "pad_gpio21_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_22_": [
+      [
+        "pad_gpio22_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_23_": [
+      [
+        "pad_gpio23_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_24_": [
+      [
+        "pad_gpio24_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_25_": [
+      [
+        "pad_gpio25_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_26_": [
+      [
+        "pad_gpio26_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_27_": [
+      [
+        "pad_gpio27_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_28_": [
+      [
+        "pad_gpio28_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_29_": [
+      [
+        "pad_gpio29_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_2_": [
+      [
+        "pad_gpio2_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_30_": [
+      [
+        "pad_gpio30_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_31_": [
+      [
+        "pad_gpio31_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_3_": [
+      [
+        "pad_gpio3_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_4_": [
+      [
+        "pad_gpio4_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_5_": [
+      [
+        "pad_gpio5_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_6_": [
+      [
+        "pad_gpio6_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_7_": [
+      [
+        "pad_gpio7_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_8_": [
+      [
+        "pad_gpio8_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_i_9_": [
+      [
+        "pad_gpio9_io",
+        "p2c"
+      ]
+    ],
+    "soc_gpio_o_0_": [
+      [
+        "pad_gpio0_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_10_": [
+      [
+        "pad_gpio10_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_11_": [
+      [
+        "pad_gpio11_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_12_": [
+      [
+        "pad_gpio12_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_13_": [
+      [
+        "pad_gpio13_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_14_": [
+      [
+        "pad_gpio14_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_15_": [
+      [
+        "pad_gpio15_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_16_": [
+      [
+        "pad_gpio16_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_17_": [
+      [
+        "pad_gpio17_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_18_": [
+      [
+        "pad_gpio18_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_19_": [
+      [
+        "pad_gpio19_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_1_": [
+      [
+        "pad_gpio1_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_20_": [
+      [
+        "pad_gpio20_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_21_": [
+      [
+        "pad_gpio21_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_22_": [
+      [
+        "pad_gpio22_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_23_": [
+      [
+        "pad_gpio23_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_24_": [
+      [
+        "pad_gpio24_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_25_": [
+      [
+        "pad_gpio25_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_26_": [
+      [
+        "pad_gpio26_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_27_": [
+      [
+        "pad_gpio27_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_28_": [
+      [
+        "pad_gpio28_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_29_": [
+      [
+        "pad_gpio29_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_2_": [
+      [
+        "pad_gpio2_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_30_": [
+      [
+        "pad_gpio30_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_31_": [
+      [
+        "pad_gpio31_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_3_": [
+      [
+        "pad_gpio3_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_4_": [
+      [
+        "pad_gpio4_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_5_": [
+      [
+        "pad_gpio5_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_6_": [
+      [
+        "pad_gpio6_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_7_": [
+      [
+        "pad_gpio7_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_8_": [
+      [
+        "pad_gpio8_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_o_9_": [
+      [
+        "pad_gpio9_io",
+        "c2p"
+      ]
+    ],
+    "soc_gpio_out_en_o_0_": [
+      [
+        "pad_gpio0_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_10_": [
+      [
+        "pad_gpio10_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_11_": [
+      [
+        "pad_gpio11_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_12_": [
+      [
+        "pad_gpio12_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_13_": [
+      [
+        "pad_gpio13_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_14_": [
+      [
+        "pad_gpio14_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_15_": [
+      [
+        "pad_gpio15_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_16_": [
+      [
+        "pad_gpio16_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_17_": [
+      [
+        "pad_gpio17_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_18_": [
+      [
+        "pad_gpio18_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_19_": [
+      [
+        "pad_gpio19_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_1_": [
+      [
+        "pad_gpio1_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_20_": [
+      [
+        "pad_gpio20_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_21_": [
+      [
+        "pad_gpio21_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_22_": [
+      [
+        "pad_gpio22_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_23_": [
+      [
+        "pad_gpio23_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_24_": [
+      [
+        "pad_gpio24_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_25_": [
+      [
+        "pad_gpio25_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_26_": [
+      [
+        "pad_gpio26_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_27_": [
+      [
+        "pad_gpio27_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_28_": [
+      [
+        "pad_gpio28_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_29_": [
+      [
+        "pad_gpio29_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_2_": [
+      [
+        "pad_gpio2_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_30_": [
+      [
+        "pad_gpio30_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_31_": [
+      [
+        "pad_gpio31_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_3_": [
+      [
+        "pad_gpio3_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_4_": [
+      [
+        "pad_gpio4_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_5_": [
+      [
+        "pad_gpio5_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_6_": [
+      [
+        "pad_gpio6_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_7_": [
+      [
+        "pad_gpio7_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_8_": [
+      [
+        "pad_gpio8_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_gpio_out_en_o_9_": [
+      [
+        "pad_gpio9_io",
+        "c2p_en"
+      ]
+    ],
+    "soc_jtag_tck_i": [
+      [
+        "pad_jtag_tck_i",
+        "p2c"
+      ]
+    ],
+    "soc_jtag_tdi_i": [
+      [
+        "pad_jtag_tdi_i",
+        "p2c"
+      ]
+    ],
+    "soc_jtag_tdo_o": [
+      [
+        "pad_jtag_tdo_o",
+        "c2p"
+      ]
+    ],
+    "soc_jtag_tms_i": [
+      [
+        "pad_jtag_tms_i",
+        "p2c"
+      ]
+    ],
+    "soc_jtag_trst_ni": [
+      [
+        "pad_jtag_trst_ni",
+        "p2c"
+      ]
+    ],
+    "soc_ref_clk_i": [
+      [
+        "pad_ref_clk_i",
+        "p2c"
+      ]
+    ],
+    "soc_rst_ni": [
+      [
+        "pad_rst_ni",
+        "p2c"
+      ]
+    ],
+    "soc_status_o": [
+      [
+        "pad_status_o",
+        "c2p"
+      ]
+    ],
+    "soc_testmode_i": [
+      [
+        "pad_testmode_i",
+        "p2c"
+      ]
+    ],
+    "soc_uart_rx_i": [
+      [
+        "pad_uart_rx_i",
+        "p2c"
+      ]
+    ],
+    "soc_uart_tx_o": [
+      [
+        "pad_uart_tx_o",
+        "c2p"
+      ]
+    ],
+    "status_o": [
+      [
+        "pad_status_o",
+        "pad"
+      ]
+    ],
+    "testmode_i": [
+      [
+        "pad_testmode_i",
+        "pad"
+      ]
+    ],
+    "uart_rx_i": [
+      [
+        "pad_uart_rx_i",
+        "pad"
+      ]
+    ],
+    "uart_tx_o": [
+      [
+        "pad_uart_tx_o",
+        "pad"
+      ]
+    ],
+    "unused0_o": [
+      [
+        "pad_unused0_o",
+        "pad"
+      ]
+    ],
+    "unused1_o": [
+      [
+        "pad_unused1_o",
+        "pad"
+      ]
+    ],
+    "unused2_o": [
+      [
+        "pad_unused2_o",
+        "pad"
+      ]
+    ],
+    "unused3_o": [
+      [
+        "pad_unused3_o",
+        "pad"
+      ]
+    ]
+  },
+  "outputs_sha256": {
+    "build_io_ring.tcl": "8e0a546a146de13e798749e7f19ee6fce1c30fb81ad1a775d62ba4d9aa5bb3a7",
+    "instances.tsv": "0088fff13be04fb96aab09cbdd551af1f9158a96fbceaa619aad1aba6f8a0ed6",
+    "io_ring.def": "27b6974e25c806a73287bf0de76edba10927a6206cc4eb64aa126857d0678076",
+    "io_ring.odb": "cf0ddc4a8e244fcc3a90e2f7c9c876befbf05f4093a1d8575d1c5321c930517c",
+    "io_ring_input.def": "a30e416cb7cc12f6d41c9d9bb7921ff7f75aa22e413f46fb7b6dcc7fb49e649a",
+    "padring_candidate.tcl": "bd9ebef404dc20f1afc3e5ecc3ff6de88487cde28d86eba9df8dc1f57e7b9f19",
+    "terminals.tsv": "bc7347dc5a7fcf2315f3a46fa02ac76ed2b61cc00c7e6179a075b8bdf3dbb912",
+    "tool.log": "0dd737629c0673330e23bbaeb1445a315383e4e8b23d553e5bf3d1a24b6fbf37"
+  },
+  "planned_sealed_bbox_um": [
+    2058,
+    2058
+  ],
+  "public_rule_signoff": false,
+  "returncode": 0,
+  "run_id": "croc-io-ring-floorplan-20260905-001",
+  "source_hashes_unchanged": true,
+  "source_sha256": {
+    "runs/croc-bondpad-io-ab-20260905-001/inputs/bondpad70_m2_ring.lef": "8d717917dc1e1c15efc677c0f61af0ab82d3f47c15b5c8f392de7e475ec5117f",
+    "runs/croc-io-ring-floorplan-20260905-001/build_io_ring.tcl": "8e0a546a146de13e798749e7f19ee6fce1c30fb81ad1a775d62ba4d9aa5bb3a7",
+    "runs/croc-io-ring-floorplan-20260905-001/io_ring_input.def": "a30e416cb7cc12f6d41c9d9bb7921ff7f75aa22e413f46fb7b6dcc7fb49e649a",
+    "runs/croc-io-ring-floorplan-20260905-001/padring_candidate.tcl": "bd9ebef404dc20f1afc3e5ecc3ff6de88487cde28d86eba9df8dc1f57e7b9f19",
+    "runs/croc-sg13g2-baseline-20260827-001/artifacts/pnr/upstream/croc/openroad/out/croc.def": "a049a3dc53ad75b081441078048a74e02e535d1168dae7c8461933f9b60058dd",
+    "scripts/run_io_ring_floorplan.py": "978cf4f2db202a26a0df7d6e5e8f0cf35a2a82658b79653ac6e5dae6288a8998",
+    "upstream/croc/env.sh": "79f17eba9acc962cdd7953dffa20f42826ca5346bf3ccad76d0c1722b427fa6d",
+    "upstream/croc/openroad/scripts/init_tech_sg13g2.tcl": "2d5e4171e397f899e8b7dbf185a718b042a6d114cabcd108c2351aa5a3d9b989",
+    "upstream/croc/openroad/src/padring.tcl": "4bca60b59e8b4cd887c05342e98365ac5c8a03dafcf837ce58c8a91410fde0fa",
+    "upstream/croc/technology/lef/RM_IHPSG13_1P_1024x64_c2_bm_bist.lef": "1582515b5226d196d17d706f0df8b2390fa0d0451416b7a4a5ce3ba47bff862f",
+    "upstream/croc/technology/lef/RM_IHPSG13_1P_2048x64_c2_bm_bist.lef": "630e1f2efcf0c4c512fa53760bb7451f4fcf7155e6265d887c936dcf65be4bea",
+    "upstream/croc/technology/lef/RM_IHPSG13_1P_256x48_c2_bm_bist.lef": "5d6da80c6cb9266cdc2810695899a068f93bdfcd819f7cb4bef5320ed0eb2598",
+    "upstream/croc/technology/lef/RM_IHPSG13_1P_256x64_c2_bm_bist.lef": "246405148ef9df63af32d955f20491c4d087678d03cbfec3eb3ad6653fc8d4c3",
+    "upstream/croc/technology/lef/RM_IHPSG13_1P_512x32_c2_bm_bist.lef": "6e483caff960deaeb97e69a205bbb811b94b4aba15d27d48658e9d5248733cfd",
+    "upstream/croc/technology/lef/RM_IHPSG13_1P_512x64_c2_bm_bist.lef": "93aced65c204c35cc3a9e0315048346df149b6957fd95787df1a2ee0b1bb274b",
+    "upstream/croc/technology/lef/RM_IHPSG13_1P_64x64_c2_bm_bist.lef": "2bbeda3804b585f9e1bdd22edf531a68898152f15a66c65ab643f49f873ae87f",
+    "upstream/croc/technology/lef/bondpad5l_70x70.lef": "c908763286d0fa22a4d74e4e342b1ed44f780566acb45236fdc2970c02750d19",
+    "upstream/croc/technology/lef/bondpad_70x70.lef": "3a08d296380b6808fffbb8f9ee25b4991198e341f78326f9a9b91fd58f0476f3",
+    "upstream/croc/technology/lef/sg13cmos5l_io.lef": "89e551d9cca33e0b467d3bd1817c4c48dfc268ea3517858f21bbd72ed06bcc6a",
+    "upstream/croc/technology/lef/sg13cmos5l_tech.lef": "3edd5a1ad31e8307be537d0d1b85c3258fefeb21aac04aaa476e4f72de4cffd5",
+    "upstream/croc/technology/lef/sg13g2_io.lef": "8b3dc3960960c08e07a1cde3dd9cd0484f5b12df07c4628726fff551bb775c0c",
+    "upstream/croc/technology/lef/sg13g2_stdcell.lef": "c9bbc02d0c2cba3b15cd89a208750d25de882f02a2927ae78ba6422109fb01d0",
+    "upstream/croc/technology/lef/sg13g2_tech.lef": "a12fecdead5721dc3bd14fb75bd0915c61afba064e38af8c7b69d59d9da05080",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_1024x64_c2_bm_bist_fast_1p32V_m55C.lib": "a4365e16423dfc514248eb1ff15af6ed6cb86ed2fd6b59c38cefba9e82e93fbb",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_1024x64_c2_bm_bist_typ_1p20V_25C.lib": "470dd62e2699d4c3d5b19b5dcba950d0c8544661b22f1f2fe1c8af7efa9348b7",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_2048x64_c2_bm_bist_fast_1p32V_m55C.lib": "32ad633416cb9f107b57136ea4305290510400fa065eb136e912f9616400f7f9",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_2048x64_c2_bm_bist_typ_1p20V_25C.lib": "9aefb0cb245b15ced86b10401e71bf2002da31c4e1356b23bf6f4c789bee254f",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_256x48_c2_bm_bist_fast_1p32V_m55C.lib": "c6d26a426c327bef1675813060235052302f7dd714af1ea5e6578d8208e2de4c",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_256x48_c2_bm_bist_typ_1p20V_25C.lib": "59039d282bd8120b718877303c6dd4db6e37dd3199f647349862f04269b7a5cc",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_256x64_c2_bm_bist_fast_1p32V_m55C.lib": "28b3a8980f049099708967e5c799c4f89173f05bda6869cb80f1f2f8d5e8134d",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_256x64_c2_bm_bist_typ_1p20V_25C.lib": "d117d4d86a07afd2d5302740fef0f9d1a12277490c600e1f1f7ba4633ca6e50a",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_512x32_c2_bm_bist_fast_1p32V_m55C.lib": "1e88cf828c81de2512d5294d0a3922854cebc8913de9af485f3e7c9fb08c3a42",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_512x32_c2_bm_bist_typ_1p20V_25C.lib": "1a7409f75c7107385d01f8b2e9cde5d22ee54e1e914643b70e19833e03f3e9b0",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_512x64_c2_bm_bist_fast_1p32V_m55C.lib": "b78f5deea88222e3993a148588d96a187b84c767e8d31cdc988c8cf746bd05c0",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_512x64_c2_bm_bist_typ_1p20V_25C.lib": "1fb769565599938fa7179d4d62f1d49ffd356ef0fdf7277d705ca19486b27b0e",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_64x64_c2_bm_bist_fast_1p32V_m55C.lib": "259b44ad5604902a3247f08d2e43b425c59e54cfe9775f1a3fe1cd5139e5ecc0",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_64x64_c2_bm_bist_typ_1p20V_25C.lib": "6064c5909605d9d4242df1ab3043598e558951122d210c18f12f1ab15badd044",
+    "upstream/croc/technology/lib/sg13cmos5l_io_fast_1p32V_3p6V_m40C.lib": "f25da27e4cc0c94ffbce99e0654814a3af48d00c4ec571c9db5915208a7bbe07",
+    "upstream/croc/technology/lib/sg13cmos5l_io_typ_1p2V_3p3V_25C.lib": "e6b5adf1ce31db3a0c15e5ca069c62e7d9efb604a710b8f6582700f1721d2d98",
+    "upstream/croc/technology/lib/sg13g2_io_fast_1p32V_3p6V_m40C.lib": "0dbc28e762ac820f9db193a2736f408cf1cbf521547fef850083a585c70f212f",
+    "upstream/croc/technology/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib": "e9af7d440c807799de55d16a126467e27d3235e7f53a928e014cdabee98369c9",
+    "upstream/croc/technology/lib/sg13g2_stdcell_fast_1p32V_m40C.lib": "f191a3132d0f2f59ca2721884cdb1d8360c8fbf3e0012056af62583dd69ae701",
+    "upstream/croc/technology/lib/sg13g2_stdcell_typ_1p20V_25C.lib": "7677a8918689f452e80405ad16a83e744709342574f2aedcc507c2758986b396"
+  },
+  "started_at": "2026-09-05T09:47:36.770867+00:00",
+  "status": "completed",
+  "whole_chip_modified": false
+}

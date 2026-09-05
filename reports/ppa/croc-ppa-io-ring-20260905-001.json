@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0.0",
+  "classification": "complete_io_only_ring_no_new_whole_chip_ppa",
+  "iteration": "io_ring_20260905_001",
+  "source_sha256": {
+    "runs/croc-io-ring-floorplan-20260905-001/manifest.json": "dd29f4a2bbd8511ffa0b8779e0a9ec4af4342a2406e9b25265a921f20cd85169",
+    "runs/croc-io-ring-physical-20260905-002/manifest.json": "e25f7b7382189e5947b8b48b40edb58a99f57ea7d8a3eba9abd00015ea6afeb5",
+    "runs/croc-io-ring-physical-20260905-002/geometry_audit.json": "e2a1d0fc290d57c9babd36125497fe493fe7609f94ecea443797bf9879d79242",
+    "runs/croc-io-ring-physical-20260905-002/plan_audit.json": "3eba4871e3afef3d23789114ae3187ea6563e4bb9c5031d2f29c88fd8bc44042",
+    "runs/croc-io-ring-drc-20260905-001/manifest.json": "12d94117caec1d6c3a6b38b8c593da2cfef146f24677649b05b2922272382942",
+    "runs/croc-io-ring-drc-20260905-001/audit.json": "d70964a7adb660a20abe97ce945b9412afb166dcb78e352019b6af1a3e57c8d4",
+    "runs/croc-io-ring-maximal-flat-20260905-001/manifest.json": "495c1c6666116d7b5ed4fb9742e718daa60eaa80674977681e4fdb56b841ba47",
+    "reports/bondpad/io-ring-composite-drc-20260905-002.json": "7018b4ad76d99a53968b059be5fc7fc5596da892f21e88765f92c9aaf13f07ab",
+    "reports/bondpad/io-ring-pg-20260905-001.json": "bdb3ef81bf595c933f8492553baefd14405ec75614c5253f2a04564914014c48",
+    "reports/bondpad/io-ring-pg-vias-20260905-001.json": "c84ce9cc0385cdf131e84b3dbf58aa4e3d0b7e5566ccb91dc0c313a57ac641e7",
+    "reports/lvs/strict-leaf-next-step-20260905-001.json": "8f6cb0fbfdbe7f0e809121cfb35d58a84c892458b6c019b351931fb9f1fc7e47",
+    "reports/ppa/croc-ppa-rcx-20260905-001.json": "c64f128bb03bdfcc7cc8b9088c06e76a0538ad2132b86ce1a81f0910fcd1099c",
+    "reports/ppa/croc-ppa-cts-branch-eco-20260905-003.json": "1701884db281b20e7245a85c4334b86551c0656d65f87fba482e65db154cd3ac",
+    "reports/ppa/comparison_sources_20260905.json": "d0406baa7db243590b57ed592f65bf41ac72a79eb34d30e2abf73c6f38adc6ae"
+  },
+  "whole_chip_modified": false,
+  "core_logic_included": false,
+  "new_whole_chip_power_mw": null,
+  "new_whole_chip_fmax_mhz": null,
+  "new_whole_chip_active_area_mm2": null,
+  "new_extraction_performed": false,
+  "io_ring_area": {
+    "baseline_io_instance_area_total_um2": 1462720.0,
+    "baseline_sealed_bbox_area_mm2": 4.0,
+    "candidate_electrical_bbox_area_mm2": 3.896676,
+    "candidate_io_instance_area_total_um2": 1472800.0,
+    "candidate_io_instance_area_um2": {
+      "cover": 313600.0,
+      "pad": 1159200.0
+    },
+    "candidate_sealed_bbox_area_mm2": 4.235364,
+    "io_instance_area_delta_um2": 10080.0,
+    "new_whole_chip_active_area_mm2": null,
+    "new_whole_chip_fmax_mhz": null,
+    "new_whole_chip_power_mw": null,
+    "sealed_bbox_delta_percent": 5.884099999999992
+  },
+  "local_geometry": {
+    "io_count": 64,
+    "bondpad_count": 64,
+    "filler_count": 60,
+    "corner_count": 4,
+    "io_pitch_um": 90,
+    "io_offset_um": 92,
+    "electrical_bbox_um": [
+      1974,
+      1974
+    ],
+    "sealed_bbox_um": [
+      2058,
+      2058
+    ],
+    "lead_gap_um": 4.2,
+    "lead_count": 64,
+    "lead_metal_rectangles": 384,
+    "lead_area_per_pad_per_metal_um2": 294,
+    "lead_area_is_not_die_or_active_area": true
+  },
+  "drc": {
+    "original_runner_exit": 1,
+    "original_execution_complete": false,
+    "maximal_replay_exit": 137,
+    "composite_execution_complete": false,
+    "original_merged_markers": 131,
+    "composite_merged_markers": null,
+    "fixture_drc_passed": false,
+    "whole_chip_drc_lvs_performed": false
+  },
+  "io_ring_pg_metal_via_connectivity": {
+    "result": "PASS",
+    "separate_supply_components": 4,
+    "macro_pin_layer_regions": 2328,
+    "supply_bondpad_layer_regions": 96,
+    "mixed_supply_components": 0,
+    "core_pdn_included": false,
+    "lvs_ir_em_proven": false
+  },
+  "unchanged_routed_reference": {
+    "sram_kib": 4,
+    "sealed_gds_bbox_area_mm2": 4.0,
+    "electrical_die_mm2": 3.671056,
+    "tt_tool_power_mw": 43.6,
+    "activity_loaded": false,
+    "rc_models": 1,
+    "clock_constraint_mhz": 100,
+    "measured_fmax_mhz": null
+  },
+  "distinct_cts_reference": {
+    "active_area_mm2": 0.7208351136,
+    "tt_tool_power_mw": 56.4,
+    "slew": 71,
+    "capacitance": 135,
+    "fanout": 0,
+    "route": "not_run"
+  },
+  "peer_reference": {
+    "name": "ETH MLEM/Croc",
+    "process": "IHP 130nm",
+    "sram_kib": 24,
+    "area_mm2": 4.995225,
+    "reported_typical_mhz": 80,
+    "reported_voltage_v": 1.2,
+    "comparable_power_mw": null,
+    "local_advantage_ratio": null
+  },
+  "public_rule_signoff": false,
+  "foundry_signoff": false
+}

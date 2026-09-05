@@ -1,0 +1,12 @@
+--- a/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/rfmos_model_mapping.lvs
++++ b/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/rfmos_model_mapping.lvs
+@@ -115,9 +115,6 @@
+ 
+     devices_to_remove.each { |device| circuit.remove_device(device) }
+   end
+-
+-  target_netlist.purge_devices
+-  target_netlist.purge
+ end
+ 
+ # Apply mapping on layout side before align/compare.

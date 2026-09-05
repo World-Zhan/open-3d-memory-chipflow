@@ -1,0 +1,507 @@
+{
+  "schema_version": "1.0.0",
+  "checked_at_utc": "2026-09-05T09:52:35.2626169Z",
+  "classification": "read_only_github_upstream_evidence",
+  "repository": "IHP-GmbH/IHP-Open-PDK",
+  "issue_snapshots": [
+    {
+      "body": "# SG13G2 IO diode leaves do not strict-deep LVS-match the official schematics\n\nThis report records a minimal reproducer for discussion with the IHP Open PDK\nmaintainers. It does not request a deck change, waiver, weakened rule, or\nfull-chip retry.\n\n**Suggested priority:** Medium. The mismatch blocks strict LVS of the official\nIO leaves in the public preview PDK, but this report does not claim a production\nfoundry-flow regression.\n\n## Summary\n\nAt IHP Open PDK commit\n`331c00484213b13414777eec1336ef5c29b969bd`, the official\n`sg13g2_DCNDiode` and `sg13g2_DCPDiode` GDS leaves both fail strict-deep\nKLayout LVS against subcircuits copied verbatim from the official CDL. The\nofficial SPICE view agrees with the CDL that both antenna devices share one\n`cathode` net in DCN and one `anode` net in DCP.\n\nObserved extraction:\n\n| Cell | Schematic ports | Extracted ports | Structural result |\n|---|---|---|---|\n| `sg13g2_DCNDiode` | `anode cathode guard` | `anode cathode cathode$1` | FAIL; `guard` missing, `cathode$1` extra |\n| `sg13g2_DCPDiode` | `anode cathode guard` | `guard cathode anode anode$1` | FAIL; `anode$1` extra |\n\nBoth KLayout cross-references classify the leaf circuit as `NoMatch`.\nDevices and nets are layout-only versus schematic-only, so this is not a\npaired parameter-tolerance failure.\n\n## Scope and non-claims\n\n- In the related full-chip run, `maximal_raw_error_count=652` is the raw count\n  from the maximal-rule log. The merged `*_full.lyrdb` independently contains\n  `marker_total=1585` markers in `nonempty_rule_categories=12`; these are\n  different DRC scopes and are not interchangeable.\n- The separate flat full-chip LVS boundary is a strict mismatch: 52 schematic\n  formal ports versus 135,057 extracted formal ports, with zero exact-name\n  shared ports.\n- A deep combined fixture can recover an exact top-port set while its netlists\n  still mismatch. Port-set equality is not LVS exact match.\n- All 15 official standalone IOPad cells tested with strict-deep extraction\n  failed (`0/15` strict pass). This excludes a single-IOPadIn-only defect, but\n  does not prove one common cause for all pads.\n- The DCN/DCP leaf blocker and the 135,057-port flat label-promotion symptom\n  coexist. The IO leaf blocker is not claimed as the sole cause of the\n  full-chip mismatch, and the root cause is not fully identified.\n- No waiver, implicit net, `ignore_top_ports_mismatch`, disabled tap extraction,\n  relaxed comparison, or modified deck is requested or used.\n\n## Environment and immutable inputs\n\n- Container: `hpretl/iic-osic-tools:2025.12`\n- Container digest: `sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521`\n- IHP Open PDK commit: `331c00484213b13414777eec1336ef5c29b969bd`\n- IO GDS SHA-256: `4281a855377b6a1ca46356e9391258dc14e8efc3b8051a65befc0fe9db3c7825`\n- IO CDL SHA-256: `7a30e902099e8a8f85e0ae853167904df3793357a793a7b4dc82237b72b3eec4`\n- IO SPICE SHA-256: `1d53ab7df431b717ef5aff43e1117c0224681d5cc84886da37a319280ee958d6`\n- `run_lvs.py` SHA-256: `1079e9ac83f5b1b97a2c77c11143783556a391780772126ac3e5c5c300210ef3`\n- `layers_definitions.lvs` SHA-256: `2165a344d178eff60c2c79ad73108d74b8a1d2b1a5183e8b3492aa249887e58c`\n- `general_connections.lvs` SHA-256: `bb61656b3564cf08558b83cf27d09854049eb30b5b7ade6610045d43c4b53e97`\n\nThe run keeps `run_mode=deep`, strict ports, `flag_missing_ports=true`, tap\nextraction and simplify. It does not use `ignore_top_ports_mismatch`, implicit\nnets, `--disable_tap_extraction`, `--no_simplify`, `--layout_netlist`, waivers,\nor a modified rule deck.\n\n## Reproduction\n\nRun from the repository root inside WSL ext4:\n\n```sh\ndocker run --rm -v \"$PWD:/work\" hpretl/iic-osic-tools:2025.12 --skip \\\n  python3 /work/scripts/run_lvs_iopad_leaf_diagnostic.py \\\n  --repo-root /work \\\n  --run-dir /work/runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-leaf-diagnostic-20260829-001\n```\n\nThe recorded strict-deep runner commands are:\n\n```text\n/usr/bin/python3 /work/upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/run_lvs.py --layout=/work/runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-leaf-diagnostic-20260829-001/sg13g2_DCNDiode/inputs/sg13g2_DCNDiode.gds --netlist=/work/runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-leaf-diagnostic-20260829-001/sg13g2_DCNDiode/inputs/sg13g2_DCNDiode.cdl --run_dir=/work/runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-leaf-diagnostic-20260829-001/sg13g2_DCNDiode --topcell=sg13g2_DCNDiode --run_mode=deep\n/usr/bin/python3 /work/upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/run_lvs.py --layout=/work/runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-leaf-diagnostic-20260829-001/sg13g2_DCPDiode/inputs/sg13g2_DCPDiode.gds --netlist=/work/runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-leaf-diagnostic-20260829-001/sg13g2_DCPDiode/inputs/sg13g2_DCPDiode.cdl --run_dir=/work/runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-leaf-diagnostic-20260829-001/sg13g2_DCPDiode --topcell=sg13g2_DCPDiode --run_mode=deep\n```\n\nGenerated minimal-input hashes:\n\n| Cell | Minimal GDS | Minimal CDL |\n|---|---|---|\n| DCN | `aa14969a06a07d45e27316cfbccc46a262b943842474a85f26159da6841ea81f` (114,798 B) | `e6beb7b9b6eb3ac828ae597aebb68e8773ee5c0408ab3f0ca1867f652d930e43` (349 B) |\n| DCP | `ca9ff63fc89df9056fd19dd3efd93add6d2fa79fa813072c6fe7bf49e42e5f4f` (114,836 B) | `4179ad18e54dd2b5a94bd019d2f38665d66ee690a0c0d7d7945e9a65d7026708` (352 B) |\n\nThe generated minimal-GDS raw SHA-256 values above identify the retained\n2026-08-29 files only. They are **not** a bitwise-determinism contract:\nKLayout refreshes GDSII `BGNLIB`/`BGNSTR` timestamps when exporting an\nequivalent selected cell. Stable input identity is instead the pinned IHP PDK\ncommit, the official source IO-GDS SHA-256, the source cell name, and the\nrecorded DBU/bounding-box/direct-shape facts in `summary.json`. The generated\nCDL is text and retained a stable raw SHA-256 across reruns. No semantic\ngeometry digest is claimed.\n\nA two-leaf-only reverification on 2026-08-30 is retained at\n`runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-leaf-diagnostic-20260830-rerun-002/`.\nIt reproduced the same port splits and cross-reference counts. The deck\nreported valid runtimes of 1.766733 s for DCN and 1.674267 s for DCP; the whole\ncontainer invocation took 16.21 s wall clock. An earlier rerun made the deck\nemit `LVS Total Run time -1.431181 seconds` for DCP. That negative value is\npreserved as raw log evidence but normalized to `deck_runtime_seconds=null`,\n`deck_runtime_valid=false`; it is not reported as elapsed time.\n\n## Cross-reference evidence\n\n| Cell | circuit | devices | nets | pins | Small LVSDB |\n|---|---|---|---|---|---|\n| DCN | `NoMatch=1` | layout-only 3; schematic-only 1 | layout-only 4; schematic-only 2 | Match 4 | 54,778 B; `d47e30b72e521e2c416bd250d8317929bd75ff2ed337584d6276b3589db9b07d` |\n| DCP | `NoMatch=1` | layout-only 3; schematic-only 1 | layout-only 5; schematic-only 2 | Match 6 | 64,085 B; `a9b5782f3d1673a48b82c60b9e2d49254957ebc1be2f04f8f92e18513b38a98f` |\n\nThe two small `.lvsdb` files, extracted netlists, logs and bounded JSON\ncross-references remain local under\n`runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-leaf-diagnostic-20260829-001/`.\nThey are intentionally ignored by Git.\n\n## Official parent-geometry check\n\nA bounded read-only geometry audit checked the two direct leaf instances under\nthe official `sg13g2_IOPadIn` parent. M1 conductor follows the public deck:\ndrawing/fill `8/0 + 8/22`, text `8/25`.\n\n- DCN duplicated `cathode` access components touch parent M1 components 1 and\n  0 respectively; their shared-parent-component set is empty.\n- DCP duplicated `anode` access components touch parent M1 components 7 and 6\n  respectively; their shared-parent-component set is empty.\n- Therefore no direct parent M1 closure is present in this official parent\n  cell, and a speculative bridge was not drawn or tested.\n\nEvidence:\n`runs/croc-sg13g2-baseline-20260827-001/lvs-iopad-parent-metal-closure-20260829-001/official_parent_connectivity.json`\n(5,952 B, SHA-256\n`9c183265fb2070d58380ae378001c0281580f671cb26fda361721e67203846de`).\n\n## Separate full-chip symptom\n\nThis leaf blocker coexists with a separate full-chip flat-extraction boundary\nfailure: the Croc schematic has 52 top formal ports, while the extracted\n`croc_chip` has 135,057 formal ports and zero exact-name shared ports. Flat\nchild-label promotion accounts for that first full-chip comparison boundary.\nThe two strict-deep leaf failures do **not** explain all 135,057 ports, and the\nfull-chip mismatch must not be attributed to IO alone.\n\n## Expected behavior and upstream questions\n\nThe official IO GDS leaf should strict-match the official CDL/SPICE view using\nthe public deck, or the PDK should document the supported hierarchy/abstract\nflow and provide a matching regression. Please clarify:\n\n1. Are the two access regions intended to be connected in the leaf or by a\n   documented parent construct not present in `sg13g2_IOPadIn` direct M1?\n2. Is there known version skew between IO GDS, CDL/SPICE and the public KLayout\n   LVS deck at this commit?\n3. Is there an official DCN/DCP strict-LVS regression or a supported IO-leaf\n   abstraction mechanism? None was found in the public runner/documentation.\n\nUntil an upstream-supported resolution exists, the project will not change\nthe deck, hide guard/substrate devices, add implicit nets, or start Croc\nfull-chip attempt 3.\n\n## Public evidence\n\n- Reproduction repository: https://github.com/World-Zhan/open-3d-memory-chipflow\n- Machine-readable blocker report: https://github.com/World-Zhan/open-3d-memory-chipflow/blob/864da1c28b89cb7aa134cbadad24496b746d659c/reports/blockers/ihp-sg13g2-io-diode-strict-lvs.json\n- Auditable milestone and separate DRC scopes: https://github.com/World-Zhan/open-3d-memory-chipflow/blob/864da1c28b89cb7aa134cbadad24496b746d659c/runs/croc-sg13g2-baseline-20260827-001/MILESTONE.md\n- Full-chip streaming port analysis: https://github.com/World-Zhan/open-3d-memory-chipflow/blob/864da1c28b89cb7aa134cbadad24496b746d659c/runs/croc-sg13g2-baseline-20260827-001/signoff.attempt-2/lvs/port_mismatch_analysis.json\n",
+      "comments": [],
+      "number": 1130,
+      "state": "OPEN",
+      "title": "SG13G2 IO diode leaves do not strict-deep LVS-match official schematics",
+      "updatedAt": "2026-08-30T09:03:24Z",
+      "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/1130"
+    },
+    {
+      "body": "The CDL of the VSS I/O pad `sg13g2_IOPadVss` claims that the guard ring for `sg13g2_DCNDiode` is connected to net `iovss`.  This net (`guard` pin on cell `sg13g2_DCNDiode`) is an n-tap on an n-well ring and connects to the entire n-tap region underneath the `iovdd` bus.  The obvious connection for this tap is `iovdd`.  However, in the layout, this region is not connected to any bus, nor does it have an associated pin, leading me to think that this is a layout error (which may work in practice, since it would be connected laterally to the same ptap ring in other I/O cells).\n\nAlthough the `guard` pin of `sg13g2_DCNDiode` is not a connection to any device and therefore does not appear as a net inside the `sg13g2_DCNDiode` netlist, but only a pin of the subcircuit, it is a pin connection, and therefore the pin connection must be to the same net in both netlists to pass LVS.  Consequently, I get an LVS failure on the `IOPadVss` cell in netgen:\n\n```\nSubcircuit summary:\nCircuit 1: sg13g2_IOPadVss                 |Circuit 2: sg13g2_IOPadVss\n-------------------------------------------|-------------------------------------------\nsg13g2_DCNDiode (1)                        |sg13g2_DCNDiode (1)\nsg13g2_DCPDiode (1)                        |sg13g2_DCPDiode (1)\nptap1 (2)                                  |ptap1 (2)\nNumber of devices: 4                       |Number of devices: 4\nNumber of nets: 5 **Mismatch**             |Number of nets: 4 **Mismatch**\n---------------------------------------------------------------------------------------\nNET mismatches: Class fragments follow (with fanout counts):\nCircuit 1: sg13g2_IOPadVss                 |Circuit 2: sg13g2_IOPadVss\n\n---------------------------------------------------------------------------------------\nNet: iovss                                 |Net: iovss\n  sg13g2_DCNDiode/anode = 1                |  sg13g2_DCNDiode/anode = 1\n  sg13g2_DCPDiode/guard = 1                |  sg13g2_DCPDiode/guard = 1\n  ptap1/(1|2) = 1                          |  ptap1/(1|2) = 1\n                                           |  sg13g2_DCNDiode/guard = 1\n                                           |\nNet: sg13g2_DCNDiode_0/guard               |(no matching net)\n  sg13g2_DCNDiode/guard = 1                |\n---------------------------------------------------------------------------------------\nNetlists do not match.\n```\n\nThis result clearly shows that `sg13g2_DCNDiode/guard` is a floating net inside the `IOPadVss` cell, not connected to either power bus.",
+      "comments": [
+        {
+          "id": "IC_kwDOH8wpAs7Jm7Jn",
+          "author": {
+            "login": "sergeiandreyev"
+          },
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "@b10346, @stafverhaegen-chipflow, fyi",
+          "createdAt": "2025-10-08T16:49:18Z",
+          "includesCreatedEdit": false,
+          "isMinimized": false,
+          "minimizedReason": "",
+          "reactionGroups": [],
+          "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/714#issuecomment-3382424167",
+          "viewerDidAuthor": false
+        },
+        {
+          "id": "IC_kwDOH8wpAs7J5pKY",
+          "author": {
+            "login": "b10346"
+          },
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "We can see, that layout has no problems here:\n\n![Image](https://github.com/user-attachments/assets/3c01529e-c5ae-4d68-9e67-2bccf5127494)\n\n![Image](https://github.com/user-attachments/assets/df360b42-b70e-43ca-a8d0-f788915231b9)\n\nguard ring of the cell sg13g2_DCNDiode is connected to iovdd bus as it is n-type semiconductor.\nTherefore it seems to be the mistake in CDL.\nWe are investigating this issue at the moment.",
+          "createdAt": "2025-10-09T20:06:40Z",
+          "includesCreatedEdit": false,
+          "isMinimized": false,
+          "minimizedReason": "",
+          "reactionGroups": [],
+          "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/714#issuecomment-3387331224",
+          "viewerDidAuthor": false
+        },
+        {
+          "id": "IC_kwDOH8wpAs7J6Rov",
+          "author": {
+            "login": "RTimothyEdwards"
+          },
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "@b10346 :  The guard ring is tied to the n-diffusion (tap) region immediately to its right.  That tap region, however, has no connections from metal1 up to metal2.  It is isolated within the IOPadVss cell.",
+          "createdAt": "2025-10-09T21:09:09Z",
+          "includesCreatedEdit": false,
+          "isMinimized": false,
+          "minimizedReason": "",
+          "reactionGroups": [],
+          "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/714#issuecomment-3387497007",
+          "viewerDidAuthor": false
+        },
+        {
+          "id": "IC_kwDOH8wpAs7J-Zti",
+          "author": {
+            "login": "b10346"
+          },
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Right. This guard ring looks as isolated on IOPadVss cell level. Connection of this guard to \"iovdd\" appears on pad-ring level as far as cell IOPadIOVdd is included in pad-ring and abutted  with other cells. Therefore standalone I/O cell can be \"not LVS clean\" due to layout template architecture. Usually it is recommended to use LVS option, where not-connected shapes with the same names are virtually connected,  if we make LVS check for standalone I/O cell. If this option is not available, it should be implemented in LVS. It allows to provide virtual connections between shapes with the same names (these shapes can be not connected on the I/O cell level, but will be connected on pad-ring level).",
+          "createdAt": "2025-10-10T07:08:44Z",
+          "includesCreatedEdit": true,
+          "isMinimized": false,
+          "minimizedReason": "",
+          "reactionGroups": [],
+          "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/714#issuecomment-3388578658",
+          "viewerDidAuthor": false
+        },
+        {
+          "id": "IC_kwDOH8wpAs7J-fdI",
+          "author": {
+            "login": "b10346"
+          },
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "But the guard of \"sg13g2_DCNDiode\" should be connected to \"iovdd\" in CDL.",
+          "createdAt": "2025-10-10T07:16:53Z",
+          "includesCreatedEdit": false,
+          "isMinimized": false,
+          "minimizedReason": "",
+          "reactionGroups": [],
+          "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/714#issuecomment-3388602184",
+          "viewerDidAuthor": false
+        },
+        {
+          "id": "IC_kwDOH8wpAs7KD8uZ",
+          "author": {
+            "login": "RTimothyEdwards"
+          },
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "@b10346 :  When I read the layout into magic, I'm not seeing the \"iovdd\" label on the tap diffusion which is in your topmost screenshot above.  Possibly the label is on the wrong GDS layer?  I have not investigated it.  I will take a closer look.\n\nWhy would you not connect the guard ring directly to the iovdd bus above it?",
+          "createdAt": "2025-10-10T13:14:32Z",
+          "includesCreatedEdit": false,
+          "isMinimized": false,
+          "minimizedReason": "",
+          "reactionGroups": [],
+          "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/714#issuecomment-3390032793",
+          "viewerDidAuthor": false
+        },
+        {
+          "id": "IC_kwDOH8wpAs7KErvV",
+          "author": {
+            "login": "RTimothyEdwards"
+          },
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "@b10346 :  I am unable to find that \"iovdd\" label and pin anywhere in the layout.  I only see labels attached to the buses (metal3 and up).  What version and branch of the PDK did you get that screenshot from?",
+          "createdAt": "2025-10-10T13:44:45Z",
+          "includesCreatedEdit": false,
+          "isMinimized": false,
+          "minimizedReason": "",
+          "reactionGroups": [],
+          "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/714#issuecomment-3390225365",
+          "viewerDidAuthor": false
+        },
+        {
+          "id": "IC_kwDOH8wpAs7KEya1",
+          "author": {
+            "login": "b10346"
+          },
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "> [@b10346](https://github.com/b10346) : When I read the layout into magic, I'm not seeing the \"iovdd\" label on the tap diffusion which is in your topmost screenshot above. Possibly the label is on the wrong GDS layer? I have not investigated it. I will take a closer look.\n> \n> Why would you not connect the guard ring directly to the iovdd bus above it?\n\nHi Staf, could you please comment this? It is a bus \"iovss\" above \"iovdd\" in M1.",
+          "createdAt": "2025-10-10T13:49:11Z",
+          "includesCreatedEdit": true,
+          "isMinimized": false,
+          "minimizedReason": "",
+          "reactionGroups": [],
+          "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/714#issuecomment-3390252725",
+          "viewerDidAuthor": false
+        },
+        {
+          "id": "IC_kwDOH8wpAs7KFDeH",
+          "author": {
+            "login": "b10346"
+          },
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "There are actually no any \"iovdd\" labels on the IOPadVss cell level.  It is Filler4000 cell with \"iovdd\" label on the picture. Probably we need to add this label to the cell. I use \"dev\" branch.",
+          "createdAt": "2025-10-10T14:02:17Z",
+          "includesCreatedEdit": true,
+          "isMinimized": false,
+          "minimizedReason": "",
+          "reactionGroups": [],
+          "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/714#issuecomment-3390322567",
+          "viewerDidAuthor": false
+        },
+        {
+          "id": "IC_kwDOH8wpAs7KF_di",
+          "author": {
+            "login": "stafverhaegen-chipflow"
+          },
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "The CDL netlists were not delivered by me and have been added by IHP.\n",
+          "createdAt": "2025-10-10T14:47:13Z",
+          "includesCreatedEdit": false,
+          "isMinimized": false,
+          "minimizedReason": "",
+          "reactionGroups": [],
+          "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/714#issuecomment-3390568290",
+          "viewerDidAuthor": false
+        },
+        {
+          "id": "IC_kwDOH8wpAs7KGnip",
+          "author": {
+            "login": "RTimothyEdwards"
+          },
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "@stafverhaegen-chipflow :  The underlying problem is not the CDL;  the layout is missing a label on the well tap which would tie it (virtually) to the `iovdd` net.\n\nI consider that the fact that the substrate is not tied to `iovss` and the well is not tied to `iovdd` within the I/O cell to be an error.  I can accept it as a design decision, but the label must be added or else the cell simply cannot pass LVS.",
+          "createdAt": "2025-10-10T15:19:45Z",
+          "includesCreatedEdit": false,
+          "isMinimized": false,
+          "minimizedReason": "",
+          "reactionGroups": [],
+          "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/714#issuecomment-3390732457",
+          "viewerDidAuthor": false
+        },
+        {
+          "id": "IC_kwDOH8wpAs7Kau-s",
+          "author": {
+            "login": "b10346"
+          },
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "I would agree that the label must be added and CDL must be fixed (currently n-type guard is connected to iovss in CDL). So we will include it to the next I/O library update.",
+          "createdAt": "2025-10-13T06:16:58Z",
+          "includesCreatedEdit": false,
+          "isMinimized": false,
+          "minimizedReason": "",
+          "reactionGroups": [],
+          "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/714#issuecomment-3396005804",
+          "viewerDidAuthor": false
+        },
+        {
+          "id": "IC_kwDOH8wpAs7KdJmg",
+          "author": {
+            "login": "stafverhaegen-chipflow"
+          },
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "I put a label on all layout that are drawn as pins.\nAt the moment I can't handle the ptap well in my layout generation code and the layouts delivered to IHP where kind of hacky to get something functional on wafer and were meant as temporary solution. Unfortunately project was not able to be continued after that delivery. Luckily now a new project is started @ IHP which hopefully can tackle the problem at the source.\n",
+          "createdAt": "2025-10-13T09:32:54Z",
+          "includesCreatedEdit": false,
+          "isMinimized": false,
+          "minimizedReason": "",
+          "reactionGroups": [],
+          "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/714#issuecomment-3396639136",
+          "viewerDidAuthor": false
+        }
+      ],
+      "number": 714,
+      "state": "OPEN",
+      "title": "Incorrect CDL for VSS I/O pad cell, or possibly an incorrect I/O cell layout.",
+      "updatedAt": "2025-11-03T15:37:01Z",
+      "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/714"
+    },
+    {
+      "body": "The diode models used in the IOPads and ESD diodes do not match. This concerns both DCNDiode and DCPDiode. Let's take DCNDiode for demonstration sake:\n\nhttps://github.com/IHP-GmbH/IHP-Open-PDK/blob/62c1d640dc1c91f57bc1a8e4e08e537a7a105ae8/ihp-sg13g2/libs.ref/sg13g2_io/spice/sg13g2_io.spi#L148-L153\n\nhttps://github.com/IHP-GmbH/IHP-Open-PDK/blob/62c1d640dc1c91f57bc1a8e4e08e537a7a105ae8/ihp-sg13g2/libs.tech/ngspice/models/diodes.lib#L48-L56\n\nOnce expended, it gives:\n```\n* sg13g2_DCNDiode \n.subckt sg13g2_DCNDiode anode cathode guard\n.params l=1.26um   w=27.78um   DEV_A=(l*w)/1p  DEV_P=(l+w)/0.5u  DEV_C=4\n\nD1 anode cathode darea area=DEV_A tnom=27 is=2.315E-019 n=1.009 ik=1.434E-007 rs=2.193E+005 cj0=9.371E-016 m=0.3036 vj=0.696 fc=0.5 bv=11.64 ibv=3.458E-007 tcv=0.001 nbv = 48.9 isr=7.413E-019 xti=5.039 trs=0 trs2=0 tt=7.009E-007\nD2 anode cathode dperim area=DEV_P tnom=27 is=3.851E-021 n=1.022 rs=1.688E+006 ik=7.838E-008 isr=1.011E-017 xti=3 bv=31.86 ibv=6.115E-014 nbv=112.1 cj=1.821E-017 m=0.01923 vj=0.598 tt=7.009E-007\nD3 anode cathode dcorner area=DEV_C tnom=27 is=6.502E-021 n=1 rs=4.857E+005 ik=1E-006 isr=0 xti=3 bv=11.64 ibv=3.458E-007 cj=0 m =0.5 vj=0.7\n\nD4 anode cathode darea area=DEV_A tnom=27 is=2.315E-019 n=1.009 ik=1.434E-007 rs=2.193E+005 cj0=9.371E-016 m=0.3036 vj=0.696 fc=0.5 bv=11.64 ibv=3.458E-007 tcv=0.001 nbv = 48.9 isr=7.413E-019 xti=5.039 trs=0 trs2=0 tt=7.009E-007\nD5 anode cathode dperim area=DEV_P tnom=27 is=3.851E-021 n=1.022 rs=1.688E+006 ik=7.838E-008 isr=1.011E-017 xti=3 bv=31.86 ibv=6.115E-014 nbv=112.1 cj=1.821E-017 m=0.01923 vj=0.598 tt=7.009E-007\nD6 anode cathode dcorner area=DEV_C tnom=27 is=6.502E-021 n=1 rs=4.857E+005 ik=1E-006 isr=0 xti=3 bv=11.64 ibv=3.458E-007 cj=0 m =0.5 vj=0.7\n\n.ends sg13g2_DCNDiode\n\n```\n\nThis should match diodevss_4k, which is described as:\n\nhttps://github.com/IHP-GmbH/IHP-Open-PDK/blob/62c1d640dc1c91f57bc1a8e4e08e537a7a105ae8/ihp-sg13g2/libs.tech/ngspice/models/sg13g2_esd.lib#L55-L60\n\nOnce expended it gives:\n```\n.subckt diodevss_4kv VDD PAD VSS\n.param DEV_A=70  DEV_P=116.2  sub_A=381.0339  sub_P=90.32 m=1\n\nD1 VSS PAD tnom=27 level=1 is=9.017E-019 rs=200 n=1.03 isr=3.776E-015 ikf=0.0001754 cj0=9.42E-016 m=0.3012 vj=0.6684 bv=11.28 ibv=1E-009 nbv=1.324 eg=1.17 xti=3 area=DEV_A pj=DEV_P m=m\nD2 VSS VDD tnom=27 is=1.7E-016 rs=4.759 n=1 ikf=100u cj=99.77E-018 vj=0.4547 bv=10 ibv=0 xti=3 eg=1.11 area=sub_A pj=sub_P m=m \n\n.ends diodevss_4kv\n```\n\nWhich of the two is the correct one? ",
+      "comments": [],
+      "number": 708,
+      "state": "OPEN",
+      "title": "ESD diodes model do not match between individual models and pads",
+      "updatedAt": "2025-10-08T09:52:16Z",
+      "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/708"
+    },
+    {
+      "body": "There is a need for the abutment DRC checks for IO cells. Some of them can generate DRC violations because of `Cnt.b` rule.  ",
+      "comments": [
+        {
+          "id": "IC_kwDOH8wpAs7sP--M",
+          "author": {
+            "login": "d-m-bailey"
+          },
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "@KrzysztofHerman We created test cases for all valid IO cell abutments (over 400 combinations) and ran the current and new drc rules on the patterns.\n\nWe found `Cnt.b`, `M2.f`, and `TV2.b` errors.\n\nHere are [the results](https://docs.google.com/spreadsheets/d/1ih9OmF77u6uLJl_X5Zn4fxFLWs147ik883Z-lzBpGbI/edit?usp=sharing). \n\nThanks @H-Ojiro !",
+          "createdAt": "2026-02-26T02:39:05Z",
+          "includesCreatedEdit": false,
+          "isMinimized": false,
+          "minimizedReason": "",
+          "reactionGroups": [],
+          "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/835#issuecomment-3963613068",
+          "viewerDidAuthor": false
+        },
+        {
+          "id": "IC_kwDOH8wpAs7s8PmA",
+          "author": {
+            "login": "jalcim"
+          },
+          "authorAssociation": "NONE",
+          "body": "I have met the same problem, wanted to report it and found this issue.\nFor me the problem is in the `sg13g2_IOPadIOVdd` cell, specifically the ESD diodes `DCPDiode` and `DCNDiode`,\nwhose contacts are too close to the cell boundary (0.085 µm).\n\nPads using the same diodes `In, Vdd, Vss, IOVdd, IOVss`  fail Cnt.b when abutted to `IOPadIOVdd`\n(or any cell using these diodes).\n\nwhile pads using `Clamp_* subcells (Out, InOut, TriOut, Analog)` pass because their ESD structures are positioned with enough margin.\n\nMy workaround:\nplace `IOPadIOVdd` always in the first position on each side of the pad ring,                                      \nright next to the corner cell (which acts as a filler),             \nand make sure the next pad is an output pad `Out, InOut, TriOut or Analog`.                                                                         \nThis way, `IOPadIOVdd` is never adjacent to a pad using `DCPDiode/DCNDiode`,\nand the 3 abutment rules (Cnt.b, M2.f, TV2.b) pass.",
+          "createdAt": "2026-02-27T21:39:16Z",
+          "includesCreatedEdit": true,
+          "isMinimized": false,
+          "minimizedReason": "",
+          "reactionGroups": [
+            {
+              "content": "THUMBS_UP",
+              "users": {
+                "totalCount": 1
+              }
+            }
+          ],
+          "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/835#issuecomment-3975215488",
+          "viewerDidAuthor": false
+        },
+        {
+          "id": "IC_kwDOH8wpAs7wuJ8a",
+          "author": {
+            "login": "sergeiandreyev"
+          },
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "@b10346, @stafverhaegen-chipflow, FYI",
+          "createdAt": "2026-03-11T11:39:59Z",
+          "includesCreatedEdit": false,
+          "isMinimized": false,
+          "minimizedReason": "",
+          "reactionGroups": [],
+          "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/835#issuecomment-4038631194",
+          "viewerDidAuthor": false
+        },
+        {
+          "id": "IC_kwDOH8wpAs7wwXCz",
+          "author": {
+            "login": "b10346"
+          },
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Cells layouts will be fixed in the next \"IO_update\". Abutment check would be nice to have for verification.",
+          "createdAt": "2026-03-11T13:27:29Z",
+          "includesCreatedEdit": false,
+          "isMinimized": false,
+          "minimizedReason": "",
+          "reactionGroups": [],
+          "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/835#issuecomment-4039209139",
+          "viewerDidAuthor": false
+        },
+        {
+          "id": "IC_kwDOH8wpAs7wyfQG",
+          "author": {
+            "login": "d-m-bailey"
+          },
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "@KrzysztofHerman Are you referring to abutment DRC checks (half space to cell boundary) for individual cells or test layouts of abutting cells?",
+          "createdAt": "2026-03-11T14:49:59Z",
+          "includesCreatedEdit": false,
+          "isMinimized": false,
+          "minimizedReason": "",
+          "reactionGroups": [],
+          "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/835#issuecomment-4039767046",
+          "viewerDidAuthor": false
+        },
+        {
+          "id": "IC_kwDOH8wpAs724xK6",
+          "author": {
+            "login": "jalcim"
+          },
+          "authorAssociation": "NONE",
+          "body": "#909 ",
+          "createdAt": "2026-03-27T11:54:50Z",
+          "includesCreatedEdit": false,
+          "isMinimized": false,
+          "minimizedReason": "",
+          "reactionGroups": [],
+          "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/835#issuecomment-4142076602",
+          "viewerDidAuthor": false
+        },
+        {
+          "id": "IC_kwDOH8wpAs725eW2",
+          "author": {
+            "login": "sergeiandreyev"
+          },
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "can this one be reused?\nhttps://github.com/IHP-GmbH/IHP-Open-PDK/blob/dev/ihp-sg13g2/libs.qa/stdcells/check_abutment.py",
+          "createdAt": "2026-03-27T12:32:18Z",
+          "includesCreatedEdit": false,
+          "isMinimized": false,
+          "minimizedReason": "",
+          "reactionGroups": [],
+          "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/835#issuecomment-4142261686",
+          "viewerDidAuthor": false
+        }
+      ],
+      "number": 835,
+      "state": "OPEN",
+      "title": "Abutment check for IO cells",
+      "updatedAt": "2026-03-27T18:00:34Z",
+      "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/835"
+    }
+  ],
+  "external_comments_posted": false,
+  "purge_fix_pr": {
+    "body": "Currently, `purge`/`purge_devices` is done unconditionally in `rfmos_model_mapping.lvs`, so the arguments are not honored:\r\n```\r\n  --purge               Purge unused nets/devices.\r\n  --purge_nets          Purge floating nets.\r\n```\r\n\r\nThis also broke the `klayout-pex` PEX-LVS, which is based on this rule deck:\r\nhttps://github.com/iic-jku/klayout-pex/issues/158",
+    "comments": [
+      {
+        "id": "IC_kwDOH8wpAs8AAAABPbmC9g",
+        "author": {
+          "login": "martinjankoehler"
+        },
+        "authorAssociation": "CONTRIBUTOR",
+        "body": "@Mauricio-xx @KrzysztofHerman ok, this seems to break  the testcase `testcases/manual_tests/cap_cmomf_checks/hier_deep_missing.cdl`\r\n\r\nAny idea how to fix this? \r\nCurrently, the unconditional `purge`ing completely breaks the `--purge` / `--purge-nets` parameters, and PEX.",
+        "createdAt": "2026-08-18T15:40:15Z",
+        "includesCreatedEdit": false,
+        "isMinimized": false,
+        "minimizedReason": "",
+        "reactionGroups": [],
+        "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1105#issuecomment-5330535158",
+        "viewerDidAuthor": false
+      },
+      {
+        "id": "IC_kwDOH8wpAs8AAAABQ2LvrA",
+        "author": {
+          "login": "martinjankoehler"
+        },
+        "authorAssociation": "CONTRIBUTOR",
+        "body": "OK, pushed another version.\r\n\r\n- Added an explicit `--purge_devices` argument to the LVS script\r\n- Removed global purging from `rfmos_model_mapping.lvs`\r\n- @Mauricio-xx can you explain the necessity of the failing testcase?\r\n   - `testcases/manual_tests/cap_cmomf_checks/hier_deep_missing.cdl`\r\n   - https://github.com/IHP-GmbH/IHP-Open-PDK/blob/331c00484213b13414777eec1336ef5c29b969bd/ihp-sg13g2/libs.tech/klayout/tech/lvs/testing/testcases/manual_tests/cap_cmomf_checks/hier_deep_missing.cdl#L47\r\n   - launched here https://github.com/IHP-GmbH/IHP-Open-PDK/blob/331c00484213b13414777eec1336ef5c29b969bd/ihp-sg13g2/libs.tech/klayout/tech/lvs/testing/testcases/manual_tests/cap_cmomf_checks/run_lvs.sh#L168\r\n\r\n",
+        "createdAt": "2026-08-26T12:47:53Z",
+        "includesCreatedEdit": true,
+        "isMinimized": false,
+        "minimizedReason": "",
+        "reactionGroups": [],
+        "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1105#issuecomment-5425524652",
+        "viewerDidAuthor": false
+      },
+      {
+        "id": "IC_kwDOH8wpAs8AAAABQ2P8jg",
+        "author": {
+          "login": "simi1505"
+        },
+        "authorAssociation": "CONTRIBUTOR",
+        "body": "I can confirm: We had a design where dummies were purged. This PR from @martinjankoehler fixes the KLayout LVS of this design. So please review and merge as fast as possible. This is a pretty bad bug in the KLayout LVS. Thanks!",
+        "createdAt": "2026-08-26T12:53:47Z",
+        "includesCreatedEdit": false,
+        "isMinimized": false,
+        "minimizedReason": "",
+        "reactionGroups": [],
+        "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1105#issuecomment-5425593486",
+        "viewerDidAuthor": false
+      }
+    ],
+    "mergeCommit": {
+      "oid": "dddedba6c95611e620eb43935cee9ca5c63a3d21"
+    },
+    "mergedAt": "2026-08-26T12:52:57Z",
+    "number": 1105,
+    "state": "MERGED",
+    "title": "IHP LVS rule deck: Honor PURGE conditional in rfmos_model_mapping.lvs",
+    "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1105"
+  },
+  "main": {
+    "date": "2026-09-01T13:31:34Z",
+    "message": "Merge pull request #1134 from IHP-GmbH/dev\n\nDev -> Main",
+    "sha": "5e6d592e4002946a4616f798c357f0f3c06cf3b6"
+  },
+  "dev": {
+    "sha": "cfc0e22b92306178ebb5a5bc4865afe3294654d0"
+  },
+  "pinned_to_main": {
+    "files": [
+      {
+        "filename": "CHANGELOG.md",
+        "patch": "@@ -4,6 +4,137 @@ All notable changes to this project will be documented in this file.\n \n The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).\n \n+## [Unreleased] - 2026-09-01\n+\n+### Added\n+\n+#### New Devices / PyCells\n+- `cap_cmomf`: new metal fringe MoM capacitor PCell for KLayout ([#1093](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1093))\n+- `cap_mom`: interdigitated MoM capacitor for SG13G2 KLayout ([#1049](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1049))\n+- `cap_cmomi`: computed capacitance display, feed-aware C estimation, live coerce callback, and density fill exclusion ([#1076](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1076), [#1108](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1108))\n+- MOSCAP (MOS capacitor) PCell initial version ([#1050](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1050))\n+- `cmim` KLayout PCell: added labels\n+- HBT test structures GDS: initial version\n+- pnpMPA measurement test structures GDS ([#1009](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1009))\n+- RF MOSFET PyCells: initial version\n+- `NoFillerStack` PCell: initial version\n+- `ptap1` PCell: initial version\n+- PDK modules: initial integration of PDK extensions in Xschem and KLayout\n+\n+#### LVS\n+- KLayout LVS: `--disable_tap_extraction` option ([#1032](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1032))\n+- KLayout LVS: `--purge-devices` CLI parameter; `PURGE` conditional honored in `rfmos_model_mapping.lvs` ([#1105](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1105))\n+\n+#### SRAM\n+- SRAM: automated cross-view validation\n+- SRAM: new macro `RM_IHPSG13_1P_2048x32_c2_bm_bist` ([#1029](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1029))\n+- SRAM: updated `RM_IHPSG13_2P_64x22_c2` macro ([#1028](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1028))\n+- SRAM: added `1P_8192x32_c4` macro\n+- SRAM: added BIST macro `RM_IHPSG13_1P_512x32_c2_bm_bist` ([#429](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/429))\n+- SRAM: add timescale in `64x16` ([#1104](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1104))\n+\n+#### Tools / Infrastructure\n+- Regression test for `sprintf` utility function ([#1120](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1120))\n+- gnucap: statistics reporting ([#998](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/998))\n+- Bug report issue template ([#1019](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1019))\n+- KLayout scripts: added copyright header\n+- AWS Palace: added `gds2palace` submodule\n+- ITF file: initial version\n+- DRM: added version 0.4\n+- IO cells: added datasheets\n+- Qucs-S: schematics for standard cells ([#939](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/939))\n+- GDSFactory: added README and integration guide ([#691](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/691))\n+- LibreLane: standalone DRC support ([#728](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/728))\n+- Added Schottky diode (`SBD`) symbol and documentation ([#682](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/682))\n+- npn13G2 symbols: updated ([#902](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/902))\n+\n+### Changed\n+\n+#### Devices / PyCells\n+- Sealring KLayout script: renamed `height` parameter to `length` (backward-compatible deprecation path) ([#1110](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1110), [#1127](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1127))\n+- `cap_cmomi` LVS: terminals made equivalent, dropped marker flags ([#1084](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1084))\n+- RPPD PyCell: handle EXTBlock notch spacing separately ([#1002](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1002))\n+- `sprintf` utility function simplified and crash fixed ([#1120](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1120))\n+- `svaricap`: `nwell-psub` diode `vj` parameter adjusted for 125 °C transient simulation ([#1102](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1102))\n+- Poly resistor `rhigh`: aligned corner and global statistical parameter to process specification ([#1081](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1081))\n+- pmos/pmosHV: removed `Substrate.drw` 40/0 layer ([#942](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/942))\n+- KLayout layer property file: reverted `Text.drw` layer to white\n+- `rsil`: removed unsupported `b` (bends) parameter ([#944](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/944))\n+- `svaricap`: updates to PyCell and symbol ([#941](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/941))\n+- `rfcmim`: added `m` multiplier parameter in Xschem symbol ([#979](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/979))\n+- xschem: `mm_ok` flag introduced across sg13g2_pr symbols ([#993](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/993))\n+- `pnpMPA` xschem symbol: changed default `w` to align with tech file value\n+\n+#### LVS / DRC\n+- KLayout LVS: removed unconditional global device purging from rule deck ([#1105](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1105), [#1126](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1126))\n+- KLayout LVS: inductor metal stack now configurable per PDK ([#1068](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1068))\n+- KLayout LVS: metal resistors mapped to `R` prefix ([#1046](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1046))\n+- KLayout DRC: removed irrelevant off-grid checks ([#1025](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1025))\n+- KLayout DRC: `latchUp` flag set to true by default\n+- KLayout DRC: JSON-based override of defaults ([#900](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/900))\n+- KLayout LVS: via handling refactored to support `cmos5l_ihp` ([#1039](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1039))\n+- DRC: `LU.b` – report portions of N+Activ beyond 20 µm max space ([#949](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/949))\n+- Magic LVS: added inductors recognition ([#873](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/873))\n+\n+#### Simulation / Tools\n+- Xschem: parallel-simulation scripts run through Tcl's `exec` ([#1118](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1118))\n+- Palace submodule bumped to upstream HEAD for scikit-rf 2.0 fix ([#1040](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1040))\n+- gnucap: `make check` properly builds before running tests ([#1077](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1077))\n+- LibreLane: updated variables in shared SCL and CSL config files ([#999](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/999))\n+- LibreLane: `PAD_SPICE_MODELS` points to correct `sg13g2_io.spice` path ([#1095](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1095))\n+- LibreLane: updated tracks configuration ([#892](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/892))\n+- LibreLane: Magic filler flow added ([#883](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/883))\n+- Standard cell symlinks changed from absolute to relative paths ([#1097](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1097))\n+- Standard cells relocated into `libs.ref` with updated Xschem view selection ([#1031](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1031))\n+- PCell preprocessor: each process gets its own preprocessing directory ([#1090](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1090))\n+- KLayout tech file: added comprehensive list of grid values ([#1044](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1044))\n+- LEF tech: fixed pitch values ([#890](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/890))\n+- KLayout version centralized in `versions.txt` ([#983](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/983))\n+- KLayout PCells: tech association fix ([#930](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/930), [#943](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/943))\n+- Xschem path: appended `xschem/` to `XSCHEM_LIBRARY_PATH`\n+- Qucs-S: individual XMLs for standard cells ([#904](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/904))\n+- Xschem: improved evaluation precision ([#907](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/907))\n+- Parallelization improvements in simulation scripts ([#629](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/629))\n+\n+### Fixed\n+\n+#### LVS / DRC\n+- KLayout LVS: fixed LVS testing regression (#1126)\n+- LVS: fixed SBD under CMIM issue; added testcase ([#1030](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1030))\n+- KLayout DRC: fixed CNT-A modular detection ([#887](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/887))\n+- KLayout DRC: fixed filler space/notch violations ([#924](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/924))\n+- KLayout DRC: fixed Metal density min/max values\n+\n+#### Extraction / Magic\n+- Magic: fixed `cap_rfcmim` missing substrate terminal extraction ([#1111](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1111))\n+- Magic: corrected metal surround around `contbar` contacts in resistors; simplified `Cntb` DRC checks ([#973](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/973))\n+- Magic: fixed incorrect GDS read-in of devices marked by text tags ([#970](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/970))\n+- Magic: fixed SPICE import for subcell references ([#889](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/889))\n+- Magic: fixed SCR1 DRC errors ([#867](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/867))\n+- Magic: fixed BJT extraction issues ([#863](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/863))\n+- Magic: fixed mimcap extraction ([#851](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/851), [#853](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/853))\n+- Magic: fixed metal fill generation ([#881](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/881), [#908](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/908))\n+- Magic: fixed LibreLane startup script incompatibility\n+\n+#### PyCells\n+- Isolbox PyCell: fixed `diode_layer` parameter evaluation ([#1071](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1071))\n+- MOSCAP PyCell: fixed callback issue ([#1088](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1088))\n+- RPPD PyCell: fixed EXTB.b DRC violation ([#997](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/997))\n+- rhigh PyCell: fixed pSD.b and EXTB.b space violations in devices with bends\n+- rppd/rhigh PyCells: handle large poly spacing and even-number bends ([#988](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/988))\n+- rfcmim Qucs-S symbol fix ([#992](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/992))\n+- Sealring PCell: fixed corruption caused by compound scaling factor in NLCB ([#1064](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1064))\n+- nmos clamp: fix applied ([#600](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/600))\n+- Primitive GDS: rolled back incorrect `idiode*` removal\n+\n+#### Simulation / Tests\n+- Ngspice Monte Carlo tests fix ([#1061](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1061))\n+- Fixed tkinter requirements ([#1015](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1015))\n+- npn13G2 annotation fix ([#621](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/621))\n+- rhigh: fix poly resistor model ([#742](https://github.com/IHP-GmbH/IHP-Open-PDK/pull/742))\n+\n+---\n+\n ## [Unreleased] - 2024-10-14\n \n ### Added",
+        "status": "modified"
+      },
+      {
+        "filename": "ihp-sg13g2/libs.tech/klayout/python/sg13g2_pycell_lib/ihp/rppd_code.py",
+        "patch": "@@ -129,6 +129,7 @@ def genSingleResistorLayout(self, index: int, x_offset: float) -> ResistorInfo:\n         polyover = self.techparams['Cnt_d']        \n         psdover1 = self.techparams['pSD_n']\n         psdNotch = self.techparams['pSD_b']\n+        extBlockNotch = self.techparams['EXTB_b']\n         psdover1 = self.techparams['Rppd_b']        \n         li_salblock = self.techparams['Sal_e']        \n         salover = self.techparams['Sal_c']\n@@ -457,15 +458,23 @@ def genSingleResistorLayout(self, index: int, x_offset: float) -> ResistorInfo:\n         MkPin(self, f\"MINUS{index}\", 2, minus_pin_box, metlayer_pin)\n \n         # fill notches in pSD and EXTBlock layers\n-        if (self.ps-2.0*psdover < psdNotch) and (self.ps-2.0*psdover > 0.0):\n+        psdNotchWidth = self.ps-2.0*psdover\n+        extBlockNotchWidth = self.ps-psdover-salover\n+        notchXpos1 = xpos1-self.w-self.ps\n+\n+        if (psdNotchWidth < psdNotch) and (psdNotchWidth > 0.0):\n             if stripes > 1:\n                 dbCreateRect(self, psdlayer, Box(self.w+psdover, 0, self.w+self.ps-psdover, -li_salblock-poly_cont_len-psdover))\n+    \n+            if stripes > 2:\n+                dbCreateRect(self, psdlayer, Box(notchXpos1+self.w+psdover, ypos2, notchXpos1+self.w+self.ps-psdover, ypos2+dir*(li_salblock+poly_cont_len+psdover)))\n+\n+        if (extBlockNotchWidth < extBlockNotch) and (extBlockNotchWidth > 0.0):\n+            if stripes > 1:\n                 dbCreateRect(self, extBlocklayer, Box(self.w+psdover, 0, self.w+self.ps-salover, -li_salblock-poly_cont_len-psdover))\n     \n             if stripes > 2:\n-                xpos1 = xpos1 - self.w - self.ps\n-                dbCreateRect(self, psdlayer, Box(xpos1+self.w+psdover, ypos2, xpos1+self.w+self.ps-psdover, ypos2+dir*(li_salblock+poly_cont_len+psdover)))\n-                dbCreateRect(self, extBlocklayer, Box(xpos1+self.w+salover, ypos2, xpos1+self.w+self.ps-psdover, ypos2+dir*(li_salblock+poly_cont_len+psdover)))\n+                dbCreateRect(self, extBlocklayer, Box(notchXpos1+self.w+salover, ypos2, notchXpos1+self.w+self.ps-psdover, ypos2+dir*(li_salblock+poly_cont_len+psdover)))\n                 \n         # **************************************************************\n         # now draw the label",
+        "status": "modified"
+      },
+      {
+        "filename": "ihp-sg13g2/libs.tech/klayout/python/sg13g2_pycell_lib/ihp/utility_functions.py",
+        "patch": "@@ -18,7 +18,6 @@\n \n import math\n from math import sqrt\n-from io import StringIO\n \n from cni.dlo import Tech, Numeric\n from cni.dlo import Orientation, Location, Layer\n@@ -170,9 +169,7 @@ def zerop(value):\n # sprintf\n #***********************************************************************************************************************\n def sprintf(fmt, *args):\n-    buf = StringIO.StringIO()\n-    buf.write(fmt % args)\n-    return buf.getvalue()\n+    return fmt % args\n \n #***********************************************************************************************************************\n # strcat",
+        "status": "modified"
+      },
+      {
+        "filename": "ihp-sg13g2/libs.tech/klayout/sg13g2_tests/sprintf_test.py",
+        "patch": "@@ -0,0 +1,36 @@\n+########################################################################\n+#\n+# Copyright 2026 IHP PDK Authors\n+#\n+# Licensed under the Apache License, Version 2.0 (the \"License\");\n+# you may not use this file except in compliance with the License.\n+# You may obtain a copy of the License at\n+#\n+#    https://www.apache.org/licenses/LICENSE-2.0\n+#\n+# Unless required by applicable law or agreed to in writing, software\n+# distributed under the License is distributed on an \"AS IS\" BASIS,\n+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+# See the License for the specific language governing permissions and\n+# limitations under the License.\n+#\n+########################################################################\n+\n+import os\n+import sys\n+\n+\n+python_directory = os.path.realpath(os.path.join(os.path.dirname(__file__), \"..\", \"python\"))\n+sys.path.insert(0, python_directory)\n+\n+api_directory = os.path.join(python_directory, \"pycell4klayout-api\", \"source\", \"python\")\n+sys.path.insert(0, api_directory)\n+\n+from sg13g2_pycell_lib.ihp.utility_functions import sprintf\n+\n+\n+assert sprintf(\"value=%s\", \"test\") == \"value=test\"\n+assert sprintf(\"%s=%d\", \"count\", 3) == \"count=3\"\n+assert sprintf(\"literal\") == \"literal\"\n+\n+print(\"sprintf regression test passed\")",
+        "status": "added"
+      },
+      {
+        "filename": "ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/rfmos_model_mapping.lvs",
+        "patch": "@@ -115,9 +115,6 @@ apply_rfmos_model_mapping = lambda do |target_netlist, label|\n \n     devices_to_remove.each { |device| circuit.remove_device(device) }\n   end\n-\n-  target_netlist.purge_devices\n-  target_netlist.purge\n end\n \n # Apply mapping on layout side before align/compare.",
+        "status": "modified"
+      },
+      {
+        "filename": "ihp-sg13g2/libs.tech/klayout/tech/lvs/run_lvs.py",
+        "patch": "@@ -1,3 +1,5 @@\n+#!/usr/bin/env python3\n+\n # ==========================================================================\n # Copyright 2024 IHP PDK Authors\n #\n@@ -531,6 +533,7 @@ def generate_klayout_switches(\n         \"disable_tap_extraction\": \"true\" if args.disable_tap_extraction else \"false\",\n         \"purge\": \"true\" if args.purge else \"false\",\n         \"purge_nets\": \"true\" if args.purge_nets else \"false\",\n+        \"purge_devices\": \"true\" if args.purge_devices else \"false\",\n         \"topcell\": get_run_top_cell_name(args, layout_path),\n         \"input\": os.path.abspath(layout_path),\n         \"schematic\": os.path.abspath(netlist_path) if netlist_path else None,\n@@ -779,7 +782,7 @@ def main(lvs_run_dir: str, args: argparse.Namespace):\n                [--no_net_names] [--spice_comments] [--net_only] [--no_simplify]\n                [--no_series_res] [--no_parallel_res] [--combine_devices] [--top_lvl_pins]\n                [--disable_tap_extraction]\n-               [--purge] [--purge_nets] [--ignore_top_ports_mismatch]\n+               [--purge] [--purge_nets] [--purge_devices] [--ignore_top_ports_mismatch]\n                [--implicit_nets=<nets>]\n     \"\"\"\n \n@@ -838,6 +841,8 @@ def main(lvs_run_dir: str, args: argparse.Namespace):\n     parser.add_argument(\"--top_lvl_pins\", action=\"store_true\", help=\"Create top-level pins in netlists.\")\n     parser.add_argument(\"--purge\", action=\"store_true\", help=\"Purge unused nets/devices.\")\n     parser.add_argument(\"--purge_nets\", action=\"store_true\", help=\"Purge floating nets.\")\n+    parser.add_argument(\"--purge_devices\", action=\"store_true\", help=\"Purge unused devices.\")\n+\n     parser.add_argument(\n         \"--implicit_nets\",\n         type=str,",
+        "status": "modified"
+      },
+      {
+        "filename": "ihp-sg13g2/libs.tech/klayout/tech/lvs/sg13g2.lvs",
+        "patch": "@@ -163,6 +163,9 @@ PURGE_NETS = bool_check?($purge_nets)\n \n logger.info(\"Selected PURGE_NETS option: #{PURGE_NETS}\")\n \n+# PURGE_DEVICES\n+PURGE_DEVICES = bool_check?($purge_devices)\n+\n # SIMPLIFY\n SIMPLIFY = !bool_check?($no_simplify)\n \n@@ -462,6 +465,9 @@ apply_netlist_options = lambda do |target_netlist, label|\n \n   log_option_action.call(label, 'purge_nets', PURGE_NETS)\n   target_netlist.purge_nets if PURGE_NETS\n+\n+  log_option_action.call(label, 'purge_devices', PURGE_DEVICES)\n+  target_netlist.purge_devices if PURGE_DEVICES\n end\n \n if NET_ONLY",
+        "status": "modified"
+      },
+      {
+        "filename": "ihp-sg13g2/libs.tech/klayout/tech/lvs/testing/testcases/manual_tests/cap_cmomf_checks/hier_deep_missing.cdl",
+        "patch": "@@ -18,28 +18,33 @@\n *\n * This is chain_missing's perturbation applied to cap_cmomf_hier.gds: a device\n * present in the layout and absent from the schematic. The flat case catches it\n-* on the comparison. This one does NOT, and that is the finding.\n-*\n-* In deep mode every cap here sits in a sub-cell with no net crossing that\n-* cell's boundary, and the layout netlist comes out empty. compare is then left\n-* with no pair to compare and returns true, so the run reports a match having\n-* verified nothing. Extraction is not what fails: the .lvsdb still carries the\n-* device abstract with its terminal geometry, identical to the flat run's, and\n-* no marker is ever rejected.\n-*\n-* Expected to PASS, which is the hole rather than the behaviour anyone wants.\n-* It is not specific to cap_cmomf: cap_cmomi empties the same way on the same\n-* construction. That was observed on the ihp-sg13cmos5l side, where both\n+* on the comparison, and so does this one.\n+*\n+* It did not always, and that is why this case exists. In deep mode every cap\n+* here sits in a sub-cell with no net crossing that cell's boundary. The layout\n+* netlist used to come out empty, compare was left with no pair to compare and\n+* returned true, and the run reported a match having verified nothing. The case\n+* expected PASS to record that hole. Extraction was never what failed: the\n+* .lvsdb carried the device abstract with its terminal geometry, identical to\n+* the flat run's, and no marker was ever rejected.\n+*\n+* What emptied the netlist was apply_rfmos_model_mapping calling purge_devices\n+* and purge unconditionally on every run. 5fecb0f1 put those behind the PURGE\n+* conditional and 6ff43baf removed them, so the sub-circuits now survive to the\n+* comparison and the missing device is reported. Expected FAIL.\n+*\n+* The hole is not specific to cap_cmomf: cap_cmomi empties the same way on the\n+* same construction. That was observed on the ihp-sg13cmos5l side, where both\n * devices have a deep case in their checks suite and the issue is tracked as\n * https://github.com/IHP-GmbH/ihp-sg13cmos5l/issues/91. Nothing in this tree\n-* demonstrates it for cap_cmomi, because its suite here has no deep case. ihp-sg13cmos5l answers\n-* the vacuous half of it in its own sg13cmos5l.lvs, which counts the devices on\n-* both sides and refuses to call an empty layout netlist a match; this PDK has\n-* no such guard, so the run here is green. The extraction hole itself is open in\n-* both.\n+* demonstrates it for cap_cmomi, because its suite here has no deep case.\n+* ihp-sg13cmos5l answers the vacuous half in its own sg13cmos5l.lvs, which\n+* counts the devices on both sides and refuses to call an empty layout netlist\n+* a match. This PDK still has no such guard, so a future change that empties\n+* the netlist again would silently turn this case back into a green match.\n *\n * Read it together with the wired case, which is the same hierarchy with one\n-* Metal5 route in the top cell and does compare for real.\n+* Metal5 route in the top cell and compares for real by construction.\n *\n * The layout is the unit testcase's, referenced across rather than copied, so the\n * flat and deep runs cannot drift apart. That unit case runs the same layout in",
+        "status": "modified"
+      },
+      {
+        "filename": "ihp-sg13g2/libs.tech/klayout/tech/lvs/testing/testcases/manual_tests/cap_cmomf_checks/run_lvs.sh",
+        "patch": "@@ -149,31 +149,39 @@ run_case \"11_coexists_with_cap_cmomi\" \\\n   \"cmomf_coexist.gds\" \"cmomf_coexist\" \"coexist.cdl\" \"PASS\"\n \n # The same missing-device perturbation as case 2, on the hierarchical unit\n-# layout, in deep mode. Case 2 catches it. This one does NOT, and the PASS is\n-# the finding rather than the behaviour anyone wants: every cap here sits in a\n-# sub-cell with no net crossing its boundary, the layout netlist comes out\n-# empty, and compare then has no pair left to compare and returns true. The\n-# .lvsdb still carries the device abstract, so extraction is not what fails.\n+# layout, in deep mode: three caps drawn, two declared. Case 2 catches it flat\n+# and this catches it deep.\n #\n-# cap_cmomi empties the same way on the same construction, so the hole belongs\n-# to neither device. That was observed on the ihp-sg13cmos5l side, where both\n-# devices have a deep case; nothing in this tree demonstrates it for cap_cmomi.\n-# It is tracked as ihp-sg13cmos5l#91, and that\n-# PDK refuses the vacuous half of it in its own sg13cmos5l.lvs by counting the\n-# devices on both sides; this one has no such guard. Read this case together\n-# with case 13, the same hierarchy wired to the top, which compares for real.\n+# It did not always. Every cap here sits in a sub-cell with no net crossing its\n+# boundary, and the layout netlist used to come out empty, leaving compare with\n+# no pair to compare and returning true -- a match that verified nothing. This\n+# case existed to record that hole and expected PASS because of it.\n+#\n+# The hole closed with 5fecb0f1 (\"Honor PURGE conditional in\n+# rfmos_model_mapping.lvs\") and 6ff43baf (\"Remove global purging from rule\n+# deck\"). Those stopped apply_rfmos_model_mapping from calling purge_devices\n+# and purge on every run, and it was that unconditional purge which swept the\n+# sub-circuits away and emptied the netlist. The extraction now keeps all three\n+# caps, so the comparison is real and reports the missing device.\n+#\n+# The same construction empties cap_cmomi, tracked as ihp-sg13cmos5l#91; that\n+# PDK guards the vacuous half in its own sg13cmos5l.lvs by counting devices on\n+# both sides. This deck still has no such guard, so if a future change empties\n+# the netlist again this case goes back to reporting a match. Read it together\n+# with case 13, the same hierarchy wired to the top, which compares for real by\n+# construction.\n #\n # The layout is referenced across from the unit testcase rather than copied, so\n # the flat and deep runs cannot drift apart.\n-run_case \"12_deep_empty_extraction_unreported\" \\\n+run_case \"12_deep_missing_device_reported\" \\\n   \"../../unit/cap_devices/layout/cap_cmomf_hier.gds\" \"cap_cmomf_hier\" \\\n-  \"hier_deep_missing.cdl\" \"PASS\" \"deep\"\n+  \"hier_deep_missing.cdl\" \"FAIL\" \"deep\"\n \n # The same hierarchy as case 12, with one Metal5 route in the top cell joining\n # the two sub-cells, so a net crosses a cell boundary and the sub-circuits keep\n-# a pin. Deep extracts both caps and the comparison is real. This case is what\n-# makes case 12 mean anything: on its own, case 12 would keep reporting a match\n-# even if deep extraction broke outright, and the suite would stay green.\n+# a pin. Deep extracts both caps and the comparison is real by construction\n+# rather than by the extraction happening to keep them, which is why this case\n+# stays even now that case 12 compares for real too.\n run_case \"13_deep_wired_hierarchy\" \\\n   \"cmomf_hier_wired.gds\" \"cmomf_hier_wired\" \"hier_wired.cdl\" \"PASS\" \"deep\"\n ",
+        "status": "modified"
+      },
+      {
+        "filename": "ihp-sg13g2/libs.tech/klayout/tech/scripts/sealring.py",
+        "patch": "@@ -18,7 +18,7 @@\n Klayout's batch mode. For example:\n \n klayout -n sg13g2 -zz -r sealring.py \\\n-        -rd width=1300.0 -rd height=1300.0 -rd output=macros/sealring.gds.gz\n+        -rd width=1300.0 -rd length=1300.0 -rd output=macros/sealring.gds.gz\n \n \"\"\"\n # pylint: disable=import-error\n@@ -31,14 +31,18 @@\n LIB = 'SG13_dev'\n PCELL = 'sealring'\n \n-def generate_sealring(width: float, heigth: float, input: str | None, output: str, offset_x: float, offset_y: float):\n+def generate_sealring(length: float, width: float, input_file: str | None, output: str,\n+                      offset_x: float, offset_y: float):\n     \"\"\"Function to create a new layout, add the sealring PCell to sealring_top\n     and save it somewhere on the filesystem.\n \n-    :param width: Width (X-Axis) of the sealring.\n+    :param length: Length (X-Axis) of the sealring.\n+    :type length: float\n+    :param width: Width (Y-Axis) of the sealring.\n     :type width: float\n-    :param height: Heigth (Y-Axis) of the sealring.\n-    :type heigth: float\n+    :param input_file: Path and name of an existing layout the sealring should be added to.\n+                       If omitted, a new layout with a 'sealring_top' cell is created.\n+    :type input_file: str | None\n     :param output: Path and name of the file where the sealring should be written to.\n     :type output: str\n     :param offset_x: Translation in X direction in µm.\n@@ -50,8 +54,8 @@ def generate_sealring(width: float, heigth: float, input: str | None, output: st\n     layout = klayout.db.Layout(True)\n     layout.dbu = 0.001\n \n-    if input:\n-        layout.read(input)\n+    if input_file:\n+        layout.read(input_file)\n \n     lib = pya.Library.library_by_name(LIB, 'sg13g2')\n     if lib is None:\n@@ -64,21 +68,21 @@ def generate_sealring(width: float, heigth: float, input: str | None, output: st\n             \"- Running KLayout with a version that supports Python PCells and properly loads them\\n\"\n             \"- Verifying that 'SG13_dev' appears in the Library Browser under PCells\"\n         )\n-    \n+\n     pcell_decl = lib.layout().pcell_declaration(PCELL)\n \n-    # Remove space around the sealring from width/height arguments.\n+    # Remove space around the sealring from width/length arguments.\n     params = pcell_decl.params_as_hash(pcell_decl.get_parameters())\n     edge_box = float(re.sub('[a-zA-Z]+', '', params['edgeBox'].default))\n     width = float(width) - edge_box * 2\n-    heigth = float(heigth) - edge_box * 2\n+    length = float(length) - edge_box * 2\n \n-    if input:\n+    if input_file:\n         top_cell = layout.top_cell()\n     else:\n         top_cell = layout.cell(layout.add_cell(\"sealring_top\"))\n \n-    pcell = layout.add_pcell_variant(lib, pcell_decl.id(), {'w': f'{width}u', 'l': f'{heigth}u'})\n+    pcell = layout.add_pcell_variant(lib, pcell_decl.id(), {'w': f'{width}u', 'l': f'{length}u'})\n     layout.cell(pcell)\n \n     # Convert offset from µm to dbu\n@@ -108,10 +112,14 @@ def generate_sealring(width: float, heigth: float, input: str | None, output: st\n     sys.exit(1)\n \n try:\n-    height\n+    length\n except NameError:\n-    print(\"Missing height argument. Please define '-rd height=<height>'\")\n-    sys.exit(1)\n+    try:\n+        length = height\n+        print(\"The 'height' argument is deprecated. Please define '-rd length=<length>' instead.\")\n+    except NameError:\n+        print(\"Missing length argument. Please define '-rd length=<length>'\")\n+        sys.exit(1)\n \n try:\n     output\n@@ -129,12 +137,9 @@ def generate_sealring(width: float, heigth: float, input: str | None, output: st\n except NameError:\n     offset_y = 0.0\n \n-try:\n-    input\n-    # Ignore built-in input function\n-    if callable(input):\n-        input = None\n-except NameError:\n-    input = None\n+# The optional '-rd input=<path-to-layout>' argument shadows the built-in input\n+# function, so copy it into a dedicated variable and don't use it any further.\n+input_file = None if callable(input) else input\n \n-generate_sealring(width, height, input, output, offset_x, offset_y)  # pylint: disable=undefined-variable\n+generate_sealring(length=length, width=width, input_file=input_file, output=output,\n+                  offset_x=offset_x, offset_y=offset_y)  # pylint: disable=undefined-variable",
+        "status": "modified"
+      },
+      {
+        "filename": "ihp-sg13g2/libs.tech/magic/ihp-sg13g2-extract.tech",
+        "patch": "@@ -1165,7 +1165,7 @@ variants (),(hrhc),(lrhc),(hrlc),(lrlc)\n \n  # Capacitors\n  device csubcircuit cap_cmim *mimcap m5 w=w l=l\n- device csubcircuit cap_rfcmim *mimcap m5 +pblock w=w l=l\n+ device csubcircuit cap_rfcmim *mimcap m5 space/w +pblock w=w l=l\n  # Varactor:  Note that the SVaractor is a complex device incorporating\n  # multiple varactor fingers.  This will normally be handled from a\n  # generated cell using a \"device\" property.  In case varactor structures",
+        "status": "modified"
+      }
+    ],
+    "status": "ahead",
+    "total_commits": 23
+  },
+  "io_gds_git_objects": [
+    {
+      "object": {
+        "path": "ihp-sg13g2/libs.ref/sg13g2_io/gds/sg13g2_io.gds",
+        "sha": "6cbc6d5fd5a90932e8a96ea6493085767e844b55",
+        "size": 71424000
+      },
+      "revision": "331c00484213b13414777eec1336ef5c29b969bd"
+    },
+    {
+      "object": {
+        "path": "ihp-sg13g2/libs.ref/sg13g2_io/gds/sg13g2_io.gds",
+        "sha": "6cbc6d5fd5a90932e8a96ea6493085767e844b55",
+        "size": 71424000
+      },
+      "revision": "5e6d592e4002946a4616f798c357f0f3c06cf3b6"
+    },
+    {
+      "object": {
+        "path": "ihp-sg13g2/libs.ref/sg13g2_io/gds/sg13g2_io.gds",
+        "sha": "6cbc6d5fd5a90932e8a96ea6493085767e844b55",
+        "size": 71424000
+      },
+      "revision": "cfc0e22b92306178ebb5a5bc4865afe3294654d0"
+    }
+  ]
+}

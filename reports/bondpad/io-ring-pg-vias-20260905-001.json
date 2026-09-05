@@ -1,0 +1,178 @@
+{
+  "PG_pin_layer_regions": 2328,
+  "PG_reachable_interlayer_edges": 6016,
+  "PG_reachable_metal_components": 4095,
+  "PPA": {
+    "new_full_chip_result": false
+  },
+  "all_actual_PG_pin_layers_covered": true,
+  "classification": "PG_metal_via_connectivity_not_LVS_DRC_or_IR_EM",
+  "conductor_derivation": "drawing+filler minus slit/res marker; top metals also minus ind_drw",
+  "cross_supply_connected_components": [],
+  "failure_component_groups": {},
+  "geometry_runtime_seconds": 95.47903417299995,
+  "interpretation": "Four separate actual metal/via graphs each contain all 128 macro PG pin regions and four supply bondpads. No same-name virtual ties were added. This does not establish LVS, DRC, IR/EM or full-chip signoff.",
+  "limitations": [
+    "No well/substrate/contact or device network extraction",
+    "No full signal-net graph",
+    "No LVS or DRC",
+    "No IR/EM/resistance/voltage/drop analysis",
+    "No bondwire/package connection",
+    "No core PDN",
+    "No new full-chip PPA"
+  ],
+  "limits": {
+    "container_internal_timeout_seconds": 180,
+    "cpus": 2,
+    "memory_gb": 4
+  },
+  "overall_metal_via_connectivity_result": "PASS",
+  "raw_graph_sha256": "5f231438c2580b5f66c8384c14dec24c3c2246619561292f50076fa59c970d8f",
+  "scope": "Only actual metal components reachable from four PG pin seeds and their 16 physical supply bondpads; no other net seeds, labels never add edges.",
+  "source_hashes_unchanged": true,
+  "source_manifest_sha256": "4531ef286a1a0466b2a558408edc0f22491a2d5ce94512354557bc12e8a84216",
+  "source_run": "runs/croc-io-ring-pg-vias-20260905-001",
+  "source_sha256": {
+    "reports/bondpad/probe_io_ring_pg.py": "ae93cf003e0b49d3828bab5313faf1a2e9383d4ff8c06ff8fee090886045a9e8",
+    "runs/croc-bondpad-io-ab-20260905-001/inputs/bondpad70_m2_ring.lef": "8d717917dc1e1c15efc677c0f61af0ab82d3f47c15b5c8f392de7e475ec5117f",
+    "runs/croc-io-ring-floorplan-20260905-001/instances.tsv": "0088fff13be04fb96aab09cbdd551af1f9158a96fbceaa619aad1aba6f8a0ed6",
+    "runs/croc-io-ring-pg-20260905-001/pg_geometry.json": "ca98a78c4c3312daa5cb3f89985ca791a73a9a7f2d845791dcb2db6c3126476a",
+    "runs/croc-io-ring-physical-20260905-002/io_ring.def": "8505c09dd55a87dc03b1c0a9b576d05b12912a92e391ee2e11b0dbfa2f47bddd",
+    "runs/croc-io-ring-physical-20260905-002/io_ring.gds": "d08c65f165d5ca9d5b0d1a7959a7ded99f053e41c153352dd2ba3cf0fa3ec351",
+    "runs/croc-io-ring-physical-20260905-002/lead_boxes.tsv": "5a078be96f532180f0b2cc918e1e3e81f40539f633083c416d0ba15c185c15ad",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_derivations.lvs": "2122ca992df4983e32dda8e85fdffabab2bc90eed0cebc1372c4069c78ef1157",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/general_connections.lvs": "bb61656b3564cf08558b83cf27d09854049eb30b5b7ade6610045d43c4b53e97",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/general_derivations.lvs": "d386598b10809388bfa690644b5a6a8f49c532b9d04caf9d2d014f4de12db043",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/layers_definitions.lvs": "2165a344d178eff60c2c79ad73108d74b8a1d2b1a5183e8b3492aa249887e58c"
+  },
+  "supplies": {
+    "VDD": {
+      "PG_macro_instances": 128,
+      "PG_pin_layer_regions": 520,
+      "all_128_macro_pin_regions_and_4_bondpads_connected": true,
+      "component_roots": [
+        "Metal1:0077504af37c4460b372"
+      ],
+      "connected_component_count": 1,
+      "metal_via_connectivity_result": "PASS",
+      "mixed_with_other_supplies": false,
+      "seed_metal_components": 28,
+      "supply_bondpad_layer_regions": 24,
+      "supply_bondpads": 4
+    },
+    "VDDIO": {
+      "PG_macro_instances": 128,
+      "PG_pin_layer_regions": 644,
+      "all_128_macro_pin_regions_and_4_bondpads_connected": true,
+      "component_roots": [
+        "Metal1:005406cdd482c3185cfe"
+      ],
+      "connected_component_count": 1,
+      "metal_via_connectivity_result": "PASS",
+      "mixed_with_other_supplies": false,
+      "seed_metal_components": 31,
+      "supply_bondpad_layer_regions": 24,
+      "supply_bondpads": 4
+    },
+    "VSS": {
+      "PG_macro_instances": 128,
+      "PG_pin_layer_regions": 520,
+      "all_128_macro_pin_regions_and_4_bondpads_connected": true,
+      "component_roots": [
+        "Metal1:08b2bccfbefac710635b"
+      ],
+      "connected_component_count": 1,
+      "metal_via_connectivity_result": "PASS",
+      "mixed_with_other_supplies": false,
+      "seed_metal_components": 28,
+      "supply_bondpad_layer_regions": 24,
+      "supply_bondpads": 4
+    },
+    "VSSIO": {
+      "PG_macro_instances": 128,
+      "PG_pin_layer_regions": 644,
+      "all_128_macro_pin_regions_and_4_bondpads_connected": true,
+      "component_roots": [
+        "Metal1:000b5cb0df550a8e916e"
+      ],
+      "connected_component_count": 1,
+      "metal_via_connectivity_result": "PASS",
+      "mixed_with_other_supplies": false,
+      "seed_metal_components": 55,
+      "supply_bondpad_layer_regions": 24,
+      "supply_bondpads": 4
+    }
+  },
+  "supply_bondpad_layer_regions": 96,
+  "synthetic_geometry_failure_cases_passed": 6,
+  "tool_returncode": 0,
+  "via_derivation": "Via1/2/3/4/TopVia2 drawing; TopVia1 drawing minus ((vmim OR TopVia1) AND mim). Both endpoint metals must have positive area overlap with the same actual via polygon.",
+  "via_statistics": {
+    "TopVia1": {
+      "connection_eligible_polygons": 168128,
+      "excluded_area_um2": 0.0,
+      "layer": [
+        125,
+        0
+      ],
+      "lower_metal": "Metal5",
+      "raw_merged_polygons": 168128,
+      "upper_metal": "TopMetal1"
+    },
+    "TopVia2": {
+      "connection_eligible_polygons": 103112,
+      "excluded_area_um2": 0.0,
+      "layer": [
+        133,
+        0
+      ],
+      "lower_metal": "TopMetal1",
+      "raw_merged_polygons": 103112,
+      "upper_metal": "TopMetal2"
+    },
+    "Via1": {
+      "connection_eligible_polygons": 143230,
+      "excluded_area_um2": 0.0,
+      "layer": [
+        19,
+        0
+      ],
+      "lower_metal": "Metal1",
+      "raw_merged_polygons": 143230,
+      "upper_metal": "Metal2"
+    },
+    "Via2": {
+      "connection_eligible_polygons": 236403,
+      "excluded_area_um2": 0.0,
+      "layer": [
+        29,
+        0
+      ],
+      "lower_metal": "Metal2",
+      "raw_merged_polygons": 236403,
+      "upper_metal": "Metal3"
+    },
+    "Via3": {
+      "connection_eligible_polygons": 174528,
+      "excluded_area_um2": 0.0,
+      "layer": [
+        49,
+        0
+      ],
+      "lower_metal": "Metal3",
+      "raw_merged_polygons": 174528,
+      "upper_metal": "Metal4"
+    },
+    "Via4": {
+      "connection_eligible_polygons": 192704,
+      "excluded_area_um2": 0.0,
+      "layer": [
+        66,
+        0
+      ],
+      "lower_metal": "Metal4",
+      "raw_merged_polygons": 192704,
+      "upper_metal": "Metal5"
+    }
+  }
+}

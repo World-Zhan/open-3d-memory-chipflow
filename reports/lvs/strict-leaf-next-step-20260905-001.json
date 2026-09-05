@@ -1,0 +1,227 @@
+{
+  "as_of": "2026-09-05T09:52:35.2626169Z",
+  "classification": "strict_leaf_blocker_reconfirmed_upstream_fix_not_sufficient",
+  "full_chip_lvs_performed": false,
+  "io_cdl_git_blob_identical_pinned_main_dev": true,
+  "io_gds_git_blob_identical_pinned_main_dev": true,
+  "issue_1130": {
+    "comment_count": 0,
+    "state": "OPEN",
+    "updated_at": "2026-08-30T09:03:24Z",
+    "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/1130"
+  },
+  "new_full_chip_ppa": false,
+  "next_experiments_not_run": [
+    {
+      "acceptance": "Prove the two access components share a physical connected component; retain their exact coordinates and path layers. Same-name text alone is insufficient.",
+      "action": "Read-only trace each duplicated diode electrode through actual parent M1/Via1/M2 and higher connected metals using the public conductor derivations.",
+      "priority": 1,
+      "reason": "The historical parent audit only excluded direct M1 closure. It did not exclude a real upper-metal return path."
+    },
+    {
+      "acceptance": "Identify a supported library/deck or documented integrated-parent resolution; preserve tap extraction and strict ports.",
+      "action": "Audit the DCN guard through nwell/ntap/contact/metal derivations and the official CDL tap expectation.",
+      "priority": 2,
+      "reason": "Removing unconditional purge leaves guard absent, so this A/B does not identify the stage at which it disappears."
+    },
+    {
+      "acceptance": "Nonempty exact circuit/device/net/port correspondence, no implicit nets, no ignore flags, no invented metal. This gate does not authorize full-chip attempt 3.",
+      "action": "Only after actual closure and supported hierarchy intent are established, run a minimum physical parent/PG fixture with unchanged strict comparison.",
+      "priority": 3,
+      "reason": "Standalone leaf failure, parent connectivity and pad-ring intent have distinct scopes."
+    }
+  ],
+  "pdk_modified": false,
+  "public_rule_signoff": false,
+  "purge_ab": {
+    "applies_to_leaf_execution_path": true,
+    "cases": [
+      {
+        "candidate_status": "FAIL",
+        "cell": "sg13g2_DCNDiode",
+        "control_status": "FAIL",
+        "cross_reference_equal": true,
+        "cross_reference_summary": {
+          "circuit_pair_count": 1,
+          "circuit_status_counts": {
+            "NoMatch": 1
+          },
+          "classification_semantics": {
+            "layout_only": "layout object present, schematic object absent",
+            "match": "KLayout marked the object pair Match",
+            "paired_mismatch": "both objects present but KLayout did not mark the pair Match",
+            "schematic_only": "schematic object present, layout object absent"
+          },
+          "comparison_blocked_at_leaf_circuit_pairing": true,
+          "no_match_layout_circuits": [
+            "sg13g2_DCNDiode"
+          ],
+          "object_pair_classification_counts": {
+            "device": {
+              "layout_only": 3,
+              "schematic_only": 1
+            },
+            "net": {
+              "layout_only": 4,
+              "schematic_only": 2
+            },
+            "pin": {
+              "match": 4
+            },
+            "subcircuit": {}
+          },
+          "object_pair_status_counts": {
+            "device": {
+              "Mismatch": 4
+            },
+            "net": {
+              "Mismatch": 6
+            },
+            "pin": {
+              "Match": 4
+            },
+            "subcircuit": {}
+          },
+          "parameter_comparison": "partly_blocked_by_unpaired_devices",
+          "skipped_layout_circuits": []
+        },
+        "extracted_netlist_bytes_equal": true,
+        "ports_after_fix": [
+          "anode",
+          "cathode",
+          "cathode$1"
+        ],
+        "runner_returncode_each": 0
+      },
+      {
+        "candidate_status": "FAIL",
+        "cell": "sg13g2_DCPDiode",
+        "control_status": "FAIL",
+        "cross_reference_equal": true,
+        "cross_reference_summary": {
+          "circuit_pair_count": 1,
+          "circuit_status_counts": {
+            "NoMatch": 1
+          },
+          "classification_semantics": {
+            "layout_only": "layout object present, schematic object absent",
+            "match": "KLayout marked the object pair Match",
+            "paired_mismatch": "both objects present but KLayout did not mark the pair Match",
+            "schematic_only": "schematic object present, layout object absent"
+          },
+          "comparison_blocked_at_leaf_circuit_pairing": true,
+          "no_match_layout_circuits": [
+            "sg13g2_DCPDiode"
+          ],
+          "object_pair_classification_counts": {
+            "device": {
+              "layout_only": 3,
+              "schematic_only": 1
+            },
+            "net": {
+              "layout_only": 5,
+              "schematic_only": 2
+            },
+            "pin": {
+              "match": 6
+            },
+            "subcircuit": {}
+          },
+          "object_pair_status_counts": {
+            "device": {
+              "Mismatch": 4
+            },
+            "net": {
+              "Mismatch": 7
+            },
+            "pin": {
+              "Match": 6
+            },
+            "subcircuit": {}
+          },
+          "parameter_comparison": "partly_blocked_by_unpaired_devices",
+          "skipped_layout_circuits": []
+        },
+        "extracted_netlist_bytes_equal": true,
+        "ports_after_fix": [
+          "guard",
+          "cathode",
+          "anode",
+          "anode$1"
+        ],
+        "runner_returncode_each": 0
+      }
+    ],
+    "diagnostic_conclusion": "No change in either leaf extracted netlist or cross-reference; this accepted upstream fix is not sufficient for the observed split nets or missing DCN guard.",
+    "options_unchanged": {
+      "flag_missing_ports": true,
+      "ignore_top_ports_mismatch": false,
+      "implicit_nets": false,
+      "purge_requested": false,
+      "run_mode": "deep",
+      "simplify_enabled": true,
+      "tap_extraction_enabled": true
+    },
+    "resource_limit": {
+      "cpus": 2,
+      "memory_gb": 4,
+      "per_leaf_inner_timeout_seconds": 60
+    },
+    "run": "runs/croc-lvs-leaf-purge-ab-20260905-001",
+    "scope": "minimal upstream removal of two unconditional purge calls in a copied pinned deck; not a complete main PDK upgrade",
+    "source_lines": [
+      "sg13g2.lvs:435-437",
+      "rule_decks/rfmos_model_mapping.lvs:119-124",
+      "sg13g2.lvs:450-464"
+    ],
+    "upstream_fix_commit": "6ff43baf328844fc65c91886d82a0ce91f190fc9",
+    "upstream_pr": "https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1105"
+  },
+  "repo_head_at_experiment": "f3d54e12d94e1da0377e828d4163d011ecfdd5f5",
+  "schema_version": "1.0.0",
+  "source_cell_identity": {
+    "DCN_DCP_geometry_and_labels_equal": true,
+    "conclusion": "The Croc versus official IOPadIn differences do not explain the standalone DCN/DCP mismatches. Exact attribution of every parent delta to a child was not performed.",
+    "parent_13_layer_differences_intersect_LevelDown_bbox": true,
+    "parent_13_layer_differences_intersect_diode_bboxes": false,
+    "scope": "only the two recursive leaf trees"
+  },
+  "source_sha256": {
+    "reports/blockers/ihp-sg13g2-io-diode-strict-lvs.json": "1e1c1dbfedf98a8074bdb80ba1f382e8efff47072f41797f1c2a5fd3ca7cb5d3",
+    "reports/bondpad/input-io-cell-comparison-20260905-001.json": "fe87320b90e1005d65799946789496e2aee5c98c2c915189aabe1c2f33321105",
+    "reports/lvs/upstream-io-cdl-objects-20260905-001.json": "dcf21e10c3cf9e80f93f76fae97ec77861f4bc067dc04607c4b0cb740aea47ed",
+    "reports/lvs/upstream-review-20260905-001.json": "e274652b4f3e4e747f27544c75e989938caa7b0ca2fe6fef58a8185c9b8cad39",
+    "runs/croc-lvs-leaf-purge-ab-20260905-001/analysis/summary.json": "f3962b2c57d8a1534974cb9bfc5b75f6b41be630eed580c35e0d238c84c36811",
+    "runs/croc-lvs-leaf-purge-ab-20260905-001/leaf_source_identity.json": "22bfc0510a10c289d0c465ad4ff6007059fe02d2b11119825d6d2bfdf7a02973",
+    "runs/croc-lvs-leaf-purge-ab-20260905-001/manifest.json": "a0d46d08b0dce5d8e0e4a4d769561b02330f33df1ee01122492c8373073c4da2",
+    "runs/croc-lvs-leaf-purge-ab-20260905-001/upstream_purge_removal.patch": "14f7e23cfdbbfeab85734a14bb99385a14452b5ba47e9493bee149da150c0c52"
+  },
+  "upstream_dev": {
+    "sha": "cfc0e22b92306178ebb5a5bc4865afe3294654d0"
+  },
+  "upstream_intent_evidence": [
+    {
+      "finding": "Contributor describes IOPadVss guard connection through pad-ring abutment to IOPadIOVdd; standalone IO can fail LVS due to library template architecture.",
+      "limit": "This concerns IOPadVss guard. It does not prove DCN/DCP leaf electrode closure or authorize virtual connections in this strict project.",
+      "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/714#issuecomment-3388578658"
+    },
+    {
+      "finding": "Contributor agreed missing label and CDL guard connection need an IO library update; issue remains open.",
+      "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/714#issuecomment-3396005804"
+    },
+    {
+      "finding": "Separate open discrepancy between ESD diode simulation models and pad antenna models; no response found.",
+      "limit": "Model calibration issue is not evidence for the specific geometric net split.",
+      "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/708"
+    },
+    {
+      "finding": "Reported valid IO abutment test matrix exceeds 400 combinations and contains Cnt.b/M2.f/TV2.b violations.",
+      "url": "https://github.com/IHP-GmbH/IHP-Open-PDK/issues/835#issuecomment-3963613068"
+    }
+  ],
+  "upstream_main": {
+    "date": "2026-09-01T13:31:34Z",
+    "message": "Merge pull request #1134 from IHP-GmbH/dev\n\nDev -> Main",
+    "sha": "5e6d592e4002946a4616f798c357f0f3c06cf3b6"
+  }
+}

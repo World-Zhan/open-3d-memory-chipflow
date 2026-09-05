@@ -1,0 +1,78 @@
+{
+  "checks": [
+    {
+      "path": "runs/croc-io-ring-pg-vias-20260905-001/pg_via_graph.json",
+      "sha256": "5f231438c2580b5f66c8384c14dec24c3c2246619561292f50076fa59c970d8f"
+    },
+    {
+      "path": "runs/croc-io-ring-pg-vias-20260905-001/probe_io_ring_pg.py",
+      "sha256": "ae93cf003e0b49d3828bab5313faf1a2e9383d4ff8c06ff8fee090886045a9e8"
+    },
+    {
+      "path": "runs/croc-io-ring-pg-vias-20260905-001/probe_io_ring_pg_vias.py",
+      "sha256": "7bcb315d86346a52ad8908e38b60cf3c0ff3a51f5b489244613a6d3b4a62bbaa"
+    },
+    {
+      "path": "runs/croc-io-ring-pg-vias-20260905-001/run_io_ring_pg_vias.py",
+      "sha256": "844a7fb35e3495a2e2eaf02c53276eded5a8bb1f06c519a1e6a8731e8d6cafcf"
+    },
+    {
+      "path": "runs/croc-io-ring-pg-vias-20260905-001/tool.log",
+      "sha256": "14250e966a2a1ea0ca399191ea3314aefe95876bf0aadfa3d579d1b47b795618"
+    },
+    {
+      "path": "runs/croc-io-ring-pg-vias-20260905-001/validation_cases.json",
+      "sha256": "79a163f0f4f18dc5dc9545f30f91ddd3168ee0a196a3a5ca113b4949c454ff2e"
+    },
+    {
+      "path": "reports/bondpad/probe_io_ring_pg.py",
+      "sha256": "ae93cf003e0b49d3828bab5313faf1a2e9383d4ff8c06ff8fee090886045a9e8"
+    },
+    {
+      "path": "runs/croc-bondpad-io-ab-20260905-001/inputs/bondpad70_m2_ring.lef",
+      "sha256": "8d717917dc1e1c15efc677c0f61af0ab82d3f47c15b5c8f392de7e475ec5117f"
+    },
+    {
+      "path": "runs/croc-io-ring-floorplan-20260905-001/instances.tsv",
+      "sha256": "0088fff13be04fb96aab09cbdd551af1f9158a96fbceaa619aad1aba6f8a0ed6"
+    },
+    {
+      "path": "runs/croc-io-ring-pg-20260905-001/pg_geometry.json",
+      "sha256": "ca98a78c4c3312daa5cb3f89985ca791a73a9a7f2d845791dcb2db6c3126476a"
+    },
+    {
+      "path": "runs/croc-io-ring-physical-20260905-002/io_ring.def",
+      "sha256": "8505c09dd55a87dc03b1c0a9b576d05b12912a92e391ee2e11b0dbfa2f47bddd"
+    },
+    {
+      "path": "runs/croc-io-ring-physical-20260905-002/io_ring.gds",
+      "sha256": "d08c65f165d5ca9d5b0d1a7959a7ded99f053e41c153352dd2ba3cf0fa3ec351"
+    },
+    {
+      "path": "runs/croc-io-ring-physical-20260905-002/lead_boxes.tsv",
+      "sha256": "5a078be96f532180f0b2cc918e1e3e81f40539f633083c416d0ba15c185c15ad"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/cap_derivations.lvs",
+      "sha256": "2122ca992df4983e32dda8e85fdffabab2bc90eed0cebc1372c4069c78ef1157"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/general_connections.lvs",
+      "sha256": "bb61656b3564cf08558b83cf27d09854049eb30b5b7ade6610045d43c4b53e97"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/general_derivations.lvs",
+      "sha256": "d386598b10809388bfa690644b5a6a8f49c532b9d04caf9d2d014f4de12db043"
+    },
+    {
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/layers_definitions.lvs",
+      "sha256": "2165a344d178eff60c2c79ad73108d74b8a1d2b1a5183e8b3492aa249887e58c"
+    }
+  ],
+  "hash_checks_passed": 17,
+  "python_AST_files_passed": 4,
+  "summary_path": "reports/bondpad/io-ring-pg-vias-20260905-001.json",
+  "summary_sha256": "c84ce9cc0385cdf131e84b3dbf58aa4e3d0b7e5566ccb91dc0c313a57ac641e7",
+  "synthetic_geometry_cases_passed": 6,
+  "validated_at": "2026-09-05T10:16:05.930061+00:00"
+}

@@ -1,0 +1,444 @@
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN io_ring ;
+UNITS DISTANCE MICRONS 1000 ;
+DIEAREA ( 0 0 ) ( 1974000 1974000 ) ;
+TRACKS X 420 DO 4699 STEP 420 LAYER Metal1 ;
+TRACKS Y 420 DO 4699 STEP 420 LAYER Metal1 ;
+TRACKS X 480 DO 4112 STEP 480 LAYER Metal2 ;
+TRACKS Y 480 DO 4112 STEP 480 LAYER Metal2 ;
+TRACKS X 420 DO 4699 STEP 420 LAYER Metal3 ;
+TRACKS Y 420 DO 4699 STEP 420 LAYER Metal3 ;
+TRACKS X 480 DO 4112 STEP 480 LAYER Metal4 ;
+TRACKS Y 480 DO 4112 STEP 480 LAYER Metal4 ;
+TRACKS X 420 DO 4699 STEP 420 LAYER Metal5 ;
+TRACKS Y 420 DO 4699 STEP 420 LAYER Metal5 ;
+TRACKS X 1640 DO 602 STEP 3280 LAYER TopMetal1 ;
+TRACKS Y 1640 DO 602 STEP 3280 LAYER TopMetal1 ;
+TRACKS X 2000 DO 493 STEP 4000 LAYER TopMetal2 ;
+TRACKS Y 2000 DO 493 STEP 4000 LAYER TopMetal2 ;
+COMPONENTS 192 ;
+    - IO_BOND_pad_clk_i bondpad70_m2_ring + FIXED ( 17800 1087000 ) FW ;
+    - IO_BOND_pad_gpio0_io bondpad70_m2_ring + FIXED ( 457000 17800 ) N ;
+    - IO_BOND_pad_gpio10_io bondpad70_m2_ring + FIXED ( 1357000 17800 ) N ;
+    - IO_BOND_pad_gpio11_io bondpad70_m2_ring + FIXED ( 1447000 17800 ) N ;
+    - IO_BOND_pad_gpio12_io bondpad70_m2_ring + FIXED ( 1886200 457000 ) W ;
+    - IO_BOND_pad_gpio13_io bondpad70_m2_ring + FIXED ( 1886200 547000 ) W ;
+    - IO_BOND_pad_gpio14_io bondpad70_m2_ring + FIXED ( 1886200 637000 ) W ;
+    - IO_BOND_pad_gpio15_io bondpad70_m2_ring + FIXED ( 1886200 727000 ) W ;
+    - IO_BOND_pad_gpio16_io bondpad70_m2_ring + FIXED ( 1886200 817000 ) W ;
+    - IO_BOND_pad_gpio17_io bondpad70_m2_ring + FIXED ( 1886200 907000 ) W ;
+    - IO_BOND_pad_gpio18_io bondpad70_m2_ring + FIXED ( 1886200 997000 ) W ;
+    - IO_BOND_pad_gpio19_io bondpad70_m2_ring + FIXED ( 1886200 1087000 ) W ;
+    - IO_BOND_pad_gpio1_io bondpad70_m2_ring + FIXED ( 547000 17800 ) N ;
+    - IO_BOND_pad_gpio20_io bondpad70_m2_ring + FIXED ( 1886200 1177000 ) W ;
+    - IO_BOND_pad_gpio21_io bondpad70_m2_ring + FIXED ( 1886200 1267000 ) W ;
+    - IO_BOND_pad_gpio22_io bondpad70_m2_ring + FIXED ( 1886200 1357000 ) W ;
+    - IO_BOND_pad_gpio23_io bondpad70_m2_ring + FIXED ( 1886200 1447000 ) W ;
+    - IO_BOND_pad_gpio24_io bondpad70_m2_ring + FIXED ( 1447000 1886200 ) FS ;
+    - IO_BOND_pad_gpio25_io bondpad70_m2_ring + FIXED ( 1357000 1886200 ) FS ;
+    - IO_BOND_pad_gpio26_io bondpad70_m2_ring + FIXED ( 1267000 1886200 ) FS ;
+    - IO_BOND_pad_gpio27_io bondpad70_m2_ring + FIXED ( 1177000 1886200 ) FS ;
+    - IO_BOND_pad_gpio28_io bondpad70_m2_ring + FIXED ( 1087000 1886200 ) FS ;
+    - IO_BOND_pad_gpio29_io bondpad70_m2_ring + FIXED ( 997000 1886200 ) FS ;
+    - IO_BOND_pad_gpio2_io bondpad70_m2_ring + FIXED ( 637000 17800 ) N ;
+    - IO_BOND_pad_gpio30_io bondpad70_m2_ring + FIXED ( 907000 1886200 ) FS ;
+    - IO_BOND_pad_gpio31_io bondpad70_m2_ring + FIXED ( 817000 1886200 ) FS ;
+    - IO_BOND_pad_gpio3_io bondpad70_m2_ring + FIXED ( 727000 17800 ) N ;
+    - IO_BOND_pad_gpio4_io bondpad70_m2_ring + FIXED ( 817000 17800 ) N ;
+    - IO_BOND_pad_gpio5_io bondpad70_m2_ring + FIXED ( 907000 17800 ) N ;
+    - IO_BOND_pad_gpio6_io bondpad70_m2_ring + FIXED ( 997000 17800 ) N ;
+    - IO_BOND_pad_gpio7_io bondpad70_m2_ring + FIXED ( 1087000 17800 ) N ;
+    - IO_BOND_pad_gpio8_io bondpad70_m2_ring + FIXED ( 1177000 17800 ) N ;
+    - IO_BOND_pad_gpio9_io bondpad70_m2_ring + FIXED ( 1267000 17800 ) N ;
+    - IO_BOND_pad_jtag_tck_i bondpad70_m2_ring + FIXED ( 17800 817000 ) FW ;
+    - IO_BOND_pad_jtag_tdi_i bondpad70_m2_ring + FIXED ( 17800 547000 ) FW ;
+    - IO_BOND_pad_jtag_tdo_o bondpad70_m2_ring + FIXED ( 17800 457000 ) FW ;
+    - IO_BOND_pad_jtag_tms_i bondpad70_m2_ring + FIXED ( 17800 637000 ) FW ;
+    - IO_BOND_pad_jtag_trst_ni bondpad70_m2_ring + FIXED ( 17800 727000 ) FW ;
+    - IO_BOND_pad_ref_clk_i bondpad70_m2_ring + FIXED ( 17800 997000 ) FW ;
+    - IO_BOND_pad_rst_ni bondpad70_m2_ring + FIXED ( 17800 907000 ) FW ;
+    - IO_BOND_pad_status_o bondpad70_m2_ring + FIXED ( 17800 1177000 ) FW ;
+    - IO_BOND_pad_testmode_i bondpad70_m2_ring + FIXED ( 17800 1267000 ) FW ;
+    - IO_BOND_pad_uart_rx_i bondpad70_m2_ring + FIXED ( 17800 1447000 ) FW ;
+    - IO_BOND_pad_uart_tx_o bondpad70_m2_ring + FIXED ( 17800 1357000 ) FW ;
+    - IO_BOND_pad_unused0_o bondpad70_m2_ring + FIXED ( 727000 1886200 ) FS ;
+    - IO_BOND_pad_unused1_o bondpad70_m2_ring + FIXED ( 637000 1886200 ) FS ;
+    - IO_BOND_pad_unused2_o bondpad70_m2_ring + FIXED ( 547000 1886200 ) FS ;
+    - IO_BOND_pad_unused3_o bondpad70_m2_ring + FIXED ( 457000 1886200 ) FS ;
+    - IO_BOND_pad_vdd0 bondpad70_m2_ring + FIXED ( 17800 277000 ) FW ;
+    - IO_BOND_pad_vdd1 bondpad70_m2_ring + FIXED ( 1627000 17800 ) N ;
+    - IO_BOND_pad_vdd2 bondpad70_m2_ring + FIXED ( 1886200 1627000 ) W ;
+    - IO_BOND_pad_vdd3 bondpad70_m2_ring + FIXED ( 277000 1886200 ) FS ;
+    - IO_BOND_pad_vddio0 bondpad70_m2_ring + FIXED ( 17800 1537000 ) FW ;
+    - IO_BOND_pad_vddio1 bondpad70_m2_ring + FIXED ( 367000 17800 ) N ;
+    - IO_BOND_pad_vddio2 bondpad70_m2_ring + FIXED ( 1886200 367000 ) W ;
+    - IO_BOND_pad_vddio3 bondpad70_m2_ring + FIXED ( 1537000 1886200 ) FS ;
+    - IO_BOND_pad_vss0 bondpad70_m2_ring + FIXED ( 17800 367000 ) FW ;
+    - IO_BOND_pad_vss1 bondpad70_m2_ring + FIXED ( 1537000 17800 ) N ;
+    - IO_BOND_pad_vss2 bondpad70_m2_ring + FIXED ( 1886200 1537000 ) W ;
+    - IO_BOND_pad_vss3 bondpad70_m2_ring + FIXED ( 367000 1886200 ) FS ;
+    - IO_BOND_pad_vssio0 bondpad70_m2_ring + FIXED ( 17800 1627000 ) FW ;
+    - IO_BOND_pad_vssio1 bondpad70_m2_ring + FIXED ( 277000 17800 ) N ;
+    - IO_BOND_pad_vssio2 bondpad70_m2_ring + FIXED ( 1886200 277000 ) W ;
+    - IO_BOND_pad_vssio3 bondpad70_m2_ring + FIXED ( 1627000 1886200 ) FS ;
+    - IO_CORNER_NORTH_EAST_INST sg13g2_Corner + FIXED ( 1702000 1702000 ) S ;
+    - IO_CORNER_NORTH_WEST_INST sg13g2_Corner + FIXED ( 92000 1702000 ) FS ;
+    - IO_CORNER_SOUTH_EAST_INST sg13g2_Corner + FIXED ( 1702000 92000 ) FN ;
+    - IO_CORNER_SOUTH_WEST_INST sg13g2_Corner + FIXED ( 92000 92000 ) N ;
+    - IO_FILL_IO_EAST_0_0 sg13g2_Filler2000 + FIXED ( 1702000 352000 ) W ;
+    - IO_FILL_IO_EAST_10_0 sg13g2_Filler2000 + FIXED ( 1702000 1252000 ) W ;
+    - IO_FILL_IO_EAST_11_0 sg13g2_Filler2000 + FIXED ( 1702000 1342000 ) W ;
+    - IO_FILL_IO_EAST_12_0 sg13g2_Filler2000 + FIXED ( 1702000 1432000 ) W ;
+    - IO_FILL_IO_EAST_13_0 sg13g2_Filler2000 + FIXED ( 1702000 1522000 ) W ;
+    - IO_FILL_IO_EAST_14_0 sg13g2_Filler2000 + FIXED ( 1702000 1612000 ) W ;
+    - IO_FILL_IO_EAST_1_0 sg13g2_Filler2000 + FIXED ( 1702000 442000 ) W ;
+    - IO_FILL_IO_EAST_2_0 sg13g2_Filler2000 + FIXED ( 1702000 532000 ) W ;
+    - IO_FILL_IO_EAST_3_0 sg13g2_Filler2000 + FIXED ( 1702000 622000 ) W ;
+    - IO_FILL_IO_EAST_4_0 sg13g2_Filler2000 + FIXED ( 1702000 712000 ) W ;
+    - IO_FILL_IO_EAST_5_0 sg13g2_Filler2000 + FIXED ( 1702000 802000 ) W ;
+    - IO_FILL_IO_EAST_6_0 sg13g2_Filler2000 + FIXED ( 1702000 892000 ) W ;
+    - IO_FILL_IO_EAST_7_0 sg13g2_Filler2000 + FIXED ( 1702000 982000 ) W ;
+    - IO_FILL_IO_EAST_8_0 sg13g2_Filler2000 + FIXED ( 1702000 1072000 ) W ;
+    - IO_FILL_IO_EAST_9_0 sg13g2_Filler2000 + FIXED ( 1702000 1162000 ) W ;
+    - IO_FILL_IO_NORTH_0_0 sg13g2_Filler2000 + FIXED ( 352000 1702000 ) FS ;
+    - IO_FILL_IO_NORTH_10_0 sg13g2_Filler2000 + FIXED ( 1252000 1702000 ) FS ;
+    - IO_FILL_IO_NORTH_11_0 sg13g2_Filler2000 + FIXED ( 1342000 1702000 ) FS ;
+    - IO_FILL_IO_NORTH_12_0 sg13g2_Filler2000 + FIXED ( 1432000 1702000 ) FS ;
+    - IO_FILL_IO_NORTH_13_0 sg13g2_Filler2000 + FIXED ( 1522000 1702000 ) FS ;
+    - IO_FILL_IO_NORTH_14_0 sg13g2_Filler2000 + FIXED ( 1612000 1702000 ) FS ;
+    - IO_FILL_IO_NORTH_1_0 sg13g2_Filler2000 + FIXED ( 442000 1702000 ) FS ;
+    - IO_FILL_IO_NORTH_2_0 sg13g2_Filler2000 + FIXED ( 532000 1702000 ) FS ;
+    - IO_FILL_IO_NORTH_3_0 sg13g2_Filler2000 + FIXED ( 622000 1702000 ) FS ;
+    - IO_FILL_IO_NORTH_4_0 sg13g2_Filler2000 + FIXED ( 712000 1702000 ) FS ;
+    - IO_FILL_IO_NORTH_5_0 sg13g2_Filler2000 + FIXED ( 802000 1702000 ) FS ;
+    - IO_FILL_IO_NORTH_6_0 sg13g2_Filler2000 + FIXED ( 892000 1702000 ) FS ;
+    - IO_FILL_IO_NORTH_7_0 sg13g2_Filler2000 + FIXED ( 982000 1702000 ) FS ;
+    - IO_FILL_IO_NORTH_8_0 sg13g2_Filler2000 + FIXED ( 1072000 1702000 ) FS ;
+    - IO_FILL_IO_NORTH_9_0 sg13g2_Filler2000 + FIXED ( 1162000 1702000 ) FS ;
+    - IO_FILL_IO_SOUTH_0_0 sg13g2_Filler2000 + FIXED ( 352000 92000 ) N ;
+    - IO_FILL_IO_SOUTH_10_0 sg13g2_Filler2000 + FIXED ( 1252000 92000 ) N ;
+    - IO_FILL_IO_SOUTH_11_0 sg13g2_Filler2000 + FIXED ( 1342000 92000 ) N ;
+    - IO_FILL_IO_SOUTH_12_0 sg13g2_Filler2000 + FIXED ( 1432000 92000 ) N ;
+    - IO_FILL_IO_SOUTH_13_0 sg13g2_Filler2000 + FIXED ( 1522000 92000 ) N ;
+    - IO_FILL_IO_SOUTH_14_0 sg13g2_Filler2000 + FIXED ( 1612000 92000 ) N ;
+    - IO_FILL_IO_SOUTH_1_0 sg13g2_Filler2000 + FIXED ( 442000 92000 ) N ;
+    - IO_FILL_IO_SOUTH_2_0 sg13g2_Filler2000 + FIXED ( 532000 92000 ) N ;
+    - IO_FILL_IO_SOUTH_3_0 sg13g2_Filler2000 + FIXED ( 622000 92000 ) N ;
+    - IO_FILL_IO_SOUTH_4_0 sg13g2_Filler2000 + FIXED ( 712000 92000 ) N ;
+    - IO_FILL_IO_SOUTH_5_0 sg13g2_Filler2000 + FIXED ( 802000 92000 ) N ;
+    - IO_FILL_IO_SOUTH_6_0 sg13g2_Filler2000 + FIXED ( 892000 92000 ) N ;
+    - IO_FILL_IO_SOUTH_7_0 sg13g2_Filler2000 + FIXED ( 982000 92000 ) N ;
+    - IO_FILL_IO_SOUTH_8_0 sg13g2_Filler2000 + FIXED ( 1072000 92000 ) N ;
+    - IO_FILL_IO_SOUTH_9_0 sg13g2_Filler2000 + FIXED ( 1162000 92000 ) N ;
+    - IO_FILL_IO_WEST_0_0 sg13g2_Filler2000 + FIXED ( 92000 352000 ) FW ;
+    - IO_FILL_IO_WEST_10_0 sg13g2_Filler2000 + FIXED ( 92000 1252000 ) FW ;
+    - IO_FILL_IO_WEST_11_0 sg13g2_Filler2000 + FIXED ( 92000 1342000 ) FW ;
+    - IO_FILL_IO_WEST_12_0 sg13g2_Filler2000 + FIXED ( 92000 1432000 ) FW ;
+    - IO_FILL_IO_WEST_13_0 sg13g2_Filler2000 + FIXED ( 92000 1522000 ) FW ;
+    - IO_FILL_IO_WEST_14_0 sg13g2_Filler2000 + FIXED ( 92000 1612000 ) FW ;
+    - IO_FILL_IO_WEST_1_0 sg13g2_Filler2000 + FIXED ( 92000 442000 ) FW ;
+    - IO_FILL_IO_WEST_2_0 sg13g2_Filler2000 + FIXED ( 92000 532000 ) FW ;
+    - IO_FILL_IO_WEST_3_0 sg13g2_Filler2000 + FIXED ( 92000 622000 ) FW ;
+    - IO_FILL_IO_WEST_4_0 sg13g2_Filler2000 + FIXED ( 92000 712000 ) FW ;
+    - IO_FILL_IO_WEST_5_0 sg13g2_Filler2000 + FIXED ( 92000 802000 ) FW ;
+    - IO_FILL_IO_WEST_6_0 sg13g2_Filler2000 + FIXED ( 92000 892000 ) FW ;
+    - IO_FILL_IO_WEST_7_0 sg13g2_Filler2000 + FIXED ( 92000 982000 ) FW ;
+    - IO_FILL_IO_WEST_8_0 sg13g2_Filler2000 + FIXED ( 92000 1072000 ) FW ;
+    - IO_FILL_IO_WEST_9_0 sg13g2_Filler2000 + FIXED ( 92000 1162000 ) FW ;
+    - pad_clk_i sg13g2_IOPadIn + FIXED ( 92000 1082000 ) FW ;
+    - pad_gpio0_io sg13g2_IOPadInOut30mA + FIXED ( 452000 92000 ) N ;
+    - pad_gpio10_io sg13g2_IOPadInOut30mA + FIXED ( 1352000 92000 ) N ;
+    - pad_gpio11_io sg13g2_IOPadInOut30mA + FIXED ( 1442000 92000 ) N ;
+    - pad_gpio12_io sg13g2_IOPadInOut30mA + FIXED ( 1702000 452000 ) W ;
+    - pad_gpio13_io sg13g2_IOPadInOut30mA + FIXED ( 1702000 542000 ) W ;
+    - pad_gpio14_io sg13g2_IOPadInOut30mA + FIXED ( 1702000 632000 ) W ;
+    - pad_gpio15_io sg13g2_IOPadInOut30mA + FIXED ( 1702000 722000 ) W ;
+    - pad_gpio16_io sg13g2_IOPadInOut30mA + FIXED ( 1702000 812000 ) W ;
+    - pad_gpio17_io sg13g2_IOPadInOut30mA + FIXED ( 1702000 902000 ) W ;
+    - pad_gpio18_io sg13g2_IOPadInOut30mA + FIXED ( 1702000 992000 ) W ;
+    - pad_gpio19_io sg13g2_IOPadInOut30mA + FIXED ( 1702000 1082000 ) W ;
+    - pad_gpio1_io sg13g2_IOPadInOut30mA + FIXED ( 542000 92000 ) N ;
+    - pad_gpio20_io sg13g2_IOPadInOut30mA + FIXED ( 1702000 1172000 ) W ;
+    - pad_gpio21_io sg13g2_IOPadInOut30mA + FIXED ( 1702000 1262000 ) W ;
+    - pad_gpio22_io sg13g2_IOPadInOut30mA + FIXED ( 1702000 1352000 ) W ;
+    - pad_gpio23_io sg13g2_IOPadInOut30mA + FIXED ( 1702000 1442000 ) W ;
+    - pad_gpio24_io sg13g2_IOPadInOut30mA + FIXED ( 1442000 1702000 ) FS ;
+    - pad_gpio25_io sg13g2_IOPadInOut30mA + FIXED ( 1352000 1702000 ) FS ;
+    - pad_gpio26_io sg13g2_IOPadInOut30mA + FIXED ( 1262000 1702000 ) FS ;
+    - pad_gpio27_io sg13g2_IOPadInOut30mA + FIXED ( 1172000 1702000 ) FS ;
+    - pad_gpio28_io sg13g2_IOPadInOut30mA + FIXED ( 1082000 1702000 ) FS ;
+    - pad_gpio29_io sg13g2_IOPadInOut30mA + FIXED ( 992000 1702000 ) FS ;
+    - pad_gpio2_io sg13g2_IOPadInOut30mA + FIXED ( 632000 92000 ) N ;
+    - pad_gpio30_io sg13g2_IOPadInOut30mA + FIXED ( 902000 1702000 ) FS ;
+    - pad_gpio31_io sg13g2_IOPadInOut30mA + FIXED ( 812000 1702000 ) FS ;
+    - pad_gpio3_io sg13g2_IOPadInOut30mA + FIXED ( 722000 92000 ) N ;
+    - pad_gpio4_io sg13g2_IOPadInOut30mA + FIXED ( 812000 92000 ) N ;
+    - pad_gpio5_io sg13g2_IOPadInOut30mA + FIXED ( 902000 92000 ) N ;
+    - pad_gpio6_io sg13g2_IOPadInOut30mA + FIXED ( 992000 92000 ) N ;
+    - pad_gpio7_io sg13g2_IOPadInOut30mA + FIXED ( 1082000 92000 ) N ;
+    - pad_gpio8_io sg13g2_IOPadInOut30mA + FIXED ( 1172000 92000 ) N ;
+    - pad_gpio9_io sg13g2_IOPadInOut30mA + FIXED ( 1262000 92000 ) N ;
+    - pad_jtag_tck_i sg13g2_IOPadIn + FIXED ( 92000 812000 ) FW ;
+    - pad_jtag_tdi_i sg13g2_IOPadIn + FIXED ( 92000 542000 ) FW ;
+    - pad_jtag_tdo_o sg13g2_IOPadOut16mA + FIXED ( 92000 452000 ) FW ;
+    - pad_jtag_tms_i sg13g2_IOPadIn + FIXED ( 92000 632000 ) FW ;
+    - pad_jtag_trst_ni sg13g2_IOPadIn + FIXED ( 92000 722000 ) FW ;
+    - pad_ref_clk_i sg13g2_IOPadIn + FIXED ( 92000 992000 ) FW ;
+    - pad_rst_ni sg13g2_IOPadIn + FIXED ( 92000 902000 ) FW ;
+    - pad_status_o sg13g2_IOPadOut16mA + FIXED ( 92000 1172000 ) FW ;
+    - pad_testmode_i sg13g2_IOPadIn + FIXED ( 92000 1262000 ) FW ;
+    - pad_uart_rx_i sg13g2_IOPadIn + FIXED ( 92000 1442000 ) FW ;
+    - pad_uart_tx_o sg13g2_IOPadOut16mA + FIXED ( 92000 1352000 ) FW ;
+    - pad_unused0_o sg13g2_IOPadOut16mA + FIXED ( 722000 1702000 ) FS ;
+    - pad_unused1_o sg13g2_IOPadOut16mA + FIXED ( 632000 1702000 ) FS ;
+    - pad_unused2_o sg13g2_IOPadOut16mA + FIXED ( 542000 1702000 ) FS ;
+    - pad_unused3_o sg13g2_IOPadOut16mA + FIXED ( 452000 1702000 ) FS ;
+    - pad_vdd0 sg13g2_IOPadVdd + FIXED ( 92000 272000 ) FW ;
+    - pad_vdd1 sg13g2_IOPadVdd + FIXED ( 1622000 92000 ) N ;
+    - pad_vdd2 sg13g2_IOPadVdd + FIXED ( 1702000 1622000 ) W ;
+    - pad_vdd3 sg13g2_IOPadVdd + FIXED ( 272000 1702000 ) FS ;
+    - pad_vddio0 sg13g2_IOPadIOVdd + FIXED ( 92000 1532000 ) FW ;
+    - pad_vddio1 sg13g2_IOPadIOVdd + FIXED ( 362000 92000 ) N ;
+    - pad_vddio2 sg13g2_IOPadIOVdd + FIXED ( 1702000 362000 ) W ;
+    - pad_vddio3 sg13g2_IOPadIOVdd + FIXED ( 1532000 1702000 ) FS ;
+    - pad_vss0 sg13g2_IOPadVss + FIXED ( 92000 362000 ) FW ;
+    - pad_vss1 sg13g2_IOPadVss + FIXED ( 1532000 92000 ) N ;
+    - pad_vss2 sg13g2_IOPadVss + FIXED ( 1702000 1532000 ) W ;
+    - pad_vss3 sg13g2_IOPadVss + FIXED ( 362000 1702000 ) FS ;
+    - pad_vssio0 sg13g2_IOPadIOVss + FIXED ( 92000 1622000 ) FW ;
+    - pad_vssio1 sg13g2_IOPadIOVss + FIXED ( 272000 92000 ) N ;
+    - pad_vssio2 sg13g2_IOPadIOVss + FIXED ( 1702000 272000 ) W ;
+    - pad_vssio3 sg13g2_IOPadIOVss + FIXED ( 1622000 1702000 ) FS ;
+END COMPONENTS
+SPECIALNETS 4 ;
+    - VDD ( IO_FILL_IO_WEST_14_0 vdd ) ( IO_FILL_IO_WEST_0_0 vdd ) ( IO_FILL_IO_WEST_13_0 vdd ) ( IO_FILL_IO_WEST_12_0 vdd ) ( IO_FILL_IO_WEST_11_0 vdd ) ( IO_FILL_IO_WEST_10_0 vdd ) ( IO_FILL_IO_WEST_7_0 vdd )
+      ( IO_FILL_IO_WEST_4_0 vdd ) ( IO_FILL_IO_WEST_1_0 vdd ) ( IO_FILL_IO_WEST_3_0 vdd ) ( IO_FILL_IO_WEST_2_0 vdd ) ( IO_FILL_IO_WEST_6_0 vdd ) ( IO_FILL_IO_WEST_5_0 vdd ) ( IO_FILL_IO_WEST_9_0 vdd ) ( IO_FILL_IO_WEST_8_0 vdd )
+      ( IO_FILL_IO_SOUTH_0_0 vdd ) ( IO_FILL_IO_SOUTH_14_0 vdd ) ( IO_FILL_IO_SOUTH_10_0 vdd ) ( IO_FILL_IO_SOUTH_9_0 vdd ) ( IO_FILL_IO_SOUTH_8_0 vdd ) ( IO_FILL_IO_SOUTH_7_0 vdd ) ( IO_FILL_IO_SOUTH_6_0 vdd ) ( IO_FILL_IO_SOUTH_5_0 vdd )
+      ( IO_FILL_IO_SOUTH_4_0 vdd ) ( IO_FILL_IO_SOUTH_3_0 vdd ) ( IO_FILL_IO_SOUTH_13_0 vdd ) ( IO_FILL_IO_SOUTH_12_0 vdd ) ( IO_FILL_IO_SOUTH_11_0 vdd ) ( IO_FILL_IO_SOUTH_2_0 vdd ) ( IO_FILL_IO_SOUTH_1_0 vdd ) ( IO_FILL_IO_EAST_0_0 vdd )
+      ( IO_FILL_IO_EAST_14_0 vdd ) ( IO_FILL_IO_EAST_13_0 vdd ) ( IO_FILL_IO_EAST_12_0 vdd ) ( IO_FILL_IO_EAST_11_0 vdd ) ( IO_FILL_IO_EAST_10_0 vdd ) ( IO_FILL_IO_EAST_9_0 vdd ) ( IO_FILL_IO_EAST_8_0 vdd ) ( IO_FILL_IO_EAST_7_0 vdd )
+      ( IO_FILL_IO_EAST_6_0 vdd ) ( IO_FILL_IO_EAST_5_0 vdd ) ( IO_FILL_IO_EAST_4_0 vdd ) ( IO_FILL_IO_EAST_3_0 vdd ) ( IO_FILL_IO_EAST_2_0 vdd ) ( IO_FILL_IO_EAST_1_0 vdd ) ( IO_FILL_IO_NORTH_14_0 vdd ) ( IO_FILL_IO_NORTH_0_0 vdd )
+      ( IO_FILL_IO_NORTH_1_0 vdd ) ( IO_FILL_IO_NORTH_2_0 vdd ) ( IO_FILL_IO_NORTH_3_0 vdd ) ( IO_FILL_IO_NORTH_4_0 vdd ) ( IO_FILL_IO_NORTH_5_0 vdd ) ( IO_FILL_IO_NORTH_6_0 vdd ) ( IO_FILL_IO_NORTH_7_0 vdd ) ( IO_FILL_IO_NORTH_8_0 vdd )
+      ( IO_FILL_IO_NORTH_9_0 vdd ) ( IO_FILL_IO_NORTH_10_0 vdd ) ( IO_FILL_IO_NORTH_11_0 vdd ) ( IO_FILL_IO_NORTH_13_0 vdd ) ( IO_FILL_IO_NORTH_12_0 vdd ) ( IO_CORNER_SOUTH_WEST_INST vdd ) ( IO_CORNER_SOUTH_EAST_INST vdd ) ( IO_CORNER_NORTH_EAST_INST vdd )
+      ( IO_CORNER_NORTH_WEST_INST vdd ) ( pad_clk_i vdd ) ( pad_gpio0_io vdd ) ( pad_gpio10_io vdd ) ( pad_gpio11_io vdd ) ( pad_gpio12_io vdd ) ( pad_gpio13_io vdd ) ( pad_gpio14_io vdd )
+      ( pad_gpio15_io vdd ) ( pad_gpio16_io vdd ) ( pad_gpio17_io vdd ) ( pad_gpio18_io vdd ) ( pad_gpio19_io vdd ) ( pad_gpio1_io vdd ) ( pad_gpio20_io vdd ) ( pad_gpio21_io vdd )
+      ( pad_gpio22_io vdd ) ( pad_gpio23_io vdd ) ( pad_gpio24_io vdd ) ( pad_gpio25_io vdd ) ( pad_gpio26_io vdd ) ( pad_gpio27_io vdd ) ( pad_gpio28_io vdd ) ( pad_gpio29_io vdd )
+      ( pad_gpio2_io vdd ) ( pad_gpio30_io vdd ) ( pad_gpio31_io vdd ) ( pad_gpio3_io vdd ) ( pad_gpio4_io vdd ) ( pad_gpio5_io vdd ) ( pad_gpio6_io vdd ) ( pad_gpio7_io vdd )
+      ( pad_gpio8_io vdd ) ( pad_gpio9_io vdd ) ( pad_jtag_tck_i vdd ) ( pad_jtag_tdi_i vdd ) ( pad_jtag_tdo_o vdd ) ( pad_jtag_tms_i vdd ) ( pad_jtag_trst_ni vdd ) ( pad_ref_clk_i vdd )
+      ( pad_rst_ni vdd ) ( pad_status_o vdd ) ( pad_testmode_i vdd ) ( pad_uart_rx_i vdd ) ( pad_uart_tx_o vdd ) ( pad_unused0_o vdd ) ( pad_unused1_o vdd ) ( pad_unused2_o vdd )
+      ( pad_unused3_o vdd ) ( pad_vdd0 vdd ) ( pad_vdd1 vdd ) ( pad_vdd2 vdd ) ( pad_vdd3 vdd ) ( pad_vddio0 vdd ) ( pad_vddio1 vdd ) ( pad_vddio2 vdd )
+      ( pad_vddio3 vdd ) ( pad_vss0 vdd ) ( pad_vss1 vdd ) ( pad_vss2 vdd ) ( pad_vss3 vdd ) ( pad_vssio0 vdd ) ( pad_vssio1 vdd ) ( pad_vssio2 vdd )
+      ( pad_vssio3 vdd ) + USE POWER ;
+    - VDDIO ( IO_FILL_IO_WEST_14_0 iovdd ) ( IO_FILL_IO_WEST_0_0 iovdd ) ( IO_FILL_IO_WEST_13_0 iovdd ) ( IO_FILL_IO_WEST_12_0 iovdd ) ( IO_FILL_IO_WEST_11_0 iovdd ) ( IO_FILL_IO_WEST_10_0 iovdd ) ( IO_FILL_IO_WEST_7_0 iovdd )
+      ( IO_FILL_IO_WEST_4_0 iovdd ) ( IO_FILL_IO_WEST_1_0 iovdd ) ( IO_FILL_IO_WEST_3_0 iovdd ) ( IO_FILL_IO_WEST_2_0 iovdd ) ( IO_FILL_IO_WEST_6_0 iovdd ) ( IO_FILL_IO_WEST_5_0 iovdd ) ( IO_FILL_IO_WEST_9_0 iovdd ) ( IO_FILL_IO_WEST_8_0 iovdd )
+      ( IO_FILL_IO_SOUTH_0_0 iovdd ) ( IO_FILL_IO_SOUTH_14_0 iovdd ) ( IO_FILL_IO_SOUTH_10_0 iovdd ) ( IO_FILL_IO_SOUTH_9_0 iovdd ) ( IO_FILL_IO_SOUTH_8_0 iovdd ) ( IO_FILL_IO_SOUTH_7_0 iovdd ) ( IO_FILL_IO_SOUTH_6_0 iovdd ) ( IO_FILL_IO_SOUTH_5_0 iovdd )
+      ( IO_FILL_IO_SOUTH_4_0 iovdd ) ( IO_FILL_IO_SOUTH_3_0 iovdd ) ( IO_FILL_IO_SOUTH_13_0 iovdd ) ( IO_FILL_IO_SOUTH_12_0 iovdd ) ( IO_FILL_IO_SOUTH_11_0 iovdd ) ( IO_FILL_IO_SOUTH_2_0 iovdd ) ( IO_FILL_IO_SOUTH_1_0 iovdd ) ( IO_FILL_IO_EAST_0_0 iovdd )
+      ( IO_FILL_IO_EAST_14_0 iovdd ) ( IO_FILL_IO_EAST_13_0 iovdd ) ( IO_FILL_IO_EAST_12_0 iovdd ) ( IO_FILL_IO_EAST_11_0 iovdd ) ( IO_FILL_IO_EAST_10_0 iovdd ) ( IO_FILL_IO_EAST_9_0 iovdd ) ( IO_FILL_IO_EAST_8_0 iovdd ) ( IO_FILL_IO_EAST_7_0 iovdd )
+      ( IO_FILL_IO_EAST_6_0 iovdd ) ( IO_FILL_IO_EAST_5_0 iovdd ) ( IO_FILL_IO_EAST_4_0 iovdd ) ( IO_FILL_IO_EAST_3_0 iovdd ) ( IO_FILL_IO_EAST_2_0 iovdd ) ( IO_FILL_IO_EAST_1_0 iovdd ) ( IO_FILL_IO_NORTH_14_0 iovdd ) ( IO_FILL_IO_NORTH_0_0 iovdd )
+      ( IO_FILL_IO_NORTH_1_0 iovdd ) ( IO_FILL_IO_NORTH_2_0 iovdd ) ( IO_FILL_IO_NORTH_3_0 iovdd ) ( IO_FILL_IO_NORTH_4_0 iovdd ) ( IO_FILL_IO_NORTH_5_0 iovdd ) ( IO_FILL_IO_NORTH_6_0 iovdd ) ( IO_FILL_IO_NORTH_7_0 iovdd ) ( IO_FILL_IO_NORTH_8_0 iovdd )
+      ( IO_FILL_IO_NORTH_9_0 iovdd ) ( IO_FILL_IO_NORTH_10_0 iovdd ) ( IO_FILL_IO_NORTH_11_0 iovdd ) ( IO_FILL_IO_NORTH_13_0 iovdd ) ( IO_FILL_IO_NORTH_12_0 iovdd ) ( IO_CORNER_SOUTH_WEST_INST iovdd ) ( IO_CORNER_SOUTH_EAST_INST iovdd ) ( IO_CORNER_NORTH_EAST_INST iovdd )
+      ( IO_CORNER_NORTH_WEST_INST iovdd ) ( pad_clk_i iovdd ) ( pad_gpio0_io iovdd ) ( pad_gpio10_io iovdd ) ( pad_gpio11_io iovdd ) ( pad_gpio12_io iovdd ) ( pad_gpio13_io iovdd ) ( pad_gpio14_io iovdd )
+      ( pad_gpio15_io iovdd ) ( pad_gpio16_io iovdd ) ( pad_gpio17_io iovdd ) ( pad_gpio18_io iovdd ) ( pad_gpio19_io iovdd ) ( pad_gpio1_io iovdd ) ( pad_gpio20_io iovdd ) ( pad_gpio21_io iovdd )
+      ( pad_gpio22_io iovdd ) ( pad_gpio23_io iovdd ) ( pad_gpio24_io iovdd ) ( pad_gpio25_io iovdd ) ( pad_gpio26_io iovdd ) ( pad_gpio27_io iovdd ) ( pad_gpio28_io iovdd ) ( pad_gpio29_io iovdd )
+      ( pad_gpio2_io iovdd ) ( pad_gpio30_io iovdd ) ( pad_gpio31_io iovdd ) ( pad_gpio3_io iovdd ) ( pad_gpio4_io iovdd ) ( pad_gpio5_io iovdd ) ( pad_gpio6_io iovdd ) ( pad_gpio7_io iovdd )
+      ( pad_gpio8_io iovdd ) ( pad_gpio9_io iovdd ) ( pad_jtag_tck_i iovdd ) ( pad_jtag_tdi_i iovdd ) ( pad_jtag_tdo_o iovdd ) ( pad_jtag_tms_i iovdd ) ( pad_jtag_trst_ni iovdd ) ( pad_ref_clk_i iovdd )
+      ( pad_rst_ni iovdd ) ( pad_status_o iovdd ) ( pad_testmode_i iovdd ) ( pad_uart_rx_i iovdd ) ( pad_uart_tx_o iovdd ) ( pad_unused0_o iovdd ) ( pad_unused1_o iovdd ) ( pad_unused2_o iovdd )
+      ( pad_unused3_o iovdd ) ( pad_vdd0 iovdd ) ( pad_vdd1 iovdd ) ( pad_vdd2 iovdd ) ( pad_vdd3 iovdd ) ( pad_vddio0 iovdd ) ( pad_vddio1 iovdd ) ( pad_vddio2 iovdd )
+      ( pad_vddio3 iovdd ) ( pad_vss0 iovdd ) ( pad_vss1 iovdd ) ( pad_vss2 iovdd ) ( pad_vss3 iovdd ) ( pad_vssio0 iovdd ) ( pad_vssio1 iovdd ) ( pad_vssio2 iovdd )
+      ( pad_vssio3 iovdd ) + USE POWER ;
+    - VSS ( IO_FILL_IO_WEST_14_0 vss ) ( IO_FILL_IO_WEST_0_0 vss ) ( IO_FILL_IO_WEST_13_0 vss ) ( IO_FILL_IO_WEST_12_0 vss ) ( IO_FILL_IO_WEST_11_0 vss ) ( IO_FILL_IO_WEST_10_0 vss ) ( IO_FILL_IO_WEST_7_0 vss )
+      ( IO_FILL_IO_WEST_4_0 vss ) ( IO_FILL_IO_WEST_1_0 vss ) ( IO_FILL_IO_WEST_3_0 vss ) ( IO_FILL_IO_WEST_2_0 vss ) ( IO_FILL_IO_WEST_6_0 vss ) ( IO_FILL_IO_WEST_5_0 vss ) ( IO_FILL_IO_WEST_9_0 vss ) ( IO_FILL_IO_WEST_8_0 vss )
+      ( IO_FILL_IO_SOUTH_0_0 vss ) ( IO_FILL_IO_SOUTH_14_0 vss ) ( IO_FILL_IO_SOUTH_10_0 vss ) ( IO_FILL_IO_SOUTH_9_0 vss ) ( IO_FILL_IO_SOUTH_8_0 vss ) ( IO_FILL_IO_SOUTH_7_0 vss ) ( IO_FILL_IO_SOUTH_6_0 vss ) ( IO_FILL_IO_SOUTH_5_0 vss )
+      ( IO_FILL_IO_SOUTH_4_0 vss ) ( IO_FILL_IO_SOUTH_3_0 vss ) ( IO_FILL_IO_SOUTH_13_0 vss ) ( IO_FILL_IO_SOUTH_12_0 vss ) ( IO_FILL_IO_SOUTH_11_0 vss ) ( IO_FILL_IO_SOUTH_2_0 vss ) ( IO_FILL_IO_SOUTH_1_0 vss ) ( IO_FILL_IO_EAST_0_0 vss )
+      ( IO_FILL_IO_EAST_14_0 vss ) ( IO_FILL_IO_EAST_13_0 vss ) ( IO_FILL_IO_EAST_12_0 vss ) ( IO_FILL_IO_EAST_11_0 vss ) ( IO_FILL_IO_EAST_10_0 vss ) ( IO_FILL_IO_EAST_9_0 vss ) ( IO_FILL_IO_EAST_8_0 vss ) ( IO_FILL_IO_EAST_7_0 vss )
+      ( IO_FILL_IO_EAST_6_0 vss ) ( IO_FILL_IO_EAST_5_0 vss ) ( IO_FILL_IO_EAST_4_0 vss ) ( IO_FILL_IO_EAST_3_0 vss ) ( IO_FILL_IO_EAST_2_0 vss ) ( IO_FILL_IO_EAST_1_0 vss ) ( IO_FILL_IO_NORTH_14_0 vss ) ( IO_FILL_IO_NORTH_0_0 vss )
+      ( IO_FILL_IO_NORTH_1_0 vss ) ( IO_FILL_IO_NORTH_2_0 vss ) ( IO_FILL_IO_NORTH_3_0 vss ) ( IO_FILL_IO_NORTH_4_0 vss ) ( IO_FILL_IO_NORTH_5_0 vss ) ( IO_FILL_IO_NORTH_6_0 vss ) ( IO_FILL_IO_NORTH_7_0 vss ) ( IO_FILL_IO_NORTH_8_0 vss )
+      ( IO_FILL_IO_NORTH_9_0 vss ) ( IO_FILL_IO_NORTH_10_0 vss ) ( IO_FILL_IO_NORTH_11_0 vss ) ( IO_FILL_IO_NORTH_13_0 vss ) ( IO_FILL_IO_NORTH_12_0 vss ) ( IO_CORNER_SOUTH_WEST_INST vss ) ( IO_CORNER_SOUTH_EAST_INST vss ) ( IO_CORNER_NORTH_EAST_INST vss )
+      ( IO_CORNER_NORTH_WEST_INST vss ) ( pad_clk_i vss ) ( pad_gpio0_io vss ) ( pad_gpio10_io vss ) ( pad_gpio11_io vss ) ( pad_gpio12_io vss ) ( pad_gpio13_io vss ) ( pad_gpio14_io vss )
+      ( pad_gpio15_io vss ) ( pad_gpio16_io vss ) ( pad_gpio17_io vss ) ( pad_gpio18_io vss ) ( pad_gpio19_io vss ) ( pad_gpio1_io vss ) ( pad_gpio20_io vss ) ( pad_gpio21_io vss )
+      ( pad_gpio22_io vss ) ( pad_gpio23_io vss ) ( pad_gpio24_io vss ) ( pad_gpio25_io vss ) ( pad_gpio26_io vss ) ( pad_gpio27_io vss ) ( pad_gpio28_io vss ) ( pad_gpio29_io vss )
+      ( pad_gpio2_io vss ) ( pad_gpio30_io vss ) ( pad_gpio31_io vss ) ( pad_gpio3_io vss ) ( pad_gpio4_io vss ) ( pad_gpio5_io vss ) ( pad_gpio6_io vss ) ( pad_gpio7_io vss )
+      ( pad_gpio8_io vss ) ( pad_gpio9_io vss ) ( pad_jtag_tck_i vss ) ( pad_jtag_tdi_i vss ) ( pad_jtag_tdo_o vss ) ( pad_jtag_tms_i vss ) ( pad_jtag_trst_ni vss ) ( pad_ref_clk_i vss )
+      ( pad_rst_ni vss ) ( pad_status_o vss ) ( pad_testmode_i vss ) ( pad_uart_rx_i vss ) ( pad_uart_tx_o vss ) ( pad_unused0_o vss ) ( pad_unused1_o vss ) ( pad_unused2_o vss )
+      ( pad_unused3_o vss ) ( pad_vdd0 vss ) ( pad_vdd1 vss ) ( pad_vdd2 vss ) ( pad_vdd3 vss ) ( pad_vddio0 vss ) ( pad_vddio1 vss ) ( pad_vddio2 vss )
+      ( pad_vddio3 vss ) ( pad_vss0 vss ) ( pad_vss1 vss ) ( pad_vss2 vss ) ( pad_vss3 vss ) ( pad_vssio0 vss ) ( pad_vssio1 vss ) ( pad_vssio2 vss )
+      ( pad_vssio3 vss ) + USE GROUND ;
+    - VSSIO ( IO_FILL_IO_WEST_14_0 iovss ) ( IO_FILL_IO_WEST_0_0 iovss ) ( IO_FILL_IO_WEST_13_0 iovss ) ( IO_FILL_IO_WEST_12_0 iovss ) ( IO_FILL_IO_WEST_11_0 iovss ) ( IO_FILL_IO_WEST_10_0 iovss ) ( IO_FILL_IO_WEST_7_0 iovss )
+      ( IO_FILL_IO_WEST_4_0 iovss ) ( IO_FILL_IO_WEST_1_0 iovss ) ( IO_FILL_IO_WEST_3_0 iovss ) ( IO_FILL_IO_WEST_2_0 iovss ) ( IO_FILL_IO_WEST_6_0 iovss ) ( IO_FILL_IO_WEST_5_0 iovss ) ( IO_FILL_IO_WEST_9_0 iovss ) ( IO_FILL_IO_WEST_8_0 iovss )
+      ( IO_FILL_IO_SOUTH_0_0 iovss ) ( IO_FILL_IO_SOUTH_14_0 iovss ) ( IO_FILL_IO_SOUTH_10_0 iovss ) ( IO_FILL_IO_SOUTH_9_0 iovss ) ( IO_FILL_IO_SOUTH_8_0 iovss ) ( IO_FILL_IO_SOUTH_7_0 iovss ) ( IO_FILL_IO_SOUTH_6_0 iovss ) ( IO_FILL_IO_SOUTH_5_0 iovss )
+      ( IO_FILL_IO_SOUTH_4_0 iovss ) ( IO_FILL_IO_SOUTH_3_0 iovss ) ( IO_FILL_IO_SOUTH_13_0 iovss ) ( IO_FILL_IO_SOUTH_12_0 iovss ) ( IO_FILL_IO_SOUTH_11_0 iovss ) ( IO_FILL_IO_SOUTH_2_0 iovss ) ( IO_FILL_IO_SOUTH_1_0 iovss ) ( IO_FILL_IO_EAST_0_0 iovss )
+      ( IO_FILL_IO_EAST_14_0 iovss ) ( IO_FILL_IO_EAST_13_0 iovss ) ( IO_FILL_IO_EAST_12_0 iovss ) ( IO_FILL_IO_EAST_11_0 iovss ) ( IO_FILL_IO_EAST_10_0 iovss ) ( IO_FILL_IO_EAST_9_0 iovss ) ( IO_FILL_IO_EAST_8_0 iovss ) ( IO_FILL_IO_EAST_7_0 iovss )
+      ( IO_FILL_IO_EAST_6_0 iovss ) ( IO_FILL_IO_EAST_5_0 iovss ) ( IO_FILL_IO_EAST_4_0 iovss ) ( IO_FILL_IO_EAST_3_0 iovss ) ( IO_FILL_IO_EAST_2_0 iovss ) ( IO_FILL_IO_EAST_1_0 iovss ) ( IO_FILL_IO_NORTH_14_0 iovss ) ( IO_FILL_IO_NORTH_0_0 iovss )
+      ( IO_FILL_IO_NORTH_1_0 iovss ) ( IO_FILL_IO_NORTH_2_0 iovss ) ( IO_FILL_IO_NORTH_3_0 iovss ) ( IO_FILL_IO_NORTH_4_0 iovss ) ( IO_FILL_IO_NORTH_5_0 iovss ) ( IO_FILL_IO_NORTH_6_0 iovss ) ( IO_FILL_IO_NORTH_7_0 iovss ) ( IO_FILL_IO_NORTH_8_0 iovss )
+      ( IO_FILL_IO_NORTH_9_0 iovss ) ( IO_FILL_IO_NORTH_10_0 iovss ) ( IO_FILL_IO_NORTH_11_0 iovss ) ( IO_FILL_IO_NORTH_13_0 iovss ) ( IO_FILL_IO_NORTH_12_0 iovss ) ( IO_CORNER_SOUTH_WEST_INST iovss ) ( IO_CORNER_SOUTH_EAST_INST iovss ) ( IO_CORNER_NORTH_EAST_INST iovss )
+      ( IO_CORNER_NORTH_WEST_INST iovss ) ( pad_clk_i iovss ) ( pad_gpio0_io iovss ) ( pad_gpio10_io iovss ) ( pad_gpio11_io iovss ) ( pad_gpio12_io iovss ) ( pad_gpio13_io iovss ) ( pad_gpio14_io iovss )
+      ( pad_gpio15_io iovss ) ( pad_gpio16_io iovss ) ( pad_gpio17_io iovss ) ( pad_gpio18_io iovss ) ( pad_gpio19_io iovss ) ( pad_gpio1_io iovss ) ( pad_gpio20_io iovss ) ( pad_gpio21_io iovss )
+      ( pad_gpio22_io iovss ) ( pad_gpio23_io iovss ) ( pad_gpio24_io iovss ) ( pad_gpio25_io iovss ) ( pad_gpio26_io iovss ) ( pad_gpio27_io iovss ) ( pad_gpio28_io iovss ) ( pad_gpio29_io iovss )
+      ( pad_gpio2_io iovss ) ( pad_gpio30_io iovss ) ( pad_gpio31_io iovss ) ( pad_gpio3_io iovss ) ( pad_gpio4_io iovss ) ( pad_gpio5_io iovss ) ( pad_gpio6_io iovss ) ( pad_gpio7_io iovss )
+      ( pad_gpio8_io iovss ) ( pad_gpio9_io iovss ) ( pad_jtag_tck_i iovss ) ( pad_jtag_tdi_i iovss ) ( pad_jtag_tdo_o iovss ) ( pad_jtag_tms_i iovss ) ( pad_jtag_trst_ni iovss ) ( pad_ref_clk_i iovss )
+      ( pad_rst_ni iovss ) ( pad_status_o iovss ) ( pad_testmode_i iovss ) ( pad_uart_rx_i iovss ) ( pad_uart_tx_o iovss ) ( pad_unused0_o iovss ) ( pad_unused1_o iovss ) ( pad_unused2_o iovss )
+      ( pad_unused3_o iovss ) ( pad_vdd0 iovss ) ( pad_vdd1 iovss ) ( pad_vdd2 iovss ) ( pad_vdd3 iovss ) ( pad_vddio0 iovss ) ( pad_vddio1 iovss ) ( pad_vddio2 iovss )
+      ( pad_vddio3 iovss ) ( pad_vss0 iovss ) ( pad_vss1 iovss ) ( pad_vss2 iovss ) ( pad_vss3 iovss ) ( pad_vssio0 iovss ) ( pad_vssio1 iovss ) ( pad_vssio2 iovss )
+      ( pad_vssio3 iovss ) + USE GROUND ;
+END SPECIALNETS
+NETS 157 ;
+    - clk_i ( pad_clk_i pad ) + USE SIGNAL ;
+    - gpio0_io ( pad_gpio0_io pad ) + USE SIGNAL ;
+    - gpio10_io ( pad_gpio10_io pad ) + USE SIGNAL ;
+    - gpio11_io ( pad_gpio11_io pad ) + USE SIGNAL ;
+    - gpio12_io ( pad_gpio12_io pad ) + USE SIGNAL ;
+    - gpio13_io ( pad_gpio13_io pad ) + USE SIGNAL ;
+    - gpio14_io ( pad_gpio14_io pad ) + USE SIGNAL ;
+    - gpio15_io ( pad_gpio15_io pad ) + USE SIGNAL ;
+    - gpio16_io ( pad_gpio16_io pad ) + USE SIGNAL ;
+    - gpio17_io ( pad_gpio17_io pad ) + USE SIGNAL ;
+    - gpio18_io ( pad_gpio18_io pad ) + USE SIGNAL ;
+    - gpio19_io ( pad_gpio19_io pad ) + USE SIGNAL ;
+    - gpio1_io ( pad_gpio1_io pad ) + USE SIGNAL ;
+    - gpio20_io ( pad_gpio20_io pad ) + USE SIGNAL ;
+    - gpio21_io ( pad_gpio21_io pad ) + USE SIGNAL ;
+    - gpio22_io ( pad_gpio22_io pad ) + USE SIGNAL ;
+    - gpio23_io ( pad_gpio23_io pad ) + USE SIGNAL ;
+    - gpio24_io ( pad_gpio24_io pad ) + USE SIGNAL ;
+    - gpio25_io ( pad_gpio25_io pad ) + USE SIGNAL ;
+    - gpio26_io ( pad_gpio26_io pad ) + USE SIGNAL ;
+    - gpio27_io ( pad_gpio27_io pad ) + USE SIGNAL ;
+    - gpio28_io ( pad_gpio28_io pad ) + USE SIGNAL ;
+    - gpio29_io ( pad_gpio29_io pad ) + USE SIGNAL ;
+    - gpio2_io ( pad_gpio2_io pad ) + USE SIGNAL ;
+    - gpio30_io ( pad_gpio30_io pad ) + USE SIGNAL ;
+    - gpio31_io ( pad_gpio31_io pad ) + USE SIGNAL ;
+    - gpio3_io ( pad_gpio3_io pad ) + USE SIGNAL ;
+    - gpio4_io ( pad_gpio4_io pad ) + USE SIGNAL ;
+    - gpio5_io ( pad_gpio5_io pad ) + USE SIGNAL ;
+    - gpio6_io ( pad_gpio6_io pad ) + USE SIGNAL ;
+    - gpio7_io ( pad_gpio7_io pad ) + USE SIGNAL ;
+    - gpio8_io ( pad_gpio8_io pad ) + USE SIGNAL ;
+    - gpio9_io ( pad_gpio9_io pad ) + USE SIGNAL ;
+    - jtag_tck_i ( pad_jtag_tck_i pad ) + USE SIGNAL ;
+    - jtag_tdi_i ( pad_jtag_tdi_i pad ) + USE SIGNAL ;
+    - jtag_tdo_o ( pad_jtag_tdo_o pad ) + USE SIGNAL ;
+    - jtag_tms_i ( pad_jtag_tms_i pad ) + USE SIGNAL ;
+    - jtag_trst_ni ( pad_jtag_trst_ni pad ) + USE SIGNAL ;
+    - net11632 ( pad_unused3_o c2p ) ( pad_unused2_o c2p ) ( pad_unused1_o c2p ) ( pad_unused0_o c2p ) + USE SIGNAL ;
+    - ref_clk_i ( pad_ref_clk_i pad ) + USE SIGNAL ;
+    - rst_ni ( pad_rst_ni pad ) + USE SIGNAL ;
+    - soc_clk_i ( pad_clk_i p2c ) + USE SIGNAL ;
+    - soc_gpio_i_0_ ( pad_gpio0_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_10_ ( pad_gpio10_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_11_ ( pad_gpio11_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_12_ ( pad_gpio12_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_13_ ( pad_gpio13_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_14_ ( pad_gpio14_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_15_ ( pad_gpio15_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_16_ ( pad_gpio16_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_17_ ( pad_gpio17_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_18_ ( pad_gpio18_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_19_ ( pad_gpio19_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_1_ ( pad_gpio1_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_20_ ( pad_gpio20_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_21_ ( pad_gpio21_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_22_ ( pad_gpio22_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_23_ ( pad_gpio23_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_24_ ( pad_gpio24_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_25_ ( pad_gpio25_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_26_ ( pad_gpio26_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_27_ ( pad_gpio27_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_28_ ( pad_gpio28_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_29_ ( pad_gpio29_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_2_ ( pad_gpio2_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_30_ ( pad_gpio30_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_31_ ( pad_gpio31_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_3_ ( pad_gpio3_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_4_ ( pad_gpio4_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_5_ ( pad_gpio5_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_6_ ( pad_gpio6_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_7_ ( pad_gpio7_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_8_ ( pad_gpio8_io p2c ) + USE SIGNAL ;
+    - soc_gpio_i_9_ ( pad_gpio9_io p2c ) + USE SIGNAL ;
+    - soc_gpio_o_0_ ( pad_gpio0_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_10_ ( pad_gpio10_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_11_ ( pad_gpio11_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_12_ ( pad_gpio12_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_13_ ( pad_gpio13_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_14_ ( pad_gpio14_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_15_ ( pad_gpio15_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_16_ ( pad_gpio16_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_17_ ( pad_gpio17_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_18_ ( pad_gpio18_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_19_ ( pad_gpio19_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_1_ ( pad_gpio1_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_20_ ( pad_gpio20_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_21_ ( pad_gpio21_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_22_ ( pad_gpio22_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_23_ ( pad_gpio23_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_24_ ( pad_gpio24_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_25_ ( pad_gpio25_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_26_ ( pad_gpio26_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_27_ ( pad_gpio27_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_28_ ( pad_gpio28_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_29_ ( pad_gpio29_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_2_ ( pad_gpio2_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_30_ ( pad_gpio30_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_31_ ( pad_gpio31_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_3_ ( pad_gpio3_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_4_ ( pad_gpio4_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_5_ ( pad_gpio5_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_6_ ( pad_gpio6_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_7_ ( pad_gpio7_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_8_ ( pad_gpio8_io c2p ) + USE SIGNAL ;
+    - soc_gpio_o_9_ ( pad_gpio9_io c2p ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_0_ ( pad_gpio0_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_10_ ( pad_gpio10_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_11_ ( pad_gpio11_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_12_ ( pad_gpio12_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_13_ ( pad_gpio13_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_14_ ( pad_gpio14_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_15_ ( pad_gpio15_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_16_ ( pad_gpio16_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_17_ ( pad_gpio17_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_18_ ( pad_gpio18_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_19_ ( pad_gpio19_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_1_ ( pad_gpio1_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_20_ ( pad_gpio20_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_21_ ( pad_gpio21_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_22_ ( pad_gpio22_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_23_ ( pad_gpio23_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_24_ ( pad_gpio24_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_25_ ( pad_gpio25_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_26_ ( pad_gpio26_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_27_ ( pad_gpio27_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_28_ ( pad_gpio28_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_29_ ( pad_gpio29_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_2_ ( pad_gpio2_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_30_ ( pad_gpio30_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_31_ ( pad_gpio31_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_3_ ( pad_gpio3_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_4_ ( pad_gpio4_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_5_ ( pad_gpio5_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_6_ ( pad_gpio6_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_7_ ( pad_gpio7_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_8_ ( pad_gpio8_io c2p_en ) + USE SIGNAL ;
+    - soc_gpio_out_en_o_9_ ( pad_gpio9_io c2p_en ) + USE SIGNAL ;
+    - soc_jtag_tck_i ( pad_jtag_tck_i p2c ) + USE SIGNAL ;
+    - soc_jtag_tdi_i ( pad_jtag_tdi_i p2c ) + USE SIGNAL ;
+    - soc_jtag_tdo_o ( pad_jtag_tdo_o c2p ) + USE SIGNAL ;
+    - soc_jtag_tms_i ( pad_jtag_tms_i p2c ) + USE SIGNAL ;
+    - soc_jtag_trst_ni ( pad_jtag_trst_ni p2c ) + USE SIGNAL ;
+    - soc_ref_clk_i ( pad_ref_clk_i p2c ) + USE SIGNAL ;
+    - soc_rst_ni ( pad_rst_ni p2c ) + USE SIGNAL ;
+    - soc_status_o ( pad_status_o c2p ) + USE SIGNAL ;
+    - soc_testmode_i ( pad_testmode_i p2c ) + USE SIGNAL ;
+    - soc_uart_rx_i ( pad_uart_rx_i p2c ) + USE SIGNAL ;
+    - soc_uart_tx_o ( pad_uart_tx_o c2p ) + USE SIGNAL ;
+    - status_o ( pad_status_o pad ) + USE SIGNAL ;
+    - testmode_i ( pad_testmode_i pad ) + USE SIGNAL ;
+    - uart_rx_i ( pad_uart_rx_i pad ) + USE SIGNAL ;
+    - uart_tx_o ( pad_uart_tx_o pad ) + USE SIGNAL ;
+    - unused0_o ( pad_unused0_o pad ) + USE SIGNAL ;
+    - unused1_o ( pad_unused1_o pad ) + USE SIGNAL ;
+    - unused2_o ( pad_unused2_o pad ) + USE SIGNAL ;
+    - unused3_o ( pad_unused3_o pad ) + USE SIGNAL ;
+END NETS
+END DESIGN

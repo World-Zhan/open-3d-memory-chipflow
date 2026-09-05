@@ -1,0 +1,12 @@
+{
+  "cases": [
+    "same_actual_cut_joins_two_overlapping_metals",
+    "two_different_cuts_cannot_create_a_cross_layer_bridge",
+    "edge_only_cut_contact_is_not_positive_area_connection",
+    "MIM_TopVia1_removed_while_unrelated_TopVia1_remains",
+    "identical_expected_supply_names_do_not_union_disconnected_nodes",
+    "actual_cross_supply_edge_is_detectable_without_hiding_disconnected_pin"
+  ],
+  "cases_passed": 6,
+  "classification": "synthetic_geometry_failure_cases_not_chip_validation"
+}

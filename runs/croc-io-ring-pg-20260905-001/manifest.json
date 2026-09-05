@@ -1,0 +1,46 @@
+{
+  "artifacts_sha256": {
+    "pg_geometry.json": "ca98a78c4c3312daa5cb3f89985ca791a73a9a7f2d845791dcb2db6c3126476a",
+    "probe_io_ring_pg.py": "ae93cf003e0b49d3828bab5313faf1a2e9383d4ff8c06ff8fee090886045a9e8",
+    "run_io_ring_pg.py": "28cec991813dd4499b5f3bc14afd9297789171a72040b6c4861697aa484a7c57",
+    "tool.log": "dfe1bb42df862d60b86a4a16077269dbbf40167d68d9f94aae84f823a6a22a01"
+  },
+  "classification": "read_only_io_ring_PG_geometry_not_signoff",
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "--name",
+    "croc-io-ring-pg-20260905-001",
+    "--cpus",
+    "2",
+    "--memory",
+    "4g",
+    "--user",
+    "1000:1000",
+    "-e",
+    "HOME=/tmp",
+    "-e",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "--entrypoint",
+    "/usr/bin/timeout",
+    "-v",
+    "/home/james_zhan/projects/open-3d-memory-chipflow:/work:ro",
+    "-v",
+    "/home/james_zhan/projects/open-3d-memory-chipflow/runs/croc-io-ring-pg-20260905-001:/output:rw",
+    "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+    "--signal=TERM",
+    "--kill-after=3s",
+    "120s",
+    "python3",
+    "/output/probe_io_ring_pg.py"
+  ],
+  "finished_at": "2026-09-05T10:03:32.556508+00:00",
+  "limits": {
+    "container_internal_timeout_seconds": 120,
+    "cpus": 2,
+    "memory_gb": 4
+  },
+  "returncode": 0,
+  "started_at": "2026-09-05T10:03:30.226597+00:00"
+}

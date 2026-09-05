@@ -10,3 +10,11 @@
 # Unified diffs encode blank context as one space. Check added source lines with
 # git apply --check --whitespace=error; retain byte-identical evidence patches.
 patches/taiwei-pin-3d/*.patch whitespace=-blank-at-eol
+
+# Preserve exact fetched evidence bytes and valid unified-diff context.
+reports/lvs/upstream-io-cdl-objects-20260905-001.json -text whitespace=cr-at-eol
+reports/lvs/upstream-review-20260905-001.json -text whitespace=cr-at-eol
+runs/croc-lvs-leaf-purge-ab-20260905-001/official_purge_fix_blob.json -text whitespace=cr-at-eol
+runs/croc-lvs-leaf-purge-ab-20260905-001/official_purge_fix_commit.json -text whitespace=cr-at-eol
+# Source whitespace is independently checked with git apply --check --whitespace=error.
+runs/croc-lvs-leaf-purge-ab-20260905-001/upstream_purge_removal.patch whitespace=-blank-at-eol

@@ -1,0 +1,7 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 05/09/2026 11:49
+
+.SUBCKT sg13g2_DCPDiode guard cathode anode anode$1
+D$1 anode$1 cathode dpantenna A=35.0028p P=58.08u m=1
+D$2 anode cathode dpantenna A=35.0028p P=58.08u m=1
+R$3 guard \$1 ptap1 A=33.5104p P=197.12u
+.ENDS sg13g2_DCPDiode

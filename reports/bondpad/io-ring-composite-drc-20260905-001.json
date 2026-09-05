@@ -1,0 +1,199 @@
+{
+  "all_rule_switches_and_source_hashes_unchanged": true,
+  "classification": "io_only_ring_composite_task_audit_not_full_chip_signoff",
+  "composite_density_marker_counts": null,
+  "composite_density_marker_scopes": null,
+  "composite_marker_inventory_complete": false,
+  "composite_merged_markers": null,
+  "composite_non_density_markers": null,
+  "composite_pad_markers": null,
+  "composite_rule_execution_complete": false,
+  "fixture_drc_passed": false,
+  "full_chip_drc_lvs_performed": false,
+  "generated_at": "2026-09-05T10:18:07.974322+00:00",
+  "original_exception_tasks": [
+    "sg13g2_maximal"
+  ],
+  "original_healthy_tasks": {
+    "activ": {
+      "log_sha256": "05301bbc01b8cf770bf1b3ad20214e9127fa33ddff7603e661fa1ca5e75e9089",
+      "terminal_log_complete_and_error_free": true
+    },
+    "activfiller": {
+      "log_sha256": "0536d4ac38a958577d5d646d26c80e42f76b8af3300570db71820b2066b33517",
+      "terminal_log_complete_and_error_free": true
+    },
+    "angle": {
+      "log_sha256": "8c2283da10cd702217eb832bdd1221c37a5477a8ec80bbecca5d9d1882d7aac7",
+      "terminal_log_complete_and_error_free": true
+    },
+    "antenna": {
+      "log_sha256": "28e57d608c58b9b6287b20aa93f87b5c469ede009bbe4606062094220df5a8e3",
+      "terminal_log_complete_and_error_free": true
+    },
+    "cont": {
+      "log_sha256": "157814cc14e21f1e4e2d3530c89ad2d397cb8c150cfc6c9ec72c680096da29da",
+      "terminal_log_complete_and_error_free": true
+    },
+    "contbar": {
+      "log_sha256": "4b642bf073dfbd25eee31d16d65834bdcd4b5cb2030bbc3de87b4ad0934b19cf",
+      "terminal_log_complete_and_error_free": true
+    },
+    "copperpillar": {
+      "log_sha256": "57d6edffbedeac6cc0ae7f03014f6ef752c3765bd38c7ea94885ad79846d85a5",
+      "terminal_log_complete_and_error_free": true
+    },
+    "density": {
+      "log_sha256": "7ec79b2970e30232e7ba005411d165c00f86f9ee3cd3d6408d8e4650f2bf69f8",
+      "terminal_log_complete_and_error_free": true
+    },
+    "forbidden": {
+      "log_sha256": "14d13210a673aad408082e3983a8b74cbe94f3f7008162ecf319f2b1ad13cba1",
+      "terminal_log_complete_and_error_free": true
+    },
+    "gatpoly": {
+      "log_sha256": "f269a7f195e680195ba57cc25fdba316c24e01f1c20f15b4a97a92a6a08acbec",
+      "terminal_log_complete_and_error_free": true
+    },
+    "gatpolyfiller": {
+      "log_sha256": "d6b4c899e6a84561557ed2359ab160652b4cb86d5f1fd74534c4f7b59828d492",
+      "terminal_log_complete_and_error_free": true
+    },
+    "latchup": {
+      "log_sha256": "bb12ca242e296ab19425a96767b5ab922574b0aeea020238e83576d4d926a9b5",
+      "terminal_log_complete_and_error_free": true
+    },
+    "lbe": {
+      "log_sha256": "d178889d0c924e38977e1980d5d2f2b232b56739fdc95de90985dbfd132926ae",
+      "terminal_log_complete_and_error_free": true
+    },
+    "metal1": {
+      "log_sha256": "4c267ca65f08918e369655a9901bc5fef69531060c631d1ce9fc8f6ac80f6ee0",
+      "terminal_log_complete_and_error_free": true
+    },
+    "metaln": {
+      "log_sha256": "4990b089c67241149021695559eea3da5a8d00062ccda5650c58508c59ee23ff",
+      "terminal_log_complete_and_error_free": true
+    },
+    "metalnfiller": {
+      "log_sha256": "d4797273970feb0b5dc46d70608617edaf3c451df8dfbabc8d189542e662aa11",
+      "terminal_log_complete_and_error_free": true
+    },
+    "metalslits": {
+      "log_sha256": "14e72b89a407f00563826aa247b939dd2175f78e9dd1f37c68e8af5dfa44e846",
+      "terminal_log_complete_and_error_free": true
+    },
+    "mim": {
+      "log_sha256": "e3926b39bdfc064b72396d74f767ec95f4d29943327ec798e4cc7b299e2f4df3",
+      "terminal_log_complete_and_error_free": true
+    },
+    "nbulay": {
+      "log_sha256": "52c5de4d23cf15f9c96d35e8134a0509486bb607457d0911ac2b3e2c17509f3f",
+      "terminal_log_complete_and_error_free": true
+    },
+    "npnsubstratetie": {
+      "log_sha256": "dd4da839a57c1aa3fe3e67b6a7814c5fd85931fdd99ff22693e6c34696941c89",
+      "terminal_log_complete_and_error_free": true
+    },
+    "nwell": {
+      "log_sha256": "15165b482f621996ab2f6e02921c67bbbe1d7aaf359ebcf253f5b1dde8fa6061",
+      "terminal_log_complete_and_error_free": true
+    },
+    "offgrid": {
+      "log_sha256": "bb7ef772a3fb97d6461d026dc43383ad2ffac8ca5a4560f6f8a6a8f7302d08e3",
+      "terminal_log_complete_and_error_free": true
+    },
+    "pad": {
+      "log_sha256": "368e1915a2eea8c3719d1c6004999027af5f013f57bf182735d3d0b09e06ccda",
+      "terminal_log_complete_and_error_free": true
+    },
+    "passiv": {
+      "log_sha256": "3f84c6de9853f44f358179b963c32efdab51abcd3386155fcb525085ee2f345e",
+      "terminal_log_complete_and_error_free": true
+    },
+    "pin": {
+      "log_sha256": "e1eade6020dba1d3e8e1fb8047dac1afa823bb990c5dd7df406712a58eb63e1e",
+      "terminal_log_complete_and_error_free": true
+    },
+    "psd": {
+      "log_sha256": "3491fb914de656a955a687c5a78b830cfde4bf5c5d45591124eaba7bba26f060",
+      "terminal_log_complete_and_error_free": true
+    },
+    "pwellblock": {
+      "log_sha256": "e59d6960c9e99ea6a147edc4345bfca1d4783d20ee595933e6915e46d283b38a",
+      "terminal_log_complete_and_error_free": true
+    },
+    "schottkydiode": {
+      "log_sha256": "79c4292dd369612884c9c41da44c7b2a5626fc3922d29f4af6314cc566fdad76",
+      "terminal_log_complete_and_error_free": true
+    },
+    "sealring": {
+      "log_sha256": "bc55ddac76e94d3ba9f709279801251e2e4b5a56df99eff30023377f7a72fbc2",
+      "terminal_log_complete_and_error_free": true
+    },
+    "solderbump": {
+      "log_sha256": "72c0f4fcd3a5c2f85a34b51b347ce5e918882c1eb322443f4382f46819f11568",
+      "terminal_log_complete_and_error_free": true
+    },
+    "thickgateox": {
+      "log_sha256": "2ca0305a109f6f5cc634c23e1136f5a65dfdf528f4c962e7027c12eb067792f7",
+      "terminal_log_complete_and_error_free": true
+    },
+    "topmetal1": {
+      "log_sha256": "b262f1c001a33e7b59e79f658d32f9d4a51017e16878c52641fa0e6ee8381ce1",
+      "terminal_log_complete_and_error_free": true
+    },
+    "topmetal1filler": {
+      "log_sha256": "e69744cf109139f1d72f87d2b590f93f2caefab27039e41370522802a270e20d",
+      "terminal_log_complete_and_error_free": true
+    },
+    "topmetal2": {
+      "log_sha256": "ae8387cf63eb3bd23d915d88bdc9fefa6a0d1db0fddc4055f489ae8012d059d6",
+      "terminal_log_complete_and_error_free": true
+    },
+    "topmetal2filler": {
+      "log_sha256": "2ee7834506718ade1b8d7a88677b6d8847e34de22274162493ced6f6e9aa3f0d",
+      "terminal_log_complete_and_error_free": true
+    },
+    "topvia1": {
+      "log_sha256": "a4ec6063aff2742e7f880a697a8d3295edd518a3ff511b0b24e465d9b86fa1d7",
+      "terminal_log_complete_and_error_free": true
+    },
+    "topvia2": {
+      "log_sha256": "0034e41f53972452149f8861636c547aefd4390ae058792371fbdf4f9af67f94",
+      "terminal_log_complete_and_error_free": true
+    },
+    "via1": {
+      "log_sha256": "4bff3d5ad3b51d81d00ec6a7d1a6e07b68bd63631e501aefc7acc9174962d9e2",
+      "terminal_log_complete_and_error_free": true
+    },
+    "vian": {
+      "log_sha256": "c9ace8644894ea96e1bb72df5d520ee112c6615683423892ea5bd7427e5d4529",
+      "terminal_log_complete_and_error_free": true
+    }
+  },
+  "original_merged_markers": 131,
+  "original_run": "croc-io-ring-drc-20260905-001",
+  "original_run_execution_complete": false,
+  "original_runner_returncode": 1,
+  "public_rule_signoff": false,
+  "replay": {
+    "error_free": true,
+    "markers": null,
+    "returncode": 137,
+    "source_identity_verified": true,
+    "terminal_completion": false
+  },
+  "replay_run": "croc-io-ring-maximal-flat-20260905-001",
+  "schema_version": "1.0.0",
+  "scope": "39 original task logs/merged DB plus 1 separately executed maximal task; original failed run remains failed.",
+  "source_sha256": {
+    "runs/croc-io-ring-drc-20260905-001/audit.json": "d70964a7adb660a20abe97ce945b9412afb166dcb78e352019b6af1a3e57c8d4",
+    "runs/croc-io-ring-drc-20260905-001/io_ring_sealed/io_ring_sealed_io_ring_sealed_full.lyrdb": "01352b779e2bbbbafcc2f2cd29d6e1429e0e8b767e82375eab10c9e509f9eb5c",
+    "runs/croc-io-ring-drc-20260905-001/io_ring_sealed/tool.log": "35fd0e29d6aadfa4b0aa52217fa45b9ae041dacc277d41f8ab5c0eac2f27f460",
+    "runs/croc-io-ring-drc-20260905-001/manifest.json": "12d94117caec1d6c3a6b38b8c593da2cfef146f24677649b05b2922272382942",
+    "runs/croc-io-ring-maximal-flat-20260905-001/manifest.json": "495c1c6666116d7b5ed4fb9742e718daa60eaa80674977681e4fdb56b841ba47",
+    "runs/croc-io-ring-maximal-flat-20260905-001/tool.log": "53cf873c4d0f609bd4bea850cb31b0e9dd5072446a4996b37ba1fc5d160a08b6",
+    "scripts/audit_io_ring_composite.py": "19efaded412836ea93faedc62ceda0143eb32bec78564ad1ec9c2a0b9d5c2adb"
+  }
+}

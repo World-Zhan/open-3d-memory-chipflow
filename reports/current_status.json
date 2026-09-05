@@ -102,7 +102,40 @@
         "all_connected_pad_terminals_individually_audited": false
       },
       "single_io_movement_sufficient_for_whole_neighborhood": false,
-      "actual_croc_io_equal_to_pinned_pdk_io": false
+      "actual_croc_io_equal_to_pinned_pdk_io": false,
+      "io_ring_candidate": {
+        "physical_run": "croc-io-ring-physical-20260905-002",
+        "geometry_contract_passed": true,
+        "placement_and_explicit_net_contract_passed": true,
+        "core_logic_included": false,
+        "io_count": 64,
+        "all_instance_count": 192,
+        "actual_lead_metal_rectangles": 384,
+        "pg_same_layer_128_macros_continuous_on_m3_m4_m5_tm1": true,
+        "pg_metal_via_connectivity_result": "PASS",
+        "pg_via_closure_proven": true,
+        "core_pdn_included": false,
+        "well_substrate_contact_connectivity_proven": false,
+        "ir_em_proven": false,
+        "pg_via_evidence": "reports/bondpad/io-ring-pg-vias-20260905-001.json",
+        "original_drc_execution_complete": false,
+        "maximal_replay_exit": 137,
+        "composite_drc_execution_complete": false,
+        "composite_merged_markers": null,
+        "fixture_drc_passed": false,
+        "full_chip_integrated": false,
+        "ppa": "reports/ppa/croc-ppa-io-ring-20260905-001.json",
+        "report": "docs/10_io_ring_implementation_zh.md"
+      },
+      "strict_lvs_purge_ab": {
+        "run_id": "croc-lvs-leaf-purge-ab-20260905-001",
+        "actual_leaf_comparisons": 4,
+        "all_lvs_results": "FAIL",
+        "extracted_netlists_unchanged": true,
+        "source_pdk_modified": false,
+        "full_chip_attempt_3_performed": false,
+        "report": "reports/lvs/strict-leaf-next-step-20260905-001.json"
+      }
     },
     "B_pin3d": {
       "classification": "research_only",
@@ -122,11 +155,11 @@
     }
   },
   "next_actions": [
-    "Qualify a coordinated IO/filler/PG/corner segment with matched bondpad LEF and package pitch; single-IO pad DRC is clean but fixture density still fails.",
+    "Resolve IO-ring maximal DRC execution failure; preserve the original crash and bounded replay outcome. IO-ring PG metal/via graph passed, excluding core PDN, wells/substrate/contact, LVS and IR/EM.",
+    "Qualify actual core placement, explicit PG, density fill and routing in an independent complete-chip candidate; the current IO-only GDS is not that candidate.",
+    "Trace actual diode parent upper-metal/via return paths and DCN guard extraction before a supported minimum-parent strict LVS; do not start full-chip attempt 3 yet.",
     "Retain 15 pF IO load; resolve pad driver and SRAM output electrical violations and CTS PPA cost.",
-    "Qualify supported IHP strict leaf/parent fixes before any full-chip attempt 3.",
-    "Route a qualified candidate, then rerun RCX/STA and strict DRC/LVS; retain per-iteration PPA.",
-    "Complete activity, corner/mode, IR/EM, DFT and actual MPW acceptance requirements.",
+    "Rerun qualified routed candidate RCX/STA and strict DRC/LVS with per-iteration PPA; complete activity, corner/mode, IR/EM, DFT and actual MPW requirements.",
     "Keep Pin3D research_only; C1 development does not replace A-track physical closure."
   ],
   "objective": "Strict backend closure toward tapeout readiness, with per-iteration PPA and source-backed peer comparisons."

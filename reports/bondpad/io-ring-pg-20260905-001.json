@@ -1,0 +1,243 @@
+{
+  "LEF_pin_rectangles_examined": 4484,
+  "PPA": {
+    "new_full_chip_result": false,
+    "note": "IO-only ring check; no new core area, timing or workload power result."
+  },
+  "actual_io_ring_gds_sha256": "d08c65f165d5ca9d5b0d1a7959a7ded99f053e41c153352dd2ba3cf0fa3ec351",
+  "actual_placed_macros_matched": 128,
+  "all_actual_LEF_PG_layers_examined": true,
+  "classification": "io_ring_PG_same_layer_geometry_not_complete_electrical_closure",
+  "corners": [
+    {
+      "actual_GDS_contact_counts": {
+        "physical_contact_observed": 36,
+        "pin_layer_not_present_on_both": 3
+      },
+      "corner": "IO_CORNER_NORTH_WEST_INST",
+      "minimum_observed_common_boundary_um": 15.8,
+      "neighbors": [
+        "pad_vdd3",
+        "pad_vssio0"
+      ],
+      "orientation": "MX",
+      "two_LEF_abutments": true
+    },
+    {
+      "actual_GDS_contact_counts": {
+        "physical_contact_observed": 36,
+        "pin_layer_not_present_on_both": 3
+      },
+      "corner": "IO_CORNER_NORTH_EAST_INST",
+      "minimum_observed_common_boundary_um": 15.8,
+      "neighbors": [
+        "pad_vdd2",
+        "pad_vssio3"
+      ],
+      "orientation": "R180",
+      "two_LEF_abutments": true
+    },
+    {
+      "actual_GDS_contact_counts": {
+        "physical_contact_observed": 36,
+        "pin_layer_not_present_on_both": 3
+      },
+      "corner": "IO_CORNER_SOUTH_WEST_INST",
+      "minimum_observed_common_boundary_um": 15.8,
+      "neighbors": [
+        "pad_vdd0",
+        "pad_vssio1"
+      ],
+      "orientation": "R0",
+      "two_LEF_abutments": true
+    },
+    {
+      "actual_GDS_contact_counts": {
+        "physical_contact_observed": 36,
+        "pin_layer_not_present_on_both": 3
+      },
+      "corner": "IO_CORNER_SOUTH_EAST_INST",
+      "minimum_observed_common_boundary_um": 15.8,
+      "neighbors": [
+        "pad_vdd1",
+        "pad_vssio2"
+      ],
+      "orientation": "MY",
+      "two_LEF_abutments": true
+    }
+  ],
+  "full_PG_electrical_closure": "NOT_PROVEN",
+  "geometry_runtime_seconds": 1.476939395000045,
+  "layer_scope_note": "No Metal1 LEF PG pins exist in these 128 actual macros. All Metal1 geometry was still derived; Metal2 PG pins exist on 16 supply IOs and were included.",
+  "limits": {
+    "container_internal_timeout_seconds": 120,
+    "cpus": 2,
+    "memory_gb": 4
+  },
+  "logical_PG_terminal_count": 512,
+  "next_bounded_gate": "Trace only the actual PG pin-touched components through valid public-deck via derivations; prove all such components join their expected supply without cross-supply shorts before claiming full PG electrical continuity.",
+  "pin_layer_regions_examined": 2328,
+  "pin_layer_regions_with_missing_metal": 0,
+  "same_layer_cross_supply_components_observed": 0,
+  "source_geometry_sha256": "ca98a78c4c3312daa5cb3f89985ca791a73a9a7f2d845791dcb2db6c3126476a",
+  "source_hashes_unchanged": true,
+  "source_manifest_sha256": "11596569000939a641fbc4b57aade14fa279d7f7b78da140e090e3c84a916acc",
+  "source_run": "runs/croc-io-ring-pg-20260905-001",
+  "supplies": {
+    "VDD": {
+      "Metal1": {
+        "components_reaching_all_128_macros": 0,
+        "physical_components_touched": 0,
+        "pin_instances": 0
+      },
+      "Metal2": {
+        "components_reaching_all_128_macros": 0,
+        "physical_components_touched": 4,
+        "pin_instances": 4
+      },
+      "Metal3": {
+        "components_reaching_all_128_macros": 1,
+        "physical_components_touched": 5,
+        "pin_instances": 128
+      },
+      "Metal4": {
+        "components_reaching_all_128_macros": 1,
+        "physical_components_touched": 5,
+        "pin_instances": 128
+      },
+      "Metal5": {
+        "components_reaching_all_128_macros": 1,
+        "physical_components_touched": 5,
+        "pin_instances": 128
+      },
+      "TopMetal1": {
+        "components_reaching_all_128_macros": 1,
+        "physical_components_touched": 5,
+        "pin_instances": 128
+      },
+      "TopMetal2": {
+        "components_reaching_all_128_macros": 0,
+        "physical_components_touched": 4,
+        "pin_instances": 4
+      }
+    },
+    "VDDIO": {
+      "Metal1": {
+        "components_reaching_all_128_macros": 0,
+        "physical_components_touched": 0,
+        "pin_instances": 0
+      },
+      "Metal2": {
+        "components_reaching_all_128_macros": 0,
+        "physical_components_touched": 4,
+        "pin_instances": 4
+      },
+      "Metal3": {
+        "components_reaching_all_128_macros": 1,
+        "physical_components_touched": 5,
+        "pin_instances": 128
+      },
+      "Metal4": {
+        "components_reaching_all_128_macros": 2,
+        "physical_components_touched": 6,
+        "pin_instances": 128
+      },
+      "Metal5": {
+        "components_reaching_all_128_macros": 2,
+        "physical_components_touched": 6,
+        "pin_instances": 128
+      },
+      "TopMetal1": {
+        "components_reaching_all_128_macros": 2,
+        "physical_components_touched": 6,
+        "pin_instances": 128
+      },
+      "TopMetal2": {
+        "components_reaching_all_128_macros": 0,
+        "physical_components_touched": 4,
+        "pin_instances": 128
+      }
+    },
+    "VSS": {
+      "Metal1": {
+        "components_reaching_all_128_macros": 0,
+        "physical_components_touched": 0,
+        "pin_instances": 0
+      },
+      "Metal2": {
+        "components_reaching_all_128_macros": 0,
+        "physical_components_touched": 4,
+        "pin_instances": 4
+      },
+      "Metal3": {
+        "components_reaching_all_128_macros": 1,
+        "physical_components_touched": 5,
+        "pin_instances": 128
+      },
+      "Metal4": {
+        "components_reaching_all_128_macros": 1,
+        "physical_components_touched": 5,
+        "pin_instances": 128
+      },
+      "Metal5": {
+        "components_reaching_all_128_macros": 1,
+        "physical_components_touched": 5,
+        "pin_instances": 128
+      },
+      "TopMetal1": {
+        "components_reaching_all_128_macros": 1,
+        "physical_components_touched": 5,
+        "pin_instances": 128
+      },
+      "TopMetal2": {
+        "components_reaching_all_128_macros": 0,
+        "physical_components_touched": 4,
+        "pin_instances": 4
+      }
+    },
+    "VSSIO": {
+      "Metal1": {
+        "components_reaching_all_128_macros": 0,
+        "physical_components_touched": 0,
+        "pin_instances": 0
+      },
+      "Metal2": {
+        "components_reaching_all_128_macros": 0,
+        "physical_components_touched": 4,
+        "pin_instances": 4
+      },
+      "Metal3": {
+        "components_reaching_all_128_macros": 2,
+        "physical_components_touched": 6,
+        "pin_instances": 128
+      },
+      "Metal4": {
+        "components_reaching_all_128_macros": 3,
+        "physical_components_touched": 7,
+        "pin_instances": 128
+      },
+      "Metal5": {
+        "components_reaching_all_128_macros": 3,
+        "physical_components_touched": 7,
+        "pin_instances": 128
+      },
+      "TopMetal1": {
+        "components_reaching_all_128_macros": 3,
+        "physical_components_touched": 7,
+        "pin_instances": 128
+      },
+      "TopMetal2": {
+        "components_reaching_all_128_macros": 0,
+        "physical_components_touched": 24,
+        "pin_instances": 128
+      }
+    }
+  },
+  "tool_exit_code": 0,
+  "why_not_complete": [
+    "Shared same-layer ring components prove a physical rail reaches all 128 macro PG pin regions; they do not join every separate pin component.",
+    "Metal2 has four pin-touched components per supply; TopMetal2 has VDD/VSS/VDDIO/VSSIO component counts 4/4/4/24. Via and internal connections are not checked, so these are not asserted electrical opens.",
+    "The 12 asymmetric corner-layer entries have a LEF pin on only one side, not evidence of a physical break.",
+    "No via graph, well/substrate/device graph, bondpad-to-PG path, IR/EM, DRC or LVS was evaluated."
+  ]
+}
