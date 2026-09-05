@@ -12,7 +12,36 @@
       "lvs": "failed",
       "audit": "runs/croc-acceptance-audit-20260905-001/summary.json",
       "postroute_extracted_sta_proven": false,
-      "complete_corner_mode_coverage_proven": false
+      "complete_corner_mode_coverage_proven": false,
+      "postroute_extraction_and_spef_readback": "completed_single_typ_rc_model",
+      "extracted_sta_signoff_qualified": false,
+      "rcx_evidence": "runs/croc-postroute-rcx-20260905-001/manifest.json",
+      "latest_cts_candidate": "croc-cts-branch-eco-20260905-003",
+      "latest_cts_electrical": {
+        "slew": 71,
+        "capacitance": 135,
+        "fanout": 0,
+        "wns_ns": 0,
+        "tns_ns": 0,
+        "setup": 0,
+        "hold": 0
+      },
+      "latest_cts_structural_check": "runs/croc-cts-branch-eco-20260905-003/structural_validation.json",
+      "latest_cts_route": "not_run",
+      "latest_cts_drc": "not_run",
+      "latest_cts_lvs": "not_run",
+      "latest_cts_ppa": {
+        "active_area_um2": 720835.1136,
+        "tt_tool_power_mw": 56.4,
+        "workload_activity_loaded": false
+      },
+      "drc_count_basis": {
+        "historical_merged": 1585,
+        "historical_maximal_raw": 652,
+        "pad_merged": 1577,
+        "density_merged": 8
+      },
+      "ppa_report": "reports/ppa/20260905_review_zh.md"
     },
     "B_pin3d": {
       "classification": "research_only",
@@ -32,8 +61,12 @@
     }
   },
   "next_actions": [
+    "Diagnose and repair pad geometry with independent fixtures while retaining all public rules.",
+    "Retain 15 pF IO load; resolve pad driver and SRAM output electrical violations and CTS PPA cost.",
     "Qualify supported IHP strict leaf/parent fixes before any full-chip attempt 3.",
-    "Check Pin3D legal-lattice and pin-access windows before new placement/route.",
-    "Implement and verify the isolated C1 OBI endpoint from specification v0.1."
-  ]
+    "Route a qualified candidate, then rerun RCX/STA and strict DRC/LVS; retain per-iteration PPA.",
+    "Complete activity, corner/mode, IR/EM, DFT and actual MPW acceptance requirements.",
+    "Keep Pin3D research_only; C1 development does not replace A-track physical closure."
+  ],
+  "objective": "Strict backend closure toward tapeout readiness, with per-iteration PPA and source-backed peer comparisons."
 }

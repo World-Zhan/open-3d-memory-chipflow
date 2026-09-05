@@ -1,0 +1,334 @@
+{
+  "area": {
+    "active_area_um2": 720835.1136,
+    "core_area_um2": 1571081.7024,
+    "core_utilization": 0.45881453045939313,
+    "die_area_um2": 3671056.0,
+    "hierarchy_um2": {
+      "<top>": {
+        "cover": 313600.0,
+        "macro": 159439.795,
+        "pad": 1149120.0,
+        "stdcell": 561395.318,
+        "total": 2183555.114
+      },
+      "i_core.register_file_i": {
+        "cover": 0.0,
+        "macro": 0.0,
+        "pad": 0.0,
+        "stdcell": 94174.618,
+        "total": 94174.618
+      },
+      "i_core_wrap": {
+        "cover": 0.0,
+        "macro": 0.0,
+        "pad": 0.0,
+        "stdcell": 214638.077,
+        "total": 214638.077
+      },
+      "i_croc_soc": {
+        "cover": 0.0,
+        "macro": 159439.795,
+        "pad": 0.0,
+        "stdcell": 481260.528,
+        "total": 640700.323
+      }
+    },
+    "instance_area_um2": 2183555.1136,
+    "stdcell_utilization": 0.39768960919666296
+  },
+  "change": {
+    "inserted_cells": 8,
+    "loads_per_new_buffer": 8,
+    "master": "sg13g2_buf_8",
+    "new_groups_per_branch": 2,
+    "parent_branches": 4,
+    "previous_loads_per_branch": 16
+  },
+  "clocks": {
+    "clk_jtg": {
+      "constraint_frequency_mhz": 40.0,
+      "period_ns": 25.0
+    },
+    "clk_rtc": {
+      "constraint_frequency_mhz": 20.0,
+      "period_ns": 50.0
+    },
+    "clk_sys": {
+      "constraint_frequency_mhz": 100.0,
+      "period_ns": 10.0
+    }
+  },
+  "delta": {
+    "active_area_um2": {
+      "candidate_before": 720646.416,
+      "delta": 188.6976,
+      "eco_after": 720835.1136,
+      "percent": 0.026184
+    },
+    "max_fanout_violations": {
+      "candidate_before": 4,
+      "delta": -4.0,
+      "eco_after": 0,
+      "percent": -100.0
+    },
+    "tt_total_tool_estimate_mw": {
+      "candidate_before": 56.3,
+      "delta": 0.1,
+      "eco_after": 56.4,
+      "percent": 0.17762
+    }
+  },
+  "gates": {
+    "data_and_pg_connectivity_proven_by_this_ppa_report": false,
+    "electrical_passed": false,
+    "ndr_policy_preserved": false,
+    "public_rule_signoff": false,
+    "route_performed": false,
+    "tapeout_ready": false
+  },
+  "limitations": [
+    "Same-stage pre-route estimate; no final-route PPA improvement is established.",
+    "Fanout zero does not clear the remaining 71 slew and 135 capacitance violations.",
+    "Signal USE CLOCK is retained but NONDEFAULTRULE is absent on all eight new child clock nets.",
+    "Data/PG topology collapse and equivalence are separate checks, not established by this PPA report.",
+    "First failed ECO attempt used unavailable insert_buffer API; this run used OpenDB edits and a fresh OpenROAD process for STA."
+  ],
+  "ndr_review": {
+    "branches": [
+      {
+        "after": {
+          "connected_pin_count": 3,
+          "nondefault_rule": "CTS_NDR_1",
+          "signal_use": "CLOCK"
+        },
+        "before": {
+          "connected_pin_count": 17,
+          "nondefault_rule": "CTS_NDR_1",
+          "signal_use": "CLOCK"
+        },
+        "children": {
+          "eco_cts_b0_g0": {
+            "connected_pin_count": 9,
+            "nondefault_rule": null,
+            "signal_use": "CLOCK"
+          },
+          "eco_cts_b0_g1": {
+            "connected_pin_count": 9,
+            "nondefault_rule": null,
+            "signal_use": "CLOCK"
+          }
+        },
+        "parent_net": "clknet_2_0_0_soc_clk_i_regs"
+      },
+      {
+        "after": {
+          "connected_pin_count": 3,
+          "nondefault_rule": "CTS_NDR_1",
+          "signal_use": "CLOCK"
+        },
+        "before": {
+          "connected_pin_count": 17,
+          "nondefault_rule": "CTS_NDR_1",
+          "signal_use": "CLOCK"
+        },
+        "children": {
+          "eco_cts_b1_g0": {
+            "connected_pin_count": 9,
+            "nondefault_rule": null,
+            "signal_use": "CLOCK"
+          },
+          "eco_cts_b1_g1": {
+            "connected_pin_count": 9,
+            "nondefault_rule": null,
+            "signal_use": "CLOCK"
+          }
+        },
+        "parent_net": "clknet_2_1_0_soc_clk_i_regs"
+      },
+      {
+        "after": {
+          "connected_pin_count": 3,
+          "nondefault_rule": "CTS_NDR_1",
+          "signal_use": "CLOCK"
+        },
+        "before": {
+          "connected_pin_count": 17,
+          "nondefault_rule": "CTS_NDR_1",
+          "signal_use": "CLOCK"
+        },
+        "children": {
+          "eco_cts_b2_g0": {
+            "connected_pin_count": 9,
+            "nondefault_rule": null,
+            "signal_use": "CLOCK"
+          },
+          "eco_cts_b2_g1": {
+            "connected_pin_count": 9,
+            "nondefault_rule": null,
+            "signal_use": "CLOCK"
+          }
+        },
+        "parent_net": "clknet_2_2_0_soc_clk_i_regs"
+      },
+      {
+        "after": {
+          "connected_pin_count": 3,
+          "nondefault_rule": "CTS_NDR_1",
+          "signal_use": "CLOCK"
+        },
+        "before": {
+          "connected_pin_count": 17,
+          "nondefault_rule": "CTS_NDR_1",
+          "signal_use": "CLOCK"
+        },
+        "children": {
+          "eco_cts_b3_g0": {
+            "connected_pin_count": 9,
+            "nondefault_rule": null,
+            "signal_use": "CLOCK"
+          },
+          "eco_cts_b3_g1": {
+            "connected_pin_count": 9,
+            "nondefault_rule": null,
+            "signal_use": "CLOCK"
+          }
+        },
+        "parent_net": "clknet_2_3_0_soc_clk_i_regs"
+      }
+    ],
+    "recommendation": "Inherit each parent nondefault routing rule on its new child clock nets before route; verify in an independent run.",
+    "status": "missing_inheritance_on_eight_new_clock_nets"
+  },
+  "outputs": {
+    "cts.def": {
+      "path": "runs/croc-cts-branch-eco-20260905-002/cts.def",
+      "sha256": "1c2dcdf2064b5c366497dec6ae87fef7ea8c3b4c5af97331af10e1685c98cefd"
+    },
+    "cts.odb": {
+      "path": "runs/croc-cts-branch-eco-20260905-002/cts.odb",
+      "sha256": "2bafd5cc40fd481e57a8f7a02a6b72b2efb0301f57cba1777ead03985e531fa4"
+    },
+    "cts.sdc": {
+      "path": "runs/croc-cts-branch-eco-20260905-002/cts.sdc",
+      "sha256": "994360775a08e954cf72668c7b65af85b404e0e39dcb959aa3e53e7c5dfa7867"
+    },
+    "cts.v": {
+      "path": "runs/croc-cts-branch-eco-20260905-002/cts.v",
+      "sha256": "6dc36f1e342a71262df4377a5793227baea0d35d619faa799dae0c93fccb57b5"
+    },
+    "cts_branch_eco.rpt": {
+      "path": "runs/croc-cts-branch-eco-20260905-002/cts_branch_eco.rpt",
+      "sha256": "b6cf0c2f62382e5972cd230e61a1a4af62fd4b398b1bbccd85b373addb069a8f"
+    },
+    "eco_groups.tsv": {
+      "path": "runs/croc-cts-branch-eco-20260905-002/eco_groups.tsv",
+      "sha256": "4db9948bb31e647ce7f92cd372559708c8ac9f2273527e2c490f010b5edea83a"
+    },
+    "eco_unplaced.odb": {
+      "path": "runs/croc-cts-branch-eco-20260905-002/eco_unplaced.odb",
+      "sha256": "1d12d5412053997cc0e155dc3f8b24fd6ae9454a1dd3dad55cfda62086114519"
+    },
+    "electrical.rpt": {
+      "path": "runs/croc-cts-branch-eco-20260905-002/electrical.rpt",
+      "sha256": "c31bc5115ad5eaa6f30f7113afb817a53ea865201a854f4a5bc92bf3ef3638d0"
+    },
+    "tool.log": {
+      "path": "runs/croc-cts-branch-eco-20260905-002/tool.log",
+      "sha256": "243d3458ac8a7dc05b55b2dd6a498ee8703b52732ebf15dccb6419ff587a184f"
+    }
+  },
+  "power": {
+    "activity_source": null,
+    "groups_mw": {
+      "clock": {
+        "internal": 14.4,
+        "leakage": 0.00146,
+        "switching": 5.98,
+        "total": 20.3
+      },
+      "combinational": {
+        "internal": 0.545,
+        "leakage": 0.00374,
+        "switching": 0.823,
+        "total": 1.37
+      },
+      "macro": {
+        "internal": 8.46,
+        "leakage": 0.000396,
+        "switching": 0.0,
+        "total": 8.46
+      },
+      "pad": {
+        "internal": 0.283,
+        "leakage": 0.000108,
+        "switching": 3.29,
+        "total": 3.57
+      },
+      "sequential": {
+        "internal": 22.5,
+        "leakage": 0.00195,
+        "switching": 0.174,
+        "total": 22.7
+      },
+      "total": {
+        "internal": 46.1,
+        "leakage": 0.00765,
+        "switching": 10.3,
+        "total": 56.4
+      }
+    },
+    "method": "OpenSTA report_power tt after placement parasitic estimate",
+    "signoff_qualified": false
+  },
+  "previous_arm": "candidate",
+  "previous_ppa_report": "croc-ppa-cts-ab-20260905-001",
+  "report_id": "croc-ppa-cts-branch-eco-20260905-002",
+  "schema_version": "1.0.0",
+  "source_run_id": "croc-cts-branch-eco-20260905-002",
+  "sources": {
+    "manifest": {
+      "path": "runs/croc-cts-branch-eco-20260905-002/manifest.json",
+      "sha256": "9c487499e6782a14a776b48513702ab2545e185ec44583e9facdcb2e944db3e7"
+    },
+    "previous_ppa": {
+      "path": "reports/ppa/croc-ppa-cts-ab-20260905-001.json",
+      "sha256": "c099b83e397a7295ac0985a751550675e0e39c8da8999594f7c8dd2c5a20de80"
+    },
+    "runs/croc-cts-fanout-ab-20260905-001/candidate/cts.odb": {
+      "path": "runs/croc-cts-fanout-ab-20260905-001/candidate/cts.odb",
+      "sha256": "125c95cef3adbd5720f10dc79f4070b9814fed6981f0058ecfbef4fad395c280",
+      "verified_against_current_file": true
+    },
+    "runs/croc-cts-fanout-ab-20260905-001/candidate/cts.sdc": {
+      "path": "runs/croc-cts-fanout-ab-20260905-001/candidate/cts.sdc",
+      "sha256": "739f251fdd7295998f3f190fb7a2daa9eb09d1781ec2bc8798f2301bd71679ce",
+      "verified_against_current_file": true
+    },
+    "scripts/croc_cts_branch_odb_eco.tcl": {
+      "path": "scripts/croc_cts_branch_odb_eco.tcl",
+      "sha256": "4a6844f36e55a425f5dfe713b08e536477203f3946a0c96d1b910ff368667723",
+      "verified_against_current_file": true
+    },
+    "scripts/croc_cts_eco_check.tcl": {
+      "path": "scripts/croc_cts_eco_check.tcl",
+      "sha256": "8673a98721bb890442e0bd5eb479ab5f444454812967c11c916a6fab482d17e2",
+      "verified_against_current_file": true
+    },
+    "source_def": {
+      "path": "runs/croc-cts-fanout-ab-20260905-001/candidate/cts.def",
+      "sha256": "68805c3a5d029765a53579cf5383d57685ffd3de8a33853051019b95a47d30ef"
+    }
+  },
+  "stage": "post_CTS_pre_route",
+  "status": "fanout_zero_but_ndr_not_inherited_and_electrical_still_failed",
+  "timing": {
+    "hold_violations": 0,
+    "max_capacitance_violations": 135,
+    "max_fanout_violations": 0,
+    "max_slew_violations": 71,
+    "setup_violations": 0,
+    "tns_ns": 0.0,
+    "wns_ns": 0.0
+  }
+}

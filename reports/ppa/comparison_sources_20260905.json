@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "checked_at_date": "2026-09-05",
+  "purpose": "Qualified references for a small RISC-V MCU; no cross-process or unmatched-scope superiority ratios.",
+  "sources": [
+    {
+      "id": "mlem_chip_gallery",
+      "url": "http://asic.ee.ethz.ch/2024/MLEM.html",
+      "publisher": "ETH Zurich IIS chip gallery",
+      "facts": {"technology_nm": 130, "manufacturer": "IHP", "die_width_um": 2235, "die_height_um": 2235, "derived_die_area_mm2": 4.995225, "clock_mhz": 80, "voltage_v": 1.2, "package": "QFN56", "type": "Research"},
+      "limitations": ["Official HTTP URL linked by Croc README; HTTPS certificate name mismatch, no TLS verification bypass used.", "The gallery does not provide a comparable activity-based or measured power result."]
+    },
+    {
+      "id": "mlem_frozen_rtl",
+      "url": "https://github.com/pulp-platform/croc/blob/f54fdab3f463181f6b91646e36b29321c39432b1/rtl/croc_pkg.sv",
+      "commit": "f54fdab3f463181f6b91646e36b29321c39432b1",
+      "facts": {"NumSramBanks": 3, "SramBankNumWords": 2048, "word_bits": 32, "derived_sram_bytes": 24576},
+      "limitations": ["Derived physical design reference capacity is six times the local baseline; do not attribute die-area difference to optimization."]
+    },
+    {
+      "id": "croc_silicon_status",
+      "url": "https://github.com/pulp-platform/croc/blob/968bab17b37e88d9200a0899cb9181e42850ec87/README.md",
+      "commit": "968bab17b37e88d9200a0899cb9181e42850ec87",
+      "facts": {"tapeout": "November 2024", "core_functionality_silicon_verification": "early 2026", "local_default_sram_bytes": 4096},
+      "limitations": ["Maintainer report of upstream silicon does not validate this repository's modified/frozen implementation."]
+    },
+    {
+      "id": "croc_paper_v1",
+      "url": "https://arxiv.org/html/2502.05090v1",
+      "title": "Croc: An End-to-End Open-Source Extensible RISC-V MCU Platform to Democratize Silicon",
+      "facts": {"typical_clock_mhz": 80, "core_voltage_v": 1.2, "logic_levels": 58},
+      "limitations": ["Use the authors' typical-condition qualification; this is not an all-corner Fmax guarantee for the local design."]
+    },
+    {
+      "id": "ibex_official_ppa",
+      "url": "https://github.com/lowRISC/ibex/blob/34b0705760ef3dfa00e99637432473d2be8f22f3/README.md",
+      "commit": "34b0705760ef3dfa00e99637432473d2be8f22f3",
+      "facts": {"configuration": "small", "isa": "RV32IMC", "multiplier_cycles": 3, "yosys_core_area_kge": 26.60, "commercial_core_area_kge_author_estimate": 24, "coremark_per_mhz": 2.47, "register_file": "latch-based"},
+      "limitations": ["CPU-core area, not SoC or die area.", "CoreMark measured on the Ibex Simple System platform; local CoreMark has not been reproduced.", "Commercial area is explicitly a rough estimate."]
+    },
+    {
+      "id": "ibex_synthesis_method",
+      "url": "https://github.com/lowRISC/ibex/blob/34b0705760ef3dfa00e99637432473d2be8f22f3/syn/README.md",
+      "commit": "34b0705760ef3dfa00e99637432473d2be8f22f3",
+      "facts": {"flow": "Yosys/OpenSTA", "documented_library": "Nangate45 / NangateOpenCellLibrary_typical.lib"},
+      "limitations": ["This open synthesis reference is not a silicon node comparison or a SG13G2 mapping; do not convert its kGE directly to local mm2."]
+    }
+  ]
+}

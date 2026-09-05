@@ -13,7 +13,7 @@ SPDX-License-Identifier: Apache-2.0
 
 ## 当前进度与扩展规范
 
-先读[当前状态](CURRENT_STATUS.md)：历史 APR/GDS 已执行，但新电气复核、DRC/LVS 尚未通过。自研存储扩展已建立[最小规格与验证计划](docs/05_memory_spec_zh.md)，RTL 尚未开始。[AI 芯片 skill 筛选](docs/04_ai_chip_skills_zh.md)给出固定版本来源、适用阶段与限制。
+先读[当前状态](CURRENT_STATUS.md)：历史 APR/GDS 已执行，但新电气复核、DRC/LVS 尚未通过。本轮已实际完成单 RC 模型提取及 CTS/ECO：候选 fanout=0、NDR/结构检查通过，slew/cap 仍失败且尚未布线。见[逐轮 PPA 与行业对照](reports/ppa/20260905_review_zh.md)和[实验复现](docs/08_backend_experiments_zh.md)。自研存储扩展已建立[最小规格与验证计划](docs/05_memory_spec_zh.md)，RTL 尚未开始。[AI 芯片 skill 筛选](docs/04_ai_chip_skills_zh.md)给出固定版本来源、适用阶段与限制。
 
 ## 目录
 

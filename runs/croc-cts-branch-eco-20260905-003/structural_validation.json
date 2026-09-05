@@ -1,0 +1,26 @@
+{
+  "structural_connectivity_after_buffer_collapse": "passed",
+  "added_buffers": 8,
+  "loads_per_new_branch": 8,
+  "buffer_cell": "sg13g2_buf_8",
+  "die_boundary_preserved": true,
+  "explicit_buffer_supplies_connected": true,
+  "clock_ndr_inheritance": {
+    "eco_cts_b0_g0": "CTS_NDR_1",
+    "eco_cts_b0_g1": "CTS_NDR_1",
+    "eco_cts_b1_g0": "CTS_NDR_1",
+    "eco_cts_b1_g1": "CTS_NDR_1",
+    "eco_cts_b2_g0": "CTS_NDR_1",
+    "eco_cts_b2_g1": "CTS_NDR_1",
+    "eco_cts_b3_g0": "CTS_NDR_1",
+    "eco_cts_b3_g1": "CTS_NDR_1"
+  },
+  "original_ndr_definitions_preserved": true,
+  "full_formal_equivalence_proven": false,
+  "clock_waveform_timing_proven": false,
+  "route_or_signoff_proven": false,
+  "source_sha256": {
+    "runs/croc-cts-fanout-ab-20260905-001/candidate/cts.def": "68805c3a5d029765a53579cf5383d57685ffd3de8a33853051019b95a47d30ef",
+    "runs/croc-cts-branch-eco-20260905-003/cts.def": "0c1e5af9c12e11e5f70e126b322d0cb04319080b7f3b110dc17f07115114cee1"
+  }
+}

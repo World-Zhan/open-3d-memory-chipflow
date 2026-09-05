@@ -16,6 +16,13 @@ SPDX-License-Identifier: Apache-2.0
 
 ## 本次推进
 
+用户当前目标是持续收敛到可流片状态，严格 DRC/LVS 等后端检查必须通过，每轮附 PPA 与同类芯片比较。当前优先推进 A 轨物理闭环；C1 仍可独立开发，但不能替代后端目标。
+
+- **已对原始 routed ODB 实际执行 OpenRCX/SPEF 提取与读回。** [RCX 清单](runs/croc-postroute-rcx-20260905-001/manifest.json)绑定源哈希；原版图未更写。单 typ RC 配 TT/FF 库得到 WNS/TNS、setup/hold=0，但 slew/cap/fanout=71/96/200，仍 FAIL。TT/FF 工具功耗为 43.6/55.2 mW；不是完整 RC corner/MMMC 签核。
+- **CTS 同阶段 A/B 与分支 ECO 完成。** 默认→cluster size 8 使 fanout 200→4，再插入八个 buffer 清为 0。最新 [ECO 003](runs/croc-cts-branch-eco-20260905-003/manifest.json)保留 CLOCK/NDR，且[结构校验](runs/croc-cts-branch-eco-20260905-003/structural_validation.json)通过。候选 slew/cap=71/135；未重新布线或做 DRC/LVS。
+- **PPA 代价已量化。** 同 CTS 阶段 control→ECO 003：active 0.6855631776→0.7208351136 mm²，TT 工具功耗 43.6→56.4 mW；边界仍 3.671056 mm²。这是一项付出面积/功耗代价的电气候选，尚未成为最终实现。见[逐轮 PPA 与行业对照](reports/ppa/20260905_review_zh.md)及[实验复现说明](docs/08_backend_experiments_zh.md)。
+- 保留失败 ECO 001（固定工具缺少 insert_buffer API）与被替代的 002（未继承 NDR）。不从另一版本源码推断本地二进制支持的 API。
+
 - HBT 容量合同已提交并同步：`d3342a45d6aff33ad2b18f08d3b7cd5e16568015`。partition demand=62，floorplan core=14.58×14.31 µm，可用 90 个 site；本轮仅 partition/pre/floorplan，没有新 placement/CTS/route。见[容量 A/B](runs/pin3d-hbt-capacity-contract-20260903-001/stage_ab.json)。
 - 新增[归档电气复核](runs/croc-acceptance-audit-20260905-001/summary.json)：WNS/TNS=0，setup/hold=0，但 **slew=76、capacitance=71、fanout=200**。修正 collector、signoff parser、JSON 合同；这些项缺失或非零均不再通过。历史 stage 记录保持原样。
 - `make report` 显示独立复核，并选择最新 signoff attempt；较新 attempt 没有有效汇总时，不回退成旧结果通过。
@@ -23,14 +30,14 @@ SPDX-License-Identifier: Apache-2.0
 
 ## 当前最需要改进的内容
 
-1. **补齐验收质量。** 本次已堵住电气违规漏检。还需逐 corner/mode 审核时序约束、例外、未约束路径和寄生来源。当前 Croc 加载 TT/FF 库，但 aggregate final report 无法证明完整 MMMC；finishing 中 RCX/SPEF 流程为注释，现有 timing 不能称提取后 STA 签核。VDD/VSS connected 也不等于 IR-drop/EM 通过。
-2. **按根因处理 A 轨。** [IHP #1130](https://github.com/IHP-GmbH/IHP-Open-PDK/issues/1130)本次检索仍 open，无评论。需受支持修复使 DCN/DCP strict-deep leaf exact，再最小父级 fixture exact，才考虑 full-chip attempt 3。历史 flat 的 52/135057 端口问题与 IO leaf mismatch 分别记录。未完成这些门槛前，不重跑 full-chip。
+1. **补齐验收质量。** 本次已堵住电气违规漏检。还需逐 corner/mode 审核时序约束、例外、未约束路径和寄生来源。历史 finishing 中 RCX/SPEF 被注释；本轮独立补做单 typ RC 提取/读回，但 TT/FF 库并不等于完整 MMMC。仍需验证真实 corner/mode、约束覆盖及 RC 模型资格。VDD/VSS connected 也不等于 IR-drop/EM 通过。
+2. **按根因处理 A 轨。** 电气上保留 15 pF IO 负载：71 个 slew 违规集中在输出 pad，提取后还观察到 25 个 SRAM 输出 cap 违规；不能静默降低负载或放宽库限制。DRC 的 1585 merged 包含 1577 个 Pad 类 marker 和 8 个 density marker，先做独立焊盘几何/规则 fixture，再考虑整芯片重跑。 [IHP #1130](https://github.com/IHP-GmbH/IHP-Open-PDK/issues/1130)本次检索仍 open，无评论。需受支持修复使 DCN/DCP strict-deep leaf exact，再最小父级 fixture exact，才考虑 full-chip attempt 3。历史 flat 的 52/135057 端口问题与 IO leaf mismatch 分别记录。未完成这些门槛前，不重跑 full-chip。
 3. **推进 B 轨几何合法性。** 530/642 个 cut-spacing 已有逐对几何证据；容量扩展解决了可容纳数量的问题，但未证明 HBT 落在 1.6 µm legal lattice 和合法访问窗口。下一步做受限 lattice/window 检查，再决定 placement；不直接 full route/full smoke，剩余 112 个金属 marker 仍须独立处理。
 4. **让 C 轨开始形成自己的功能证据。** 下一实施单元是 C1 OBI CSR endpoint，先独立测试与模块综合，再以 patch/新 run 集成。无需等 A/B 全部通过才能编写模块；物理整合仍受对应门槛约束。
 
 ## 是否需要额外 skill / 规范
 
-目前可以独立推进 C1、验收器和既有证据诊断，不需要用户先准备庞大 skill 包。通用技能不能替代具体产品输入：目标 SRAM/DRAM、容量、带宽、延迟、面积/功耗、真实工艺和键合参数，在超出当前学习基线前需要确认。现有 100 MHz、4 KiB 系统 SRAM 与研究 HBT 参数分别属于不同轨道，不能拼成已达标的先进 3D 产品。
+目前可以独立推进受限后端修复实验、PPA 与验收器，不需要用户先准备庞大 skill 包。通用技能不能替代具体产品输入：目标 SRAM/DRAM、容量、带宽、延迟、面积/功耗、真实工艺和键合参数，在超出当前学习基线前需要确认。现有 100 MHz、4 KiB 系统 SRAM 与研究 HBT 参数分别属于不同轨道，不能拼成已达标的先进 3D 产品。
 
 ## 复核入口
 

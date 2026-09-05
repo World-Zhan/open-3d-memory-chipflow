@@ -14,6 +14,14 @@ Read `CURRENT_STATUS.md` first. For a specific run, inspect its current artifact
 - New memory/OBI work: start with `docs/05_memory_spec_zh.md` and its requirement IDs. C1 module work can proceed independently of baseline physical closure. Define observable behavior and an independent scoreboard before optimizing RTL; do not invent real SRAM/DRAM or 3D process collateral.
 - External AI tools: consult `docs/04_ai_chip_skills_zh.md` and its pinned research index. Treat third-party skills as source material until deliberately adapted. Preserve this project's tool versions, stage gates and user scope; do not inherit automatic delegation, global memory or installation behavior.
 
+## Per-iteration PPA and backend closure
+
+For the current user goal, prioritize strict Croc backend closure and attach a PPA record to each iteration using `docs/06_ppa_method_zh.md`. Consult `docs/08_backend_experiments_zh.md` for exact archived commands. Compare physical candidates only at the same stage/checkpoint and analysis conditions. A requested 100 MHz clock is not measured Fmax; default activity power is not workload or silicon power.
+
+Keep immutable failed experiments. For clock ECO, verify original connectivity after buffer collapse, explicit supplies, CLOCK/NDR inheritance and unchanged NDR definitions. The structural check is not complete formal equivalence or signoff. New CTS candidates need new route, extracted STA and strict DRC/LVS; old-layout reports cannot pass a modified candidate.
+
+For pad DRC, separate macro geometry, routed access and pad-ring spacing; preserve recommended, density, antenna and off-grid rules. Single-model RCX/SPEF readback is useful evidence but does not qualify full RC/PVT/MMMC, IR/EM, DFT or MPW acceptance.
+
 ## Evidence and next actions
 
 Keep raw run reports and manifests unchanged. Reassess them under a new run ID with source hashes. `scripts/audit_croc_acceptance.py --source-run runs/<run-id>` reads archived Croc reports without EDA; add `--require-pass` when a shell gate needs a nonzero result for electrical failure. Creating a summary is not passing the design.

@@ -1,0 +1,349 @@
+{
+  "area": {
+    "active_area_um2": 720835.1136,
+    "core_area_um2": 1571081.7024,
+    "core_utilization": 0.45881453045939313,
+    "die_area_um2": 3671056.0,
+    "hierarchy_um2": {
+      "<top>": {
+        "cover": 313600.0,
+        "macro": 159439.795,
+        "pad": 1149120.0,
+        "stdcell": 561395.318,
+        "total": 2183555.114
+      },
+      "i_core.register_file_i": {
+        "cover": 0.0,
+        "macro": 0.0,
+        "pad": 0.0,
+        "stdcell": 94174.618,
+        "total": 94174.618
+      },
+      "i_core_wrap": {
+        "cover": 0.0,
+        "macro": 0.0,
+        "pad": 0.0,
+        "stdcell": 214638.077,
+        "total": 214638.077
+      },
+      "i_croc_soc": {
+        "cover": 0.0,
+        "macro": 159439.795,
+        "pad": 0.0,
+        "stdcell": 481260.528,
+        "total": 640700.323
+      }
+    },
+    "instance_area_um2": 2183555.1136,
+    "stdcell_utilization": 0.39768960919666296
+  },
+  "change": {
+    "inserted_cells": 8,
+    "loads_per_new_buffer": 8,
+    "master": "sg13g2_buf_8",
+    "new_groups_per_branch": 2,
+    "parent_branches": 4,
+    "previous_loads_per_branch": 16
+  },
+  "clocks": {
+    "clk_jtg": {
+      "constraint_frequency_mhz": 40.0,
+      "period_ns": 25.0
+    },
+    "clk_rtc": {
+      "constraint_frequency_mhz": 20.0,
+      "period_ns": 50.0
+    },
+    "clk_sys": {
+      "constraint_frequency_mhz": 100.0,
+      "period_ns": 10.0
+    }
+  },
+  "delta_vs_historical_002": {
+    "active_area_um2": {
+      "after": 720835.1136,
+      "before": 720835.1136,
+      "delta": 0.0,
+      "percent": 0.0
+    },
+    "interpretation": "NDR inheritance is restored; identical placement-estimate PPA does not prove identical postroute RC or cost.",
+    "report_bytes_identical": true,
+    "tt_total_tool_estimate_mw": {
+      "after": 56.4,
+      "before": 56.4,
+      "delta": 0.0,
+      "percent": 0.0
+    }
+  },
+  "delta_vs_source_candidate": {
+    "active_area_um2": {
+      "after": 720835.1136,
+      "before": 720646.416,
+      "delta": 188.6976,
+      "percent": 0.026184
+    },
+    "max_fanout_violations": {
+      "after": 0,
+      "before": 4,
+      "delta": -4.0,
+      "percent": -100.0
+    },
+    "tt_total_tool_estimate_mw": {
+      "after": 56.4,
+      "before": 56.3,
+      "delta": 0.1,
+      "percent": 0.17762
+    }
+  },
+  "gates": {
+    "clock_waveform_timing_proven": false,
+    "electrical_passed": false,
+    "explicit_buffer_supplies_connected": true,
+    "full_formal_equivalence_proven": false,
+    "ndr_policy_preserved": true,
+    "public_rule_signoff": false,
+    "route_performed": false,
+    "structural_connectivity_after_buffer_collapse_passed": true,
+    "tapeout_ready": false
+  },
+  "limitations": [
+    "All PPA values are same-stage pre-route estimates; no workload VCD/SAIF or postroute PPA improvement is established.",
+    "Fanout zero does not clear the 71 slew and 135 capacitance violations.",
+    "Structural buffer-collapse checks preserve observed connectivity, supplies and NDR; they do not establish full formal equivalence or clock waveform correctness.",
+    "Historical 002 remains archived with missing NDR; 003 is an independent rerun from the same candidate, not an edit of historical artifacts."
+  ],
+  "ndr_review": {
+    "branches": [
+      {
+        "children": {
+          "eco_cts_b0_g0": {
+            "nondefault_rule": "CTS_NDR_1",
+            "signal_use": "CLOCK"
+          },
+          "eco_cts_b0_g1": {
+            "nondefault_rule": "CTS_NDR_1",
+            "signal_use": "CLOCK"
+          }
+        },
+        "parent": "clknet_2_0_0_soc_clk_i_regs",
+        "parent_attributes": {
+          "nondefault_rule": "CTS_NDR_1",
+          "signal_use": "CLOCK"
+        }
+      },
+      {
+        "children": {
+          "eco_cts_b1_g0": {
+            "nondefault_rule": "CTS_NDR_1",
+            "signal_use": "CLOCK"
+          },
+          "eco_cts_b1_g1": {
+            "nondefault_rule": "CTS_NDR_1",
+            "signal_use": "CLOCK"
+          }
+        },
+        "parent": "clknet_2_1_0_soc_clk_i_regs",
+        "parent_attributes": {
+          "nondefault_rule": "CTS_NDR_1",
+          "signal_use": "CLOCK"
+        }
+      },
+      {
+        "children": {
+          "eco_cts_b2_g0": {
+            "nondefault_rule": "CTS_NDR_1",
+            "signal_use": "CLOCK"
+          },
+          "eco_cts_b2_g1": {
+            "nondefault_rule": "CTS_NDR_1",
+            "signal_use": "CLOCK"
+          }
+        },
+        "parent": "clknet_2_2_0_soc_clk_i_regs",
+        "parent_attributes": {
+          "nondefault_rule": "CTS_NDR_1",
+          "signal_use": "CLOCK"
+        }
+      },
+      {
+        "children": {
+          "eco_cts_b3_g0": {
+            "nondefault_rule": "CTS_NDR_1",
+            "signal_use": "CLOCK"
+          },
+          "eco_cts_b3_g1": {
+            "nondefault_rule": "CTS_NDR_1",
+            "signal_use": "CLOCK"
+          }
+        },
+        "parent": "clknet_2_3_0_soc_clk_i_regs",
+        "parent_attributes": {
+          "nondefault_rule": "CTS_NDR_1",
+          "signal_use": "CLOCK"
+        }
+      }
+    ],
+    "status": "all_eight_children_inherit_parent_rule"
+  },
+  "outputs": {
+    "cts.def": {
+      "path": "runs/croc-cts-branch-eco-20260905-003/cts.def",
+      "sha256": "0c1e5af9c12e11e5f70e126b322d0cb04319080b7f3b110dc17f07115114cee1"
+    },
+    "cts.odb": {
+      "path": "runs/croc-cts-branch-eco-20260905-003/cts.odb",
+      "sha256": "b6d666816ed2165cc0bf435d549d7c9fbd7590bed484fe5e8ad6e53b65db3f4a"
+    },
+    "cts.sdc": {
+      "path": "runs/croc-cts-branch-eco-20260905-003/cts.sdc",
+      "sha256": "5b0d5e3226acabfe146ca218d66e28046574131dd17a1e2ccd784b6ab94cadc3"
+    },
+    "cts.v": {
+      "path": "runs/croc-cts-branch-eco-20260905-003/cts.v",
+      "sha256": "6dc36f1e342a71262df4377a5793227baea0d35d619faa799dae0c93fccb57b5"
+    },
+    "cts_branch_eco.rpt": {
+      "path": "runs/croc-cts-branch-eco-20260905-003/cts_branch_eco.rpt",
+      "sha256": "b6cf0c2f62382e5972cd230e61a1a4af62fd4b398b1bbccd85b373addb069a8f"
+    },
+    "eco_groups.tsv": {
+      "path": "runs/croc-cts-branch-eco-20260905-003/eco_groups.tsv",
+      "sha256": "4db9948bb31e647ce7f92cd372559708c8ac9f2273527e2c490f010b5edea83a"
+    },
+    "eco_unplaced.odb": {
+      "path": "runs/croc-cts-branch-eco-20260905-003/eco_unplaced.odb",
+      "sha256": "796e9a99a33221aae9b19399782809cbc962f4efe018764e04410a7c97136ba1"
+    },
+    "electrical.rpt": {
+      "path": "runs/croc-cts-branch-eco-20260905-003/electrical.rpt",
+      "sha256": "c31bc5115ad5eaa6f30f7113afb817a53ea865201a854f4a5bc92bf3ef3638d0"
+    },
+    "tool.log": {
+      "path": "runs/croc-cts-branch-eco-20260905-003/tool.log",
+      "sha256": "edd96909f1922a2146d68cbb6b791c6ed0e404df961130cc81036c9f6c868ba5"
+    }
+  },
+  "power": {
+    "activity_source": null,
+    "groups_mw": {
+      "clock": {
+        "internal": 14.4,
+        "leakage": 0.00146,
+        "switching": 5.98,
+        "total": 20.3
+      },
+      "combinational": {
+        "internal": 0.545,
+        "leakage": 0.00374,
+        "switching": 0.823,
+        "total": 1.37
+      },
+      "macro": {
+        "internal": 8.46,
+        "leakage": 0.000396,
+        "switching": 0.0,
+        "total": 8.46
+      },
+      "pad": {
+        "internal": 0.283,
+        "leakage": 0.000108,
+        "switching": 3.29,
+        "total": 3.57
+      },
+      "sequential": {
+        "internal": 22.5,
+        "leakage": 0.00195,
+        "switching": 0.174,
+        "total": 22.7
+      },
+      "total": {
+        "internal": 46.1,
+        "leakage": 0.00765,
+        "switching": 10.3,
+        "total": 56.4
+      }
+    },
+    "method": "OpenSTA report_power tt after placement parasitic estimate",
+    "signoff_qualified": false
+  },
+  "report_id": "croc-ppa-cts-branch-eco-20260905-003",
+  "schema_version": "1.0.0",
+  "source_arm": "candidate",
+  "source_candidate_run_id": "croc-cts-fanout-ab-20260905-001",
+  "source_run_id": "croc-cts-branch-eco-20260905-003",
+  "sources": {
+    "historical_002_ppa": {
+      "path": "reports/ppa/croc-ppa-cts-branch-eco-20260905-002.json",
+      "sha256": "728681d92140d2602cc7647aca06c88d86716423948b61dbdbf36cd93ad11b35"
+    },
+    "manifest": {
+      "path": "runs/croc-cts-branch-eco-20260905-003/manifest.json",
+      "sha256": "1644d7d2bc1c2f3811deed619f8d77fea701762d04aa58fecd26f6ae2ff42043"
+    },
+    "runs/croc-cts-fanout-ab-20260905-001/candidate/cts.odb": {
+      "path": "runs/croc-cts-fanout-ab-20260905-001/candidate/cts.odb",
+      "sha256": "125c95cef3adbd5720f10dc79f4070b9814fed6981f0058ecfbef4fad395c280",
+      "verified_against_current_file": true
+    },
+    "runs/croc-cts-fanout-ab-20260905-001/candidate/cts.sdc": {
+      "path": "runs/croc-cts-fanout-ab-20260905-001/candidate/cts.sdc",
+      "sha256": "739f251fdd7295998f3f190fb7a2daa9eb09d1781ec2bc8798f2301bd71679ce",
+      "verified_against_current_file": true
+    },
+    "scripts/croc_cts_branch_odb_ndr_eco.tcl": {
+      "path": "scripts/croc_cts_branch_odb_ndr_eco.tcl",
+      "sha256": "7c7d035f110ce7ab0d0f4f9aaeb6e72ffa430f1b0e9afd5a3bbea5d5d1eff5a1",
+      "verified_against_current_file": true
+    },
+    "scripts/croc_cts_eco_check.tcl": {
+      "path": "scripts/croc_cts_eco_check.tcl",
+      "sha256": "8673a98721bb890442e0bd5eb479ab5f444454812967c11c916a6fab482d17e2",
+      "verified_against_current_file": true
+    },
+    "source_candidate_ppa": {
+      "path": "reports/ppa/croc-ppa-cts-ab-20260905-001.json",
+      "sha256": "c099b83e397a7295ac0985a751550675e0e39c8da8999594f7c8dd2c5a20de80"
+    },
+    "structural_validation": {
+      "path": "runs/croc-cts-branch-eco-20260905-003/structural_validation.json",
+      "sha256": "85197c4ec868f3e4ea38f025714175b58b587a90700c0f802236be8fa9eb10a3"
+    }
+  },
+  "stage": "post_CTS_pre_route",
+  "status": "fanout_zero_ndr_and_collapsed_connectivity_preserved_electrical_still_failed",
+  "structural_validation": {
+    "added_buffers": 8,
+    "buffer_cell": "sg13g2_buf_8",
+    "clock_ndr_inheritance": {
+      "eco_cts_b0_g0": "CTS_NDR_1",
+      "eco_cts_b0_g1": "CTS_NDR_1",
+      "eco_cts_b1_g0": "CTS_NDR_1",
+      "eco_cts_b1_g1": "CTS_NDR_1",
+      "eco_cts_b2_g0": "CTS_NDR_1",
+      "eco_cts_b2_g1": "CTS_NDR_1",
+      "eco_cts_b3_g0": "CTS_NDR_1",
+      "eco_cts_b3_g1": "CTS_NDR_1"
+    },
+    "clock_waveform_timing_proven": false,
+    "die_boundary_preserved": true,
+    "explicit_buffer_supplies_connected": true,
+    "full_formal_equivalence_proven": false,
+    "loads_per_new_branch": 8,
+    "original_ndr_definitions_preserved": true,
+    "route_or_signoff_proven": false,
+    "source_sha256": {
+      "runs/croc-cts-branch-eco-20260905-003/cts.def": "0c1e5af9c12e11e5f70e126b322d0cb04319080b7f3b110dc17f07115114cee1",
+      "runs/croc-cts-fanout-ab-20260905-001/candidate/cts.def": "68805c3a5d029765a53579cf5383d57685ffd3de8a33853051019b95a47d30ef"
+    },
+    "structural_connectivity_after_buffer_collapse": "passed"
+  },
+  "timing": {
+    "hold_violations": 0,
+    "max_capacitance_violations": 135,
+    "max_fanout_violations": 0,
+    "max_slew_violations": 71,
+    "setup_violations": 0,
+    "tns_ns": 0.0,
+    "wns_ns": 0.0
+  }
+}

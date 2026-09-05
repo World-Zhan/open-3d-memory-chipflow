@@ -1,0 +1,336 @@
+{
+  "acceptance": {
+    "electrical_checks": {
+      "hold_violations_zero": true,
+      "max_capacitance_violations_zero": false,
+      "max_fanout_violations_zero": false,
+      "max_slew_violations_zero": false,
+      "setup_violations_zero": true,
+      "tns_ns_nonnegative": true,
+      "wns_ns_nonnegative": true
+    },
+    "electrical_passed": false,
+    "public_rule_signoff_proven_by_collector": false,
+    "signoff": {
+      "antenna_unwaived": 0,
+      "density_unwaived": 8,
+      "disabled_rules": [],
+      "drc_unwaived": 1585,
+      "lvs_exact_match": false,
+      "offgrid_unwaived": 0
+    },
+    "tapeout_ready": false
+  },
+  "area": {
+    "active_area_um2": 696001.4208,
+    "core_area_um2": 1571081.7024,
+    "core_utilization": 0.4430077823048803,
+    "die_area_um2": 3671056.0,
+    "hierarchy_um2": {
+      "<top>": {
+        "cover": 313600.0,
+        "macro": 159439.795,
+        "pad": 1149120.0,
+        "stdcell": 536561.626,
+        "total": 2158721.421
+      },
+      "i_core.register_file_i": {
+        "cover": 0.0,
+        "macro": 0.0,
+        "pad": 0.0,
+        "stdcell": 94174.618,
+        "total": 94174.618
+      },
+      "i_core_wrap": {
+        "cover": 0.0,
+        "macro": 0.0,
+        "pad": 0.0,
+        "stdcell": 214639.891,
+        "total": 214639.891
+      },
+      "i_croc_soc": {
+        "cover": 0.0,
+        "macro": 159439.795,
+        "pad": 0.0,
+        "stdcell": 481273.229,
+        "total": 640713.024
+      }
+    },
+    "instance_area_um2": 2158721.4208,
+    "stdcell_utilization": 0.38009754659683714
+  },
+  "area_crosscheck": {
+    "report_matches_def_die": true
+  },
+  "comparison_context": {
+    "area_scope": "whole_die_and_physical_core_separately",
+    "design": "croc_chip",
+    "pdk_commit": "331c00484213b13414777eec1336ef5c29b969bd",
+    "sram_bytes": 4096,
+    "technology": "sg13g2"
+  },
+  "def_geometry": {
+    "dbu_per_um": 1000,
+    "die_area_um2": 3671056.0,
+    "die_height_um": 1916.0,
+    "die_width_um": 1916.0,
+    "sram_bytes": 4096,
+    "sram_cells": [
+      "RM_IHPSG13_1P_512x32_c2_bm_bist"
+    ],
+    "sram_macro_count": 2
+  },
+  "delta": {
+    "achieved_frequency_delta_mhz": null,
+    "layout_modified": false,
+    "limitations": [
+      "Power activity/PVT/parasitics and achieved frequency are unqualified; no improvement claim.",
+      "An area reduction is descriptive until function and signoff regressions pass."
+    ],
+    "metrics": {
+      "active_area_um2": {
+        "after": 696001.4208,
+        "before": 696001.4208,
+        "comparable": true,
+        "delta": 0.0,
+        "percent": 0.0
+      },
+      "core_area_um2": {
+        "after": 1571081.7024,
+        "before": 1571081.7024,
+        "comparable": true,
+        "delta": 0.0,
+        "percent": 0.0
+      },
+      "die_area_um2": {
+        "after": 3671056.0,
+        "before": 3671056.0,
+        "comparable": true,
+        "delta": 0.0,
+        "percent": 0.0
+      },
+      "instance_area_um2": {
+        "after": 2158721.4208,
+        "before": 2158721.4208,
+        "comparable": true,
+        "delta": 0.0,
+        "percent": 0.0
+      }
+    },
+    "power_delta_mw": null,
+    "previous_report": "croc-ppa-baseline-20260905-001",
+    "raw_tt_estimate_change_interpretation": "Analysis/parasitic-model change on unchanged layout; not a design power improvement.",
+    "raw_tt_estimate_change_mw": 1.2,
+    "status": "new_analysis_report"
+  },
+  "diagnostic_run_id": "croc-postroute-rcx-20260905-001",
+  "eda_rerun_performed_by_collector": false,
+  "limitations": [
+    "Archived reports are estimates from an electrically and physically unclosed design; no tapeout acceptance.",
+    "1000/clock_period is a requested clock constraint, never measured or signoff-guaranteed Fmax.",
+    "No workload VCD/SAIF, activity coverage, extracted-RC qualification, full MMMC, IR/EM or DFT qualification is established here.",
+    "Instance area includes pad/cover cells; active area, physical core area and die area are different scopes.",
+    "SRAM bytes are inferred from physical macro names, not a functional memory test.",
+    "This probe establishes single-model SPEF extraction/readback, not RC-corner qualification or full MMMC; inherited DRC/LVS remain failed."
+  ],
+  "performance": {
+    "achieved_frequency_mhz": null,
+    "clocks": {
+      "clk_jtg": {
+        "constraint_frequency_mhz": 40.0,
+        "period_ns": 25.0
+      },
+      "clk_rtc": {
+        "constraint_frequency_mhz": 20.0,
+        "period_ns": 50.0
+      },
+      "clk_sys": {
+        "constraint_frequency_mhz": 100.0,
+        "period_ns": 10.0
+      }
+    },
+    "complete_corner_mode_coverage": false,
+    "coremark_per_mhz": null,
+    "parasitics": "single_typical_RC_model_for_TT_and_FF_libraries_not_complete_MMMC",
+    "time_unit": "ns",
+    "time_unit_basis": "Croc SG13G2 flow convention; collector does not infer units from SDC",
+    "timing": {
+      "hold_violations": 0,
+      "max_capacitance_violations": 96,
+      "max_fanout_violations": 200,
+      "max_slew_violations": 71,
+      "setup_violations": 0,
+      "tns_ns": 0.0,
+      "wns_ns": 0.0
+    }
+  },
+  "power": {
+    "activity_coverage": null,
+    "activity_source": "no_waveform_activity_loaded_default_tool_estimate",
+    "estimated_tt_total_mw": 43.6,
+    "measured_silicon_mw": null,
+    "method": "OpenSTA report_power tool estimate",
+    "reports": [
+      {
+        "corner": "tt",
+        "groups": {
+          "clock": {
+            "internal": 3.95,
+            "leakage": 0.000407,
+            "switching": 3.68,
+            "total": 7.63
+          },
+          "combinational": {
+            "internal": 0.561,
+            "leakage": 0.004,
+            "switching": 0.825,
+            "total": 1.39
+          },
+          "macro": {
+            "internal": 8.46,
+            "leakage": 0.000396,
+            "switching": 0.0,
+            "total": 8.46
+          },
+          "pad": {
+            "internal": 0.283,
+            "leakage": 0.000108,
+            "switching": 3.29,
+            "total": 3.57
+          },
+          "sequential": {
+            "internal": 22.4,
+            "leakage": 0.00195,
+            "switching": 0.173,
+            "total": 22.5
+          },
+          "total": {
+            "internal": 35.6,
+            "leakage": 0.00686,
+            "switching": 7.96,
+            "total": 43.6
+          }
+        },
+        "units": "mW"
+      },
+      {
+        "corner": "ff",
+        "groups": {
+          "clock": {
+            "internal": 5.11,
+            "leakage": 0.000587,
+            "switching": 5.48,
+            "total": 10.6
+          },
+          "combinational": {
+            "internal": 0.672,
+            "leakage": 0.00945,
+            "switching": 1.23,
+            "total": 1.91
+          },
+          "macro": {
+            "internal": 11.0,
+            "leakage": 0.000396,
+            "switching": 0.0,
+            "total": 11.0
+          },
+          "pad": {
+            "internal": 0.359,
+            "leakage": 0.000235,
+            "switching": 3.92,
+            "total": 4.28
+          },
+          "sequential": {
+            "internal": 27.1,
+            "leakage": 0.00416,
+            "switching": 0.267,
+            "total": 27.4
+          },
+          "total": {
+            "internal": 44.3,
+            "leakage": 0.0148,
+            "switching": 10.9,
+            "total": 55.2
+          }
+        },
+        "units": "mW"
+      }
+    ],
+    "signoff_qualified": false,
+    "temperature_c": null,
+    "voltage_v": null,
+    "workload": null
+  },
+  "report_id": "croc-ppa-rcx-20260905-001",
+  "schema_version": "1.0.0",
+  "source_run_id": "croc-sg13g2-baseline-20260827-001",
+  "sources": {
+    "baseline_final_report": {
+      "available": true,
+      "path": "runs/croc-sg13g2-baseline-20260827-001/artifacts/pnr/upstream/croc/openroad/reports/05_croc.final.rpt",
+      "sha256": "d97ab51b4ef09bb2934717ad0797057a58bea7978dee66e0defa13292a77cacc"
+    },
+    "def": {
+      "available": true,
+      "path": "runs/croc-sg13g2-baseline-20260827-001/artifacts/pnr/upstream/croc/openroad/out/croc.def",
+      "sha256": "a049a3dc53ad75b081441078048a74e02e535d1168dae7c8461933f9b60058dd"
+    },
+    "final_report": {
+      "available": true,
+      "path": "runs/croc-postroute-rcx-20260905-001/probe_extracted_typ_rc.rpt",
+      "sha256": "34f13d2689f389d7b444f0311a0bb161e1e7b005fef8371b813b45939eae7bfb"
+    },
+    "finishing_log": {
+      "available": true,
+      "path": "runs/croc-sg13g2-baseline-20260827-001/artifacts/pnr/upstream/croc/openroad/logs/05_finishing.log",
+      "sha256": "91a4a4b339345fc5c18925b5bdfcdc24c997f0fea15137ae1f35e4916210252f"
+    },
+    "manifest": {
+      "available": true,
+      "path": "runs/croc-sg13g2-baseline-20260827-001/manifest.json",
+      "sha256": "ca2ed076911c8cac9b8b4f36fd5bf9a173511158c8806b683286d22deac85688"
+    },
+    "probe_ff_power": {
+      "available": true,
+      "path": "runs/croc-postroute-rcx-20260905-001/ff_power.rpt",
+      "sha256": "d07cf2b56ad2f3fb12a0cb0101faf99e5722702e5eeb9dd251295bd77ec34977"
+    },
+    "probe_manifest": {
+      "available": true,
+      "path": "runs/croc-postroute-rcx-20260905-001/manifest.json",
+      "sha256": "4049bed4f91a08edff8c0180120c6f8b061cd0a50a74a1bf57f9c29405563082"
+    },
+    "probe_spef": {
+      "available": true,
+      "path": "runs/croc-postroute-rcx-20260905-001/croc.typ.spef",
+      "sha256": "97b00a3e283e4c78737f8d1146c7ba62ae7e5bfed5fcd61b9aae58cc8f8c760e"
+    },
+    "probe_tool_log": {
+      "available": true,
+      "path": "runs/croc-postroute-rcx-20260905-001/tool.log",
+      "sha256": "361d93a2775ba907b1dff474b6d3299f58748701d535dc754d67988efbc63eb0"
+    },
+    "probe_tt_power": {
+      "available": true,
+      "path": "runs/croc-postroute-rcx-20260905-001/tt_power.rpt",
+      "sha256": "fbb73dda11d029e766c067b7922d4186eb1e3178c5c2a878cf89153e4c6b130d"
+    },
+    "sdc": {
+      "available": true,
+      "path": "runs/croc-sg13g2-baseline-20260827-001/artifacts/pnr/upstream/croc/openroad/out/croc.sdc",
+      "sha256": "927ba42f07392c6856b431f64946a1cf39191699b5798487a81dc93f5209c42d"
+    },
+    "signoff_summary": {
+      "available": true,
+      "path": "runs/croc-sg13g2-baseline-20260827-001/signoff.attempt-2/signoff_summary.json",
+      "sha256": "300083fd756cef8650d506fb718369c92bdbdea771fac2387dffaef1dd75196c"
+    }
+  },
+  "status": "unqualified_extracted_rc_ppa",
+  "versions": {
+    "container": "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+    "croc_commit": "968bab17b37e88d9200a0899cb9181e42850ec87",
+    "openroad_observed_log": "OpenROAD v2.0-27244-gfecb04286 ",
+    "probe_tool_first_line": "[INFO] Final PATH variable: /foss/tools/bin:/foss/tools/sak:/usr/local/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/foss/tools/kactus2:/foss/tools/klayout:/foss/tools/osic-multitool"
+  }
+}

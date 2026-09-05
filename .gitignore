@@ -17,6 +17,10 @@ runs/*/signoff.attempt-*/lvs/*
 !runs/pin3d-hbt-capacity-contract-*/summary.json
 !runs/pin3d-hbt-capacity-contract-*/stage_ab.json
 !runs/croc-acceptance-audit-*/summary.json
+!runs/croc-postroute-rcx-20260905-001/manifest.json
+!runs/croc-cts-fanout-ab-20260905-001/manifest.json
+!runs/croc-cts-branch-eco-20260905-00[123]/manifest.json
+!runs/croc-cts-branch-eco-20260905-00[23]/structural_validation.json
 reports/generated/
 .state/
 .work/
