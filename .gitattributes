@@ -6,3 +6,7 @@
 *.tcl text eol=lf
 *.json text eol=lf
 *.md text eol=lf
+
+# Unified diffs encode blank context as one space. Check added source lines with
+# git apply --check --whitespace=error; retain byte-identical evidence patches.
+patches/taiwei-pin-3d/*.patch whitespace=-blank-at-eol

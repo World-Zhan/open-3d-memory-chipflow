@@ -1,0 +1,189 @@
+{
+  "baseline_unpatched_floorplan": {
+    "actual_core_bbox": {
+      "area_um2": 36.8874,
+      "height_um": 5.9399999999999995,
+      "lx_um": 0.216,
+      "ly_um": 0.27,
+      "ux_um": 6.426,
+      "uy_um": 6.21,
+      "width_um": 6.21
+    },
+    "hbt_capacity_contract_present": false,
+    "variant": "openroad"
+  },
+  "checks": {
+    "final_floorplan_actual_core_contract_pass": true,
+    "final_floorplan_log_capacity_pass": true,
+    "final_handoff_contract_records_capacity_validated": true,
+    "first_floorplan_requested_size_check_rejected_by_post_audit": true,
+    "ord_pre_completed": true,
+    "partition_contract_written": true,
+    "partition_requires_expansion": true,
+    "route_drc_zero": false,
+    "route_rerun_performed": false,
+    "tech_lef_rule_derived": true
+  },
+  "classification": "research_only",
+  "commands": [
+    "NUM_CORES=6 bash scripts/with_taiwei_hbt_contract_patch.sh run bash upstream/taiwei-pin-3d/test/common/run_stage.sh asap7_3D hbt_contract_ab_20260903_001 openroad gcd ord-tier-partition",
+    "NUM_CORES=6 bash scripts/with_taiwei_hbt_contract_patch.sh run bash upstream/taiwei-pin-3d/test/common/run_stage.sh asap7_3D hbt_contract_ab_20260903_001 openroad gcd ord-pre",
+    "NUM_CORES=6 bash scripts/with_taiwei_hbt_contract_patch.sh run bash upstream/taiwei-pin-3d/test/common/run_stage.sh asap7_3D hbt_contract_ab_20260903_002 openroad gcd ord-3d-floorplan"
+  ],
+  "conclusion": {
+    "next_gate": "Add a legal-lattice HBT placement/window contract and validate it before any bounded reroute; keep full route and full smoke closed until then.",
+    "not_proven": "No placement, CTS, or route was rerun. Capacity alone does not constrain HBT coordinates to the legal 1.6 um lattice, does not clear the 530 hb_layer markers, and does not address the remaining 112 route markers.",
+    "proven": "The patched partition/pre/floorplan handoff derives 0.032/1.568 um from the selected 3D TECH_LEF, expands the floorplan, and validates the actual snapped ODB core at 14.58x14.31 um with 90 discrete sites and utilization 0.760737."
+  },
+  "floorplan_attempts": [
+    {
+      "accepted": false,
+      "actual_core_bbox": {
+        "area_um2": 193.3308,
+        "height_um": 13.77,
+        "lx_um": 0.216,
+        "ly_um": 0.27,
+        "ux_um": 14.256,
+        "uy_um": 14.04,
+        "width_um": 14.040000000000001
+      },
+      "actual_discrete_capacity": {
+        "sites_x": 9,
+        "sites_y": 9,
+        "total_sites": 81
+      },
+      "actual_hbt_pitch_area_utilization": 0.8209762748615328,
+      "capacity_limit": 0.8,
+      "check_mode": "requested_dimensions_only",
+      "post_run_actual_core_contract_pass": false,
+      "variant": "hbt_contract_ab_20260903_001"
+    },
+    {
+      "accepted": true,
+      "actual_core_bbox": {
+        "area_um2": 208.6398,
+        "height_um": 14.31,
+        "lx_um": 0.216,
+        "ly_um": 0.27,
+        "ux_um": 14.796,
+        "uy_um": 14.58,
+        "width_um": 14.58
+      },
+      "actual_core_contract_pass": true,
+      "actual_discrete_capacity": {
+        "sites_x": 10,
+        "sites_y": 9,
+        "total_sites": 90
+      },
+      "actual_hbt_pitch_area_utilization": 0.7607369255530345,
+      "capacity_limit": 0.8,
+      "check_mode": "site_snap_guard_plus_actual_odb_core",
+      "floorplan_contract": {
+        "capacity_utilization": 0.8,
+        "capacity_validated": 1,
+        "consumer": "ord-3d-floorplan",
+        "current_die_height_um": 9.13,
+        "current_die_width_um": 9.13,
+        "current_grid_sites_x": 6,
+        "current_grid_sites_y": 6,
+        "current_grid_total_sites": 36,
+        "current_usable_hbt_capacity": 28,
+        "cut_height_um": 0.032,
+        "cut_width_um": 0.032,
+        "cuts_per_net": 1,
+        "estimated_hbt_demand": 62,
+        "final_core_area_um2": 208.6398,
+        "final_core_height_um": 14.31,
+        "final_core_width_um": 14.58,
+        "final_grid_sites_x": 10,
+        "final_grid_sites_y": 9,
+        "final_grid_total_sites": 90,
+        "floorplan_capacity_validation_required": 1,
+        "floorplan_size_driver": "hbt_capacity_site_snap_guarded",
+        "hbt_pitch_area_utilization": 0.7607369255530345,
+        "layer": "hb_layer",
+        "legal_pitch_x_um": 1.6,
+        "legal_pitch_y_um": 1.6,
+        "logic_core_area_um2": 39.39029999999993,
+        "minimum_core_height_um": 14.08545348932721,
+        "minimum_core_width_um": 14.08545348932721,
+        "minimum_edge_spacing_um": 1.568,
+        "producer": "ord-tier-partition",
+        "requested_core_area_um2": 213.90388976847348,
+        "requested_core_height_um": 14.62545348932721,
+        "requested_core_width_um": 14.62545348932721,
+        "required_hbt_sites": 78,
+        "requires_floorplan_expansion": 1,
+        "schema_version": "1.0.0",
+        "selected_cut_nets": 62,
+        "selected_feasible_current_die": 0,
+        "tech_lef": "/home/james_zhan/projects/open-3d-memory-chipflow/upstream/taiwei-pin-3d/platforms/asap7_3D/lef/asap7_tech_1x_2A6M7M.lef"
+      },
+      "variant": "hbt_contract_ab_20260903_002"
+    }
+  ],
+  "gates": {
+    "full_route_gate_open": false,
+    "full_smoke_gate_open": false,
+    "legal_hbt_lattice_placement_gate_passed": false,
+    "partition_pre_floorplan_ab_gate_passed": true
+  },
+  "generated_at": "2026-09-02T17:35:42.645908+00:00",
+  "partition_contract": {
+    "capacity_utilization": 0.8,
+    "current_die_height_um": 9.13,
+    "current_die_width_um": 9.13,
+    "current_grid_sites_x": 6,
+    "current_grid_sites_y": 6,
+    "current_grid_total_sites": 36,
+    "current_usable_hbt_capacity": 28,
+    "cut_height_um": 0.032,
+    "cut_width_um": 0.032,
+    "cuts_per_net": 1,
+    "estimated_hbt_demand": 62,
+    "floorplan_capacity_validation_required": 1,
+    "layer": "hb_layer",
+    "legal_pitch_x_um": 1.6,
+    "legal_pitch_y_um": 1.6,
+    "minimum_edge_spacing_um": 1.568,
+    "producer": "ord-tier-partition",
+    "requires_floorplan_expansion": 1,
+    "schema_version": "1.0.0",
+    "selected_cut_nets": 62,
+    "selected_feasible_current_die": 0,
+    "tech_lef": "/home/james_zhan/projects/open-3d-memory-chipflow/upstream/taiwei-pin-3d/platforms/asap7_3D/lef/asap7_tech_1x_2A6M7M.lef"
+  },
+  "pinned_openroad_commit": "305d3ba2ddfd00591924cc586ad408179f566afe",
+  "pinned_taiwei_commit": "c85b79352eefc31a588da3ef873e4fd68a3df3f2",
+  "run_id": "pin3d-hbt-capacity-contract-20260903-001",
+  "schema_version": "1.0.0",
+  "source": {
+    "files": [
+      "patches/taiwei-pin-3d/0001-tech-derived-hbt-capacity-contract.patch",
+      "upstream/taiwei-pin-3d/logs/asap7_3D/gcd/hbt_contract_ab_20260903_001/2_tritonpart.log",
+      "upstream/taiwei-pin-3d/logs/asap7_3D/gcd/hbt_contract_ab_20260903_001/2_3d_views.log",
+      "upstream/taiwei-pin-3d/logs/asap7_3D/gcd/hbt_contract_ab_20260903_001/2_3_floorplan_3d.log",
+      "upstream/taiwei-pin-3d/logs/asap7_3D/gcd/hbt_contract_ab_20260903_002/2_3_floorplan_3d.log",
+      "upstream/taiwei-pin-3d/logs/asap7_3D/gcd/openroad/2_3_floorplan_3d.log",
+      "upstream/taiwei-pin-3d/results/asap7_3D/gcd/hbt_contract_ab_20260903_001/hbt_capacity.contract.tcl",
+      "upstream/taiwei-pin-3d/results/asap7_3D/gcd/hbt_contract_ab_20260903_002/hbt_capacity.floorplan.tcl",
+      "upstream/taiwei-pin-3d/results/asap7_3D/gcd/hbt_contract_ab_20260903_002/2_3_floorplan_3d.def",
+      "upstream/taiwei-pin-3d/results/asap7_3D/gcd/hbt_contract_ab_20260903_002/2_3_floorplan_3d.v",
+      "upstream/taiwei-pin-3d/results/asap7_3D/gcd/hbt_contract_ab_20260903_002/handoffs/floorplan-3d.tcl"
+    ],
+    "sha256": {
+      "patches/taiwei-pin-3d/0001-tech-derived-hbt-capacity-contract.patch": "b1b585519820c3818e53fd4ff593c087dba7c22f2dca02b9d10cba0f5e62977d",
+      "upstream/taiwei-pin-3d/logs/asap7_3D/gcd/hbt_contract_ab_20260903_001/2_3_floorplan_3d.log": "a0c83b5bb0b9172f69c6c4ffc5f9d7083e57730e0f87456e3327818eb8fdeaa4",
+      "upstream/taiwei-pin-3d/logs/asap7_3D/gcd/hbt_contract_ab_20260903_001/2_3d_views.log": "f4fdced915bd2a71cb81f9ffb93b3ce2306223e27cb6dc739de6e2bbb66a1cb5",
+      "upstream/taiwei-pin-3d/logs/asap7_3D/gcd/hbt_contract_ab_20260903_001/2_tritonpart.log": "f708188fd5926151fb07d7a39756c0d8f9831ef5ec79fa91afb411d3a3693c28",
+      "upstream/taiwei-pin-3d/logs/asap7_3D/gcd/hbt_contract_ab_20260903_002/2_3_floorplan_3d.log": "20fca545dbeb64c32ab72e3dd05e7bd075208b29024a5ef177e060f98c526e21",
+      "upstream/taiwei-pin-3d/logs/asap7_3D/gcd/openroad/2_3_floorplan_3d.log": "a02d160d42ffca210cf6bab9414f576b6c84dc83ff27682bd4f7f03264a4936c",
+      "upstream/taiwei-pin-3d/results/asap7_3D/gcd/hbt_contract_ab_20260903_001/hbt_capacity.contract.tcl": "0d68355ffa538661e793f8c131bb809e173a3d6d81561a8b78ab7544bbce3bde",
+      "upstream/taiwei-pin-3d/results/asap7_3D/gcd/hbt_contract_ab_20260903_002/2_3_floorplan_3d.def": "a9a744dcb40d93048adbbbb9cb5f1520c182d9978d4aa7fd7965a67e3b4109dd",
+      "upstream/taiwei-pin-3d/results/asap7_3D/gcd/hbt_contract_ab_20260903_002/2_3_floorplan_3d.v": "059e5e5c6001d39c605d60fa4f0e3f4f9ef09c68e7fcfdd6947209c97414213e",
+      "upstream/taiwei-pin-3d/results/asap7_3D/gcd/hbt_contract_ab_20260903_002/handoffs/floorplan-3d.tcl": "4f7ceb93175936993e26d8a84e7251c27eb5ae1824fb1baac10b80fb29c4b7b8",
+      "upstream/taiwei-pin-3d/results/asap7_3D/gcd/hbt_contract_ab_20260903_002/hbt_capacity.floorplan.tcl": "fe1159c72452190e263ed42c55c1335325c3cd129f56a934ec3fe0d1ca5f83d6"
+    }
+  },
+  "status": "floorplan_contract_ab_passed_route_not_run"
+}

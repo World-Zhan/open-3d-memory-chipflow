@@ -98,8 +98,52 @@ upper-tier 标准单元输入 pin 报 `DRT-0073`。OpenROAD 定点 patch 只在 
 结构化证据为
 `runs/pin3d-openroad-pa-ab-20260901-003/hbt_spacing_analysis.json`。
 它只证明 530 个 HBT marker；剩余 112 个 M1_m/其他金属 marker 仍未闭环。
-下一门槛是让 partition 从实际 TECH_LEF 派生 HBT budget、对 infeasible 结果
-fail closed，并在任何 reroute 前完成合法 HBT site/面积容量规划。
+该容量门槛已由下面的 bounded A/B 实现；它仍不等于 HBT 坐标已经落在合法
+1.6 µm lattice，也不等于 route DRC 已清零。
+
+### HBT 容量合同 stage A/B（2026-09-03）
+
+仅运行新的隔离 variants，没有运行 placement、CTS、route 或 full smoke：
+
+```text
+NUM_CORES=6 bash scripts/with_taiwei_hbt_contract_patch.sh run \
+  bash upstream/taiwei-pin-3d/test/common/run_stage.sh \
+  asap7_3D hbt_contract_ab_20260903_001 openroad gcd ord-tier-partition
+NUM_CORES=6 bash scripts/with_taiwei_hbt_contract_patch.sh run \
+  bash upstream/taiwei-pin-3d/test/common/run_stage.sh \
+  asap7_3D hbt_contract_ab_20260903_001 openroad gcd ord-pre
+NUM_CORES=6 bash scripts/with_taiwei_hbt_contract_patch.sh run \
+  bash upstream/taiwei-pin-3d/test/common/run_stage.sh \
+  asap7_3D hbt_contract_ab_20260903_002 openroad gcd ord-3d-floorplan
+```
+
+`patches/taiwei-pin-3d/0001-tech-derived-hbt-capacity-contract.patch` 从明确的
+3D TECH_LEF 读取 HBT rule，并在 floorplan 中再次与实际 OpenROAD tech DB
+比对；partition 产生 `hbt_capacity.contract.tcl`，floorplan 只有验证实际
+ODB core 后才写 `capacity_validated=1`。wrapper 会在每个 stage 结束后恢复
+pinned TaiWei 子模块。
+
+| 检查项 | 结果 | 解释 |
+|---|---:|---|
+| HBT rule | 0.032 µm cut / 1.568 µm spacing / 1.6 µm pitch | 来自 `asap7_tech_1x_2A6M7M.lef`，非硬编码 0.5/0.5 |
+| 2D partition die | 9.13×9.13 µm；6×6=36 sites | 0.8 上限下可用 28，仍小于 cut demand 62 |
+| partition | cut=62；`requires_floorplan_expansion=1` | infeasible 不再被误当作物理 floorplan 已可交付 |
+| 最小 HBT core | 14.085453×14.085453 µm；需要 78 sites | 采用同仓库 Cadence flow 的 pitch-area/utilization 方法并离散化 |
+| requested-size-only 尝试 | **REJECTED by post audit** | 实际 core 被 site/row snap 到 14.04×13.77 µm，utilization=0.820976 > 0.8 |
+| site-snap-guarded 尝试 | **PASS（仅容量合同）** | 请求 14.625453×14.625453 µm；实际 ODB core=14.58×14.31 µm，10×9=90 sites，utilization=0.760737 |
+| route | **NOT RUN** | 既有 DRC 仍为 642；530 个 HBT marker 与 112 个其他 marker 均未宣称消失 |
+
+机读证据：
+
+- `runs/pin3d-hbt-capacity-contract-20260903-001/summary.json`
+- `runs/pin3d-hbt-capacity-contract-20260903-001/stage_ab.json`
+- `scripts/analyze_pin3d_hbt_capacity_contract.py`
+- `scripts/collect_pin3d_hbt_contract_ab.py`
+- `scripts/with_taiwei_hbt_contract_patch.sh`
+
+本检查点状态必须写成 `floorplan_contract_ab_passed_route_not_run`。容量合同
+只证明 floorplan 有足够合法 site 数量；下一门槛是在任何 bounded reroute 前
+建立并验证 HBT legal-lattice placement/window contract。
 
 ## DRC：FAIL，两个计数口径不得混用
 
@@ -269,7 +313,7 @@ schematic 把同一个 `iovss` 用于 `LevelDown`、`DCNDiode`、`DCPDiode` 和 
 
 这把小型 fixture 的剩余失败部分定位到 IO leaf 提取/器件归一化与局部网络分裂，但证据仍不足以把 full-chip 135,057-port mismatch 全归因于 IO。full-chip flat child-label promotion 与小型 deep IO-leaf mismatch 是两个同时存在的问题，`root_cause_state=partially_localized_to_io_leaf_extraction_not_fully_identified`。
 
-## 官方 DCN/DCP leaf blocker：已最小复现，未公开发布
+## 官方 DCN/DCP leaf blocker：已最小复现并发布为上游 #1130
 
 `lvs-iopad-leaf-diagnostic-20260829-001/summary.json` 对官方
 `sg13g2_DCNDiode` 与 `sg13g2_DCPDiode` 各运行一次 strict-deep LVS；没有
@@ -331,7 +375,7 @@ hierarchy 用法问题**。这不等于已完全识别根因；也不等于 full
 - 上游仓库：[IHP-GmbH/IHP-Open-PDK](https://github.com/IHP-GmbH/IHP-Open-PDK)，由 pinned submodule URL 核实。
 - 上游问题：[IHP-Open-PDK #1130](https://github.com/IHP-GmbH/IHP-Open-PDK/issues/1130)，状态记录为 `OPEN`。
 - 公开发布不改变技术结论：A 轨仍为 DRC/LVS FAIL；`652` 与 `1585/12` 仍是不同 DRC 口径；full-chip strict LVS 仍为 `52 vs 135057`、exact shared `0`。
-- 未运行新的 KLayout/OpenROAD/LVS/DRC，也未授权 full-chip attempt 3。
+- 该公开发布检查点当时没有运行新的 KLayout/OpenROAD/LVS/DRC；之后仅执行了本页记录的 Pin3D partition/pre/floorplan 容量 A/B。仍未授权 Croc full-chip attempt 3。
 
 ## 直接生成原因与最小修复假设
 
@@ -360,7 +404,8 @@ hierarchy 用法问题**。这不等于已完全识别根因；也不等于 full
 3. 两颗 leaf exact 后再运行一个最小父级 IO strict-deep fixture；在此之前不得修改 full-chip runner，不得启动 attempt 3。
 4. 后续 full-chip LVS 只有 exact match 才能继续处理 pad/sealring 与 density DRC；不得把 6/6 或 10/10 port-set exact 当作 LVS exact。
 5. 只有 DRC=0、顶层 LVS exact match、无未布通网络、STA/PDN 证据齐全时，A 轨才可称公开规则签核级。
-6. A 轨收敛后才启动 B 轨；B 始终标记 `research_only/not_started`。C 轨仍为 `not_started`。
+6. B 轨已完成 partition/pre/floorplan 的 HBT 容量合同 A/B，但仍是 `research_only/diagnostic_started_route_failed`；下一步先验证 1.6 µm legal-lattice placement/window，不能直接 full route。
+7. C 轨仍为 `not_started`；不得把 B 轨容量合同 PASS 当作 3D SRAM 扩展已开始。
 
 ## 查看方式
 
@@ -371,3 +416,4 @@ hierarchy 用法问题**。这不等于已完全识别根因；也不等于 full
 - DRC：在 KLayout Marker Browser 中打开 `...full.lyrdb`，并同时加载 `upstream/croc/klayout/out/croc.filled.gds.gz`。
 - LVS：在 KLayout LVS Browser 中打开 `croc.lvsdb`；该文件很大，优先使用已生成的 40 KiB 流式摘要。
 - APR：用 OpenROAD GUI 打开 `upstream/croc/openroad/out/croc.odb`，报告见 `upstream/croc/openroad/reports/`。
+- Pin3D HBT 容量合同：`python3 -m json.tool runs/pin3d-hbt-capacity-contract-20260903-001/stage_ab.json | less`。

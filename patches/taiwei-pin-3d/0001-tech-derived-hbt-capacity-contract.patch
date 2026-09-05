@@ -1,0 +1,661 @@
+diff --git a/Makefile b/Makefile
+index aaf9948..252cff3 100644
+--- a/Makefile
++++ b/Makefile
+@@ -50,6 +50,13 @@ endif
+ 
+ include $(PLATFORM_DIR)/config.mk
+ 
++# A 2D partition run loads the 2D technology database, while its cut budget
++# belongs to the later 3D technology.  Platform-owned HBT metadata makes that
++# boundary explicit and is revalidated against the 3D OpenROAD database by
++# floorplan_3d.tcl.
++-include $(PLATFORM_DIR)/hbt_capacity.mk
++-include $(3D_PLATFORM_DIR)/hbt_capacity.mk
++
+ # ---------------- Work dirs ----------------
+ export DESIGN_NICKNAME ?= $(DESIGN_NAME)
+ export FLOW_VARIANT    ?= base   # can be openroad / cadence / hybrid
+diff --git a/platforms/asap7_3D/hbt_capacity.mk b/platforms/asap7_3D/hbt_capacity.mk
+new file mode 100644
+index 0000000..9bd73bb
+--- /dev/null
++++ b/platforms/asap7_3D/hbt_capacity.mk
+@@ -0,0 +1,10 @@
++# SPDX-License-Identifier: BSD-3-Clause
++
++# Physical HBT contract shared by the 2D partition and 3D floorplan stages.
++# An explicit HBT_TECH_LEF override is allowed, but floorplan_3d.tcl will fail
++# closed if its rule geometry differs from the actual loaded 3D TECH_LEF.
++export HBT_TECH_LEF ?= $(PLATFORM_HOME)/asap7_3D/lef/asap7_tech_1x_2A6M7M.lef
++export HBT_CUT_LAYER ?= hb_layer
++export HBT_CUTS_PER_NET ?= 1
++export HBT_CUT_TOL ?= 0
++export HBT_MAX_CORE_UTILIZATION ?= 0.8
+diff --git a/scripts_openroad/floorplan_3d.tcl b/scripts_openroad/floorplan_3d.tcl
+index ff2519c..f54aaf7 100644
+--- a/scripts_openroad/floorplan_3d.tcl
++++ b/scripts_openroad/floorplan_3d.tcl
+@@ -25,6 +25,7 @@ handoff_log_paths $stage_paths
+ load_design $V_IN $SDC_IN "Starting 3D floorplan"
+ source $::env(OPENROAD_SCRIPTS_DIR)/placement_utils.tcl
+ source $::env(OPENROAD_SCRIPTS_DIR)/floorplan_utils.tcl
++source $::env(OPENROAD_SCRIPTS_DIR)/hbt_capacity_contract.tcl
+ # ------------------------------------------------------------
+ # 0) read env knobs (align with Innovus semantics)
+ # ------------------------------------------------------------
+@@ -78,14 +79,50 @@ foreach tg $tgs { ::odb::dbTrackGrid_destroy $tg }
+ lassign [get_tier_areas_um2] A_up A_bot C_up C_bot method
+ set A_max [expr {($A_up > $A_bot) ? $A_up : $A_bot}]
+ 
++# Consume the partition-stage HBT contract before choosing the core size.  A
++# missing contract or a rule mismatch is a stage-boundary error, not a warning.
++set hbt_contract_path [file join $RESULTS_DIR hbt_capacity.contract.tcl]
++if {[catch {set hbt_contract [::pin3d::hbt::read_contract $hbt_contract_path]} hbt_err]} {
++  utl::error FP 140 $hbt_err
++}
++foreach key {layer estimated_hbt_demand capacity_utilization floorplan_capacity_validation_required} {
++  if {![dict exists $hbt_contract $key]} {
++    utl::error FP 141 "HBT capacity contract is missing '$key': $hbt_contract_path"
++  }
++}
++if {![dict get $hbt_contract floorplan_capacity_validation_required]} {
++  utl::error FP 142 "HBT capacity validation is disabled in the partition contract."
++}
++set hbt_rule [::pin3d::hbt::rule_from_db [dict get $hbt_contract layer]]
++if {[catch {::pin3d::hbt::assert_rule_matches $hbt_contract $hbt_rule} hbt_err]} {
++  utl::error FP 143 $hbt_err
++}
++set hbt_demand [expr {int([dict get $hbt_contract estimated_hbt_demand])}]
++set hbt_util [expr {double([dict get $hbt_contract capacity_utilization])}]
++if {[catch {
++  set hbt_required [::pin3d::hbt::required_core_wh \
++    $hbt_demand $hbt_util $aspect_ratio \
++    [dict get $hbt_rule cut_width_um] \
++    [dict get $hbt_rule cut_height_um] \
++    [dict get $hbt_rule minimum_edge_spacing_um]]
++} hbt_err]} {
++  utl::error FP 144 $hbt_err
++}
++
+ puts "INFO: Tier areas method=$method"
+ puts [format "INFO: upper:  inst=%d area=%.6f um^2" $C_up  $A_up]
+ puts [format "INFO: bottom: inst=%d area=%.6f um^2" $C_bot $A_bot]
+ puts [format "INFO: max-tier area=%.6f um^2, target_util=%.3f, aspect_ratio(H/W)=%.3f" \
+   $A_max $U_target $aspect_ratio]
++puts [format "INFO: HBT contract demand=%d utilization_limit=%.3f required_sites=%d required_core={%.6f %.6f}um area=%.6fum^2" \
++  $hbt_demand $hbt_util [dict get $hbt_required required_sites] \
++  [dict get $hbt_required width_um] [dict get $hbt_required height_um] [dict get $hbt_required area_um2]]
+ 
+ # If tier classification is unavailable (A_max=0), fall back to initialize_floorplan -utilization
+ if {$A_max <= 0.0} {
++  if {$hbt_demand > 0} {
++    utl::error FP 145 "Cannot prove max(logic,HBT) floorplan size because tier logic area classification is unavailable."
++  }
+   puts "WARN: A_max <= 0 (cannot classify tier instances). Fallback to utilization-based initialize_floorplan."
+   set site_opt {}
+   if {[info exists ::env(PLACE_SITE)] && $::env(PLACE_SITE) ne ""} {
+@@ -93,11 +130,57 @@ if {$A_max <= 0.0} {
+   }
+   initialize_floorplan -utilization $core_util_pct -aspect_ratio $aspect_ratio -core_space [list $mB $mT $mL $mR] {*}$site_opt
+ } else {
+-  set core_area_um2 [expr {$A_max / $U_target}]
+-  set CORE_W [expr {sqrt($core_area_um2 / double($aspect_ratio))}]
+-  set CORE_H [expr {$CORE_W * double($aspect_ratio)}]
++  set logic_core_area_um2 [expr {$A_max / $U_target}]
++  set logic_core_w [expr {sqrt($logic_core_area_um2 / double($aspect_ratio))}]
++  set logic_core_h [expr {$logic_core_w * double($aspect_ratio)}]
++  set CORE_W $logic_core_w
++  set CORE_H $logic_core_h
++  set floorplan_size_driver "logic_area"
++  if {[dict get $hbt_required area_um2] > $logic_core_area_um2} {
++    set CORE_W [dict get $hbt_required width_um]
++    set CORE_H [dict get $hbt_required height_um]
++    set floorplan_size_driver "hbt_capacity"
++  }
++  set minimum_core_w $CORE_W
++  set minimum_core_h $CORE_H
+ 
+-  puts [format "INFO: Core W/H = %.6f / %.6f (um)" $CORE_W $CORE_H]
++  set site_opt {}
++  if {[info exists ::env(PLACE_SITE)] && $::env(PLACE_SITE) ne ""} {
++    set site_opt [list -site $::env(PLACE_SITE)]
++  }
++  if {$hbt_demand > 0} {
++    if {[llength $site_opt] == 0} {
++      utl::error FP 146 "PLACE_SITE is required to guard HBT capacity against floorplan snapping."
++    }
++    if {[catch {set floorplan_site [or_find_site_by_name_in_db $::env(PLACE_SITE)]} site_err]} {
++      utl::error FP 147 $site_err
++    }
++    set dbu [_get_dbu]
++    set site_width_um [expr {double([$floorplan_site getWidth]) / double($dbu)}]
++    set site_height_um [expr {double([$floorplan_site getHeight]) / double($dbu)}]
++    if {$site_width_um <= 0.0 || $site_height_um <= 0.0} {
++      utl::error FP 148 "PLACE_SITE reports non-positive dimensions."
++    }
++    # initialize_floorplan may snap both core edges inward.  Reserve two site
++    # quanta on each axis before that one-way operation, while preserving the
++    # requested aspect ratio.
++    set guarded_width [expr {max(
++      $minimum_core_w + 2.0 * $site_width_um,
++      ($minimum_core_h + 2.0 * $site_height_um) / $aspect_ratio
++    )}]
++    set CORE_W $guarded_width
++    set CORE_H [expr {$guarded_width * $aspect_ratio}]
++    append floorplan_size_driver "_site_snap_guarded"
++    puts [format "INFO: HBT site snap guard site=%s size={%.6f %.6f}um minimum_core={%.6f %.6f}um requested_core={%.6f %.6f}um" \
++      $::env(PLACE_SITE) $site_width_um $site_height_um \
++      $minimum_core_w $minimum_core_h $CORE_W $CORE_H]
++  }
++  set requested_core_area_um2 [expr {$CORE_W * $CORE_H}]
++
++  puts [format "INFO: Logic-required core W/H = %.6f / %.6f (um), area=%.6f" \
++    $logic_core_w $logic_core_h $logic_core_area_um2]
++  puts [format "INFO: Final core W/H = %.6f / %.6f (um), area=%.6f, driver=%s" \
++    $CORE_W $CORE_H $requested_core_area_um2 $floorplan_size_driver]
+   puts [format "INFO: Margins L/B/R/T = %.6f %.6f %.6f %.6f (um)" $mL $mB $mR $mT]
+ 
+   # Innovus floorPlan -s {CORE_W CORE_H mL mB mR mT}
+@@ -115,15 +198,60 @@ if {$A_max <= 0.0} {
+   puts [format "INFO: DIE_AREA  = {%.6f %.6f %.6f %.6f}" $die_lx $die_ly $die_ux $die_uy]
+   puts [format "INFO: CORE_AREA = {%.6f %.6f %.6f %.6f}" $core_lx $core_ly $core_ux $core_uy]
+ 
+-  set site_opt {}
+-  if {[info exists ::env(PLACE_SITE)] && $::env(PLACE_SITE) ne ""} {
+-    set site_opt [list -site $::env(PLACE_SITE)]
+-  }
+-
+   initialize_floorplan \
+     -die_area  [list $die_lx $die_ly $die_ux $die_uy] \
+     -core_area [list $core_lx $core_ly $core_ux $core_uy] \
+     {*}$site_opt
++
++  # Validate both the discrete legal-site count and the official Cadence-style
++  # pitch-area utilization bound before any floorplan handoff is written.
++  set actual_core_bbox [$block getCoreArea]
++  set actual_core_width_um [expr {double([$actual_core_bbox xMax] - [$actual_core_bbox xMin]) / double([_get_dbu])}]
++  set actual_core_height_um [expr {double([$actual_core_bbox yMax] - [$actual_core_bbox yMin]) / double([_get_dbu])}]
++  set actual_core_area_um2 [expr {$actual_core_width_um * $actual_core_height_um}]
++  set actual_hbt_capacity [::pin3d::hbt::grid_capacity \
++    $actual_core_width_um $actual_core_height_um \
++    [dict get $hbt_rule cut_width_um] \
++    [dict get $hbt_rule cut_height_um] \
++    [dict get $hbt_rule minimum_edge_spacing_um]]
++  set required_hbt_sites [dict get $hbt_required required_sites]
++  set pitch_area [expr {[dict get $hbt_rule legal_pitch_x_um] * [dict get $hbt_rule legal_pitch_y_um]}]
++  set hbt_pitch_area_utilization [expr {($hbt_demand == 0) ? 0.0 : (double($hbt_demand) * $pitch_area) / $actual_core_area_um2}]
++  set hbt_capacity_ok [expr {
++    [dict get $actual_hbt_capacity total_sites] >= $required_hbt_sites &&
++    $hbt_pitch_area_utilization <= ($hbt_util + 1.0e-12)
++  }]
++  if {!$hbt_capacity_ok} {
++    utl::error FP 149 [format "HBT capacity contract failed after floorplan: demand=%d required_sites=%d actual_sites=%d pitch_area_util=%.6f limit=%.6f" \
++      $hbt_demand $required_hbt_sites [dict get $actual_hbt_capacity total_sites] $hbt_pitch_area_utilization $hbt_util]
++  }
++  puts [format "INFO: HBT capacity PASS grid=%dx%d total=%d required=%d pitch_area_util=%.6f limit=%.6f" \
++    [dict get $actual_hbt_capacity sites_x] [dict get $actual_hbt_capacity sites_y] \
++    [dict get $actual_hbt_capacity total_sites] $required_hbt_sites $hbt_pitch_area_utilization $hbt_util]
++
++  set hbt_floorplan_contract_path [file join $RESULTS_DIR hbt_capacity.floorplan.tcl]
++  set hbt_floorplan_contract [dict merge $hbt_contract [dict create \
++    consumer ord-3d-floorplan \
++    logic_core_area_um2 $logic_core_area_um2 \
++    floorplan_size_driver $floorplan_size_driver \
++    minimum_core_width_um $minimum_core_w \
++    minimum_core_height_um $minimum_core_h \
++    requested_core_width_um $CORE_W \
++    requested_core_height_um $CORE_H \
++    requested_core_area_um2 $requested_core_area_um2 \
++    final_core_width_um $actual_core_width_um \
++    final_core_height_um $actual_core_height_um \
++    final_core_area_um2 $actual_core_area_um2 \
++    final_grid_sites_x [dict get $actual_hbt_capacity sites_x] \
++    final_grid_sites_y [dict get $actual_hbt_capacity sites_y] \
++    final_grid_total_sites [dict get $actual_hbt_capacity total_sites] \
++    required_hbt_sites $required_hbt_sites \
++    hbt_pitch_area_utilization $hbt_pitch_area_utilization \
++    capacity_validated 1]]
++  ::pin3d::hbt::write_contract $hbt_floorplan_contract_path $hbt_floorplan_contract
++  dict set stage_paths hbt_contract_in $hbt_contract_path
++  dict set stage_paths hbt_contract_out $hbt_floorplan_contract_path
++  dict set stage_paths hbt_capacity_validated 1
+ }
+ 
+ # ------------------------------------------------------------
+@@ -140,6 +268,7 @@ if {[info exists ::env(MAKE_TRACKS)] && $::env(MAKE_TRACKS) ne ""} {
+ set floorplan_cross_tier_report [file join $LOG_DIR "2_3_floorplan_3d.nets"]
+ set floorplan_cross_tier_stats [report_cross_tier_snapshot $floorplan_cross_tier_report -label "floorplan_3d"]
+ puts "INFO(OR): floorplan cross-tier estimate=[dict get $floorplan_cross_tier_stats cross_tier_all]"
++puts "INFO(OR): partition HBT demand used for capacity contract=$hbt_demand"
+ 
+ handoff_write_stage_outputs $stage_paths \
+   -copy_sdc 1 \
+diff --git a/scripts_openroad/hbt_capacity_contract.tcl b/scripts_openroad/hbt_capacity_contract.tcl
+new file mode 100644
+index 0000000..f95a7db
+--- /dev/null
++++ b/scripts_openroad/hbt_capacity_contract.tcl
+@@ -0,0 +1,255 @@
++# SPDX-License-Identifier: BSD-3-Clause
++#
++# Shared, fail-closed HBT capacity contract for the OpenROAD 3D stages.
++# Geometry comes from the technology database loaded from the selected
++# TECH_LEF.  The pure sizing procedures intentionally remain usable by tclsh
++# fixtures without loading OpenROAD.
++
++namespace eval ::pin3d::hbt {
++  variable schema_version "1.0.0"
++}
++
++proc ::pin3d::hbt::_require_positive {name value} {
++  set number [expr {double($value)}]
++  if {$number <= 0.0} {
++    error "$name must be > 0, got $value"
++  }
++  return $number
++}
++
++proc ::pin3d::hbt::_require_utilization {value} {
++  set utilization [expr {double($value)}]
++  if {$utilization <= 0.0 || $utilization > 1.0} {
++    error "HBT capacity utilization must be in (0,1], got $value"
++  }
++  return $utilization
++}
++
++proc ::pin3d::hbt::_layer_value_dbu {layer odb_command object_method field_name} {
++  if {[llength [info commands $odb_command]]} {
++    if {![catch {$odb_command $layer} value] && $value > 0} {
++      return $value
++    }
++  }
++  if {![catch {$layer $object_method} value] && $value > 0} {
++    return $value
++  }
++  error "cannot read positive $field_name from HBT layer"
++}
++
++proc ::pin3d::hbt::rule_from_db {layer_name} {
++  if {![llength [info commands ::ord::get_db]]} {
++    error "rule_from_db requires an OpenROAD database"
++  }
++  set db [::ord::get_db]
++  if {$db eq "" || $db eq "NULL"} {
++    error "OpenROAD database is not loaded"
++  }
++  set tech [::odb::dbDatabase_getTech $db]
++  if {$tech eq "" || $tech eq "NULL"} {
++    error "OpenROAD technology database is not loaded"
++  }
++  set layer [::odb::dbTech_findLayer $tech $layer_name]
++  if {$layer eq "" || $layer eq "NULL"} {
++    error "HBT cut layer '$layer_name' is absent from the selected TECH_LEF"
++  }
++  set dbu [::odb::dbTech_getDbUnitsPerMicron $tech]
++  if {$dbu <= 0} {
++    error "invalid database units per micron: $dbu"
++  }
++  set width_dbu [::_pin3d_hbt_layer_value_dbu $layer width]
++  set spacing_dbu [::_pin3d_hbt_layer_value_dbu $layer spacing]
++  set width_um [expr {double($width_dbu) / double($dbu)}]
++  set spacing_um [expr {double($spacing_dbu) / double($dbu)}]
++  return [dict create \
++    layer $layer_name \
++    cut_width_um $width_um \
++    cut_height_um $width_um \
++    minimum_edge_spacing_um $spacing_um \
++    legal_pitch_x_um [expr {$width_um + $spacing_um}] \
++    legal_pitch_y_um [expr {$width_um + $spacing_um}]]
++}
++
++proc ::pin3d::hbt::rule_from_lef {path layer_name} {
++  if {![file exists $path]} {
++    error "HBT TECH_LEF is missing: $path"
++  }
++  set fh [open $path r]
++  set in_target 0
++  set width ""
++  set spacing ""
++  while {[gets $fh line] >= 0} {
++    if {!$in_target && [regexp {^\s*LAYER\s+(\S+)} $line -> candidate]} {
++      if {$candidate eq $layer_name} {
++        set in_target 1
++      }
++      continue
++    }
++    if {!$in_target} {
++      continue
++    }
++    if {[regexp {^\s*WIDTH\s+([0-9.+-Ee]+)\s*;} $line -> value]} {
++      set width [expr {double($value)}]
++      continue
++    }
++    if {[regexp {^\s*SPACING\s+([0-9.+-Ee]+)\s*;} $line -> value]} {
++      set spacing [expr {double($value)}]
++      continue
++    }
++    if {[regexp {^\s*END\s+(\S+)} $line -> candidate] && $candidate eq $layer_name} {
++      break
++    }
++  }
++  close $fh
++  if {$width eq "" || $spacing eq "" || $width <= 0.0 || $spacing < 0.0} {
++    error "cannot derive positive WIDTH and non-negative SPACING for '$layer_name' from $path"
++  }
++  return [dict create \
++    layer $layer_name \
++    cut_width_um $width \
++    cut_height_um $width \
++    minimum_edge_spacing_um $spacing \
++    legal_pitch_x_um [expr {$width + $spacing}] \
++    legal_pitch_y_um [expr {$width + $spacing}]]
++}
++
++# Keep the OpenDB command dispatch out of expr/catch substitutions above.  A
++# global shim also avoids namespace command resolution differences across the
++# pinned OpenROAD Tcl builds.
++proc ::_pin3d_hbt_layer_value_dbu {layer field} {
++  if {$field eq "width"} {
++    return [::pin3d::hbt::_layer_value_dbu $layer ::odb::dbTechLayer_getWidth getWidth width]
++  }
++  if {$field eq "spacing"} {
++    return [::pin3d::hbt::_layer_value_dbu $layer ::odb::dbTechLayer_getSpacing getSpacing spacing]
++  }
++  error "unsupported HBT layer field: $field"
++}
++
++proc ::pin3d::hbt::axis_capacity {span_um cut_um pitch_um} {
++  set span [expr {double($span_um)}]
++  set cut [::_pin3d_hbt_require_positive cut $cut_um]
++  set pitch [::_pin3d_hbt_require_positive pitch $pitch_um]
++  if {$span + 1.0e-12 < $cut} {
++    return 0
++  }
++  return [expr {int(floor((($span - $cut) / $pitch) + 1.0e-12)) + 1}]
++}
++
++proc ::_pin3d_hbt_require_positive {name value} {
++  return [::pin3d::hbt::_require_positive $name $value]
++}
++
++proc ::pin3d::hbt::grid_capacity {width_um height_um cut_width_um cut_height_um spacing_um} {
++  set cut_w [::_pin3d_hbt_require_positive cut_width $cut_width_um]
++  set cut_h [::_pin3d_hbt_require_positive cut_height $cut_height_um]
++  set spacing [expr {double($spacing_um)}]
++  if {$spacing < 0.0} {
++    error "minimum edge spacing must be >= 0, got $spacing_um"
++  }
++  set pitch_x [expr {$cut_w + $spacing}]
++  set pitch_y [expr {$cut_h + $spacing}]
++  set nx [axis_capacity $width_um $cut_w $pitch_x]
++  set ny [axis_capacity $height_um $cut_h $pitch_y]
++  return [dict create \
++    width_um [expr {double($width_um)}] \
++    height_um [expr {double($height_um)}] \
++    pitch_x_um $pitch_x \
++    pitch_y_um $pitch_y \
++    sites_x $nx \
++    sites_y $ny \
++    total_sites [expr {$nx * $ny}]]
++}
++
++proc ::pin3d::hbt::required_core_wh {demand utilization aspect_ratio cut_width_um cut_height_um spacing_um} {
++  set count [expr {int($demand)}]
++  if {$count < 0} {
++    error "HBT demand must be >= 0, got $demand"
++  }
++  set util [_require_utilization $utilization]
++  set aspect [::_pin3d_hbt_require_positive aspect_ratio $aspect_ratio]
++  set cut_w [::_pin3d_hbt_require_positive cut_width $cut_width_um]
++  set cut_h [::_pin3d_hbt_require_positive cut_height $cut_height_um]
++  set spacing [expr {double($spacing_um)}]
++  if {$spacing < 0.0} {
++    error "minimum edge spacing must be >= 0, got $spacing_um"
++  }
++  if {$count == 0} {
++    return [dict create \
++      demand 0 utilization $util required_sites 0 \
++      width_um 0.0 height_um 0.0 area_um2 0.0 \
++      pitch_x_um [expr {$cut_w + $spacing}] \
++      pitch_y_um [expr {$cut_h + $spacing}] \
++      sites_x 0 sites_y 0 total_sites 0]
++  }
++
++  set pitch_x [expr {$cut_w + $spacing}]
++  set pitch_y [expr {$cut_h + $spacing}]
++  set required_sites [expr {int(ceil((double($count) / $util) - 1.0e-12))}]
++  set area_bound [expr {(double($count) * $pitch_x * $pitch_y) / $util}]
++  set width_from_area [expr {sqrt($area_bound / $aspect)}]
++  set best ""
++
++  for {set nx 1} {$nx <= $required_sites} {incr nx} {
++    set ny [expr {int(ceil(double($required_sites) / double($nx)))}]
++    set min_w [expr {$cut_w + double($nx - 1) * $pitch_x}]
++    set min_h [expr {$cut_h + double($ny - 1) * $pitch_y}]
++    set width [expr {max($width_from_area, $min_w, $min_h / $aspect)}]
++    set height [expr {$width * $aspect}]
++    set area [expr {$width * $height}]
++    set capacity [grid_capacity $width $height $cut_w $cut_h $spacing]
++    if {[dict get $capacity total_sites] < $required_sites} {
++      continue
++    }
++    if {$best eq "" || $area < [dict get $best area_um2]} {
++      set best [dict merge $capacity [dict create \
++        demand $count \
++        utilization $util \
++        required_sites $required_sites \
++        area_um2 $area]]
++    }
++  }
++  if {$best eq ""} {
++    error "cannot construct an HBT grid for demand=$count utilization=$util"
++  }
++  return $best
++}
++
++proc ::pin3d::hbt::write_contract {path contract} {
++  set parent [file dirname $path]
++  if {![file isdirectory $parent]} {
++    file mkdir $parent
++  }
++  set fh [open $path w]
++  puts $fh $contract
++  close $fh
++}
++
++proc ::pin3d::hbt::read_contract {path} {
++  if {![file exists $path]} {
++    error "missing HBT capacity contract: $path"
++  }
++  set fh [open $path r]
++  set payload [string trim [read $fh]]
++  close $fh
++  if {$payload eq "" || ([llength $payload] % 2) != 0} {
++    error "malformed HBT capacity contract: $path"
++  }
++  return [dict create {*}$payload]
++}
++
++proc ::pin3d::hbt::assert_rule_matches {contract rule {tol 1.0e-12}} {
++  foreach key {cut_width_um cut_height_um minimum_edge_spacing_um legal_pitch_x_um legal_pitch_y_um} {
++    if {![dict exists $contract $key] || ![dict exists $rule $key]} {
++      error "HBT contract/rule is missing '$key'"
++    }
++    set delta [expr {abs(double([dict get $contract $key]) - double([dict get $rule $key]))}]
++    if {$delta > $tol} {
++      error "HBT contract '$key' does not match selected TECH_LEF: contract=[dict get $contract $key] tech=[dict get $rule $key]"
++    }
++  }
++  if {[dict get $contract layer] ne [dict get $rule layer]} {
++    error "HBT contract layer does not match selected TECH_LEF"
++  }
++  return 1
++}
+diff --git a/scripts_openroad/tier_partition.tcl b/scripts_openroad/tier_partition.tcl
+index b5a0a88..2d77c91 100644
+--- a/scripts_openroad/tier_partition.tcl
++++ b/scripts_openroad/tier_partition.tcl
+@@ -48,23 +48,23 @@ if {![llength [info commands evaluate_candidate]]} {
+   source $::env(OPENROAD_SCRIPTS_DIR)/tier_partition_helpers.tcl
+ }
+ 
+-# Target cut budget from hb_layer density
++# Target cut budget from the selected TECH_LEF and the current 2D die.
+ # ------------------------------------------------------------
+-puts [format {INFO %s: HB layer=%s width=%.3fum spacing=%.3fum (pitch=%.3fum) density=%.3f cuts_per_net=%d tol=%d} \
+-  [_ts] $::HB_CUT_LAYER $::HB_LAYER_WIDTH_UM $::HB_LAYER_SPACING_UM \
+-  [expr {$::HB_LAYER_WIDTH_UM + $::HB_LAYER_SPACING_UM}] \
++puts [format {INFO %s: HB layer=%s width=%.3fum height=%.3fum spacing=%.3fum (pitch={%.3f %.3f}um) density=%.3f cuts_per_net=%d tol=%d source=TECH_LEF} \
++  [_ts] $::HB_CUT_LAYER $::HB_LAYER_WIDTH_UM $::HB_LAYER_HEIGHT_UM $::HB_LAYER_SPACING_UM \
++  [dict get $::HB_TECH_RULE legal_pitch_x_um] [dict get $::HB_TECH_RULE legal_pitch_y_um] \
+   $::HB_VIA_DENSITY $::CUTS_PER_NET $::CUT_TOL]
+ flush stdout
+ 
+-set pitch_x [expr {$::HB_LAYER_WIDTH_UM + $::HB_LAYER_SPACING_UM}]
+-set pitch_y [expr {$::HB_LAYER_WIDTH_UM + $::HB_LAYER_SPACING_UM}]
+ lassign [get_die_wh_area_um2] die_w die_h die_area
+ puts [format {INFO %s: DIE w=%.3fum h=%.3fum area=%.3fum^2} [_ts] $die_w $die_h $die_area]
+ flush stdout
+-lassign [estimate_max_hb_cuts_from_pitch $die_area $pitch_x $pitch_y $::HB_VIA_DENSITY] grid nmax
++set grid [::pin3d::hbt::grid_capacity \
++  $die_w $die_h $::HB_LAYER_WIDTH_UM $::HB_LAYER_HEIGHT_UM $::HB_LAYER_SPACING_UM]
++set nmax [expr {int(floor(double($::HB_VIA_DENSITY) * double([dict get $grid total_sites])))}]
+ set target_cut [expr {int(floor(double($nmax) / double($::CUTS_PER_NET)))}]
+-puts [format {STAT %s: grid=%d max_hb_cuts=%d => CUT_NET_BUDGET(target)=%d} \
+-  [_ts] $grid $nmax $target_cut]
++puts [format {STAT %s: grid=%dx%d total_sites=%d max_hb_cuts=%d => CUT_NET_BUDGET(target)=%d} \
++  [_ts] [dict get $grid sites_x] [dict get $grid sites_y] [dict get $grid total_sites] $nmax $target_cut]
+ flush stdout
+ 
+ # ------------------------------------------------------------
+@@ -92,6 +92,11 @@ set plan "PARTITION SWEEP @ [_ts]\n"
+ append_plan_line plan "floorplan_def=$fp_def"
+ append_plan_line plan [format "mode=%s N=%d seed=%d timing_aware=true" $mode $::PAR_BAL_ITER $::PAR_FIXED_SEED]
+ append_plan_line plan [format "target_cut=%d tol=%d" $target_cut $::CUT_TOL]
++append_plan_line plan [format "hbt_rule_source=selected_TECH_LEF layer=%s cut={%.6f %.6f} spacing=%.6f pitch={%.6f %.6f}" \
++  $::HB_CUT_LAYER $::HB_LAYER_WIDTH_UM $::HB_LAYER_HEIGHT_UM $::HB_LAYER_SPACING_UM \
++  [dict get $grid pitch_x_um] [dict get $grid pitch_y_um]]
++append_plan_line plan [format "current_hbt_grid=%dx%d total=%d usable=%d utilization=%.6f" \
++  [dict get $grid sites_x] [dict get $grid sites_y] [dict get $grid total_sites] $nmax $::HB_VIA_DENSITY]
+ append_plan_line plan [format "target_balance=%s" $target_balance]
+ append_plan_line plan [format "mode_b_pin_partition=%d" $::PIN_PARTITION_MODE_B]
+ append_plan_line plan "solve_time_pin_constraints=disabled"
+@@ -192,6 +197,43 @@ if {$best eq ""} { utl::error PAR 962 "No valid sweep result." }
+ set final_sol [file join $::env(RESULTS_DIR) partition.txt]
+ file copy -force [dict get $best solution_file] $final_sol
+ 
++# The partition proposal is allowed to request a larger 3D floorplan, but the
++# next physical stage must consume this contract and prove capacity before it
++# can write a handoff.  This avoids silently treating an infeasible 2D die as
++# a valid HBT floorplan.
++set tech_lef $::env(HBT_TECH_LEF)
++set hbt_demand [expr {[dict get $best cut] * $::CUTS_PER_NET}]
++set requires_floorplan_expansion [expr {![dict get $best feasible]}]
++set hbt_contract_path [file join $::env(RESULTS_DIR) hbt_capacity.contract.tcl]
++set hbt_contract [dict create \
++  schema_version $::pin3d::hbt::schema_version \
++  producer ord-tier-partition \
++  tech_lef $tech_lef \
++  layer $::HB_CUT_LAYER \
++  cut_width_um $::HB_LAYER_WIDTH_UM \
++  cut_height_um $::HB_LAYER_HEIGHT_UM \
++  minimum_edge_spacing_um $::HB_LAYER_SPACING_UM \
++  legal_pitch_x_um [dict get $grid pitch_x_um] \
++  legal_pitch_y_um [dict get $grid pitch_y_um] \
++  capacity_utilization $::HB_VIA_DENSITY \
++  cuts_per_net $::CUTS_PER_NET \
++  selected_cut_nets [dict get $best cut] \
++  estimated_hbt_demand $hbt_demand \
++  current_die_width_um $die_w \
++  current_die_height_um $die_h \
++  current_grid_sites_x [dict get $grid sites_x] \
++  current_grid_sites_y [dict get $grid sites_y] \
++  current_grid_total_sites [dict get $grid total_sites] \
++  current_usable_hbt_capacity $nmax \
++  selected_feasible_current_die [dict get $best feasible] \
++  requires_floorplan_expansion $requires_floorplan_expansion \
++  floorplan_capacity_validation_required 1]
++::pin3d::hbt::write_contract $hbt_contract_path $hbt_contract
++if {$requires_floorplan_expansion} {
++  puts [format {WARN %s: selected partition requires 3D floorplan expansion (demand=%d current_usable_capacity=%d); floorplan handoff will fail closed unless capacity is proven.} \
++    [_ts] $hbt_demand $nmax]
++}
++
+ set final_sum [file join $::env(RESULTS_DIR) partition.result.tcl]
+ set sum_dict [dict create \
+   mode [dict get $best mode] \
+@@ -214,6 +256,10 @@ set sum_dict [dict create \
+   best_ratio0 [dict get $best ratio0] \
+   best_ratio1 [dict get $best ratio1] \
+   best_balance_err [dict get $best balance_err] \
++  hbt_contract_file $hbt_contract_path \
++  hbt_estimated_demand $hbt_demand \
++  hbt_current_usable_capacity $nmax \
++  hbt_requires_floorplan_expansion $requires_floorplan_expansion \
+   solution_file [dict get $best solution_file] \
+   sweep_dir $out_dir \
+   plan_file $plan_file]
+@@ -225,6 +271,7 @@ puts [format {INFO %s: FINAL mode=%s best_tag=%s ub=%.6f base_balance=%s pin_par
+   [dict get $best target_balance] [dict get $best cut] [dict get $best feasible] \
+   [dict get $best ratio0] [dict get $best ratio1] [dict get $best balance_err] $final_sol]
+ puts [format {INFO %s: summary=%s} [_ts] $final_sum]
++puts [format {INFO %s: hbt_contract=%s} [_ts] $hbt_contract_path]
+ flush stdout
+ 
+ exit
+diff --git a/scripts_openroad/tier_partition_helpers.tcl b/scripts_openroad/tier_partition_helpers.tcl
+index 9f5a68a..c317a89 100644
+--- a/scripts_openroad/tier_partition_helpers.tcl
++++ b/scripts_openroad/tier_partition_helpers.tcl
+@@ -9,6 +9,8 @@ proc _get {name def} {
+   return $def
+ }
+ 
++source [file join $::env(OPENROAD_SCRIPTS_DIR) hbt_capacity_contract.tcl]
++
+ proc write_kv_file {outfile kv_dict} {
+   set fh [open $outfile w]
+   puts $fh $kv_dict
+@@ -74,14 +76,18 @@ if {$::PAR_BAL_HI < $::PAR_BAL_LO} {
+ # Deterministic seed
+ set ::PAR_FIXED_SEED 1
+ 
+-# hb_layer density-based cut budget knobs
+-set ::HB_CUT_LAYER         "hb_layer"
+-set ::HB_LAYER_WIDTH_UM    0.5
+-set ::HB_LAYER_SPACING_UM  0.5
+-set ::HB_LAYER_RES_OHM     0.02
+-set ::HB_VIA_DENSITY       0.5
+-set ::CUTS_PER_NET         1
+-set ::CUT_TOL              0
++# HBT budget knobs.  Width and spacing are intentionally absent here: they
++# must come from the technology database loaded from the selected TECH_LEF.
++set ::HB_CUT_LAYER   [_get HB_CUT_LAYER "hb_layer"]
++set ::HB_VIA_DENSITY [expr {double([_get HBT_MAX_CORE_UTILIZATION 0.8])}]
++set ::CUTS_PER_NET   [expr {int([_get HBT_CUTS_PER_NET 1])}]
++set ::CUT_TOL        [expr {int([_get HBT_CUT_TOL 0])}]
++if {$::HB_VIA_DENSITY <= 0.0 || $::HB_VIA_DENSITY > 1.0} {
++  utl::error PAR 968 "HBT_MAX_CORE_UTILIZATION must be in (0,1]."
++}
++if {$::CUTS_PER_NET < 1 || $::CUT_TOL < 0} {
++  utl::error PAR 969 "HBT_CUTS_PER_NET must be >= 1 and HBT_CUT_TOL must be >= 0."
++}
+ 
+ set ::IGNORE_NET_NAMES {VDD VSS VPWR VGND TOP_VDD TOP_VSS BOT_VDD BOT_VSS}
+ set ::DUMP_CUT_NETS      false
+@@ -98,6 +104,14 @@ if {$::PIN_PARTITION_MODE_B != 0 && $::PIN_PARTITION_MODE_B != 1} {
+ # ------------------------------------------------------------
+ load_design 2_2_floorplan_io.odb 1_synth.sdc "Start Triton Partitioning (N-point sweep)"
+ 
++if {![info exists ::env(HBT_TECH_LEF)] || $::env(HBT_TECH_LEF) eq ""} {
++  utl::error PAR 974 "HBT_TECH_LEF must name the 3D TECH_LEF used by later physical stages."
++}
++set ::HB_TECH_RULE [::pin3d::hbt::rule_from_lef $::env(HBT_TECH_LEF) $::HB_CUT_LAYER]
++set ::HB_LAYER_WIDTH_UM [dict get $::HB_TECH_RULE cut_width_um]
++set ::HB_LAYER_HEIGHT_UM [dict get $::HB_TECH_RULE cut_height_um]
++set ::HB_LAYER_SPACING_UM [dict get $::HB_TECH_RULE minimum_edge_spacing_um]
++
+ set fp_def [file join $::env(RESULTS_DIR) 2_2_floorplan_io.def]
+ if {![file exists $fp_def]} {
+   utl::error PAR 961 "Floorplan DEF not found: $fp_def"

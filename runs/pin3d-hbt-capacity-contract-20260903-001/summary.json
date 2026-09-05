@@ -1,0 +1,94 @@
+{
+  "checks": {
+    "floorplan_stage_ab_executed": true,
+    "floorplan_stage_ab_passed": true,
+    "observed_route_hbt_count_fits_reserved_sites": true,
+    "planned_discrete_capacity_meets_reserved_sites": true,
+    "route_drc_zero": false,
+    "selected_partition_exceeds_current_usable_capacity": true,
+    "source_hbt_root_cause_proven": true
+  },
+  "classification": "research_only",
+  "conclusion": {
+    "direct_problem": "The 62-cut partition demand exceeds the current usable HBT capacity of 20 sites derived from the selected TECH_LEF.",
+    "next_gate": "Add a legal-lattice HBT placement/window contract and validate it before any bounded reroute; keep full route and full smoke closed until then.",
+    "planned_contract": "At utilization 0.800, the partition reserves 78 sites on a 9x9 grid and requires at least 14.085453x14.085453 um before handoff.",
+    "scope": "This is a static capacity-contract proof only. It does not prove that the router will place HBTs on the legal lattice, eliminate the 530 hb_layer markers, or resolve the remaining 112 route markers."
+  },
+  "contract_inputs": {
+    "capacity_utilization": 0.8,
+    "cut_height_um": 0.032,
+    "cut_width_um": 0.032,
+    "legal_pitch_x_um": 1.6,
+    "legal_pitch_y_um": 1.6,
+    "minimum_edge_spacing_um": 1.568,
+    "observed_final_route_hbt_count": 70,
+    "partition_selected_cut_demand": 62,
+    "tech_rule_source": "selected_TECH_LEF"
+  },
+  "current_floorplan": {
+    "height_um": 6.676,
+    "partition_selected_feasible": false,
+    "pitch_x_um": 1.6,
+    "pitch_y_um": 1.6,
+    "sites_x": 5,
+    "sites_y": 5,
+    "total_sites": 25,
+    "usable_capacity_at_limit": 20,
+    "width_um": 6.676
+  },
+  "forbidden_shortcuts": [
+    "reduce_1.568um_spacing",
+    "disable_or_waive_route_drc",
+    "no_pin_access",
+    "full_route_before_floorplan_contract_ab"
+  ],
+  "gates": {
+    "full_route_gate_open": false,
+    "full_smoke_gate_open": false,
+    "legal_hbt_lattice_placement_gate_passed": false,
+    "partition_pre_floorplan_ab_gate_open": true,
+    "partition_pre_floorplan_ab_gate_passed": true,
+    "static_contract_gate_open": true
+  },
+  "generated_at": "2026-09-02T17:36:41.729420+00:00",
+  "planned_floorplan": {
+    "area_um2": 198.40000000000006,
+    "demand": 62,
+    "height_um": 14.08545348932721,
+    "pitch_x_um": 1.6,
+    "pitch_y_um": 1.6,
+    "required_sites": 78,
+    "sites_x": 9,
+    "sites_y": 9,
+    "total_sites": 81,
+    "utilization": 0.8,
+    "width_um": 14.08545348932721
+  },
+  "run_id": "pin3d-hbt-capacity-contract-20260903-001",
+  "schema_version": "1.0.0",
+  "source": {
+    "cadence_reference": [
+      "upstream/taiwei-pin-3d/scripts_cadence/innovus_3d_floorplan.tcl",
+      "upstream/taiwei-pin-3d/scripts_cadence/innovus_hb_layer_obs.tcl"
+    ],
+    "files": [
+      "runs/pin3d-openroad-pa-ab-20260901-003/hbt_spacing_analysis.json",
+      "upstream/taiwei-pin-3d/platforms/asap7_3D/config.mk",
+      "patches/taiwei-pin-3d/0001-tech-derived-hbt-capacity-contract.patch",
+      "scripts/with_taiwei_hbt_contract_patch.sh",
+      "runs/pin3d-hbt-capacity-contract-20260903-001/stage_ab.json"
+    ],
+    "pinned_taiwei_commit": "c85b79352eefc31a588da3ef873e4fd68a3df3f2",
+    "sha256": {
+      "patches/taiwei-pin-3d/0001-tech-derived-hbt-capacity-contract.patch": "b1b585519820c3818e53fd4ff593c087dba7c22f2dca02b9d10cba0f5e62977d",
+      "runs/pin3d-hbt-capacity-contract-20260903-001/stage_ab.json": "e3170aa52f6c0ede9302253d1e5d44fbb513a290efe0d38ba80a03940783fecf",
+      "runs/pin3d-openroad-pa-ab-20260901-003/hbt_spacing_analysis.json": "718de6c0e22f714a9ad5487e788bb4a33c27336da96d007e5a8ac61a3d3cd80e",
+      "scripts/with_taiwei_hbt_contract_patch.sh": "ecae5ab4f944cb9fb873784effdd97e48d1405a8f027fe027cacd7f6975a671d",
+      "upstream/taiwei-pin-3d/platforms/asap7_3D/config.mk": "2e5778b5deafbc18568f5a4a95f362a3399809b5e55f6ef44a72ace344b57ee8"
+    }
+  },
+  "source_run_id": "pin3d-openroad-pa-ab-20260901-003",
+  "stage_ab_report": "runs/pin3d-hbt-capacity-contract-20260903-001/stage_ab.json",
+  "status": "floorplan_contract_ab_passed_route_not_run"
+}

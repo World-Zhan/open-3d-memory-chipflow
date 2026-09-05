@@ -83,7 +83,66 @@
         "hb_cut_spacing_root_cause_proven": true,
         "all_route_drc_root_causes_proven": false,
         "full_smoke_gate_open": false,
-        "next_gate": "derive HBT budget from actual TECH_LEF, fail closed on infeasible partitioning, and add legal HBT site/capacity planning before reroute"
+        "next_gate": "completed by the bounded partition/pre/floorplan capacity-contract A/B; legal-lattice HBT placement remains required before reroute"
+      },
+      "hbt_capacity_contract_ab": {
+        "status": "floorplan_contract_ab_passed_route_not_run",
+        "classification": "research_only",
+        "run_id": "pin3d-hbt-capacity-contract-20260903-001",
+        "summary": "runs/pin3d-hbt-capacity-contract-20260903-001/summary.json",
+        "stage_ab_evidence": "runs/pin3d-hbt-capacity-contract-20260903-001/stage_ab.json",
+        "patch": "patches/taiwei-pin-3d/0001-tech-derived-hbt-capacity-contract.patch",
+        "wrapper": "scripts/with_taiwei_hbt_contract_patch.sh",
+        "stages": {
+          "ord_tier_partition": "pass",
+          "ord_pre": "pass",
+          "ord_3d_floorplan": "pass_attempt_2_actual_core_validation"
+        },
+        "tech_rule": {
+          "source": "selected_3d_tech_lef_then_revalidated_against_openroad_db",
+          "cut_width_um": 0.032,
+          "minimum_edge_spacing_um": 1.568,
+          "legal_pitch_um": 1.6,
+          "capacity_utilization_limit": 0.8
+        },
+        "partition": {
+          "selected_cut_demand": 62,
+          "current_2d_die_width_um": 9.13,
+          "current_2d_die_height_um": 9.13,
+          "current_grid_sites": 36,
+          "current_usable_capacity": 28,
+          "selected_feasible_current_die": false,
+          "requires_floorplan_expansion": true,
+          "reserved_required_sites": 78
+        },
+        "floorplan": {
+          "minimum_hbt_core_width_um": 14.08545348932721,
+          "minimum_hbt_core_height_um": 14.08545348932721,
+          "site_snap_guarded_request_width_um": 14.62545348932721,
+          "site_snap_guarded_request_height_um": 14.62545348932721,
+          "actual_odb_core_width_um": 14.58,
+          "actual_odb_core_height_um": 14.31,
+          "actual_grid_sites_x": 10,
+          "actual_grid_sites_y": 9,
+          "actual_grid_total_sites": 90,
+          "actual_hbt_pitch_area_utilization": 0.7607369255530345,
+          "capacity_validated": true
+        },
+        "requested_size_only_attempt": {
+          "accepted": false,
+          "actual_odb_core_width_um": 14.04,
+          "actual_odb_core_height_um": 13.77,
+          "actual_hbt_pitch_area_utilization": 0.8209762748615327,
+          "reason": "OpenROAD site/row snapping made the actual core smaller than the requested 0.8 utilization bound"
+        },
+        "gates": {
+          "partition_pre_floorplan_capacity_contract_passed": true,
+          "legal_hbt_lattice_placement_passed": false,
+          "route_rerun_performed": false,
+          "route_drc_zero": false,
+          "full_smoke_gate_open": false
+        },
+        "next_gate": "add and validate a legal 1.6um HBT placement/window lattice before any bounded reroute; capacity alone does not clear 530 or the remaining 112 markers"
       }
     },
     "C_sram_3d_memory_extension": {

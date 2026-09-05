@@ -14,6 +14,8 @@ runs/*/signoff.attempt-*/lvs/*
 !runs/*/signoff.attempt-*/lvs/port_mismatch_analysis.json
 !runs/pin3d-openroad-pa-ab-*/summary.json
 !runs/pin3d-openroad-pa-ab-*/hbt_spacing_analysis.json
+!runs/pin3d-hbt-capacity-contract-*/summary.json
+!runs/pin3d-hbt-capacity-contract-*/stage_ab.json
 reports/generated/
 .state/
 .work/
