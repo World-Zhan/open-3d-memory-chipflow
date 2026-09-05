@@ -1,0 +1,4317 @@
+{
+  "cell": "sg13g2_IOPadIn",
+  "elapsed_seconds": 0.96,
+  "klayout_version": "0.30.5",
+  "layers": [
+    {
+      "datatype": 0,
+      "filled_geometry_equal": false,
+      "labels_equal": true,
+      "layer": 1,
+      "sources": {
+        "croc": {
+          "area_dbu2": 9807033200,
+          "area_um2": 9807.0332,
+          "bbox_dbu": [
+            0,
+            6000,
+            80000,
+            167150
+          ],
+          "expanded_shapes": {
+            "box": 15,
+            "polygon": 9
+          },
+          "labels": [],
+          "merged_polygons": 17
+        },
+        "pinned_pdk": {
+          "area_dbu2": 9820910700,
+          "area_um2": 9820.9107,
+          "bbox_dbu": [
+            0,
+            6000,
+            80000,
+            167150
+          ],
+          "expanded_shapes": {
+            "box": 19,
+            "polygon": 9
+          },
+          "labels": [],
+          "merged_polygons": 19
+        }
+      },
+      "xor": {
+        "area_dbu2": 13877500,
+        "area_um2": 13.8775,
+        "bbox_dbu": [
+          42330,
+          140170,
+          51980,
+          160380
+        ],
+        "merged_polygons": 4
+      }
+    },
+    {
+      "datatype": 0,
+      "filled_geometry_equal": false,
+      "labels_equal": true,
+      "layer": 5,
+      "sources": {
+        "croc": {
+          "area_dbu2": 8138000,
+          "area_um2": 8.138,
+          "bbox_dbu": [
+            40190,
+            141110,
+            41990,
+            166550
+          ],
+          "expanded_shapes": {
+            "box": 2,
+            "polygon": 1
+          },
+          "labels": [],
+          "merged_polygons": 3
+        },
+        "pinned_pdk": {
+          "area_dbu2": 18798500,
+          "area_um2": 18.7985,
+          "bbox_dbu": [
+            40190,
+            141040,
+            51640,
+            166660
+          ],
+          "expanded_shapes": {
+            "box": 4,
+            "polygon": 3
+          },
+          "labels": [],
+          "merged_polygons": 7
+        }
+      },
+      "xor": {
+        "area_dbu2": 11452500,
+        "area_um2": 11.4525,
+        "bbox_dbu": [
+          41540,
+          141040,
+          51640,
+          166660
+        ],
+        "merged_polygons": 6
+      }
+    },
+    {
+      "datatype": 2,
+      "filled_geometry_equal": false,
+      "labels_equal": true,
+      "layer": 5,
+      "sources": {
+        "croc": {
+          "area_dbu2": 0,
+          "area_um2": 0.0,
+          "bbox_dbu": null,
+          "expanded_shapes": {},
+          "labels": [],
+          "merged_polygons": 0
+        },
+        "pinned_pdk": {
+          "area_dbu2": 6282000,
+          "area_um2": 6.282,
+          "bbox_dbu": [
+            48700,
+            141040,
+            51640,
+            147600
+          ],
+          "expanded_shapes": {
+            "box": 6
+          },
+          "labels": [],
+          "merged_polygons": 6
+        }
+      },
+      "xor": {
+        "area_dbu2": 6282000,
+        "area_um2": 6.282,
+        "bbox_dbu": [
+          48700,
+          141040,
+          51640,
+          147600
+        ],
+        "merged_polygons": 6
+      }
+    },
+    {
+      "datatype": 0,
+      "filled_geometry_equal": false,
+      "labels_equal": true,
+      "layer": 6,
+      "sources": {
+        "croc": {
+          "area_dbu2": 1889126400,
+          "area_um2": 1889.1264,
+          "bbox_dbu": [
+            90,
+            6090,
+            79810,
+            167080
+          ],
+          "expanded_shapes": {
+            "box": 73794
+          },
+          "labels": [],
+          "merged_polygons": 73794
+        },
+        "pinned_pdk": {
+          "area_dbu2": 1890662400,
+          "area_um2": 1890.6624,
+          "bbox_dbu": [
+            90,
+            6090,
+            79810,
+            167080
+          ],
+          "expanded_shapes": {
+            "box": 73863
+          },
+          "labels": [],
+          "merged_polygons": 73854
+        }
+      },
+      "xor": {
+        "area_dbu2": 1587200,
+        "area_um2": 1.5872,
+        "bbox_dbu": [
+          41685,
+          140240,
+          51910,
+          166570
+        ],
+        "merged_polygons": 62
+      }
+    },
+    {
+      "datatype": 0,
+      "filled_geometry_equal": false,
+      "labels_equal": true,
+      "layer": 8,
+      "sources": {
+        "croc": {
+          "area_dbu2": 9775387900,
+          "area_um2": 9775.3879,
+          "bbox_dbu": [
+            0,
+            6000,
+            80000,
+            167145
+          ],
+          "expanded_shapes": {
+            "box": 29,
+            "polygon": 16
+          },
+          "labels": [],
+          "merged_polygons": 19
+        },
+        "pinned_pdk": {
+          "area_dbu2": 9789087125,
+          "area_um2": 9789.087125,
+          "bbox_dbu": [
+            0,
+            6000,
+            80000,
+            167145
+          ],
+          "expanded_shapes": {
+            "box": 37,
+            "polygon": 19
+          },
+          "labels": [],
+          "merged_polygons": 25
+        }
+      },
+      "xor": {
+        "area_dbu2": 16444875,
+        "area_um2": 16.444875,
+        "bbox_dbu": [
+          40310,
+          140170,
+          51910,
+          166895
+        ],
+        "merged_polygons": 16
+      }
+    },
+    {
+      "datatype": 2,
+      "filled_geometry_equal": false,
+      "labels_equal": true,
+      "layer": 8,
+      "sources": {
+        "croc": {
+          "area_dbu2": 445915700,
+          "area_um2": 445.9157,
+          "bbox_dbu": [
+            0,
+            6000,
+            46475,
+            167105
+          ],
+          "expanded_shapes": {
+            "box": 19
+          },
+          "labels": [],
+          "merged_polygons": 18
+        },
+        "pinned_pdk": {
+          "area_dbu2": 448405700,
+          "area_um2": 448.4057,
+          "bbox_dbu": [
+            0,
+            6000,
+            51910,
+            167105
+          ],
+          "expanded_shapes": {
+            "box": 29
+          },
+          "labels": [],
+          "merged_polygons": 26
+        }
+      },
+      "xor": {
+        "area_dbu2": 2490000,
+        "area_um2": 2.49,
+        "bbox_dbu": [
+          48430,
+          141220,
+          51910,
+          147420
+        ],
+        "merged_polygons": 8
+      }
+    },
+    {
+      "datatype": 25,
+      "filled_geometry_equal": true,
+      "labels_equal": false,
+      "layer": 8,
+      "sources": {
+        "croc": {
+          "area_dbu2": 0,
+          "area_um2": 0.0,
+          "bbox_dbu": null,
+          "expanded_shapes": {
+            "text": 19
+          },
+          "labels": [
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                43150,
+                148465
+              ],
+              "size_dbu": 400.0,
+              "string": "iovdd",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                40000,
+                162010
+              ],
+              "size_dbu": 0.0,
+              "string": "core",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                43110,
+                148500
+              ],
+              "size_dbu": 0.0,
+              "string": "iovdd",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                43110,
+                157000
+              ],
+              "size_dbu": 0.0,
+              "string": "vss",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                43110,
+                167000
+              ],
+              "size_dbu": 0.0,
+              "string": "vdd",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                11290,
+                24190
+              ],
+              "size_dbu": 0.0,
+              "string": "anode",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                11290,
+                83190
+              ],
+              "size_dbu": 0.0,
+              "string": "cathode",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                13410,
+                24190
+              ],
+              "size_dbu": 0.0,
+              "string": "guard",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                13410,
+                83190
+              ],
+              "size_dbu": 0.0,
+              "string": "guard",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                170,
+                24190
+              ],
+              "size_dbu": 0.0,
+              "string": "guard",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                170,
+                83190
+              ],
+              "size_dbu": 0.0,
+              "string": "guard",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                2290,
+                24190
+              ],
+              "size_dbu": 0.0,
+              "string": "anode",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                2290,
+                83190
+              ],
+              "size_dbu": 0.0,
+              "string": "cathode",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                4540,
+                24190
+              ],
+              "size_dbu": 0.0,
+              "string": "cathode",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                4540,
+                83190
+              ],
+              "size_dbu": 0.0,
+              "string": "anode",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                6790,
+                24190
+              ],
+              "size_dbu": 0.0,
+              "string": "anode",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                6790,
+                83190
+              ],
+              "size_dbu": 0.0,
+              "string": "cathode",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                9040,
+                24190
+              ],
+              "size_dbu": 0.0,
+              "string": "cathode",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                9040,
+                83190
+              ],
+              "size_dbu": 0.0,
+              "string": "anode",
+              "valign": "NoVAlign"
+            }
+          ],
+          "merged_polygons": 0
+        },
+        "pinned_pdk": {
+          "area_dbu2": 0,
+          "area_um2": 0.0,
+          "bbox_dbu": null,
+          "expanded_shapes": {
+            "text": 19
+          },
+          "labels": [
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                43150,
+                148465
+              ],
+              "size_dbu": 400.0,
+              "string": "plus",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                40000,
+                162010
+              ],
+              "size_dbu": 0.0,
+              "string": "core",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                43110,
+                148500
+              ],
+              "size_dbu": 0.0,
+              "string": "iovdd",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                43110,
+                157000
+              ],
+              "size_dbu": 0.0,
+              "string": "vss",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                43110,
+                167000
+              ],
+              "size_dbu": 0.0,
+              "string": "vdd",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                11290,
+                24190
+              ],
+              "size_dbu": 0.0,
+              "string": "anode",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                11290,
+                83190
+              ],
+              "size_dbu": 0.0,
+              "string": "cathode",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                13410,
+                24190
+              ],
+              "size_dbu": 0.0,
+              "string": "guard",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                13410,
+                83190
+              ],
+              "size_dbu": 0.0,
+              "string": "guard",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                170,
+                24190
+              ],
+              "size_dbu": 0.0,
+              "string": "guard",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                170,
+                83190
+              ],
+              "size_dbu": 0.0,
+              "string": "guard",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                2290,
+                24190
+              ],
+              "size_dbu": 0.0,
+              "string": "anode",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                2290,
+                83190
+              ],
+              "size_dbu": 0.0,
+              "string": "cathode",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                4540,
+                24190
+              ],
+              "size_dbu": 0.0,
+              "string": "cathode",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                4540,
+                83190
+              ],
+              "size_dbu": 0.0,
+              "string": "anode",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                6790,
+                24190
+              ],
+              "size_dbu": 0.0,
+              "string": "anode",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                6790,
+                83190
+              ],
+              "size_dbu": 0.0,
+              "string": "cathode",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                9040,
+                24190
+              ],
+              "size_dbu": 0.0,
+              "string": "cathode",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                9040,
+                83190
+              ],
+              "size_dbu": 0.0,
+              "string": "anode",
+              "valign": "NoVAlign"
+            }
+          ],
+          "merged_polygons": 0
+        }
+      },
+      "xor": {
+        "area_dbu2": 0,
+        "area_um2": 0.0,
+        "bbox_dbu": null,
+        "merged_polygons": 0
+      }
+    },
+    {
+      "datatype": 0,
+      "filled_geometry_equal": false,
+      "labels_equal": true,
+      "layer": 10,
+      "sources": {
+        "croc": {
+          "area_dbu2": 1547468550,
+          "area_um2": 1547.46855,
+          "bbox_dbu": [
+            210,
+            0,
+            79790,
+            180000
+          ],
+          "expanded_shapes": {
+            "box": 17,
+            "polygon": 4
+          },
+          "labels": [],
+          "merged_polygons": 17
+        },
+        "pinned_pdk": {
+          "area_dbu2": 1552313050,
+          "area_um2": 1552.31305,
+          "bbox_dbu": [
+            210,
+            0,
+            79790,
+            180000
+          ],
+          "expanded_shapes": {
+            "box": 20,
+            "path": 1,
+            "polygon": 7
+          },
+          "labels": [],
+          "merged_polygons": 21
+        }
+      },
+      "xor": {
+        "area_dbu2": 9189000,
+        "area_um2": 9.189,
+        "bbox_dbu": [
+          40385,
+          143235,
+          51145,
+          161645
+        ],
+        "merged_polygons": 5
+      }
+    },
+    {
+      "datatype": 2,
+      "filled_geometry_equal": true,
+      "labels_equal": true,
+      "layer": 10,
+      "sources": {
+        "croc": {
+          "area_dbu2": 226293400,
+          "area_um2": 226.2934,
+          "bbox_dbu": [
+            5000,
+            0,
+            75000,
+            180000
+          ],
+          "expanded_shapes": {
+            "box": 7
+          },
+          "labels": [],
+          "merged_polygons": 5
+        },
+        "pinned_pdk": {
+          "area_dbu2": 226293400,
+          "area_um2": 226.2934,
+          "bbox_dbu": [
+            5000,
+            0,
+            75000,
+            180000
+          ],
+          "expanded_shapes": {
+            "box": 7
+          },
+          "labels": [],
+          "merged_polygons": 5
+        }
+      },
+      "xor": {
+        "area_dbu2": 0,
+        "area_um2": 0.0,
+        "bbox_dbu": null,
+        "merged_polygons": 0
+      }
+    },
+    {
+      "datatype": 25,
+      "filled_geometry_equal": true,
+      "labels_equal": false,
+      "layer": 10,
+      "sources": {
+        "croc": {
+          "area_dbu2": 0,
+          "area_um2": 0.0,
+          "bbox_dbu": null,
+          "expanded_shapes": {
+            "text": 7
+          },
+          "labels": [
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                36475,
+                1765
+              ],
+              "size_dbu": 4000.0,
+              "string": "pad",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                39955,
+                169590
+              ],
+              "size_dbu": 4000.0,
+              "string": "p2c",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                43355,
+                141145
+              ],
+              "size_dbu": 400.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                43355,
+                141145
+              ],
+              "size_dbu": 400.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41185,
+                140795
+              ],
+              "size_dbu": 0.0,
+              "string": "pad",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41185,
+                140795
+              ],
+              "size_dbu": 0.0,
+              "string": "pad",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                43055,
+                147915
+              ],
+              "size_dbu": 0.0,
+              "string": "core",
+              "valign": "NoVAlign"
+            }
+          ],
+          "merged_polygons": 0
+        },
+        "pinned_pdk": {
+          "area_dbu2": 0,
+          "area_um2": 0.0,
+          "bbox_dbu": null,
+          "expanded_shapes": {
+            "text": 7
+          },
+          "labels": [
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                36475,
+                1765
+              ],
+              "size_dbu": 4000.0,
+              "string": "pad",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                39955,
+                169590
+              ],
+              "size_dbu": 4000.0,
+              "string": "p2c",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                43355,
+                141145
+              ],
+              "size_dbu": 400.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                43355,
+                141145
+              ],
+              "size_dbu": 400.0,
+              "string": "minus",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41185,
+                140795
+              ],
+              "size_dbu": 0.0,
+              "string": "pad",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41185,
+                140795
+              ],
+              "size_dbu": 0.0,
+              "string": "pad",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                43055,
+                147915
+              ],
+              "size_dbu": 0.0,
+              "string": "core",
+              "valign": "NoVAlign"
+            }
+          ],
+          "merged_polygons": 0
+        }
+      },
+      "xor": {
+        "area_dbu2": 0,
+        "area_um2": 0.0,
+        "bbox_dbu": null,
+        "merged_polygons": 0
+      }
+    },
+    {
+      "datatype": 0,
+      "filled_geometry_equal": false,
+      "labels_equal": true,
+      "layer": 14,
+      "sources": {
+        "croc": {
+          "area_dbu2": 5984405000,
+          "area_um2": 5984.405,
+          "bbox_dbu": [
+            -180,
+            7240,
+            80180,
+            166670
+          ],
+          "expanded_shapes": {
+            "box": 6,
+            "polygon": 6
+          },
+          "labels": [],
+          "merged_polygons": 7
+        },
+        "pinned_pdk": {
+          "area_dbu2": 5998332000,
+          "area_um2": 5998.332,
+          "bbox_dbu": [
+            -180,
+            7240,
+            80180,
+            166670
+          ],
+          "expanded_shapes": {
+            "box": 8,
+            "polygon": 6
+          },
+          "labels": [],
+          "merged_polygons": 8
+        }
+      },
+      "xor": {
+        "area_dbu2": 13927000,
+        "area_um2": 13.927,
+        "bbox_dbu": [
+          47975,
+          140350,
+          52335,
+          147820
+        ],
+        "merged_polygons": 2
+      }
+    },
+    {
+      "datatype": 0,
+      "filled_geometry_equal": false,
+      "labels_equal": true,
+      "layer": 19,
+      "sources": {
+        "croc": {
+          "area_dbu2": 80647400,
+          "area_um2": 80.6474,
+          "bbox_dbu": [
+            215,
+            7925,
+            79785,
+            167095
+          ],
+          "expanded_shapes": {
+            "box": 2234
+          },
+          "labels": [],
+          "merged_polygons": 2234
+        },
+        "pinned_pdk": {
+          "area_dbu2": 81549900,
+          "area_um2": 81.5499,
+          "bbox_dbu": [
+            215,
+            7925,
+            79785,
+            167095
+          ],
+          "expanded_shapes": {
+            "box": 2259
+          },
+          "labels": [],
+          "merged_polygons": 2259
+        }
+      },
+      "xor": {
+        "area_dbu2": 1046900,
+        "area_um2": 1.0469,
+        "bbox_dbu": [
+          41670,
+          143240,
+          51095,
+          161595
+        ],
+        "merged_polygons": 29
+      }
+    },
+    {
+      "datatype": 0,
+      "filled_geometry_equal": true,
+      "labels_equal": true,
+      "layer": 28,
+      "sources": {
+        "croc": {
+          "area_dbu2": 2800000,
+          "area_um2": 2.8,
+          "bbox_dbu": [
+            40485,
+            141540,
+            41885,
+            143540
+          ],
+          "expanded_shapes": {
+            "box": 1
+          },
+          "labels": [],
+          "merged_polygons": 5
+        },
+        "pinned_pdk": {
+          "area_dbu2": 2800000,
+          "area_um2": 2.8,
+          "bbox_dbu": [
+            40485,
+            141540,
+            41885,
+            143540
+          ],
+          "expanded_shapes": {
+            "box": 1
+          },
+          "labels": [],
+          "merged_polygons": 5
+        }
+      },
+      "xor": {
+        "area_dbu2": 0,
+        "area_um2": 0.0,
+        "bbox_dbu": null,
+        "merged_polygons": 0
+      }
+    },
+    {
+      "datatype": 0,
+      "filled_geometry_equal": true,
+      "labels_equal": true,
+      "layer": 29,
+      "sources": {
+        "croc": {
+          "area_dbu2": 82705100,
+          "area_um2": 82.7051,
+          "bbox_dbu": [
+            215,
+            180,
+            79785,
+            179950
+          ],
+          "expanded_shapes": {
+            "box": 2291
+          },
+          "labels": [],
+          "merged_polygons": 2291
+        },
+        "pinned_pdk": {
+          "area_dbu2": 82705100,
+          "area_um2": 82.7051,
+          "bbox_dbu": [
+            215,
+            180,
+            79785,
+            179950
+          ],
+          "expanded_shapes": {
+            "box": 2291
+          },
+          "labels": [],
+          "merged_polygons": 2291
+        }
+      },
+      "xor": {
+        "area_dbu2": 0,
+        "area_um2": 0.0,
+        "bbox_dbu": null,
+        "merged_polygons": 0
+      }
+    },
+    {
+      "datatype": 0,
+      "filled_geometry_equal": true,
+      "labels_equal": true,
+      "layer": 30,
+      "sources": {
+        "croc": {
+          "area_dbu2": 11905265000,
+          "area_um2": 11905.265,
+          "bbox_dbu": [
+            0,
+            0,
+            80000,
+            180000
+          ],
+          "expanded_shapes": {
+            "box": 5,
+            "polygon": 2
+          },
+          "labels": [],
+          "merged_polygons": 7
+        },
+        "pinned_pdk": {
+          "area_dbu2": 11905265000,
+          "area_um2": 11905.265,
+          "bbox_dbu": [
+            0,
+            0,
+            80000,
+            180000
+          ],
+          "expanded_shapes": {
+            "box": 5,
+            "polygon": 2
+          },
+          "labels": [],
+          "merged_polygons": 7
+        }
+      },
+      "xor": {
+        "area_dbu2": 0,
+        "area_um2": 0.0,
+        "bbox_dbu": null,
+        "merged_polygons": 0
+      }
+    },
+    {
+      "datatype": 2,
+      "filled_geometry_equal": true,
+      "labels_equal": true,
+      "layer": 30,
+      "sources": {
+        "croc": {
+          "area_dbu2": 11890145000,
+          "area_um2": 11890.145,
+          "bbox_dbu": [
+            0,
+            0,
+            80000,
+            180000
+          ],
+          "expanded_shapes": {
+            "box": 9
+          },
+          "labels": [],
+          "merged_polygons": 9
+        },
+        "pinned_pdk": {
+          "area_dbu2": 11890145000,
+          "area_um2": 11890.145,
+          "bbox_dbu": [
+            0,
+            0,
+            80000,
+            180000
+          ],
+          "expanded_shapes": {
+            "box": 9
+          },
+          "labels": [],
+          "merged_polygons": 9
+        }
+      },
+      "xor": {
+        "area_dbu2": 0,
+        "area_um2": 0.0,
+        "bbox_dbu": null,
+        "merged_polygons": 0
+      }
+    },
+    {
+      "datatype": 25,
+      "filled_geometry_equal": true,
+      "labels_equal": true,
+      "layer": 30,
+      "sources": {
+        "croc": {
+          "area_dbu2": 0,
+          "area_um2": 0.0,
+          "bbox_dbu": null,
+          "expanded_shapes": {
+            "text": 9
+          },
+          "labels": [
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                39975,
+                179855
+              ],
+              "size_dbu": 4000.0,
+              "string": "p2c",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41120,
+                171000
+              ],
+              "size_dbu": 4000.0,
+              "string": "vdd",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41350,
+                51070
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41350,
+                82085
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovdd",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41690,
+                132015
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41920,
+                151395
+              ],
+              "size_dbu": 4000.0,
+              "string": "vss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                42150,
+                110175
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovdd",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                42150,
+                24180
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                48455,
+                1995
+              ],
+              "size_dbu": 4000.0,
+              "string": "pad",
+              "valign": "VAlignCenter"
+            }
+          ],
+          "merged_polygons": 0
+        },
+        "pinned_pdk": {
+          "area_dbu2": 0,
+          "area_um2": 0.0,
+          "bbox_dbu": null,
+          "expanded_shapes": {
+            "text": 9
+          },
+          "labels": [
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                39975,
+                179855
+              ],
+              "size_dbu": 4000.0,
+              "string": "p2c",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41120,
+                171000
+              ],
+              "size_dbu": 4000.0,
+              "string": "vdd",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41350,
+                51070
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41350,
+                82085
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovdd",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41690,
+                132015
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41920,
+                151395
+              ],
+              "size_dbu": 4000.0,
+              "string": "vss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                42150,
+                110175
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovdd",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                42150,
+                24180
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                48455,
+                1995
+              ],
+              "size_dbu": 4000.0,
+              "string": "pad",
+              "valign": "VAlignCenter"
+            }
+          ],
+          "merged_polygons": 0
+        }
+      },
+      "xor": {
+        "area_dbu2": 0,
+        "area_um2": 0.0,
+        "bbox_dbu": null,
+        "merged_polygons": 0
+      }
+    },
+    {
+      "datatype": 0,
+      "filled_geometry_equal": false,
+      "labels_equal": true,
+      "layer": 31,
+      "sources": {
+        "croc": {
+          "area_dbu2": 4869049100,
+          "area_um2": 4869.0491,
+          "bbox_dbu": [
+            -620,
+            5380,
+            80620,
+            167770
+          ],
+          "expanded_shapes": {
+            "box": 6,
+            "polygon": 2
+          },
+          "labels": [],
+          "merged_polygons": 4
+        },
+        "pinned_pdk": {
+          "area_dbu2": 4889660375,
+          "area_um2": 4889.660375,
+          "bbox_dbu": [
+            -620,
+            5380,
+            80620,
+            167770
+          ],
+          "expanded_shapes": {
+            "box": 6,
+            "polygon": 3
+          },
+          "labels": [],
+          "merged_polygons": 4
+        }
+      },
+      "xor": {
+        "area_dbu2": 20611275,
+        "area_um2": 20.611275,
+        "bbox_dbu": [
+          46985,
+          144500,
+          53650,
+          149275
+        ],
+        "merged_polygons": 2
+      }
+    },
+    {
+      "datatype": 0,
+      "filled_geometry_equal": false,
+      "labels_equal": true,
+      "layer": 40,
+      "sources": {
+        "croc": {
+          "area_dbu2": 5581426800,
+          "area_um2": 5581.4268,
+          "bbox_dbu": [
+            0,
+            7660,
+            80000,
+            157150
+          ],
+          "expanded_shapes": {
+            "box": 3,
+            "polygon": 5
+          },
+          "labels": [],
+          "merged_polygons": 3
+        },
+        "pinned_pdk": {
+          "area_dbu2": 5582410800,
+          "area_um2": 5582.4108,
+          "bbox_dbu": [
+            0,
+            7660,
+            80000,
+            157150
+          ],
+          "expanded_shapes": {
+            "box": 6,
+            "polygon": 5
+          },
+          "labels": [],
+          "merged_polygons": 5
+        }
+      },
+      "xor": {
+        "area_dbu2": 984000,
+        "area_um2": 0.984,
+        "bbox_dbu": [
+          48875,
+          140170,
+          51980,
+          145420
+        ],
+        "merged_polygons": 3
+      }
+    },
+    {
+      "datatype": 0,
+      "filled_geometry_equal": false,
+      "labels_equal": true,
+      "layer": 44,
+      "sources": {
+        "croc": {
+          "area_dbu2": 15163600,
+          "area_um2": 15.1636,
+          "bbox_dbu": [
+            40930,
+            157460,
+            42600,
+            166540
+          ],
+          "expanded_shapes": {
+            "box": 1
+          },
+          "labels": [],
+          "merged_polygons": 4
+        },
+        "pinned_pdk": {
+          "area_dbu2": 40865700,
+          "area_um2": 40.8657,
+          "bbox_dbu": [
+            40930,
+            140740,
+            52675,
+            166540
+          ],
+          "expanded_shapes": {
+            "box": 4
+          },
+          "labels": [],
+          "merged_polygons": 3
+        }
+      },
+      "xor": {
+        "area_dbu2": 25702100,
+        "area_um2": 25.7021,
+        "bbox_dbu": [
+          42600,
+          140740,
+          52675,
+          160650
+        ],
+        "merged_polygons": 3
+      }
+    },
+    {
+      "datatype": 0,
+      "filled_geometry_equal": true,
+      "labels_equal": true,
+      "layer": 49,
+      "sources": {
+        "croc": {
+          "area_dbu2": 75340700,
+          "area_um2": 75.3407,
+          "bbox_dbu": [
+            1250,
+            405,
+            78750,
+            160195
+          ],
+          "expanded_shapes": {
+            "box": 2087
+          },
+          "labels": [],
+          "merged_polygons": 2087
+        },
+        "pinned_pdk": {
+          "area_dbu2": 75340700,
+          "area_um2": 75.3407,
+          "bbox_dbu": [
+            1250,
+            405,
+            78750,
+            160195
+          ],
+          "expanded_shapes": {
+            "box": 2087
+          },
+          "labels": [],
+          "merged_polygons": 2087
+        }
+      },
+      "xor": {
+        "area_dbu2": 0,
+        "area_um2": 0.0,
+        "bbox_dbu": null,
+        "merged_polygons": 0
+      }
+    },
+    {
+      "datatype": 0,
+      "filled_geometry_equal": true,
+      "labels_equal": true,
+      "layer": 50,
+      "sources": {
+        "croc": {
+          "area_dbu2": 11872400000,
+          "area_um2": 11872.4,
+          "bbox_dbu": [
+            0,
+            0,
+            80000,
+            178000
+          ],
+          "expanded_shapes": {
+            "box": 6,
+            "polygon": 2
+          },
+          "labels": [],
+          "merged_polygons": 8
+        },
+        "pinned_pdk": {
+          "area_dbu2": 11872400000,
+          "area_um2": 11872.4,
+          "bbox_dbu": [
+            0,
+            0,
+            80000,
+            178000
+          ],
+          "expanded_shapes": {
+            "box": 6,
+            "polygon": 2
+          },
+          "labels": [],
+          "merged_polygons": 8
+        }
+      },
+      "xor": {
+        "area_dbu2": 0,
+        "area_um2": 0.0,
+        "bbox_dbu": null,
+        "merged_polygons": 0
+      }
+    },
+    {
+      "datatype": 2,
+      "filled_geometry_equal": true,
+      "labels_equal": true,
+      "layer": 50,
+      "sources": {
+        "croc": {
+          "area_dbu2": 11538000000,
+          "area_um2": 11538.0,
+          "bbox_dbu": [
+            0,
+            0,
+            80000,
+            178000
+          ],
+          "expanded_shapes": {
+            "box": 8
+          },
+          "labels": [],
+          "merged_polygons": 8
+        },
+        "pinned_pdk": {
+          "area_dbu2": 11538000000,
+          "area_um2": 11538.0,
+          "bbox_dbu": [
+            0,
+            0,
+            80000,
+            178000
+          ],
+          "expanded_shapes": {
+            "box": 8
+          },
+          "labels": [],
+          "merged_polygons": 8
+        }
+      },
+      "xor": {
+        "area_dbu2": 0,
+        "area_um2": 0.0,
+        "bbox_dbu": null,
+        "merged_polygons": 0
+      }
+    },
+    {
+      "datatype": 25,
+      "filled_geometry_equal": true,
+      "labels_equal": true,
+      "layer": 50,
+      "sources": {
+        "croc": {
+          "area_dbu2": 0,
+          "area_um2": 0.0,
+          "bbox_dbu": null,
+          "expanded_shapes": {
+            "text": 8
+          },
+          "labels": [
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                39615,
+                131455
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41275,
+                22280
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41365,
+                150595
+              ],
+              "size_dbu": 4000.0,
+              "string": "vdd",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41450,
+                172270
+              ],
+              "size_dbu": 4000.0,
+              "string": "vss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41540,
+                82070
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovdd",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41800,
+                50075
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                42240,
+                109425
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovdd",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                50365,
+                1565
+              ],
+              "size_dbu": 4000.0,
+              "string": "pad",
+              "valign": "VAlignCenter"
+            }
+          ],
+          "merged_polygons": 0
+        },
+        "pinned_pdk": {
+          "area_dbu2": 0,
+          "area_um2": 0.0,
+          "bbox_dbu": null,
+          "expanded_shapes": {
+            "text": 8
+          },
+          "labels": [
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                39615,
+                131455
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41275,
+                22280
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41365,
+                150595
+              ],
+              "size_dbu": 4000.0,
+              "string": "vdd",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41450,
+                172270
+              ],
+              "size_dbu": 4000.0,
+              "string": "vss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41540,
+                82070
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovdd",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41800,
+                50075
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                42240,
+                109425
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovdd",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                50365,
+                1565
+              ],
+              "size_dbu": 4000.0,
+              "string": "pad",
+              "valign": "VAlignCenter"
+            }
+          ],
+          "merged_polygons": 0
+        }
+      },
+      "xor": {
+        "area_dbu2": 0,
+        "area_um2": 0.0,
+        "bbox_dbu": null,
+        "merged_polygons": 0
+      }
+    },
+    {
+      "datatype": 0,
+      "filled_geometry_equal": false,
+      "labels_equal": false,
+      "layer": 51,
+      "sources": {
+        "croc": {
+          "area_dbu2": 0,
+          "area_um2": 0.0,
+          "bbox_dbu": null,
+          "expanded_shapes": {},
+          "labels": [],
+          "merged_polygons": 0
+        },
+        "pinned_pdk": {
+          "area_dbu2": 5310000,
+          "area_um2": 5.31,
+          "bbox_dbu": [
+            48700,
+            141220,
+            51640,
+            147420
+          ],
+          "expanded_shapes": {
+            "box": 6,
+            "text": 6
+          },
+          "labels": [
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                48925,
+                146270
+              ],
+              "size_dbu": 1.0,
+              "string": "pmosHV",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                49755,
+                141870
+              ],
+              "size_dbu": 1.0,
+              "string": "nmosHV",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                49755,
+                146270
+              ],
+              "size_dbu": 1.0,
+              "string": "pmosHV",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                50585,
+                146270
+              ],
+              "size_dbu": 1.0,
+              "string": "pmosHV",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                51415,
+                146270
+              ],
+              "size_dbu": 1.0,
+              "string": "pmosHV",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 180.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": true,
+              "position_dbu": [
+                50585,
+                141870
+              ],
+              "size_dbu": 1.0,
+              "string": "nmosHV",
+              "valign": "VAlignCenter"
+            }
+          ],
+          "merged_polygons": 6
+        }
+      },
+      "xor": {
+        "area_dbu2": 5310000,
+        "area_um2": 5.31,
+        "bbox_dbu": [
+          48700,
+          141220,
+          51640,
+          147420
+        ],
+        "merged_polygons": 6
+      }
+    },
+    {
+      "datatype": 0,
+      "filled_geometry_equal": true,
+      "labels_equal": false,
+      "layer": 63,
+      "sources": {
+        "croc": {
+          "area_dbu2": 0,
+          "area_um2": 0.0,
+          "bbox_dbu": null,
+          "expanded_shapes": {
+            "text": 14
+          },
+          "labels": [
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                45865,
+                156985
+              ],
+              "size_dbu": 0.0,
+              "string": "sub!",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                39915,
+                140340
+              ],
+              "size_dbu": 0.0,
+              "string": "sub!",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41185,
+                142540
+              ],
+              "size_dbu": 0.0,
+              "string": "rppd r=793.834",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                43055,
+                147510
+              ],
+              "size_dbu": 0.0,
+              "string": "dpant",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                44255,
+                140340
+              ],
+              "size_dbu": 0.0,
+              "string": "sub!",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                45225,
+                142540
+              ],
+              "size_dbu": 0.0,
+              "string": "dant",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                9040,
+                66660
+              ],
+              "size_dbu": 0.0,
+              "string": "PAD",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                9040,
+                7660
+              ],
+              "size_dbu": 0.0,
+              "string": "PAD",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                4600,
+                73820
+              ],
+              "size_dbu": 200.0,
+              "string": "dpant",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                9080,
+                73700
+              ],
+              "size_dbu": 200.0,
+              "string": "dpant",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                11290,
+                8290
+              ],
+              "size_dbu": 0.0,
+              "string": "sub!",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                12220,
+                65170
+              ],
+              "size_dbu": 0.0,
+              "string": "sub!",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                4540,
+                24190
+              ],
+              "size_dbu": 0.0,
+              "string": "dant",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                9040,
+                24190
+              ],
+              "size_dbu": 0.0,
+              "string": "dant",
+              "valign": "NoVAlign"
+            }
+          ],
+          "merged_polygons": 0
+        },
+        "pinned_pdk": {
+          "area_dbu2": 0,
+          "area_um2": 0.0,
+          "bbox_dbu": null,
+          "expanded_shapes": {
+            "text": 19
+          },
+          "labels": [
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                45865,
+                156985
+              ],
+              "size_dbu": 0.0,
+              "string": "sub!",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                50295,
+                140225
+              ],
+              "size_dbu": 0.0,
+              "string": "sub!",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                39915,
+                140340
+              ],
+              "size_dbu": 0.0,
+              "string": "sub!",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41185,
+                142540
+              ],
+              "size_dbu": 0.0,
+              "string": "rppd r=793.834",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                43055,
+                147510
+              ],
+              "size_dbu": 0.0,
+              "string": "dpant",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                44255,
+                140340
+              ],
+              "size_dbu": 0.0,
+              "string": "sub!",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                45225,
+                142540
+              ],
+              "size_dbu": 0.0,
+              "string": "dant",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                9040,
+                66660
+              ],
+              "size_dbu": 0.0,
+              "string": "PAD",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                9040,
+                7660
+              ],
+              "size_dbu": 0.0,
+              "string": "PAD",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                4600,
+                73820
+              ],
+              "size_dbu": 200.0,
+              "string": "dpant",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                48925,
+                146270
+              ],
+              "size_dbu": 100.0,
+              "string": "pmosHV",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                49755,
+                141870
+              ],
+              "size_dbu": 100.0,
+              "string": "nmosHV",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                50585,
+                146270
+              ],
+              "size_dbu": 100.0,
+              "string": "pmosHV",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                9080,
+                73700
+              ],
+              "size_dbu": 200.0,
+              "string": "dpant",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": true,
+              "position_dbu": [
+                50585,
+                141870
+              ],
+              "size_dbu": 100.0,
+              "string": "nmosHV",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                11290,
+                8290
+              ],
+              "size_dbu": 0.0,
+              "string": "sub!",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                12220,
+                65170
+              ],
+              "size_dbu": 0.0,
+              "string": "sub!",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                4540,
+                24190
+              ],
+              "size_dbu": 0.0,
+              "string": "dant",
+              "valign": "NoVAlign"
+            },
+            {
+              "angle_deg": 90.0,
+              "font": -1,
+              "halign": "NoHAlign",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                9040,
+                24190
+              ],
+              "size_dbu": 0.0,
+              "string": "dant",
+              "valign": "NoVAlign"
+            }
+          ],
+          "merged_polygons": 0
+        }
+      },
+      "xor": {
+        "area_dbu2": 0,
+        "area_um2": 0.0,
+        "bbox_dbu": null,
+        "merged_polygons": 0
+      }
+    },
+    {
+      "datatype": 0,
+      "filled_geometry_equal": true,
+      "labels_equal": true,
+      "layer": 66,
+      "sources": {
+        "croc": {
+          "area_dbu2": 85593100,
+          "area_um2": 85.5931,
+          "bbox_dbu": [
+            1905,
+            405,
+            78095,
+            175195
+          ],
+          "expanded_shapes": {
+            "box": 2371
+          },
+          "labels": [],
+          "merged_polygons": 2371
+        },
+        "pinned_pdk": {
+          "area_dbu2": 85593100,
+          "area_um2": 85.5931,
+          "bbox_dbu": [
+            1905,
+            405,
+            78095,
+            175195
+          ],
+          "expanded_shapes": {
+            "box": 2371
+          },
+          "labels": [],
+          "merged_polygons": 2371
+        }
+      },
+      "xor": {
+        "area_dbu2": 0,
+        "area_um2": 0.0,
+        "bbox_dbu": null,
+        "merged_polygons": 0
+      }
+    },
+    {
+      "datatype": 0,
+      "filled_geometry_equal": true,
+      "labels_equal": true,
+      "layer": 67,
+      "sources": {
+        "croc": {
+          "area_dbu2": 11890000000,
+          "area_um2": 11890.0,
+          "bbox_dbu": [
+            0,
+            0,
+            80000,
+            178000
+          ],
+          "expanded_shapes": {
+            "box": 8
+          },
+          "labels": [],
+          "merged_polygons": 8
+        },
+        "pinned_pdk": {
+          "area_dbu2": 11890000000,
+          "area_um2": 11890.0,
+          "bbox_dbu": [
+            0,
+            0,
+            80000,
+            178000
+          ],
+          "expanded_shapes": {
+            "box": 8
+          },
+          "labels": [],
+          "merged_polygons": 8
+        }
+      },
+      "xor": {
+        "area_dbu2": 0,
+        "area_um2": 0.0,
+        "bbox_dbu": null,
+        "merged_polygons": 0
+      }
+    },
+    {
+      "datatype": 2,
+      "filled_geometry_equal": true,
+      "labels_equal": true,
+      "layer": 67,
+      "sources": {
+        "croc": {
+          "area_dbu2": 11890000000,
+          "area_um2": 11890.0,
+          "bbox_dbu": [
+            0,
+            0,
+            80000,
+            178000
+          ],
+          "expanded_shapes": {
+            "box": 8
+          },
+          "labels": [],
+          "merged_polygons": 8
+        },
+        "pinned_pdk": {
+          "area_dbu2": 11890000000,
+          "area_um2": 11890.0,
+          "bbox_dbu": [
+            0,
+            0,
+            80000,
+            178000
+          ],
+          "expanded_shapes": {
+            "box": 8
+          },
+          "labels": [],
+          "merged_polygons": 8
+        }
+      },
+      "xor": {
+        "area_dbu2": 0,
+        "area_um2": 0.0,
+        "bbox_dbu": null,
+        "merged_polygons": 0
+      }
+    },
+    {
+      "datatype": 25,
+      "filled_geometry_equal": true,
+      "labels_equal": true,
+      "layer": 67,
+      "sources": {
+        "croc": {
+          "area_dbu2": 0,
+          "area_um2": 0.0,
+          "bbox_dbu": null,
+          "expanded_shapes": {
+            "text": 8
+          },
+          "labels": [
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                40840,
+                49815
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41015,
+                109075
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovdd",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41190,
+                131455
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41365,
+                151030
+              ],
+              "size_dbu": 4000.0,
+              "string": "vdd",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41365,
+                81455
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovdd",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41450,
+                170695
+              ],
+              "size_dbu": 4000.0,
+              "string": "vss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                42065,
+                22195
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                48970,
+                2005
+              ],
+              "size_dbu": 4000.0,
+              "string": "pad",
+              "valign": "VAlignCenter"
+            }
+          ],
+          "merged_polygons": 0
+        },
+        "pinned_pdk": {
+          "area_dbu2": 0,
+          "area_um2": 0.0,
+          "bbox_dbu": null,
+          "expanded_shapes": {
+            "text": 8
+          },
+          "labels": [
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                40840,
+                49815
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41015,
+                109075
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovdd",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41190,
+                131455
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41365,
+                151030
+              ],
+              "size_dbu": 4000.0,
+              "string": "vdd",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41365,
+                81455
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovdd",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41450,
+                170695
+              ],
+              "size_dbu": 4000.0,
+              "string": "vss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                42065,
+                22195
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                48970,
+                2005
+              ],
+              "size_dbu": 4000.0,
+              "string": "pad",
+              "valign": "VAlignCenter"
+            }
+          ],
+          "merged_polygons": 0
+        }
+      },
+      "xor": {
+        "area_dbu2": 0,
+        "area_um2": 0.0,
+        "bbox_dbu": null,
+        "merged_polygons": 0
+      }
+    },
+    {
+      "datatype": 31,
+      "filled_geometry_equal": true,
+      "labels_equal": true,
+      "layer": 99,
+      "sources": {
+        "croc": {
+          "area_dbu2": 150212800,
+          "area_um2": 150.2128,
+          "bbox_dbu": [
+            3890,
+            10280,
+            45565,
+            147850
+          ],
+          "expanded_shapes": {
+            "box": 6
+          },
+          "labels": [],
+          "merged_polygons": 6
+        },
+        "pinned_pdk": {
+          "area_dbu2": 150212800,
+          "area_um2": 150.2128,
+          "bbox_dbu": [
+            3890,
+            10280,
+            45565,
+            147850
+          ],
+          "expanded_shapes": {
+            "box": 6
+          },
+          "labels": [],
+          "merged_polygons": 6
+        }
+      },
+      "xor": {
+        "area_dbu2": 0,
+        "area_um2": 0.0,
+        "bbox_dbu": null,
+        "merged_polygons": 0
+      }
+    },
+    {
+      "datatype": 0,
+      "filled_geometry_equal": true,
+      "labels_equal": true,
+      "layer": 111,
+      "sources": {
+        "croc": {
+          "area_dbu2": 4379200,
+          "area_um2": 4.3792,
+          "bbox_dbu": [
+            40505,
+            140930,
+            41865,
+            144150
+          ],
+          "expanded_shapes": {
+            "box": 1
+          },
+          "labels": [],
+          "merged_polygons": 5
+        },
+        "pinned_pdk": {
+          "area_dbu2": 4379200,
+          "area_um2": 4.3792,
+          "bbox_dbu": [
+            40505,
+            140930,
+            41865,
+            144150
+          ],
+          "expanded_shapes": {
+            "box": 1
+          },
+          "labels": [],
+          "merged_polygons": 5
+        }
+      },
+      "xor": {
+        "area_dbu2": 0,
+        "area_um2": 0.0,
+        "bbox_dbu": null,
+        "merged_polygons": 0
+      }
+    },
+    {
+      "datatype": 0,
+      "filled_geometry_equal": true,
+      "labels_equal": true,
+      "layer": 125,
+      "sources": {
+        "croc": {
+          "area_dbu2": 408366000,
+          "area_um2": 408.366,
+          "bbox_dbu": [
+            2790,
+            1290,
+            77210,
+            175210
+          ],
+          "expanded_shapes": {
+            "box": 2315
+          },
+          "labels": [],
+          "merged_polygons": 2315
+        },
+        "pinned_pdk": {
+          "area_dbu2": 408366000,
+          "area_um2": 408.366,
+          "bbox_dbu": [
+            2790,
+            1290,
+            77210,
+            175210
+          ],
+          "expanded_shapes": {
+            "box": 2315
+          },
+          "labels": [],
+          "merged_polygons": 2315
+        }
+      },
+      "xor": {
+        "area_dbu2": 0,
+        "area_um2": 0.0,
+        "bbox_dbu": null,
+        "merged_polygons": 0
+      }
+    },
+    {
+      "datatype": 0,
+      "filled_geometry_equal": true,
+      "labels_equal": true,
+      "layer": 126,
+      "sources": {
+        "croc": {
+          "area_dbu2": 11890000000,
+          "area_um2": 11890.0,
+          "bbox_dbu": [
+            0,
+            0,
+            80000,
+            178000
+          ],
+          "expanded_shapes": {
+            "box": 8
+          },
+          "labels": [],
+          "merged_polygons": 8
+        },
+        "pinned_pdk": {
+          "area_dbu2": 11890000000,
+          "area_um2": 11890.0,
+          "bbox_dbu": [
+            0,
+            0,
+            80000,
+            178000
+          ],
+          "expanded_shapes": {
+            "box": 8
+          },
+          "labels": [],
+          "merged_polygons": 8
+        }
+      },
+      "xor": {
+        "area_dbu2": 0,
+        "area_um2": 0.0,
+        "bbox_dbu": null,
+        "merged_polygons": 0
+      }
+    },
+    {
+      "datatype": 2,
+      "filled_geometry_equal": true,
+      "labels_equal": true,
+      "layer": 126,
+      "sources": {
+        "croc": {
+          "area_dbu2": 11890000000,
+          "area_um2": 11890.0,
+          "bbox_dbu": [
+            0,
+            0,
+            80000,
+            178000
+          ],
+          "expanded_shapes": {
+            "box": 8
+          },
+          "labels": [],
+          "merged_polygons": 8
+        },
+        "pinned_pdk": {
+          "area_dbu2": 11890000000,
+          "area_um2": 11890.0,
+          "bbox_dbu": [
+            0,
+            0,
+            80000,
+            178000
+          ],
+          "expanded_shapes": {
+            "box": 8
+          },
+          "labels": [],
+          "merged_polygons": 8
+        }
+      },
+      "xor": {
+        "area_dbu2": 0,
+        "area_um2": 0.0,
+        "bbox_dbu": null,
+        "merged_polygons": 0
+      }
+    },
+    {
+      "datatype": 25,
+      "filled_geometry_equal": true,
+      "labels_equal": true,
+      "layer": 126,
+      "sources": {
+        "croc": {
+          "area_dbu2": 0,
+          "area_um2": 0.0,
+          "bbox_dbu": null,
+          "expanded_shapes": {
+            "text": 8
+          },
+          "labels": [
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41015,
+                50340
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41100,
+                108550
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovdd",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41190,
+                152255
+              ],
+              "size_dbu": 4000.0,
+              "string": "vdd",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41275,
+                171395
+              ],
+              "size_dbu": 4000.0,
+              "string": "vss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41800,
+                22545
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41800,
+                81805
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovdd",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                42150,
+                131975
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                49055,
+                1830
+              ],
+              "size_dbu": 4000.0,
+              "string": "pad",
+              "valign": "VAlignCenter"
+            }
+          ],
+          "merged_polygons": 0
+        },
+        "pinned_pdk": {
+          "area_dbu2": 0,
+          "area_um2": 0.0,
+          "bbox_dbu": null,
+          "expanded_shapes": {
+            "text": 8
+          },
+          "labels": [
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41015,
+                50340
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41100,
+                108550
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovdd",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41190,
+                152255
+              ],
+              "size_dbu": 4000.0,
+              "string": "vdd",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41275,
+                171395
+              ],
+              "size_dbu": 4000.0,
+              "string": "vss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41800,
+                22545
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41800,
+                81805
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovdd",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                42150,
+                131975
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                49055,
+                1830
+              ],
+              "size_dbu": 4000.0,
+              "string": "pad",
+              "valign": "VAlignCenter"
+            }
+          ],
+          "merged_polygons": 0
+        }
+      },
+      "xor": {
+        "area_dbu2": 0,
+        "area_um2": 0.0,
+        "bbox_dbu": null,
+        "merged_polygons": 0
+      }
+    },
+    {
+      "datatype": 0,
+      "filled_geometry_equal": true,
+      "labels_equal": true,
+      "layer": 133,
+      "sources": {
+        "croc": {
+          "area_dbu2": 1290330000,
+          "area_um2": 1290.33,
+          "bbox_dbu": [
+            2550,
+            1050,
+            77450,
+            130450
+          ],
+          "expanded_shapes": {
+            "box": 1593
+          },
+          "labels": [],
+          "merged_polygons": 1593
+        },
+        "pinned_pdk": {
+          "area_dbu2": 1290330000,
+          "area_um2": 1290.33,
+          "bbox_dbu": [
+            2550,
+            1050,
+            77450,
+            130450
+          ],
+          "expanded_shapes": {
+            "box": 1593
+          },
+          "labels": [],
+          "merged_polygons": 1593
+        }
+      },
+      "xor": {
+        "area_dbu2": 0,
+        "area_um2": 0.0,
+        "bbox_dbu": null,
+        "merged_polygons": 0
+      }
+    },
+    {
+      "datatype": 0,
+      "filled_geometry_equal": true,
+      "labels_equal": true,
+      "layer": 134,
+      "sources": {
+        "croc": {
+          "area_dbu2": 7810000000,
+          "area_um2": 7810.0,
+          "bbox_dbu": [
+            0,
+            0,
+            80000,
+            132500
+          ],
+          "expanded_shapes": {
+            "box": 6
+          },
+          "labels": [],
+          "merged_polygons": 6
+        },
+        "pinned_pdk": {
+          "area_dbu2": 7810000000,
+          "area_um2": 7810.0,
+          "bbox_dbu": [
+            0,
+            0,
+            80000,
+            132500
+          ],
+          "expanded_shapes": {
+            "box": 6
+          },
+          "labels": [],
+          "merged_polygons": 6
+        }
+      },
+      "xor": {
+        "area_dbu2": 0,
+        "area_um2": 0.0,
+        "bbox_dbu": null,
+        "merged_polygons": 0
+      }
+    },
+    {
+      "datatype": 2,
+      "filled_geometry_equal": true,
+      "labels_equal": true,
+      "layer": 134,
+      "sources": {
+        "croc": {
+          "area_dbu2": 7810000000,
+          "area_um2": 7810.0,
+          "bbox_dbu": [
+            0,
+            0,
+            80000,
+            132500
+          ],
+          "expanded_shapes": {
+            "box": 6
+          },
+          "labels": [],
+          "merged_polygons": 6
+        },
+        "pinned_pdk": {
+          "area_dbu2": 7810000000,
+          "area_um2": 7810.0,
+          "bbox_dbu": [
+            0,
+            0,
+            80000,
+            132500
+          ],
+          "expanded_shapes": {
+            "box": 6
+          },
+          "labels": [],
+          "merged_polygons": 6
+        }
+      },
+      "xor": {
+        "area_dbu2": 0,
+        "area_um2": 0.0,
+        "bbox_dbu": null,
+        "merged_polygons": 0
+      }
+    },
+    {
+      "datatype": 25,
+      "filled_geometry_equal": true,
+      "labels_equal": true,
+      "layer": 134,
+      "sources": {
+        "croc": {
+          "area_dbu2": 0,
+          "area_um2": 0.0,
+          "bbox_dbu": null,
+          "expanded_shapes": {
+            "text": 6
+          },
+          "labels": [
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41450,
+                109075
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovdd",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                42325,
+                43170
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                42850,
+                75250
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovdd",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                47220,
+                15815
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                52990,
+                1655
+              ],
+              "size_dbu": 4000.0,
+              "string": "pad",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                54125,
+                130230
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            }
+          ],
+          "merged_polygons": 0
+        },
+        "pinned_pdk": {
+          "area_dbu2": 0,
+          "area_um2": 0.0,
+          "bbox_dbu": null,
+          "expanded_shapes": {
+            "text": 6
+          },
+          "labels": [
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                41450,
+                109075
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovdd",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                42325,
+                43170
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                42850,
+                75250
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovdd",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                47220,
+                15815
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                52990,
+                1655
+              ],
+              "size_dbu": 4000.0,
+              "string": "pad",
+              "valign": "VAlignCenter"
+            },
+            {
+              "angle_deg": 0.0,
+              "font": -1,
+              "halign": "HAlignCenter",
+              "magnification": 1.0,
+              "mirror": false,
+              "position_dbu": [
+                54125,
+                130230
+              ],
+              "size_dbu": 4000.0,
+              "string": "iovss",
+              "valign": "VAlignCenter"
+            }
+          ],
+          "merged_polygons": 0
+        }
+      },
+      "xor": {
+        "area_dbu2": 0,
+        "area_um2": 0.0,
+        "bbox_dbu": null,
+        "merged_polygons": 0
+      }
+    },
+    {
+      "datatype": 4,
+      "filled_geometry_equal": true,
+      "labels_equal": true,
+      "layer": 189,
+      "sources": {
+        "croc": {
+          "area_dbu2": 14400000000,
+          "area_um2": 14400.0,
+          "bbox_dbu": [
+            0,
+            0,
+            80000,
+            180000
+          ],
+          "expanded_shapes": {
+            "box": 1
+          },
+          "labels": [],
+          "merged_polygons": 1
+        },
+        "pinned_pdk": {
+          "area_dbu2": 14400000000,
+          "area_um2": 14400.0,
+          "bbox_dbu": [
+            0,
+            0,
+            80000,
+            180000
+          ],
+          "expanded_shapes": {
+            "box": 1
+          },
+          "labels": [],
+          "merged_polygons": 1
+        }
+      },
+      "xor": {
+        "area_dbu2": 0,
+        "area_um2": 0.0,
+        "bbox_dbu": null,
+        "merged_polygons": 0
+      }
+    }
+  ],
+  "limits": [
+    "Comparison is limited to sg13g2_IOPadIn and its recursively instantiated geometry and labels.",
+    "Whole-library geometry, timestamps, properties and binary serialization differences were not compared.",
+    "Equal geometry does not establish DRC, LVS or physical signoff.",
+    "Cell hierarchy is expanded for geometry comparison; hierarchy structural identity is not required."
+  ],
+  "schema_version": 1,
+  "scope": "recursively_expanded_single_cell_tree",
+  "sources": {
+    "croc": {
+      "bytes": 71398262,
+      "dbu_um": 0.001,
+      "path": "upstream/croc/technology/gds/sg13g2_io.gds",
+      "referenced_cell_names": [
+        "sg13g2_DCNDiode",
+        "sg13g2_DCPDiode",
+        "sg13g2_IOPadIn",
+        "sg13g2_LevelDown",
+        "sg13g2_SecondaryProtection"
+      ],
+      "sha256": "8bb45016e5a99e48b1df1ea52c97d6813d96f6afeb905a72a956ddc2c018565f",
+      "target_bbox_dbu": [
+        -620,
+        0,
+        80620,
+        180000
+      ]
+    },
+    "pinned_pdk": {
+      "bytes": 71424000,
+      "dbu_um": 0.001,
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/gds/sg13g2_io.gds",
+      "referenced_cell_names": [
+        "M2_M1_CDNS_777302434540",
+        "M2_M1_CDNS_777302434541",
+        "sg13g2_DCNDiode",
+        "sg13g2_DCPDiode",
+        "sg13g2_IOPadIn",
+        "sg13g2_LevelDown",
+        "sg13g2_SecondaryProtection"
+      ],
+      "sha256": "4281a855377b6a1ca46356e9391258dc14e8efc3b8051a65befc0fe9db3c7825",
+      "target_bbox_dbu": [
+        -620,
+        0,
+        80620,
+        180000
+      ]
+    }
+  },
+  "summary": {
+    "expanded_label_count": {
+      "croc": 79,
+      "pinned_pdk": 90
+    },
+    "filled_geometry_equal": false,
+    "nonempty_layer_pairs": 41,
+    "target_bbox_equal": true,
+    "transformed_labels_equal": false,
+    "unequal_geometry_layers": [
+      [
+        1,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        10,
+        0
+      ],
+      [
+        14,
+        0
+      ],
+      [
+        19,
+        0
+      ],
+      [
+        31,
+        0
+      ],
+      [
+        40,
+        0
+      ],
+      [
+        44,
+        0
+      ],
+      [
+        51,
+        0
+      ]
+    ],
+    "unequal_label_layers": [
+      [
+        8,
+        25
+      ],
+      [
+        10,
+        25
+      ],
+      [
+        51,
+        0
+      ],
+      [
+        63,
+        0
+      ]
+    ]
+  }
+}

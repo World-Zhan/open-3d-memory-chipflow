@@ -1,0 +1,271 @@
+{
+  "arms": [
+    {
+      "bbox_um": "(-0.62,-70;80.62,180)",
+      "bondpad_origin_um": [
+        5,
+        -70
+      ],
+      "complete_netlist_equivalence_proven": false,
+      "gap_um": 0,
+      "gds_sha256": "f7f8c1cae769bdb2c7832d1c98bc70ca83f06803701969df52d3812fb9da5866",
+      "io_orientation": "R0",
+      "io_origin_um": [
+        0,
+        0
+      ],
+      "name": "original_gap0",
+      "opening_active_separation_11p2um_pairs": 1,
+      "per_layer": {
+        "Metal2": {
+          "new_lead_overlap_existing_io_area_um2": 0,
+          "pad_lead_pin_connected": true,
+          "seven_um_exit_missing_area_um2": 270.92
+        },
+        "Metal3": {
+          "new_lead_overlap_existing_io_area_um2": 0,
+          "pad_lead_pin_connected": true,
+          "seven_um_exit_missing_area_um2": 280.0
+        },
+        "Metal4": {
+          "new_lead_overlap_existing_io_area_um2": 0,
+          "pad_lead_pin_connected": true,
+          "seven_um_exit_missing_area_um2": 280.0
+        },
+        "Metal5": {
+          "new_lead_overlap_existing_io_area_um2": 0,
+          "pad_lead_pin_connected": true,
+          "seven_um_exit_missing_area_um2": 280.0
+        },
+        "TopMetal1": {
+          "new_lead_overlap_existing_io_area_um2": 0,
+          "pad_lead_pin_connected": true,
+          "seven_um_exit_missing_area_um2": 280.0
+        },
+        "TopMetal2": {
+          "new_lead_overlap_existing_io_area_um2": 0,
+          "pad_lead_pin_connected": true,
+          "seven_um_exit_missing_area_um2": 280.0
+        }
+      },
+      "sealring_included": false,
+      "topcell": "original_gap0"
+    },
+    {
+      "bbox_um": "(-0.62,-70;80.62,180)",
+      "bondpad_origin_um": [
+        5,
+        -70
+      ],
+      "complete_netlist_equivalence_proven": false,
+      "gap_um": 0,
+      "gds_sha256": "35ad191268b1212c190caa60daf405c084127299dce2822dca3c739ea62745ef",
+      "io_orientation": "R0",
+      "io_origin_um": [
+        0,
+        0
+      ],
+      "name": "official_gap0",
+      "opening_active_separation_11p2um_pairs": 1,
+      "per_layer": {
+        "Metal2": {
+          "new_lead_overlap_existing_io_area_um2": 0,
+          "pad_lead_pin_connected": true,
+          "seven_um_exit_missing_area_um2": 270.92
+        },
+        "Metal3": {
+          "new_lead_overlap_existing_io_area_um2": 0,
+          "pad_lead_pin_connected": true,
+          "seven_um_exit_missing_area_um2": 280.0
+        },
+        "Metal4": {
+          "new_lead_overlap_existing_io_area_um2": 0,
+          "pad_lead_pin_connected": true,
+          "seven_um_exit_missing_area_um2": 280.0
+        },
+        "Metal5": {
+          "new_lead_overlap_existing_io_area_um2": 0,
+          "pad_lead_pin_connected": true,
+          "seven_um_exit_missing_area_um2": 280.0
+        },
+        "TopMetal1": {
+          "new_lead_overlap_existing_io_area_um2": 0,
+          "pad_lead_pin_connected": true,
+          "seven_um_exit_missing_area_um2": 280.0
+        },
+        "TopMetal2": {
+          "new_lead_overlap_existing_io_area_um2": 0,
+          "pad_lead_pin_connected": true,
+          "seven_um_exit_missing_area_um2": 280.0
+        }
+      },
+      "sealring_included": false,
+      "topcell": "official_gap0"
+    },
+    {
+      "bbox_um": "(-0.62,-74;80.62,180)",
+      "bondpad_origin_um": [
+        5,
+        -74
+      ],
+      "complete_netlist_equivalence_proven": false,
+      "gap_um": 4,
+      "gds_sha256": "f7eac53f27bd3135ef8c1f522746c246fa05d448e269a0dacf539337c3b339b4",
+      "io_orientation": "R0",
+      "io_origin_um": [
+        0,
+        0
+      ],
+      "name": "official_gap4",
+      "opening_active_separation_11p2um_pairs": 0,
+      "per_layer": {
+        "Metal2": {
+          "new_lead_overlap_existing_io_area_um2": 0,
+          "pad_lead_pin_connected": true,
+          "seven_um_exit_missing_area_um2": 0.0
+        },
+        "Metal3": {
+          "new_lead_overlap_existing_io_area_um2": 0,
+          "pad_lead_pin_connected": true,
+          "seven_um_exit_missing_area_um2": 0.0
+        },
+        "Metal4": {
+          "new_lead_overlap_existing_io_area_um2": 0,
+          "pad_lead_pin_connected": true,
+          "seven_um_exit_missing_area_um2": 0.0
+        },
+        "Metal5": {
+          "new_lead_overlap_existing_io_area_um2": 0,
+          "pad_lead_pin_connected": true,
+          "seven_um_exit_missing_area_um2": 0.0
+        },
+        "TopMetal1": {
+          "new_lead_overlap_existing_io_area_um2": 0,
+          "pad_lead_pin_connected": true,
+          "seven_um_exit_missing_area_um2": 0.0
+        },
+        "TopMetal2": {
+          "new_lead_overlap_existing_io_area_um2": 0,
+          "pad_lead_pin_connected": true,
+          "seven_um_exit_missing_area_um2": 0.0
+        }
+      },
+      "sealring_included": false,
+      "topcell": "official_gap4"
+    },
+    {
+      "bbox_um": "(-0.62,-80;80.62,180)",
+      "bondpad_origin_um": [
+        5,
+        -80
+      ],
+      "complete_netlist_equivalence_proven": false,
+      "gap_um": 10,
+      "gds_sha256": "478bc8285caf451efe634cff780e36e4c7df6e65eb69fe67c9a9dc0c4dc6f7e4",
+      "io_orientation": "R0",
+      "io_origin_um": [
+        0,
+        0
+      ],
+      "name": "official_gap10",
+      "opening_active_separation_11p2um_pairs": 0,
+      "per_layer": {
+        "Metal2": {
+          "new_lead_overlap_existing_io_area_um2": 0,
+          "pad_lead_pin_connected": true,
+          "seven_um_exit_missing_area_um2": 0.0
+        },
+        "Metal3": {
+          "new_lead_overlap_existing_io_area_um2": 0,
+          "pad_lead_pin_connected": true,
+          "seven_um_exit_missing_area_um2": 0.0
+        },
+        "Metal4": {
+          "new_lead_overlap_existing_io_area_um2": 0,
+          "pad_lead_pin_connected": true,
+          "seven_um_exit_missing_area_um2": 0.0
+        },
+        "Metal5": {
+          "new_lead_overlap_existing_io_area_um2": 0,
+          "pad_lead_pin_connected": true,
+          "seven_um_exit_missing_area_um2": 0.0
+        },
+        "TopMetal1": {
+          "new_lead_overlap_existing_io_area_um2": 0,
+          "pad_lead_pin_connected": true,
+          "seven_um_exit_missing_area_um2": 0.0
+        },
+        "TopMetal2": {
+          "new_lead_overlap_existing_io_area_um2": 0,
+          "pad_lead_pin_connected": true,
+          "seven_um_exit_missing_area_um2": 0.0
+        }
+      },
+      "sealring_included": false,
+      "topcell": "official_gap10"
+    }
+  ],
+  "classification": "physical_fixture_not_chip_signoff",
+  "full_chip_modified": false,
+  "lef_gds_contract": {
+    "gds_sha256": "cef601b172ee7fd374f9cccccc715b2122d188962a28fc84297bf1c94ad69f16",
+    "lef_sha256": "8d717917dc1e1c15efc677c0f61af0ab82d3f47c15b5c8f392de7e475ec5117f",
+    "lower_metal_holes_preserved": true,
+    "macro": "bondpad70_m2_ring",
+    "obstructions": "conservative full 70x70 metal blockage; matching ring pin ports override only real pin geometry",
+    "pin_layer_geometry": {
+      "Metal2": {
+        "area_um2": 1073.3404,
+        "rectangles": 4,
+        "symmetric_difference_area_um2": 0
+      },
+      "Metal3": {
+        "area_um2": 1073.3404,
+        "rectangles": 4,
+        "symmetric_difference_area_um2": 0
+      },
+      "Metal4": {
+        "area_um2": 1073.3404,
+        "rectangles": 4,
+        "symmetric_difference_area_um2": 0
+      },
+      "Metal5": {
+        "area_um2": 1073.3404,
+        "rectangles": 4,
+        "symmetric_difference_area_um2": 0
+      },
+      "TopMetal1": {
+        "area_um2": 1073.3404,
+        "rectangles": 4,
+        "symmetric_difference_area_um2": 0
+      },
+      "TopMetal2": {
+        "area_um2": 4900.0,
+        "rectangles": 1,
+        "symmetric_difference_area_um2": 0
+      }
+    },
+    "route_pin_access_or_via_legality_proven": false,
+    "translation_um": [
+      35,
+      35
+    ]
+  },
+  "lvs_performed": false,
+  "outputs_sha256": {
+    "bondpad70_m2_ring.gds": "cef601b172ee7fd374f9cccccc715b2122d188962a28fc84297bf1c94ad69f16",
+    "bondpad70_m2_ring.lef": "8d717917dc1e1c15efc677c0f61af0ab82d3f47c15b5c8f392de7e475ec5117f",
+    "official_gap0.gds": "35ad191268b1212c190caa60daf405c084127299dce2822dca3c739ea62745ef",
+    "official_gap10.gds": "478bc8285caf451efe634cff780e36e4c7df6e65eb69fe67c9a9dc0c4dc6f7e4",
+    "official_gap4.gds": "f7eac53f27bd3135ef8c1f522746c246fa05d448e269a0dacf539337c3b339b4",
+    "original_gap0.gds": "f7f8c1cae769bdb2c7832d1c98bc70ca83f06803701969df52d3812fb9da5866"
+  },
+  "pin_access_performed": false,
+  "source_io": "actual_Croc_technology_GDS_not_assumed_identical_to_PDK_GDS",
+  "source_sha256": {
+    "runs/bondpad-geometry-20260905-003/geometry_summary.json": "bde2f1a78d8a2a038341d290acd3471cc164b3cbb251764ec4586eab0ef3020d",
+    "runs/bondpad-geometry-20260905-003/official_m2_square70.gds": "d3c1879ff1f3040dca9fe2edf65eae2e0265af9ae2ab9c66bd0c3de68d862a80",
+    "upstream/croc/technology/gds/bondpad_70x70.gds": "e33eb26e835a6cf38b07cd52458d90e1382f49f37361b5671c7b183add43ffec",
+    "upstream/croc/technology/gds/sg13g2_io.gds": "8bb45016e5a99e48b1df1ea52c97d6813d96f6afeb905a72a956ddc2c018565f"
+  }
+}

@@ -32,7 +32,10 @@ SPDX-License-Identifier: Apache-2.0
 
 - 固定官方 PCell 已生成独立候选；完整公开规则 40 项任务逐项复核完成，包含推荐规则、density、antenna、offgrid。原焊盘 fixture 为 153 markers（144 个 Pad.kR + 9 个全局密度），两个官方候选均为 9 markers（全部全局密度），**Pad.kR 144→0；fixture 整体仍 FAIL**。见[完整 DRC 复核](runs/croc-bondpad-drc-ab-20260905-002/audit.json)。
 - 原整芯片开窗下的 9,216 颗 TopVia2 来自 64 个焊盘宏（每个 144），并非路由新加的 via。这个物理过孔数与历史 merged Pad.kR=576 是不同口径。官方宏的下层金属是环形，不能直接搭配原 LEF 的全 70×70 µm 引脚区域；坐标原点也需平移。见[焊盘诊断](docs/07_bondpad_diagnosis_zh.md)。
-- 退出金属的几何分析发现部分层只有 3 µm，低于 7 µm 要求；Pad.dR/d1R 又涉及 IO 与 sealring 的间距，替换宏本身不能解决。下一实验应验证匹配 LEF 的官方焊盘、7 µm 退出连接及相邻 IO，再评估整芯片重布线。
+- **真实 IO 集成 A/B 完成。** 使用实际 Croc IOPadIn 与匹配 LEF 的官方焊盘；gap=0→4 µm 后 Pad 类 marker 9→0，候选剩余 5 个全局密度 marker，整体 FAIL。原宏 control 有 153 个 Pad marker。见[输入/输出哈希与完整规则审计](reports/bondpad/pad-io-integration-audit-20260905-001.json)。
+- **完整原封环 A/B 完成。** 焊盘内移 17.4 µm、IO 内移 21.5 µm，使 Pad.dR 1→0；候选剩余 105 个密度 marker（9 全局、96 局部窗口），整体 FAIL。保留完整 2×2 mm sealring，仅放一个 IO，不含其他芯片实例和填充，不能作为整芯片密度结果。见[封环审计](reports/bondpad/pad-seal-integration-audit-20260905-001.json)。
+- **引脚抽象已独立核对。** OpenDB 读回 21 个矩形，六层金属与官方 GDS 的 XOR 面积均为 0；严格 pin_access 实际完成，macroNoAp=0、有效 planar AP=480、via AP=0。未证明逐端子/跨层接入或真实布线，保留 LEF58 不支持警告和两个失败 API 尝试。见[访问审计](reports/bondpad/pin-access-20260905-003.json)。
+- **整圈晋级仍有明确门槛。** 单独移动选中 IO 后，未移动邻居的 Active 距开窗仅 7.1 µm（要求 11.2）；需协同移动 IO/filler/PG 并验证角单元、封装间距和内部布线空间。实际 Croc 与固定官方 IOPadIn 有 13 层几何差异，不静默替换库。详见[集成实验与下一步](docs/09_bondpad_io_integration_zh.md)。
 - 本轮没有替换整芯片版图，因此无新全芯片 PPA 或 DRC/LVS 结果。实际 filled GDS 含 sealring 的外边界为 2×2 mm=4.0 mm²，与 DEF 电气布局 3.671056 mm² 并列记录；这是边界口径补全，不是面积变化。
 
 ## 当前最需要改进的内容

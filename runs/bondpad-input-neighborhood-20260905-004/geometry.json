@@ -1,0 +1,435 @@
+{
+  "actual_pure_input_instances": [
+    {
+      "instance": "pad_clk_i",
+      "master": "sg13g2_IOPadIn",
+      "orientation": "FW",
+      "placement_dbu": [
+        70000,
+        1052000
+      ]
+    },
+    {
+      "instance": "pad_jtag_tck_i",
+      "master": "sg13g2_IOPadIn",
+      "orientation": "FW",
+      "placement_dbu": [
+        70000,
+        785000
+      ]
+    },
+    {
+      "instance": "pad_jtag_tdi_i",
+      "master": "sg13g2_IOPadIn",
+      "orientation": "FW",
+      "placement_dbu": [
+        70000,
+        518000
+      ]
+    },
+    {
+      "instance": "pad_jtag_tms_i",
+      "master": "sg13g2_IOPadIn",
+      "orientation": "FW",
+      "placement_dbu": [
+        70000,
+        607000
+      ]
+    },
+    {
+      "instance": "pad_jtag_trst_ni",
+      "master": "sg13g2_IOPadIn",
+      "orientation": "FW",
+      "placement_dbu": [
+        70000,
+        696000
+      ]
+    },
+    {
+      "instance": "pad_ref_clk_i",
+      "master": "sg13g2_IOPadIn",
+      "orientation": "FW",
+      "placement_dbu": [
+        70000,
+        963000
+      ]
+    },
+    {
+      "instance": "pad_rst_ni",
+      "master": "sg13g2_IOPadIn",
+      "orientation": "FW",
+      "placement_dbu": [
+        70000,
+        874000
+      ]
+    },
+    {
+      "instance": "pad_testmode_i",
+      "master": "sg13g2_IOPadIn",
+      "orientation": "FW",
+      "placement_dbu": [
+        70000,
+        1230000
+      ]
+    },
+    {
+      "instance": "pad_uart_rx_i",
+      "master": "sg13g2_IOPadIn",
+      "orientation": "FW",
+      "placement_dbu": [
+        70000,
+        1408000
+      ]
+    }
+  ],
+  "analytical_official_candidate": {
+    "classification": "analytical_region_translation_not_layout_or_drc",
+    "opening_bbox_um": [
+      7.1,
+      -50.5,
+      72.9,
+      15.3
+    ],
+    "pad_inward_shift_um": 17.4,
+    "seal_shift_um": 0,
+    "selected_io_inward_shift_um": 21.5,
+    "to_shifted_selected_io_active": {
+      "lower_um": 12.2,
+      "nearest_edge_pairs_dbu": [
+        "(7100,15300;72900,15300)/(73056,27500;6944,27500) props={}"
+      ],
+      "status": "measured_to_one_dbu",
+      "upper_um": 12.201
+    },
+    "to_unchanged_edge_active_not_recog": {
+      "lower_um": 25.1,
+      "nearest_edge_pairs_dbu": [
+        "(72900,-50500;7100,-50500)/(6876,-75600;73124,-75600) props={}"
+      ],
+      "status": "measured_to_one_dbu",
+      "upper_um": 25.101
+    },
+    "to_uniformly_shifted_neighborhood_active": {
+      "lower_um": 12.2,
+      "nearest_edge_pairs_dbu": [
+        "(7100,15300;72900,15300)/(73056,27500;6944,27500) props={}"
+      ],
+      "status": "measured_to_one_dbu",
+      "upper_um": 12.201
+    },
+    "to_unshifted_other_active": {
+      "lower_um": 7.1,
+      "nearest_edge_pairs_dbu": [
+        "(7100,5881;7100,15300)/(0,15419;0,6000) props={}",
+        "(72900,15300;72900,5881)/(80000,6000;80000,15419) props={}"
+      ],
+      "status": "measured_to_one_dbu",
+      "upper_um": 7.101
+    }
+  },
+  "canonical_bottom_frame": {
+    "bondpad_bbox_um": [
+      5,
+      -70,
+      75,
+      0
+    ],
+    "formula_um": "u=y_sealed-560.0; v=x_sealed-112.0",
+    "io_bbox_um": [
+      0,
+      0,
+      80,
+      180
+    ],
+    "is_existing_bottom_instance": false,
+    "lef_pad_pin_rect_um": [
+      5,
+      0,
+      75,
+      3
+    ],
+    "opening_bbox_um": [
+      7.135,
+      -67.865,
+      72.865,
+      -2.135
+    ]
+  },
+  "classification": "read_only_neighborhood_geometry_not_signoff",
+  "dbu_um": 0.001,
+  "distance_brackets_um": {
+    "opening_to_active": {
+      "lower_um": 8.135,
+      "nearest_edge_pairs_dbu": [
+        "(7135,-2135;72865,-2135)/(72993,6000;7007,6000) props={}"
+      ],
+      "status": "measured_to_one_dbu",
+      "upper_um": 8.136
+    },
+    "opening_to_edge_seal_active": {
+      "lower_um": 7.735,
+      "nearest_edge_pairs_dbu": [
+        "(72865,-67865;7135,-67865)/(7011,-75600;72989,-75600) props={}"
+      ],
+      "status": "measured_to_one_dbu",
+      "upper_um": 7.736
+    },
+    "opening_to_edge_seal_active_not_recog": {
+      "lower_um": 7.735,
+      "nearest_edge_pairs_dbu": [
+        "(72865,-67865;7135,-67865)/(7011,-75600;72989,-75600) props={}"
+      ],
+      "status": "measured_to_one_dbu",
+      "upper_um": 7.736
+    },
+    "opening_to_edge_seal_drawing": {
+      "lower_um": 7.735,
+      "nearest_edge_pairs_dbu": [
+        "(72865,-67865;7135,-67865)/(7011,-75600;72989,-75600) props={}"
+      ],
+      "status": "measured_to_one_dbu",
+      "upper_um": 7.736
+    }
+  },
+  "exit_strip": {
+    "Metal3_missing_bbox_um": [
+      5.0,
+      3.0,
+      75.0,
+      7.0
+    ],
+    "Metal3_present_area_um2": 210.0,
+    "Metal4_missing_bbox_um": [
+      5.0,
+      3.0,
+      75.0,
+      7.0
+    ],
+    "Metal4_present_area_um2": 210.0,
+    "bbox_local_um": [
+      5,
+      0,
+      75,
+      7
+    ],
+    "required_length_um": 7
+  },
+  "gds_chip_transform_into_sealed": "r0 *1 42000,42000",
+  "gds_input_transform_in_chip": "m45 *1 70000,518000",
+  "gds_io_geometry_exceeds_lef_each_side_um": 0.62,
+  "gds_pad_transform_in_chip": "m45 *1 0,523000",
+  "interfaces": [
+    {
+      "local_connections": [
+        [
+          "pad_jtag_tdi_i",
+          "p2c"
+        ]
+      ],
+      "net": "soc_jtag_tdi_i",
+      "section": "NETS"
+    },
+    {
+      "local_connections": [
+        [
+          "pad_jtag_tdi_i",
+          "iovdd"
+        ]
+      ],
+      "net": "VDDIO",
+      "section": "SPECIALNETS"
+    },
+    {
+      "local_connections": [
+        [
+          "pad_jtag_tdi_i",
+          "iovss"
+        ]
+      ],
+      "net": "VSSIO",
+      "section": "SPECIALNETS"
+    },
+    {
+      "local_connections": [
+        [
+          "IO_BOND_pad_jtag_tdi_i",
+          "pad"
+        ],
+        [
+          "pad_jtag_tdi_i",
+          "pad"
+        ]
+      ],
+      "net": "jtag_tdi_i",
+      "section": "SPECIALNETS"
+    }
+  ],
+  "layer_presence_in_gds": {
+    "Activ": true,
+    "EdgeSeal": true,
+    "Metal3": true,
+    "Metal4": true,
+    "Passiv": true,
+    "Recog": false,
+    "dfpad": true
+  },
+  "recog_overlap_with_edge_active_area_um2": 0.0,
+  "regions": {
+    "Activ": {
+      "bbox_local_um": [
+        -30.0,
+        -79.8,
+        110.0,
+        167.15
+      ],
+      "closest_inward_polygon_bboxes_um": [
+        [
+          -30.0,
+          6.0,
+          110.0,
+          61.0
+        ],
+        [
+          1.66,
+          7.66,
+          11.92,
+          40.72
+        ],
+        [
+          90.66,
+          7.66,
+          100.92,
+          40.72
+        ],
+        [
+          -30.0,
+          7.8,
+          -10.8,
+          14.1
+        ],
+        [
+          3.91,
+          10.3,
+          5.17,
+          38.08
+        ],
+        [
+          8.41,
+          10.3,
+          9.67,
+          38.08
+        ],
+        [
+          92.91,
+          10.3,
+          94.17,
+          38.08
+        ],
+        [
+          97.41,
+          10.3,
+          98.67,
+          38.08
+        ],
+        [
+          -8.75,
+          65.0,
+          -4.25,
+          89.56
+        ],
+        [
+          -3.78,
+          65.0,
+          -2.22,
+          89.56
+        ],
+        [
+          -1.78,
+          65.0,
+          -0.22,
+          89.56
+        ],
+        [
+          80.25,
+          65.0,
+          84.75,
+          89.56
+        ]
+      ],
+      "polygon_count_in_roi": 54
+    },
+    "EdgeSeal": {
+      "bbox_local_um": [
+        -30.0,
+        -79.8,
+        110.0,
+        -75.6
+      ],
+      "polygon_count_in_roi": 1
+    },
+    "Passiv": {
+      "bbox_local_um": [
+        -30.0,
+        -87.0,
+        110.0,
+        -2.135
+      ],
+      "polygon_count_in_roi": 4
+    },
+    "dfpad": {
+      "bbox_local_um": [
+        -30.0,
+        -70.0,
+        110.0,
+        0.0
+      ],
+      "polygon_count_in_roi": 3
+    }
+  },
+  "requested_bottom_input_instance_exists": false,
+  "schema_version": "1.0.0",
+  "scope": "No layout changed; clipped real neighborhood only; source GDS chip/seal transforms verified against DEF.",
+  "selected": {
+    "IO_BOND_pad_jtag_tdi_i": {
+      "instance": "IO_BOND_pad_jtag_tdi_i",
+      "master": "bondpad_70x70",
+      "orientation": "FW",
+      "placement_dbu": [
+        0,
+        523000
+      ]
+    },
+    "pad_jtag_tdi_i": {
+      "instance": "pad_jtag_tdi_i",
+      "master": "sg13g2_IOPadIn",
+      "orientation": "FW",
+      "placement_dbu": [
+        70000,
+        518000
+      ]
+    }
+  },
+  "selected_io_bbox_def_um": [
+    70.0,
+    518.0,
+    250.0,
+    598.0
+  ],
+  "selected_io_bbox_gds_um": [
+    70.0,
+    517.38,
+    250.0,
+    598.62
+  ],
+  "selected_pad_bbox_def_um": [
+    0.0,
+    523.0,
+    70.0,
+    593.0
+  ],
+  "source_sha256": {
+    "runs/croc-sg13g2-baseline-20260827-001/artifacts/gds.attempt-4/upstream/croc/klayout/out/croc.filled.gds.gz": "a529f11fd712ecdfb9abe66f2842838e8ffa38582d647c8f5ed612298e32ee09",
+    "runs/croc-sg13g2-baseline-20260827-001/artifacts/pnr/upstream/croc/openroad/out/croc.def": "a049a3dc53ad75b081441078048a74e02e535d1168dae7c8461933f9b60058dd",
+    "upstream/croc/technology/lef/sg13g2_io.lef": "8b3dc3960960c08e07a1cde3dd9cd0484f5b12df07c4628726fff551bb775c0c"
+  }
+}

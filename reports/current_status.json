@@ -66,7 +66,43 @@
         ],
         "boundary_change_is_not_ppa_optimization": true,
         "source": "runs/bondpad-geometry-20260905-003/geometry_summary.json"
-      }
+      },
+      "bondpad_io_fixture": {
+        "run_id": "croc-bondpad-io-ab-20260905-001",
+        "audit": "reports/bondpad/pad-io-integration-audit-20260905-001.json",
+        "control_pad_markers": 153,
+        "official_gap0_pad_markers": 9,
+        "official_gap4_pad_markers": 0,
+        "official_gap4_density_markers": 5,
+        "fixture_drc_passed": false,
+        "integrated_in_chip": false
+      },
+      "bondpad_seal_fixture": {
+        "run_id": "croc-bondpad-seal-ab-20260905-001",
+        "audit": "reports/bondpad/pad-seal-integration-audit-20260905-001.json",
+        "complete_original_seal": true,
+        "other_io_core_fill_included": false,
+        "pad_inward_um": 17.4,
+        "io_inward_um": 21.5,
+        "candidate_pad_markers": 0,
+        "candidate_global_density_markers": 9,
+        "candidate_local_density_markers": 96,
+        "fixture_drc_passed": false,
+        "integrated_in_chip": false
+      },
+      "bondpad_pin_access": {
+        "run_id": "croc-bondpad-pin-access-20260905-003",
+        "audit": "reports/bondpad/pin-access-20260905-003.json",
+        "loaded_pin_geometry_equal_to_gds": true,
+        "macro_no_ap": 0,
+        "macro_valid_planar_ap": 480,
+        "macro_valid_via_ap": 0,
+        "via_access_qualified": false,
+        "route_performed": false,
+        "all_connected_pad_terminals_individually_audited": false
+      },
+      "single_io_movement_sufficient_for_whole_neighborhood": false,
+      "actual_croc_io_equal_to_pinned_pdk_io": false
     },
     "B_pin3d": {
       "classification": "research_only",
@@ -86,7 +122,7 @@
     }
   },
   "next_actions": [
-    "Diagnose and repair pad geometry with independent fixtures while retaining all public rules.",
+    "Qualify a coordinated IO/filler/PG/corner segment with matched bondpad LEF and package pitch; single-IO pad DRC is clean but fixture density still fails.",
     "Retain 15 pF IO load; resolve pad driver and SRAM output electrical violations and CTS PPA cost.",
     "Qualify supported IHP strict leaf/parent fixes before any full-chip attempt 3.",
     "Route a qualified candidate, then rerun RCX/STA and strict DRC/LVS; retain per-iteration PPA.",

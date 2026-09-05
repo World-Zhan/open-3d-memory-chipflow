@@ -76,3 +76,25 @@ __pycache__/
 *.key
 credentials*
 secrets*
+
+# Auditable bondpad/actual-IO/complete-seal experiments; large raw files remain local
+!runs/croc-bondpad-io-ab-20260905-001/manifest.json
+!runs/croc-bondpad-io-ab-20260905-001/audit.json
+!runs/croc-bondpad-io-ab-20260905-001/inputs/
+runs/croc-bondpad-io-ab-20260905-001/inputs/*
+!runs/croc-bondpad-io-ab-20260905-001/inputs/fixture_summary.json
+!runs/croc-bondpad-io-ab-20260905-001/inputs/bondpad70_m2_ring.lef
+!runs/croc-bondpad-seal-ab-20260905-001/manifest.json
+!runs/croc-bondpad-seal-ab-20260905-001/audit.json
+!runs/croc-bondpad-seal-ab-20260905-001/inputs/
+runs/croc-bondpad-seal-ab-20260905-001/inputs/*
+!runs/croc-bondpad-seal-ab-20260905-001/inputs/fixture_summary.json
+!runs/croc-bondpad-pin-access-20260905-00[123]/manifest.json
+!runs/croc-bondpad-pin-access-20260905-00[123]/loaded_pin_geometry.tsv
+!runs/croc-bondpad-pin-access-20260905-00[123]/pad_io_access.def
+!runs/bondpad-input-neighborhood-20260905-00[1234]/manifest.json
+!runs/bondpad-input-neighborhood-20260905-00[1234]/executed_probe.py
+!runs/bondpad-input-neighborhood-20260905-00[24]/geometry.json
+!runs/bondpad-input-io-compare-20260905-001/manifest.json
+!runs/bondpad-input-io-compare-20260905-001/comparison.json
+!runs/bondpad-input-io-compare-20260905-001/executed_probe.py

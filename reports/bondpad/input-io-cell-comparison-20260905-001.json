@@ -1,0 +1,385 @@
+{
+  "cell": "sg13g2_IOPadIn",
+  "evidence": {
+    "runs/bondpad-input-io-compare-20260905-001/comparison.json": {
+      "bytes": 106643,
+      "sha256": "33a49161621d9a49a1d037f2f107bf63c77d5e97e84688765f3d534f92c1945a"
+    },
+    "runs/bondpad-input-io-compare-20260905-001/executed_probe.py": {
+      "bytes": 6956,
+      "sha256": "a72610443b6a8094d190cafa9ec4f40cc919f3eac3703a020a0e2985d879f3ab"
+    },
+    "runs/bondpad-input-io-compare-20260905-001/manifest.json": {
+      "bytes": 1533,
+      "sha256": "9353aff9157a3e4b0393953c57b41144d45653c1e733030b18310d079a45e631"
+    },
+    "runs/bondpad-input-io-compare-20260905-001/tool.log": {
+      "bytes": 1845,
+      "sha256": "c5110758125f124abe238527c6f5148c57bce1e3c6f0d6f941e526ea90bbfcee"
+    },
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/sg13g2.lyp": {
+      "bytes": 224483,
+      "sha256": "c9fd698498f3f798c2d3dc40f1aa0e0fcf646bd0a6e9e7522a008200487d5222"
+    }
+  },
+  "geometry_differences": [
+    {
+      "croc_area_um2": 9807.0332,
+      "layer_datatype": "1/0",
+      "name": "Activ.drawing",
+      "pinned_pdk_area_um2": 9820.9107,
+      "xor_area_um2": 13.8775,
+      "xor_bbox_dbu": [
+        42330,
+        140170,
+        51980,
+        160380
+      ]
+    },
+    {
+      "croc_area_um2": 8.138,
+      "layer_datatype": "5/0",
+      "name": "GatPoly.drawing",
+      "pinned_pdk_area_um2": 18.7985,
+      "xor_area_um2": 11.4525,
+      "xor_bbox_dbu": [
+        41540,
+        141040,
+        51640,
+        166660
+      ]
+    },
+    {
+      "croc_area_um2": 0.0,
+      "layer_datatype": "5/2",
+      "name": "GatPoly.pin",
+      "pinned_pdk_area_um2": 6.282,
+      "xor_area_um2": 6.282,
+      "xor_bbox_dbu": [
+        48700,
+        141040,
+        51640,
+        147600
+      ]
+    },
+    {
+      "croc_area_um2": 1889.1264,
+      "layer_datatype": "6/0",
+      "name": "Cont.drawing",
+      "pinned_pdk_area_um2": 1890.6624,
+      "xor_area_um2": 1.5872,
+      "xor_bbox_dbu": [
+        41685,
+        140240,
+        51910,
+        166570
+      ]
+    },
+    {
+      "croc_area_um2": 9775.3879,
+      "layer_datatype": "8/0",
+      "name": "Metal1.drawing",
+      "pinned_pdk_area_um2": 9789.087125,
+      "xor_area_um2": 16.444875,
+      "xor_bbox_dbu": [
+        40310,
+        140170,
+        51910,
+        166895
+      ]
+    },
+    {
+      "croc_area_um2": 445.9157,
+      "layer_datatype": "8/2",
+      "name": "Metal1.pin",
+      "pinned_pdk_area_um2": 448.4057,
+      "xor_area_um2": 2.49,
+      "xor_bbox_dbu": [
+        48430,
+        141220,
+        51910,
+        147420
+      ]
+    },
+    {
+      "croc_area_um2": 1547.46855,
+      "layer_datatype": "10/0",
+      "name": "Metal2.drawing",
+      "pinned_pdk_area_um2": 1552.31305,
+      "xor_area_um2": 9.189,
+      "xor_bbox_dbu": [
+        40385,
+        143235,
+        51145,
+        161645
+      ]
+    },
+    {
+      "croc_area_um2": 5984.405,
+      "layer_datatype": "14/0",
+      "name": "pSD.drawing",
+      "pinned_pdk_area_um2": 5998.332,
+      "xor_area_um2": 13.927,
+      "xor_bbox_dbu": [
+        47975,
+        140350,
+        52335,
+        147820
+      ]
+    },
+    {
+      "croc_area_um2": 80.6474,
+      "layer_datatype": "19/0",
+      "name": "Via1.drawing",
+      "pinned_pdk_area_um2": 81.5499,
+      "xor_area_um2": 1.0469,
+      "xor_bbox_dbu": [
+        41670,
+        143240,
+        51095,
+        161595
+      ]
+    },
+    {
+      "croc_area_um2": 4869.0491,
+      "layer_datatype": "31/0",
+      "name": "NWell.drawing",
+      "pinned_pdk_area_um2": 4889.660375,
+      "xor_area_um2": 20.611275,
+      "xor_bbox_dbu": [
+        46985,
+        144500,
+        53650,
+        149275
+      ]
+    },
+    {
+      "croc_area_um2": 5581.4268,
+      "layer_datatype": "40/0",
+      "name": "Substrate.drawing",
+      "pinned_pdk_area_um2": 5582.4108,
+      "xor_area_um2": 0.984,
+      "xor_bbox_dbu": [
+        48875,
+        140170,
+        51980,
+        145420
+      ]
+    },
+    {
+      "croc_area_um2": 15.1636,
+      "layer_datatype": "44/0",
+      "name": "ThickGateOx.drawing",
+      "pinned_pdk_area_um2": 40.8657,
+      "xor_area_um2": 25.7021,
+      "xor_bbox_dbu": [
+        42600,
+        140740,
+        52675,
+        160650
+      ]
+    },
+    {
+      "croc_area_um2": 0.0,
+      "layer_datatype": "51/0",
+      "name": "HeatTrans.drawing",
+      "pinned_pdk_area_um2": 5.31,
+      "xor_area_um2": 5.31,
+      "xor_bbox_dbu": [
+        48700,
+        141220,
+        51640,
+        147420
+      ]
+    }
+  ],
+  "interpretation": [
+    "Croc and pinned official GDS differ in real geometry and transformed labels of this cell tree; the difference is not only metadata.",
+    "Both sg13g2_IOPadIn GDS bboxes are (-0.62, 0; 80.62, 180) um. Identical bboxes do not imply identical layout.",
+    "Use the actual Croc IO cell in pad/IO fixtures so the experiment does not combine pad changes with an IO library replacement.",
+    "No full-library equivalence, DRC, LVS, netlist equivalence or signoff conclusion is made."
+  ],
+  "label_differences": [
+    {
+      "croc_only_labels": 1,
+      "croc_only_strings": [
+        "iovdd"
+      ],
+      "layer_datatype": "8/25",
+      "name": "Metal1.text",
+      "pinned_pdk_only_labels": 1,
+      "pinned_pdk_only_strings": [
+        "plus"
+      ]
+    },
+    {
+      "croc_only_labels": 1,
+      "croc_only_strings": [
+        "iovss"
+      ],
+      "layer_datatype": "10/25",
+      "name": "Metal2.text",
+      "pinned_pdk_only_labels": 1,
+      "pinned_pdk_only_strings": [
+        "minus"
+      ]
+    },
+    {
+      "croc_only_labels": 0,
+      "croc_only_strings": [],
+      "layer_datatype": "51/0",
+      "name": "HeatTrans.drawing",
+      "pinned_pdk_only_labels": 6,
+      "pinned_pdk_only_strings": [
+        "nmosHV",
+        "pmosHV"
+      ]
+    },
+    {
+      "croc_only_labels": 0,
+      "croc_only_strings": [],
+      "layer_datatype": "63/0",
+      "name": "TEXT.drawing",
+      "pinned_pdk_only_labels": 5,
+      "pinned_pdk_only_strings": [
+        "nmosHV",
+        "pmosHV",
+        "sub!"
+      ]
+    }
+  ],
+  "result": "different_geometry_and_labels",
+  "run_id": "bondpad-input-io-compare-20260905-001",
+  "schema_version": 1,
+  "scope": "recursively_expanded_single_cell_tree",
+  "sources": {
+    "croc": {
+      "bytes": 71398262,
+      "dbu_um": 0.001,
+      "path": "upstream/croc/technology/gds/sg13g2_io.gds",
+      "referenced_cell_names": [
+        "sg13g2_DCNDiode",
+        "sg13g2_DCPDiode",
+        "sg13g2_IOPadIn",
+        "sg13g2_LevelDown",
+        "sg13g2_SecondaryProtection"
+      ],
+      "sha256": "8bb45016e5a99e48b1df1ea52c97d6813d96f6afeb905a72a956ddc2c018565f",
+      "target_bbox_dbu": [
+        -620,
+        0,
+        80620,
+        180000
+      ]
+    },
+    "pinned_pdk": {
+      "bytes": 71424000,
+      "dbu_um": 0.001,
+      "path": "upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/gds/sg13g2_io.gds",
+      "referenced_cell_names": [
+        "M2_M1_CDNS_777302434540",
+        "M2_M1_CDNS_777302434541",
+        "sg13g2_DCNDiode",
+        "sg13g2_DCPDiode",
+        "sg13g2_IOPadIn",
+        "sg13g2_LevelDown",
+        "sg13g2_SecondaryProtection"
+      ],
+      "sha256": "4281a855377b6a1ca46356e9391258dc14e8efc3b8051a65befc0fe9db3c7825",
+      "target_bbox_dbu": [
+        -620,
+        0,
+        80620,
+        180000
+      ]
+    }
+  },
+  "summary": {
+    "expanded_label_count": {
+      "croc": 79,
+      "pinned_pdk": 90
+    },
+    "filled_geometry_equal": false,
+    "nonempty_layer_pairs": 41,
+    "target_bbox_equal": true,
+    "transformed_labels_equal": false,
+    "unequal_geometry_layers": [
+      [
+        1,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        10,
+        0
+      ],
+      [
+        14,
+        0
+      ],
+      [
+        19,
+        0
+      ],
+      [
+        31,
+        0
+      ],
+      [
+        40,
+        0
+      ],
+      [
+        44,
+        0
+      ],
+      [
+        51,
+        0
+      ]
+    ],
+    "unequal_label_layers": [
+      [
+        8,
+        25
+      ],
+      [
+        10,
+        25
+      ],
+      [
+        51,
+        0
+      ],
+      [
+        63,
+        0
+      ]
+    ]
+  },
+  "validation": {
+    "manifest_artifact_hashes_match": true,
+    "python_ast_valid": true,
+    "report_script_matches_executed_snapshot": true,
+    "returncode": 0
+  }
+}

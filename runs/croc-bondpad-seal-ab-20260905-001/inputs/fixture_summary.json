@@ -1,0 +1,102 @@
+{
+  "all_other_chip_instances_and_fill_excluded": true,
+  "arms": [
+    {
+      "bbox_um": "(-560,-112;1440,1888)",
+      "complete_netlist_equivalence_proven": false,
+      "gap_um": 4.0,
+      "gds_sha256": "591efceb0ed73247456ce2aecb16aae28833cb69d3a6f543adffbb2ba6d794d5",
+      "io_inward_shift_um": 4.0,
+      "name": "official_seal_control",
+      "neighbor_io_fill_pg_included": false,
+      "opening_active_separation_11p2um_pairs": 0,
+      "opening_seal_active_separation_25um_pairs": 1,
+      "pad_inward_shift_um": 0.0,
+      "per_layer": {
+        "Metal2": {
+          "added_lead_area_um2": 280.0,
+          "pad_lead_io_connected": true
+        },
+        "Metal3": {
+          "added_lead_area_um2": 280.0,
+          "pad_lead_io_connected": true
+        },
+        "Metal4": {
+          "added_lead_area_um2": 280.0,
+          "pad_lead_io_connected": true
+        },
+        "Metal5": {
+          "added_lead_area_um2": 280.0,
+          "pad_lead_io_connected": true
+        },
+        "TopMetal1": {
+          "added_lead_area_um2": 280.0,
+          "pad_lead_io_connected": true
+        },
+        "TopMetal2": {
+          "added_lead_area_um2": 280.0,
+          "pad_lead_io_connected": true
+        }
+      },
+      "seal_shift_um": 0,
+      "topcell": "official_seal_control"
+    },
+    {
+      "bbox_um": "(-560,-112;1440,1888)",
+      "complete_netlist_equivalence_proven": false,
+      "gap_um": 4.1,
+      "gds_sha256": "9a1f7b4eb0d32151e634621aa9423842b5d10d10cb148d7e13bb15bd29333d3a",
+      "io_inward_shift_um": 21.5,
+      "name": "official_seal_margined",
+      "neighbor_io_fill_pg_included": false,
+      "opening_active_separation_11p2um_pairs": 0,
+      "opening_seal_active_separation_25um_pairs": 0,
+      "pad_inward_shift_um": 17.4,
+      "per_layer": {
+        "Metal2": {
+          "added_lead_area_um2": 287.0,
+          "pad_lead_io_connected": true
+        },
+        "Metal3": {
+          "added_lead_area_um2": 287.0,
+          "pad_lead_io_connected": true
+        },
+        "Metal4": {
+          "added_lead_area_um2": 287.0,
+          "pad_lead_io_connected": true
+        },
+        "Metal5": {
+          "added_lead_area_um2": 287.0,
+          "pad_lead_io_connected": true
+        },
+        "TopMetal1": {
+          "added_lead_area_um2": 287.0,
+          "pad_lead_io_connected": true
+        },
+        "TopMetal2": {
+          "added_lead_area_um2": 287.0,
+          "pad_lead_io_connected": true
+        }
+      },
+      "seal_shift_um": 0,
+      "topcell": "official_seal_margined"
+    }
+  ],
+  "canonical_transform_from_sealed_dbu": "m45 -560000,-112000",
+  "classification": "single_io_complete_seal_fixture_not_chip_signoff",
+  "full_chip_modified": false,
+  "lvs_performed": false,
+  "outputs_sha256": {
+    "official_seal_control.gds": "591efceb0ed73247456ce2aecb16aae28833cb69d3a6f543adffbb2ba6d794d5",
+    "official_seal_margined.gds": "9a1f7b4eb0d32151e634621aa9423842b5d10d10cb148d7e13bb15bd29333d3a",
+    "sealring_from_baseline.gds": "f378e94806fd40fa4334f3b8ca466dceb0a36f70d32ae10b033b22552747324a"
+  },
+  "seal_gds_sha256": "f378e94806fd40fa4334f3b8ca466dceb0a36f70d32ae10b033b22552747324a",
+  "seal_subtree_preserved": true,
+  "source_sha256": {
+    "runs/croc-bondpad-io-ab-20260905-001/inputs/bondpad70_m2_ring.gds": "cef601b172ee7fd374f9cccccc715b2122d188962a28fc84297bf1c94ad69f16",
+    "runs/croc-bondpad-io-ab-20260905-001/inputs/fixture_summary.json": "54ae870304017d1433d34281edabb589230752f1736d7213feeab34077e610b0",
+    "runs/croc-sg13g2-baseline-20260827-001/artifacts/gds.attempt-4/upstream/croc/klayout/out/croc.filled.gds.gz": "a529f11fd712ecdfb9abe66f2842838e8ffa38582d647c8f5ed612298e32ee09",
+    "upstream/croc/technology/gds/sg13g2_io.gds": "8bb45016e5a99e48b1df1ea52c97d6813d96f6afeb905a72a956ddc2c018565f"
+  }
+}

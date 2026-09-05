@@ -1,0 +1,50 @@
+{
+  "run_id": "bondpad-input-io-compare-20260905-001",
+  "started_at": "2026-09-05T09:26:05.640532+00:00",
+  "image": "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "--name",
+    "bondpad-input-io-compare-20260905-001",
+    "--cpus",
+    "2",
+    "--memory",
+    "2g",
+    "--user",
+    "1000:1000",
+    "--entrypoint",
+    "/usr/bin/timeout",
+    "-v",
+    "/home/james_zhan/projects/open-3d-memory-chipflow:/work:ro",
+    "-v",
+    "/home/james_zhan/projects/open-3d-memory-chipflow/runs/bondpad-input-io-compare-20260905-001:/output:rw",
+    "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+    "--signal=TERM",
+    "--kill-after=3s",
+    "45s",
+    "python3",
+    "/output/executed_probe.py"
+  ],
+  "scope": "sg13g2_IOPadIn_recursive_cell_only",
+  "repository_head": "fc4c097026fb0e36862c0eb1f7a9f7c008fa7dce",
+  "script_sha256": "a72610443b6a8094d190cafa9ec4f40cc919f3eac3703a020a0e2985d879f3ab",
+  "status": "completed",
+  "returncode": 0,
+  "ended_at": "2026-09-05T09:26:07.457936+00:00",
+  "artifacts": {
+    "comparison.json": {
+      "bytes": 106643,
+      "sha256": "33a49161621d9a49a1d037f2f107bf63c77d5e97e84688765f3d534f92c1945a"
+    },
+    "executed_probe.py": {
+      "bytes": 6956,
+      "sha256": "a72610443b6a8094d190cafa9ec4f40cc919f3eac3703a020a0e2985d879f3ab"
+    },
+    "tool.log": {
+      "bytes": 1845,
+      "sha256": "c5110758125f124abe238527c6f5148c57bce1e3c6f0d6f941e526ea90bbfcee"
+    }
+  }
+}

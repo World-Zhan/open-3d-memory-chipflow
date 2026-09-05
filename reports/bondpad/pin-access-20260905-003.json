@@ -1,0 +1,82 @@
+{
+  "all_connected_pad_terminals_individually_audited": false,
+  "all_pin_metals_match_gds": true,
+  "classification": "pin_geometry_and_aggregate_access_not_route_signoff",
+  "counts": {
+    "aggregate_macro_access_check_passed": true,
+    "execution_complete": true,
+    "macroGenAp": 3234,
+    "macroNoAp": 0,
+    "macroValidPlanarAp": 480,
+    "macroValidViaAp": 0,
+    "scanned instances": 2,
+    "unique  instances": 2
+  },
+  "dbu_um": 0.001,
+  "limits": "Aggregate macro access only; router reports zero valid via AP and unsupported LEF58 enclosure clauses. Full public deck and routed connectivity are separate gates.",
+  "lvs_performed": false,
+  "pin_geometry": {
+    "Metal2": {
+      "gds_area_um2": 1073.3404,
+      "geometry_equal": true,
+      "opendb_rectangles": 4,
+      "symmetric_difference_area_um2": 0.0
+    },
+    "Metal3": {
+      "gds_area_um2": 1073.3404,
+      "geometry_equal": true,
+      "opendb_rectangles": 4,
+      "symmetric_difference_area_um2": 0.0
+    },
+    "Metal4": {
+      "gds_area_um2": 1073.3404,
+      "geometry_equal": true,
+      "opendb_rectangles": 4,
+      "symmetric_difference_area_um2": 0.0
+    },
+    "Metal5": {
+      "gds_area_um2": 1073.3404,
+      "geometry_equal": true,
+      "opendb_rectangles": 4,
+      "symmetric_difference_area_um2": 0.0
+    },
+    "TopMetal1": {
+      "gds_area_um2": 1073.3404,
+      "geometry_equal": true,
+      "opendb_rectangles": 4,
+      "symmetric_difference_area_um2": 0.0
+    },
+    "TopMetal2": {
+      "gds_area_um2": 4900.0,
+      "geometry_equal": true,
+      "opendb_rectangles": 1,
+      "symmetric_difference_area_um2": 0.0
+    }
+  },
+  "public_rule_signoff": false,
+  "route_performed": false,
+  "router_warnings": [
+    "[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Cont",
+    "[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via1",
+    "[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via1",
+    "[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via2",
+    "[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via3",
+    "[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via4",
+    "[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer TopVia1",
+    "[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer TopVia1",
+    "[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer TopVia2",
+    "[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer TopVia2"
+  ],
+  "run_id": "croc-bondpad-pin-access-20260905-003",
+  "schema_version": "1.0.0",
+  "source_run_hashes_verified": true,
+  "source_sha256": {
+    "runs/croc-bondpad-io-ab-20260905-001/inputs/bondpad70_m2_ring.gds": "cef601b172ee7fd374f9cccccc715b2122d188962a28fc84297bf1c94ad69f16",
+    "runs/croc-bondpad-io-ab-20260905-001/inputs/fixture_summary.json": "54ae870304017d1433d34281edabb589230752f1736d7213feeab34077e610b0",
+    "runs/croc-bondpad-pin-access-20260905-003/loaded_pin_geometry.tsv": "0cadeb8ec8bba24f9a0b6d12283ab5c640b60c2299b2ef8a3976d2d0b3b95d89",
+    "runs/croc-bondpad-pin-access-20260905-003/manifest.json": "0b667487b665eb07eca33d9742c73c48674aa1873b27a6f1a0ba72a06e29b259",
+    "runs/croc-bondpad-pin-access-20260905-003/tool.log": "43e8382045b2b4586b015ec3201e065b00752098cc19ec64f2e92467ddcffbeb",
+    "scripts/audit_bondpad_pin_access.py": "34fa4b6f49dd40bc7ca281c7e843636499a54c30fca62e1cf5ba64f96d2366cf"
+  },
+  "via_access_qualified": false
+}

@@ -1,0 +1,482 @@
+{
+  "actual_pure_input_instances": [
+    {
+      "instance": "pad_clk_i",
+      "master": "sg13g2_IOPadIn",
+      "orientation": "FW",
+      "placement_dbu": [
+        70000,
+        1052000
+      ]
+    },
+    {
+      "instance": "pad_jtag_tck_i",
+      "master": "sg13g2_IOPadIn",
+      "orientation": "FW",
+      "placement_dbu": [
+        70000,
+        785000
+      ]
+    },
+    {
+      "instance": "pad_jtag_tdi_i",
+      "master": "sg13g2_IOPadIn",
+      "orientation": "FW",
+      "placement_dbu": [
+        70000,
+        518000
+      ]
+    },
+    {
+      "instance": "pad_jtag_tms_i",
+      "master": "sg13g2_IOPadIn",
+      "orientation": "FW",
+      "placement_dbu": [
+        70000,
+        607000
+      ]
+    },
+    {
+      "instance": "pad_jtag_trst_ni",
+      "master": "sg13g2_IOPadIn",
+      "orientation": "FW",
+      "placement_dbu": [
+        70000,
+        696000
+      ]
+    },
+    {
+      "instance": "pad_ref_clk_i",
+      "master": "sg13g2_IOPadIn",
+      "orientation": "FW",
+      "placement_dbu": [
+        70000,
+        963000
+      ]
+    },
+    {
+      "instance": "pad_rst_ni",
+      "master": "sg13g2_IOPadIn",
+      "orientation": "FW",
+      "placement_dbu": [
+        70000,
+        874000
+      ]
+    },
+    {
+      "instance": "pad_testmode_i",
+      "master": "sg13g2_IOPadIn",
+      "orientation": "FW",
+      "placement_dbu": [
+        70000,
+        1230000
+      ]
+    },
+    {
+      "instance": "pad_uart_rx_i",
+      "master": "sg13g2_IOPadIn",
+      "orientation": "FW",
+      "placement_dbu": [
+        70000,
+        1408000
+      ]
+    }
+  ],
+  "affected_interfaces": {
+    "all_lef_pin_names": [
+      "iovdd",
+      "iovss",
+      "p2c",
+      "pad",
+      "vdd",
+      "vss"
+    ],
+    "lef_pins_without_selected_instance_connection_in_def": [
+      "vdd",
+      "vss"
+    ],
+    "local_connections_from_def": [
+      {
+        "local_connections": [
+          [
+            "pad_jtag_tdi_i",
+            "p2c"
+          ]
+        ],
+        "net": "soc_jtag_tdi_i",
+        "section": "NETS"
+      },
+      {
+        "local_connections": [
+          [
+            "pad_jtag_tdi_i",
+            "iovdd"
+          ]
+        ],
+        "net": "VDDIO",
+        "section": "SPECIALNETS"
+      },
+      {
+        "local_connections": [
+          [
+            "pad_jtag_tdi_i",
+            "iovss"
+          ]
+        ],
+        "net": "VSSIO",
+        "section": "SPECIALNETS"
+      },
+      {
+        "local_connections": [
+          [
+            "IO_BOND_pad_jtag_tdi_i",
+            "pad"
+          ],
+          [
+            "pad_jtag_tdi_i",
+            "pad"
+          ]
+        ],
+        "net": "jtag_tdi_i",
+        "section": "SPECIALNETS"
+      }
+    ],
+    "required_revalidation": [
+      "jtag_tdi_i package pin and bondpad-to-IO pad lead",
+      "soc_jtag_tdi_i p2c route to existing core pins",
+      "IO supply rail continuity and neighboring IO abutment",
+      "All LEF power/ground pins including those not observed as explicit selected-instance DEF connections"
+    ],
+    "signal_connections_from_def": [
+      {
+        "connections": [
+          [
+            "pad_jtag_tdi_i",
+            "p2c"
+          ],
+          [
+            "i_croc_soc/i_croc/i_dmi_jtag/_1523_",
+            "B"
+          ],
+          [
+            "i_croc_soc/i_croc/i_dmi_jtag/_1464_",
+            "B2"
+          ],
+          [
+            "i_croc_soc/i_croc/i_dmi_jtag/_1430_",
+            "A"
+          ],
+          [
+            "i_croc_soc/i_croc/i_dmi_jtag/_1403_",
+            "B2"
+          ],
+          [
+            "i_croc_soc/i_croc/i_dmi_jtag/_1303_",
+            "A"
+          ]
+        ],
+        "net": "soc_jtag_tdi_i",
+        "section": "NETS"
+      },
+      {
+        "connections": [
+          [
+            "PIN",
+            "jtag_tdi_i"
+          ],
+          [
+            "IO_BOND_pad_jtag_tdi_i",
+            "pad"
+          ],
+          [
+            "pad_jtag_tdi_i",
+            "pad"
+          ]
+        ],
+        "net": "jtag_tdi_i",
+        "section": "SPECIALNETS"
+      }
+    ]
+  },
+  "canonical_frame": {
+    "bondpad_bbox_um": [
+      5,
+      -70,
+      75,
+      0
+    ],
+    "formula_um": "u=y_sealed-560.0; v=x_sealed-112.0",
+    "io_bbox_um": [
+      0,
+      0,
+      80,
+      180
+    ],
+    "is_existing_bottom_instance": false,
+    "lef_pad_pin_rect_um": [
+      5,
+      0,
+      75,
+      3
+    ],
+    "opening_bbox_um": [
+      7.135,
+      -67.865,
+      72.865,
+      -2.135
+    ]
+  },
+  "changes_to_source_layout": false,
+  "classification": "read_only_geometry_and_analytical_constraints_not_signoff",
+  "existing_exit_strip": {
+    "Metal3_missing_bbox_um": [
+      5.0,
+      3.0,
+      75.0,
+      7.0
+    ],
+    "Metal3_present_area_um2": 210.0,
+    "Metal4_missing_bbox_um": [
+      5.0,
+      3.0,
+      75.0,
+      7.0
+    ],
+    "Metal4_present_area_um2": 210.0,
+    "bbox_local_um": [
+      5,
+      0,
+      75,
+      7
+    ],
+    "required_length_um": 7
+  },
+  "full_chip_drc_lvs_performed": false,
+  "gds_io_bbox_um": [
+    70.0,
+    517.38,
+    250.0,
+    598.62
+  ],
+  "geometry_returncode": 0,
+  "geometry_run": "runs/bondpad-input-neighborhood-20260905-004",
+  "history": [
+    {
+      "reason": "GDS physical bbox extends 0.62 um beyond each LEF width side; original bbox selection assertion failed",
+      "returncode": 1,
+      "run": "bondpad-input-neighborhood-20260905-001"
+    },
+    {
+      "reason": "Measured original selected neighborhood",
+      "returncode": 0,
+      "run": "bondpad-input-neighborhood-20260905-002"
+    },
+    {
+      "reason": "Recog99/0 does not exist in GDS; initial missing-layer handling failed",
+      "returncode": 1,
+      "run": "bondpad-input-neighborhood-20260905-003"
+    },
+    {
+      "reason": "Completed exact Recog exclusion and analytical neighbor translation checks",
+      "returncode": 0,
+      "run": "bondpad-input-neighborhood-20260905-004"
+    }
+  ],
+  "lef_io_bbox_um": [
+    70.0,
+    518.0,
+    250.0,
+    598.0
+  ],
+  "local_extraction": {
+    "active_layer": "1/0",
+    "api": "(k.Region(sealed.begin_shapes_rec_touching(layer_index, roi)) & k.Region(roi)).transformed(normal).merged()",
+    "caution": "A clipped seal segment has artificial ends. Include its complete layer stack for any fixture DRC and report cut-boundary effects separately.",
+    "dbu_um": 0.001,
+    "edge_seal_layer": "39/0",
+    "local_edge_seal_bbox_um": [
+      -30.0,
+      -79.8,
+      110.0,
+      -75.6
+    ],
+    "normalization": "k.Trans(k.Trans.M45, -560000, -112000)",
+    "outward_direction": "negative canonical v",
+    "recog_layer": "99/0 absent in source GDS",
+    "sealed_roi_dbu": [
+      12000,
+      530000,
+      322000,
+      670000
+    ]
+  },
+  "measured_analytical_translation": {
+    "classification": "analytical_region_translation_not_layout_or_drc",
+    "opening_bbox_um": [
+      7.1,
+      -50.5,
+      72.9,
+      15.3
+    ],
+    "pad_inward_shift_um": 17.4,
+    "seal_shift_um": 0,
+    "selected_io_inward_shift_um": 21.5,
+    "to_shifted_selected_io_active": {
+      "lower_um": 12.2,
+      "nearest_edge_pairs_dbu": [
+        "(7100,15300;72900,15300)/(73056,27500;6944,27500) props={}"
+      ],
+      "status": "measured_to_one_dbu",
+      "upper_um": 12.201
+    },
+    "to_unchanged_edge_active_not_recog": {
+      "lower_um": 25.1,
+      "nearest_edge_pairs_dbu": [
+        "(72900,-50500;7100,-50500)/(6876,-75600;73124,-75600) props={}"
+      ],
+      "status": "measured_to_one_dbu",
+      "upper_um": 25.101
+    },
+    "to_uniformly_shifted_neighborhood_active": {
+      "lower_um": 12.2,
+      "nearest_edge_pairs_dbu": [
+        "(7100,15300;72900,15300)/(73056,27500;6944,27500) props={}"
+      ],
+      "status": "measured_to_one_dbu",
+      "upper_um": 12.201
+    },
+    "to_unshifted_other_active": {
+      "lower_um": 7.1,
+      "nearest_edge_pairs_dbu": [
+        "(7100,5881;7100,15300)/(0,15419;0,6000) props={}",
+        "(72900,15300;72900,5881)/(80000,6000;80000,15419) props={}"
+      ],
+      "status": "measured_to_one_dbu",
+      "upper_um": 7.101
+    }
+  },
+  "measured_distance_brackets_um": {
+    "opening_to_active": {
+      "lower_um": 8.135,
+      "nearest_edge_pairs_dbu": [
+        "(7135,-2135;72865,-2135)/(72993,6000;7007,6000) props={}"
+      ],
+      "status": "measured_to_one_dbu",
+      "upper_um": 8.136
+    },
+    "opening_to_edge_seal_active": {
+      "lower_um": 7.735,
+      "nearest_edge_pairs_dbu": [
+        "(72865,-67865;7135,-67865)/(7011,-75600;72989,-75600) props={}"
+      ],
+      "status": "measured_to_one_dbu",
+      "upper_um": 7.736
+    },
+    "opening_to_edge_seal_active_not_recog": {
+      "lower_um": 7.735,
+      "nearest_edge_pairs_dbu": [
+        "(72865,-67865;7135,-67865)/(7011,-75600;72989,-75600) props={}"
+      ],
+      "status": "measured_to_one_dbu",
+      "upper_um": 7.736
+    },
+    "opening_to_edge_seal_drawing": {
+      "lower_um": 7.735,
+      "nearest_edge_pairs_dbu": [
+        "(72865,-67865;7135,-67865)/(7011,-75600;72989,-75600) props={}"
+      ],
+      "status": "measured_to_one_dbu",
+      "upper_um": 7.736
+    }
+  },
+  "movement_model": {
+    "assumptions": [
+      "Parallel nearest edges remain relevant; no rotation or tangential shift.",
+      "Add a continuous lead across the pad-to-IO gap, aligned to the six actual pad-pin metal layers.",
+      "Neighbor Active, PG rails, corners, routing, density and package geometry require independent validation."
+    ],
+    "inequalities_um": [
+      "old_seal_gap + P - S >= 25",
+      "old_active_gap + I - P >= 11.2",
+      "3 + I - P >= 7"
+    ],
+    "positive_direction": "inward canonical v",
+    "variables": {
+      "I": "all relevant inner Active / IO inward translation",
+      "P": "pad inward translation",
+      "S": "seal inward translation"
+    },
+    "variants": [
+      {
+        "macro": "original_croc_square70",
+        "min_io_inward_shift_at_min_pad_um": 21.265,
+        "min_io_minus_pad_shift_combined_um": 4.0,
+        "min_io_minus_pad_shift_for_7um_exit_um": 4.0,
+        "min_io_minus_pad_shift_for_active_um": 3.065,
+        "min_pad_inward_shift_fixed_seal_um": 17.265,
+        "passiv_enclosure_um": 2.135,
+        "predicted_active_gap_at_boundary_um": 12.135,
+        "predicted_exit_length_at_boundary_um": 7.0,
+        "predicted_seal_gap_at_boundary_um": 25.0,
+        "scope": "Necessary local rigid-body constraints with a new continuous lead; all relevant inner Active must follow IO shift. Not full-neighborhood sufficiency or DRC.",
+        "unshifted_active_gap_um": 8.135,
+        "unshifted_seal_gap_um": 7.735
+      },
+      {
+        "macro": "official_m2_square70",
+        "min_io_inward_shift_at_min_pad_um": 21.3,
+        "min_io_minus_pad_shift_combined_um": 4.0,
+        "min_io_minus_pad_shift_for_7um_exit_um": 4.0,
+        "min_io_minus_pad_shift_for_active_um": 3.1,
+        "min_pad_inward_shift_fixed_seal_um": 17.3,
+        "passiv_enclosure_um": 2.1,
+        "predicted_active_gap_at_boundary_um": 12.1,
+        "predicted_exit_length_at_boundary_um": 7.0,
+        "predicted_seal_gap_at_boundary_um": 25.0,
+        "scope": "Necessary local rigid-body constraints with a new continuous lead; all relevant inner Active must follow IO shift. Not full-neighborhood sufficiency or DRC.",
+        "unshifted_active_gap_um": 8.1,
+        "unshifted_seal_gap_um": 7.7
+      }
+    ]
+  },
+  "neighbor_constraint": {
+    "reason": "At pad +17.4 and selected IO +21.5, unchanged neighboring Active at u=0/80 gives only 7.1 um separation; moving just this IO does not pass Pad.d1R.",
+    "single_io_shift_is_sufficient": false
+  },
+  "ppa": {
+    "new_chip_area_power_timing_result": false,
+    "new_chip_candidate": false
+  },
+  "requested_bottom_input_instance_exists": false,
+  "schema_version": "1.0.0",
+  "selection": {
+    "IO_BOND_pad_jtag_tdi_i": {
+      "instance": "IO_BOND_pad_jtag_tdi_i",
+      "master": "bondpad_70x70",
+      "orientation": "FW",
+      "placement_dbu": [
+        0,
+        523000
+      ]
+    },
+    "pad_jtag_tdi_i": {
+      "instance": "pad_jtag_tdi_i",
+      "master": "sg13g2_IOPadIn",
+      "orientation": "FW",
+      "placement_dbu": [
+        70000,
+        518000
+      ]
+    }
+  },
+  "source_sha256": {
+    "reports/bondpad/input-io-cell-comparison-20260905-001.json": "fe87320b90e1005d65799946789496e2aee5c98c2c915189aabe1c2f33321105",
+    "reports/bondpad/summarize_input_io_geometry.py": "c642fbcc73a8663408e52d48059bc9088a38c099658dad2bf5fb758849a1354a",
+    "runs/bondpad-geometry-20260905-003/official_m2_square70.gds": "d3c1879ff1f3040dca9fe2edf65eae2e0265af9ae2ab9c66bd0c3de68d862a80",
+    "runs/bondpad-input-neighborhood-20260905-004/executed_probe.py": "c1f7ca454051a0f8cb49e013e660c63a4a19973205222b9c10fa6007add3d0f9",
+    "runs/bondpad-input-neighborhood-20260905-004/geometry.json": "44cb75af581fb5a06437f0c616c065550cc1174336935b74da23168b412a861a",
+    "runs/bondpad-input-neighborhood-20260905-004/manifest.json": "303ff73cba5b6ac68d77802c9f26fb13764b6f8f904516fb1e67c2837dc69d31",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/beol/6_9_pad.drc": "a9a8f450ea73bff364a2c6312575038ef023577d28d1196563d5a834a2790047",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/sg13g2_maximal.drc": "d12e1947f570ce16f04dfd94769f2c38fdbda3920c5f7479272ef517864eae4b"
+  }
+}
