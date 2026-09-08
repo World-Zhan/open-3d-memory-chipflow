@@ -1,0 +1,1 @@
+Signature : [virtual] bool wants_subcircuit (string circuit_name) Description : Returns true, if the delegate wants subcircuit elements with this name The name is always upper case.

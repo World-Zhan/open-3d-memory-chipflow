@@ -1,0 +1,515 @@
+{
+  "activity": "tool_default_no_workload",
+  "arms": {
+    "baseline": {
+      "area": {
+        "active_area_um2": 671906.1888,
+        "core_area_um2": 1571081.7024,
+        "core_utilization": 0.42767106750310274,
+        "die_area_um2": 3671056.0,
+        "hierarchy_um2": {
+          "<top>": {
+            "cover": 313600.0,
+            "macro": 159439.795,
+            "pad": 1149120.0,
+            "stdcell": 512466.394,
+            "total": 2134626.189
+          },
+          "i_core.register_file_i": {
+            "cover": 0.0,
+            "macro": 0.0,
+            "pad": 0.0,
+            "stdcell": 94174.618,
+            "total": 94174.618
+          },
+          "i_core_wrap": {
+            "cover": 0.0,
+            "macro": 0.0,
+            "pad": 0.0,
+            "stdcell": 214638.077,
+            "total": 214638.077
+          },
+          "i_croc_soc": {
+            "cover": 0.0,
+            "macro": 159439.795,
+            "pad": 0.0,
+            "stdcell": 481260.528,
+            "total": 640700.323
+          }
+        },
+        "instance_area_um2": 2134626.1888,
+        "stdcell_utilization": 0.3630286058994098
+      },
+      "cleanup_returncode": 0,
+      "clocks": {
+        "clk_jtg": {
+          "constraint_frequency_mhz": 40.0,
+          "period_ns": 25.0
+        },
+        "clk_rtc": {
+          "constraint_frequency_mhz": 20.0,
+          "period_ns": 50.0
+        },
+        "clk_sys": {
+          "constraint_frequency_mhz": 100.0,
+          "period_ns": 10.0
+        }
+      },
+      "command": [
+        "docker",
+        "run",
+        "--name",
+        "croc-placement-sta-readback-20260909-001-baseline",
+        "--cpus",
+        "2",
+        "--memory",
+        "4g",
+        "--ulimit",
+        "core=0",
+        "--user",
+        "1000:1000",
+        "-e",
+        "HOME=/tmp",
+        "-e",
+        "CROC_PDK=sg13g2",
+        "-e",
+        "CROC_SKIP_TECH_SETUP=1",
+        "--entrypoint",
+        "/bin/bash",
+        "-v",
+        "/home/james_zhan/projects/open-3d-memory-chipflow:/work:ro",
+        "-v",
+        "/home/james_zhan/projects/open-3d-memory-chipflow/runs/croc-placement-sta-readback-20260909-001/baseline:/output:rw",
+        "-w",
+        "/output/work/openroad",
+        "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+        "-lc",
+        "source /work/upstream/croc/env.sh && timeout --verbose --signal=TERM --kill-after=10s 180s openroad -exit /output/readback.tcl"
+      ],
+      "container": "croc-placement-sta-readback-20260909-001-baseline",
+      "elapsed_seconds": 18.718177325,
+      "electrical_acceptance_passed": false,
+      "electrical_checks": {
+        "hold_violations_zero": true,
+        "max_capacitance_violations_zero": false,
+        "max_fanout_violations_zero": true,
+        "max_slew_violations_zero": false,
+        "setup_violations_zero": true,
+        "tns_ns_nonnegative": true,
+        "wns_ns_nonnegative": true
+      },
+      "generated_input_sha256": {
+        "inputs/02_croc.placed.def": "8b6ae9aa73f257f223ee5de8dcadea6faf7a0891e857b81d54ebc63d9c7ef3a9",
+        "inputs/02_croc.placed.odb": "4b0295864cdc6153beda198f04c904df9b70b491a05e3f5063bec323a4cd89d0",
+        "inputs/02_croc.placed.sdc": "5cb81f9695f19cdb4b711ccc57dc89b20707f84691f94c66b37592d958ef3eb1",
+        "readback.tcl": "e6815185422622157c01e4bfb1e956ebc09cd33f31b4d16dfd96865a0693d434",
+        "work/openroad/scripts/01_floorplan.tcl": "6c5de3b2bfc325bb3f0635af8f76a635582cb9e1bc048859aafe45d1ae0cbd90",
+        "work/openroad/scripts/02_placement.tcl": "83acf4107e9f608f01f05c5be4b7c0855dffc9d96cd17fcba329c8201d0d321e",
+        "work/openroad/scripts/03_cts.tcl": "b9a944b2f50b03ebd7e6e598395d110e61f51fec2c447b2fac906485f005fec0",
+        "work/openroad/scripts/04_routing.tcl": "2b0753fe97fa93eafd88c2569be100583bff70cad0e9d29379ccc2ae0de051b4",
+        "work/openroad/scripts/05_finishing.tcl": "42459a710837a89fddcfd4d0d32ae5d4cc1fa7d72c8bd97c48a87453a8f6ea21",
+        "work/openroad/scripts/checkpoint.tcl": "d4829b0746156ed85a597e98003c85cc4a7a5bbae069630a5b348dd94373316e",
+        "work/openroad/scripts/floorplan_util.tcl": "5eaf94e65c7efc217b74d384eaf916aa78c5f20f6f1e387303ab066dce88663f",
+        "work/openroad/scripts/init_tech_sg13cmos5l.tcl": "cd38c76242151a198c67ff1e286600da55fded8f684c5886812c97f0a67fbd97",
+        "work/openroad/scripts/init_tech_sg13g2.tcl": "2d5e4171e397f899e8b7dbf185a718b042a6d114cabcd108c2351aa5a3d9b989",
+        "work/openroad/scripts/power_connect.tcl": "deace62f718fed10f17307fa49dafa71e2b9e9388287a3977664b3095cbe11d8",
+        "work/openroad/scripts/power_grid_sg13cmos5l.tcl": "be89a8235376ada0a9c74b6f1ea99306a5f620c50310ec025b921fe5d3bc3ebb",
+        "work/openroad/scripts/power_grid_sg13g2.tcl": "a6c72c6e56cdaf2acb55b81446b004ebc323685e83789743654f0086848ebcbe",
+        "work/openroad/scripts/reports.tcl": "3637b95c8ad6952b4c9c41e7e94beac8b48d05142a6828c1a0b04d7f91535cb2",
+        "work/openroad/scripts/reports_area.tcl": "8b675656316e9f1478fbf191ca9f3b4ed8144aaedf6e44cf68e3430fd051c224",
+        "work/openroad/scripts/startup.tcl": "8615a3bf457e4a0de057717d057a7b71858e1c3fef1a014d79817db36a6acc5d"
+      },
+      "outputs_sha256": {
+        "constraints.rpt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "core_pg.tsv": "6347b9bf0daf359f56fe1de3d6fc7801b3f35955c0307ad0bde724f742fd5d6d",
+        "electrical_violators.rpt": "fdfbe642d5ea538890bd6ae0fb7550eaf606718802cc0582cd1fdf825aaea93b",
+        "hold_violators.rpt": "f5a05b71b72236dfdea1b7eefa9c4944bfc9eb457ec43e2f4c03f52f84f4050d",
+        "inputs/02_croc.placed.def": "8b6ae9aa73f257f223ee5de8dcadea6faf7a0891e857b81d54ebc63d9c7ef3a9",
+        "inputs/02_croc.placed.odb": "4b0295864cdc6153beda198f04c904df9b70b491a05e3f5063bec323a4cd89d0",
+        "inputs/02_croc.placed.sdc": "5cb81f9695f19cdb4b711ccc57dc89b20707f84691f94c66b37592d958ef3eb1",
+        "power_command_help.rpt": "656008e6d34b2589b3c9117b4cfa04990255ac315bcebccf2fb30fdc58a4d287",
+        "readback.sdc": "c2870c4b4a951259a8a9c72cb7b9b8e9f745003c4201e1f78d2116ef761165de",
+        "readback.tcl": "e6815185422622157c01e4bfb1e956ebc09cd33f31b4d16dfd96865a0693d434",
+        "terminal_observation.json": "97ec693fd8d36f28a10f8d78e1daadb59d0b8dade82896bcdb5b7a6219238e80",
+        "tool.log": "5bcf332ffd474f4530cc17d4736c30f2500cdc40549ea1a5110eb98af6038109",
+        "work/openroad/reports/fresh_placed.rpt": "50879baec4e9fb1fb547198f02efd3b85f9fc7c7d8d2d43d1a52414a39ef2130",
+        "work/openroad/scripts/01_floorplan.tcl": "6c5de3b2bfc325bb3f0635af8f76a635582cb9e1bc048859aafe45d1ae0cbd90",
+        "work/openroad/scripts/02_placement.tcl": "83acf4107e9f608f01f05c5be4b7c0855dffc9d96cd17fcba329c8201d0d321e",
+        "work/openroad/scripts/03_cts.tcl": "b9a944b2f50b03ebd7e6e598395d110e61f51fec2c447b2fac906485f005fec0",
+        "work/openroad/scripts/04_routing.tcl": "2b0753fe97fa93eafd88c2569be100583bff70cad0e9d29379ccc2ae0de051b4",
+        "work/openroad/scripts/05_finishing.tcl": "42459a710837a89fddcfd4d0d32ae5d4cc1fa7d72c8bd97c48a87453a8f6ea21",
+        "work/openroad/scripts/checkpoint.tcl": "d4829b0746156ed85a597e98003c85cc4a7a5bbae069630a5b348dd94373316e",
+        "work/openroad/scripts/floorplan_util.tcl": "5eaf94e65c7efc217b74d384eaf916aa78c5f20f6f1e387303ab066dce88663f",
+        "work/openroad/scripts/init_tech_sg13cmos5l.tcl": "cd38c76242151a198c67ff1e286600da55fded8f684c5886812c97f0a67fbd97",
+        "work/openroad/scripts/init_tech_sg13g2.tcl": "2d5e4171e397f899e8b7dbf185a718b042a6d114cabcd108c2351aa5a3d9b989",
+        "work/openroad/scripts/power_connect.tcl": "deace62f718fed10f17307fa49dafa71e2b9e9388287a3977664b3095cbe11d8",
+        "work/openroad/scripts/power_grid_sg13cmos5l.tcl": "be89a8235376ada0a9c74b6f1ea99306a5f620c50310ec025b921fe5d3bc3ebb",
+        "work/openroad/scripts/power_grid_sg13g2.tcl": "a6c72c6e56cdaf2acb55b81446b004ebc323685e83789743654f0086848ebcbe",
+        "work/openroad/scripts/reports.tcl": "3637b95c8ad6952b4c9c41e7e94beac8b48d05142a6828c1a0b04d7f91535cb2",
+        "work/openroad/scripts/reports_area.tcl": "8b675656316e9f1478fbf191ca9f3b4ed8144aaedf6e44cf68e3430fd051c224",
+        "work/openroad/scripts/startup.tcl": "8615a3bf457e4a0de057717d057a7b71858e1c3fef1a014d79817db36a6acc5d"
+      },
+      "power": [
+        {
+          "corner": "tt",
+          "groups": {
+            "clock": {
+              "internal": 0.000932,
+              "leakage": 3.09e-07,
+              "switching": 0.000566,
+              "total": 0.0015
+            },
+            "combinational": {
+              "internal": 0.544,
+              "leakage": 0.00374,
+              "switching": 0.818,
+              "total": 1.37
+            },
+            "macro": {
+              "internal": 8.46,
+              "leakage": 0.000396,
+              "switching": 0.0,
+              "total": 8.46
+            },
+            "pad": {
+              "internal": 0.28,
+              "leakage": 0.000108,
+              "switching": 5.14,
+              "total": 5.42
+            },
+            "sequential": {
+              "internal": 22.0,
+              "leakage": 0.00195,
+              "switching": 0.173,
+              "total": 22.2
+            },
+            "total": {
+              "internal": 31.3,
+              "leakage": 0.00619,
+              "switching": 6.13,
+              "total": 37.5
+            }
+          },
+          "units": "mW"
+        }
+      ],
+      "returncode": 0,
+      "status": "completed",
+      "terminal_container_state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-08T17:08:32.517362109Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-08T17:08:14.862757194Z",
+        "Status": "exited"
+      },
+      "timing": {
+        "hold_violations": 0,
+        "max_capacitance_violations": 135,
+        "max_fanout_violations": 0,
+        "max_slew_violations": 71,
+        "setup_violations": 0,
+        "tns_ns": 0.0,
+        "wns_ns": 0.0
+      }
+    },
+    "candidate": {
+      "area": {
+        "active_area_um2": 673076.4768000001,
+        "core_area_um2": 1607694.48,
+        "core_utilization": 0.41865944380178505,
+        "die_area_um2": 3896676.0,
+        "hierarchy_um2": {
+          "<top>": {
+            "cover": 313600.0,
+            "macro": 159439.795,
+            "pad": 1159200.0,
+            "stdcell": 513636.682,
+            "total": 2145876.477
+          },
+          "i_core.register_file_i": {
+            "cover": 0.0,
+            "macro": 0.0,
+            "pad": 0.0,
+            "stdcell": 94183.69,
+            "total": 94183.69
+          },
+          "i_core_wrap": {
+            "cover": 0.0,
+            "macro": 0.0,
+            "pad": 0.0,
+            "stdcell": 214736.054,
+            "total": 214736.054
+          },
+          "i_croc_soc": {
+            "cover": 0.0,
+            "macro": 159439.795,
+            "pad": 0.0,
+            "stdcell": 481276.858,
+            "total": 640716.653
+          }
+        },
+        "instance_area_um2": 2145876.4768,
+        "stdcell_utilization": 0.35465908516700695
+      },
+      "cleanup_returncode": 0,
+      "clocks": {
+        "clk_jtg": {
+          "constraint_frequency_mhz": 40.0,
+          "period_ns": 25.0
+        },
+        "clk_rtc": {
+          "constraint_frequency_mhz": 20.0,
+          "period_ns": 50.0
+        },
+        "clk_sys": {
+          "constraint_frequency_mhz": 100.0,
+          "period_ns": 10.0
+        }
+      },
+      "command": [
+        "docker",
+        "run",
+        "--name",
+        "croc-placement-sta-readback-20260909-001-candidate",
+        "--cpus",
+        "2",
+        "--memory",
+        "4g",
+        "--ulimit",
+        "core=0",
+        "--user",
+        "1000:1000",
+        "-e",
+        "HOME=/tmp",
+        "-e",
+        "CROC_PDK=sg13g2",
+        "-e",
+        "CROC_SKIP_TECH_SETUP=1",
+        "--entrypoint",
+        "/bin/bash",
+        "-v",
+        "/home/james_zhan/projects/open-3d-memory-chipflow:/work:ro",
+        "-v",
+        "/home/james_zhan/projects/open-3d-memory-chipflow/runs/croc-placement-sta-readback-20260909-001/candidate:/output:rw",
+        "-w",
+        "/output/work/openroad",
+        "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+        "-lc",
+        "source /work/upstream/croc/env.sh && timeout --verbose --signal=TERM --kill-after=10s 180s openroad -exit /output/readback.tcl"
+      ],
+      "container": "croc-placement-sta-readback-20260909-001-candidate",
+      "elapsed_seconds": 19.729565632000003,
+      "electrical_acceptance_passed": false,
+      "electrical_checks": {
+        "hold_violations_zero": false,
+        "max_capacitance_violations_zero": false,
+        "max_fanout_violations_zero": true,
+        "max_slew_violations_zero": false,
+        "setup_violations_zero": true,
+        "tns_ns_nonnegative": true,
+        "wns_ns_nonnegative": true
+      },
+      "generated_input_sha256": {
+        "inputs/02_croc.placed.def": "b56711f63adfad9a5725ef4e932589152703a3e8a6324261aa65b59feb7944e0",
+        "inputs/02_croc.placed.odb": "ce27cba7318a61d54fdf2e0279307c9f658b1cda4ec5e9dcbe97e50bf8397ada",
+        "inputs/02_croc.placed.sdc": "acc7b87d34fb23797d9dee99ce143e47f70823f9d291c5c9a3d06773c22aafcd",
+        "readback.tcl": "e6815185422622157c01e4bfb1e956ebc09cd33f31b4d16dfd96865a0693d434",
+        "work/openroad/scripts/01_floorplan.tcl": "6c5de3b2bfc325bb3f0635af8f76a635582cb9e1bc048859aafe45d1ae0cbd90",
+        "work/openroad/scripts/02_placement.tcl": "83acf4107e9f608f01f05c5be4b7c0855dffc9d96cd17fcba329c8201d0d321e",
+        "work/openroad/scripts/03_cts.tcl": "b9a944b2f50b03ebd7e6e598395d110e61f51fec2c447b2fac906485f005fec0",
+        "work/openroad/scripts/04_routing.tcl": "2b0753fe97fa93eafd88c2569be100583bff70cad0e9d29379ccc2ae0de051b4",
+        "work/openroad/scripts/05_finishing.tcl": "42459a710837a89fddcfd4d0d32ae5d4cc1fa7d72c8bd97c48a87453a8f6ea21",
+        "work/openroad/scripts/checkpoint.tcl": "d4829b0746156ed85a597e98003c85cc4a7a5bbae069630a5b348dd94373316e",
+        "work/openroad/scripts/floorplan_util.tcl": "5eaf94e65c7efc217b74d384eaf916aa78c5f20f6f1e387303ab066dce88663f",
+        "work/openroad/scripts/init_tech_sg13cmos5l.tcl": "cd38c76242151a198c67ff1e286600da55fded8f684c5886812c97f0a67fbd97",
+        "work/openroad/scripts/init_tech_sg13g2.tcl": "2d5e4171e397f899e8b7dbf185a718b042a6d114cabcd108c2351aa5a3d9b989",
+        "work/openroad/scripts/power_connect.tcl": "deace62f718fed10f17307fa49dafa71e2b9e9388287a3977664b3095cbe11d8",
+        "work/openroad/scripts/power_grid_sg13cmos5l.tcl": "be89a8235376ada0a9c74b6f1ea99306a5f620c50310ec025b921fe5d3bc3ebb",
+        "work/openroad/scripts/power_grid_sg13g2.tcl": "a6c72c6e56cdaf2acb55b81446b004ebc323685e83789743654f0086848ebcbe",
+        "work/openroad/scripts/reports.tcl": "3637b95c8ad6952b4c9c41e7e94beac8b48d05142a6828c1a0b04d7f91535cb2",
+        "work/openroad/scripts/reports_area.tcl": "8b675656316e9f1478fbf191ca9f3b4ed8144aaedf6e44cf68e3430fd051c224",
+        "work/openroad/scripts/startup.tcl": "8615a3bf457e4a0de057717d057a7b71858e1c3fef1a014d79817db36a6acc5d"
+      },
+      "outputs_sha256": {
+        "constraints.rpt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "core_pg.tsv": "6347b9bf0daf359f56fe1de3d6fc7801b3f35955c0307ad0bde724f742fd5d6d",
+        "electrical_violators.rpt": "df68cda667ebbe348651e9e08b5e12d673753dcf1f30ebce6a4f19359cf45851",
+        "hold_violators.rpt": "039180dd152ab79499c211f6b0c7ea4a77b090726a174e353937f8d369ac37fb",
+        "inputs/02_croc.placed.def": "b56711f63adfad9a5725ef4e932589152703a3e8a6324261aa65b59feb7944e0",
+        "inputs/02_croc.placed.odb": "ce27cba7318a61d54fdf2e0279307c9f658b1cda4ec5e9dcbe97e50bf8397ada",
+        "inputs/02_croc.placed.sdc": "acc7b87d34fb23797d9dee99ce143e47f70823f9d291c5c9a3d06773c22aafcd",
+        "power_command_help.rpt": "656008e6d34b2589b3c9117b4cfa04990255ac315bcebccf2fb30fdc58a4d287",
+        "readback.sdc": "996a8770a489d1fd811c17fa5bf99f84511f10b2fb361860507e924164f9edb3",
+        "readback.tcl": "e6815185422622157c01e4bfb1e956ebc09cd33f31b4d16dfd96865a0693d434",
+        "terminal_observation.json": "daf2ca72a70cce41d79c1754a433672859b7c3e366b6d9c8aa9dc5e7eef91de0",
+        "tool.log": "5bcf332ffd474f4530cc17d4736c30f2500cdc40549ea1a5110eb98af6038109",
+        "work/openroad/reports/fresh_placed.rpt": "6ed527a7fb808472ecb11bd508f30f7b5615977740ecac6417c7fcc25d179f4d",
+        "work/openroad/scripts/01_floorplan.tcl": "6c5de3b2bfc325bb3f0635af8f76a635582cb9e1bc048859aafe45d1ae0cbd90",
+        "work/openroad/scripts/02_placement.tcl": "83acf4107e9f608f01f05c5be4b7c0855dffc9d96cd17fcba329c8201d0d321e",
+        "work/openroad/scripts/03_cts.tcl": "b9a944b2f50b03ebd7e6e598395d110e61f51fec2c447b2fac906485f005fec0",
+        "work/openroad/scripts/04_routing.tcl": "2b0753fe97fa93eafd88c2569be100583bff70cad0e9d29379ccc2ae0de051b4",
+        "work/openroad/scripts/05_finishing.tcl": "42459a710837a89fddcfd4d0d32ae5d4cc1fa7d72c8bd97c48a87453a8f6ea21",
+        "work/openroad/scripts/checkpoint.tcl": "d4829b0746156ed85a597e98003c85cc4a7a5bbae069630a5b348dd94373316e",
+        "work/openroad/scripts/floorplan_util.tcl": "5eaf94e65c7efc217b74d384eaf916aa78c5f20f6f1e387303ab066dce88663f",
+        "work/openroad/scripts/init_tech_sg13cmos5l.tcl": "cd38c76242151a198c67ff1e286600da55fded8f684c5886812c97f0a67fbd97",
+        "work/openroad/scripts/init_tech_sg13g2.tcl": "2d5e4171e397f899e8b7dbf185a718b042a6d114cabcd108c2351aa5a3d9b989",
+        "work/openroad/scripts/power_connect.tcl": "deace62f718fed10f17307fa49dafa71e2b9e9388287a3977664b3095cbe11d8",
+        "work/openroad/scripts/power_grid_sg13cmos5l.tcl": "be89a8235376ada0a9c74b6f1ea99306a5f620c50310ec025b921fe5d3bc3ebb",
+        "work/openroad/scripts/power_grid_sg13g2.tcl": "a6c72c6e56cdaf2acb55b81446b004ebc323685e83789743654f0086848ebcbe",
+        "work/openroad/scripts/reports.tcl": "3637b95c8ad6952b4c9c41e7e94beac8b48d05142a6828c1a0b04d7f91535cb2",
+        "work/openroad/scripts/reports_area.tcl": "8b675656316e9f1478fbf191ca9f3b4ed8144aaedf6e44cf68e3430fd051c224",
+        "work/openroad/scripts/startup.tcl": "8615a3bf457e4a0de057717d057a7b71858e1c3fef1a014d79817db36a6acc5d"
+      },
+      "power": [
+        {
+          "corner": "tt",
+          "groups": {
+            "clock": {
+              "internal": 0.000129,
+              "leakage": 2.91e-07,
+              "switching": 4.56e-05,
+              "total": 0.000175
+            },
+            "combinational": {
+              "internal": 0.524,
+              "leakage": 0.00377,
+              "switching": 0.801,
+              "total": 1.33
+            },
+            "macro": {
+              "internal": 0.0,
+              "leakage": 0.000396,
+              "switching": 0.0,
+              "total": 0.000396
+            },
+            "pad": {
+              "internal": 0.275,
+              "leakage": 0.000108,
+              "switching": 3.27,
+              "total": 3.54
+            },
+            "sequential": {
+              "internal": 0.427,
+              "leakage": 0.00195,
+              "switching": 0.15,
+              "total": 0.579
+            },
+            "total": {
+              "internal": 1.23,
+              "leakage": 0.00622,
+              "switching": 4.22,
+              "total": 5.45
+            }
+          },
+          "units": "mW"
+        }
+      ],
+      "returncode": 0,
+      "status": "completed",
+      "terminal_container_state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-08T17:08:49.944067864Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-08T17:08:33.611455003Z",
+        "Status": "exited"
+      },
+      "timing": {
+        "hold_violations": 1,
+        "max_capacitance_violations": 135,
+        "max_fanout_violations": 0,
+        "max_slew_violations": 71,
+        "setup_violations": 0,
+        "tns_ns": 0.0,
+        "wns_ns": 0.0
+      }
+    }
+  },
+  "classification": "fresh_process_same_stage_STA_power_diagnostic_not_route_or_signoff",
+  "finished_at": "2026-09-08T17:08:50.815406+00:00",
+  "limits_per_arm": {
+    "cpus": 2,
+    "inner_seconds": 180,
+    "memory_gb": 4,
+    "outer_seconds": 215
+  },
+  "original_layout_modified": false,
+  "parasitics": "placement_Metal3_estimate",
+  "public_rule_signoff": false,
+  "run_id": "croc-placement-sta-readback-20260909-001",
+  "schema_version": "1.0.0",
+  "source_hashes_unchanged": true,
+  "source_sha256": {
+    "runs/croc-full-io-placement-20260905-001/manifest.json": "e66877771c07b4460456da1e10eedc376986b6af32b83d366e459b7e2b6e39af",
+    "runs/croc-full-io-placement-20260905-001/work/openroad/save/02_croc.placed.zip": "5cff538fd214f3d434b77f2b884169f840fffe81733b4c6cea1b322eb0fca56e",
+    "runs/croc-full-io-placement-20260905-001/work/openroad/scripts/01_floorplan.tcl": "6c5de3b2bfc325bb3f0635af8f76a635582cb9e1bc048859aafe45d1ae0cbd90",
+    "runs/croc-full-io-placement-20260905-001/work/openroad/scripts/02_placement.tcl": "83acf4107e9f608f01f05c5be4b7c0855dffc9d96cd17fcba329c8201d0d321e",
+    "runs/croc-full-io-placement-20260905-001/work/openroad/scripts/03_cts.tcl": "b9a944b2f50b03ebd7e6e598395d110e61f51fec2c447b2fac906485f005fec0",
+    "runs/croc-full-io-placement-20260905-001/work/openroad/scripts/04_routing.tcl": "2b0753fe97fa93eafd88c2569be100583bff70cad0e9d29379ccc2ae0de051b4",
+    "runs/croc-full-io-placement-20260905-001/work/openroad/scripts/05_finishing.tcl": "42459a710837a89fddcfd4d0d32ae5d4cc1fa7d72c8bd97c48a87453a8f6ea21",
+    "runs/croc-full-io-placement-20260905-001/work/openroad/scripts/checkpoint.tcl": "d4829b0746156ed85a597e98003c85cc4a7a5bbae069630a5b348dd94373316e",
+    "runs/croc-full-io-placement-20260905-001/work/openroad/scripts/floorplan_util.tcl": "5eaf94e65c7efc217b74d384eaf916aa78c5f20f6f1e387303ab066dce88663f",
+    "runs/croc-full-io-placement-20260905-001/work/openroad/scripts/init_tech_sg13cmos5l.tcl": "cd38c76242151a198c67ff1e286600da55fded8f684c5886812c97f0a67fbd97",
+    "runs/croc-full-io-placement-20260905-001/work/openroad/scripts/init_tech_sg13g2.tcl": "2d5e4171e397f899e8b7dbf185a718b042a6d114cabcd108c2351aa5a3d9b989",
+    "runs/croc-full-io-placement-20260905-001/work/openroad/scripts/power_connect.tcl": "deace62f718fed10f17307fa49dafa71e2b9e9388287a3977664b3095cbe11d8",
+    "runs/croc-full-io-placement-20260905-001/work/openroad/scripts/power_grid_sg13cmos5l.tcl": "be89a8235376ada0a9c74b6f1ea99306a5f620c50310ec025b921fe5d3bc3ebb",
+    "runs/croc-full-io-placement-20260905-001/work/openroad/scripts/power_grid_sg13g2.tcl": "a6c72c6e56cdaf2acb55b81446b004ebc323685e83789743654f0086848ebcbe",
+    "runs/croc-full-io-placement-20260905-001/work/openroad/scripts/reports.tcl": "3637b95c8ad6952b4c9c41e7e94beac8b48d05142a6828c1a0b04d7f91535cb2",
+    "runs/croc-full-io-placement-20260905-001/work/openroad/scripts/reports_area.tcl": "8b675656316e9f1478fbf191ca9f3b4ed8144aaedf6e44cf68e3430fd051c224",
+    "runs/croc-full-io-placement-20260905-001/work/openroad/scripts/startup.tcl": "8615a3bf457e4a0de057717d057a7b71858e1c3fef1a014d79817db36a6acc5d",
+    "runs/croc-sg13g2-baseline-20260827-001/artifacts/pnr/upstream/croc/openroad/save/02_croc.placed.zip": "5abe3b32b5aff843fcb767d657863ad7b0b30fba0d1c236520ffcfed1b7ad4bd",
+    "scripts/collect_croc_evidence.py": "d384121526c7aa7c32ad9a1370d069dda92021c2a2ea27efb8e4911b66fc1a13",
+    "scripts/collect_croc_ppa.py": "aef6edf6882f98920e5f3931d5a0500da72dddce9243d67bd40e9dee9ba09791",
+    "scripts/run_croc_placement_readback.py": "76391abdb88abbd9298defa1d6df662a0aa7a7ca3689d6bac09f83e221bc73b8",
+    "scripts/run_io_ring_floorplan.py": "978cf4f2db202a26a0df7d6e5e8f0cf35a2a82658b79653ac6e5dae6288a8998",
+    "scripts/run_io_ring_maximal_diagnostic.py": "07a9a6d73ed1b354933b8af45527cc111e0d96c70a9eff718fca3dfb5e08b677",
+    "upstream/croc/env.sh": "79f17eba9acc962cdd7953dffa20f42826ca5346bf3ccad76d0c1722b427fa6d",
+    "upstream/croc/technology/lef/RM_IHPSG13_1P_1024x64_c2_bm_bist.lef": "1582515b5226d196d17d706f0df8b2390fa0d0451416b7a4a5ce3ba47bff862f",
+    "upstream/croc/technology/lef/RM_IHPSG13_1P_2048x64_c2_bm_bist.lef": "630e1f2efcf0c4c512fa53760bb7451f4fcf7155e6265d887c936dcf65be4bea",
+    "upstream/croc/technology/lef/RM_IHPSG13_1P_256x48_c2_bm_bist.lef": "5d6da80c6cb9266cdc2810695899a068f93bdfcd819f7cb4bef5320ed0eb2598",
+    "upstream/croc/technology/lef/RM_IHPSG13_1P_256x64_c2_bm_bist.lef": "246405148ef9df63af32d955f20491c4d087678d03cbfec3eb3ad6653fc8d4c3",
+    "upstream/croc/technology/lef/RM_IHPSG13_1P_512x32_c2_bm_bist.lef": "6e483caff960deaeb97e69a205bbb811b94b4aba15d27d48658e9d5248733cfd",
+    "upstream/croc/technology/lef/RM_IHPSG13_1P_512x64_c2_bm_bist.lef": "93aced65c204c35cc3a9e0315048346df149b6957fd95787df1a2ee0b1bb274b",
+    "upstream/croc/technology/lef/RM_IHPSG13_1P_64x64_c2_bm_bist.lef": "2bbeda3804b585f9e1bdd22edf531a68898152f15a66c65ab643f49f873ae87f",
+    "upstream/croc/technology/lef/bondpad5l_70x70.lef": "c908763286d0fa22a4d74e4e342b1ed44f780566acb45236fdc2970c02750d19",
+    "upstream/croc/technology/lef/bondpad_70x70.lef": "3a08d296380b6808fffbb8f9ee25b4991198e341f78326f9a9b91fd58f0476f3",
+    "upstream/croc/technology/lef/sg13cmos5l_io.lef": "89e551d9cca33e0b467d3bd1817c4c48dfc268ea3517858f21bbd72ed06bcc6a",
+    "upstream/croc/technology/lef/sg13cmos5l_tech.lef": "3edd5a1ad31e8307be537d0d1b85c3258fefeb21aac04aaa476e4f72de4cffd5",
+    "upstream/croc/technology/lef/sg13g2_io.lef": "8b3dc3960960c08e07a1cde3dd9cd0484f5b12df07c4628726fff551bb775c0c",
+    "upstream/croc/technology/lef/sg13g2_stdcell.lef": "c9bbc02d0c2cba3b15cd89a208750d25de882f02a2927ae78ba6422109fb01d0",
+    "upstream/croc/technology/lef/sg13g2_tech.lef": "a12fecdead5721dc3bd14fb75bd0915c61afba064e38af8c7b69d59d9da05080",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_1024x64_c2_bm_bist_fast_1p32V_m55C.lib": "a4365e16423dfc514248eb1ff15af6ed6cb86ed2fd6b59c38cefba9e82e93fbb",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_1024x64_c2_bm_bist_typ_1p20V_25C.lib": "470dd62e2699d4c3d5b19b5dcba950d0c8544661b22f1f2fe1c8af7efa9348b7",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_2048x64_c2_bm_bist_fast_1p32V_m55C.lib": "32ad633416cb9f107b57136ea4305290510400fa065eb136e912f9616400f7f9",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_2048x64_c2_bm_bist_typ_1p20V_25C.lib": "9aefb0cb245b15ced86b10401e71bf2002da31c4e1356b23bf6f4c789bee254f",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_256x48_c2_bm_bist_fast_1p32V_m55C.lib": "c6d26a426c327bef1675813060235052302f7dd714af1ea5e6578d8208e2de4c",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_256x48_c2_bm_bist_typ_1p20V_25C.lib": "59039d282bd8120b718877303c6dd4db6e37dd3199f647349862f04269b7a5cc",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_256x64_c2_bm_bist_fast_1p32V_m55C.lib": "28b3a8980f049099708967e5c799c4f89173f05bda6869cb80f1f2f8d5e8134d",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_256x64_c2_bm_bist_typ_1p20V_25C.lib": "d117d4d86a07afd2d5302740fef0f9d1a12277490c600e1f1f7ba4633ca6e50a",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_512x32_c2_bm_bist_fast_1p32V_m55C.lib": "1e88cf828c81de2512d5294d0a3922854cebc8913de9af485f3e7c9fb08c3a42",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_512x32_c2_bm_bist_typ_1p20V_25C.lib": "1a7409f75c7107385d01f8b2e9cde5d22ee54e1e914643b70e19833e03f3e9b0",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_512x64_c2_bm_bist_fast_1p32V_m55C.lib": "b78f5deea88222e3993a148588d96a187b84c767e8d31cdc988c8cf746bd05c0",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_512x64_c2_bm_bist_typ_1p20V_25C.lib": "1fb769565599938fa7179d4d62f1d49ffd356ef0fdf7277d705ca19486b27b0e",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_64x64_c2_bm_bist_fast_1p32V_m55C.lib": "259b44ad5604902a3247f08d2e43b425c59e54cfe9775f1a3fe1cd5139e5ecc0",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_64x64_c2_bm_bist_typ_1p20V_25C.lib": "6064c5909605d9d4242df1ab3043598e558951122d210c18f12f1ab15badd044",
+    "upstream/croc/technology/lib/sg13cmos5l_io_fast_1p32V_3p6V_m40C.lib": "f25da27e4cc0c94ffbce99e0654814a3af48d00c4ec571c9db5915208a7bbe07",
+    "upstream/croc/technology/lib/sg13cmos5l_io_typ_1p2V_3p3V_25C.lib": "e6b5adf1ce31db3a0c15e5ca069c62e7d9efb604a710b8f6582700f1721d2d98",
+    "upstream/croc/technology/lib/sg13g2_io_fast_1p32V_3p6V_m40C.lib": "0dbc28e762ac820f9db193a2736f408cf1cbf521547fef850083a585c70f212f",
+    "upstream/croc/technology/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib": "e9af7d440c807799de55d16a126467e27d3235e7f53a928e014cdabee98369c9",
+    "upstream/croc/technology/lib/sg13g2_stdcell_fast_1p32V_m40C.lib": "f191a3132d0f2f59ca2721884cdb1d8360c8fbf3e0012056af62583dd69ae701",
+    "upstream/croc/technology/lib/sg13g2_stdcell_typ_1p20V_25C.lib": "7677a8918689f452e80405ad16a83e744709342574f2aedcc507c2758986b396"
+  },
+  "started_at": "2026-09-08T17:08:14.368103+00:00",
+  "status": "completed"
+}

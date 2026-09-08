@@ -1,0 +1,63 @@
+{
+  "guard": {
+    "actual_raw_net_device_terminals": 0,
+    "actual_raw_net_exists": true,
+    "explanation": "ordinary ntap/nwell connectivity does not create a marked ntap1 device; dantenna has two P/N terminals",
+    "loss_stage": "unconditional RF-mapping target_netlist.purge",
+    "no_implicit_connections_added": true,
+    "ntap1_marker_count": 0,
+    "ntap1_tie_count": 0,
+    "ordinary_physical_ntap_path_exists": true
+  },
+  "official_api_sources": [
+    {
+      "path": "NetlistSpiceReader.html",
+      "sha256": "26cde0edb40071127f9ae8b6c9543b283c632aa018d983438c2202fc308b59cd",
+      "url": "https://www.klayout.de/doc/code/class_NetlistSpiceReader.html"
+    },
+    {
+      "path": "NetlistSpiceReaderDelegate.html",
+      "sha256": "43cb93bc62898ce4ec4a5c9addd56bca7d636e2a5440cd9c5b463fd638b2770a",
+      "url": "https://www.klayout.de/doc/code/class_NetlistSpiceReaderDelegate.html"
+    }
+  ],
+  "reader": {
+    "CUSTOM_READER": [
+      "M",
+      "C",
+      "R",
+      "Q",
+      "L",
+      "D"
+    ],
+    "PREFIX_MAP_role": "writer_only_not_input_X_dispatch",
+    "actual_empty_subcircuit": "PTAP1(A=0.141253N,P=47.54U)",
+    "existing_R_path": "CustomTap; TIE/WELL; A*1e12; P*1e6",
+    "input": "XR0 anode sub! ptap1 A=141.253p P=47.54u",
+    "next_candidate": "exact PTAP1/NTAP1 wants_subcircuit plus X element mapping to existing R tap path",
+    "next_gate": "reader-only terminal/parameter/unknown-subcircuit regression before strict leaf LVS",
+    "wants_subcircuit_defined_in_CustomReader": false
+  },
+  "schema_version": 1,
+  "source_pdk_modified": false,
+  "source_sha256": {
+    "reports/lvs/iopadin-electrode-guard-20260905-001.json": "8cd3608c5b7f36519fd0c06c1a9a100a476872fabbafa1973849153878aedc70",
+    "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_devices.lvs": "b062c2ed0bb15a41fd21b38e5e6e74a1a5cf3abf463f8535b946a2f662453b63",
+    "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_reader.lvs": "c71b6713d8a62055d3d8e9e75a7f5f78140001bf76e3fa573b9883fab5e49f06",
+    "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_writer.lvs": "bada63cfda80316f64ffbd1f6ed2a9cc06cd337b7244fe7d608ae4a20dfc0c36",
+    "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/diode_extraction.lvs": "9d060ddb655bf8fce7363aabb02800ffe8138b745aa9cff724b34c248770e006",
+    "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/general_connections.lvs": "bb61656b3564cf08558b83cf27d09854049eb30b5b7ade6610045d43c4b53e97",
+    "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/general_derivations.lvs": "d386598b10809388bfa690644b5a6a8f49c532b9d04caf9d2d014f4de12db043",
+    "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/globals.lvs": "170fe4fd4b796a1a4db9626506c304fb5c01716070a0ae1903166d75470ed758",
+    "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/tap_derivations.lvs": "b6e9ff382b6f8c392ab699d09832ea7e0ad120bc1b35b51a778e8b188b0ce6c2",
+    "runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/tap_extraction.lvs": "e17c779eacdcab3bfa2287ca265d7836dde0e9e7fec4b4e7bf79bf2b2dd9120b",
+    "runs/croc-lvs-reader-api-20260909-001/manifest.json": "d42403f5afe36934edb924fa6952e52734d9422006b2f5590acf0e5fd3fcfe89"
+  },
+  "status": "root_causes_identified_repair_not_run",
+  "tap_parameters_unresolved": {
+    "CDL_A_um2": 141.253,
+    "CDL_P_um": 47.54,
+    "layout_A_um2": 141.2964,
+    "layout_P_um": 221.76
+  }
+}

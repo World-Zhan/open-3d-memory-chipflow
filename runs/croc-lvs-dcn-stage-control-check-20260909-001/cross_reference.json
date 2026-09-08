@@ -1,0 +1,437 @@
+{
+  "control": {
+    "circuit_pairs": [
+      {
+        "device": {
+          "classification_counts": {
+            "layout_only": 3,
+            "schematic_only": 1
+          },
+          "nonmatch_count": 4,
+          "nonmatch_samples": [
+            {
+              "classification": "schematic_only",
+              "layout": null,
+              "schematic": {
+                "device_class": "DANTENNA",
+                "expanded_name": "D1",
+                "id": "1",
+                "name": "D1",
+                "type": "Device"
+              },
+              "status": "Mismatch"
+            },
+            {
+              "classification": "layout_only",
+              "layout": {
+                "device_class": "dantenna",
+                "expanded_name": "$1",
+                "id": "1",
+                "type": "Device"
+              },
+              "schematic": null,
+              "status": "Mismatch"
+            },
+            {
+              "classification": "layout_only",
+              "layout": {
+                "device_class": "dantenna",
+                "expanded_name": "$2",
+                "id": "2",
+                "type": "Device"
+              },
+              "schematic": null,
+              "status": "Mismatch"
+            },
+            {
+              "classification": "layout_only",
+              "layout": {
+                "device_class": "ptap1",
+                "expanded_name": "$3",
+                "id": "3",
+                "type": "Device"
+              },
+              "schematic": null,
+              "status": "Mismatch"
+            }
+          ],
+          "pair_count": 4,
+          "samples_truncated": false,
+          "status_counts": {
+            "Mismatch": 4
+          }
+        },
+        "layout_circuit": "sg13g2_DCNDiode",
+        "net": {
+          "classification_counts": {
+            "layout_only": 4,
+            "schematic_only": 2
+          },
+          "nonmatch_count": 6,
+          "nonmatch_samples": [
+            {
+              "classification": "schematic_only",
+              "layout": null,
+              "schematic": {
+                "expanded_name": "CATHODE",
+                "name": "CATHODE",
+                "qname": "SG13G2_DCNDIODE:CATHODE",
+                "type": "Net"
+              },
+              "status": "Mismatch"
+            },
+            {
+              "classification": "schematic_only",
+              "layout": null,
+              "schematic": {
+                "expanded_name": "SUB!",
+                "name": "SUB!",
+                "qname": "SG13G2_DCNDIODE:SUB!",
+                "type": "Net"
+              },
+              "status": "Mismatch"
+            },
+            {
+              "classification": "layout_only",
+              "layout": {
+                "expanded_name": "$2",
+                "name": "$2",
+                "qname": "sg13g2_DCNDiode:$2",
+                "type": "Net"
+              },
+              "schematic": null,
+              "status": "Mismatch"
+            },
+            {
+              "classification": "layout_only",
+              "layout": {
+                "expanded_name": "anode",
+                "name": "anode",
+                "qname": "sg13g2_DCNDiode:anode",
+                "type": "Net"
+              },
+              "schematic": null,
+              "status": "Mismatch"
+            },
+            {
+              "classification": "layout_only",
+              "layout": {
+                "expanded_name": "cathode",
+                "name": "cathode",
+                "qname": "sg13g2_DCNDiode:cathode",
+                "type": "Net"
+              },
+              "schematic": null,
+              "status": "Mismatch"
+            },
+            {
+              "classification": "layout_only",
+              "layout": {
+                "expanded_name": "cathode",
+                "name": "cathode",
+                "qname": "sg13g2_DCNDiode:cathode",
+                "type": "Net"
+              },
+              "schematic": null,
+              "status": "Mismatch"
+            }
+          ],
+          "pair_count": 6,
+          "samples_truncated": false,
+          "status_counts": {
+            "Mismatch": 6
+          }
+        },
+        "pin": {
+          "classification_counts": {
+            "match": 4
+          },
+          "nonmatch_count": 0,
+          "nonmatch_samples": [],
+          "pair_count": 4,
+          "samples_truncated": false,
+          "status_counts": {
+            "Match": 4
+          }
+        },
+        "schematic_circuit": "SG13G2_DCNDIODE",
+        "status": "NoMatch",
+        "subcircuit": {
+          "classification_counts": {},
+          "nonmatch_count": 0,
+          "nonmatch_samples": [],
+          "pair_count": 0,
+          "samples_truncated": false,
+          "status_counts": {}
+        }
+      }
+    ],
+    "summary": {
+      "circuit_pair_count": 1,
+      "circuit_status_counts": {
+        "NoMatch": 1
+      },
+      "classification_semantics": {
+        "layout_only": "layout object present, schematic object absent",
+        "match": "KLayout marked the object pair Match",
+        "paired_mismatch": "both objects present but KLayout did not mark the pair Match",
+        "schematic_only": "schematic object present, layout object absent"
+      },
+      "comparison_blocked_at_leaf_circuit_pairing": true,
+      "no_match_layout_circuits": [
+        "sg13g2_DCNDiode"
+      ],
+      "object_pair_classification_counts": {
+        "device": {
+          "layout_only": 3,
+          "schematic_only": 1
+        },
+        "net": {
+          "layout_only": 4,
+          "schematic_only": 2
+        },
+        "pin": {
+          "match": 4
+        },
+        "subcircuit": {}
+      },
+      "object_pair_status_counts": {
+        "device": {
+          "Mismatch": 4
+        },
+        "net": {
+          "Mismatch": 6
+        },
+        "pin": {
+          "Match": 4
+        },
+        "subcircuit": {}
+      },
+      "parameter_comparison": "partly_blocked_by_unpaired_devices",
+      "skipped_layout_circuits": []
+    }
+  },
+  "cross_reference_identical": true,
+  "final_netlists_identical": true,
+  "historical_json_matches_reloaded_control": true,
+  "max_lvsdb_bytes": 1048576,
+  "observed": {
+    "circuit_pairs": [
+      {
+        "device": {
+          "classification_counts": {
+            "layout_only": 3,
+            "schematic_only": 1
+          },
+          "nonmatch_count": 4,
+          "nonmatch_samples": [
+            {
+              "classification": "schematic_only",
+              "layout": null,
+              "schematic": {
+                "device_class": "DANTENNA",
+                "expanded_name": "D1",
+                "id": "1",
+                "name": "D1",
+                "type": "Device"
+              },
+              "status": "Mismatch"
+            },
+            {
+              "classification": "layout_only",
+              "layout": {
+                "device_class": "dantenna",
+                "expanded_name": "$1",
+                "id": "1",
+                "type": "Device"
+              },
+              "schematic": null,
+              "status": "Mismatch"
+            },
+            {
+              "classification": "layout_only",
+              "layout": {
+                "device_class": "dantenna",
+                "expanded_name": "$2",
+                "id": "2",
+                "type": "Device"
+              },
+              "schematic": null,
+              "status": "Mismatch"
+            },
+            {
+              "classification": "layout_only",
+              "layout": {
+                "device_class": "ptap1",
+                "expanded_name": "$3",
+                "id": "3",
+                "type": "Device"
+              },
+              "schematic": null,
+              "status": "Mismatch"
+            }
+          ],
+          "pair_count": 4,
+          "samples_truncated": false,
+          "status_counts": {
+            "Mismatch": 4
+          }
+        },
+        "layout_circuit": "sg13g2_DCNDiode",
+        "net": {
+          "classification_counts": {
+            "layout_only": 4,
+            "schematic_only": 2
+          },
+          "nonmatch_count": 6,
+          "nonmatch_samples": [
+            {
+              "classification": "schematic_only",
+              "layout": null,
+              "schematic": {
+                "expanded_name": "CATHODE",
+                "name": "CATHODE",
+                "qname": "SG13G2_DCNDIODE:CATHODE",
+                "type": "Net"
+              },
+              "status": "Mismatch"
+            },
+            {
+              "classification": "schematic_only",
+              "layout": null,
+              "schematic": {
+                "expanded_name": "SUB!",
+                "name": "SUB!",
+                "qname": "SG13G2_DCNDIODE:SUB!",
+                "type": "Net"
+              },
+              "status": "Mismatch"
+            },
+            {
+              "classification": "layout_only",
+              "layout": {
+                "expanded_name": "$2",
+                "name": "$2",
+                "qname": "sg13g2_DCNDiode:$2",
+                "type": "Net"
+              },
+              "schematic": null,
+              "status": "Mismatch"
+            },
+            {
+              "classification": "layout_only",
+              "layout": {
+                "expanded_name": "anode",
+                "name": "anode",
+                "qname": "sg13g2_DCNDiode:anode",
+                "type": "Net"
+              },
+              "schematic": null,
+              "status": "Mismatch"
+            },
+            {
+              "classification": "layout_only",
+              "layout": {
+                "expanded_name": "cathode",
+                "name": "cathode",
+                "qname": "sg13g2_DCNDiode:cathode",
+                "type": "Net"
+              },
+              "schematic": null,
+              "status": "Mismatch"
+            },
+            {
+              "classification": "layout_only",
+              "layout": {
+                "expanded_name": "cathode",
+                "name": "cathode",
+                "qname": "sg13g2_DCNDiode:cathode",
+                "type": "Net"
+              },
+              "schematic": null,
+              "status": "Mismatch"
+            }
+          ],
+          "pair_count": 6,
+          "samples_truncated": false,
+          "status_counts": {
+            "Mismatch": 6
+          }
+        },
+        "pin": {
+          "classification_counts": {
+            "match": 4
+          },
+          "nonmatch_count": 0,
+          "nonmatch_samples": [],
+          "pair_count": 4,
+          "samples_truncated": false,
+          "status_counts": {
+            "Match": 4
+          }
+        },
+        "schematic_circuit": "SG13G2_DCNDIODE",
+        "status": "NoMatch",
+        "subcircuit": {
+          "classification_counts": {},
+          "nonmatch_count": 0,
+          "nonmatch_samples": [],
+          "pair_count": 0,
+          "samples_truncated": false,
+          "status_counts": {}
+        }
+      }
+    ],
+    "summary": {
+      "circuit_pair_count": 1,
+      "circuit_status_counts": {
+        "NoMatch": 1
+      },
+      "classification_semantics": {
+        "layout_only": "layout object present, schematic object absent",
+        "match": "KLayout marked the object pair Match",
+        "paired_mismatch": "both objects present but KLayout did not mark the pair Match",
+        "schematic_only": "schematic object present, layout object absent"
+      },
+      "comparison_blocked_at_leaf_circuit_pairing": true,
+      "no_match_layout_circuits": [
+        "sg13g2_DCNDiode"
+      ],
+      "object_pair_classification_counts": {
+        "device": {
+          "layout_only": 3,
+          "schematic_only": 1
+        },
+        "net": {
+          "layout_only": 4,
+          "schematic_only": 2
+        },
+        "pin": {
+          "match": 4
+        },
+        "subcircuit": {}
+      },
+      "object_pair_status_counts": {
+        "device": {
+          "Mismatch": 4
+        },
+        "net": {
+          "Mismatch": 6
+        },
+        "pin": {
+          "Match": 4
+        },
+        "subcircuit": {}
+      },
+      "parameter_comparison": "partly_blocked_by_unpaired_devices",
+      "skipped_layout_circuits": []
+    }
+  },
+  "read_only": true,
+  "result": "FAIL",
+  "schema_version": 1,
+  "source_sha256": {
+    "runs/croc-lvs-dcn-stage-snapshots-20260909-001/result/sg13g2_DCNDiode.lvsdb": "b062ade39b88b905217b0a1c49b112817b5749178b418aad8381c1a25a098411",
+    "runs/croc-lvs-leaf-purge-ab-20260905-001/control/sg13g2_DCNDiode/sg13g2_DCNDiode.lvsdb": "1cc55b825568d776b42e49b0f1c78e2ed715a55e9bfe7c7ff2d0d1738d05f717"
+  }
+}

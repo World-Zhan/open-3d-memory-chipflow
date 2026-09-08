@@ -1,0 +1,66 @@
+[INFO] Final PATH variable: /foss/tools/bin:/foss/tools/sak:/usr/local/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/foss/tools/kactus2:/foss/tools/klayout:/foss/tools/osic-multitool
+[INFO] Final PYTHONPATH variable: /usr/lib/python312.zip:/usr/lib/python3.12:/usr/lib/python3.12/lib-dynload:/usr/local/lib/python3.12/dist-packages:/usr/lib/python3/dist-packages:/foss/tools/ngspyce/local/lib/python3.12/dist-packages:/foss/tools/openems/local/lib/python3.12/dist-packages:/foss/tools/yosys/share/yosys/python3:/foss/tools/klayout/pymod
+[INFO][ENV] Croc root: /work/upstream/croc
+[INFO][ENV] Skipping technology setup
+[INFO][ENV] PDK root: /work/upstream/croc/technology
+[INFO][ENV] Croc PDK: sg13g2
+[INFO][ENV] Active technology view: public mirror
+[INFO][ENV] KLayout path: /work/upstream/croc/ihp13/sg13g2/ihp-sg13g2/libs.tech/klayout
+[INFO][ENV] Bender PDK args: <none>
+[INFO][ENV] Tech LEF: sg13g2_tech.lef
+[INFO][ENV] IO LEF/GDS: sg13g2_io.lef/sg13g2_io.gds
+[INFO][ENV] IO Liberty tt/ff: sg13g2_io_typ_1p2V_3p3V_25C.lib/sg13g2_io_fast_1p32V_3p6V_m40C.lib
+[INFO][ENV] Bondpad cell: bondpad_70x70 (bondpad_70x70.lef/bondpad_70x70.gds)
+OpenROAD v2.0-27244-gfecb04286 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Setting up project croc
+ - Netlist: /output/inputs/croc_yosys.v
+ - Project: croc
+ - Top design: croc_chip
+ - Report directory: reports
+ - Save directory: save
+ - Output directory: out
+Init standard cells
+Init IO cells
+Init SRAM macros
+Init tech-lef
+[INFO ODB-0227] LEF file: /work/upstream/croc/technology/lef/sg13g2_tech.lef, created 19 layers, 70 vias
+Init cell-lef
+[INFO ODB-0227] LEF file: /work/upstream/croc/technology/lef/sg13g2_stdcell.lef, created 84 library cells
+[INFO ODB-0227] LEF file: /work/upstream/croc/technology/lef/sg13g2_io.lef, created 22 library cells
+[INFO ODB-0227] LEF file: /work/upstream/croc/technology/lef/bondpad_70x70.lef, created 1 library cells
+[INFO ODB-0227] LEF file: /work/upstream/croc/technology/lef/RM_IHPSG13_1P_256x64_c2_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: /work/upstream/croc/technology/lef/RM_IHPSG13_1P_256x48_c2_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: /work/upstream/croc/technology/lef/RM_IHPSG13_1P_1024x64_c2_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: /work/upstream/croc/technology/lef/RM_IHPSG13_1P_512x64_c2_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: /work/upstream/croc/technology/lef/RM_IHPSG13_1P_2048x64_c2_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: /work/upstream/croc/technology/lef/RM_IHPSG13_1P_512x32_c2_bm_bist.lef, created 1 library cells
+[INFO ODB-0227] LEF file: /work/upstream/croc/technology/lef/RM_IHPSG13_1P_64x64_c2_bm_bist.lef, created 1 library cells
+[INFO ORD-0030] Using 2 thread(s).
+[ERROR STA-0562] get_clocks -of_objects is not a known keyword or flag.
+[ERROR STA-0562] get_clocks -of_objects is not a known keyword or flag.
+[ERROR STA-0562] get_clocks -of_objects is not a known keyword or flag.
+[ERROR STA-0562] get_clocks -of_objects is not a known keyword or flag.
+[ERROR STA-0562] get_clocks -of_objects is not a known keyword or flag.
+[ERROR STA-0562] get_clocks -of_objects is not a known keyword or flag.
+Signal 11 received
+Stack trace:
+ 0# 0x00005E6328AB36D3 in openroad
+ 1# 0x0000738A50ADF330 in /lib/x86_64-linux-gnu/libc.so.6
+ 2# sta::LibertyPort::isClock() const in openroad
+ 3# sta::Properties::getProperty(sta::Pin const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) in openroad
+ 4# 0x00005E6328C9F01C in openroad
+ 5# TclNRRunCallbacks in /lib/x86_64-linux-gnu/libtcl8.6.so
+ 6# 0x0000738A5592F6BC in /lib/x86_64-linux-gnu/libtcl8.6.so
+ 7# Tcl_EvalEx in /lib/x86_64-linux-gnu/libtcl8.6.so
+ 8# Tcl_Eval in /lib/x86_64-linux-gnu/libtcl8.6.so
+ 9# sta::sourceTclFile(char const*, bool, bool, Tcl_Interp*) in openroad
+10# 0x00005E6328AB2FA1 in openroad
+11# Tcl_MainEx in /lib/x86_64-linux-gnu/libtcl8.6.so
+12# main in openroad
+13# 0x0000738A50AC41CA in /lib/x86_64-linux-gnu/libc.so.6
+14# __libc_start_main in /lib/x86_64-linux-gnu/libc.so.6
+15# _start in openroad
+timeout: the monitored command dumped core

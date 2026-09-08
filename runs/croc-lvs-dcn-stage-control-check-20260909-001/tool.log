@@ -1,0 +1,15 @@
+[INFO] Final PATH variable: /foss/tools/bin:/foss/tools/sak:/usr/local/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/foss/tools/kactus2:/foss/tools/klayout:/foss/tools/osic-multitool
+[INFO] Final PYTHONPATH variable: /usr/lib/python312.zip:/usr/lib/python3.12:/usr/lib/python3.12/lib-dynload:/usr/local/lib/python3.12/dist-packages:/usr/lib/python3/dist-packages:/foss/tools/ngspyce/local/lib/python3.12/dist-packages:/foss/tools/openems/local/lib/python3.12/dist-packages:/foss/tools/yosys/share/yosys/python3:/foss/tools/klayout/pymod
+{
+  "schema_version": 1,
+  "read_only": true,
+  "max_lvsdb_bytes": 1048576,
+  "source_sha256": {
+    "runs/croc-lvs-leaf-purge-ab-20260905-001/control/sg13g2_DCNDiode/sg13g2_DCNDiode.lvsdb": "1cc55b825568d776b42e49b0f1c78e2ed715a55e9bfe7c7ff2d0d1738d05f717",
+    "runs/croc-lvs-dcn-stage-snapshots-20260909-001/result/sg13g2_DCNDiode.lvsdb": "b062ade39b88b905217b0a1c49b112817b5749178b418aad8381c1a25a098411"
+  },
+  "cross_reference_identical": true,
+  "final_netlists_identical": true,
+  "historical_json_matches_reloaded_control": true,
+  "result": "FAIL"
+}

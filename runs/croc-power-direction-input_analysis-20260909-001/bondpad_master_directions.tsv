@@ -1,0 +1,3 @@
+master	pin	io_type	signal_type
+bondpad_70x70	pad	INPUT	SIGNAL
+bondpad70_m2_ring	pad	INOUT	SIGNAL

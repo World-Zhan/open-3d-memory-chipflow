@@ -1,0 +1,40 @@
+sta::*activity* ::sta::report_activity_annotation ::sta::report_activity_annotation_cmd ::sta::set_power_activity ::sta::set_power_global_activity ::sta::set_power_input_activity ::sta::set_power_input_port_activity ::sta::set_power_pin_activity ::sta::unset_power_activity ::sta::unset_power_global_activity ::sta::unset_power_input_activity ::sta::unset_power_input_port_activity ::sta::unset_power_pin_activity
+sta::*power* ::sta::Net_is_power ::sta::design_power ::sta::format_power ::sta::highest_power_instances ::sta::instance_power ::sta::power_col ::sta::power_col_percent ::sta::power_find_nan ::sta::power_sta_ui ::sta::power_ui_sta ::sta::read_power_activities ::sta::report_power ::sta::report_power_design ::sta::report_power_inst ::sta::report_power_insts ::sta::report_power_line ::sta::report_power_metric ::sta::report_power_row ::sta::report_power_title4 ::sta::report_power_title4_units ::sta::report_power_title5 ::sta::report_power_title5_units ::sta::set_max_dynamic_power ::sta::set_max_leakage_power ::sta::set_power_activity ::sta::set_power_global_activity ::sta::set_power_input_activity ::sta::set_power_input_port_activity ::sta::set_power_pin_activity ::sta::unset_power_activity ::sta::unset_power_global_activity ::sta::unset_power_input_activity ::sta::unset_power_input_port_activity ::sta::unset_power_pin_activity
+sta::*debug* ::sta::set_debug
+utl::*debug* 
+sta::*clock* ::sta::ClockEdge_clock ::sta::PathEnd_is_gated_clock ::sta::Vertex_is_clock ::sta::all_clocks ::sta::clock_groups_make_group ::sta::clock_min_period ::sta::clock_property ::sta::create_clock ::sta::create_generated_clock ::sta::default_arrival_clock ::sta::delete_clock ::sta::delete_generated_clock ::sta::disable_clock_gating_check_inst ::sta::disable_clock_gating_check_pin ::sta::filter_clocks ::sta::find_clock ::sta::find_clocks_matching ::sta::get_clock ::sta::get_clock_arg ::sta::get_clock_error ::sta::get_clock_warn ::sta::get_clocks ::sta::get_clocks_warn ::sta::is_clock ::sta::is_clock_search ::sta::is_clock_src ::sta::is_ideal_clock ::sta::make_clock ::sta::make_clock_groups ::sta::make_generated_clock ::sta::propagate_all_clocks ::sta::propagate_gated_clock_enable ::sta::remove_clock_cmd ::sta::report_clock1 ::sta::report_clock_latency ::sta::report_clock_min_period ::sta::report_clock_properties ::sta::report_clock_skew ::sta::report_clock_skew_metric ::sta::set_clock_gating_check ::sta::set_clock_gating_check1 ::sta::set_clock_gating_check_clk_cmd ::sta::set_clock_gating_check_cmd ::sta::set_clock_gating_check_instance_cmd ::sta::set_clock_gating_check_pin_cmd ::sta::set_clock_groups ::sta::set_clock_insertion_cmd ::sta::set_clock_latency ::sta::set_clock_latency_cmd ::sta::set_clock_sense ::sta::set_clock_sense_cmd ::sta::set_clock_sense_cmd1 ::sta::set_clock_slew_cmd ::sta::set_clock_transition ::sta::set_clock_uncertainty ::sta::set_clock_uncertainty_clk ::sta::set_clock_uncertainty_pin ::sta::set_disable_inferred_clock_gating ::sta::set_disable_inferred_clock_gating_cmd ::sta::set_inter_clock_uncertainty ::sta::set_propagate_all_clocks ::sta::set_propagate_gated_clock_enable ::sta::set_propagated_clock ::sta::set_propagated_clock_cmd ::sta::set_propagated_clock_pin_cmd ::sta::set_use_default_arrival_clock ::sta::trace_clock_through_tristate_enabled ::sta::trace_input_port_default_clock ::sta::trace_propagate_all_clocks ::sta::trace_propagate_gated_clock_enable ::sta::unset_clock_groups ::sta::unset_clock_groups_asynchronous ::sta::unset_clock_groups_logically_exclusive ::sta::unset_clock_groups_physically_exclusive ::sta::unset_clock_insertion_cmd ::sta::unset_clock_latency ::sta::unset_clock_latency_cmd ::sta::unset_clock_slew_cmd ::sta::unset_clock_transition ::sta::unset_clock_uncertainty ::sta::unset_clock_uncertainty_clk ::sta::unset_clock_uncertainty_pin ::sta::unset_disable_clock_gating_check_inst ::sta::unset_disable_clock_gating_check_pin ::sta::unset_disable_inferred_clock_gating ::sta::unset_disable_inferred_clock_gating_cmd ::sta::unset_inter_clock_uncertainty ::sta::unset_propagated_clock ::sta::unset_propagated_clock_cmd ::sta::unset_propagated_clock_pin_cmd ::sta::use_default_arrival_clock ::sta::worst_clock_skew
+sta::report_power
+ global errorCode errorInfo; set redirect [parse_redirect_args args]; set code [catch { global sta_report_default_digits
+
+  parse_key_args "report_power" args  keys {-instances -highest_power_instances -corner -digits} flags {}
+
+  check_argc_eq0 "report_power" $args
+
+  if { ![liberty_libraries_exist] } {
+    sta_error 304 "No liberty libraries have been read."
+  }
+  if { [info exists keys(-digits)] } {
+    set digits $keys(-digits)
+    check_positive_integer "-digits" $digits
+  } else {
+    set digits $sta_report_default_digits
+  }
+  set corner [parse_corner keys]
+
+  if { [info exists keys(-instances)] } {
+    set insts [get_instances_error "-instances" $keys(-instances)]
+    report_power_insts $insts $corner $digits
+  } elseif { [info exists keys(-highest_power_instances)] } {
+    set count $keys(-highest_power_instances)
+    check_positive_integer "-highest_power_instances" $count
+    set insts [highest_power_instances $count $corner]
+    report_power_insts $insts $corner $digits
+  } else {
+    report_power_design $corner $digits
+  } } ret ]; if {$redirect} { redirect_file_end }; if {$code == 1} {return -code $code -errorcode $errorCode -errorinfo $errorInfo $ret} else {return $ret} 
+sta::report_activity_annotation
+ global errorCode errorInfo; set redirect [parse_redirect_args args]; set code [catch { parse_key_args "report_activity_annotation" args  keys {} flags {-report_unannotated -report_annotated}
+  check_argc_eq0 "report_activity_annotation" $args
+  set report_unannotated [info exists flags(-report_unannotated)]
+  set report_annotated [info exists flags(-report_annotated)];
+  report_activity_annotation_cmd $report_unannotated $report_annotated } ret ]; if {$redirect} { redirect_file_end }; if {$code == 1} {return -code $code -errorcode $errorCode -errorinfo $errorInfo $ret} else {return $ret} 

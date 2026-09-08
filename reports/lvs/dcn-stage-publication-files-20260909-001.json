@@ -1,0 +1,753 @@
+{
+  "classification": "exact_small_file_publication_inventory",
+  "excluded": "GDS CDL LVSDB full copied decks and raw downloaded HTML stay local; all source/output hashes retained",
+  "file_count_excluding_this_inventory": 124,
+  "files": [
+    {
+      "bytes": 2063,
+      "path": "reports/lvs/check_lvs_stage_control.py",
+      "sha256": "8e8f4b35ba17006e020109405d0b468b58027aeab6c64e68af48b1b7fd8b736e",
+      "size": 2063
+    },
+    {
+      "bytes": 3848,
+      "path": "reports/lvs/dcn-reader-extraction-review-20260909-001.json",
+      "sha256": "31880cece71d77cda27d5814486f89e3e9710ce86c0e7825865614d8261beb5a",
+      "size": 3848
+    },
+    {
+      "bytes": 473,
+      "path": "reports/lvs/dcn-stage-patch-validation-20260909-001.json",
+      "sha256": "1fc1b9fac45e62eb1abb28391e3e9be11d230cbfeaa3e34e4a5079e9165800b5",
+      "size": 473
+    },
+    {
+      "bytes": 43264,
+      "path": "reports/lvs/dcn-stage-snapshots-20260909-001.json",
+      "sha256": "62840a16ca995af457d9e3cc68a50a53ecaaa294583b19d50768f70a4c2f1fb0",
+      "size": 43264
+    },
+    {
+      "bytes": 6995,
+      "path": "reports/lvs/dcn-stage-snapshots-20260909-001_zh.md",
+      "sha256": "2f115e709d4c7d0dc2b453a45e49cfcda725212406c5cae71b65defe6499934b",
+      "size": 6995
+    },
+    {
+      "bytes": 3751,
+      "path": "reports/lvs/lvs_stage_observer.rb",
+      "sha256": "191374c34d9044cd2b72652def64171004abd2ca3d4a5a9590fe7a7a904d7c00",
+      "size": 3751
+    },
+    {
+      "bytes": 1942,
+      "path": "reports/lvs/run_lvs_stage_control_check.py",
+      "sha256": "6d2cdc27771d2525fde77e9bc8d9bd4ef200d420617f5843ec28e9775ed811ee",
+      "size": 1942
+    },
+    {
+      "bytes": 8072,
+      "path": "reports/lvs/run_lvs_stage_snapshots.py",
+      "sha256": "7ecfc2fba47b744522beb966a19617a115871033c83e431db3368170f6f14a3b",
+      "size": 8072
+    },
+    {
+      "bytes": 2063,
+      "path": "runs/croc-lvs-dcn-stage-control-check-20260909-001/check_lvs_stage_control.py",
+      "sha256": "8e8f4b35ba17006e020109405d0b468b58027aeab6c64e68af48b1b7fd8b736e",
+      "size": 2063
+    },
+    {
+      "bytes": 263,
+      "path": "runs/croc-lvs-dcn-stage-control-check-20260909-001/control_layout.txt",
+      "sha256": "3e9295136514baf8ee85e2b1654437db4f7c3001cbb931ab4cf6ceac1dfa95e1",
+      "size": 263
+    },
+    {
+      "bytes": 114,
+      "path": "runs/croc-lvs-dcn-stage-control-check-20260909-001/control_schematic.txt",
+      "sha256": "4ee8702004a7a347a4b81f6e93c6650c542604019c74b8d17cf253871b151a7a",
+      "size": 114
+    },
+    {
+      "bytes": 12657,
+      "path": "runs/croc-lvs-dcn-stage-control-check-20260909-001/cross_reference.json",
+      "sha256": "a2d01efa0ac3678adca0b857169feb9cd18b689c69aa16a1e08fee646845edd2",
+      "size": 12657
+    },
+    {
+      "bytes": 2011,
+      "path": "runs/croc-lvs-dcn-stage-control-check-20260909-001/manifest.json",
+      "sha256": "1d28ba4f9a3246ba8f7f79007e7ace152b564b8aa722abb8c6ad6fa59b618c88",
+      "size": 2011
+    },
+    {
+      "bytes": 263,
+      "path": "runs/croc-lvs-dcn-stage-control-check-20260909-001/observed_layout.txt",
+      "sha256": "3e9295136514baf8ee85e2b1654437db4f7c3001cbb931ab4cf6ceac1dfa95e1",
+      "size": 263
+    },
+    {
+      "bytes": 114,
+      "path": "runs/croc-lvs-dcn-stage-control-check-20260909-001/observed_schematic.txt",
+      "sha256": "4ee8702004a7a347a4b81f6e93c6650c542604019c74b8d17cf253871b151a7a",
+      "size": 114
+    },
+    {
+      "bytes": 1942,
+      "path": "runs/croc-lvs-dcn-stage-control-check-20260909-001/run_lvs_stage_control_check.py",
+      "sha256": "6d2cdc27771d2525fde77e9bc8d9bd4ef200d420617f5843ec28e9775ed811ee",
+      "size": 1942
+    },
+    {
+      "bytes": 1118,
+      "path": "runs/croc-lvs-dcn-stage-control-check-20260909-001/tool.log",
+      "sha256": "aa57bc1f153e0f2a1a6ca660f2ec3a6885abbcc3b7dab20ca6761918c2eae0a2",
+      "size": 1118
+    },
+    {
+      "bytes": 3751,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/lvs_stage_observer.rb",
+      "sha256": "191374c34d9044cd2b72652def64171004abd2ca3d4a5a9590fe7a7a904d7c00",
+      "size": 3751
+    },
+    {
+      "bytes": 42254,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/manifest.json",
+      "sha256": "523505cf32560d1d7ea3b0da7bd70c485bc71165cecb7d0615287442e4fad92e",
+      "size": 42254
+    },
+    {
+      "bytes": 3719,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/observation_only.patch",
+      "sha256": "b85a74cbc9aa6a3f5332023136466af3f81878aefdbd6df7f2d17ee1533038fa",
+      "size": 3719
+    },
+    {
+      "bytes": 1947,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/result/lvs_run_2026_09_08_17_10_35.log",
+      "sha256": "4e7c333417aa5fd4afc988ce7589f228366cfe8bfbb85bfc5902abd1d78568f4",
+      "size": 1947
+    },
+    {
+      "bytes": 36680,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/result/sg13g2_DCNDiode.log",
+      "sha256": "4b06fdc8f85d47e2da27180c0b41f5d98458c1e27850dcc0dc3f99cc55eaf88f",
+      "size": 36680
+    },
+    {
+      "bytes": 281,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/result/sg13g2_DCNDiode_extracted.cir",
+      "sha256": "5232db82f52fcddf47e9b95f639ef8479bfa9d5b610f4f99d7ed811479477a75",
+      "size": 281
+    },
+    {
+      "bytes": 8072,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/run_lvs_stage_snapshots.py",
+      "sha256": "7ecfc2fba47b744522beb966a19617a115871033c83e431db3368170f6f14a3b",
+      "size": 8072
+    },
+    {
+      "bytes": 5294,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_after_align.inventory.json",
+      "sha256": "5786b53a17d59ba369cffd7e921afcd7b4efc4f4f890c8fbb33f7bbdca17640a",
+      "size": 5294
+    },
+    {
+      "bytes": 368,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_after_align.spice",
+      "sha256": "5b91a7d3d0e4d474a77dc9838910e4a5cefe40395654e070310217b6c0b1af54",
+      "size": 368
+    },
+    {
+      "bytes": 220,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_after_align.txt",
+      "sha256": "0e40915185909a917f352a518b116377a34610246d2b367b09bf1677bcf375ce",
+      "size": 220
+    },
+    {
+      "bytes": 5990,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_after_compare.inventory.json",
+      "sha256": "3ded400288b5152dc80370718358004b6a5ee9d7ba4fd813a59993c9afd90de1",
+      "size": 5990
+    },
+    {
+      "bytes": 414,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_after_compare.spice",
+      "sha256": "5c402a07fa2309acbf77c7db10a54bf710bd94c92302a5f673e911732d1568e4",
+      "size": 414
+    },
+    {
+      "bytes": 263,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_after_compare.txt",
+      "sha256": "3e9295136514baf8ee85e2b1654437db4f7c3001cbb931ab4cf6ceac1dfa95e1",
+      "size": 263
+    },
+    {
+      "bytes": 5295,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_before_align.inventory.json",
+      "sha256": "cafb830e6b593077a3c65d19a399a7188ec1c5590cb579cdf33f021ed3b0db8a",
+      "size": 5295
+    },
+    {
+      "bytes": 368,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_before_align.spice",
+      "sha256": "5b91a7d3d0e4d474a77dc9838910e4a5cefe40395654e070310217b6c0b1af54",
+      "size": 368
+    },
+    {
+      "bytes": 220,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_before_align.txt",
+      "sha256": "0e40915185909a917f352a518b116377a34610246d2b367b09bf1677bcf375ce",
+      "size": 220
+    },
+    {
+      "bytes": 6006,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_after_combine_devices.inventory.json",
+      "sha256": "54b970ba9cd93e233609bfe7266987a0b6c426aaeb115d5274f175e2074bdde5",
+      "size": 6006
+    },
+    {
+      "bytes": 414,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_after_combine_devices.spice",
+      "sha256": "5c402a07fa2309acbf77c7db10a54bf710bd94c92302a5f673e911732d1568e4",
+      "size": 414
+    },
+    {
+      "bytes": 263,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_after_combine_devices.txt",
+      "sha256": "3e9295136514baf8ee85e2b1654437db4f7c3001cbb931ab4cf6ceac1dfa95e1",
+      "size": 263
+    },
+    {
+      "bytes": 6010,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_after_make_top_level_pins.inventory.json",
+      "sha256": "3559a0ce27d814a76c92604b1ee5817683f181f075e6c94b58d706563ac42a61",
+      "size": 6010
+    },
+    {
+      "bytes": 414,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_after_make_top_level_pins.spice",
+      "sha256": "5c402a07fa2309acbf77c7db10a54bf710bd94c92302a5f673e911732d1568e4",
+      "size": 414
+    },
+    {
+      "bytes": 263,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_after_make_top_level_pins.txt",
+      "sha256": "3e9295136514baf8ee85e2b1654437db4f7c3001cbb931ab4cf6ceac1dfa95e1",
+      "size": 263
+    },
+    {
+      "bytes": 5996,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_after_purge.inventory.json",
+      "sha256": "fd2b1baff360470f2322e62847c0160b3e432bc1c7cb3d88ffd324abb4aa2d34",
+      "size": 5996
+    },
+    {
+      "bytes": 414,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_after_purge.spice",
+      "sha256": "5c402a07fa2309acbf77c7db10a54bf710bd94c92302a5f673e911732d1568e4",
+      "size": 414
+    },
+    {
+      "bytes": 263,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_after_purge.txt",
+      "sha256": "3e9295136514baf8ee85e2b1654437db4f7c3001cbb931ab4cf6ceac1dfa95e1",
+      "size": 263
+    },
+    {
+      "bytes": 6001,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_after_purge_nets.inventory.json",
+      "sha256": "454b50c2b30fdca191b5e3b1eea1ee816d994fd0405f631630d9a0b06ea5c48f",
+      "size": 6001
+    },
+    {
+      "bytes": 414,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_after_purge_nets.spice",
+      "sha256": "5c402a07fa2309acbf77c7db10a54bf710bd94c92302a5f673e911732d1568e4",
+      "size": 414
+    },
+    {
+      "bytes": 263,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_after_purge_nets.txt",
+      "sha256": "3e9295136514baf8ee85e2b1654437db4f7c3001cbb931ab4cf6ceac1dfa95e1",
+      "size": 263
+    },
+    {
+      "bytes": 5583,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_after_rf_mapping.inventory.json",
+      "sha256": "b2e00b710ec99e424a8d1a12be3ad94cdf875b941abe3bc76695635d7a373b7d",
+      "size": 5583
+    },
+    {
+      "bytes": 382,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_after_rf_mapping.spice",
+      "sha256": "b99c5a5fbeb37b35d016b2371349339ea2243154a870459532ab97df46ba339d",
+      "size": 382
+    },
+    {
+      "bytes": 220,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_after_rf_mapping.txt",
+      "sha256": "0e40915185909a917f352a518b116377a34610246d2b367b09bf1677bcf375ce",
+      "size": 220
+    },
+    {
+      "bytes": 5305,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_after_rf_purge.inventory.json",
+      "sha256": "79a8226c05d6278d9dc371311a2975ac168e7d2d6897de5663628cbc585675c7",
+      "size": 5305
+    },
+    {
+      "bytes": 368,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_after_rf_purge.spice",
+      "sha256": "5b91a7d3d0e4d474a77dc9838910e4a5cefe40395654e070310217b6c0b1af54",
+      "size": 368
+    },
+    {
+      "bytes": 220,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_after_rf_purge.txt",
+      "sha256": "0e40915185909a917f352a518b116377a34610246d2b367b09bf1677bcf375ce",
+      "size": 220
+    },
+    {
+      "bytes": 5589,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_after_rf_purge_devices.inventory.json",
+      "sha256": "8b6414f395642cb9c881de08afff368507577e9de4cad4c0bf453c05aef4791e",
+      "size": 5589
+    },
+    {
+      "bytes": 382,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_after_rf_purge_devices.spice",
+      "sha256": "b99c5a5fbeb37b35d016b2371349339ea2243154a870459532ab97df46ba339d",
+      "size": 382
+    },
+    {
+      "bytes": 220,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_after_rf_purge_devices.txt",
+      "sha256": "0e40915185909a917f352a518b116377a34610246d2b367b09bf1677bcf375ce",
+      "size": 220
+    },
+    {
+      "bytes": 5999,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_after_simplify.inventory.json",
+      "sha256": "7b333540917cdb484e87d36aa552ea13d1009a38e56e192ea12c5377e66b1dd0",
+      "size": 5999
+    },
+    {
+      "bytes": 414,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_after_simplify.spice",
+      "sha256": "5c402a07fa2309acbf77c7db10a54bf710bd94c92302a5f673e911732d1568e4",
+      "size": 414
+    },
+    {
+      "bytes": 263,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_after_simplify.txt",
+      "sha256": "3e9295136514baf8ee85e2b1654437db4f7c3001cbb931ab4cf6ceac1dfa95e1",
+      "size": 263
+    },
+    {
+      "bytes": 6007,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_before_combine_devices.inventory.json",
+      "sha256": "177b201c005ae7aab43e4af0e40d85286a8f7eb37b70f9d079dc61c079fa15b3",
+      "size": 6007
+    },
+    {
+      "bytes": 414,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_before_combine_devices.spice",
+      "sha256": "5c402a07fa2309acbf77c7db10a54bf710bd94c92302a5f673e911732d1568e4",
+      "size": 414
+    },
+    {
+      "bytes": 263,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_before_combine_devices.txt",
+      "sha256": "3e9295136514baf8ee85e2b1654437db4f7c3001cbb931ab4cf6ceac1dfa95e1",
+      "size": 263
+    },
+    {
+      "bytes": 6011,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_before_make_top_level_pins.inventory.json",
+      "sha256": "96ce04a01e0587f985ae3a614a526caa30eedf50654bf194341209da9b12dbdd",
+      "size": 6011
+    },
+    {
+      "bytes": 414,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_before_make_top_level_pins.spice",
+      "sha256": "5c402a07fa2309acbf77c7db10a54bf710bd94c92302a5f673e911732d1568e4",
+      "size": 414
+    },
+    {
+      "bytes": 263,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_before_make_top_level_pins.txt",
+      "sha256": "3e9295136514baf8ee85e2b1654437db4f7c3001cbb931ab4cf6ceac1dfa95e1",
+      "size": 263
+    },
+    {
+      "bytes": 5997,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_before_purge.inventory.json",
+      "sha256": "38b82fe1ab08eb4517f47fe5b76b2801f704e77cabf693dab3bc55078c8294af",
+      "size": 5997
+    },
+    {
+      "bytes": 414,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_before_purge.spice",
+      "sha256": "5c402a07fa2309acbf77c7db10a54bf710bd94c92302a5f673e911732d1568e4",
+      "size": 414
+    },
+    {
+      "bytes": 263,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_before_purge.txt",
+      "sha256": "3e9295136514baf8ee85e2b1654437db4f7c3001cbb931ab4cf6ceac1dfa95e1",
+      "size": 263
+    },
+    {
+      "bytes": 6002,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_before_purge_nets.inventory.json",
+      "sha256": "29ab4a01acfc69398eecfd50c6c594aac064d87ca260ab1051f8c617c11a6070",
+      "size": 6002
+    },
+    {
+      "bytes": 414,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_before_purge_nets.spice",
+      "sha256": "5c402a07fa2309acbf77c7db10a54bf710bd94c92302a5f673e911732d1568e4",
+      "size": 414
+    },
+    {
+      "bytes": 263,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_before_purge_nets.txt",
+      "sha256": "3e9295136514baf8ee85e2b1654437db4f7c3001cbb931ab4cf6ceac1dfa95e1",
+      "size": 263
+    },
+    {
+      "bytes": 5306,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_before_simplify.inventory.json",
+      "sha256": "7b322b4b52804c83e3d28f3a462b3a3dfe5d947d1e22c93951036e19163595df",
+      "size": 5306
+    },
+    {
+      "bytes": 368,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_before_simplify.spice",
+      "sha256": "5b91a7d3d0e4d474a77dc9838910e4a5cefe40395654e070310217b6c0b1af54",
+      "size": 368
+    },
+    {
+      "bytes": 220,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_before_simplify.txt",
+      "sha256": "0e40915185909a917f352a518b116377a34610246d2b367b09bf1677bcf375ce",
+      "size": 220
+    },
+    {
+      "bytes": 5588,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_raw_before_rf_mapping.inventory.json",
+      "sha256": "c2059eb39373a261ddbdd0f70eb11a3a71db02aa5dd26b7701747dfcdc18b3af",
+      "size": 5588
+    },
+    {
+      "bytes": 382,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_raw_before_rf_mapping.spice",
+      "sha256": "b99c5a5fbeb37b35d016b2371349339ea2243154a870459532ab97df46ba339d",
+      "size": 382
+    },
+    {
+      "bytes": 220,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/layout_netlist_raw_before_rf_mapping.txt",
+      "sha256": "0e40915185909a917f352a518b116377a34610246d2b367b09bf1677bcf375ce",
+      "size": 220
+    },
+    {
+      "bytes": 4876,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_after_align.inventory.json",
+      "sha256": "f1a108676952f9913bf563912e1c484789f52f65b2c7364b6f3113ff908d8962",
+      "size": 4876
+    },
+    {
+      "bytes": 331,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_after_align.spice",
+      "sha256": "2fad6263c6679ec631fa485ace9afd8f0d753ab4dc07f5483d2da72d91c0eef2",
+      "size": 331
+    },
+    {
+      "bytes": 204,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_after_align.txt",
+      "sha256": "dba9e462277f7bb3bf4054795da820cc274f3911078d8a7ade3344f3078ae104",
+      "size": 204
+    },
+    {
+      "bytes": 2577,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_after_compare.inventory.json",
+      "sha256": "5b814227311e5dd64b7ffae19e0929375a63bddfb5fbd7f94f76526c6d3cbe52",
+      "size": 2577
+    },
+    {
+      "bytes": 195,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_after_compare.spice",
+      "sha256": "d296ea5ae9421719d04edc9fba1d03e1e8a5c8479a6d84c5efe19bb1fc48024f",
+      "size": 195
+    },
+    {
+      "bytes": 114,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_after_compare.txt",
+      "sha256": "4ee8702004a7a347a4b81f6e93c6650c542604019c74b8d17cf253871b151a7a",
+      "size": 114
+    },
+    {
+      "bytes": 6772,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_after_reader.inventory.json",
+      "sha256": "f0b457c8734bdd7ea79180eb0cd4c2cc9060a16b581fc162f670ad5faa88ba84",
+      "size": 6772
+    },
+    {
+      "bytes": 542,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_after_reader.spice",
+      "sha256": "951cd055d4ff8ebc68b77a4972e870ce08cba59ec2698434c039c019515c36a3",
+      "size": 542
+    },
+    {
+      "bytes": 336,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_after_reader.txt",
+      "sha256": "d5c7d80ebb21a59118570cfd9c34d3e6582c29d6921b30e0398a76cf33eba0e0",
+      "size": 336
+    },
+    {
+      "bytes": 6772,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_before_align.inventory.json",
+      "sha256": "71cb0135ae4a9c061cd73139206420d953d09ab8a542a5f6a79f780df84303cc",
+      "size": 6772
+    },
+    {
+      "bytes": 542,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_before_align.spice",
+      "sha256": "951cd055d4ff8ebc68b77a4972e870ce08cba59ec2698434c039c019515c36a3",
+      "size": 542
+    },
+    {
+      "bytes": 336,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_before_align.txt",
+      "sha256": "d5c7d80ebb21a59118570cfd9c34d3e6582c29d6921b30e0398a76cf33eba0e0",
+      "size": 336
+    },
+    {
+      "bytes": 2593,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_after_combine_devices.inventory.json",
+      "sha256": "b0e2bbc3809d59b8b5972ef2da426a688bb6870ae09fcc0727b4b0b7fefee9f9",
+      "size": 2593
+    },
+    {
+      "bytes": 195,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_after_combine_devices.spice",
+      "sha256": "d296ea5ae9421719d04edc9fba1d03e1e8a5c8479a6d84c5efe19bb1fc48024f",
+      "size": 195
+    },
+    {
+      "bytes": 114,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_after_combine_devices.txt",
+      "sha256": "4ee8702004a7a347a4b81f6e93c6650c542604019c74b8d17cf253871b151a7a",
+      "size": 114
+    },
+    {
+      "bytes": 2597,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_after_make_top_level_pins.inventory.json",
+      "sha256": "0912727ce25bfdd3b215679b970cbec5cdef3bcee6cd95d68e308f12546b38b9",
+      "size": 2597
+    },
+    {
+      "bytes": 195,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_after_make_top_level_pins.spice",
+      "sha256": "d296ea5ae9421719d04edc9fba1d03e1e8a5c8479a6d84c5efe19bb1fc48024f",
+      "size": 195
+    },
+    {
+      "bytes": 114,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_after_make_top_level_pins.txt",
+      "sha256": "4ee8702004a7a347a4b81f6e93c6650c542604019c74b8d17cf253871b151a7a",
+      "size": 114
+    },
+    {
+      "bytes": 2583,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_after_purge.inventory.json",
+      "sha256": "4bceb6d27920b4c49c148d5cd4839bbd32f876aad055e5e4bf2e5a6dd542d1ca",
+      "size": 2583
+    },
+    {
+      "bytes": 195,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_after_purge.spice",
+      "sha256": "d296ea5ae9421719d04edc9fba1d03e1e8a5c8479a6d84c5efe19bb1fc48024f",
+      "size": 195
+    },
+    {
+      "bytes": 114,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_after_purge.txt",
+      "sha256": "4ee8702004a7a347a4b81f6e93c6650c542604019c74b8d17cf253871b151a7a",
+      "size": 114
+    },
+    {
+      "bytes": 2588,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_after_purge_nets.inventory.json",
+      "sha256": "65f921dd22d535b15cd946c6534e609662865640ead93f6ad14d0b93dd48931b",
+      "size": 2588
+    },
+    {
+      "bytes": 195,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_after_purge_nets.spice",
+      "sha256": "d296ea5ae9421719d04edc9fba1d03e1e8a5c8479a6d84c5efe19bb1fc48024f",
+      "size": 195
+    },
+    {
+      "bytes": 114,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_after_purge_nets.txt",
+      "sha256": "4ee8702004a7a347a4b81f6e93c6650c542604019c74b8d17cf253871b151a7a",
+      "size": 114
+    },
+    {
+      "bytes": 2586,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_after_simplify.inventory.json",
+      "sha256": "687efdb9d3a09a750fa2ca7ef9c53a47986c102ee72b7389a74de4398be4a322",
+      "size": 2586
+    },
+    {
+      "bytes": 195,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_after_simplify.spice",
+      "sha256": "d296ea5ae9421719d04edc9fba1d03e1e8a5c8479a6d84c5efe19bb1fc48024f",
+      "size": 195
+    },
+    {
+      "bytes": 114,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_after_simplify.txt",
+      "sha256": "4ee8702004a7a347a4b81f6e93c6650c542604019c74b8d17cf253871b151a7a",
+      "size": 114
+    },
+    {
+      "bytes": 2594,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_before_combine_devices.inventory.json",
+      "sha256": "bce54783997c54bf56918b817117db1a28d1127c88d263216e47468c7f5b037d",
+      "size": 2594
+    },
+    {
+      "bytes": 195,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_before_combine_devices.spice",
+      "sha256": "d296ea5ae9421719d04edc9fba1d03e1e8a5c8479a6d84c5efe19bb1fc48024f",
+      "size": 195
+    },
+    {
+      "bytes": 114,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_before_combine_devices.txt",
+      "sha256": "4ee8702004a7a347a4b81f6e93c6650c542604019c74b8d17cf253871b151a7a",
+      "size": 114
+    },
+    {
+      "bytes": 2598,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_before_make_top_level_pins.inventory.json",
+      "sha256": "10e3e58dc8314f0e592ce255df518ef8985b9d45c1c37d47f3d01a2801e2830f",
+      "size": 2598
+    },
+    {
+      "bytes": 195,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_before_make_top_level_pins.spice",
+      "sha256": "d296ea5ae9421719d04edc9fba1d03e1e8a5c8479a6d84c5efe19bb1fc48024f",
+      "size": 195
+    },
+    {
+      "bytes": 114,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_before_make_top_level_pins.txt",
+      "sha256": "4ee8702004a7a347a4b81f6e93c6650c542604019c74b8d17cf253871b151a7a",
+      "size": 114
+    },
+    {
+      "bytes": 2584,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_before_purge.inventory.json",
+      "sha256": "b686a7049892a8afeb719c457e2f0afd4bbd1c17d3fa73db007f6b4f3812a71d",
+      "size": 2584
+    },
+    {
+      "bytes": 195,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_before_purge.spice",
+      "sha256": "d296ea5ae9421719d04edc9fba1d03e1e8a5c8479a6d84c5efe19bb1fc48024f",
+      "size": 195
+    },
+    {
+      "bytes": 114,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_before_purge.txt",
+      "sha256": "4ee8702004a7a347a4b81f6e93c6650c542604019c74b8d17cf253871b151a7a",
+      "size": 114
+    },
+    {
+      "bytes": 2589,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_before_purge_nets.inventory.json",
+      "sha256": "8121f8ae4eddc575c536b47f9cd3ee3cb2470b4b53047df66d3706f36bd48523",
+      "size": 2589
+    },
+    {
+      "bytes": 195,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_before_purge_nets.spice",
+      "sha256": "d296ea5ae9421719d04edc9fba1d03e1e8a5c8479a6d84c5efe19bb1fc48024f",
+      "size": 195
+    },
+    {
+      "bytes": 114,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_before_purge_nets.txt",
+      "sha256": "4ee8702004a7a347a4b81f6e93c6650c542604019c74b8d17cf253871b151a7a",
+      "size": 114
+    },
+    {
+      "bytes": 4888,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_before_simplify.inventory.json",
+      "sha256": "47436178291800ca738248eb556d9324aeddec811d95a684b7e8ca824b493864",
+      "size": 4888
+    },
+    {
+      "bytes": 331,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_before_simplify.spice",
+      "sha256": "2fad6263c6679ec631fa485ace9afd8f0d753ab4dc07f5483d2da72d91c0eef2",
+      "size": 331
+    },
+    {
+      "bytes": 204,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/snapshots/schematic_netlist_before_simplify.txt",
+      "sha256": "dba9e462277f7bb3bf4054795da820cc274f3911078d8a7ade3344f3078ae104",
+      "size": 204
+    },
+    {
+      "bytes": 10285,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/terminal_observation.json",
+      "sha256": "5cb948a3b4f3beaa7c0588f0befddd03e383fc3750a026a02d3bfe582368ceaa",
+      "size": 10285
+    },
+    {
+      "bytes": 41397,
+      "path": "runs/croc-lvs-dcn-stage-snapshots-20260909-001/tool.log",
+      "sha256": "3e90850b70af67aecc560b4cdc15270eb6587c17e5fa2203a00b3804ad5f493e",
+      "size": 41397
+    },
+    {
+      "bytes": 1000,
+      "path": "runs/croc-lvs-reader-api-20260909-001/manifest.json",
+      "sha256": "d42403f5afe36934edb924fa6952e52734d9422006b2f5590acf0e5fd3fcfe89",
+      "size": 1000
+    },
+    {
+      "bytes": 182,
+      "path": "runs/croc-lvs-reader-api-20260909-001/official_callback_description.txt",
+      "sha256": "fc2e9447a4b05bc92572bb75d255fce4992f7dea437a0ae3184631b9dc369d58",
+      "size": 182
+    },
+    {
+      "bytes": 1118,
+      "path": "runs/croc-lvs-reader-api-20260909-001/official_reader_example.rb.txt",
+      "sha256": "8b2e25b1ece756cd4a06d91bb7640d92991a2c059293ca6efc5b922ca1181489",
+      "size": 1118
+    },
+    {
+      "bytes": 12259,
+      "path": "scripts/audit_lvs_dcn_stages.py",
+      "sha256": "04aa271fba4132a54b1dd005a8fe038b646c531d21f7516f4f47e4dcbfbb55d8",
+      "size": 12259
+    },
+    {
+      "bytes": 2681,
+      "path": "tests/test_lvs_dcn_stages.py",
+      "sha256": "384d48dbbf6c54b79da85703a8608dd1e56f264d7bbf6b2e5e7d74e4d463c9ee",
+      "size": 2681
+    }
+  ],
+  "include_this_inventory": true,
+  "total_bytes_excluding_this_inventory": 420599.0
+}

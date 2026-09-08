@@ -1,0 +1,113 @@
+{
+  "classification": "exact_small_files_for_review_not_automatic_publication",
+  "excluded": "Large input ODB/DEF, copied scripts and Liberty remain local or already archived with manifests binding their hashes.",
+  "files": [
+    {
+      "bytes": 9548,
+      "path": "reports/ppa/croc-power-direction-diagnostic-20260909-001.json",
+      "sha256": "a6c7906f8af85da747b7cd2fa10e734ec791dd1e8d0a301a29a4722b191249ff"
+    },
+    {
+      "bytes": 6053,
+      "path": "runs/croc-power-direction-input_analysis-20260909-001/api_inventory.txt",
+      "sha256": "2a5ee9b8375f01f94fa165359f4b6ed3c8ee65c8b32340f04a867c363ad32521"
+    },
+    {
+      "bytes": 97,
+      "path": "runs/croc-power-direction-input_analysis-20260909-001/bondpad_master_directions.tsv",
+      "sha256": "22d7e505df70d4aed9bf15f9865a48f5936b740300eb7ea39f319423f2675512"
+    },
+    {
+      "bytes": 0,
+      "path": "runs/croc-power-direction-input_analysis-20260909-001/direction_change.tsv",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 10490,
+      "path": "runs/croc-power-direction-input_analysis-20260909-001/manifest.json",
+      "sha256": "074278cd4611388a33fe8acd89d8f494b3ad64c5a3b1cc584b22e01228267984"
+    },
+    {
+      "bytes": 2042,
+      "path": "runs/croc-power-direction-input_analysis-20260909-001/probe.tcl",
+      "sha256": "e2a9f58dac5d441c3cb9cad58482f8960b6bc36e27410dc00b9ba644d712b391"
+    },
+    {
+      "bytes": 10498,
+      "path": "runs/croc-power-direction-input_analysis-20260909-001/terminal_observation.json",
+      "sha256": "e7aa8c3bdabf7a80029de379336f1108052d3688968c2ec299b6ed4edb43c116"
+    },
+    {
+      "bytes": 3486,
+      "path": "runs/croc-power-direction-input_analysis-20260909-001/tool.log",
+      "sha256": "3c1a85fc592a3e1b90772c3937310c1dff26064b1e5318a7626f7b2fe4c39f59"
+    },
+    {
+      "bytes": 6053,
+      "path": "runs/croc-power-direction-observe-20260909-001/api_inventory.txt",
+      "sha256": "2a5ee9b8375f01f94fa165359f4b6ed3c8ee65c8b32340f04a867c363ad32521"
+    },
+    {
+      "bytes": 97,
+      "path": "runs/croc-power-direction-observe-20260909-001/bondpad_master_directions.tsv",
+      "sha256": "22d7e505df70d4aed9bf15f9865a48f5936b740300eb7ea39f319423f2675512"
+    },
+    {
+      "bytes": 261,
+      "path": "runs/croc-power-direction-observe-20260909-001/clocks.rpt",
+      "sha256": "86b67f4fd9bd528c11936bbacbe7996230338986145bc4df8930e99d3ac33853"
+    },
+    {
+      "bytes": 24,
+      "path": "runs/croc-power-direction-observe-20260909-001/direction_change.tsv",
+      "sha256": "6e2e7b6cf0a756ebe54e09dce614be867dc90da59cbd12236887e342d3675198"
+    },
+    {
+      "bytes": 10788,
+      "path": "runs/croc-power-direction-observe-20260909-001/manifest.json",
+      "sha256": "e84a44df38cab4574aac2ee1d72dc718ef45a81e36ee547af911c2d94a74a953"
+    },
+    {
+      "bytes": 0,
+      "path": "runs/croc-power-direction-observe-20260909-001/pin_observations.tsv",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 926,
+      "path": "runs/croc-power-direction-observe-20260909-001/power_ff.rpt",
+      "sha256": "27520967cd48d9ae15c13fe18835b4c013251e96c911187bf94000c8449afdb3"
+    },
+    {
+      "bytes": 926,
+      "path": "runs/croc-power-direction-observe-20260909-001/power_tt.rpt",
+      "sha256": "46799497b362fe46ff7c9351ec4ba4eba61c79aca5dc00ddb3d7c8828298d1d9"
+    },
+    {
+      "bytes": 3122,
+      "path": "runs/croc-power-direction-observe-20260909-001/probe.tcl",
+      "sha256": "0ba24d6967d1a9f64eaa6b38840ae08a563701ff9de5a1ec28ee909ea38a639f"
+    },
+    {
+      "bytes": 10480,
+      "path": "runs/croc-power-direction-observe-20260909-001/terminal_observation.json",
+      "sha256": "0ac660b2b0339468743df7a373298b9ffa3d7865527f1cb811e725f18cfe2e80"
+    },
+    {
+      "bytes": 4368,
+      "path": "runs/croc-power-direction-observe-20260909-001/tool.log",
+      "sha256": "58ec54ff45e2cf10079c128dda76882804be9e88093a87d27760bd4a7961dcf2"
+    },
+    {
+      "bytes": 6605,
+      "path": "scripts/run_croc_power_direction_input_probe.py",
+      "sha256": "9fc615894c0b2a1c00e8eafcdec6d5981cebde26423d43c8919bc3adc5a24303"
+    },
+    {
+      "bytes": 8059,
+      "path": "scripts/run_croc_power_direction_probe.py",
+      "sha256": "9c2e00ca1421c7cd4c93ecc0ae375664cbb230adbfa7fc18e7f1cb2eb09700cd"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "self_not_hashed": true
+}

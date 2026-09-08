@@ -1,0 +1,23 @@
+{
+  "classification": "official_API_documentation_read_only_not_implementation_or_signoff",
+  "installed_KLayout_version": "0.30.5",
+  "installed_api_existence_checked": true,
+  "installed_python_virtual_method_docstrings_are_hide": true,
+  "retrieved_at": "2026-09-08T17:22:53.169642+00:00",
+  "snippet_sha256": {
+    "official_callback_description.txt": "fc2e9447a4b05bc92572bb75d255fce4992f7dea437a0ae3184631b9dc369d58",
+    "official_reader_example.rb.txt": "8b2e25b1ece756cd4a06d91bb7640d92991a2c059293ca6efc5b922ca1181489"
+  },
+  "sources": [
+    {
+      "path": "NetlistSpiceReader.html",
+      "sha256": "26cde0edb40071127f9ae8b6c9543b283c632aa018d983438c2202fc308b59cd",
+      "url": "https://www.klayout.de/doc/code/class_NetlistSpiceReader.html"
+    },
+    {
+      "path": "NetlistSpiceReaderDelegate.html",
+      "sha256": "43cb93bc62898ce4ec4a5c9addd56bca7d636e2a5440cd9c5b463fd638b2770a",
+      "url": "https://www.klayout.de/doc/code/class_NetlistSpiceReaderDelegate.html"
+    }
+  ]
+}

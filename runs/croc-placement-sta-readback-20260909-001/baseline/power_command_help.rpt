@@ -1,0 +1,2 @@
+report_power [-instances instances] [-highest_power_instances count]
+   [-corner corner] [-digits digits] [> filename] [>> filename]  

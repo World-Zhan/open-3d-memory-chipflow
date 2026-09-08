@@ -1,0 +1,5 @@
+circuit sg13g2_DCNDiode ();
+  device dantenna $1 (A=$2,C=cathode) (A=35.0028,P=58.08,m=1);
+  device dantenna $2 (A=$2,C=cathode) (A=35.0028,P=58.08,m=1);
+  device ptap1 $3 (TIE=anode,WELL=$2) (A=141.2964,P=221.76);
+end;

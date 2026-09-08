@@ -1,0 +1,94 @@
+--- a/ihp-sg13g2/libs.tech/klayout/tech/lvs/sg13g2.lvs
++++ b/ihp-sg13g2/libs.tech/klayout/tech/lvs/sg13g2.lvs
+@@ -227,6 +227,8 @@
+ 
+ # %include rule_decks/custom_classes.lvs
+ 
++# %include rule_decks/stage_observer.lvs
++
+ # Instantiate a reader using the new delegate
+ reader = RBA::NetlistSpiceReader.new(CustomReader.new)
+ 
+@@ -247,6 +249,8 @@
+     end
+   end
+ end
++
++stage_snapshot.call(schematic, 'schematic_after_reader') unless NET_ONLY
+ 
+ # Instantiate a writer using the new delegate
+ custom_spice_writer = RBA::NetlistSpiceWriter.new(CustomWriter.new)
+@@ -449,19 +453,29 @@
+ 
+ apply_netlist_options = lambda do |target_netlist, label|
+   log_option_action.call(label, 'simplify', SIMPLIFY)
++  stage_snapshot.call(target_netlist, label + '_before_simplify')
+   target_netlist.simplify if SIMPLIFY
++  stage_snapshot.call(target_netlist, label + '_after_simplify')
+ 
+   log_option_action.call(label, 'make_top_level_pins', TOP_LVL_PINS)
++  stage_snapshot.call(target_netlist, label + '_before_make_top_level_pins')
+   target_netlist.make_top_level_pins if TOP_LVL_PINS
++  stage_snapshot.call(target_netlist, label + '_after_make_top_level_pins')
+ 
+   log_option_action.call(label, 'combine_devices', COMBINE_DEVICES)
++  stage_snapshot.call(target_netlist, label + '_before_combine_devices')
+   target_netlist.combine_devices if COMBINE_DEVICES
++  stage_snapshot.call(target_netlist, label + '_after_combine_devices')
+ 
+   log_option_action.call(label, 'purge', PURGE)
++  stage_snapshot.call(target_netlist, label + '_before_purge')
+   target_netlist.purge if PURGE
++  stage_snapshot.call(target_netlist, label + '_after_purge')
+ 
+   log_option_action.call(label, 'purge_nets', PURGE_NETS)
++  stage_snapshot.call(target_netlist, label + '_before_purge_nets')
+   target_netlist.purge_nets if PURGE_NETS
++  stage_snapshot.call(target_netlist, label + '_after_purge_nets')
+ end
+ 
+ if NET_ONLY
+@@ -482,7 +496,11 @@
+   end
+   # === Aligns the extracted netlist vs. the schematic ===
+   logger.info('Starting SG13G2 LVS Alignment')
++  stage_snapshot.call(netlist, 'layout_before_align')
++  stage_snapshot.call(schematic, 'schematic_before_align')
+   align
++  stage_snapshot.call(netlist, 'layout_after_align')
++  stage_snapshot.call(schematic, 'schematic_after_align')
+ 
+   #=== NETLIST OPTIONS ===
+   logger.info('Starting SG13G2 LVS Simplification')
+@@ -503,6 +521,9 @@
+     success = compare && flag_missing_ports
+   end
+ 
++  stage_snapshot.call(netlist, 'layout_after_compare')
++  stage_snapshot.call(schematic, 'schematic_after_compare')
++
+   #================================================
+   #------------- COMPARISON RESULTS ---------------
+   #================================================
+--- a/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/rfmos_model_mapping.lvs
++++ b/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/rfmos_model_mapping.lvs
+@@ -44,6 +44,7 @@
+ # - RF models (rfnmos/rfpmos...) are mapped to base MOS classes (sg13_lv_nmos/sg13_lv_pmos...).
+ # - rfmode is set to 1 for RF devices
+ apply_rfmos_model_mapping = lambda do |target_netlist, label|
++  stage_snapshot.call(target_netlist, label + '_raw_before_rf_mapping')
+   logger.info("[#{label}] Apply RF MOS model mapping and rfmode parameter.")
+ 
+   class_index = build_device_class_index.call(target_netlist)
+@@ -116,8 +117,11 @@
+     devices_to_remove.each { |device| circuit.remove_device(device) }
+   end
+ 
++  stage_snapshot.call(target_netlist, label + '_after_rf_mapping')
+   target_netlist.purge_devices
++  stage_snapshot.call(target_netlist, label + '_after_rf_purge_devices')
+   target_netlist.purge
++  stage_snapshot.call(target_netlist, label + '_after_rf_purge')
+ end
+ 
+ # Apply mapping on layout side before align/compare.

@@ -1,0 +1,14 @@
+
+* cell sg13g2_DCNDiode
+.SUBCKT sg13g2_DCNDiode
+* net 1 guard
+* net 3 anode
+* net 4 cathode
+* net 5 cathode
+* device instance $1 r0 *1 16.53,7.38 dantenna
+D$1 2 5 dantenna A=35.0028P P=58.08U m=1
+* device instance $2 r0 *1 16.53,2.88 dantenna
+D$2 2 4 dantenna A=35.0028P P=58.08U m=1
+* device instance $3 r0 *1 16.53,5.13 ptap1
+R$3 3 2 141.2964 ptap1 P=221.76
+.ENDS sg13g2_DCNDiode

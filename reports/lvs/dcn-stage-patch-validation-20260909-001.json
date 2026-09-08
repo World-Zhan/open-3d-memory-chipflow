@@ -1,0 +1,15 @@
+{
+  "command": [
+    "git",
+    "-C",
+    "/home/james_zhan/projects/open-3d-memory-chipflow/runs/croc-lvs-leaf-purge-ab-20260905-001/decks/control",
+    "apply",
+    "--check",
+    "--whitespace=error",
+    "/home/james_zhan/projects/open-3d-memory-chipflow/runs/croc-lvs-dcn-stage-snapshots-20260909-001/observation_only.patch"
+  ],
+  "patch_sha256": "b85a74cbc9aa6a3f5332023136466af3f81878aefdbd6df7f2d17ee1533038fa",
+  "returncode": 0,
+  "stderr": "",
+  "stdout": ""
+}

@@ -1,0 +1,50 @@
+{
+  "analyzer_sha256": "3d780670fb6fff8653e866b1d8cee524b008a7ea2dfe92cddd320da953951e36",
+  "classification": "read_only_lvsdb_audit_no_eda",
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "--name",
+    "croc-lvs-dcn-stage-control-check-20260909-001",
+    "--cpus",
+    "1",
+    "--memory",
+    "1g",
+    "--user",
+    "1000:1000",
+    "-e",
+    "HOME=/tmp",
+    "-e",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "--entrypoint",
+    "/usr/bin/timeout",
+    "-v",
+    "/home/james_zhan/projects/open-3d-memory-chipflow:/work:ro",
+    "-v",
+    "/home/james_zhan/projects/open-3d-memory-chipflow/runs/croc-lvs-dcn-stage-control-check-20260909-001:/output:rw",
+    "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+    "--kill-after=3s",
+    "30s",
+    "/bin/bash",
+    "-lc",
+    "python3 /output/check_lvs_stage_control.py"
+  ],
+  "finished_at": "2026-09-08T17:14:39.573587+00:00",
+  "output_sha256": {
+    "check_lvs_stage_control.py": "8e8f4b35ba17006e020109405d0b468b58027aeab6c64e68af48b1b7fd8b736e",
+    "control_layout.txt": "3e9295136514baf8ee85e2b1654437db4f7c3001cbb931ab4cf6ceac1dfa95e1",
+    "control_schematic.txt": "4ee8702004a7a347a4b81f6e93c6650c542604019c74b8d17cf253871b151a7a",
+    "cross_reference.json": "a2d01efa0ac3678adca0b857169feb9cd18b689c69aa16a1e08fee646845edd2",
+    "observed_layout.txt": "3e9295136514baf8ee85e2b1654437db4f7c3001cbb931ab4cf6ceac1dfa95e1",
+    "observed_schematic.txt": "4ee8702004a7a347a4b81f6e93c6650c542604019c74b8d17cf253871b151a7a",
+    "run_lvs_stage_control_check.py": "6d2cdc27771d2525fde77e9bc8d9bd4ef200d420617f5843ec28e9775ed811ee",
+    "tool.log": "aa57bc1f153e0f2a1a6ca660f2ec3a6885abbcc3b7dab20ca6761918c2eae0a2"
+  },
+  "returncode": 0,
+  "script_sha256": {
+    "check_lvs_stage_control.py": "8e8f4b35ba17006e020109405d0b468b58027aeab6c64e68af48b1b7fd8b736e",
+    "run_lvs_stage_control_check.py": "6d2cdc27771d2525fde77e9bc8d9bd4ef200d420617f5843ec28e9775ed811ee"
+  },
+  "started_at": "2026-09-08T17:14:38.157761+00:00"
+}

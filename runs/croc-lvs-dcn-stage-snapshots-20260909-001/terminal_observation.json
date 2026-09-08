@@ -1,0 +1,262 @@
+[
+    {
+        "Id": "a70ef774541820405d069d0a6b5b305c5f095a4c5c16ebc1ff9ec1aa06fe78ff",
+        "Created": "2026-09-08T17:10:34.585492095Z",
+        "Path": "/usr/bin/timeout",
+        "Args": [
+            "--signal=TERM",
+            "--kill-after=3s",
+            "60s",
+            "/bin/bash",
+            "-lc",
+            "ulimit -c 0\npython3 /output/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/run_lvs.py --layout=/output/inputs/sg13g2_DCNDiode.gds --netlist=/output/inputs/sg13g2_DCNDiode.cdl --run_dir=/output/result --topcell=sg13g2_DCNDiode --run_mode=deep"
+        ],
+        "State": {
+            "Status": "exited",
+            "Running": false,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 0,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-09-08T17:10:34.711593408Z",
+            "FinishedAt": "2026-09-08T17:10:38.252760597Z"
+        },
+        "Image": "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+        "ResolvConfPath": "/var/lib/docker/containers/a70ef774541820405d069d0a6b5b305c5f095a4c5c16ebc1ff9ec1aa06fe78ff/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/a70ef774541820405d069d0a6b5b305c5f095a4c5c16ebc1ff9ec1aa06fe78ff/hostname",
+        "HostsPath": "/var/lib/docker/containers/a70ef774541820405d069d0a6b5b305c5f095a4c5c16ebc1ff9ec1aa06fe78ff/hosts",
+        "LogPath": "/var/lib/docker/containers/a70ef774541820405d069d0a6b5b305c5f095a4c5c16ebc1ff9ec1aa06fe78ff/a70ef774541820405d069d0a6b5b305c5f095a4c5c16ebc1ff9ec1aa06fe78ff-json.log",
+        "Name": "/croc-lvs-dcn-stage-snapshots-20260909-001",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/home/james_zhan/projects/open-3d-memory-chipflow:/work:ro",
+                "/home/james_zhan/projects/open-3d-memory-chipflow/runs/croc-lvs-dcn-stage-snapshots-20260909-001:/output:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "bridge",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 4294967296,
+            "NanoCpus": 2000000000,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 8589934592,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/james_zhan/projects/open-3d-memory-chipflow",
+                "Destination": "/work",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/home/james_zhan/projects/open-3d-memory-chipflow/runs/croc-lvs-dcn-stage-snapshots-20260909-001",
+                "Destination": "/output",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "a70ef7745418",
+            "Domainname": "",
+            "User": "1000:1000",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "5901/tcp": {},
+                "80/tcp": {},
+                "8888/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "HOME=/tmp",
+                "PYTHONDONTWRITEBYTECODE=1",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBIAN_FRONTEND=noninteractive",
+                "TZ=Europe/Vienna",
+                "LC_ALL=en_US.UTF-8",
+                "LANG=en_US.UTF-8",
+                "TOOLS=/foss/tools",
+                "PDK_ROOT=/foss/pdks",
+                "DESIGNS=/foss/designs",
+                "EXAMPLES=/foss/examples",
+                "VNC_PORT=5901",
+                "NO_VNC_PORT=80",
+                "JUPYTER_PORT=8888",
+                "TERM=xterm",
+                "STARTUPDIR=/dockerstartup",
+                "NO_VNC_HOME=/usr/share/novnc",
+                "VNC_COL_DEPTH=24",
+                "VNC_RESOLUTION=1680x1050",
+                "VNC_PW=abc123",
+                "VNC_VIEW_ONLY=false",
+                "OMPI_MCA_btl_vader_single_copy_mechanism=none",
+                "IIC_OSIC_TOOLS_VERSION=2025.12"
+            ],
+            "Cmd": [
+                "--signal=TERM",
+                "--kill-after=3s",
+                "60s",
+                "/bin/bash",
+                "-lc",
+                "ulimit -c 0\npython3 /output/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/run_lvs.py --layout=/output/inputs/sg13g2_DCNDiode.gds --netlist=/output/inputs/sg13g2_DCNDiode.cdl --run_dir=/output/result --topcell=sg13g2_DCNDiode --run_mode=deep"
+            ],
+            "Image": "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+            "Volumes": null,
+            "WorkingDir": "/foss/designs",
+            "Entrypoint": [
+                "/usr/bin/timeout"
+            ],
+            "Labels": {
+                "org.opencontainers.image.authors": "Harald Pretl <harald.pretl@jku.at>; Georg Zachl <georg.zachl@jku.at>",
+                "org.opencontainers.image.description": "IIC-OSIC-TOOLS (Integrated Infrastructure for Collaborative Open Source IC Tools) is an all-in-one Docker container for open-source-based integrated circuit designs for analog and digital circuit flows.",
+                "org.opencontainers.image.documentation": "https://github.com/iic-jku/IIC-OSIC-TOOLS/blob/main/README.md",
+                "org.opencontainers.image.licenses": " Apache-2.0",
+                "org.opencontainers.image.ref.name": "2025.12",
+                "org.opencontainers.image.source": "https://github.com/iic-jku/IIC-OSIC-TOOLS",
+                "org.opencontainers.image.title": "IIC Open Source Integrated Circuit Tools",
+                "org.opencontainers.image.url": "https://github.com/iic-jku/iic-osic-tools",
+                "org.opencontainers.image.vendor": "Department for Integrated Circuits",
+                "org.opencontainers.image.version": "2025.12"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "",
+            "SandboxKey": "",
+            "Ports": {},
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "dfa4a3a87f77c1a527656c8587004c0d172f5ea3256c2c270b35c84f1d971e89",
+                    "EndpointID": "",
+                    "Gateway": "",
+                    "IPAddress": "",
+                    "MacAddress": "",
+                    "IPPrefixLen": 0,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": null
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:82903a5580d7810a984c5001750f1217442837fe7f69b4486fc636ac95f34678",
+            "size": 10089,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    }
+]

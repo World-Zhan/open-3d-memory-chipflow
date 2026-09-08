@@ -1,0 +1,25 @@
+{
+  "classification": "software_and_archived_evidence_validation_not_chip_signoff",
+  "deterministic_audit_replay_equal": true,
+  "electrical_or_signoff_proven": false,
+  "full_formal_equivalence_proven": false,
+  "report_path": "reports/placement/full-io-structure-20260909-001.json",
+  "report_sha256": "1c082305a2a2f8cbd28941d63b1c17dd42a69bc638f2f6128bc93d508b33b5dc",
+  "result": "PASS",
+  "source_hash_checks": 128,
+  "source_hash_checks_all_matched": true,
+  "targeted_test_command": [
+    "/usr/bin/python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_croc_placement_structure.py",
+    "-v"
+  ],
+  "targeted_test_output": "test_def_wildcard_requires_actual_power_terminal_not_implicit_net (test_croc_placement_structure.PlacementPhysicalTests) ... ok\ntest_die_rows_tracks_and_wire_width_change_fail (test_croc_placement_structure.PlacementPhysicalTests) ... ok\ntest_fixed_inventory_and_recorded_clock_classification (test_croc_placement_structure.PlacementPhysicalTests) ... ok\ntest_io_macro_geometry_master_orientation_and_status_changes_fail (test_croc_placement_structure.PlacementPhysicalTests) ... ok\ntest_physical_pin_net_geometry_or_count_change_fails (test_croc_placement_structure.PlacementPhysicalTests) ... ok\ntest_port_direction_change_fails (test_croc_placement_structure.PlacementPhysicalTests) ... ok\ntest_asymmetric_input_swap_rejected (test_croc_placement_structure.PlacementStructureTests) ... ok\ntest_boolean_precedence_and_postfix_inversion (test_croc_placement_structure.PlacementStructureTests) ... ok\ntest_buffer_output_multiple_driver_rejected (test_croc_placement_structure.PlacementStructureTests) ... ok\ntest_buffer_self_loop_rejected (test_croc_placement_structure.PlacementStructureTests) ... ok\ntest_buffers_on_both_sides_and_resize_preserve_connectivity (test_croc_placement_structure.PlacementStructureTests) ... ok\ntest_direct_pins_exclude_nested_scan_test_cell (test_croc_placement_structure.PlacementStructureTests) ... ok\ntest_directed_buffer_cycle_is_rejected (test_croc_placement_structure.PlacementStructureTests) ... ok\ntest_duplicate_direct_pin_fails (test_croc_placement_structure.PlacementStructureTests) ... ok\ntest_ff_signature_includes_reset_behavior (test_croc_placement_structure.PlacementStructureTests) ... ok\ntest_input_pin_multiplicity_not_erased (test_croc_placement_structure.PlacementStructureTests) ... ok\ntest_missing_signal_pin_is_rejected (test_croc_placement_structure.PlacementStructureTests) ... ok\ntest_missing_supply_is_rejected (test_croc_placement_structure.PlacementStructureTests) ... ok\ntest_nontransparent_buffer_model_rejected (test_croc_placement_structure.PlacementStructureTests) ... ok\ntest_real_function_proves_symmetric_swap (test_croc_placement_structure.PlacementStructureTests) ... ok\ntest_terminal_boolean_zero_not_integer_zero (test_croc_placement_structure.PlacementStructureTests) ... ok\ntest_terminal_oom_running_and_timeout_rejected (test_croc_placement_structure.PlacementStructureTests) ... ok\ntest_tie_replication_is_constant_specific (test_croc_placement_structure.PlacementStructureTests) ... ok\ntest_unsupported_boolean_grammar_cannot_prove_symmetry (test_croc_placement_structure.PlacementStructureTests) ... ok\ntest_unverified_clone_rejected (test_croc_placement_structure.PlacementStructureTests) ... ok\ntest_wrong_supply_is_rejected (test_croc_placement_structure.PlacementStructureTests) ... ok\n\n----------------------------------------------------------------------\nRan 26 tests in 0.039s\n\nOK\n",
+  "targeted_test_returncode": 0,
+  "test_source_sha256": "fd7b28f296cbebe74bd0585aee2c7b9dfd46fbc33fe399e9c2e6363654a296be"
+}

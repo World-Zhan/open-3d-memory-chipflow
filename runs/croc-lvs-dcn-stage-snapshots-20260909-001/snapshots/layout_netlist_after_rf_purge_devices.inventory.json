@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "stage": "layout_netlist_after_rf_purge_devices",
+  "observation_preserved_inventory": true,
+  "before_sha256": "37c741f104f541647f853a64e6bcbb740c08551c7197660a15efa6440e07dc97",
+  "after_sha256": "37c741f104f541647f853a64e6bcbb740c08551c7197660a15efa6440e07dc97",
+  "inventory": {
+    "circuits": [
+      {
+        "name": "sg13g2_DCNDiode",
+        "nets": [
+          {
+            "ordinal": 0,
+            "name": "guard",
+            "expanded_name": "guard",
+            "cluster_id": 1,
+            "pins": [
+
+            ],
+            "terminals": [
+
+            ],
+            "subcircuit_pins": [
+
+            ]
+          },
+          {
+            "ordinal": 1,
+            "name": "",
+            "expanded_name": "$2",
+            "cluster_id": 2,
+            "pins": [
+
+            ],
+            "terminals": [
+              {
+                "device_id": 1,
+                "device_name": "",
+                "class": "dantenna",
+                "terminal_id": 0,
+                "terminal_name": "A"
+              },
+              {
+                "device_id": 3,
+                "device_name": "",
+                "class": "ptap1",
+                "terminal_id": 1,
+                "terminal_name": "WELL"
+              },
+              {
+                "device_id": 2,
+                "device_name": "",
+                "class": "dantenna",
+                "terminal_id": 0,
+                "terminal_name": "A"
+              }
+            ],
+            "subcircuit_pins": [
+
+            ]
+          },
+          {
+            "ordinal": 2,
+            "name": "anode",
+            "expanded_name": "anode",
+            "cluster_id": 3,
+            "pins": [
+
+            ],
+            "terminals": [
+              {
+                "device_id": 3,
+                "device_name": "",
+                "class": "ptap1",
+                "terminal_id": 0,
+                "terminal_name": "TIE"
+              }
+            ],
+            "subcircuit_pins": [
+
+            ]
+          },
+          {
+            "ordinal": 3,
+            "name": "cathode",
+            "expanded_name": "cathode",
+            "cluster_id": 6,
+            "pins": [
+
+            ],
+            "terminals": [
+              {
+                "device_id": 2,
+                "device_name": "",
+                "class": "dantenna",
+                "terminal_id": 1,
+                "terminal_name": "C"
+              }
+            ],
+            "subcircuit_pins": [
+
+            ]
+          },
+          {
+            "ordinal": 4,
+            "name": "cathode",
+            "expanded_name": "cathode",
+            "cluster_id": 8,
+            "pins": [
+
+            ],
+            "terminals": [
+              {
+                "device_id": 1,
+                "device_name": "",
+                "class": "dantenna",
+                "terminal_id": 1,
+                "terminal_name": "C"
+              }
+            ],
+            "subcircuit_pins": [
+
+            ]
+          }
+        ],
+        "pins": [
+
+        ],
+        "devices": [
+          {
+            "id": 1,
+            "name": "",
+            "class": "dantenna",
+            "terminals": [
+              {
+                "id": 0,
+                "name": "A",
+                "net_name": "",
+                "net_cluster_id": 2
+              },
+              {
+                "id": 1,
+                "name": "C",
+                "net_name": "cathode",
+                "net_cluster_id": 8
+              }
+            ],
+            "parameters": [
+              {
+                "id": 0,
+                "name": "A",
+                "value": 35.0028
+              },
+              {
+                "id": 1,
+                "name": "P",
+                "value": 58.08
+              },
+              {
+                "id": 2,
+                "name": "m",
+                "value": 1.0
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "",
+            "class": "dantenna",
+            "terminals": [
+              {
+                "id": 0,
+                "name": "A",
+                "net_name": "",
+                "net_cluster_id": 2
+              },
+              {
+                "id": 1,
+                "name": "C",
+                "net_name": "cathode",
+                "net_cluster_id": 6
+              }
+            ],
+            "parameters": [
+              {
+                "id": 0,
+                "name": "A",
+                "value": 35.0028
+              },
+              {
+                "id": 1,
+                "name": "P",
+                "value": 58.08
+              },
+              {
+                "id": 2,
+                "name": "m",
+                "value": 1.0
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "name": "",
+            "class": "ptap1",
+            "terminals": [
+              {
+                "id": 0,
+                "name": "TIE",
+                "net_name": "anode",
+                "net_cluster_id": 3
+              },
+              {
+                "id": 1,
+                "name": "WELL",
+                "net_name": "",
+                "net_cluster_id": 2
+              }
+            ],
+            "parameters": [
+              {
+                "id": 0,
+                "name": "A",
+                "value": 141.2964
+              },
+              {
+                "id": 1,
+                "name": "P",
+                "value": 221.76
+              }
+            ]
+          }
+        ],
+        "subcircuits": [
+
+        ]
+      }
+    ]
+  }
+}

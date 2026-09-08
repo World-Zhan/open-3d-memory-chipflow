@@ -1,0 +1,128 @@
+{
+  "also_publish_this_inventory": "reports/placement/full-io-cts-publication-files-20260909-001.json",
+  "classification": "explicit_small_file_publication_inventory",
+  "files": [
+    {
+      "path": "scripts/audit_croc_cts_structure.py",
+      "sha256": "1fbc63a4785356000865f7b075e1946281e4e8760dc39deb13674ccc7fe20df0",
+      "size_bytes": 14749
+    },
+    {
+      "path": "scripts/run_croc_full_cts.py",
+      "sha256": "2e0cd660c3898c3db52b86283c38092216331adce2a9fb84ae9b577397914991",
+      "size_bytes": 11755
+    },
+    {
+      "path": "tests/test_croc_cts_structure.py",
+      "sha256": "c2e543212cc4b6850a417868cf5500fc1b858ef0bede4a6a2309273172b18a6f",
+      "size_bytes": 7156
+    },
+    {
+      "path": "reports/placement/full-io-cts-structure-20260909-001.json",
+      "sha256": "bc2c637f98431790e86d5c0d7cf180c172e6b9ff8f398df7be4a15ed1c24e796",
+      "size_bytes": 18706
+    },
+    {
+      "path": "reports/placement/full-io-cts-extended-audit-20260909-001.json",
+      "sha256": "e9767b3bed0dd2ae23401ac02aae487e3e5d177d20783bb2d1f8c7d631298e59",
+      "size_bytes": 481590
+    },
+    {
+      "path": "reports/placement/full-io-cts-validation-20260909-001.json",
+      "sha256": "b560e789f1cbac293e90991ebee20d38cbec3dd9f41744bf4e4f0f4bcdc18c1f",
+      "size_bytes": 2143
+    },
+    {
+      "path": "runs/croc-full-io-cts-20260909-001/manifest.json",
+      "sha256": "231cdaf6d6f2543a64d99ae3cf93d1bbe88cafa3e623fbfac973412abb8072e7",
+      "size_bytes": 19436
+    },
+    {
+      "path": "runs/croc-full-io-cts-20260909-001/resource_samples.json",
+      "sha256": "2739d4ceb62482378465f121e71e367b846764e862275e1c4d1d58d1588a01be",
+      "size_bytes": 769
+    },
+    {
+      "path": "runs/croc-full-io-cts-20260909-001/terminal_observation.json",
+      "sha256": "74ebd5238d0b0a6c63d8df46d6a0e1dc6ae167b0545baaea1a744383319e18af",
+      "size_bytes": 698
+    },
+    {
+      "path": "runs/croc-full-io-cts-20260909-001/capture_placement.tcl",
+      "sha256": "90304060bec159de6fc45c962a144bf0f7b747bafa909c09348bf695bfa4aa3c",
+      "size_bytes": 2709
+    },
+    {
+      "path": "runs/croc-full-io-cts-20260909-001/after_placement.tcl",
+      "sha256": "d482fe246e74fe8d00a9d497889114d3652361e0595450ef56cc8f5ee8755c16",
+      "size_bytes": 902
+    },
+    {
+      "path": "runs/croc-full-io-cts-20260909-001/placement_checks.tsv",
+      "sha256": "8299e9324bf6ed3d2e0e3e9456af07bbe2f55b34c735312b154e4be27821f6cd",
+      "size_bytes": 98
+    },
+    {
+      "path": "runs/croc-full-io-cts-20260909-001/before_bounds.tsv",
+      "sha256": "728054cc5f17e9563984ed7a38bade3a5ca17faef5a346e4e3b5925034a720fa",
+      "size_bytes": 76
+    },
+    {
+      "path": "runs/croc-full-io-cts-20260909-001/after_bounds.tsv",
+      "sha256": "728054cc5f17e9563984ed7a38bade3a5ca17faef5a346e4e3b5925034a720fa",
+      "size_bytes": 76
+    },
+    {
+      "path": "runs/croc-full-io-cts-20260909-001/before_bterms.tsv",
+      "sha256": "02f8c709a1f6687acc17593e8e833a8e5ca568b6e38f34e71793ca5b2fec1de9",
+      "size_bytes": 1690
+    },
+    {
+      "path": "runs/croc-full-io-cts-20260909-001/after_bterms.tsv",
+      "sha256": "02f8c709a1f6687acc17593e8e833a8e5ca568b6e38f34e71793ca5b2fec1de9",
+      "size_bytes": 1690
+    },
+    {
+      "path": "runs/croc-full-io-cts-20260909-001/before_bpin_boxes.tsv",
+      "sha256": "c78c64b6deef91d4cc6538e91367ae75ea62262adcecf83c8d15b490fc456578",
+      "size_bytes": 3954
+    },
+    {
+      "path": "runs/croc-full-io-cts-20260909-001/after_bpin_boxes.tsv",
+      "sha256": "c78c64b6deef91d4cc6538e91367ae75ea62262adcecf83c8d15b490fc456578",
+      "size_bytes": 3954
+    },
+    {
+      "path": "runs/croc-full-io-cts-20260909-001/before_area.tsv",
+      "sha256": "e4e5f7e2b7dfcd15872b2a421d837bd8006be576efe9b5dd41a61b46af40cf36",
+      "size_bytes": 168
+    },
+    {
+      "path": "runs/croc-full-io-cts-20260909-001/after_area.tsv",
+      "sha256": "74fdbeee1fe4f9a0f5f30cafd8bdd84d00e6f6cabaaf11c32b49fefc4acc7eb7",
+      "size_bytes": 167
+    },
+    {
+      "path": "runs/croc-full-io-cts-20260909-001/before.sdc",
+      "sha256": "dba2560f7b7749aba172b6751bfb0a1a1e192da40dd938356391a1f0bb087d34",
+      "size_bytes": 102233
+    },
+    {
+      "path": "runs/croc-full-io-cts-20260909-001/after.sdc",
+      "sha256": "678f98d218b741631a8f21f9c4eaebadc79c97cf934eb86d8e92fe6a37787904",
+      "size_bytes": 102365
+    },
+    {
+      "path": "runs/croc-full-io-cts-20260909-001/work/openroad/scripts/03_cts.tcl",
+      "sha256": "f70a44d0c037e4aa6dfd49557244ecc034f5517c480217bf4140212109c0e8fc",
+      "size_bytes": 3268
+    }
+  ],
+  "large_local_evidence_not_included": [
+    "before/after DEF, Verilog, instance/ITerm tables",
+    "saved ODB/checkpoint ZIP files",
+    "raw tool reports/logs and generated PNGs"
+  ],
+  "prerequisite_publication_inventory": "reports/placement/full-io-structure-publication-files-20260909-001.json",
+  "source_sha256_reference": "reports/placement/full-io-cts-extended-audit-20260909-001.json"
+}

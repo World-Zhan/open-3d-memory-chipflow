@@ -1,0 +1,186 @@
+{
+  "advisory_code_reference": {
+    "OpenROAD_commit": "305d3ba2ddfd00591924cc586ad408179f566afe",
+    "STA_commit": "12683d645cefcc51bdffe36ba2e870d462fada21",
+    "matches_fixed_binary": false,
+    "mechanism": "PropActivityVisitor copies first incoming wire activity; findActivity prefers existing propagated activity to baked-in clock. This source is advisory only."
+  },
+  "arms": {
+    "croc-power-direction-input_analysis-20260909-001": {
+      "elapsed_seconds": 1.5385312890000478,
+      "execution_complete": false,
+      "exit_code": 1,
+      "oom_killed": false,
+      "source_hashes_unchanged": true,
+      "status": "failed"
+    },
+    "croc-power-direction-observe-20260909-001": {
+      "elapsed_seconds": 12.519695793999972,
+      "execution_complete": false,
+      "exit_code": 139,
+      "oom_killed": false,
+      "source_hashes_unchanged": true,
+      "status": "failed"
+    }
+  },
+  "bondpad_direction_from_actual_saved_odb_master": {
+    "candidate": "INOUT",
+    "old": "INPUT"
+  },
+  "classification": "incomplete_root_cause_diagnostic_not_power_optimization",
+  "confirmed_failure_details": {
+    "input_analysis": "dbMTerm has no setIoType method; failed before direction change or new power report; no A/B result",
+    "observe": "SIGSEGV at no-Liberty bondpad get_property is_clock; preceding complete power reports are intermediate evidence, not a completed run"
+  },
+  "evidence_sha256": {
+    "runs/croc-bondpad-io-ab-20260905-001/inputs/bondpad70_m2_ring.lef": "8d717917dc1e1c15efc677c0f61af0ab82d3f47c15b5c8f392de7e475ec5117f",
+    "runs/croc-full-io-placement-20260905-001/after.def": "b56711f63adfad9a5725ef4e932589152703a3e8a6324261aa65b59feb7944e0",
+    "runs/croc-full-io-placement-20260905-001/inputs/baseline_placed.def": "8b6ae9aa73f257f223ee5de8dcadea6faf7a0891e857b81d54ebc63d9c7ef3a9",
+    "runs/croc-placement-sta-readback-20260909-001/baseline/readback.sdc": "c2870c4b4a951259a8a9c72cb7b9b8e9f745003c4201e1f78d2116ef761165de",
+    "runs/croc-placement-sta-readback-20260909-001/candidate/readback.sdc": "996a8770a489d1fd811c17fa5bf99f84511f10b2fb361860507e924164f9edb3",
+    "runs/croc-placement-sta-readback-20260909-001/manifest.json": "11704aca2bd022403cdff6e30d6ffce9e446e8395162304313ca2d64ca0a5b09",
+    "runs/croc-power-direction-input_analysis-20260909-001/api_inventory.txt": "2a5ee9b8375f01f94fa165359f4b6ed3c8ee65c8b32340f04a867c363ad32521",
+    "runs/croc-power-direction-input_analysis-20260909-001/bondpad_master_directions.tsv": "22d7e505df70d4aed9bf15f9865a48f5936b740300eb7ea39f319423f2675512",
+    "runs/croc-power-direction-input_analysis-20260909-001/direction_change.tsv": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/croc-power-direction-input_analysis-20260909-001/manifest.json": "074278cd4611388a33fe8acd89d8f494b3ad64c5a3b1cc584b22e01228267984",
+    "runs/croc-power-direction-input_analysis-20260909-001/probe.tcl": "e2a9f58dac5d441c3cb9cad58482f8960b6bc36e27410dc00b9ba644d712b391",
+    "runs/croc-power-direction-input_analysis-20260909-001/terminal_observation.json": "e7aa8c3bdabf7a80029de379336f1108052d3688968c2ec299b6ed4edb43c116",
+    "runs/croc-power-direction-input_analysis-20260909-001/tool.log": "3c1a85fc592a3e1b90772c3937310c1dff26064b1e5318a7626f7b2fe4c39f59",
+    "runs/croc-power-direction-observe-20260909-001/api_inventory.txt": "2a5ee9b8375f01f94fa165359f4b6ed3c8ee65c8b32340f04a867c363ad32521",
+    "runs/croc-power-direction-observe-20260909-001/bondpad_master_directions.tsv": "22d7e505df70d4aed9bf15f9865a48f5936b740300eb7ea39f319423f2675512",
+    "runs/croc-power-direction-observe-20260909-001/clocks.rpt": "86b67f4fd9bd528c11936bbacbe7996230338986145bc4df8930e99d3ac33853",
+    "runs/croc-power-direction-observe-20260909-001/direction_change.tsv": "6e2e7b6cf0a756ebe54e09dce614be867dc90da59cbd12236887e342d3675198",
+    "runs/croc-power-direction-observe-20260909-001/manifest.json": "e84a44df38cab4574aac2ee1d72dc718ef45a81e36ee547af911c2d94a74a953",
+    "runs/croc-power-direction-observe-20260909-001/pin_observations.tsv": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/croc-power-direction-observe-20260909-001/power_ff.rpt": "27520967cd48d9ae15c13fe18835b4c013251e96c911187bf94000c8449afdb3",
+    "runs/croc-power-direction-observe-20260909-001/power_tt.rpt": "46799497b362fe46ff7c9351ec4ba4eba61c79aca5dc00ddb3d7c8828298d1d9",
+    "runs/croc-power-direction-observe-20260909-001/probe.tcl": "0ba24d6967d1a9f64eaa6b38840ae08a563701ff9de5a1ec28ee909ea38a639f",
+    "runs/croc-power-direction-observe-20260909-001/terminal_observation.json": "0ac660b2b0339468743df7a373298b9ffa3d7865527f1cb811e725f18cfe2e80",
+    "runs/croc-power-direction-observe-20260909-001/tool.log": "58ec54ff45e2cf10079c128dda76882804be9e88093a87d27760bd4a7961dcf2",
+    "scripts/run_croc_power_direction_input_probe.py": "9fc615894c0b2a1c00e8eafcdec6d5981cebde26423d43c8919bc3adc5a24303",
+    "scripts/run_croc_power_direction_probe.py": "9c2e00ca1421c7cd4c93ecc0ae375664cbb230adbfa7fc18e7f1cb2eb09700cd",
+    "upstream/croc/technology/lef/bondpad_70x70.lef": "3a08d296380b6808fffbb8f9ee25b4991198e341f78326f9a9b91fd58f0476f3"
+  },
+  "fixed_image": "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+  "fixed_tool": "OpenROAD v2.0-27244-gfecb04286",
+  "generated_at": "2026-09-08T17:28:11.147243+00:00",
+  "hypothesis": "New bondpad INOUT introduces a driver without Liberty and may change activity propagation; causal link NOT established. Low power is NOT an optimization claim.",
+  "intermediate_power_reports_before_observation_crash": {
+    "ff": {
+      "Clock": {
+        "internal_w": 1.62734636e-07,
+        "leakage_w": 5.98674388e-10,
+        "switching_w": 5.9790807e-08,
+        "total_w": 2.23124118e-07
+      },
+      "Combinational": {
+        "internal_w": 0.000620357168,
+        "leakage_w": 8.90080173e-06,
+        "switching_w": 0.00103132997,
+        "total_w": 0.00166058785
+      },
+      "Macro": {
+        "internal_w": 0.0,
+        "leakage_w": 3.96030998e-07,
+        "switching_w": 0.0,
+        "total_w": 3.96030998e-07
+      },
+      "Pad": {
+        "internal_w": 0.000349191396,
+        "leakage_w": 2.35769321e-07,
+        "switching_w": 0.00389038236,
+        "total_w": 0.00423980923
+      },
+      "Sequential": {
+        "internal_w": 0.000506424403,
+        "leakage_w": 4.04781713e-06,
+        "switching_w": 0.000193231535,
+        "total_w": 0.000703703787
+      },
+      "Total": {
+        "internal_w": 0.00147613406,
+        "leakage_w": 1.35803684e-05,
+        "switching_w": 0.00511500333,
+        "total_w": 0.00660471804
+      }
+    },
+    "tt": {
+      "Clock": {
+        "internal_w": 1.29168157e-07,
+        "leakage_w": 2.90803381e-10,
+        "switching_w": 4.56351898e-08,
+        "total_w": 1.75094144e-07
+      },
+      "Combinational": {
+        "internal_w": 0.000523625349,
+        "leakage_w": 3.76720095e-06,
+        "switching_w": 0.000801243412,
+        "total_w": 0.00132863596
+      },
+      "Macro": {
+        "internal_w": 0.0,
+        "leakage_w": 3.96030998e-07,
+        "switching_w": 0.0,
+        "total_w": 3.96030998e-07
+      },
+      "Pad": {
+        "internal_w": 0.000274854538,
+        "leakage_w": 1.08357277e-07,
+        "switching_w": 0.00326891616,
+        "total_w": 0.00354387891
+      },
+      "Sequential": {
+        "internal_w": 0.000426756538,
+        "leakage_w": 1.94718586e-06,
+        "switching_w": 0.000150181324,
+        "total_w": 0.000578885025
+      },
+      "Total": {
+        "internal_w": 0.00122536137,
+        "leakage_w": 6.21985828e-06,
+        "switching_w": 0.00422038557,
+        "total_w": 0.00545196654
+      }
+    }
+  },
+  "next_gate": [
+    "Confirm actual supported master clone/swap or analysis-view API before any run. Do not repeat absent setIoType or unsafe bondpad is_clock property.",
+    "Use a separate analysis master with exactly identical geometry and pad INPUT, preserving original ODB, nets, all terminals, SDC, libraries and 15pF. Verify before/after connection and geometry signatures.",
+    "If DEF reimport is necessary, include unchanged INOUT reimport control so reimport is not confounded with direction.",
+    "Require complete process termination and recovered SRAM/FF activity/power under unchanged conditions before accepting the direction hypothesis. Do not promote analysis override to a physical design repair."
+  ],
+  "original_layout_modified": false,
+  "power_comparison_qualified": false,
+  "public_rule_signoff": false,
+  "report_id": "croc-power-direction-diagnostic-20260909-001",
+  "runtime_api_limits": {
+    "activity_value_getter": "not in runtime activity command inventory",
+    "dbMTerm_setIoType": "absent",
+    "get_clocks_of_objects": "unsupported keyword",
+    "get_property_bondpad_is_clock": "unsafe SIGSEGV",
+    "sta_set_debug": "command observed but not invoked"
+  },
+  "schema_version": "1.0.0",
+  "sdc_equal_except_comments": true,
+  "soc_clk_i": {
+    "baseline": {
+      "canonical_endpoints_sha256": "c21cb52585cbb7149bb41b759ab026f9f99faaf770869700b21c4d4458ed0efa",
+      "pin_count": 3988,
+      "use_clock": true
+    },
+    "candidate": {
+      "canonical_endpoints_sha256": "c21cb52585cbb7149bb41b759ab026f9f99faaf770869700b21c4d4458ed0efa",
+      "pin_count": 3988,
+      "use_clock": true
+    }
+  },
+  "validation": {
+    "both_eda_failed": true,
+    "both_terminal": true,
+    "eda_processes": 2,
+    "hash_checks": 124,
+    "passed": true,
+    "python_ast_scripts": 2,
+    "unique_files": 86
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "classification": "software_and_archived_evidence_validation_not_chip_signoff",
+  "deterministic_audit_replay_equal": true,
+  "electrical_or_signoff_proven": false,
+  "full_formal_equivalence_proven": false,
+  "report_path": "reports/placement/full-io-cts-extended-audit-20260909-001.json",
+  "report_sha256": "e9767b3bed0dd2ae23401ac02aae487e3e5d177d20783bb2d1f8c7d631298e59",
+  "result": "PASS",
+  "source_hash_checks": 120,
+  "source_hash_checks_all_matched": true,
+  "targeted_test_command": [
+    "/usr/bin/python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_croc_cts_structure.py",
+    "-v"
+  ],
+  "targeted_test_output": "test_additional_pin_cannot_be_ignored (test_croc_cts_structure.CtsStructureTests) ... ok\ntest_any_connected_load_output_is_rejected (test_croc_cts_structure.CtsStructureTests) ... ok\ntest_buffer_and_inverter_unobserved_loads_have_actual_function_proof (test_croc_cts_structure.CtsStructureTests) ... ok\ntest_delay_is_proven_by_real_signature_and_no_design_mutation (test_croc_cts_structure.CtsStructureTests) ... ok\ntest_disagreement_between_def_and_unconnected_export_is_rejected (test_croc_cts_structure.CtsStructureTests) ... ok\ntest_existing_ndr_geometry_or_assignment_change_rejected (test_croc_cts_structure.CtsStructureTests) ... ok\ntest_load_must_be_on_actual_clock_net (test_croc_cts_structure.CtsStructureTests) ... ok\ntest_one_to_one_inverter_rename_requires_endpoint_equivalence (test_croc_cts_structure.CtsStructureTests) ... ok\ntest_preexisting_load_cannot_be_abstracted (test_croc_cts_structure.CtsStructureTests) ... ok\ntest_state_cell_is_not_an_unobserved_combinational_load (test_croc_cts_structure.CtsStructureTests) ... ok\ntest_undefined_ndr_and_nonclock_ndr_rejected (test_croc_cts_structure.CtsStructureTests) ... ok\ntest_unpowered_load_is_rejected (test_croc_cts_structure.CtsStructureTests) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.018s\n\nOK\n",
+  "targeted_test_returncode": 0,
+  "test_source_sha256": "c2e543212cc4b6850a417868cf5500fc1b858ef0bede4a6a2309273172b18a6f"
+}

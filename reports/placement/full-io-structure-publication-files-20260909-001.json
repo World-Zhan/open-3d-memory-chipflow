@@ -1,0 +1,122 @@
+{
+  "also_publish_this_inventory": "reports/placement/full-io-structure-publication-files-20260909-001.json",
+  "classification": "explicit_small_file_publication_inventory",
+  "files": [
+    {
+      "path": "scripts/audit_croc_placement_structure.py",
+      "sha256": "1920878b2dc306c829beda80755eff02fb338a31930369bbaa9555ce08a92333",
+      "size_bytes": 27934
+    },
+    {
+      "path": "scripts/run_croc_full_placement.py",
+      "sha256": "08f103176a8cf51ab3e71665a117a1620bd1d920372d450f88287fed69703a34",
+      "size_bytes": 11522
+    },
+    {
+      "path": "tests/test_croc_placement_structure.py",
+      "sha256": "fd7b28f296cbebe74bd0585aee2c7b9dfd46fbc33fe399e9c2e6363654a296be",
+      "size_bytes": 12374
+    },
+    {
+      "path": "reports/placement/full-io-structure-20260909-001.json",
+      "sha256": "1c082305a2a2f8cbd28941d63b1c17dd42a69bc638f2f6128bc93d508b33b5dc",
+      "size_bytes": 39943
+    },
+    {
+      "path": "reports/placement/full-io-structure-validation-20260909-001.json",
+      "sha256": "5fa57ddc278b33302ff92e318c616abe89d879624a1189ac7b425ebf58cc6228",
+      "size_bytes": 3701
+    },
+    {
+      "path": "runs/croc-full-io-placement-20260905-001/manifest.json",
+      "sha256": "e66877771c07b4460456da1e10eedc376986b6af32b83d366e459b7e2b6e39af",
+      "size_bytes": 20628
+    },
+    {
+      "path": "runs/croc-full-io-placement-20260905-001/resource_samples.json",
+      "sha256": "5e37c6e5f75c20d2ac680fc44a38a8bee8b0821d86ac82b3bb2c318e214c8775",
+      "size_bytes": 7046
+    },
+    {
+      "path": "runs/croc-full-io-placement-20260905-001/terminal_observation.json",
+      "sha256": "36d39742cb4276b33e1e9d8a3ba9ba81728ec9f8548e4b71519a712881f2d8bb",
+      "size_bytes": 711
+    },
+    {
+      "path": "runs/croc-full-io-placement-20260905-001/capture_placement.tcl",
+      "sha256": "90304060bec159de6fc45c962a144bf0f7b747bafa909c09348bf695bfa4aa3c",
+      "size_bytes": 2709
+    },
+    {
+      "path": "runs/croc-full-io-placement-20260905-001/after_placement.tcl",
+      "sha256": "d482fe246e74fe8d00a9d497889114d3652361e0595450ef56cc8f5ee8755c16",
+      "size_bytes": 902
+    },
+    {
+      "path": "runs/croc-full-io-placement-20260905-001/placement_checks.tsv",
+      "sha256": "8299e9324bf6ed3d2e0e3e9456af07bbe2f55b34c735312b154e4be27821f6cd",
+      "size_bytes": 98
+    },
+    {
+      "path": "runs/croc-full-io-placement-20260905-001/before_bounds.tsv",
+      "sha256": "728054cc5f17e9563984ed7a38bade3a5ca17faef5a346e4e3b5925034a720fa",
+      "size_bytes": 76
+    },
+    {
+      "path": "runs/croc-full-io-placement-20260905-001/after_bounds.tsv",
+      "sha256": "728054cc5f17e9563984ed7a38bade3a5ca17faef5a346e4e3b5925034a720fa",
+      "size_bytes": 76
+    },
+    {
+      "path": "runs/croc-full-io-placement-20260905-001/before_bterms.tsv",
+      "sha256": "02f8c709a1f6687acc17593e8e833a8e5ca568b6e38f34e71793ca5b2fec1de9",
+      "size_bytes": 1690
+    },
+    {
+      "path": "runs/croc-full-io-placement-20260905-001/after_bterms.tsv",
+      "sha256": "02f8c709a1f6687acc17593e8e833a8e5ca568b6e38f34e71793ca5b2fec1de9",
+      "size_bytes": 1690
+    },
+    {
+      "path": "runs/croc-full-io-placement-20260905-001/before_bpin_boxes.tsv",
+      "sha256": "c78c64b6deef91d4cc6538e91367ae75ea62262adcecf83c8d15b490fc456578",
+      "size_bytes": 3954
+    },
+    {
+      "path": "runs/croc-full-io-placement-20260905-001/after_bpin_boxes.tsv",
+      "sha256": "c78c64b6deef91d4cc6538e91367ae75ea62262adcecf83c8d15b490fc456578",
+      "size_bytes": 3954
+    },
+    {
+      "path": "runs/croc-full-io-placement-20260905-001/before_area.tsv",
+      "sha256": "f2fa6fc2cf1274c70f4ef7cf59c0bb008f25f2a9b2e5a409c5f105fc08e75f88",
+      "size_bytes": 167
+    },
+    {
+      "path": "runs/croc-full-io-placement-20260905-001/after_area.tsv",
+      "sha256": "e4e5f7e2b7dfcd15872b2a421d837bd8006be576efe9b5dd41a61b46af40cf36",
+      "size_bytes": 168
+    },
+    {
+      "path": "runs/croc-full-io-placement-20260905-001/before.sdc",
+      "sha256": "99dc1c02e3e52686e4da11cb41c6ebc8507c622facfb3601fed96727fb84780b",
+      "size_bytes": 102233
+    },
+    {
+      "path": "runs/croc-full-io-placement-20260905-001/after.sdc",
+      "sha256": "5de8cad2cd448d00bd2951360f679df6f2bf29f6afcb369ba023b9ce0b334c71",
+      "size_bytes": 102233
+    },
+    {
+      "path": "runs/croc-full-io-placement-20260905-001/work/openroad/scripts/02_placement.tcl",
+      "sha256": "83acf4107e9f608f01f05c5be4b7c0855dffc9d96cd17fcba329c8201d0d321e",
+      "size_bytes": 4764
+    }
+  ],
+  "large_local_evidence_not_included": [
+    "before/after DEF, Verilog, instance/ITerm tables",
+    "saved ODB/checkpoint ZIP files",
+    "raw tool reports/logs and generated PNGs"
+  ],
+  "source_sha256_reference": "reports/placement/full-io-structure-20260909-001.json"
+}

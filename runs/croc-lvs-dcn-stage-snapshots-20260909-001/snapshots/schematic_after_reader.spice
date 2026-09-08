@@ -1,0 +1,25 @@
+
+* cell SG13G2_DCNDIODE
+* pin ANODE
+* pin CATHODE
+* pin GUARD
+.SUBCKT SG13G2_DCNDIODE 1 2 3
+* net 1 ANODE
+* net 2 CATHODE
+* net 3 GUARD
+* net 4 SUB!
+* cell instance R0 r0 *1 0,0
+XR0 1 4 PTAP1(A=0.141253N,P=47.54U)
+* device instance D1 r0 *1 0,0 DANTENNA
+DD1 4 2 DANTENNA A=35.003P P=58.08U m=1
+* device instance D0 r0 *1 0,0 DANTENNA
+DD0 4 2 DANTENNA A=35.003P P=58.08U m=1
+.ENDS SG13G2_DCNDIODE
+
+* cell PTAP1(A=0.141253N,P=47.54U)
+* pin 1
+* pin 2
+.SUBCKT PTAP1(A=0.141253N,P=47.54U) 1 2
+* net 1 1
+* net 2 2
+.ENDS PTAP1(A=0.141253N,P=47.54U)

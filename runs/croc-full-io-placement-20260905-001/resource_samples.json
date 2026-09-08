@@ -1,0 +1,263 @@
+[
+  {
+    "observed_at": "2026-09-05T11:10:40.850117+00:00",
+    "resources": {
+      "BlockIO": "246MB / 0B",
+      "CPUPerc": "99.37%",
+      "Container": "croc-full-io-placement-20260905-001",
+      "ID": "99afe6f9e785",
+      "MemPerc": "4.92%",
+      "MemUsage": "403.1MiB / 8GiB",
+      "Name": "croc-full-io-placement-20260905-001",
+      "NetIO": "876B / 126B",
+      "PIDs": "5"
+    },
+    "resources_returncode": 0,
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 668,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-05T11:10:16.196960545Z",
+      "Status": "running"
+    },
+    "state_returncode": 0
+  },
+  {
+    "observed_at": "2026-09-05T11:11:07.292439+00:00",
+    "resources": {
+      "BlockIO": "246MB / 49.4MB",
+      "CPUPerc": "199.21%",
+      "Container": "croc-full-io-placement-20260905-001",
+      "ID": "99afe6f9e785",
+      "MemPerc": "5.28%",
+      "MemUsage": "432.3MiB / 8GiB",
+      "Name": "croc-full-io-placement-20260905-001",
+      "NetIO": "946B / 126B",
+      "PIDs": "5"
+    },
+    "resources_returncode": 0,
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 668,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-05T11:10:16.196960545Z",
+      "Status": "running"
+    },
+    "state_returncode": 0
+  },
+  {
+    "observed_at": "2026-09-05T11:11:33.942017+00:00",
+    "resources": {
+      "BlockIO": "246MB / 55MB",
+      "CPUPerc": "200.17%",
+      "Container": "croc-full-io-placement-20260905-001",
+      "ID": "99afe6f9e785",
+      "MemPerc": "5.47%",
+      "MemUsage": "447.8MiB / 8GiB",
+      "Name": "croc-full-io-placement-20260905-001",
+      "NetIO": "1.02kB / 126B",
+      "PIDs": "5"
+    },
+    "resources_returncode": 0,
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 668,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-05T11:10:16.196960545Z",
+      "Status": "running"
+    },
+    "state_returncode": 0
+  },
+  {
+    "observed_at": "2026-09-05T11:12:00.563059+00:00",
+    "resources": {
+      "BlockIO": "246MB / 55MB",
+      "CPUPerc": "197.74%",
+      "Container": "croc-full-io-placement-20260905-001",
+      "ID": "99afe6f9e785",
+      "MemPerc": "5.66%",
+      "MemUsage": "463.3MiB / 8GiB",
+      "Name": "croc-full-io-placement-20260905-001",
+      "NetIO": "1.02kB / 126B",
+      "PIDs": "5"
+    },
+    "resources_returncode": 0,
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 668,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-05T11:10:16.196960545Z",
+      "Status": "running"
+    },
+    "state_returncode": 0
+  },
+  {
+    "observed_at": "2026-09-05T11:12:27.216890+00:00",
+    "resources": {
+      "BlockIO": "246MB / 55MB",
+      "CPUPerc": "196.73%",
+      "Container": "croc-full-io-placement-20260905-001",
+      "ID": "99afe6f9e785",
+      "MemPerc": "5.84%",
+      "MemUsage": "478.6MiB / 8GiB",
+      "Name": "croc-full-io-placement-20260905-001",
+      "NetIO": "1.02kB / 126B",
+      "PIDs": "5"
+    },
+    "resources_returncode": 0,
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 668,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-05T11:10:16.196960545Z",
+      "Status": "running"
+    },
+    "state_returncode": 0
+  },
+  {
+    "observed_at": "2026-09-05T11:12:53.819727+00:00",
+    "resources": {
+      "BlockIO": "246MB / 55MB",
+      "CPUPerc": "192.58%",
+      "Container": "croc-full-io-placement-20260905-001",
+      "ID": "99afe6f9e785",
+      "MemPerc": "5.99%",
+      "MemUsage": "491.1MiB / 8GiB",
+      "Name": "croc-full-io-placement-20260905-001",
+      "NetIO": "1.09kB / 126B",
+      "PIDs": "5"
+    },
+    "resources_returncode": 0,
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 668,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-05T11:10:16.196960545Z",
+      "Status": "running"
+    },
+    "state_returncode": 0
+  },
+  {
+    "observed_at": "2026-09-05T11:13:20.386309+00:00",
+    "resources": {
+      "BlockIO": "246MB / 55MB",
+      "CPUPerc": "200.48%",
+      "Container": "croc-full-io-placement-20260905-001",
+      "ID": "99afe6f9e785",
+      "MemPerc": "7.21%",
+      "MemUsage": "591MiB / 8GiB",
+      "Name": "croc-full-io-placement-20260905-001",
+      "NetIO": "1.09kB / 126B",
+      "PIDs": "5"
+    },
+    "resources_returncode": 0,
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 668,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-05T11:10:16.196960545Z",
+      "Status": "running"
+    },
+    "state_returncode": 0
+  },
+  {
+    "observed_at": "2026-09-05T11:13:46.953310+00:00",
+    "resources": {
+      "BlockIO": "246MB / 60.6MB",
+      "CPUPerc": "165.37%",
+      "Container": "croc-full-io-placement-20260905-001",
+      "ID": "99afe6f9e785",
+      "MemPerc": "9.92%",
+      "MemUsage": "813MiB / 8GiB",
+      "Name": "croc-full-io-placement-20260905-001",
+      "NetIO": "1.09kB / 126B",
+      "PIDs": "5"
+    },
+    "resources_returncode": 0,
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 668,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-05T11:10:16.196960545Z",
+      "Status": "running"
+    },
+    "state_returncode": 0
+  },
+  {
+    "observed_at": "2026-09-05T11:14:13.477212+00:00",
+    "resources": {
+      "BlockIO": "246MB / 60.6MB",
+      "CPUPerc": "100.14%",
+      "Container": "croc-full-io-placement-20260905-001",
+      "ID": "99afe6f9e785",
+      "MemPerc": "11.40%",
+      "MemUsage": "933.7MiB / 8GiB",
+      "Name": "croc-full-io-placement-20260905-001",
+      "NetIO": "1.09kB / 126B",
+      "PIDs": "5"
+    },
+    "resources_returncode": 0,
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 668,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-05T11:10:16.196960545Z",
+      "Status": "running"
+    },
+    "state_returncode": 0
+  }
+]

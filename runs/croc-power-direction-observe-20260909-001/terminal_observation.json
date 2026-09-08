@@ -1,0 +1,270 @@
+[
+    {
+        "Id": "47d90d09f141929e49ffd4678b1a3cedc1460f2132365cf22cb9aa9670a3153a",
+        "Created": "2026-09-08T17:21:30.140916339Z",
+        "Path": "/bin/bash",
+        "Args": [
+            "-lc",
+            "source /work/upstream/croc/env.sh && timeout --verbose --signal=TERM --kill-after=10s 180s openroad -exit /output/probe.tcl"
+        ],
+        "State": {
+            "Status": "exited",
+            "Running": false,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 0,
+            "ExitCode": 139,
+            "Error": "",
+            "StartedAt": "2026-09-08T17:21:30.248867014Z",
+            "FinishedAt": "2026-09-08T17:21:41.978543297Z"
+        },
+        "Image": "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+        "ResolvConfPath": "/var/lib/docker/containers/47d90d09f141929e49ffd4678b1a3cedc1460f2132365cf22cb9aa9670a3153a/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/47d90d09f141929e49ffd4678b1a3cedc1460f2132365cf22cb9aa9670a3153a/hostname",
+        "HostsPath": "/var/lib/docker/containers/47d90d09f141929e49ffd4678b1a3cedc1460f2132365cf22cb9aa9670a3153a/hosts",
+        "LogPath": "/var/lib/docker/containers/47d90d09f141929e49ffd4678b1a3cedc1460f2132365cf22cb9aa9670a3153a/47d90d09f141929e49ffd4678b1a3cedc1460f2132365cf22cb9aa9670a3153a-json.log",
+        "Name": "/croc-power-direction-observe-20260909-001",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/home/james_zhan/projects/open-3d-memory-chipflow:/work:ro",
+                "/home/james_zhan/projects/open-3d-memory-chipflow/runs/croc-placement-sta-readback-20260909-001/candidate:/source:ro",
+                "/home/james_zhan/projects/open-3d-memory-chipflow/runs/croc-power-direction-observe-20260909-001:/output:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "bridge",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 4294967296,
+            "NanoCpus": 2000000000,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 8589934592,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [
+                {
+                    "Name": "core",
+                    "Hard": 0,
+                    "Soft": 0
+                }
+            ],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/james_zhan/projects/open-3d-memory-chipflow",
+                "Destination": "/work",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/home/james_zhan/projects/open-3d-memory-chipflow/runs/croc-placement-sta-readback-20260909-001/candidate",
+                "Destination": "/source",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/home/james_zhan/projects/open-3d-memory-chipflow/runs/croc-power-direction-observe-20260909-001",
+                "Destination": "/output",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "47d90d09f141",
+            "Domainname": "",
+            "User": "1000:1000",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "5901/tcp": {},
+                "80/tcp": {},
+                "8888/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "CROC_SKIP_TECH_SETUP=1",
+                "HOME=/tmp",
+                "CROC_PDK=sg13g2",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBIAN_FRONTEND=noninteractive",
+                "TZ=Europe/Vienna",
+                "LC_ALL=en_US.UTF-8",
+                "LANG=en_US.UTF-8",
+                "TOOLS=/foss/tools",
+                "PDK_ROOT=/foss/pdks",
+                "DESIGNS=/foss/designs",
+                "EXAMPLES=/foss/examples",
+                "VNC_PORT=5901",
+                "NO_VNC_PORT=80",
+                "JUPYTER_PORT=8888",
+                "TERM=xterm",
+                "STARTUPDIR=/dockerstartup",
+                "NO_VNC_HOME=/usr/share/novnc",
+                "VNC_COL_DEPTH=24",
+                "VNC_RESOLUTION=1680x1050",
+                "VNC_PW=abc123",
+                "VNC_VIEW_ONLY=false",
+                "OMPI_MCA_btl_vader_single_copy_mechanism=none",
+                "IIC_OSIC_TOOLS_VERSION=2025.12"
+            ],
+            "Cmd": [
+                "-lc",
+                "source /work/upstream/croc/env.sh && timeout --verbose --signal=TERM --kill-after=10s 180s openroad -exit /output/probe.tcl"
+            ],
+            "Image": "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+            "Volumes": null,
+            "WorkingDir": "/output/work/openroad",
+            "Entrypoint": [
+                "/bin/bash"
+            ],
+            "Labels": {
+                "org.opencontainers.image.authors": "Harald Pretl <harald.pretl@jku.at>; Georg Zachl <georg.zachl@jku.at>",
+                "org.opencontainers.image.description": "IIC-OSIC-TOOLS (Integrated Infrastructure for Collaborative Open Source IC Tools) is an all-in-one Docker container for open-source-based integrated circuit designs for analog and digital circuit flows.",
+                "org.opencontainers.image.documentation": "https://github.com/iic-jku/IIC-OSIC-TOOLS/blob/main/README.md",
+                "org.opencontainers.image.licenses": " Apache-2.0",
+                "org.opencontainers.image.ref.name": "2025.12",
+                "org.opencontainers.image.source": "https://github.com/iic-jku/IIC-OSIC-TOOLS",
+                "org.opencontainers.image.title": "IIC Open Source Integrated Circuit Tools",
+                "org.opencontainers.image.url": "https://github.com/iic-jku/iic-osic-tools",
+                "org.opencontainers.image.vendor": "Department for Integrated Circuits",
+                "org.opencontainers.image.version": "2025.12"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "",
+            "SandboxKey": "",
+            "Ports": {},
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "4cec5ece894468f8a3f83dae8298c22d3a93f3f6dbc3386f6c28eabe6e1cf283",
+                    "EndpointID": "",
+                    "Gateway": "",
+                    "IPAddress": "",
+                    "MacAddress": "",
+                    "IPPrefixLen": 0,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": null
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:82903a5580d7810a984c5001750f1217442837fe7f69b4486fc636ac95f34678",
+            "size": 10089,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    }
+]

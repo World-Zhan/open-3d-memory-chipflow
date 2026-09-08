@@ -1,0 +1,34 @@
+Startpoint: i_croc_soc/i_croc/i_dm_top.i_dm_top/master_add_o[5]_reg
+            (rising edge-triggered flip-flop clocked by clk_sys)
+Endpoint: i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut
+          (rising edge-triggered flip-flop clocked by clk_sys)
+Path Group: clk_sys
+Path Type: min
+Corner: ff
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.20    0.00    0.00   clock clk_sys (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                  0.20    0.00    0.00 ^ i_croc_soc/i_croc/i_dm_top.i_dm_top/master_add_o[5]_reg/CLK (sg13g2_dfrbpq_1)
+     5    0.04    0.09    0.22    0.22 v i_croc_soc/i_croc/i_dm_top.i_dm_top/master_add_o[5]_reg/Q (sg13g2_dfrbpq_1)
+     1    0.00    0.03    0.04    0.26 ^ i_croc_soc/i_croc/_5468_/Y (sg13g2_nand3_1)
+     1    0.00    0.04    0.05    0.32 v i_croc_soc/i_croc/_5469_/Y (sg13g2_nand3_1)
+     1    0.04    0.10    0.12    0.43 v i_croc_soc/i_croc/_5470_/X (sg13g2_and2_1)
+                  0.13    0.01    0.44 v i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_ADDR[3] (RM_IHPSG13_1P_512x32_c2_bm_bist)
+                                  0.44   data arrival time
+
+                  0.20    0.00    0.00   clock clk_sys (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.10    0.10   clock uncertainty
+                          0.00    0.10   clock reconvergence pessimism
+                                  0.10 ^ i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_CLK (RM_IHPSG13_1P_512x32_c2_bm_bist)
+                          0.34    0.44   library hold time
+                                  0.44   data required time
+-----------------------------------------------------------------------------
+                                  0.44   data required time
+                                 -0.44   data arrival time
+-----------------------------------------------------------------------------
+                                 -0.01   slack (VIOLATED)
+
+

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "as_of": "2026-09-05",
+  "as_of": "2026-09-09",
   "overview": "CURRENT_STATUS.md",
   "public_rule_signoff": false,
   "foundry_signoff": false,
@@ -16,24 +16,27 @@
       "postroute_extraction_and_spef_readback": "completed_single_typ_rc_model",
       "extracted_sta_signoff_qualified": false,
       "rcx_evidence": "runs/croc-postroute-rcx-20260905-001/manifest.json",
-      "latest_cts_candidate": "croc-cts-branch-eco-20260905-003",
+      "latest_cts_candidate": "croc-full-io-cts-20260909-001",
       "latest_cts_electrical": {
         "slew": 71,
         "capacitance": 135,
-        "fanout": 0,
+        "fanout": 4,
         "wns_ns": 0,
         "tns_ns": 0,
         "setup": 0,
         "hold": 0
       },
-      "latest_cts_structural_check": "runs/croc-cts-branch-eco-20260905-003/structural_validation.json",
+      "latest_cts_structural_check": "reports/placement/full-io-cts-extended-audit-20260909-001.json",
       "latest_cts_route": "not_run",
       "latest_cts_drc": "not_run",
       "latest_cts_lvs": "not_run",
       "latest_cts_ppa": {
-        "active_area_um2": 720835.1136,
-        "tt_tool_power_mw": 56.4,
-        "workload_activity_loaded": false
+        "active_area_um2": 721600.7904,
+        "tt_tool_power_mw": 5.46,
+        "workload_activity_loaded": false,
+        "power_activity_qualified": false,
+        "qualified_workload_power_mw": null,
+        "power_diagnostic": "reports/ppa/croc-power-direction-diagnostic-20260909-001.json"
       },
       "drc_count_basis": {
         "historical_merged": 1585,
@@ -41,7 +44,7 @@
         "pad_merged": 1577,
         "density_merged": 8
       },
-      "ppa_report": "reports/ppa/20260905_review_zh.md",
+      "ppa_report": "reports/ppa/croc-ppa-placement-cts-20260909-001.json",
       "bondpad_fixture": {
         "run_id": "croc-bondpad-drc-ab-20260905-002",
         "audit": "runs/croc-bondpad-drc-ab-20260905-002/audit.json",
@@ -131,7 +134,7 @@
         "composite_density_global": 8,
         "composite_density_local": 123,
         "composite_audit": "reports/bondpad/io-ring-composite-drc-20260905-003.json",
-        "full_chip_integration_stage": "independent_floorplan_only",
+        "full_chip_integration_stage": "independent_placement_and_cts_completed_electrical_failed",
         "full_chip_candidate_run": "croc-full-io-floorplan-20260905-005"
       },
       "strict_lvs_purge_ab": {
@@ -158,11 +161,11 @@
         "physical_pin_boxes": 64,
         "explicit_pg_pins": 61334,
         "static_core_pg_floorplanning_result": "PASS",
-        "placed_stdcell_pg_result": "not_run",
-        "signal_placement": "not_run",
-        "cts": "not_run",
+        "placed_stdcell_pg_result": "PASS",
+        "signal_placement": "completed",
+        "cts": "completed_electrical_failed",
         "signal_route": "not_run",
-        "postplacement_sta": "not_run",
+        "postplacement_sta": "completed_placement_parasitic_estimate_electrical_failed",
         "prelayout_checks": "warnings_and_negative_reset_slack_observed_before_PG_port_type_binding",
         "prelayout_report": "runs/croc-full-io-floorplan-20260905-005/work/openroad/reports/01-01_croc_checks.rpt",
         "full_chip_drc": "not_run",
@@ -174,13 +177,17 @@
         "power_mw": null,
         "fmax_mhz": null,
         "ppa": "reports/ppa/croc-ppa-full-floorplan-20260905-001.json",
-        "report": "docs/11_full_floorplan_readback_zh.md"
+        "report": "docs/11_full_floorplan_readback_zh.md",
+        "derived_placement_run": "croc-full-io-placement-20260905-001",
+        "derived_cts_run": "croc-full-io-cts-20260909-001",
+        "current_report": "docs/12_placement_cts_lvs_zh.md",
+        "current_ppa": "reports/ppa/croc-ppa-placement-cts-20260909-001.json"
       },
       "strict_lvs_parent_electrode_diagnosis": {
         "report": "reports/lvs/iopadin-electrode-guard-20260905-001.json",
         "actual_parent_duplicated_electrodes_joined": true,
         "guard_ordinary_ntap_contact_nwell_path": true,
-        "guard_loss_stage": "unknown",
+        "guard_loss_stage": "leaf_snapshot_localized_to_RF_mapping_purge; parent_not_rerun",
         "historical_parent_strict_result": "FAIL",
         "circuit_status_counts": {
           "NoMatch": 3,
@@ -188,6 +195,53 @@
         },
         "new_lvs_execution": false,
         "full_chip_attempt_3_performed": false
+      },
+      "historical_independent_cts_eco": {
+        "latest_cts_candidate": "croc-cts-branch-eco-20260905-003",
+        "latest_cts_electrical": {
+          "slew": 71,
+          "capacitance": 135,
+          "fanout": 0,
+          "wns_ns": 0,
+          "tns_ns": 0,
+          "setup": 0,
+          "hold": 0
+        },
+        "latest_cts_structural_check": "runs/croc-cts-branch-eco-20260905-003/structural_validation.json",
+        "latest_cts_ppa": {
+          "active_area_um2": 720835.1136,
+          "tt_tool_power_mw": 56.4,
+          "workload_activity_loaded": false
+        }
+      },
+      "full_placement_candidate": {
+        "run_id": "croc-full-io-placement-20260905-001",
+        "structure": "PASS",
+        "audit": "reports/placement/full-io-structure-20260909-001.json",
+        "placement_legality": "PASS",
+        "core_pg_ordinary_check": "PASS",
+        "timing": {
+          "wns_ns": 0.0,
+          "tns_ns": 0.0,
+          "setup_violations": 0,
+          "hold_violations": 1,
+          "max_slew_violations": 71,
+          "max_capacitance_violations": 135,
+          "max_fanout_violations": 0
+        },
+        "electrical_acceptance": "FAIL",
+        "fresh_readback": "runs/croc-placement-sta-readback-20260909-001/manifest.json"
+      },
+      "strict_lvs_stage_diagnosis": {
+        "report": "reports/lvs/dcn-stage-snapshots-20260909-001.json",
+        "reader_review": "reports/lvs/dcn-reader-extraction-review-20260909-001.json",
+        "result": "FAIL",
+        "snapshots": 31,
+        "source_pdk_modified": false,
+        "full_chip_attempt_3_performed": false,
+        "guard_first_removed": "rfmos_model_mapping.target_netlist.purge",
+        "schematic_tap_removed": "align",
+        "reader_fix_performed": false
       }
     },
     "B_pin3d": {
@@ -208,12 +262,12 @@
     }
   },
   "next_actions": [
-    "Use independently verified full floorplan 005 for bounded placement after reviewing constraints with correct PG port types; recheck structure, legal placement, supply connectivity and electrical limits.",
-    "Preserve complete IO-only DRC composite: 131 density markers, still FAIL. Route/fill/seal the new full-chip candidate before full-chip DRC/RCX; old IO-only evidence cannot pass the new layout.",
-    "Capture observation-only reader/extraction/align/simplify snapshots to locate guard/tap loss; use actual parent/abutment geometry and strict rules, without implicit nets or full-chip LVS attempt 3.",
-    "Retain 15 pF IO load and library limits; resolve reset/pad/SRAM electrical issues and reassess CTS changes on this candidate with same-stage PPA.",
-    "Complete qualified corner/mode/activity, IR/EM, DFT and actual MPW requirements before claiming tapeout readiness.",
-    "Keep Pin3D research_only; C1 development does not replace A-track backend closure."
+    "Resolve four fanout violators on the new full CTS candidate; preserve function, clock NDR, PG and 15 pF loads, with a new structural audit.",
+    "Validate supported activity APIs on a tiny fixture before a new single-factor power probe; existing INOUT bondpad causality is unproven and both observation attempts failed.",
+    "Implement an isolated PTAP1/NTAP1 reader-only candidate with terminal/unit/unknown-subcircuit regression; then resolve tap parameter and guard model differences before strict parent/full-chip LVS.",
+    "Resolve IO slew and SRAM/output capacitance without weakening limits; route/fill/seal and extract the new candidate only after concrete prerequisites. Keep IO-only 131 density markers distinct.",
+    "Qualify actual corner/mode/activity, IR/EM, DFT and MPW/process requirements before tapeout readiness.",
+    "Keep Pin3D research_only and C1 separate from baseline physical signoff."
   ],
   "objective": "Strict backend closure toward tapeout readiness, with per-iteration PPA and source-backed peer comparisons."
 }

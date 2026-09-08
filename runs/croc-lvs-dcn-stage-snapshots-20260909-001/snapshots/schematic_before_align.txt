@@ -1,0 +1,7 @@
+circuit SG13G2_DCNDIODE (ANODE=ANODE,CATHODE=CATHODE,GUARD=GUARD);
+  device DANTENNA D1 (A='SUB!',C=CATHODE) (A=35.003,P=58.08,m=1);
+  device DANTENNA D0 (A='SUB!',C=CATHODE) (A=35.003,P=58.08,m=1);
+  subcircuit 'PTAP1(A=0.141253N,P=47.54U)' R0 ('1'=ANODE,'2'='SUB!');
+end;
+circuit 'PTAP1(A=0.141253N,P=47.54U)' ('1'='1','2'='2');
+end;

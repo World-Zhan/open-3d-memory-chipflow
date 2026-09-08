@@ -1,0 +1,35 @@
+{
+  "classification": "reviewed_index_export_and_unit_tests_not_chip_signoff",
+  "index_tree_before_this_report": "462e51c5bd161edc646c50e1d7001291218f45e5",
+  "reviewed_files": 223,
+  "changed_index_files": 223,
+  "all_index_and_export_bytes_equal_worktree": true,
+  "staged_file_whitelist_verified": true,
+  "secret_and_large_file_scan_passed": true,
+  "max_individual_archived_bytes": 481590,
+  "exported_index_and_pinned_test_dependencies_only": true,
+  "large_ignored_EDA_inputs_not_copied": true,
+  "submodule": {
+    "path": "upstream/taiwei-pin-3d",
+    "commit": "c85b79352eefc31a588da3ef873e4fd68a3df3f2",
+    "source_sha256": {
+      "Makefile": "b1306b0ec36b5d470984d646c9d675c7f6c0259bd5fe3de2c2cc3dc69df11465",
+      "platforms/asap7_3D/config.mk": "2e5778b5deafbc18568f5a4a95f362a3399809b5e55f6ef44a72ace344b57ee8",
+      "scripts_openroad/floorplan_3d.tcl": "aecb8b1cb35d08daba7c101589e5b2be61635666f34f3a52d91bbcd3ff120b58",
+      "scripts_openroad/tier_partition.tcl": "252e3ccb15fc616947b896476829d176bcc0c5af6d7e47ddc62db9da8856d4ff",
+      "scripts_openroad/tier_partition_helpers.tcl": "9b5166e6e4b2e2e4f783f9941c8525948fcb467ce673cfe040f8f56aa4572f8a"
+    }
+  },
+  "command": [
+    "make",
+    "test",
+    "validate-contracts"
+  ],
+  "returncode": 0,
+  "unit_tests_passed": 220,
+  "json_contracts_passed": 2,
+  "test_log": "runs/croc-placement-cts-publication-review-20260909-001/checkout-tests.log",
+  "test_log_sha256": "61162ccb65dbf61542cf68a2c434412b9dced76adcfc25a7427934533dca9747",
+  "public_rule_signoff": false,
+  "foundry_signoff": false
+}

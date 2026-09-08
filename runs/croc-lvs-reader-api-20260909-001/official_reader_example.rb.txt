@@ -1,0 +1,49 @@
+class MyDelegate < RBA::NetlistSpiceReaderDelegate
+
+  # says we want to catch these subcircuits as devices
+  def wants_subcircuit(name)
+    name == "HVNMOS" || name == "HVPMOS"
+  end
+
+  # translate the element
+  def element(circuit, el, name, model, value, nets, params)
+
+    if el != "X"
+      # all other elements are left to the standard implementation
+      return super
+    end
+
+    if nets.size != 4
+      error("Subcircuit #{model} needs four nodes")
+    end
+
+    # provide a device class
+    cls = circuit.netlist.device_class_by_name(model)
+    if ! cls
+      cls = RBA::DeviceClassMOS4Transistor::new
+      cls.name = model
+      circuit.netlist.add(cls)
+    end
+
+    # create a device
+    device = circuit.create_device(cls, name)
+
+    # and configure the device
+    [ "S", "G", "D", "B" ].each_with_index do |t,index|
+      device.connect_terminal(t, nets[index])
+    end
+    params.each do |p,value|
+      device.set_parameter(p, value * 1.5)
+    end
+
+  end
+
+end
+
+# usage:
+
+mydelegate = MyDelegate::new
+reader = RBA::NetlistSpiceReader::new(mydelegate)
+
+nl = RBA::Netlist::new
+nl.read(input_file, reader)

@@ -1,0 +1,29 @@
+{
+  "observed_at": "2026-09-08T17:19:59.246144+00:00",
+  "resources": {
+    "BlockIO": "0B / 0B",
+    "CPUPerc": "0.00%",
+    "Container": "croc-full-io-cts-20260909-001",
+    "ID": "db52adca808c",
+    "MemPerc": "0.00%",
+    "MemUsage": "0B / 0B",
+    "Name": "croc-full-io-cts-20260909-001",
+    "NetIO": "0B / 0B",
+    "PIDs": "0"
+  },
+  "resources_returncode": 0,
+  "state": {
+    "Dead": false,
+    "Error": "",
+    "ExitCode": 0,
+    "FinishedAt": "2026-09-08T17:19:59.09346571Z",
+    "OOMKilled": false,
+    "Paused": false,
+    "Pid": 0,
+    "Restarting": false,
+    "Running": false,
+    "StartedAt": "2026-09-08T17:19:15.057748947Z",
+    "Status": "exited"
+  },
+  "state_returncode": 0
+}
