@@ -1,0 +1,56 @@
+Startpoint: in_pad (input port clocked by clk_sys)
+Endpoint: in_core (output port clocked by clk_sys)
+Path Group: clk_sys
+Path Type: min
+
+Fanout           Cap          Slew         Delay          Time   Description
+-----------------------------------------------------------------------------------------------------
+                        0.19999999    0.00000000    0.00000000   clock clk_sys (rise edge)
+                                      0.00000000    0.00000000   clock network delay (ideal)
+                                      1.00000000    1.00000000 ^ input external delay
+     1    0.18990301    0.34618974    0.02769618    1.02769613 ^ in_pad (in)
+     1    0.05000000    0.09640906    0.28232905    1.31002522 ^ in_data/p2c (sg13g2_IOPadIn)
+                        0.09640906    0.00000000    1.31002522 ^ in_core (out)
+                                                    1.31002522   data arrival time
+
+                        0.19999999    0.00000000    0.00000000   clock clk_sys (rise edge)
+                                      0.00000000    0.00000000   clock network delay (ideal)
+                                      0.09999999    0.09999999   clock uncertainty
+                                      0.00000000    0.09999999   clock reconvergence pessimism
+                                     -1.00000000   -0.89999998   output external delay
+                                                   -0.89999998   data required time
+-----------------------------------------------------------------------------------------------------
+                                                   -0.89999998   data required time
+                                                   -1.31002522   data arrival time
+-----------------------------------------------------------------------------------------------------
+                                                    2.21002507   slack (MET)
+
+
+Startpoint: in_pad (input port clocked by clk_sys)
+Endpoint: in_core (output port clocked by clk_sys)
+Path Group: clk_sys
+Path Type: max
+
+Fanout           Cap          Slew         Delay          Time   Description
+-----------------------------------------------------------------------------------------------------
+                        0.19999999    0.00000000    0.00000000   clock clk_sys (rise edge)
+                                      0.00000000    0.00000000   clock network delay (ideal)
+                                      3.00000000    3.00000000 v input external delay
+     1    0.26096100    0.49978507    0.03081691    3.03081679 v in_pad (in)
+     1    0.05000000    0.07440641    0.30597302    3.33678985 v in_data/p2c (sg13g2_IOPadIn)
+                        0.07440641    0.00000000    3.33678985 v in_core (out)
+                                                    3.33678985   data arrival time
+
+                        0.19999999   10.00000000   10.00000000   clock clk_sys (rise edge)
+                                      0.00000000   10.00000000   clock network delay (ideal)
+                                     -0.09999999    9.90000057   clock uncertainty
+                                      0.00000000    9.90000057   clock reconvergence pessimism
+                                     -3.00000000    6.90000010   output external delay
+                                                    6.90000010   data required time
+-----------------------------------------------------------------------------------------------------
+                                                    6.90000010   data required time
+                                                   -3.33678985   data arrival time
+-----------------------------------------------------------------------------------------------------
+                                                    3.56321049   slack (MET)
+
+

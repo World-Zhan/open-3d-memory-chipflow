@@ -1,0 +1,9 @@
+# Logfile created on 2026-09-10 14:30:44 +0200 by logger.rb/v1.5.3
+2026-09-10 14:30:44 +0200: Memory Usage (438328K) : Starting running IHP-SG13G2 Klayout DRC maximum runset on /work/runs/ihp-io-physical-20260910-001/geometry/sg13g2_IOPadInOut30mA.gds
+2026-09-10 14:30:44 +0200: Memory Usage (438328K) : Ruby Version for klayout: 3.2.3
+2026-09-10 14:30:44 +0200: Memory Usage (441088K) : Loading database to memory is complete.
+2026-09-10 14:30:44 +0200: Memory Usage (441088K) : IHP-SG13G2 Klayout DRC maximum runset output at: /output/sg13g2_IOPadInOut30mA_sg13g2_IOPadInOut30mA_sg13g2_maximal.lyrdb
+2026-09-10 14:30:44 +0200: Memory Usage (441216K) : Evaluate switches.
+2026-09-10 14:30:44 +0200: Memory Usage (441216K) : Klayout will use 1 thread(s)
+2026-09-10 14:30:44 +0200: Memory Usage (441216K) : deep mode is enabled for sg13g2_maximal runset.
+2026-09-10 14:30:53 +0200: Memory Usage (525360K) : KLayout DRC run for maximum ruleSet completed in 8.82 seconds

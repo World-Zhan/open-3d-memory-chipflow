@@ -16,22 +16,22 @@
       "postroute_extraction_and_spef_readback": "completed_single_typ_rc_model",
       "extracted_sta_signoff_qualified": false,
       "rcx_evidence": "runs/croc-postroute-rcx-20260905-001/manifest.json",
-      "latest_cts_candidate": "croc-full-io-cts-fanout-20260910-001",
+      "latest_cts_candidate": "croc-full-io-sram-cap-20260910-001",
       "latest_cts_electrical": {
         "slew": 71,
-        "capacitance": 135,
+        "capacitance": 71,
         "fanout": 0,
         "wns_ns": 0,
         "tns_ns": 0,
         "setup": 0,
         "hold": 0
       },
-      "latest_cts_structural_check": "reports/placement/full-io-cts-fanout-audit-20260910-001.json",
+      "latest_cts_structural_check": "reports/placement/full-io-sram-cap-audit-20260910-001.json",
       "latest_cts_route": "not_run",
       "latest_cts_drc": "not_run",
       "latest_cts_lvs": "not_run",
       "latest_cts_ppa": {
-        "active_area_um2": 721789.488,
+        "active_area_um2": 722718.4607999,
         "tt_tool_power_mw": 5.46,
         "power_activity_qualified": false,
         "workload_activity_loaded": false,
@@ -44,7 +44,7 @@
         "pad_merged": 1577,
         "density_merged": 8
       },
-      "ppa_report": "reports/ppa/croc-ppa-cts-reader-power-20260910-001.json",
+      "ppa_report": "reports/ppa/croc-ppa-sram-io-contract-20260910-001.json",
       "bondpad_fixture": {
         "run_id": "croc-bondpad-drc-ab-20260905-002",
         "audit": "runs/croc-bondpad-drc-ab-20260905-002/audit.json",
@@ -179,9 +179,9 @@
         "ppa": "reports/ppa/croc-ppa-full-floorplan-20260905-001.json",
         "report": "docs/11_full_floorplan_readback_zh.md",
         "derived_placement_run": "croc-full-io-placement-20260905-001",
-        "derived_cts_run": "croc-full-io-cts-fanout-20260910-001",
-        "current_report": "docs/13_cts_reader_power_zh.md",
-        "current_ppa": "reports/ppa/croc-ppa-cts-reader-power-20260910-001.json"
+        "derived_cts_run": "croc-full-io-sram-cap-20260910-001",
+        "current_report": "docs/14_sram_io_contract_zh.md",
+        "current_ppa": "reports/ppa/croc-ppa-sram-io-contract-20260910-001.json"
       },
       "strict_lvs_parent_electrode_diagnosis": {
         "report": "reports/lvs/iopadin-electrode-guard-20260905-001.json",
@@ -288,7 +288,8 @@
         "fixed_pdk_commit": "331c00484213b13414777eec1336ef5c29b969bd",
         "views_must_migrate_together": true,
         "applied_to_current_layout": false,
-        "dynamic_STA_DRC_LVS_performed": false
+        "dynamic_STA_DRC_LVS_performed": false,
+        "scope": "Historical static suite inventory before the second-round fixture validation; see official_IO_fixture_validation for actual STA/DRC results. No full-suite LVS or chip migration."
       },
       "io_load_contract": {
         "report": "reports/ppa/croc-io-load-contract-20260910-001.json",
@@ -296,6 +297,61 @@
         "product_load_confirmed": false,
         "current_Croc_library_compatible": false,
         "official_updated_suite_static_cap_candidate": true
+      },
+      "previous_full_io_cts_fanout_candidate": {
+        "latest_cts_candidate": "croc-full-io-cts-fanout-20260910-001",
+        "latest_cts_electrical": {
+          "slew": 71,
+          "capacitance": 135,
+          "fanout": 0,
+          "wns_ns": 0,
+          "tns_ns": 0,
+          "setup": 0,
+          "hold": 0
+        },
+        "latest_cts_structural_check": "reports/placement/full-io-cts-fanout-audit-20260910-001.json",
+        "latest_cts_ppa": {
+          "active_area_um2": 721789.488,
+          "tt_tool_power_mw": 5.46,
+          "power_activity_qualified": false,
+          "workload_activity_loaded": false,
+          "qualified_workload_power_mw": null,
+          "power_diagnostic": "reports/ppa/croc-power-direction-ab-20260910-001.json"
+        }
+      },
+      "sram_cap_ECO": {
+        "report": "reports/placement/full-io-sram-cap-audit-20260910-001.json",
+        "buffers_added": 64,
+        "before_violations": 64,
+        "after_violations": 0,
+        "original_geometry_preserved": true,
+        "routed_capacitance_proven": false
+      },
+      "official_IO_fixture_validation": {
+        "reports": {
+          "io_sta": "reports/ppa/ihp_io_suite-digital-sta-20260910-001.json",
+          "io_maxdrive": "reports/ppa/ihp_io_suite-maxdrive-20260910-003.json",
+          "io_physical": "reports/ppa/ihp-io-physical-final-20260910-001.json",
+          "io_labels": "reports/ppa/ihp-io-labels-20260910-001.json"
+        },
+        "behavior_assertions_passed": 42,
+        "tt_ff_ss_STA": "FAIL",
+        "Out30_STA": "FAIL",
+        "load_pf": 15,
+        "slew_limit_ns": 1.2,
+        "Out16_macro_DRC": "FAIL_density_6",
+        "InOut30_macro_DRC": "FAIL_density_6",
+        "strict_LVS": "NOT_RUN_lower_leaf_gate",
+        "integrated_into_main_candidate": false
+      },
+      "tap_geometry_diagnosis": {
+        "report": "reports/lvs/tap-geometry-20260910-001.json",
+        "actual_perimeter_um": 221.76,
+        "schematic_perimeter_um": 47.54,
+        "physical_perimeter_explained": true,
+        "schematic_parameter_convention_proven": false,
+        "strict_LVS_status": "FAIL",
+        "new_LVS_performed": false
       }
     },
     "B_pin3d": {
@@ -316,11 +372,11 @@
     }
   },
   "next_actions": [
-    "Validate a matched official IO suite fixture including GDS/CDL/LEF/Verilog/Liberty, 15 pF STA, physical connectivity and strict DRC/LVS before whole-ring migration.",
-    "Repair the 64 SRAM output capacitance violations with a separate bounded functional/PG/timing-audited ECO.",
-    "Resolve tap parameter and guard model differences after the proven reader-only adapter; keep strict parent/full-chip gate.",
-    "Qualify the no-Liberty bondpad STA abstraction in all modes; do not promote the INPUT diagnostic view or anomalous CTS power into a design PASS.",
-    "Keep the 15 pF contract until actual board/package requirements are confirmed; complete extracted corners/modes, IR/EM, DFT and MPW acceptance."
+    "Retain 15 pF/1.2 ns and establish the actual board/interface contract or a model-backed drive solution; tested Out16/InOut30/Out30 do not meet the original slew limit.",
+    "Establish the intended IO tap A/P and unloaded guard boundary semantics before strict leaf/parent LVS; do not change parameters, tolerances, markers or connections merely to match.",
+    "Qualify updated IO views together before whole-ring migration; rerun assembled density/connectivity and routed timing afterwards.",
+    "Carry the SRAM-cap ECO into routing/extracted-corner validation only after IO prerequisites; preserve DRC/LVS, IR/EM, DFT and MPW acceptance gates.",
+    "Keep Pin3D research_only, workload power unknown and the C1 module track separate."
   ],
   "objective": "Strict backend closure toward tapeout readiness, with per-iteration PPA and source-backed peer comparisons."
 }

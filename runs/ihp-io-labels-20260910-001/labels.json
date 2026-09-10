@@ -1,0 +1,8507 @@
+{
+  "cells": {
+    "sg13g2_IOPadIn": {
+      "all_LEF_pins_have_direct_top_label_in_same_metal_rect": true,
+      "correct_direct_top_labels": [
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "PAD",
+          "position_dbu": [
+            9040,
+            7660
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "PAD",
+          "position_dbu": [
+            9040,
+            66660
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            41350,
+            82085
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            42150,
+            110175
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            41540,
+            82070
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            42240,
+            109425
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            41015,
+            109075
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            41365,
+            81455
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            41100,
+            108550
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            41800,
+            81805
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            41450,
+            109075
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            42850,
+            75250
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            41350,
+            51070
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            41690,
+            132015
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            42150,
+            24180
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            39615,
+            131455
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            41275,
+            22280
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            41800,
+            50075
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40840,
+            49815
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            41190,
+            131455
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            42065,
+            22195
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            41015,
+            50340
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            41800,
+            22545
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            42150,
+            131975
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            42325,
+            43170
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            47220,
+            15815
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            54125,
+            130230
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "p2c",
+          "position_dbu": [
+            39955,
+            169590
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "p2c",
+          "position_dbu": [
+            39975,
+            179855
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            36475,
+            1765
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            48455,
+            1995
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            50365,
+            1565
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            48970,
+            2005
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            49055,
+            1830
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            52990,
+            1655
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            41120,
+            171000
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            41365,
+            150595
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            41365,
+            151030
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            41190,
+            152255
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            41920,
+            151395
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            41450,
+            172270
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            41450,
+            170695
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            41275,
+            171395
+          ]
+        }
+      ],
+      "correct_recursive_labels": [
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "PAD",
+          "position_dbu": [
+            9040,
+            7660
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "PAD",
+          "position_dbu": [
+            9040,
+            66660
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "anode",
+          "position_dbu": [
+            2290,
+            24190
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "anode",
+          "position_dbu": [
+            4540,
+            83190
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "anode",
+          "position_dbu": [
+            6790,
+            24190
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "anode",
+          "position_dbu": [
+            9040,
+            83190
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "anode",
+          "position_dbu": [
+            11290,
+            24190
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "cathode",
+          "position_dbu": [
+            2290,
+            83190
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "cathode",
+          "position_dbu": [
+            4540,
+            24190
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "cathode",
+          "position_dbu": [
+            6790,
+            83190
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "cathode",
+          "position_dbu": [
+            9040,
+            24190
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "cathode",
+          "position_dbu": [
+            11290,
+            83190
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "core",
+          "position_dbu": [
+            40000,
+            162010
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "core",
+          "position_dbu": [
+            43055,
+            147915
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "dant",
+          "position_dbu": [
+            4540,
+            24190
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "dant",
+          "position_dbu": [
+            9040,
+            24190
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "dant",
+          "position_dbu": [
+            45225,
+            142540
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "dpant",
+          "position_dbu": [
+            4600,
+            73820
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "dpant",
+          "position_dbu": [
+            9080,
+            73700
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "dpant",
+          "position_dbu": [
+            43055,
+            147510
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "guard",
+          "position_dbu": [
+            170,
+            24190
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "guard",
+          "position_dbu": [
+            170,
+            83190
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "guard",
+          "position_dbu": [
+            13410,
+            24190
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "guard",
+          "position_dbu": [
+            13410,
+            83190
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            43110,
+            148500
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            41350,
+            82085
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            42150,
+            110175
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            41540,
+            82070
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            42240,
+            109425
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            41015,
+            109075
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            41365,
+            81455
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            41100,
+            108550
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            41800,
+            81805
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            41450,
+            109075
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            42850,
+            75250
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            43355,
+            141145
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            41350,
+            51070
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            41690,
+            132015
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            42150,
+            24180
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            39615,
+            131455
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            41275,
+            22280
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            41800,
+            50075
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40840,
+            49815
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            41190,
+            131455
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            42065,
+            22195
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            41015,
+            50340
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            41800,
+            22545
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            42150,
+            131975
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            42325,
+            43170
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            47220,
+            15815
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            54125,
+            130230
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "minus",
+          "position_dbu": [
+            43355,
+            141145
+          ]
+        },
+        {
+          "layer": [
+            51,
+            0
+          ],
+          "name": "nmosHV",
+          "position_dbu": [
+            49755,
+            141870
+          ]
+        },
+        {
+          "layer": [
+            51,
+            0
+          ],
+          "name": "nmosHV",
+          "position_dbu": [
+            50585,
+            141870
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "nmosHV",
+          "position_dbu": [
+            49755,
+            141870
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "nmosHV",
+          "position_dbu": [
+            50585,
+            141870
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "p2c",
+          "position_dbu": [
+            39955,
+            169590
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "p2c",
+          "position_dbu": [
+            39975,
+            179855
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            36475,
+            1765
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            41185,
+            140795
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            41185,
+            140795
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            48455,
+            1995
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            50365,
+            1565
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            48970,
+            2005
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            49055,
+            1830
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            52990,
+            1655
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "plus",
+          "position_dbu": [
+            43150,
+            148465
+          ]
+        },
+        {
+          "layer": [
+            51,
+            0
+          ],
+          "name": "pmosHV",
+          "position_dbu": [
+            48925,
+            146270
+          ]
+        },
+        {
+          "layer": [
+            51,
+            0
+          ],
+          "name": "pmosHV",
+          "position_dbu": [
+            49755,
+            146270
+          ]
+        },
+        {
+          "layer": [
+            51,
+            0
+          ],
+          "name": "pmosHV",
+          "position_dbu": [
+            50585,
+            146270
+          ]
+        },
+        {
+          "layer": [
+            51,
+            0
+          ],
+          "name": "pmosHV",
+          "position_dbu": [
+            51415,
+            146270
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "pmosHV",
+          "position_dbu": [
+            48925,
+            146270
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "pmosHV",
+          "position_dbu": [
+            50585,
+            146270
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "rppd r=793.834",
+          "position_dbu": [
+            41185,
+            142540
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "sub!",
+          "position_dbu": [
+            11290,
+            8290
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "sub!",
+          "position_dbu": [
+            12220,
+            65170
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "sub!",
+          "position_dbu": [
+            39915,
+            140340
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "sub!",
+          "position_dbu": [
+            44255,
+            140340
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "sub!",
+          "position_dbu": [
+            45865,
+            156985
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "sub!",
+          "position_dbu": [
+            50295,
+            140225
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            43110,
+            167000
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            41120,
+            171000
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            41365,
+            150595
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            41365,
+            151030
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            41190,
+            152255
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            43110,
+            157000
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            41920,
+            151395
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            41450,
+            172270
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            41450,
+            170695
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            41275,
+            171395
+          ]
+        }
+      ],
+      "direct_pin_checks": {
+        "iovdd": {
+          "at_least_one_direct_label_in_same_metal_pin_rect": true,
+          "matches": [
+            {
+              "label": {
+                "layer": [
+                  30,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  41350,
+                  82085
+                ]
+              },
+              "lef_layer": "Metal3",
+              "lef_rectangle_index": 1,
+              "lef_rectangle_um": [
+                0.0,
+                66.0,
+                80.0,
+                91.5
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  30,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  42150,
+                  110175
+                ]
+              },
+              "lef_layer": "Metal3",
+              "lef_rectangle_index": 0,
+              "lef_rectangle_um": [
+                0.0,
+                93.5,
+                80.0,
+                119.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  50,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  41540,
+                  82070
+                ]
+              },
+              "lef_layer": "Metal4",
+              "lef_rectangle_index": 3,
+              "lef_rectangle_um": [
+                0.0,
+                66.0,
+                80.0,
+                91.5
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  50,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  42240,
+                  109425
+                ]
+              },
+              "lef_layer": "Metal4",
+              "lef_rectangle_index": 2,
+              "lef_rectangle_um": [
+                0.0,
+                93.5,
+                80.0,
+                119.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  67,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  41015,
+                  109075
+                ]
+              },
+              "lef_layer": "Metal5",
+              "lef_rectangle_index": 4,
+              "lef_rectangle_um": [
+                0.0,
+                93.5,
+                80.0,
+                119.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  67,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  41365,
+                  81455
+                ]
+              },
+              "lef_layer": "Metal5",
+              "lef_rectangle_index": 5,
+              "lef_rectangle_um": [
+                0.0,
+                66.0,
+                80.0,
+                91.5
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  126,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  41100,
+                  108550
+                ]
+              },
+              "lef_layer": "TopMetal1",
+              "lef_rectangle_index": 6,
+              "lef_rectangle_um": [
+                0.0,
+                93.5,
+                80.0,
+                119.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  126,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  41800,
+                  81805
+                ]
+              },
+              "lef_layer": "TopMetal1",
+              "lef_rectangle_index": 7,
+              "lef_rectangle_um": [
+                0.0,
+                66.0,
+                80.0,
+                91.5
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  134,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  41450,
+                  109075
+                ]
+              },
+              "lef_layer": "TopMetal2",
+              "lef_rectangle_index": 8,
+              "lef_rectangle_um": [
+                0.0,
+                95.0,
+                80.0,
+                117.5
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  134,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  42850,
+                  75250
+                ]
+              },
+              "lef_layer": "TopMetal2",
+              "lef_rectangle_index": 9,
+              "lef_rectangle_um": [
+                0.0,
+                67.5,
+                80.0,
+                90.0
+              ]
+            }
+          ]
+        },
+        "iovss": {
+          "at_least_one_direct_label_in_same_metal_pin_rect": true,
+          "matches": [
+            {
+              "label": {
+                "layer": [
+                  30,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  41350,
+                  51070
+                ]
+              },
+              "lef_layer": "Metal3",
+              "lef_rectangle_index": 2,
+              "lef_rectangle_um": [
+                0.0,
+                34.5,
+                80.0,
+                60.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  30,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  41690,
+                  132015
+                ]
+              },
+              "lef_layer": "Metal3",
+              "lef_rectangle_index": 1,
+              "lef_rectangle_um": [
+                0.0,
+                126.0,
+                80.0,
+                134.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  30,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  42150,
+                  24180
+                ]
+              },
+              "lef_layer": "Metal3",
+              "lef_rectangle_index": 0,
+              "lef_rectangle_um": [
+                0.0,
+                7.0,
+                80.0,
+                32.5
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  50,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  39615,
+                  131455
+                ]
+              },
+              "lef_layer": "Metal4",
+              "lef_rectangle_index": 4,
+              "lef_rectangle_um": [
+                0.0,
+                126.0,
+                80.0,
+                134.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  50,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  41275,
+                  22280
+                ]
+              },
+              "lef_layer": "Metal4",
+              "lef_rectangle_index": 3,
+              "lef_rectangle_um": [
+                0.0,
+                7.0,
+                80.0,
+                32.5
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  50,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  41800,
+                  50075
+                ]
+              },
+              "lef_layer": "Metal4",
+              "lef_rectangle_index": 5,
+              "lef_rectangle_um": [
+                0.0,
+                34.5,
+                80.0,
+                60.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  67,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40840,
+                  49815
+                ]
+              },
+              "lef_layer": "Metal5",
+              "lef_rectangle_index": 8,
+              "lef_rectangle_um": [
+                0.0,
+                34.5,
+                80.0,
+                60.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  67,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  41190,
+                  131455
+                ]
+              },
+              "lef_layer": "Metal5",
+              "lef_rectangle_index": 7,
+              "lef_rectangle_um": [
+                0.0,
+                126.0,
+                80.0,
+                134.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  67,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  42065,
+                  22195
+                ]
+              },
+              "lef_layer": "Metal5",
+              "lef_rectangle_index": 6,
+              "lef_rectangle_um": [
+                0.0,
+                7.0,
+                80.0,
+                32.5
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  126,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  41015,
+                  50340
+                ]
+              },
+              "lef_layer": "TopMetal1",
+              "lef_rectangle_index": 11,
+              "lef_rectangle_um": [
+                0.0,
+                34.5,
+                80.0,
+                60.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  126,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  41800,
+                  22545
+                ]
+              },
+              "lef_layer": "TopMetal1",
+              "lef_rectangle_index": 9,
+              "lef_rectangle_um": [
+                0.0,
+                7.0,
+                80.0,
+                32.5
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  126,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  42150,
+                  131975
+                ]
+              },
+              "lef_layer": "TopMetal1",
+              "lef_rectangle_index": 10,
+              "lef_rectangle_um": [
+                0.0,
+                126.0,
+                80.0,
+                134.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  134,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  42325,
+                  43170
+                ]
+              },
+              "lef_layer": "TopMetal2",
+              "lef_rectangle_index": 12,
+              "lef_rectangle_um": [
+                0.0,
+                36.0,
+                80.0,
+                58.5
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  134,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  47220,
+                  15815
+                ]
+              },
+              "lef_layer": "TopMetal2",
+              "lef_rectangle_index": 13,
+              "lef_rectangle_um": [
+                0.0,
+                8.5,
+                80.0,
+                31.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  134,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  54125,
+                  130230
+                ]
+              },
+              "lef_layer": "TopMetal2",
+              "lef_rectangle_index": 14,
+              "lef_rectangle_um": [
+                0.0,
+                127.5,
+                80.0,
+                132.5
+              ]
+            }
+          ]
+        },
+        "p2c": {
+          "at_least_one_direct_label_in_same_metal_pin_rect": true,
+          "matches": [
+            {
+              "label": {
+                "layer": [
+                  10,
+                  25
+                ],
+                "name": "p2c",
+                "position_dbu": [
+                  39955,
+                  169590
+                ]
+              },
+              "lef_layer": "Metal2",
+              "lef_rectangle_index": 0,
+              "lef_rectangle_um": [
+                39.83,
+                157.81,
+                40.12,
+                180.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  30,
+                  25
+                ],
+                "name": "p2c",
+                "position_dbu": [
+                  39975,
+                  179855
+                ]
+              },
+              "lef_layer": "Metal3",
+              "lef_rectangle_index": 1,
+              "lef_rectangle_um": [
+                39.725,
+                179.71,
+                40.225,
+                180.0
+              ]
+            }
+          ]
+        },
+        "pad": {
+          "at_least_one_direct_label_in_same_metal_pin_rect": true,
+          "matches": [
+            {
+              "label": {
+                "layer": [
+                  10,
+                  25
+                ],
+                "name": "pad",
+                "position_dbu": [
+                  36475,
+                  1765
+                ]
+              },
+              "lef_layer": "Metal2",
+              "lef_rectangle_index": 0,
+              "lef_rectangle_um": [
+                5.0,
+                0.0,
+                75.0,
+                3.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  30,
+                  25
+                ],
+                "name": "pad",
+                "position_dbu": [
+                  48455,
+                  1995
+                ]
+              },
+              "lef_layer": "Metal3",
+              "lef_rectangle_index": 1,
+              "lef_rectangle_um": [
+                5.0,
+                0.0,
+                75.0,
+                3.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  50,
+                  25
+                ],
+                "name": "pad",
+                "position_dbu": [
+                  50365,
+                  1565
+                ]
+              },
+              "lef_layer": "Metal4",
+              "lef_rectangle_index": 2,
+              "lef_rectangle_um": [
+                5.0,
+                0.0,
+                75.0,
+                3.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  67,
+                  25
+                ],
+                "name": "pad",
+                "position_dbu": [
+                  48970,
+                  2005
+                ]
+              },
+              "lef_layer": "Metal5",
+              "lef_rectangle_index": 3,
+              "lef_rectangle_um": [
+                5.0,
+                0.0,
+                75.0,
+                3.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  126,
+                  25
+                ],
+                "name": "pad",
+                "position_dbu": [
+                  49055,
+                  1830
+                ]
+              },
+              "lef_layer": "TopMetal1",
+              "lef_rectangle_index": 4,
+              "lef_rectangle_um": [
+                5.0,
+                0.0,
+                75.0,
+                3.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  134,
+                  25
+                ],
+                "name": "pad",
+                "position_dbu": [
+                  52990,
+                  1655
+                ]
+              },
+              "lef_layer": "TopMetal2",
+              "lef_rectangle_index": 5,
+              "lef_rectangle_um": [
+                5.0,
+                0.0,
+                75.0,
+                3.0
+              ]
+            }
+          ]
+        },
+        "vdd": {
+          "at_least_one_direct_label_in_same_metal_pin_rect": true,
+          "matches": [
+            {
+              "label": {
+                "layer": [
+                  30,
+                  25
+                ],
+                "name": "vdd",
+                "position_dbu": [
+                  41120,
+                  171000
+                ]
+              },
+              "lef_layer": "Metal3",
+              "lef_rectangle_index": 0,
+              "lef_rectangle_um": [
+                0.0,
+                160.0,
+                80.0,
+                178.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  50,
+                  25
+                ],
+                "name": "vdd",
+                "position_dbu": [
+                  41365,
+                  150595
+                ]
+              },
+              "lef_layer": "Metal4",
+              "lef_rectangle_index": 1,
+              "lef_rectangle_um": [
+                0.0,
+                140.0,
+                80.0,
+                155.8
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  67,
+                  25
+                ],
+                "name": "vdd",
+                "position_dbu": [
+                  41365,
+                  151030
+                ]
+              },
+              "lef_layer": "Metal5",
+              "lef_rectangle_index": 2,
+              "lef_rectangle_um": [
+                0.0,
+                140.0,
+                80.0,
+                158.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  126,
+                  25
+                ],
+                "name": "vdd",
+                "position_dbu": [
+                  41190,
+                  152255
+                ]
+              },
+              "lef_layer": "TopMetal1",
+              "lef_rectangle_index": 3,
+              "lef_rectangle_um": [
+                0.0,
+                140.0,
+                80.0,
+                158.0
+              ]
+            }
+          ]
+        },
+        "vss": {
+          "at_least_one_direct_label_in_same_metal_pin_rect": true,
+          "matches": [
+            {
+              "label": {
+                "layer": [
+                  30,
+                  25
+                ],
+                "name": "vss",
+                "position_dbu": [
+                  41920,
+                  151395
+                ]
+              },
+              "lef_layer": "Metal3",
+              "lef_rectangle_index": 0,
+              "lef_rectangle_um": [
+                0.0,
+                140.0,
+                80.0,
+                158.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  50,
+                  25
+                ],
+                "name": "vss",
+                "position_dbu": [
+                  41450,
+                  172270
+                ]
+              },
+              "lef_layer": "Metal4",
+              "lef_rectangle_index": 1,
+              "lef_rectangle_um": [
+                0.0,
+                162.2,
+                80.0,
+                178.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  67,
+                  25
+                ],
+                "name": "vss",
+                "position_dbu": [
+                  41450,
+                  170695
+                ]
+              },
+              "lef_layer": "Metal5",
+              "lef_rectangle_index": 2,
+              "lef_rectangle_um": [
+                0.0,
+                160.0,
+                80.0,
+                178.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  126,
+                  25
+                ],
+                "name": "vss",
+                "position_dbu": [
+                  41275,
+                  171395
+                ]
+              },
+              "lef_layer": "TopMetal1",
+              "lef_rectangle_index": 3,
+              "lef_rectangle_um": [
+                0.0,
+                160.0,
+                80.0,
+                178.0
+              ]
+            }
+          ]
+        }
+      },
+      "direct_top_texts_equal": true,
+      "export_recursive_text_count": 90,
+      "hierarchy_translation_affected_text_count": 47,
+      "legacy_wrong_coordinate_behavior_reproduced": true,
+      "recursive_added_in_export": [],
+      "recursive_missing_from_export": [],
+      "recursive_text_names_layers_and_global_positions_equal": true,
+      "result": "PASS",
+      "scope": "label identity/anchors and direct pin naming; no conductor connectivity, DRC, LVS or port electrical qualification",
+      "source_recursive_text_count": 90,
+      "translation_correction_examples": [
+        {
+          "correct": {
+            "layer": [
+              63,
+              0
+            ],
+            "name": "sub!",
+            "position_dbu": [
+              50295,
+              140225
+            ]
+          },
+          "legacy_vector_position_dbu": [
+            10550,
+            -8275
+          ]
+        },
+        {
+          "correct": {
+            "layer": [
+              63,
+              0
+            ],
+            "name": "pmosHV",
+            "position_dbu": [
+              50585,
+              146270
+            ]
+          },
+          "legacy_vector_position_dbu": [
+            10840,
+            -2230
+          ]
+        },
+        {
+          "correct": {
+            "layer": [
+              63,
+              0
+            ],
+            "name": "pmosHV",
+            "position_dbu": [
+              48925,
+              146270
+            ]
+          },
+          "legacy_vector_position_dbu": [
+            9180,
+            -2230
+          ]
+        },
+        {
+          "correct": {
+            "layer": [
+              63,
+              0
+            ],
+            "name": "nmosHV",
+            "position_dbu": [
+              50585,
+              141870
+            ]
+          },
+          "legacy_vector_position_dbu": [
+            10840,
+            -6630
+          ]
+        },
+        {
+          "correct": {
+            "layer": [
+              63,
+              0
+            ],
+            "name": "nmosHV",
+            "position_dbu": [
+              49755,
+              141870
+            ]
+          },
+          "legacy_vector_position_dbu": [
+            10010,
+            -6630
+          ]
+        },
+        {
+          "correct": {
+            "layer": [
+              63,
+              0
+            ],
+            "name": "sub!",
+            "position_dbu": [
+              45865,
+              156985
+            ]
+          },
+          "legacy_vector_position_dbu": [
+            6120,
+            8485
+          ]
+        },
+        {
+          "correct": {
+            "layer": [
+              63,
+              0
+            ],
+            "name": "sub!",
+            "position_dbu": [
+              44255,
+              140340
+            ]
+          },
+          "legacy_vector_position_dbu": [
+            4510,
+            170
+          ]
+        },
+        {
+          "correct": {
+            "layer": [
+              63,
+              0
+            ],
+            "name": "sub!",
+            "position_dbu": [
+              39915,
+              140340
+            ]
+          },
+          "legacy_vector_position_dbu": [
+            170,
+            170
+          ]
+        }
+      ]
+    },
+    "sg13g2_IOPadInOut30mA": {
+      "all_LEF_pins_have_direct_top_label_in_same_metal_rect": true,
+      "correct_direct_top_labels": [
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "PAD",
+          "position_dbu": [
+            48305,
+            17560
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "PAD",
+          "position_dbu": [
+            48305,
+            53080
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "c2p",
+          "position_dbu": [
+            18475,
+            179045
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "c2p",
+          "position_dbu": [
+            18475,
+            179855
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "c2p_en",
+          "position_dbu": [
+            21525,
+            177023
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "c2p_en",
+          "position_dbu": [
+            21525,
+            179855
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            78750
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            106250
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            78750
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            106250
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            78750
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            106250
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            78750
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            106250
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            78750
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            106250
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            19750
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            47250
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            130000
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            19750
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            47250
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            130000
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            19750
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            47250
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            130000
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            19750
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            47250
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            130000
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            19750
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            47250
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            130000
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "p2c",
+          "position_dbu": [
+            59975,
+            168905
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "p2c",
+          "position_dbu": [
+            59975,
+            179855
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            40000,
+            1500
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            40000,
+            1500
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            40000,
+            1500
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            40000,
+            1500
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            40000,
+            1500
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            40000,
+            1500
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            40000,
+            169000
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            40000,
+            147900
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            40000,
+            149000
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            40000,
+            149000
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            40000,
+            149000
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            40000,
+            170100
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            40000,
+            169000
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            40000,
+            169000
+          ]
+        }
+      ],
+      "correct_recursive_labels": [
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "PAD",
+          "position_dbu": [
+            48305,
+            17560
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "PAD",
+          "position_dbu": [
+            48305,
+            53080
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "anode",
+          "position_dbu": [
+            40000,
+            18190
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "anode",
+          "position_dbu": [
+            40000,
+            22690
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "anode",
+          "position_dbu": [
+            40000,
+            27190
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "anode",
+          "position_dbu": [
+            40000,
+            55960
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "anode",
+          "position_dbu": [
+            40000,
+            60460
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "c2p",
+          "position_dbu": [
+            18475,
+            179045
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "c2p",
+          "position_dbu": [
+            18475,
+            179855
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "c2p_en",
+          "position_dbu": [
+            21525,
+            177023
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "c2p_en",
+          "position_dbu": [
+            21525,
+            179855
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "cathode",
+          "position_dbu": [
+            40000,
+            20440
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "cathode",
+          "position_dbu": [
+            40000,
+            24940
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "cathode",
+          "position_dbu": [
+            40000,
+            53710
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "cathode",
+          "position_dbu": [
+            40000,
+            58210
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "cathode",
+          "position_dbu": [
+            40000,
+            62710
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "core",
+          "position_dbu": [
+            60000,
+            162010
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "core",
+          "position_dbu": [
+            18475,
+            179045
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "core",
+          "position_dbu": [
+            63055,
+            147915
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "dant",
+          "position_dbu": [
+            15320,
+            12705
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "dant",
+          "position_dbu": [
+            40000,
+            20440
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "dant",
+          "position_dbu": [
+            40000,
+            24940
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "dant",
+          "position_dbu": [
+            65225,
+            142540
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "dpant",
+          "position_dbu": [
+            15350,
+            81100
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "dpant",
+          "position_dbu": [
+            30510,
+            55920
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "dpant",
+          "position_dbu": [
+            30630,
+            60400
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "dpant",
+          "position_dbu": [
+            63055,
+            147510
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "en",
+          "position_dbu": [
+            21525,
+            177020
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "gate",
+          "position_dbu": [
+            15330,
+            14282
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "gate",
+          "position_dbu": [
+            15330,
+            82643
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "guard",
+          "position_dbu": [
+            40000,
+            16070
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "guard",
+          "position_dbu": [
+            40000,
+            29310
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "guard",
+          "position_dbu": [
+            40000,
+            51590
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "guard",
+          "position_dbu": [
+            40000,
+            64830
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "i",
+          "position_dbu": [
+            23230,
+            174000
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "i",
+          "position_dbu": [
+            19450,
+            162010
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "i",
+          "position_dbu": [
+            22960,
+            162010
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "i0",
+          "position_dbu": [
+            18430,
+            174000
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "i0",
+          "position_dbu": [
+            20830,
+            174000
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "i1",
+          "position_dbu": [
+            19095,
+            174455
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "i1",
+          "position_dbu": [
+            21475,
+            174000
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            3435,
+            82287
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            19930,
+            148500
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            21085,
+            148500
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            23440,
+            148500
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            63110,
+            148500
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            78750
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            106250
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            78750
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            106250
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            78750
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            106250
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            78750
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            106250
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            78750
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            106250
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            1669,
+            84089
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            3122,
+            13934
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            63355,
+            141145
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            19750
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            47250
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            130000
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            19750
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            47250
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            130000
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            19750
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            47250
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            130000
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            19750
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            47250
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            130000
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            19750
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            47250
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            130000
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "minus",
+          "position_dbu": [
+            63355,
+            141145
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "ngate",
+          "position_dbu": [
+            21455,
+            152740
+          ]
+        },
+        {
+          "layer": [
+            51,
+            0
+          ],
+          "name": "nmosHV",
+          "position_dbu": [
+            69755,
+            141870
+          ]
+        },
+        {
+          "layer": [
+            51,
+            0
+          ],
+          "name": "nmosHV",
+          "position_dbu": [
+            70585,
+            141870
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "nmosHV",
+          "position_dbu": [
+            69755,
+            141870
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "nmosHV",
+          "position_dbu": [
+            70585,
+            141870
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "nq",
+          "position_dbu": [
+            19455,
+            172630
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "nq",
+          "position_dbu": [
+            21895,
+            178025
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "nq",
+          "position_dbu": [
+            23755,
+            171755
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "o",
+          "position_dbu": [
+            21455,
+            152740
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "o",
+          "position_dbu": [
+            24965,
+            152740
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "p2c",
+          "position_dbu": [
+            59975,
+            168905
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "p2c",
+          "position_dbu": [
+            59975,
+            179855
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            30185,
+            12328
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            30190,
+            78975
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            33140,
+            13420
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            33195,
+            78875
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            36125,
+            78855
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            36200,
+            13310
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            39235,
+            13375
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            39245,
+            78895
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            40000,
+            1500
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            42220,
+            13570
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            42290,
+            78875
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            45230,
+            13670
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            45275,
+            78755
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            48280,
+            78755
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            48305,
+            13825
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            51285,
+            78795
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            51345,
+            14220
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            61185,
+            140795
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            61185,
+            140795
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            40000,
+            1500
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            40000,
+            1500
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            40000,
+            1500
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            40000,
+            1500
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            40000,
+            1500
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pgate",
+          "position_dbu": [
+            24865,
+            152845
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "plus",
+          "position_dbu": [
+            63150,
+            148465
+          ]
+        },
+        {
+          "layer": [
+            51,
+            0
+          ],
+          "name": "pmosHV",
+          "position_dbu": [
+            68925,
+            146270
+          ]
+        },
+        {
+          "layer": [
+            51,
+            0
+          ],
+          "name": "pmosHV",
+          "position_dbu": [
+            69755,
+            146270
+          ]
+        },
+        {
+          "layer": [
+            51,
+            0
+          ],
+          "name": "pmosHV",
+          "position_dbu": [
+            70585,
+            146270
+          ]
+        },
+        {
+          "layer": [
+            51,
+            0
+          ],
+          "name": "pmosHV",
+          "position_dbu": [
+            71415,
+            146270
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "pmosHV",
+          "position_dbu": [
+            68925,
+            146270
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "pmosHV",
+          "position_dbu": [
+            70585,
+            146270
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "rppd r=793.834",
+          "position_dbu": [
+            61185,
+            142540
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "sub!",
+          "position_dbu": [
+            170,
+            65170
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "sub!",
+          "position_dbu": [
+            1970,
+            7970
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "sub!",
+          "position_dbu": [
+            17595,
+            168320
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "sub!",
+          "position_dbu": [
+            18545,
+            168260
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "sub!",
+          "position_dbu": [
+            19785,
+            157035
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "sub!",
+          "position_dbu": [
+            20935,
+            168290
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "sub!",
+          "position_dbu": [
+            21980,
+            52780
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "sub!",
+          "position_dbu": [
+            23295,
+            157035
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "sub!",
+          "position_dbu": [
+            23685,
+            168220
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "sub!",
+          "position_dbu": [
+            24100,
+            18190
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "sub!",
+          "position_dbu": [
+            59915,
+            140340
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "sub!",
+          "position_dbu": [
+            64255,
+            140340
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "sub!",
+          "position_dbu": [
+            65865,
+            156985
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "sub!",
+          "position_dbu": [
+            70295,
+            140225
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            17575,
+            179280
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            19375,
+            179280
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            19930,
+            167000
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            21085,
+            179280
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            21775,
+            179280
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            23440,
+            167000
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            23575,
+            179280
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            63110,
+            167000
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            40000,
+            169000
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            40000,
+            147900
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            40000,
+            149000
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            40000,
+            149000
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            17575,
+            168720
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            19375,
+            168720
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            19930,
+            157000
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            21085,
+            168720
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            21775,
+            168720
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            23440,
+            157000
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            23575,
+            168720
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            63110,
+            157000
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            40000,
+            149000
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            40000,
+            170100
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            40000,
+            169000
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            40000,
+            169000
+          ]
+        }
+      ],
+      "direct_pin_checks": {
+        "c2p": {
+          "at_least_one_direct_label_in_same_metal_pin_rect": true,
+          "matches": [
+            {
+              "label": {
+                "layer": [
+                  10,
+                  25
+                ],
+                "name": "c2p",
+                "position_dbu": [
+                  18475,
+                  179045
+                ]
+              },
+              "lef_layer": "Metal2",
+              "lef_rectangle_index": 0,
+              "lef_rectangle_um": [
+                18.33,
+                178.09,
+                18.62,
+                180.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  30,
+                  25
+                ],
+                "name": "c2p",
+                "position_dbu": [
+                  18475,
+                  179855
+                ]
+              },
+              "lef_layer": "Metal3",
+              "lef_rectangle_index": 1,
+              "lef_rectangle_um": [
+                18.225,
+                179.71,
+                18.725,
+                180.0
+              ]
+            }
+          ]
+        },
+        "c2p_en": {
+          "at_least_one_direct_label_in_same_metal_pin_rect": true,
+          "matches": [
+            {
+              "label": {
+                "layer": [
+                  10,
+                  25
+                ],
+                "name": "c2p_en",
+                "position_dbu": [
+                  21525,
+                  177023
+                ]
+              },
+              "lef_layer": "Metal2",
+              "lef_rectangle_index": 0,
+              "lef_rectangle_um": [
+                21.38,
+                174.045,
+                21.67,
+                180.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  30,
+                  25
+                ],
+                "name": "c2p_en",
+                "position_dbu": [
+                  21525,
+                  179855
+                ]
+              },
+              "lef_layer": "Metal3",
+              "lef_rectangle_index": 1,
+              "lef_rectangle_um": [
+                21.275,
+                179.71,
+                21.775,
+                180.0
+              ]
+            }
+          ]
+        },
+        "iovdd": {
+          "at_least_one_direct_label_in_same_metal_pin_rect": true,
+          "matches": [
+            {
+              "label": {
+                "layer": [
+                  30,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  40000,
+                  78750
+                ]
+              },
+              "lef_layer": "Metal3",
+              "lef_rectangle_index": 1,
+              "lef_rectangle_um": [
+                0.0,
+                66.0,
+                80.0,
+                91.5
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  30,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  40000,
+                  106250
+                ]
+              },
+              "lef_layer": "Metal3",
+              "lef_rectangle_index": 0,
+              "lef_rectangle_um": [
+                0.0,
+                93.5,
+                80.0,
+                119.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  50,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  40000,
+                  78750
+                ]
+              },
+              "lef_layer": "Metal4",
+              "lef_rectangle_index": 3,
+              "lef_rectangle_um": [
+                0.0,
+                66.0,
+                80.0,
+                91.5
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  50,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  40000,
+                  106250
+                ]
+              },
+              "lef_layer": "Metal4",
+              "lef_rectangle_index": 2,
+              "lef_rectangle_um": [
+                0.0,
+                93.5,
+                80.0,
+                119.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  67,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  40000,
+                  78750
+                ]
+              },
+              "lef_layer": "Metal5",
+              "lef_rectangle_index": 5,
+              "lef_rectangle_um": [
+                0.0,
+                66.0,
+                80.0,
+                91.5
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  67,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  40000,
+                  106250
+                ]
+              },
+              "lef_layer": "Metal5",
+              "lef_rectangle_index": 4,
+              "lef_rectangle_um": [
+                0.0,
+                93.5,
+                80.0,
+                119.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  126,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  40000,
+                  78750
+                ]
+              },
+              "lef_layer": "TopMetal1",
+              "lef_rectangle_index": 7,
+              "lef_rectangle_um": [
+                0.0,
+                66.0,
+                80.0,
+                91.5
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  126,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  40000,
+                  106250
+                ]
+              },
+              "lef_layer": "TopMetal1",
+              "lef_rectangle_index": 6,
+              "lef_rectangle_um": [
+                0.0,
+                93.5,
+                80.0,
+                119.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  134,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  40000,
+                  78750
+                ]
+              },
+              "lef_layer": "TopMetal2",
+              "lef_rectangle_index": 9,
+              "lef_rectangle_um": [
+                0.0,
+                67.5,
+                80.0,
+                90.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  134,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  40000,
+                  106250
+                ]
+              },
+              "lef_layer": "TopMetal2",
+              "lef_rectangle_index": 8,
+              "lef_rectangle_um": [
+                0.0,
+                95.0,
+                80.0,
+                117.5
+              ]
+            }
+          ]
+        },
+        "iovss": {
+          "at_least_one_direct_label_in_same_metal_pin_rect": true,
+          "matches": [
+            {
+              "label": {
+                "layer": [
+                  30,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  19750
+                ]
+              },
+              "lef_layer": "Metal3",
+              "lef_rectangle_index": 0,
+              "lef_rectangle_um": [
+                0.0,
+                7.0,
+                80.0,
+                32.5
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  30,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  47250
+                ]
+              },
+              "lef_layer": "Metal3",
+              "lef_rectangle_index": 2,
+              "lef_rectangle_um": [
+                0.0,
+                34.5,
+                80.0,
+                60.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  30,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  130000
+                ]
+              },
+              "lef_layer": "Metal3",
+              "lef_rectangle_index": 1,
+              "lef_rectangle_um": [
+                0.0,
+                126.0,
+                80.0,
+                134.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  50,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  19750
+                ]
+              },
+              "lef_layer": "Metal4",
+              "lef_rectangle_index": 3,
+              "lef_rectangle_um": [
+                0.0,
+                7.0,
+                80.0,
+                32.5
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  50,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  47250
+                ]
+              },
+              "lef_layer": "Metal4",
+              "lef_rectangle_index": 5,
+              "lef_rectangle_um": [
+                0.0,
+                34.5,
+                80.0,
+                60.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  50,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  130000
+                ]
+              },
+              "lef_layer": "Metal4",
+              "lef_rectangle_index": 4,
+              "lef_rectangle_um": [
+                0.0,
+                126.0,
+                80.0,
+                134.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  67,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  19750
+                ]
+              },
+              "lef_layer": "Metal5",
+              "lef_rectangle_index": 6,
+              "lef_rectangle_um": [
+                0.0,
+                7.0,
+                80.0,
+                32.5
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  67,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  47250
+                ]
+              },
+              "lef_layer": "Metal5",
+              "lef_rectangle_index": 8,
+              "lef_rectangle_um": [
+                0.0,
+                34.5,
+                80.0,
+                60.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  67,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  130000
+                ]
+              },
+              "lef_layer": "Metal5",
+              "lef_rectangle_index": 7,
+              "lef_rectangle_um": [
+                0.0,
+                126.0,
+                80.0,
+                134.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  126,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  19750
+                ]
+              },
+              "lef_layer": "TopMetal1",
+              "lef_rectangle_index": 9,
+              "lef_rectangle_um": [
+                0.0,
+                7.0,
+                80.0,
+                32.5
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  126,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  47250
+                ]
+              },
+              "lef_layer": "TopMetal1",
+              "lef_rectangle_index": 11,
+              "lef_rectangle_um": [
+                0.0,
+                34.5,
+                80.0,
+                60.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  126,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  130000
+                ]
+              },
+              "lef_layer": "TopMetal1",
+              "lef_rectangle_index": 10,
+              "lef_rectangle_um": [
+                0.0,
+                126.0,
+                80.0,
+                134.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  134,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  19750
+                ]
+              },
+              "lef_layer": "TopMetal2",
+              "lef_rectangle_index": 13,
+              "lef_rectangle_um": [
+                0.0,
+                8.5,
+                80.0,
+                31.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  134,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  47250
+                ]
+              },
+              "lef_layer": "TopMetal2",
+              "lef_rectangle_index": 12,
+              "lef_rectangle_um": [
+                0.0,
+                36.0,
+                80.0,
+                58.5
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  134,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  130000
+                ]
+              },
+              "lef_layer": "TopMetal2",
+              "lef_rectangle_index": 14,
+              "lef_rectangle_um": [
+                0.0,
+                127.5,
+                80.0,
+                132.5
+              ]
+            }
+          ]
+        },
+        "p2c": {
+          "at_least_one_direct_label_in_same_metal_pin_rect": true,
+          "matches": [
+            {
+              "label": {
+                "layer": [
+                  10,
+                  25
+                ],
+                "name": "p2c",
+                "position_dbu": [
+                  59975,
+                  168905
+                ]
+              },
+              "lef_layer": "Metal2",
+              "lef_rectangle_index": 0,
+              "lef_rectangle_um": [
+                59.83,
+                157.81,
+                60.12,
+                180.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  30,
+                  25
+                ],
+                "name": "p2c",
+                "position_dbu": [
+                  59975,
+                  179855
+                ]
+              },
+              "lef_layer": "Metal3",
+              "lef_rectangle_index": 1,
+              "lef_rectangle_um": [
+                59.725,
+                179.71,
+                60.225,
+                180.0
+              ]
+            }
+          ]
+        },
+        "pad": {
+          "at_least_one_direct_label_in_same_metal_pin_rect": true,
+          "matches": [
+            {
+              "label": {
+                "layer": [
+                  10,
+                  25
+                ],
+                "name": "pad",
+                "position_dbu": [
+                  40000,
+                  1500
+                ]
+              },
+              "lef_layer": "Metal2",
+              "lef_rectangle_index": 0,
+              "lef_rectangle_um": [
+                5.0,
+                0.0,
+                75.0,
+                3.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  30,
+                  25
+                ],
+                "name": "pad",
+                "position_dbu": [
+                  40000,
+                  1500
+                ]
+              },
+              "lef_layer": "Metal3",
+              "lef_rectangle_index": 1,
+              "lef_rectangle_um": [
+                5.0,
+                0.0,
+                75.0,
+                3.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  50,
+                  25
+                ],
+                "name": "pad",
+                "position_dbu": [
+                  40000,
+                  1500
+                ]
+              },
+              "lef_layer": "Metal4",
+              "lef_rectangle_index": 2,
+              "lef_rectangle_um": [
+                5.0,
+                0.0,
+                75.0,
+                3.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  67,
+                  25
+                ],
+                "name": "pad",
+                "position_dbu": [
+                  40000,
+                  1500
+                ]
+              },
+              "lef_layer": "Metal5",
+              "lef_rectangle_index": 3,
+              "lef_rectangle_um": [
+                5.0,
+                0.0,
+                75.0,
+                3.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  126,
+                  25
+                ],
+                "name": "pad",
+                "position_dbu": [
+                  40000,
+                  1500
+                ]
+              },
+              "lef_layer": "TopMetal1",
+              "lef_rectangle_index": 4,
+              "lef_rectangle_um": [
+                5.0,
+                0.0,
+                75.0,
+                3.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  134,
+                  25
+                ],
+                "name": "pad",
+                "position_dbu": [
+                  40000,
+                  1500
+                ]
+              },
+              "lef_layer": "TopMetal2",
+              "lef_rectangle_index": 5,
+              "lef_rectangle_um": [
+                5.0,
+                0.0,
+                75.0,
+                3.0
+              ]
+            }
+          ]
+        },
+        "vdd": {
+          "at_least_one_direct_label_in_same_metal_pin_rect": true,
+          "matches": [
+            {
+              "label": {
+                "layer": [
+                  30,
+                  25
+                ],
+                "name": "vdd",
+                "position_dbu": [
+                  40000,
+                  169000
+                ]
+              },
+              "lef_layer": "Metal3",
+              "lef_rectangle_index": 0,
+              "lef_rectangle_um": [
+                0.0,
+                160.0,
+                80.0,
+                178.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  50,
+                  25
+                ],
+                "name": "vdd",
+                "position_dbu": [
+                  40000,
+                  147900
+                ]
+              },
+              "lef_layer": "Metal4",
+              "lef_rectangle_index": 1,
+              "lef_rectangle_um": [
+                0.0,
+                140.0,
+                80.0,
+                155.8
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  67,
+                  25
+                ],
+                "name": "vdd",
+                "position_dbu": [
+                  40000,
+                  149000
+                ]
+              },
+              "lef_layer": "Metal5",
+              "lef_rectangle_index": 2,
+              "lef_rectangle_um": [
+                0.0,
+                140.0,
+                80.0,
+                158.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  126,
+                  25
+                ],
+                "name": "vdd",
+                "position_dbu": [
+                  40000,
+                  149000
+                ]
+              },
+              "lef_layer": "TopMetal1",
+              "lef_rectangle_index": 3,
+              "lef_rectangle_um": [
+                0.0,
+                140.0,
+                80.0,
+                158.0
+              ]
+            }
+          ]
+        },
+        "vss": {
+          "at_least_one_direct_label_in_same_metal_pin_rect": true,
+          "matches": [
+            {
+              "label": {
+                "layer": [
+                  30,
+                  25
+                ],
+                "name": "vss",
+                "position_dbu": [
+                  40000,
+                  149000
+                ]
+              },
+              "lef_layer": "Metal3",
+              "lef_rectangle_index": 0,
+              "lef_rectangle_um": [
+                0.0,
+                140.0,
+                80.0,
+                158.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  50,
+                  25
+                ],
+                "name": "vss",
+                "position_dbu": [
+                  40000,
+                  170100
+                ]
+              },
+              "lef_layer": "Metal4",
+              "lef_rectangle_index": 1,
+              "lef_rectangle_um": [
+                0.0,
+                162.2,
+                80.0,
+                178.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  67,
+                  25
+                ],
+                "name": "vss",
+                "position_dbu": [
+                  40000,
+                  169000
+                ]
+              },
+              "lef_layer": "Metal5",
+              "lef_rectangle_index": 2,
+              "lef_rectangle_um": [
+                0.0,
+                160.0,
+                80.0,
+                178.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  126,
+                  25
+                ],
+                "name": "vss",
+                "position_dbu": [
+                  40000,
+                  169000
+                ]
+              },
+              "lef_layer": "TopMetal1",
+              "lef_rectangle_index": 3,
+              "lef_rectangle_um": [
+                0.0,
+                160.0,
+                80.0,
+                178.0
+              ]
+            }
+          ]
+        }
+      },
+      "direct_top_texts_equal": true,
+      "export_recursive_text_count": 158,
+      "hierarchy_translation_affected_text_count": 111,
+      "legacy_wrong_coordinate_behavior_reproduced": true,
+      "recursive_added_in_export": [],
+      "recursive_missing_from_export": [],
+      "recursive_text_names_layers_and_global_positions_equal": true,
+      "result": "PASS",
+      "scope": "label identity/anchors and direct pin naming; no conductor connectivity, DRC, LVS or port electrical qualification",
+      "source_recursive_text_count": 158,
+      "translation_correction_examples": [
+        {
+          "correct": {
+            "layer": [
+              63,
+              0
+            ],
+            "name": "dant",
+            "position_dbu": [
+              40000,
+              24940
+            ]
+          },
+          "legacy_vector_position_dbu": [
+            16530,
+            7380
+          ]
+        },
+        {
+          "correct": {
+            "layer": [
+              63,
+              0
+            ],
+            "name": "sub!",
+            "position_dbu": [
+              24100,
+              18190
+            ]
+          },
+          "legacy_vector_position_dbu": [
+            630,
+            630
+          ]
+        },
+        {
+          "correct": {
+            "layer": [
+              63,
+              0
+            ],
+            "name": "dant",
+            "position_dbu": [
+              40000,
+              20440
+            ]
+          },
+          "legacy_vector_position_dbu": [
+            16530,
+            2880
+          ]
+        },
+        {
+          "correct": {
+            "layer": [
+              63,
+              0
+            ],
+            "name": "sub!",
+            "position_dbu": [
+              170,
+              65170
+            ]
+          },
+          "legacy_vector_position_dbu": [
+            170,
+            170
+          ]
+        },
+        {
+          "correct": {
+            "layer": [
+              63,
+              0
+            ],
+            "name": "dpant",
+            "position_dbu": [
+              15350,
+              81100
+            ]
+          },
+          "legacy_vector_position_dbu": [
+            15350,
+            16100
+          ]
+        },
+        {
+          "correct": {
+            "layer": [
+              63,
+              0
+            ],
+            "name": "sub!",
+            "position_dbu": [
+              23685,
+              168220
+            ]
+          },
+          "legacy_vector_position_dbu": [
+            710,
+            220
+          ]
+        },
+        {
+          "correct": {
+            "layer": [
+              63,
+              0
+            ],
+            "name": "sub!",
+            "position_dbu": [
+              23295,
+              157035
+            ]
+          },
+          "legacy_vector_position_dbu": [
+            1610,
+            8535
+          ]
+        },
+        {
+          "correct": {
+            "layer": [
+              63,
+              0
+            ],
+            "name": "sub!",
+            "position_dbu": [
+              19785,
+              157035
+            ]
+          },
+          "legacy_vector_position_dbu": [
+            1610,
+            8535
+          ]
+        }
+      ]
+    },
+    "sg13g2_IOPadOut16mA": {
+      "all_LEF_pins_have_direct_top_label_in_same_metal_rect": true,
+      "correct_direct_top_labels": [
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "c2p",
+          "position_dbu": [
+            40000,
+            173500
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "c2p",
+          "position_dbu": [
+            40435,
+            179845
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            78750
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            106250
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            78750
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            106250
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            78750
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            106250
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            78750
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            106250
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            78750
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            106250
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            19750
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            47250
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            130000
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            19750
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            47250
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            130000
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            19750
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            47250
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            130000
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            19750
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            47250
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            130000
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            19750
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            47250
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            130000
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            40000,
+            1500
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            40000,
+            1500
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            40000,
+            1500
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            40000,
+            1500
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            40000,
+            1500
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            46615,
+            1425
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "sub!",
+          "position_dbu": [
+            2295,
+            85595
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            40000,
+            169000
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            40000,
+            147900
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            40000,
+            149000
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            45960,
+            148950
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            40000,
+            149000
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            40000,
+            170100
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            40000,
+            169000
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            45625,
+            168700
+          ]
+        }
+      ],
+      "correct_recursive_labels": [
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "anode",
+          "position_dbu": [
+            40000,
+            18190
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "anode",
+          "position_dbu": [
+            40000,
+            22690
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "anode",
+          "position_dbu": [
+            40000,
+            27190
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "anode",
+          "position_dbu": [
+            40000,
+            55960
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "anode",
+          "position_dbu": [
+            40000,
+            60460
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "c2p",
+          "position_dbu": [
+            40000,
+            173500
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "c2p",
+          "position_dbu": [
+            40435,
+            179845
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "cathode",
+          "position_dbu": [
+            40000,
+            20440
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "cathode",
+          "position_dbu": [
+            40000,
+            24940
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "cathode",
+          "position_dbu": [
+            40000,
+            53710
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "cathode",
+          "position_dbu": [
+            40000,
+            58210
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "cathode",
+          "position_dbu": [
+            40000,
+            62710
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "core",
+          "position_dbu": [
+            40000,
+            167200
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "dant",
+          "position_dbu": [
+            17975,
+            12750
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "dant",
+          "position_dbu": [
+            40000,
+            20440
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "dant",
+          "position_dbu": [
+            40000,
+            24940
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "dpant",
+          "position_dbu": [
+            17980,
+            81100
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "dpant",
+          "position_dbu": [
+            30510,
+            55920
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "dpant",
+          "position_dbu": [
+            30630,
+            60400
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "gate",
+          "position_dbu": [
+            17965,
+            14510
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "gate",
+          "position_dbu": [
+            17975,
+            82643
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "guard",
+          "position_dbu": [
+            40000,
+            16070
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "guard",
+          "position_dbu": [
+            40000,
+            29310
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "guard",
+          "position_dbu": [
+            40000,
+            51590
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "guard",
+          "position_dbu": [
+            40000,
+            64830
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "i",
+          "position_dbu": [
+            38245,
+            162010
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "i",
+          "position_dbu": [
+            41755,
+            162010
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            6590,
+            82290
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            38725,
+            148500
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40480,
+            148500
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            42235,
+            148500
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            78750
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            106250
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            78750
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            106250
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            78750
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            106250
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            78750
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            106250
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            78750
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovdd",
+          "position_dbu": [
+            40000,
+            106250
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            4210,
+            13930
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            6420,
+            84090
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            19750
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            47250
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            130000
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            19750
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            47250
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            130000
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            19750
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            47250
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            130000
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            19750
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            47250
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            130000
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            19750
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            47250
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovss",
+          "position_dbu": [
+            40000,
+            130000
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "ngate",
+          "position_dbu": [
+            40250,
+            152740
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "o",
+          "position_dbu": [
+            40250,
+            152740
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "o",
+          "position_dbu": [
+            43760,
+            152740
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            35470,
+            12328
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            35470,
+            76163
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            38440,
+            78425
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            38450,
+            13550
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            40000,
+            1500
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            41480,
+            78465
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            41505,
+            14235
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            44525,
+            78445
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            44560,
+            14745
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            40000,
+            1500
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            40000,
+            1500
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            40000,
+            1500
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            40000,
+            1500
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "pad",
+          "position_dbu": [
+            46615,
+            1425
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pgate",
+          "position_dbu": [
+            43765,
+            152755
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "sub!",
+          "position_dbu": [
+            170,
+            65170
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "sub!",
+          "position_dbu": [
+            1970,
+            7970
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "sub!",
+          "position_dbu": [
+            2295,
+            85595
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "sub!",
+          "position_dbu": [
+            21980,
+            52780
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "sub!",
+          "position_dbu": [
+            24100,
+            18190
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "sub!",
+          "position_dbu": [
+            40220,
+            157010
+          ]
+        },
+        {
+          "layer": [
+            63,
+            0
+          ],
+          "name": "sub!",
+          "position_dbu": [
+            43730,
+            157010
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            38725,
+            167000
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            40480,
+            167000
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            42235,
+            167000
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            40000,
+            169000
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            40000,
+            147900
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            40000,
+            149000
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "vdd",
+          "position_dbu": [
+            45960,
+            148950
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            38725,
+            157000
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            40480,
+            157000
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            42235,
+            157000
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            40000,
+            149000
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            40000,
+            170100
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            40000,
+            169000
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "vss",
+          "position_dbu": [
+            45625,
+            168700
+          ]
+        }
+      ],
+      "direct_pin_checks": {
+        "c2p": {
+          "at_least_one_direct_label_in_same_metal_pin_rect": true,
+          "matches": [
+            {
+              "label": {
+                "layer": [
+                  10,
+                  25
+                ],
+                "name": "c2p",
+                "position_dbu": [
+                  40000,
+                  173500
+                ]
+              },
+              "lef_layer": "Metal2",
+              "lef_rectangle_index": 0,
+              "lef_rectangle_um": [
+                38.145,
+                167.0,
+                41.855,
+                180.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  30,
+                  25
+                ],
+                "name": "c2p",
+                "position_dbu": [
+                  40435,
+                  179845
+                ]
+              },
+              "lef_layer": "Metal3",
+              "lef_rectangle_index": 1,
+              "lef_rectangle_um": [
+                38.145,
+                179.71,
+                41.855,
+                180.0
+              ]
+            }
+          ]
+        },
+        "iovdd": {
+          "at_least_one_direct_label_in_same_metal_pin_rect": true,
+          "matches": [
+            {
+              "label": {
+                "layer": [
+                  30,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  40000,
+                  78750
+                ]
+              },
+              "lef_layer": "Metal3",
+              "lef_rectangle_index": 1,
+              "lef_rectangle_um": [
+                0.0,
+                66.0,
+                80.0,
+                91.5
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  30,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  40000,
+                  106250
+                ]
+              },
+              "lef_layer": "Metal3",
+              "lef_rectangle_index": 0,
+              "lef_rectangle_um": [
+                0.0,
+                93.5,
+                80.0,
+                119.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  50,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  40000,
+                  78750
+                ]
+              },
+              "lef_layer": "Metal4",
+              "lef_rectangle_index": 3,
+              "lef_rectangle_um": [
+                0.0,
+                66.0,
+                80.0,
+                91.5
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  50,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  40000,
+                  106250
+                ]
+              },
+              "lef_layer": "Metal4",
+              "lef_rectangle_index": 2,
+              "lef_rectangle_um": [
+                0.0,
+                93.5,
+                80.0,
+                119.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  67,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  40000,
+                  78750
+                ]
+              },
+              "lef_layer": "Metal5",
+              "lef_rectangle_index": 5,
+              "lef_rectangle_um": [
+                0.0,
+                66.0,
+                80.0,
+                91.5
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  67,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  40000,
+                  106250
+                ]
+              },
+              "lef_layer": "Metal5",
+              "lef_rectangle_index": 4,
+              "lef_rectangle_um": [
+                0.0,
+                93.5,
+                80.0,
+                119.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  126,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  40000,
+                  78750
+                ]
+              },
+              "lef_layer": "TopMetal1",
+              "lef_rectangle_index": 7,
+              "lef_rectangle_um": [
+                0.0,
+                66.0,
+                80.0,
+                91.5
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  126,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  40000,
+                  106250
+                ]
+              },
+              "lef_layer": "TopMetal1",
+              "lef_rectangle_index": 6,
+              "lef_rectangle_um": [
+                0.0,
+                93.5,
+                80.0,
+                119.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  134,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  40000,
+                  78750
+                ]
+              },
+              "lef_layer": "TopMetal2",
+              "lef_rectangle_index": 9,
+              "lef_rectangle_um": [
+                0.0,
+                67.5,
+                80.0,
+                90.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  134,
+                  25
+                ],
+                "name": "iovdd",
+                "position_dbu": [
+                  40000,
+                  106250
+                ]
+              },
+              "lef_layer": "TopMetal2",
+              "lef_rectangle_index": 8,
+              "lef_rectangle_um": [
+                0.0,
+                95.0,
+                80.0,
+                117.5
+              ]
+            }
+          ]
+        },
+        "iovss": {
+          "at_least_one_direct_label_in_same_metal_pin_rect": true,
+          "matches": [
+            {
+              "label": {
+                "layer": [
+                  30,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  19750
+                ]
+              },
+              "lef_layer": "Metal3",
+              "lef_rectangle_index": 0,
+              "lef_rectangle_um": [
+                0.0,
+                7.0,
+                80.0,
+                32.5
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  30,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  47250
+                ]
+              },
+              "lef_layer": "Metal3",
+              "lef_rectangle_index": 2,
+              "lef_rectangle_um": [
+                0.0,
+                34.5,
+                80.0,
+                60.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  30,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  130000
+                ]
+              },
+              "lef_layer": "Metal3",
+              "lef_rectangle_index": 1,
+              "lef_rectangle_um": [
+                0.0,
+                126.0,
+                80.0,
+                134.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  50,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  19750
+                ]
+              },
+              "lef_layer": "Metal4",
+              "lef_rectangle_index": 3,
+              "lef_rectangle_um": [
+                0.0,
+                7.0,
+                80.0,
+                32.5
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  50,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  47250
+                ]
+              },
+              "lef_layer": "Metal4",
+              "lef_rectangle_index": 5,
+              "lef_rectangle_um": [
+                0.0,
+                34.5,
+                80.0,
+                60.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  50,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  130000
+                ]
+              },
+              "lef_layer": "Metal4",
+              "lef_rectangle_index": 4,
+              "lef_rectangle_um": [
+                0.0,
+                126.0,
+                80.0,
+                134.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  67,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  19750
+                ]
+              },
+              "lef_layer": "Metal5",
+              "lef_rectangle_index": 6,
+              "lef_rectangle_um": [
+                0.0,
+                7.0,
+                80.0,
+                32.5
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  67,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  47250
+                ]
+              },
+              "lef_layer": "Metal5",
+              "lef_rectangle_index": 8,
+              "lef_rectangle_um": [
+                0.0,
+                34.5,
+                80.0,
+                60.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  67,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  130000
+                ]
+              },
+              "lef_layer": "Metal5",
+              "lef_rectangle_index": 7,
+              "lef_rectangle_um": [
+                0.0,
+                126.0,
+                80.0,
+                134.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  126,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  19750
+                ]
+              },
+              "lef_layer": "TopMetal1",
+              "lef_rectangle_index": 9,
+              "lef_rectangle_um": [
+                0.0,
+                7.0,
+                80.0,
+                32.5
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  126,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  47250
+                ]
+              },
+              "lef_layer": "TopMetal1",
+              "lef_rectangle_index": 11,
+              "lef_rectangle_um": [
+                0.0,
+                34.5,
+                80.0,
+                60.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  126,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  130000
+                ]
+              },
+              "lef_layer": "TopMetal1",
+              "lef_rectangle_index": 10,
+              "lef_rectangle_um": [
+                0.0,
+                126.0,
+                80.0,
+                134.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  134,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  19750
+                ]
+              },
+              "lef_layer": "TopMetal2",
+              "lef_rectangle_index": 13,
+              "lef_rectangle_um": [
+                0.0,
+                8.5,
+                80.0,
+                31.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  134,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  47250
+                ]
+              },
+              "lef_layer": "TopMetal2",
+              "lef_rectangle_index": 12,
+              "lef_rectangle_um": [
+                0.0,
+                36.0,
+                80.0,
+                58.5
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  134,
+                  25
+                ],
+                "name": "iovss",
+                "position_dbu": [
+                  40000,
+                  130000
+                ]
+              },
+              "lef_layer": "TopMetal2",
+              "lef_rectangle_index": 14,
+              "lef_rectangle_um": [
+                0.0,
+                127.5,
+                80.0,
+                132.5
+              ]
+            }
+          ]
+        },
+        "pad": {
+          "at_least_one_direct_label_in_same_metal_pin_rect": true,
+          "matches": [
+            {
+              "label": {
+                "layer": [
+                  10,
+                  25
+                ],
+                "name": "pad",
+                "position_dbu": [
+                  40000,
+                  1500
+                ]
+              },
+              "lef_layer": "Metal2",
+              "lef_rectangle_index": 0,
+              "lef_rectangle_um": [
+                5.0,
+                0.0,
+                75.0,
+                3.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  30,
+                  25
+                ],
+                "name": "pad",
+                "position_dbu": [
+                  40000,
+                  1500
+                ]
+              },
+              "lef_layer": "Metal3",
+              "lef_rectangle_index": 1,
+              "lef_rectangle_um": [
+                5.0,
+                0.0,
+                75.0,
+                3.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  50,
+                  25
+                ],
+                "name": "pad",
+                "position_dbu": [
+                  40000,
+                  1500
+                ]
+              },
+              "lef_layer": "Metal4",
+              "lef_rectangle_index": 2,
+              "lef_rectangle_um": [
+                5.0,
+                0.0,
+                75.0,
+                3.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  67,
+                  25
+                ],
+                "name": "pad",
+                "position_dbu": [
+                  40000,
+                  1500
+                ]
+              },
+              "lef_layer": "Metal5",
+              "lef_rectangle_index": 3,
+              "lef_rectangle_um": [
+                5.0,
+                0.0,
+                75.0,
+                3.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  126,
+                  25
+                ],
+                "name": "pad",
+                "position_dbu": [
+                  40000,
+                  1500
+                ]
+              },
+              "lef_layer": "TopMetal1",
+              "lef_rectangle_index": 4,
+              "lef_rectangle_um": [
+                5.0,
+                0.0,
+                75.0,
+                3.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  134,
+                  25
+                ],
+                "name": "pad",
+                "position_dbu": [
+                  46615,
+                  1425
+                ]
+              },
+              "lef_layer": "TopMetal2",
+              "lef_rectangle_index": 5,
+              "lef_rectangle_um": [
+                5.0,
+                0.0,
+                75.0,
+                3.0
+              ]
+            }
+          ]
+        },
+        "vdd": {
+          "at_least_one_direct_label_in_same_metal_pin_rect": true,
+          "matches": [
+            {
+              "label": {
+                "layer": [
+                  30,
+                  25
+                ],
+                "name": "vdd",
+                "position_dbu": [
+                  40000,
+                  169000
+                ]
+              },
+              "lef_layer": "Metal3",
+              "lef_rectangle_index": 0,
+              "lef_rectangle_um": [
+                0.0,
+                160.0,
+                80.0,
+                178.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  50,
+                  25
+                ],
+                "name": "vdd",
+                "position_dbu": [
+                  40000,
+                  147900
+                ]
+              },
+              "lef_layer": "Metal4",
+              "lef_rectangle_index": 1,
+              "lef_rectangle_um": [
+                0.0,
+                140.0,
+                80.0,
+                155.8
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  67,
+                  25
+                ],
+                "name": "vdd",
+                "position_dbu": [
+                  40000,
+                  149000
+                ]
+              },
+              "lef_layer": "Metal5",
+              "lef_rectangle_index": 2,
+              "lef_rectangle_um": [
+                0.0,
+                140.0,
+                80.0,
+                158.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  126,
+                  25
+                ],
+                "name": "vdd",
+                "position_dbu": [
+                  45960,
+                  148950
+                ]
+              },
+              "lef_layer": "TopMetal1",
+              "lef_rectangle_index": 3,
+              "lef_rectangle_um": [
+                0.0,
+                140.0,
+                80.0,
+                158.0
+              ]
+            }
+          ]
+        },
+        "vss": {
+          "at_least_one_direct_label_in_same_metal_pin_rect": true,
+          "matches": [
+            {
+              "label": {
+                "layer": [
+                  30,
+                  25
+                ],
+                "name": "vss",
+                "position_dbu": [
+                  40000,
+                  149000
+                ]
+              },
+              "lef_layer": "Metal3",
+              "lef_rectangle_index": 0,
+              "lef_rectangle_um": [
+                0.0,
+                140.0,
+                80.0,
+                158.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  50,
+                  25
+                ],
+                "name": "vss",
+                "position_dbu": [
+                  40000,
+                  170100
+                ]
+              },
+              "lef_layer": "Metal4",
+              "lef_rectangle_index": 1,
+              "lef_rectangle_um": [
+                0.0,
+                162.2,
+                80.0,
+                178.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  67,
+                  25
+                ],
+                "name": "vss",
+                "position_dbu": [
+                  40000,
+                  169000
+                ]
+              },
+              "lef_layer": "Metal5",
+              "lef_rectangle_index": 2,
+              "lef_rectangle_um": [
+                0.0,
+                160.0,
+                80.0,
+                178.0
+              ]
+            },
+            {
+              "label": {
+                "layer": [
+                  126,
+                  25
+                ],
+                "name": "vss",
+                "position_dbu": [
+                  45625,
+                  168700
+                ]
+              },
+              "lef_layer": "TopMetal1",
+              "lef_rectangle_index": 3,
+              "lef_rectangle_um": [
+                0.0,
+                160.0,
+                80.0,
+                178.0
+              ]
+            }
+          ]
+        }
+      },
+      "direct_top_texts_equal": true,
+      "export_recursive_text_count": 97,
+      "hierarchy_translation_affected_text_count": 55,
+      "legacy_wrong_coordinate_behavior_reproduced": true,
+      "recursive_added_in_export": [],
+      "recursive_missing_from_export": [],
+      "recursive_text_names_layers_and_global_positions_equal": true,
+      "result": "PASS",
+      "scope": "label identity/anchors and direct pin naming; no conductor connectivity, DRC, LVS or port electrical qualification",
+      "source_recursive_text_count": 97,
+      "translation_correction_examples": [
+        {
+          "correct": {
+            "layer": [
+              63,
+              0
+            ],
+            "name": "sub!",
+            "position_dbu": [
+              43730,
+              157010
+            ]
+          },
+          "legacy_vector_position_dbu": [
+            3250,
+            8510
+          ]
+        },
+        {
+          "correct": {
+            "layer": [
+              63,
+              0
+            ],
+            "name": "sub!",
+            "position_dbu": [
+              40220,
+              157010
+            ]
+          },
+          "legacy_vector_position_dbu": [
+            3250,
+            8510
+          ]
+        },
+        {
+          "correct": {
+            "layer": [
+              63,
+              0
+            ],
+            "name": "sub!",
+            "position_dbu": [
+              170,
+              65170
+            ]
+          },
+          "legacy_vector_position_dbu": [
+            170,
+            170
+          ]
+        },
+        {
+          "correct": {
+            "layer": [
+              63,
+              0
+            ],
+            "name": "dpant",
+            "position_dbu": [
+              17980,
+              81100
+            ]
+          },
+          "legacy_vector_position_dbu": [
+            17980,
+            16100
+          ]
+        },
+        {
+          "correct": {
+            "layer": [
+              63,
+              0
+            ],
+            "name": "dant",
+            "position_dbu": [
+              40000,
+              24940
+            ]
+          },
+          "legacy_vector_position_dbu": [
+            16530,
+            7380
+          ]
+        },
+        {
+          "correct": {
+            "layer": [
+              63,
+              0
+            ],
+            "name": "sub!",
+            "position_dbu": [
+              24100,
+              18190
+            ]
+          },
+          "legacy_vector_position_dbu": [
+            630,
+            630
+          ]
+        },
+        {
+          "correct": {
+            "layer": [
+              63,
+              0
+            ],
+            "name": "dant",
+            "position_dbu": [
+              40000,
+              20440
+            ]
+          },
+          "legacy_vector_position_dbu": [
+            16530,
+            2880
+          ]
+        },
+        {
+          "correct": {
+            "layer": [
+              63,
+              0
+            ],
+            "name": "sub!",
+            "position_dbu": [
+              1970,
+              7970
+            ]
+          },
+          "legacy_vector_position_dbu": [
+            1970,
+            1970
+          ]
+        }
+      ]
+    }
+  },
+  "classification": "corrected_label_anchor_readback_not_connectivity_or_signoff",
+  "coordinate_method": "iterator.trans() * k.Point(text.x,text.y), independently checked against transformed Text",
+  "dbu_um": 0.001,
+  "new_DRC_or_LVS_performed": false,
+  "old_geometry_json_modified": false,
+  "public_rule_signoff": false,
+  "result": "PASS",
+  "schema_version": 1,
+  "source_pdk_modified": false,
+  "source_sha256": {
+    "runs/ihp-io-physical-20260910-001/geometry/geometry.json": "d1905be13ccd919c52f66b46ddfb9d69e6435908c3741f28d8a1e8c847f9e4c6",
+    "runs/ihp-io-physical-20260910-001/geometry/sg13g2_IOPadIn.gds": "fd7689ed0753e4796fd1352a0b2288327394373283079b69323cdbc00e51afab",
+    "runs/ihp-io-physical-20260910-001/geometry/sg13g2_IOPadInOut30mA.gds": "e33129b67830697914c9a68f9597cc88b09301650f0ab6e0c00c94c0ea3f757f",
+    "runs/ihp-io-physical-20260910-001/geometry/sg13g2_IOPadOut16mA.gds": "01f7af2faec1ca7ba2bba813658c41043eb237971023974be8bd9ca28d144b2c",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/gds/sg13g2_io.gds": "4281a855377b6a1ca46356e9391258dc14e8efc3b8051a65befc0fe9db3c7825",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io.lef": "1100f050cd477b0db6072e1b2b53ee1e13d7e5473e7b5d20f27534cc27806320"
+  },
+  "tool_version": "0.30.5"
+}

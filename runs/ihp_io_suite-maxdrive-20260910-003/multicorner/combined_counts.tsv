@@ -1,0 +1,6 @@
+check	count	scope
+max_slew	6	aggregate_tt_ff_ss
+max_capacitance	0	aggregate_tt_ff_ss
+max_fanout	0	aggregate_tt_ff_ss
+setup	2	tiny_paths_only
+hold	0	tiny_paths_only

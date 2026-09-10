@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "scope": "exact_small_file_publication_whitelist_no_staging_performed",
+  "files": [
+    {
+      "path": "reports/lvs/tap-geometry-20260910-001.json",
+      "bytes": 11324,
+      "sha256": "42325fc9443a003b948b1735b38b6866427bd3e07ddd6bfb646ff37782fce7d4"
+    },
+    {
+      "path": "reports/lvs/tap-geometry-20260910-001.md",
+      "bytes": 4207,
+      "sha256": "17c8a75aff8a6d31cd687379f8e09d626ddfd871688e04a498b81d93457d0aae"
+    },
+    {
+      "path": "reports/lvs/tap-geometry-20260910-audit.py",
+      "bytes": 11860,
+      "sha256": "9a9ddaae87f17f297d76ec4e1109f560365a9434db1f5b9965392efd4d834c4c"
+    },
+    {
+      "path": "reports/lvs/tap-geometry-20260910-probe.py",
+      "bytes": 5597,
+      "sha256": "62d379976ab12a4a1d87f2bfde797b1c8f3152cc0ab3064c3d5d7255d87a3918"
+    },
+    {
+      "path": "reports/lvs/tap-geometry-20260910-run.py",
+      "bytes": 1999,
+      "sha256": "50a1b5e7905a0c43780cff0c9e8e035f25f825b04a15611700720864a38f9a73"
+    },
+    {
+      "path": "runs/tap-geometry-20260910-001/execution.json",
+      "bytes": 1255,
+      "sha256": "f218a97af0b85ac6de1d1c16ccd95f3b36743e89700d7d4de91f47494fce4ba6"
+    },
+    {
+      "path": "runs/tap-geometry-20260910-001/geometry.json",
+      "bytes": 23827,
+      "sha256": "419d8780c833d57a2d3e4a19040ba05032969c432c997b5a820cc7a65870000a"
+    },
+    {
+      "path": "runs/tap-geometry-20260910-001/manifest.json",
+      "bytes": 4361,
+      "sha256": "6d168534cff25ce9d7f5229015aa5664ab91c171cad22b84bd2b2d645e4b7365"
+    },
+    {
+      "path": "runs/tap-geometry-20260910-001/tap-geometry-20260910-probe.py",
+      "bytes": 5597,
+      "sha256": "62d379976ab12a4a1d87f2bfde797b1c8f3152cc0ab3064c3d5d7255d87a3918"
+    },
+    {
+      "path": "runs/tap-geometry-20260910-001/tap-geometry-20260910-run.py",
+      "bytes": 1999,
+      "sha256": "50a1b5e7905a0c43780cff0c9e8e035f25f825b04a15611700720864a38f9a73"
+    },
+    {
+      "path": "runs/tap-geometry-20260910-001/terminal_observation.json",
+      "bytes": 9878,
+      "sha256": "178200f35cc2fde812e70f9a6ff7f4e0340eaf6e397fd68b9de9c2648c524591"
+    },
+    {
+      "path": "runs/tap-geometry-20260910-001/tool.log",
+      "bytes": 1271,
+      "sha256": "a9c8a0d518580b11e887a1a6026ea3bc908fa1e6263fda27699392477dc97353"
+    },
+    {
+      "path": "tests/test_tap_geometry_20260910.py",
+      "bytes": 3573,
+      "sha256": "b97f4aad99523e3b38cbbd2e7938b95a1c84dd8a9dde95b863234968c6b81c6e"
+    }
+  ],
+  "file_count": 13,
+  "total_bytes": 86748.0,
+  "whitelist_self_included": false,
+  "raw_evidence_preserve_bytes": true
+}

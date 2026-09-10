@@ -1,0 +1,6 @@
+{
+  "copied_after_execution": true,
+  "copy": "execution_runner.py",
+  "original_source": "scripts/run_ihp_io_suite_maxdrive.py",
+  "verified_against_execution_source_sha256": "02ca2e478947eb51c4d3cfc100d268b4edc6e590defc0af8a68f2faebbfccba0"
+}

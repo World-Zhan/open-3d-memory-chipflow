@@ -1,0 +1,29 @@
+{
+  "observed_at": "2026-09-10T12:30:53.420340+00:00",
+  "resources": {
+    "BlockIO": "0B / 0B",
+    "CPUPerc": "0.00%",
+    "Container": "ihp-io-physical-20260910-001-sg13g2_iopadinout30ma",
+    "ID": "689b4a78525f",
+    "MemPerc": "0.00%",
+    "MemUsage": "0B / 0B",
+    "Name": "ihp-io-physical-20260910-001-sg13g2_iopadinout30ma",
+    "NetIO": "0B / 0B",
+    "PIDs": "0"
+  },
+  "resources_returncode": 0,
+  "state": {
+    "Dead": false,
+    "Error": "",
+    "ExitCode": 1,
+    "FinishedAt": "2026-09-10T12:30:53.243531535Z",
+    "OOMKilled": false,
+    "Paused": false,
+    "Pid": 0,
+    "Restarting": false,
+    "Running": false,
+    "StartedAt": "2026-09-10T12:30:29.257962758Z",
+    "Status": "exited"
+  },
+  "state_returncode": 0
+}

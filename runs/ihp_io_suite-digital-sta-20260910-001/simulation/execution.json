@@ -1,0 +1,59 @@
+{
+  "cleanup_returncode": 0,
+  "command": [
+    "docker",
+    "run",
+    "--name",
+    "ihp_io_suite-digital-sta-20260910-001-simulation",
+    "--cpus",
+    "2",
+    "--memory",
+    "4g",
+    "--ulimit",
+    "core=0",
+    "--user",
+    "1000:1000",
+    "-e",
+    "HOME=/tmp",
+    "--entrypoint",
+    "/bin/bash",
+    "-v",
+    "/home/james_zhan/projects/open-3d-memory-chipflow:/work:ro",
+    "-v",
+    "/home/james_zhan/projects/open-3d-memory-chipflow/runs/ihp_io_suite-digital-sta-20260910-001/simulation:/output:rw",
+    "-w",
+    "/output",
+    "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+    "-lc",
+    "timeout --verbose --signal=TERM --kill-after=5s 60s /bin/bash -lc 'iverilog -V > /output/compiler_version.txt 2>&1 && iverilog -g2012 -s tb -o /output/sim.vvp /work/upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/verilog/sg13g2_io.v /output/tb.sv && vvp /output/sim.vvp'"
+  ],
+  "elapsed_seconds": 1.19068830599997,
+  "execution_complete": true,
+  "generated_input_sha256": {
+    "tb.sv": "3517081b55924e9096488d17aa5955241bd033c30ac488218bb28840f8fdf930"
+  },
+  "outer_timeout": false,
+  "output_sha256": {
+    "compiler_version.txt": "d0aeeb5d0e54926f7e61dcd8a3f4025d1700e193b87dc35ff336e9fa567d79a7",
+    "sim.vvp": "74f344bc9cc2f6cdccb0d7fb292b0aade6e66d86d29154c6e4761d840a5aabcd",
+    "tb.sv": "3517081b55924e9096488d17aa5955241bd033c30ac488218bb28840f8fdf930",
+    "terminal_observation.json": "b3b67bdbe9e8c21fe9d47b79929597cccc0cc9685d88092cc5ec2ec9970df320",
+    "tool.log": "e8691cfac5fe4d1dda1987ee2d857ce4d648c3530d7dd11f747483ed544fd629",
+    "wave.vcd": "8e278ef1fa9801a684d9195cd462c1b675f3d0b4f0c5f648ceac9417ddeafeb4"
+  },
+  "returncode": 0,
+  "status": "completed",
+  "terminal_container_state": {
+    "Dead": false,
+    "Error": "",
+    "ExitCode": 0,
+    "FinishedAt": "2026-09-10T12:30:21.537697153Z",
+    "OOMKilled": false,
+    "Paused": false,
+    "Pid": 0,
+    "Restarting": false,
+    "Running": false,
+    "StartedAt": "2026-09-10T12:30:21.387876506Z",
+    "Status": "exited"
+  }
+}

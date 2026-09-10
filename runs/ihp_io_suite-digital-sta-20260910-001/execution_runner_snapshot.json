@@ -1,0 +1,6 @@
+{
+  "copied_after_execution": true,
+  "copy": "execution_runner.py",
+  "original_source": "scripts/run_ihp_io_suite_digital_sta.py",
+  "verified_against_execution_source_sha256": "b94aec012af8aa296f23de645e4a67b9d24d594920c9475a5ac2a636991ec26d"
+}

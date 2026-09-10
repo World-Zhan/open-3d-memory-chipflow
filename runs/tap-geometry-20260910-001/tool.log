@@ -1,0 +1,30 @@
+[INFO] Final PATH variable: /foss/tools/bin:/foss/tools/sak:/usr/local/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/foss/tools/kactus2:/foss/tools/klayout:/foss/tools/osic-multitool
+[INFO] Final PYTHONPATH variable: /usr/lib/python312.zip:/usr/lib/python3.12:/usr/lib/python3.12/lib-dynload:/usr/local/lib/python3.12/dist-packages:/usr/lib/python3/dist-packages:/foss/tools/ngspyce/local/lib/python3.12/dist-packages:/foss/tools/openems/local/lib/python3.12/dist-packages:/foss/tools/yosys/share/yosys/python3:/foss/tools/klayout/pymod
+{
+  "ptap1_tie": {
+    "merged_component_count": 1,
+    "area_um2": 141.2964,
+    "perimeter_um": 221.76,
+    "hull_perimeter_sum_um": 86.64,
+    "hole_perimeter_sum_um": 135.12,
+    "hole_count": 2
+  },
+  "derivation_observations": {
+    "exclude_overlap_ptap_um2": 0.0,
+    "excluded_layers_nonempty": [
+      {
+        "layer": 99,
+        "datatype": 31,
+        "polygon_count": 2
+      }
+    ],
+    "marker_filter_changes_pactiv_tie": false,
+    "pwell_block_polygons": 0,
+    "digisub_polygons": 0,
+    "guard_contact_count": 288,
+    "guard_contact_area_um2": 7.372800000000001,
+    "ntap1_marker_selected_well_text_count": 0,
+    "ptap1_marker_selected_sub_text_count": 1
+  }
+}
+tap-geometry-20260910-001

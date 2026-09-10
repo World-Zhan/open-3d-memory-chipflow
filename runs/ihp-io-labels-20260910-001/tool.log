@@ -1,0 +1,28 @@
+[INFO] Final PATH variable: /foss/tools/bin:/foss/tools/sak:/usr/local/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/foss/tools/kactus2:/foss/tools/klayout:/foss/tools/osic-multitool
+[INFO] Final PYTHONPATH variable: /usr/lib/python312.zip:/usr/lib/python3.12:/usr/lib/python3.12/lib-dynload:/usr/local/lib/python3.12/dist-packages:/usr/lib/python3/dist-packages:/foss/tools/ngspyce/local/lib/python3.12/dist-packages:/foss/tools/openems/local/lib/python3.12/dist-packages:/foss/tools/yosys/share/yosys/python3:/foss/tools/klayout/pymod
+{
+  "result": "PASS",
+  "cells": {
+    "sg13g2_IOPadOut16mA": {
+      "source_recursive_text_count": 97,
+      "export_recursive_text_count": 97,
+      "all_LEF_pins_have_direct_top_label_in_same_metal_rect": true,
+      "hierarchy_translation_affected_text_count": 55,
+      "result": "PASS"
+    },
+    "sg13g2_IOPadInOut30mA": {
+      "source_recursive_text_count": 158,
+      "export_recursive_text_count": 158,
+      "all_LEF_pins_have_direct_top_label_in_same_metal_rect": true,
+      "hierarchy_translation_affected_text_count": 111,
+      "result": "PASS"
+    },
+    "sg13g2_IOPadIn": {
+      "source_recursive_text_count": 90,
+      "export_recursive_text_count": 90,
+      "all_LEF_pins_have_direct_top_label_in_same_metal_rect": true,
+      "hierarchy_translation_affected_text_count": 47,
+      "result": "PASS"
+    }
+  }
+}

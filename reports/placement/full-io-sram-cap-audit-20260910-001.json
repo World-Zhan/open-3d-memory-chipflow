@@ -1,0 +1,1064 @@
+{
+  "classification": "sram_output_buffer_eco_structure_not_formal_or_signoff",
+  "clock_waveform_timing_proven": false,
+  "constraints": {
+    "commands_unchanged": true,
+    "io_load_pf": 15.0,
+    "load_command_count": 43,
+    "result": "PASS"
+  },
+  "def_export_crosschecks": {
+    "after": {
+      "actual_exported_pg_terminals_expanded_from_def_wildcards": 69630,
+      "explicit_terminals": 119413,
+      "result": "PASS"
+    },
+    "before": {
+      "actual_exported_pg_terminals_expanded_from_def_wildcards": 69630,
+      "explicit_terminals": 119157,
+      "result": "PASS"
+    }
+  },
+  "electrical_acceptance": "FAIL",
+  "electrical_checks": {
+    "hold_violations_zero": true,
+    "max_capacitance_violations_zero": false,
+    "max_fanout_violations_zero": true,
+    "max_slew_violations_zero": false,
+    "setup_violations_zero": true,
+    "tns_ns_nonnegative": true,
+    "wns_ns_nonnegative": true
+  },
+  "exact_buffer_proof": {
+    "branches": [
+      {
+        "buffer": "eco_sram_cap_b0_d00",
+        "loads": [
+          "i_croc_soc/i_croc/_6015_/B2",
+          "i_croc_soc/i_croc/_6677_/B2",
+          "i_croc_soc/i_croc/_6871_/B2",
+          "i_croc_soc/i_croc/_7261_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d00",
+        "original_net": "net5481",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[0]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d01",
+        "loads": [
+          "i_croc_soc/i_croc/_6195_/B2",
+          "i_croc_soc/i_croc/_6684_/B2",
+          "i_croc_soc/i_croc/_6878_/B2",
+          "i_croc_soc/i_croc/_7259_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d01",
+        "original_net": "net5470",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[1]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d02",
+        "loads": [
+          "i_croc_soc/i_croc/_6338_/B2",
+          "i_croc_soc/i_croc/_6688_/B2",
+          "i_croc_soc/i_croc/_6882_/B2",
+          "i_croc_soc/i_croc/_7251_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d02",
+        "original_net": "net5459",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[2]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d03",
+        "loads": [
+          "i_croc_soc/i_croc/_6375_/B2",
+          "i_croc_soc/i_croc/_6692_/B2",
+          "i_croc_soc/i_croc/_6886_/B2",
+          "i_croc_soc/i_croc/_7247_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d03",
+        "original_net": "net5456",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[3]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d04",
+        "loads": [
+          "i_croc_soc/i_croc/_6387_/B2",
+          "i_croc_soc/i_croc/_6696_/B2",
+          "i_croc_soc/i_croc/_6890_/B2",
+          "i_croc_soc/i_croc/_7243_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d04",
+        "original_net": "net5455",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[4]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d05",
+        "loads": [
+          "i_croc_soc/i_croc/_6391_/B2",
+          "i_croc_soc/i_croc/_6534_/B2",
+          "i_croc_soc/i_croc/_6727_/B2",
+          "i_croc_soc/i_croc/_7235_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d05",
+        "original_net": "net5454",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[5]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d06",
+        "loads": [
+          "i_croc_soc/i_croc/_6404_/B2",
+          "i_croc_soc/i_croc/_6546_/B2",
+          "i_croc_soc/i_croc/_6739_/B2",
+          "i_croc_soc/i_croc/_7230_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d06",
+        "original_net": "net5453",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[6]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d07",
+        "loads": [
+          "i_croc_soc/i_croc/_6417_/B2",
+          "i_croc_soc/i_croc/_6551_/B2",
+          "i_croc_soc/i_croc/_6744_/B2",
+          "i_croc_soc/i_croc/_7225_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d07",
+        "original_net": "net5452",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[7]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d08",
+        "loads": [
+          "i_croc_soc/i_croc/_6438_/B2",
+          "i_croc_soc/i_croc/_6566_/B2",
+          "i_croc_soc/i_croc/_6759_/B2",
+          "i_croc_soc/i_croc/_7223_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d08",
+        "original_net": "net5451",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[8]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d09",
+        "loads": [
+          "i_croc_soc/i_croc/_6450_/B2",
+          "i_croc_soc/i_croc/_6571_/B2",
+          "i_croc_soc/i_croc/_6764_/B2",
+          "i_croc_soc/i_croc/_7219_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d09",
+        "original_net": "net5450",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[9]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d10",
+        "loads": [
+          "i_croc_soc/i_croc/_6040_/B2",
+          "i_croc_soc/i_croc/_6573_/B2",
+          "i_croc_soc/i_croc/_6766_/B2",
+          "i_croc_soc/i_croc/_7210_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d10",
+        "original_net": "net5480",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[10]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d11",
+        "loads": [
+          "i_croc_soc/i_croc/_6079_/B2",
+          "i_croc_soc/i_croc/_6580_/B2",
+          "i_croc_soc/i_croc/_6773_/B2",
+          "i_croc_soc/i_croc/_7208_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d11",
+        "original_net": "net5479",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[11]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d12",
+        "loads": [
+          "i_croc_soc/i_croc/_6083_/B2",
+          "i_croc_soc/i_croc/_6582_/B2",
+          "i_croc_soc/i_croc/_6775_/B2",
+          "i_croc_soc/i_croc/_7195_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d12",
+        "original_net": "net5478",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[12]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d13",
+        "loads": [
+          "i_croc_soc/i_croc/_6104_/B2",
+          "i_croc_soc/i_croc/_6589_/B2",
+          "i_croc_soc/i_croc/_6782_/B2",
+          "i_croc_soc/i_croc/_7193_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d13",
+        "original_net": "net5477",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[13]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d14",
+        "loads": [
+          "i_croc_soc/i_croc/_6108_/B2",
+          "i_croc_soc/i_croc/_6591_/B2",
+          "i_croc_soc/i_croc/_6784_/B2",
+          "i_croc_soc/i_croc/_7185_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d14",
+        "original_net": "net5476",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[14]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d15",
+        "loads": [
+          "i_croc_soc/i_croc/_6130_/B2",
+          "i_croc_soc/i_croc/_6598_/B2",
+          "i_croc_soc/i_croc/_6791_/B2",
+          "i_croc_soc/i_croc/_7183_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d15",
+        "original_net": "net5475",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[15]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d16",
+        "loads": [
+          "i_croc_soc/i_croc/_6134_/B2",
+          "i_croc_soc/i_croc/_6600_/B2",
+          "i_croc_soc/i_croc/_6793_/B2",
+          "i_croc_soc/i_croc/_7176_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d16",
+        "original_net": "net5474",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[16]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d17",
+        "loads": [
+          "i_croc_soc/i_croc/_6148_/B2",
+          "i_croc_soc/i_croc/_6605_/B2",
+          "i_croc_soc/i_croc/_6798_/B2",
+          "i_croc_soc/i_croc/_7171_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d17",
+        "original_net": "net5473",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[17]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d18",
+        "loads": [
+          "i_croc_soc/i_croc/_6169_/B2",
+          "i_croc_soc/i_croc/_6612_/B2",
+          "i_croc_soc/i_croc/_6805_/B2",
+          "i_croc_soc/i_croc/_7169_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d18",
+        "original_net": "net5472",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[18]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d19",
+        "loads": [
+          "i_croc_soc/i_croc/_6182_/B2",
+          "i_croc_soc/i_croc/_6616_/B2",
+          "i_croc_soc/i_croc/_6809_/B2",
+          "i_croc_soc/i_croc/_7165_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d19",
+        "original_net": "net5471",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[19]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d20",
+        "loads": [
+          "i_croc_soc/i_croc/_6208_/B2",
+          "i_croc_soc/i_croc/_6621_/B2",
+          "i_croc_soc/i_croc/_6814_/B2",
+          "i_croc_soc/i_croc/_7161_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d20",
+        "original_net": "net5469",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[20]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d21",
+        "loads": [
+          "i_croc_soc/i_croc/_6212_/B2",
+          "i_croc_soc/i_croc/_6623_/B2",
+          "i_croc_soc/i_croc/_6816_/B2",
+          "i_croc_soc/i_croc/_7153_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d21",
+        "original_net": "net5468",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[21]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d22",
+        "loads": [
+          "i_croc_soc/i_croc/_6236_/B2",
+          "i_croc_soc/i_croc/_6630_/B2",
+          "i_croc_soc/i_croc/_6823_/B2",
+          "i_croc_soc/i_croc/_7312_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d22",
+        "original_net": "net5467",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[22]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d23",
+        "loads": [
+          "i_croc_soc/i_croc/_6248_/B2",
+          "i_croc_soc/i_croc/_6637_/B2",
+          "i_croc_soc/i_croc/_6830_/B2",
+          "i_croc_soc/i_croc/_7308_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d23",
+        "original_net": "net5466",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[23]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d24",
+        "loads": [
+          "i_croc_soc/i_croc/_6252_/B2",
+          "i_croc_soc/i_croc/_6639_/B2",
+          "i_croc_soc/i_croc/_6832_/B2",
+          "i_croc_soc/i_croc/_7301_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d24",
+        "original_net": "net5465",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[24]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d25",
+        "loads": [
+          "i_croc_soc/i_croc/_6277_/B2",
+          "i_croc_soc/i_croc/_6646_/B2",
+          "i_croc_soc/i_croc/_6839_/B2",
+          "i_croc_soc/i_croc/_7299_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d25",
+        "original_net": "net5464",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[25]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d26",
+        "loads": [
+          "i_croc_soc/i_croc/_6281_/B2",
+          "i_croc_soc/i_croc/_6648_/B2",
+          "i_croc_soc/i_croc/_6841_/B2",
+          "i_croc_soc/i_croc/_7292_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d26",
+        "original_net": "net5463",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[26]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d27",
+        "loads": [
+          "i_croc_soc/i_croc/_6302_/B2",
+          "i_croc_soc/i_croc/_6655_/B2",
+          "i_croc_soc/i_croc/_6848_/B2",
+          "i_croc_soc/i_croc/_7290_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d27",
+        "original_net": "net5462",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[27]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d28",
+        "loads": [
+          "i_croc_soc/i_croc/_6314_/B2",
+          "i_croc_soc/i_croc/_6659_/B2",
+          "i_croc_soc/i_croc/_6852_/B2",
+          "i_croc_soc/i_croc/_7255_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d28",
+        "original_net": "net5461",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[28]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d29",
+        "loads": [
+          "i_croc_soc/i_croc/_6326_/B2",
+          "i_croc_soc/i_croc/_6663_/B2",
+          "i_croc_soc/i_croc/_6856_/B2",
+          "i_croc_soc/i_croc/_7203_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d29",
+        "original_net": "net5460",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[29]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d30",
+        "loads": [
+          "i_croc_soc/i_croc/_6342_/B2",
+          "i_croc_soc/i_croc/_6665_/B2",
+          "i_croc_soc/i_croc/_6858_/B2",
+          "i_croc_soc/i_croc/_7143_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d30",
+        "original_net": "net5458",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[30]"
+      },
+      {
+        "buffer": "eco_sram_cap_b0_d31",
+        "loads": [
+          "i_croc_soc/i_croc/_6363_/B2",
+          "i_croc_soc/i_croc/_6672_/B2",
+          "i_croc_soc/i_croc/_6865_/B2",
+          "i_croc_soc/i_croc/_7138_/B2"
+        ],
+        "new_data_net": "eco_sram_cap_b0_d31",
+        "original_net": "net5457",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[31]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d00",
+        "loads": [
+          "i_croc_soc/i_croc/_6037_/A1",
+          "i_croc_soc/i_croc/_6678_/A1",
+          "i_croc_soc/i_croc/_6872_/A1",
+          "i_croc_soc/i_croc/_7262_/A1"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d00",
+        "original_net": "net5448",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[0]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d01",
+        "loads": [
+          "i_croc_soc/i_croc/_6197_/A1",
+          "i_croc_soc/i_croc/_6682_/A",
+          "i_croc_soc/i_croc/_6876_/A",
+          "i_croc_soc/i_croc/_7257_/A"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d01",
+        "original_net": "net5437",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[1]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d02",
+        "loads": [
+          "i_croc_soc/i_croc/_6340_/A1",
+          "i_croc_soc/i_croc/_6686_/A",
+          "i_croc_soc/i_croc/_6880_/A",
+          "i_croc_soc/i_croc/_7249_/A"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d02",
+        "original_net": "net5426",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[2]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d03",
+        "loads": [
+          "i_croc_soc/i_croc/_6377_/A1",
+          "i_croc_soc/i_croc/_6690_/A",
+          "i_croc_soc/i_croc/_6884_/A",
+          "i_croc_soc/i_croc/_7245_/A"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d03",
+        "original_net": "net5423",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[3]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d04",
+        "loads": [
+          "i_croc_soc/i_croc/_6389_/A1",
+          "i_croc_soc/i_croc/_6694_/A",
+          "i_croc_soc/i_croc/_6888_/A",
+          "i_croc_soc/i_croc/_7240_/A"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d04",
+        "original_net": "net5422",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[4]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d05",
+        "loads": [
+          "i_croc_soc/i_croc/_6402_/A1",
+          "i_croc_soc/i_croc/_6537_/A1",
+          "i_croc_soc/i_croc/_6730_/A1",
+          "i_croc_soc/i_croc/_7236_/A1"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d05",
+        "original_net": "net5421",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[5]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d06",
+        "loads": [
+          "i_croc_soc/i_croc/_6415_/A1",
+          "i_croc_soc/i_croc/_6547_/A1",
+          "i_croc_soc/i_croc/_6740_/A1",
+          "i_croc_soc/i_croc/_7231_/A1"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d06",
+        "original_net": "net5420",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[6]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d07",
+        "loads": [
+          "i_croc_soc/i_croc/_6428_/A1",
+          "i_croc_soc/i_croc/_6552_/A1",
+          "i_croc_soc/i_croc/_6745_/A1",
+          "i_croc_soc/i_croc/_7226_/A1"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d07",
+        "original_net": "net5419",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[7]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d08",
+        "loads": [
+          "i_croc_soc/i_croc/_6440_/A1",
+          "i_croc_soc/i_croc/_6558_/A",
+          "i_croc_soc/i_croc/_6751_/A",
+          "i_croc_soc/i_croc/_7221_/A"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d08",
+        "original_net": "net5418",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[8]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d09",
+        "loads": [
+          "i_croc_soc/i_croc/_6452_/A1",
+          "i_croc_soc/i_croc/_6568_/A",
+          "i_croc_soc/i_croc/_6761_/A",
+          "i_croc_soc/i_croc/_7215_/A"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d09",
+        "original_net": "net5417",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[9]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d10",
+        "loads": [
+          "i_croc_soc/i_croc/_6054_/A1",
+          "i_croc_soc/i_croc/_6574_/A1",
+          "i_croc_soc/i_croc/_6767_/A1",
+          "i_croc_soc/i_croc/_7211_/A1"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d10",
+        "original_net": "net5447",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[10]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d11",
+        "loads": [
+          "i_croc_soc/i_croc/_6081_/A1",
+          "i_croc_soc/i_croc/_6578_/A",
+          "i_croc_soc/i_croc/_6771_/A",
+          "i_croc_soc/i_croc/_7206_/A"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d11",
+        "original_net": "net5446",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[11]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d12",
+        "loads": [
+          "i_croc_soc/i_croc/_6094_/A1",
+          "i_croc_soc/i_croc/_6583_/A1",
+          "i_croc_soc/i_croc/_6776_/A1",
+          "i_croc_soc/i_croc/_7196_/A1"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d12",
+        "original_net": "net5445",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[12]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d13",
+        "loads": [
+          "i_croc_soc/i_croc/_6106_/A1",
+          "i_croc_soc/i_croc/_6587_/A",
+          "i_croc_soc/i_croc/_6780_/A",
+          "i_croc_soc/i_croc/_7191_/A"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d13",
+        "original_net": "net5444",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[13]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d14",
+        "loads": [
+          "i_croc_soc/i_croc/_6119_/A1",
+          "i_croc_soc/i_croc/_6592_/A1",
+          "i_croc_soc/i_croc/_6785_/A1",
+          "i_croc_soc/i_croc/_7186_/A1"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d14",
+        "original_net": "net5443",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[14]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d15",
+        "loads": [
+          "i_croc_soc/i_croc/_6132_/A1",
+          "i_croc_soc/i_croc/_6596_/A",
+          "i_croc_soc/i_croc/_6789_/A",
+          "i_croc_soc/i_croc/_7181_/A"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d15",
+        "original_net": "net5442",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[15]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d16",
+        "loads": [
+          "i_croc_soc/i_croc/_6146_/A1",
+          "i_croc_soc/i_croc/_6601_/A1",
+          "i_croc_soc/i_croc/_6794_/A1",
+          "i_croc_soc/i_croc/_7177_/A1"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d16",
+        "original_net": "net5441",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[16]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d17",
+        "loads": [
+          "i_croc_soc/i_croc/_6159_/A1",
+          "i_croc_soc/i_croc/_6606_/A1",
+          "i_croc_soc/i_croc/_6799_/A1",
+          "i_croc_soc/i_croc/_7172_/A1"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d17",
+        "original_net": "net5440",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[17]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d18",
+        "loads": [
+          "i_croc_soc/i_croc/_6171_/A1",
+          "i_croc_soc/i_croc/_6610_/A",
+          "i_croc_soc/i_croc/_6803_/A",
+          "i_croc_soc/i_croc/_7167_/A"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d18",
+        "original_net": "net5439",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[18]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d19",
+        "loads": [
+          "i_croc_soc/i_croc/_6184_/A1",
+          "i_croc_soc/i_croc/_6614_/A",
+          "i_croc_soc/i_croc/_6807_/A",
+          "i_croc_soc/i_croc/_7163_/A"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d19",
+        "original_net": "net5438",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[19]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d20",
+        "loads": [
+          "i_croc_soc/i_croc/_6210_/A1",
+          "i_croc_soc/i_croc/_6619_/A",
+          "i_croc_soc/i_croc/_6812_/A",
+          "i_croc_soc/i_croc/_7158_/A"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d20",
+        "original_net": "net5436",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[20]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d21",
+        "loads": [
+          "i_croc_soc/i_croc/_6223_/A1",
+          "i_croc_soc/i_croc/_6624_/A1",
+          "i_croc_soc/i_croc/_6817_/A1",
+          "i_croc_soc/i_croc/_7154_/A1"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d21",
+        "original_net": "net5435",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[21]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d22",
+        "loads": [
+          "i_croc_soc/i_croc/_6238_/A1",
+          "i_croc_soc/i_croc/_6628_/A",
+          "i_croc_soc/i_croc/_6821_/A",
+          "i_croc_soc/i_croc/_7310_/A"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d22",
+        "original_net": "net5434",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[22]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d23",
+        "loads": [
+          "i_croc_soc/i_croc/_6250_/A1",
+          "i_croc_soc/i_croc/_6633_/A",
+          "i_croc_soc/i_croc/_6826_/A",
+          "i_croc_soc/i_croc/_7306_/A"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d23",
+        "original_net": "net5433",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[23]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d24",
+        "loads": [
+          "i_croc_soc/i_croc/_6263_/A1",
+          "i_croc_soc/i_croc/_6640_/A1",
+          "i_croc_soc/i_croc/_6833_/A1",
+          "i_croc_soc/i_croc/_7302_/A1"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d24",
+        "original_net": "net5432",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[24]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d25",
+        "loads": [
+          "i_croc_soc/i_croc/_6279_/A1",
+          "i_croc_soc/i_croc/_6644_/A",
+          "i_croc_soc/i_croc/_6837_/A",
+          "i_croc_soc/i_croc/_7297_/A"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d25",
+        "original_net": "net5431",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[25]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d26",
+        "loads": [
+          "i_croc_soc/i_croc/_6292_/A1",
+          "i_croc_soc/i_croc/_6649_/A1",
+          "i_croc_soc/i_croc/_6842_/A1",
+          "i_croc_soc/i_croc/_7293_/A1"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d26",
+        "original_net": "net5430",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[26]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d27",
+        "loads": [
+          "i_croc_soc/i_croc/_6304_/A1",
+          "i_croc_soc/i_croc/_6653_/A",
+          "i_croc_soc/i_croc/_6846_/A",
+          "i_croc_soc/i_croc/_7288_/A"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d27",
+        "original_net": "net5429",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[27]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d28",
+        "loads": [
+          "i_croc_soc/i_croc/_6316_/A1",
+          "i_croc_soc/i_croc/_6657_/A",
+          "i_croc_soc/i_croc/_6850_/A",
+          "i_croc_soc/i_croc/_7253_/A"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d28",
+        "original_net": "net5428",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[28]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d29",
+        "loads": [
+          "i_croc_soc/i_croc/_6328_/A1",
+          "i_croc_soc/i_croc/_6661_/A",
+          "i_croc_soc/i_croc/_6854_/A",
+          "i_croc_soc/i_croc/_7201_/A"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d29",
+        "original_net": "net5427",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[29]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d30",
+        "loads": [
+          "i_croc_soc/i_croc/_6353_/A1",
+          "i_croc_soc/i_croc/_6666_/A1",
+          "i_croc_soc/i_croc/_6859_/A1",
+          "i_croc_soc/i_croc/_7146_/A1"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d30",
+        "original_net": "net5425",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[30]"
+      },
+      {
+        "buffer": "eco_sram_cap_b1_d31",
+        "loads": [
+          "i_croc_soc/i_croc/_6365_/A1",
+          "i_croc_soc/i_croc/_6670_/A",
+          "i_croc_soc/i_croc/_6863_/A",
+          "i_croc_soc/i_croc/_7131_/A"
+        ],
+        "new_data_net": "eco_sram_cap_b1_d31",
+        "original_net": "net5424",
+        "sram_driver": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut/A_DOUT[31]"
+      }
+    ],
+    "buffer_master": "sg13g2_buf_4",
+    "clock_ndr": {
+      "clock_net_count": 970,
+      "clock_nets_with_ndr": 22,
+      "definition_count": 5,
+      "new_signal_nets": 64,
+      "original_net_metadata_and_rule_definitions_unchanged": true,
+      "result": "PASS",
+      "retained_internal_branches_without_ndr": 200,
+      "retained_leaf_branches_without_ndr": 743,
+      "routing_ndr_policy_qualification": "UNVERIFIED"
+    },
+    "explicit_new_buffer_pg": true,
+    "new_buffers": 64,
+    "original_masters_unchanged": true,
+    "original_net_connectivity_after_collapse_unchanged": true,
+    "per_buffer_original_loads": 4,
+    "result": "PASS"
+  },
+  "execution": {
+    "container_status": "exited",
+    "oom_killed": false,
+    "result": "PASS",
+    "returncode": 0
+  },
+  "full_formal_equivalence_proven": false,
+  "generic_normalization_limitation": "Generic normalization does not support existing floating clkload outputs; exact proof retains all original masters and full terminal graph.",
+  "generic_normalization_result": {
+    "reason": "Floating/self-loop transparent buffer",
+    "result": "UNVERIFIED"
+  },
+  "library_limits": {
+    "ff": {
+      "buffer_area_um2": 14.5152,
+      "buffer_function": "A",
+      "buffer_max_input_cap_pf": 0.00411337,
+      "buffer_max_output_cap_pf": 1.2,
+      "sram_max_cap_pf": 0.064
+    },
+    "tt": {
+      "buffer_area_um2": 14.5152,
+      "buffer_function": "A",
+      "buffer_max_input_cap_pf": 0.0038592,
+      "buffer_max_output_cap_pf": 1.2,
+      "sram_max_cap_pf": 0.064
+    }
+  },
+  "original_geometry": {
+    "added_instances": 64,
+    "all_original_core_geometry_preserved": true,
+    "original_instance_rows_identical": true,
+    "original_instances_preserved": 34886,
+    "result": "PASS",
+    "temporary_fix_status_restored": true
+  },
+  "overall_result": "PASS",
+  "physical_invariants": {
+    "die_rows_tracks_and_special_wires_preserved": true,
+    "input_lead_use_changes": [],
+    "physical_top_pin_boxes": 64,
+    "protected_io_instances": 192,
+    "protected_pg_inventory_preserved": true,
+    "protected_sram_instances": 2,
+    "result": "PASS",
+    "top_ports": 52
+  },
+  "placement_and_core_pg": {
+    "full_io_pg_or_ir_em_proven": false,
+    "ordinary_core_pg_connected": [
+      "VDD",
+      "VSS"
+    ],
+    "ordinary_placement_check": true,
+    "result": "PASS"
+  },
+  "ppa": {
+    "active_area_mm2": {
+      "after": 0.722718460799919,
+      "before": 0.7217894879999175
+    },
+    "fmax_mhz": null,
+    "power_qualification": "UNVERIFIED_clock_activity_anomaly",
+    "qualified_power_mw": null,
+    "raw_tt_power_mw": {
+      "after": 5.46,
+      "before": 5.46
+    },
+    "same_stage": "CTS_placement_parasitics",
+    "workload_power_mw": null
+  },
+  "route_or_signoff_proven": false,
+  "run_id": "croc-full-io-sram-cap-20260910-001",
+  "schema_version": "1.0.0",
+  "snapshot_delta": {
+    "added_by_master": {
+      "sg13g2_buf_4": 64
+    },
+    "after_instances": 34950,
+    "before_instances": 34886,
+    "existing_instances_with_changed_master": 0,
+    "removed_by_master": {}
+  },
+  "source_capture": {
+    "complete_instance_terminal_port_geometry_inventory_matches": true,
+    "current_source_run": "croc-full-io-cts-fanout-20260910-001",
+    "result": "PASS"
+  },
+  "source_run": "croc-full-io-cts-fanout-20260910-001",
+  "source_sha256": {
+    "reports/placement/full-io-cts-fanout-audit-20260910-001.json": "8a5892887b31f54353823a85eeddc0012cce00bc1c787d3322a6b97ac26f51a1",
+    "runs/croc-full-io-cts-fanout-20260910-001/after.sdc": "59d60a0c7f159f96de9c2ab46630f98f75a073db5471d2502643df3c11c25063",
+    "runs/croc-full-io-cts-fanout-20260910-001/after_bounds.tsv": "728054cc5f17e9563984ed7a38bade3a5ca17faef5a346e4e3b5925034a720fa",
+    "runs/croc-full-io-cts-fanout-20260910-001/after_bpin_boxes.tsv": "c78c64b6deef91d4cc6538e91367ae75ea62262adcecf83c8d15b490fc456578",
+    "runs/croc-full-io-cts-fanout-20260910-001/after_bterms.tsv": "02f8c709a1f6687acc17593e8e833a8e5ca568b6e38f34e71793ca5b2fec1de9",
+    "runs/croc-full-io-cts-fanout-20260910-001/after_instances.tsv": "92b2a109863d8058abb71e1456f71c5b0b935a4fe0301d9bf678b21421e308e5",
+    "runs/croc-full-io-cts-fanout-20260910-001/after_iterms.tsv": "df36119ed69851cbd8e3d787c0a6807016a216c6269365219dd9e33700f9e099",
+    "runs/croc-full-io-cts-fanout-20260910-001/cts.odb": "c4ef4a2db37acf8cdd63b6962b07b666e6fc81989701a3daeeb0dc63097bbacf",
+    "runs/croc-full-io-cts-fanout-20260910-001/electrical_violators.rpt": "df68cda667ebbe348651e9e08b5e12d673753dcf1f30ebce6a4f19359cf45851",
+    "runs/croc-full-io-cts-fanout-20260910-001/manifest.json": "f4d58546a353881cb837646e4d6cfa0ded0afad6b16fe189eb0a62208d88ae4d",
+    "runs/croc-full-io-cts-fanout-20260910-001/work/openroad/scripts/01_floorplan.tcl": "6c5de3b2bfc325bb3f0635af8f76a635582cb9e1bc048859aafe45d1ae0cbd90",
+    "runs/croc-full-io-cts-fanout-20260910-001/work/openroad/scripts/02_placement.tcl": "83acf4107e9f608f01f05c5be4b7c0855dffc9d96cd17fcba329c8201d0d321e",
+    "runs/croc-full-io-cts-fanout-20260910-001/work/openroad/scripts/03_cts.tcl": "f70a44d0c037e4aa6dfd49557244ecc034f5517c480217bf4140212109c0e8fc",
+    "runs/croc-full-io-cts-fanout-20260910-001/work/openroad/scripts/04_routing.tcl": "2b0753fe97fa93eafd88c2569be100583bff70cad0e9d29379ccc2ae0de051b4",
+    "runs/croc-full-io-cts-fanout-20260910-001/work/openroad/scripts/05_finishing.tcl": "42459a710837a89fddcfd4d0d32ae5d4cc1fa7d72c8bd97c48a87453a8f6ea21",
+    "runs/croc-full-io-cts-fanout-20260910-001/work/openroad/scripts/checkpoint.tcl": "d4829b0746156ed85a597e98003c85cc4a7a5bbae069630a5b348dd94373316e",
+    "runs/croc-full-io-cts-fanout-20260910-001/work/openroad/scripts/floorplan_util.tcl": "5eaf94e65c7efc217b74d384eaf916aa78c5f20f6f1e387303ab066dce88663f",
+    "runs/croc-full-io-cts-fanout-20260910-001/work/openroad/scripts/init_tech_sg13cmos5l.tcl": "cd38c76242151a198c67ff1e286600da55fded8f684c5886812c97f0a67fbd97",
+    "runs/croc-full-io-cts-fanout-20260910-001/work/openroad/scripts/init_tech_sg13g2.tcl": "2d5e4171e397f899e8b7dbf185a718b042a6d114cabcd108c2351aa5a3d9b989",
+    "runs/croc-full-io-cts-fanout-20260910-001/work/openroad/scripts/power_connect.tcl": "deace62f718fed10f17307fa49dafa71e2b9e9388287a3977664b3095cbe11d8",
+    "runs/croc-full-io-cts-fanout-20260910-001/work/openroad/scripts/power_grid_sg13cmos5l.tcl": "be89a8235376ada0a9c74b6f1ea99306a5f620c50310ec025b921fe5d3bc3ebb",
+    "runs/croc-full-io-cts-fanout-20260910-001/work/openroad/scripts/power_grid_sg13g2.tcl": "a6c72c6e56cdaf2acb55b81446b004ebc323685e83789743654f0086848ebcbe",
+    "runs/croc-full-io-cts-fanout-20260910-001/work/openroad/scripts/reports.tcl": "3637b95c8ad6952b4c9c41e7e94beac8b48d05142a6828c1a0b04d7f91535cb2",
+    "runs/croc-full-io-cts-fanout-20260910-001/work/openroad/scripts/reports_area.tcl": "8b675656316e9f1478fbf191ca9f3b4ed8144aaedf6e44cf68e3430fd051c224",
+    "runs/croc-full-io-cts-fanout-20260910-001/work/openroad/scripts/startup.tcl": "8615a3bf457e4a0de057717d057a7b71858e1c3fef1a014d79817db36a6acc5d",
+    "runs/croc-full-io-sram-cap-20260910-001/after.def": "3f0ecdad60c6abd8dbcc758a6bed3b6814098dbdd6e8d79841b44fe30a1b89f7",
+    "runs/croc-full-io-sram-cap-20260910-001/after.sdc": "ad5998176b5980480b3410ac3c37a98903217cb927a5e5a19d2ae0f6248b9c9f",
+    "runs/croc-full-io-sram-cap-20260910-001/after.v": "53c8fa05e3fe2783366dd527b891b1c2654dffba907f1e8a4da255c1d4317ebc",
+    "runs/croc-full-io-sram-cap-20260910-001/after_area.tsv": "7d1b0e1fd64442b57ccfe5bea86b4315bda9939e45361b97190c6ed5de0823c4",
+    "runs/croc-full-io-sram-cap-20260910-001/after_bounds.tsv": "728054cc5f17e9563984ed7a38bade3a5ca17faef5a346e4e3b5925034a720fa",
+    "runs/croc-full-io-sram-cap-20260910-001/after_bpin_boxes.tsv": "c78c64b6deef91d4cc6538e91367ae75ea62262adcecf83c8d15b490fc456578",
+    "runs/croc-full-io-sram-cap-20260910-001/after_bterms.tsv": "02f8c709a1f6687acc17593e8e833a8e5ca568b6e38f34e71793ca5b2fec1de9",
+    "runs/croc-full-io-sram-cap-20260910-001/after_cts.rpt": "c707888296dc607aef0beedfc72088cbfd880a9da9ea1e3e6d8e43d4fe1a8220",
+    "runs/croc-full-io-sram-cap-20260910-001/after_instances.tsv": "17e00eee8ef7bbf9f969950ed61f4f45a2b3458c25585adc2b67b93293db6cfc",
+    "runs/croc-full-io-sram-cap-20260910-001/after_iterms.tsv": "841e1477e258ddcd2cbe827b66775839c874a8a99e68db86e522878273755f83",
+    "runs/croc-full-io-sram-cap-20260910-001/after_placement.tcl": "d482fe246e74fe8d00a9d497889114d3652361e0595450ef56cc8f5ee8755c16",
+    "runs/croc-full-io-sram-cap-20260910-001/before.def": "fb2daf917bc4c01a9463e00ca1f4309802c27438c5abb5f714d3e42af26fde23",
+    "runs/croc-full-io-sram-cap-20260910-001/before.sdc": "b0ff426d5a85a1708c4f6452498d06dfbd1136e4ab62c5d56e48dd1a9dbe7d22",
+    "runs/croc-full-io-sram-cap-20260910-001/before.v": "b4da5bed23e4d08b35fd939703c5489b2b36997b9fe586d8d29997fb2a4ebd00",
+    "runs/croc-full-io-sram-cap-20260910-001/before_area.tsv": "dae84e7b00b1eec36b3e751754b836f6efbdec83f5ea2bb8e64f5ca9ac056b70",
+    "runs/croc-full-io-sram-cap-20260910-001/before_bounds.tsv": "728054cc5f17e9563984ed7a38bade3a5ca17faef5a346e4e3b5925034a720fa",
+    "runs/croc-full-io-sram-cap-20260910-001/before_bpin_boxes.tsv": "c78c64b6deef91d4cc6538e91367ae75ea62262adcecf83c8d15b490fc456578",
+    "runs/croc-full-io-sram-cap-20260910-001/before_bterms.tsv": "02f8c709a1f6687acc17593e8e833a8e5ca568b6e38f34e71793ca5b2fec1de9",
+    "runs/croc-full-io-sram-cap-20260910-001/before_cts.rpt": "c56c002db473757acf18f1f7d2057ca48275b9d92ef47a113e17d0dd301c157d",
+    "runs/croc-full-io-sram-cap-20260910-001/before_electrical_violators.rpt": "df68cda667ebbe348651e9e08b5e12d673753dcf1f30ebce6a4f19359cf45851",
+    "runs/croc-full-io-sram-cap-20260910-001/before_instances.tsv": "92b2a109863d8058abb71e1456f71c5b0b935a4fe0301d9bf678b21421e308e5",
+    "runs/croc-full-io-sram-cap-20260910-001/before_iterms.tsv": "df36119ed69851cbd8e3d787c0a6807016a216c6269365219dd9e33700f9e099",
+    "runs/croc-full-io-sram-cap-20260910-001/capture_placement.tcl": "90304060bec159de6fc45c962a144bf0f7b747bafa909c09348bf695bfa4aa3c",
+    "runs/croc-full-io-sram-cap-20260910-001/check.tcl": "0c9224bdad6af4bafe2cb625ce46ea007af8892be112c3dd6b9a979c9731667b",
+    "runs/croc-full-io-sram-cap-20260910-001/cts.odb": "c8690239d5a85be1c5d27e827e1d442e01aa5e47cdf144f84fc06640b4a8ab55",
+    "runs/croc-full-io-sram-cap-20260910-001/diagnosed_branches.json": "bb9daa3d48e7ffcd2864e99ad156266902aa3ea1e56ce3a7f1b85c1b3fa57255",
+    "runs/croc-full-io-sram-cap-20260910-001/eco_loads.tsv": "dd23b00e7f8701a5dd6cec78bf2fe9255ca81a05d95f84c93ee6620dbfc6ec5c",
+    "runs/croc-full-io-sram-cap-20260910-001/eco_unplaced.odb": "2e457034d40c0378fd317403a38ccead3da2df77a78c5e565dbf9891935e33cd",
+    "runs/croc-full-io-sram-cap-20260910-001/edit.tcl": "86e24c059932550873cdb2b106af3dfe6b00bd9bd2fbdc4bd8a3d94a91a59b2d",
+    "runs/croc-full-io-sram-cap-20260910-001/electrical_violators.rpt": "da48a69348085a22311d88bdaab244bd7fc535b6d3a9c9d8df52d64ef86dbf9f",
+    "runs/croc-full-io-sram-cap-20260910-001/execute.sh": "be1266b44b7b2ee92aee6bba7c344cfc24bff64cc6c8e05c4485be7f4e98eaad",
+    "runs/croc-full-io-sram-cap-20260910-001/inputs/cts.odb": "c4ef4a2db37acf8cdd63b6962b07b666e6fc81989701a3daeeb0dc63097bbacf",
+    "runs/croc-full-io-sram-cap-20260910-001/inputs/cts.sdc": "59d60a0c7f159f96de9c2ab46630f98f75a073db5471d2502643df3c11c25063",
+    "runs/croc-full-io-sram-cap-20260910-001/manifest.json": "34533f8519822b548d72f14c017e9bd95832b23b6be867945df91b6312c90c89",
+    "runs/croc-full-io-sram-cap-20260910-001/original_core_status.tsv": "3dba64bc0cda71dbfc6d1ee09d58621b4ce41238f17f396859a404adbc1c624e",
+    "runs/croc-full-io-sram-cap-20260910-001/placement_checks.tsv": "8299e9324bf6ed3d2e0e3e9456af07bbe2f55b34c735312b154e4be27821f6cd",
+    "runs/croc-full-io-sram-cap-20260910-001/planned_branches.tsv": "0386c83a8ea8f54d682c9200cb8baeb35d9725cfb66d91f6e5ae7db3da46ca9e",
+    "runs/croc-full-io-sram-cap-20260910-001/resource_samples.json": "e6037a50bfca9309723c865193fd2a3143236e517bed2a6cd773ffdcf642160b",
+    "runs/croc-full-io-sram-cap-20260910-001/terminal_observation.json": "fbbf1960d1cfe9df74353f9487f9776c1fe1fdf7c538500fe44b408dae2f78f0",
+    "runs/croc-full-io-sram-cap-20260910-001/tool.log": "86cc0ad03b977a8e6f9b91abe0617ea67bfea7d57199f84566610faf376b2fba",
+    "runs/croc-full-io-sram-cap-20260910-001/work/openroad/scripts/01_floorplan.tcl": "6c5de3b2bfc325bb3f0635af8f76a635582cb9e1bc048859aafe45d1ae0cbd90",
+    "runs/croc-full-io-sram-cap-20260910-001/work/openroad/scripts/02_placement.tcl": "83acf4107e9f608f01f05c5be4b7c0855dffc9d96cd17fcba329c8201d0d321e",
+    "runs/croc-full-io-sram-cap-20260910-001/work/openroad/scripts/03_cts.tcl": "f70a44d0c037e4aa6dfd49557244ecc034f5517c480217bf4140212109c0e8fc",
+    "runs/croc-full-io-sram-cap-20260910-001/work/openroad/scripts/04_routing.tcl": "2b0753fe97fa93eafd88c2569be100583bff70cad0e9d29379ccc2ae0de051b4",
+    "runs/croc-full-io-sram-cap-20260910-001/work/openroad/scripts/05_finishing.tcl": "42459a710837a89fddcfd4d0d32ae5d4cc1fa7d72c8bd97c48a87453a8f6ea21",
+    "runs/croc-full-io-sram-cap-20260910-001/work/openroad/scripts/checkpoint.tcl": "d4829b0746156ed85a597e98003c85cc4a7a5bbae069630a5b348dd94373316e",
+    "runs/croc-full-io-sram-cap-20260910-001/work/openroad/scripts/floorplan_util.tcl": "5eaf94e65c7efc217b74d384eaf916aa78c5f20f6f1e387303ab066dce88663f",
+    "runs/croc-full-io-sram-cap-20260910-001/work/openroad/scripts/init_tech_sg13cmos5l.tcl": "cd38c76242151a198c67ff1e286600da55fded8f684c5886812c97f0a67fbd97",
+    "runs/croc-full-io-sram-cap-20260910-001/work/openroad/scripts/init_tech_sg13g2.tcl": "2d5e4171e397f899e8b7dbf185a718b042a6d114cabcd108c2351aa5a3d9b989",
+    "runs/croc-full-io-sram-cap-20260910-001/work/openroad/scripts/power_connect.tcl": "deace62f718fed10f17307fa49dafa71e2b9e9388287a3977664b3095cbe11d8",
+    "runs/croc-full-io-sram-cap-20260910-001/work/openroad/scripts/power_grid_sg13cmos5l.tcl": "be89a8235376ada0a9c74b6f1ea99306a5f620c50310ec025b921fe5d3bc3ebb",
+    "runs/croc-full-io-sram-cap-20260910-001/work/openroad/scripts/power_grid_sg13g2.tcl": "a6c72c6e56cdaf2acb55b81446b004ebc323685e83789743654f0086848ebcbe",
+    "runs/croc-full-io-sram-cap-20260910-001/work/openroad/scripts/reports.tcl": "3637b95c8ad6952b4c9c41e7e94beac8b48d05142a6828c1a0b04d7f91535cb2",
+    "runs/croc-full-io-sram-cap-20260910-001/work/openroad/scripts/reports_area.tcl": "8b675656316e9f1478fbf191ca9f3b4ed8144aaedf6e44cf68e3430fd051c224",
+    "runs/croc-full-io-sram-cap-20260910-001/work/openroad/scripts/startup.tcl": "8615a3bf457e4a0de057717d057a7b71858e1c3fef1a014d79817db36a6acc5d",
+    "scripts/audit_croc_full_cts_fanout.py": "49a9139cfae0743adef6565dd2c3afae6bb0b1abc3215bfe7322d6da233a2cae",
+    "scripts/audit_croc_placement_structure.py": "1920878b2dc306c829beda80755eff02fb338a31930369bbaa9555ce08a92333",
+    "scripts/audit_croc_sram_cap.py": "e2ccef49f31d7b46ec73fb68f27a620d8690a2769479146dd2c436212d6fd8c7",
+    "scripts/collect_croc_evidence.py": "d384121526c7aa7c32ad9a1370d069dda92021c2a2ea27efb8e4911b66fc1a13",
+    "scripts/run_croc_full_cts.py": "2e0cd660c3898c3db52b86283c38092216331adce2a9fb84ae9b577397914991",
+    "scripts/run_croc_sram_cap.py": "7cb9bbc09a8cc6af480a576f0b498fa018d27d660a14c8463d90aaaafb4a334e",
+    "scripts/run_io_ring_floorplan.py": "978cf4f2db202a26a0df7d6e5e8f0cf35a2a82658b79653ac6e5dae6288a8998",
+    "scripts/run_io_ring_maximal_diagnostic.py": "07a9a6d73ed1b354933b8af45527cc111e0d96c70a9eff718fca3dfb5e08b677",
+    "scripts/validate_croc_clock_eco.py": "9b9e02056d7a61801be6a4ae32267465bc5e7b7708afd96a8b6aea176657bd0d",
+    "upstream/croc/env.sh": "79f17eba9acc962cdd7953dffa20f42826ca5346bf3ccad76d0c1722b427fa6d",
+    "upstream/croc/technology/lef/RM_IHPSG13_1P_1024x64_c2_bm_bist.lef": "1582515b5226d196d17d706f0df8b2390fa0d0451416b7a4a5ce3ba47bff862f",
+    "upstream/croc/technology/lef/RM_IHPSG13_1P_2048x64_c2_bm_bist.lef": "630e1f2efcf0c4c512fa53760bb7451f4fcf7155e6265d887c936dcf65be4bea",
+    "upstream/croc/technology/lef/RM_IHPSG13_1P_256x48_c2_bm_bist.lef": "5d6da80c6cb9266cdc2810695899a068f93bdfcd819f7cb4bef5320ed0eb2598",
+    "upstream/croc/technology/lef/RM_IHPSG13_1P_256x64_c2_bm_bist.lef": "246405148ef9df63af32d955f20491c4d087678d03cbfec3eb3ad6653fc8d4c3",
+    "upstream/croc/technology/lef/RM_IHPSG13_1P_512x32_c2_bm_bist.lef": "6e483caff960deaeb97e69a205bbb811b94b4aba15d27d48658e9d5248733cfd",
+    "upstream/croc/technology/lef/RM_IHPSG13_1P_512x64_c2_bm_bist.lef": "93aced65c204c35cc3a9e0315048346df149b6957fd95787df1a2ee0b1bb274b",
+    "upstream/croc/technology/lef/RM_IHPSG13_1P_64x64_c2_bm_bist.lef": "2bbeda3804b585f9e1bdd22edf531a68898152f15a66c65ab643f49f873ae87f",
+    "upstream/croc/technology/lef/bondpad5l_70x70.lef": "c908763286d0fa22a4d74e4e342b1ed44f780566acb45236fdc2970c02750d19",
+    "upstream/croc/technology/lef/bondpad_70x70.lef": "3a08d296380b6808fffbb8f9ee25b4991198e341f78326f9a9b91fd58f0476f3",
+    "upstream/croc/technology/lef/sg13cmos5l_io.lef": "89e551d9cca33e0b467d3bd1817c4c48dfc268ea3517858f21bbd72ed06bcc6a",
+    "upstream/croc/technology/lef/sg13cmos5l_tech.lef": "3edd5a1ad31e8307be537d0d1b85c3258fefeb21aac04aaa476e4f72de4cffd5",
+    "upstream/croc/technology/lef/sg13g2_io.lef": "8b3dc3960960c08e07a1cde3dd9cd0484f5b12df07c4628726fff551bb775c0c",
+    "upstream/croc/technology/lef/sg13g2_stdcell.lef": "c9bbc02d0c2cba3b15cd89a208750d25de882f02a2927ae78ba6422109fb01d0",
+    "upstream/croc/technology/lef/sg13g2_tech.lef": "a12fecdead5721dc3bd14fb75bd0915c61afba064e38af8c7b69d59d9da05080",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_1024x64_c2_bm_bist_fast_1p32V_m55C.lib": "a4365e16423dfc514248eb1ff15af6ed6cb86ed2fd6b59c38cefba9e82e93fbb",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_1024x64_c2_bm_bist_typ_1p20V_25C.lib": "470dd62e2699d4c3d5b19b5dcba950d0c8544661b22f1f2fe1c8af7efa9348b7",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_2048x64_c2_bm_bist_fast_1p32V_m55C.lib": "32ad633416cb9f107b57136ea4305290510400fa065eb136e912f9616400f7f9",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_2048x64_c2_bm_bist_typ_1p20V_25C.lib": "9aefb0cb245b15ced86b10401e71bf2002da31c4e1356b23bf6f4c789bee254f",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_256x48_c2_bm_bist_fast_1p32V_m55C.lib": "c6d26a426c327bef1675813060235052302f7dd714af1ea5e6578d8208e2de4c",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_256x48_c2_bm_bist_typ_1p20V_25C.lib": "59039d282bd8120b718877303c6dd4db6e37dd3199f647349862f04269b7a5cc",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_256x64_c2_bm_bist_fast_1p32V_m55C.lib": "28b3a8980f049099708967e5c799c4f89173f05bda6869cb80f1f2f8d5e8134d",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_256x64_c2_bm_bist_typ_1p20V_25C.lib": "d117d4d86a07afd2d5302740fef0f9d1a12277490c600e1f1f7ba4633ca6e50a",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_512x32_c2_bm_bist_fast_1p32V_m55C.lib": "1e88cf828c81de2512d5294d0a3922854cebc8913de9af485f3e7c9fb08c3a42",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_512x32_c2_bm_bist_typ_1p20V_25C.lib": "1a7409f75c7107385d01f8b2e9cde5d22ee54e1e914643b70e19833e03f3e9b0",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_512x64_c2_bm_bist_fast_1p32V_m55C.lib": "b78f5deea88222e3993a148588d96a187b84c767e8d31cdc988c8cf746bd05c0",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_512x64_c2_bm_bist_typ_1p20V_25C.lib": "1fb769565599938fa7179d4d62f1d49ffd356ef0fdf7277d705ca19486b27b0e",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_64x64_c2_bm_bist_fast_1p32V_m55C.lib": "259b44ad5604902a3247f08d2e43b425c59e54cfe9775f1a3fe1cd5139e5ecc0",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_64x64_c2_bm_bist_typ_1p20V_25C.lib": "6064c5909605d9d4242df1ab3043598e558951122d210c18f12f1ab15badd044",
+    "upstream/croc/technology/lib/sg13cmos5l_io_fast_1p32V_3p6V_m40C.lib": "f25da27e4cc0c94ffbce99e0654814a3af48d00c4ec571c9db5915208a7bbe07",
+    "upstream/croc/technology/lib/sg13cmos5l_io_typ_1p2V_3p3V_25C.lib": "e6b5adf1ce31db3a0c15e5ca069c62e7d9efb604a710b8f6582700f1721d2d98",
+    "upstream/croc/technology/lib/sg13g2_io_fast_1p32V_3p6V_m40C.lib": "0dbc28e762ac820f9db193a2736f408cf1cbf521547fef850083a585c70f212f",
+    "upstream/croc/technology/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib": "e9af7d440c807799de55d16a126467e27d3235e7f53a928e014cdabee98369c9",
+    "upstream/croc/technology/lib/sg13g2_stdcell_fast_1p32V_m40C.lib": "f191a3132d0f2f59ca2721884cdb1d8360c8fbf3e0012056af62583dd69ae701",
+    "upstream/croc/technology/lib/sg13g2_stdcell_typ_1p20V_25C.lib": "7677a8918689f452e80405ad16a83e744709342574f2aedcc507c2758986b396"
+  },
+  "sram_capacitance": {
+    "after_count": 0,
+    "before_count": 64,
+    "current_placement_estimate_repaired": true,
+    "remaining_endpoints": [],
+    "routed_capacitance_proven": false
+  },
+  "timing": {
+    "after": {
+      "hold_violations": 0,
+      "max_capacitance_violations": 71,
+      "max_fanout_violations": 0,
+      "max_slew_violations": 71,
+      "setup_violations": 0,
+      "tns_ns": 0.0,
+      "wns_ns": 0.0
+    },
+    "before": {
+      "hold_violations": 0,
+      "max_capacitance_violations": 135,
+      "max_fanout_violations": 0,
+      "max_slew_violations": 71,
+      "setup_violations": 0,
+      "tns_ns": 0.0,
+      "wns_ns": 0.0
+    }
+  }
+}

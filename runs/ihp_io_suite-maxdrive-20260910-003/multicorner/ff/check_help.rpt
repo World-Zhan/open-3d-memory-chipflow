@@ -1,0 +1,6 @@
+report_check_types [-violators] [-verbose] [-corner corner]
+   [-format slack_only|end] [-max_delay] [-min_delay] [-recovery] [-removal]
+   [-clock_gating_setup] [-clock_gating_hold] [-max_slew] [-min_slew]
+   [-max_fanout] [-min_fanout] [-max_capacitance] [-min_capacitance]
+   [-min_pulse_width] [-min_period] [-max_skew] [-net net] [-digits digits]
+   [-no_line_splits] [> filename] [>> filename] 

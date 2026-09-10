@@ -1,0 +1,6 @@
+{
+  "copied_after_execution": true,
+  "copy": "execution_runner.py",
+  "original_source": "scripts/run_ihp_io_suite_sta_readback.py",
+  "verified_against_execution_source_sha256": "cddb01639d3b6c83e3ecf38001425fc77b351dfd993bd32a9c7782f7d94a90e6"
+}

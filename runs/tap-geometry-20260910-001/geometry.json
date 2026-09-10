@@ -1,0 +1,1168 @@
+{
+  "all_nonempty_layers": [
+    {
+      "area_um2": 244.8124,
+      "datatype": 0,
+      "layer": 8,
+      "raw_polygon_count": 6,
+      "text_count": 0
+    },
+    {
+      "area_um2": 244.8124,
+      "datatype": 0,
+      "layer": 1,
+      "raw_polygon_count": 4,
+      "text_count": 0
+    },
+    {
+      "area_um2": 155.72480000000002,
+      "datatype": 0,
+      "layer": 31,
+      "raw_polygon_count": 1,
+      "text_count": 0
+    },
+    {
+      "area_um2": 233.73000000000002,
+      "datatype": 0,
+      "layer": 14,
+      "raw_polygon_count": 1,
+      "text_count": 0
+    },
+    {
+      "area_um2": 141.2964,
+      "datatype": 0,
+      "layer": 40,
+      "raw_polygon_count": 1,
+      "text_count": 0
+    },
+    {
+      "area_um2": 0.0,
+      "datatype": 0,
+      "layer": 63,
+      "raw_polygon_count": 0,
+      "text_count": 3
+    },
+    {
+      "area_um2": 219.71080000000003,
+      "datatype": 2,
+      "layer": 8,
+      "raw_polygon_count": 7,
+      "text_count": 0
+    },
+    {
+      "area_um2": 0.0,
+      "datatype": 25,
+      "layer": 8,
+      "raw_polygon_count": 0,
+      "text_count": 7
+    },
+    {
+      "area_um2": 44.928000000000004,
+      "datatype": 0,
+      "layer": 6,
+      "raw_polygon_count": 1755,
+      "text_count": 0
+    },
+    {
+      "area_um2": 72.33200000000001,
+      "datatype": 31,
+      "layer": 99,
+      "raw_polygon_count": 2,
+      "text_count": 0
+    }
+  ],
+  "classification": "read_only_geometry_definition_probe_no_LVS",
+  "dbu_um": 0.001,
+  "derivation_observations": {
+    "digisub_polygons": 0,
+    "exclude_overlap_ptap_um2": 0.0,
+    "excluded_layers_nonempty": [
+      {
+        "datatype": 31,
+        "layer": 99,
+        "polygon_count": 2
+      }
+    ],
+    "guard_contact_area_um2": 7.372800000000001,
+    "guard_contact_count": 288,
+    "marker_filter_changes_pactiv_tie": false,
+    "ntap1_marker_selected_well_text_count": 0,
+    "ptap1_marker_selected_sub_text_count": 1,
+    "pwell_block_polygons": 0
+  },
+  "regions": {
+    "active": {
+      "area_um2": 244.8124,
+      "hole_count": 3,
+      "hole_perimeter_sum_um": 232.32,
+      "hull_perimeter_sum_um": 302.72,
+      "merged_component_count": 4,
+      "perimeter_um": 535.04,
+      "polygons": [
+        {
+          "area_um2": 35.0028,
+          "bbox_um": [
+            2.64,
+            2.25,
+            30.42,
+            3.5100000000000002
+          ],
+          "hole_count": 0,
+          "hole_perimeters_um": [],
+          "holes_vertices_dbu": [],
+          "hull_perimeter_um": 58.08,
+          "hull_vertices_dbu": [
+            [
+              2640,
+              2250
+            ],
+            [
+              2640,
+              3510
+            ],
+            [
+              30420,
+              3510
+            ],
+            [
+              30420,
+              2250
+            ]
+          ],
+          "perimeter_um": 58.08
+        },
+        {
+          "area_um2": 35.0028,
+          "bbox_um": [
+            2.64,
+            6.75,
+            30.42,
+            8.01
+          ],
+          "hole_count": 0,
+          "hole_perimeters_um": [],
+          "holes_vertices_dbu": [],
+          "hull_perimeter_um": 58.08,
+          "hull_vertices_dbu": [
+            [
+              2640,
+              6750
+            ],
+            [
+              2640,
+              8010
+            ],
+            [
+              30420,
+              8010
+            ],
+            [
+              30420,
+              6750
+            ]
+          ],
+          "perimeter_um": 58.08
+        },
+        {
+          "area_um2": 141.2964,
+          "bbox_um": [
+            0.0,
+            0.0,
+            33.06,
+            10.26
+          ],
+          "hole_count": 2,
+          "hole_perimeters_um": [
+            67.56,
+            67.56
+          ],
+          "holes_vertices_dbu": [
+            [
+              [
+                1260,
+                1260
+              ],
+              [
+                31800,
+                1260
+              ],
+              [
+                31800,
+                4500
+              ],
+              [
+                1260,
+                4500
+              ]
+            ],
+            [
+              [
+                1260,
+                5760
+              ],
+              [
+                31800,
+                5760
+              ],
+              [
+                31800,
+                9000
+              ],
+              [
+                1260,
+                9000
+              ]
+            ]
+          ],
+          "hull_perimeter_um": 86.64,
+          "hull_vertices_dbu": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              10260
+            ],
+            [
+              33060,
+              10260
+            ],
+            [
+              33060,
+              0
+            ]
+          ],
+          "perimeter_um": 221.76
+        },
+        {
+          "area_um2": 33.510400000000004,
+          "bbox_um": [
+            -1.6600000000000001,
+            -1.6600000000000001,
+            34.72,
+            11.92
+          ],
+          "hole_count": 1,
+          "hole_perimeters_um": [
+            97.2
+          ],
+          "holes_vertices_dbu": [
+            [
+              [
+                -1320,
+                -1320
+              ],
+              [
+                34380,
+                -1320
+              ],
+              [
+                34380,
+                11580
+              ],
+              [
+                -1320,
+                11580
+              ]
+            ]
+          ],
+          "hull_perimeter_um": 99.92,
+          "hull_vertices_dbu": [
+            [
+              -1660,
+              -1660
+            ],
+            [
+              -1660,
+              11920
+            ],
+            [
+              34720,
+              11920
+            ],
+            [
+              34720,
+              -1660
+            ]
+          ],
+          "perimeter_um": 197.12
+        }
+      ]
+    },
+    "nactiv": {
+      "area_um2": 103.516,
+      "hole_count": 1,
+      "hole_perimeter_sum_um": 97.2,
+      "hull_perimeter_sum_um": 216.07999999999998,
+      "merged_component_count": 3,
+      "perimeter_um": 313.28000000000003,
+      "polygons": [
+        {
+          "area_um2": 35.0028,
+          "bbox_um": [
+            2.64,
+            2.25,
+            30.42,
+            3.5100000000000002
+          ],
+          "hole_count": 0,
+          "hole_perimeters_um": [],
+          "holes_vertices_dbu": [],
+          "hull_perimeter_um": 58.08,
+          "hull_vertices_dbu": [
+            [
+              2640,
+              2250
+            ],
+            [
+              2640,
+              3510
+            ],
+            [
+              30420,
+              3510
+            ],
+            [
+              30420,
+              2250
+            ]
+          ],
+          "perimeter_um": 58.08
+        },
+        {
+          "area_um2": 35.0028,
+          "bbox_um": [
+            2.64,
+            6.75,
+            30.42,
+            8.01
+          ],
+          "hole_count": 0,
+          "hole_perimeters_um": [],
+          "holes_vertices_dbu": [],
+          "hull_perimeter_um": 58.08,
+          "hull_vertices_dbu": [
+            [
+              2640,
+              6750
+            ],
+            [
+              2640,
+              8010
+            ],
+            [
+              30420,
+              8010
+            ],
+            [
+              30420,
+              6750
+            ]
+          ],
+          "perimeter_um": 58.08
+        },
+        {
+          "area_um2": 33.510400000000004,
+          "bbox_um": [
+            -1.6600000000000001,
+            -1.6600000000000001,
+            34.72,
+            11.92
+          ],
+          "hole_count": 1,
+          "hole_perimeters_um": [
+            97.2
+          ],
+          "holes_vertices_dbu": [
+            [
+              [
+                -1320,
+                -1320
+              ],
+              [
+                34380,
+                -1320
+              ],
+              [
+                34380,
+                11580
+              ],
+              [
+                -1320,
+                11580
+              ]
+            ]
+          ],
+          "hull_perimeter_um": 99.92,
+          "hull_vertices_dbu": [
+            [
+              -1660,
+              -1660
+            ],
+            [
+              -1660,
+              11920
+            ],
+            [
+              34720,
+              11920
+            ],
+            [
+              34720,
+              -1660
+            ]
+          ],
+          "perimeter_um": 197.12
+        }
+      ]
+    },
+    "ntap1_marker": {
+      "area_um2": 0.0,
+      "hole_count": 0,
+      "hole_perimeter_sum_um": 0,
+      "hull_perimeter_sum_um": 0,
+      "merged_component_count": 0,
+      "perimeter_um": 0.0,
+      "polygons": []
+    },
+    "ntap1_tie": {
+      "area_um2": 0.0,
+      "hole_count": 0,
+      "hole_perimeter_sum_um": 0,
+      "hull_perimeter_sum_um": 0,
+      "merged_component_count": 0,
+      "perimeter_um": 0.0,
+      "polygons": []
+    },
+    "nwell": {
+      "area_um2": 155.72480000000002,
+      "hole_count": 1,
+      "hole_perimeter_sum_um": 92.24,
+      "hull_perimeter_sum_um": 104.88,
+      "merged_component_count": 1,
+      "perimeter_um": 197.12,
+      "polygons": [
+        {
+          "area_um2": 155.72480000000002,
+          "bbox_um": [
+            -2.2800000000000002,
+            -2.2800000000000002,
+            35.34,
+            12.540000000000001
+          ],
+          "hole_count": 1,
+          "hole_perimeters_um": [
+            92.24
+          ],
+          "holes_vertices_dbu": [
+            [
+              [
+                -700,
+                -700
+              ],
+              [
+                33760,
+                -700
+              ],
+              [
+                33760,
+                10960
+              ],
+              [
+                -700,
+                10960
+              ]
+            ]
+          ],
+          "hull_perimeter_um": 104.88,
+          "hull_vertices_dbu": [
+            [
+              -2280,
+              -2280
+            ],
+            [
+              -2280,
+              12540
+            ],
+            [
+              35340,
+              12540
+            ],
+            [
+              35340,
+              -2280
+            ]
+          ],
+          "perimeter_um": 197.12
+        }
+      ]
+    },
+    "ordinary_ntap": {
+      "area_um2": 33.510400000000004,
+      "hole_count": 1,
+      "hole_perimeter_sum_um": 97.2,
+      "hull_perimeter_sum_um": 99.92,
+      "merged_component_count": 1,
+      "perimeter_um": 197.12,
+      "polygons": [
+        {
+          "area_um2": 33.510400000000004,
+          "bbox_um": [
+            -1.6600000000000001,
+            -1.6600000000000001,
+            34.72,
+            11.92
+          ],
+          "hole_count": 1,
+          "hole_perimeters_um": [
+            97.2
+          ],
+          "holes_vertices_dbu": [
+            [
+              [
+                -1320,
+                -1320
+              ],
+              [
+                34380,
+                -1320
+              ],
+              [
+                34380,
+                11580
+              ],
+              [
+                -1320,
+                11580
+              ]
+            ]
+          ],
+          "hull_perimeter_um": 99.92,
+          "hull_vertices_dbu": [
+            [
+              -1660,
+              -1660
+            ],
+            [
+              -1660,
+              11920
+            ],
+            [
+              34720,
+              11920
+            ],
+            [
+              34720,
+              -1660
+            ]
+          ],
+          "perimeter_um": 197.12
+        }
+      ]
+    },
+    "pactiv": {
+      "area_um2": 141.2964,
+      "hole_count": 2,
+      "hole_perimeter_sum_um": 135.12,
+      "hull_perimeter_sum_um": 86.64,
+      "merged_component_count": 1,
+      "perimeter_um": 221.76,
+      "polygons": [
+        {
+          "area_um2": 141.2964,
+          "bbox_um": [
+            0.0,
+            0.0,
+            33.06,
+            10.26
+          ],
+          "hole_count": 2,
+          "hole_perimeters_um": [
+            67.56,
+            67.56
+          ],
+          "holes_vertices_dbu": [
+            [
+              [
+                1260,
+                1260
+              ],
+              [
+                31800,
+                1260
+              ],
+              [
+                31800,
+                4500
+              ],
+              [
+                1260,
+                4500
+              ]
+            ],
+            [
+              [
+                1260,
+                5760
+              ],
+              [
+                31800,
+                5760
+              ],
+              [
+                31800,
+                9000
+              ],
+              [
+                1260,
+                9000
+              ]
+            ]
+          ],
+          "hull_perimeter_um": 86.64,
+          "hull_vertices_dbu": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              10260
+            ],
+            [
+              33060,
+              10260
+            ],
+            [
+              33060,
+              0
+            ]
+          ],
+          "perimeter_um": 221.76
+        }
+      ]
+    },
+    "pactiv_without_marker_filter": {
+      "area_um2": 141.2964,
+      "hole_count": 2,
+      "hole_perimeter_sum_um": 135.12,
+      "hull_perimeter_sum_um": 86.64,
+      "merged_component_count": 1,
+      "perimeter_um": 221.76,
+      "polygons": [
+        {
+          "area_um2": 141.2964,
+          "bbox_um": [
+            0.0,
+            0.0,
+            33.06,
+            10.26
+          ],
+          "hole_count": 2,
+          "hole_perimeters_um": [
+            67.56,
+            67.56
+          ],
+          "holes_vertices_dbu": [
+            [
+              [
+                1260,
+                1260
+              ],
+              [
+                31800,
+                1260
+              ],
+              [
+                31800,
+                4500
+              ],
+              [
+                1260,
+                4500
+              ]
+            ],
+            [
+              [
+                1260,
+                5760
+              ],
+              [
+                31800,
+                5760
+              ],
+              [
+                31800,
+                9000
+              ],
+              [
+                1260,
+                9000
+              ]
+            ]
+          ],
+          "hull_perimeter_um": 86.64,
+          "hull_vertices_dbu": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              10260
+            ],
+            [
+              33060,
+              10260
+            ],
+            [
+              33060,
+              0
+            ]
+          ],
+          "perimeter_um": 221.76
+        }
+      ]
+    },
+    "ptap1_holes": {
+      "area_um2": 197.8992,
+      "hole_count": 0,
+      "hole_perimeter_sum_um": 0,
+      "hull_perimeter_sum_um": 135.12,
+      "merged_component_count": 2,
+      "perimeter_um": 135.12,
+      "polygons": [
+        {
+          "area_um2": 98.9496,
+          "bbox_um": [
+            1.26,
+            1.26,
+            31.8,
+            4.5
+          ],
+          "hole_count": 0,
+          "hole_perimeters_um": [],
+          "holes_vertices_dbu": [],
+          "hull_perimeter_um": 67.56,
+          "hull_vertices_dbu": [
+            [
+              1260,
+              1260
+            ],
+            [
+              1260,
+              4500
+            ],
+            [
+              31800,
+              4500
+            ],
+            [
+              31800,
+              1260
+            ]
+          ],
+          "perimeter_um": 67.56
+        },
+        {
+          "area_um2": 98.9496,
+          "bbox_um": [
+            1.26,
+            5.76,
+            31.8,
+            9.0
+          ],
+          "hole_count": 0,
+          "hole_perimeters_um": [],
+          "holes_vertices_dbu": [],
+          "hull_perimeter_um": 67.56,
+          "hull_vertices_dbu": [
+            [
+              1260,
+              5760
+            ],
+            [
+              1260,
+              9000
+            ],
+            [
+              31800,
+              9000
+            ],
+            [
+              31800,
+              5760
+            ]
+          ],
+          "perimeter_um": 67.56
+        }
+      ]
+    },
+    "ptap1_hulls": {
+      "area_um2": 339.19560000000007,
+      "hole_count": 0,
+      "hole_perimeter_sum_um": 0,
+      "hull_perimeter_sum_um": 86.64,
+      "merged_component_count": 1,
+      "perimeter_um": 86.64,
+      "polygons": [
+        {
+          "area_um2": 339.19560000000007,
+          "bbox_um": [
+            0.0,
+            0.0,
+            33.06,
+            10.26
+          ],
+          "hole_count": 0,
+          "hole_perimeters_um": [],
+          "holes_vertices_dbu": [],
+          "hull_perimeter_um": 86.64,
+          "hull_vertices_dbu": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              10260
+            ],
+            [
+              33060,
+              10260
+            ],
+            [
+              33060,
+              0
+            ]
+          ],
+          "perimeter_um": 86.64
+        }
+      ]
+    },
+    "ptap1_marker": {
+      "area_um2": 141.2964,
+      "hole_count": 2,
+      "hole_perimeter_sum_um": 135.12,
+      "hull_perimeter_sum_um": 86.64,
+      "merged_component_count": 1,
+      "perimeter_um": 221.76,
+      "polygons": [
+        {
+          "area_um2": 141.2964,
+          "bbox_um": [
+            0.0,
+            0.0,
+            33.06,
+            10.26
+          ],
+          "hole_count": 2,
+          "hole_perimeters_um": [
+            67.56,
+            67.56
+          ],
+          "holes_vertices_dbu": [
+            [
+              [
+                1260,
+                1260
+              ],
+              [
+                31800,
+                1260
+              ],
+              [
+                31800,
+                4500
+              ],
+              [
+                1260,
+                4500
+              ]
+            ],
+            [
+              [
+                1260,
+                5760
+              ],
+              [
+                31800,
+                5760
+              ],
+              [
+                31800,
+                9000
+              ],
+              [
+                1260,
+                9000
+              ]
+            ]
+          ],
+          "hull_perimeter_um": 86.64,
+          "hull_vertices_dbu": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              10260
+            ],
+            [
+              33060,
+              10260
+            ],
+            [
+              33060,
+              0
+            ]
+          ],
+          "perimeter_um": 221.76
+        }
+      ]
+    },
+    "ptap1_tie": {
+      "area_um2": 141.2964,
+      "hole_count": 2,
+      "hole_perimeter_sum_um": 135.12,
+      "hull_perimeter_sum_um": 86.64,
+      "merged_component_count": 1,
+      "perimeter_um": 221.76,
+      "polygons": [
+        {
+          "area_um2": 141.2964,
+          "bbox_um": [
+            0.0,
+            0.0,
+            33.06,
+            10.26
+          ],
+          "hole_count": 2,
+          "hole_perimeters_um": [
+            67.56,
+            67.56
+          ],
+          "holes_vertices_dbu": [
+            [
+              [
+                1260,
+                1260
+              ],
+              [
+                31800,
+                1260
+              ],
+              [
+                31800,
+                4500
+              ],
+              [
+                1260,
+                4500
+              ]
+            ],
+            [
+              [
+                1260,
+                5760
+              ],
+              [
+                31800,
+                5760
+              ],
+              [
+                31800,
+                9000
+              ],
+              [
+                1260,
+                9000
+              ]
+            ]
+          ],
+          "hull_perimeter_um": 86.64,
+          "hull_vertices_dbu": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              10260
+            ],
+            [
+              33060,
+              10260
+            ],
+            [
+              33060,
+              0
+            ]
+          ],
+          "perimeter_um": 221.76
+        }
+      ]
+    },
+    "substrate": {
+      "area_um2": 141.2964,
+      "hole_count": 2,
+      "hole_perimeter_sum_um": 135.12,
+      "hull_perimeter_sum_um": 86.64,
+      "merged_component_count": 1,
+      "perimeter_um": 221.76,
+      "polygons": [
+        {
+          "area_um2": 141.2964,
+          "bbox_um": [
+            0.0,
+            0.0,
+            33.06,
+            10.26
+          ],
+          "hole_count": 2,
+          "hole_perimeters_um": [
+            67.56,
+            67.56
+          ],
+          "holes_vertices_dbu": [
+            [
+              [
+                1260,
+                1260
+              ],
+              [
+                31800,
+                1260
+              ],
+              [
+                31800,
+                4500
+              ],
+              [
+                1260,
+                4500
+              ]
+            ],
+            [
+              [
+                1260,
+                5760
+              ],
+              [
+                31800,
+                5760
+              ],
+              [
+                31800,
+                9000
+              ],
+              [
+                1260,
+                9000
+              ]
+            ]
+          ],
+          "hull_perimeter_um": 86.64,
+          "hull_vertices_dbu": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              10260
+            ],
+            [
+              33060,
+              10260
+            ],
+            [
+              33060,
+              0
+            ]
+          ],
+          "perimeter_um": 221.76
+        }
+      ]
+    }
+  },
+  "schema_version": 1,
+  "scope": "Flat Boolean reconstruction of this single leaf only; existing strict deep snapshots provide independent extraction A/P.",
+  "source": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/inputs/sg13g2_DCNDiode.gds",
+  "source_sha256": "88b37db301c78b051f74fd8d7c851fb8fb237964bde4b7b6a60657faa2ed11e4",
+  "texts": [
+    {
+      "datatype": 0,
+      "layer": 63,
+      "text": "dant",
+      "x_dbu": 16530,
+      "y_dbu": 7380
+    },
+    {
+      "datatype": 0,
+      "layer": 63,
+      "text": "sub!",
+      "x_dbu": 630,
+      "y_dbu": 630
+    },
+    {
+      "datatype": 0,
+      "layer": 63,
+      "text": "dant",
+      "x_dbu": 16530,
+      "y_dbu": 2880
+    },
+    {
+      "datatype": 25,
+      "layer": 8,
+      "text": "guard",
+      "x_dbu": 16530,
+      "y_dbu": 11750
+    },
+    {
+      "datatype": 25,
+      "layer": 8,
+      "text": "guard",
+      "x_dbu": 16530,
+      "y_dbu": -1490
+    },
+    {
+      "datatype": 25,
+      "layer": 8,
+      "text": "anode",
+      "x_dbu": 16530,
+      "y_dbu": 5130
+    },
+    {
+      "datatype": 25,
+      "layer": 8,
+      "text": "anode",
+      "x_dbu": 16530,
+      "y_dbu": 630
+    },
+    {
+      "datatype": 25,
+      "layer": 8,
+      "text": "anode",
+      "x_dbu": 16530,
+      "y_dbu": 9630
+    },
+    {
+      "datatype": 25,
+      "layer": 8,
+      "text": "cathode",
+      "x_dbu": 16530,
+      "y_dbu": 7380
+    },
+    {
+      "datatype": 25,
+      "layer": 8,
+      "text": "cathode",
+      "x_dbu": 16530,
+      "y_dbu": 2880
+    }
+  ],
+  "tool_version": "0.30.5"
+}

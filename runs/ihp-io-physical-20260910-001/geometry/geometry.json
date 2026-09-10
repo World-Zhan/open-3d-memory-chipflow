@@ -1,0 +1,6482 @@
+{
+  "cells": {
+    "sg13g2_IOPadIn": {
+      "PG_connectivity": "NOT_PROVEN_by_geometry_overlap",
+      "all_LEF_pin_rectangles_covered_by_GDS_metal": true,
+      "changed_polygon_layers": {
+        "(1, 0)": {
+          "croc_area_um2": 9807.0332,
+          "official_area_um2": 9820.9107,
+          "xor_area_um2": 13.8775
+        },
+        "(10, 0)": {
+          "croc_area_um2": 1547.4685499999998,
+          "official_area_um2": 1552.31305,
+          "xor_area_um2": 9.189
+        },
+        "(14, 0)": {
+          "croc_area_um2": 5984.405,
+          "official_area_um2": 5998.331999999999,
+          "xor_area_um2": 13.927
+        },
+        "(19, 0)": {
+          "croc_area_um2": 80.64739999999999,
+          "official_area_um2": 81.5499,
+          "xor_area_um2": 1.0469
+        },
+        "(31, 0)": {
+          "croc_area_um2": 4869.0491,
+          "official_area_um2": 4889.6603749999995,
+          "xor_area_um2": 20.611275
+        },
+        "(40, 0)": {
+          "croc_area_um2": 5581.4268,
+          "official_area_um2": 5582.4108,
+          "xor_area_um2": 0.984
+        },
+        "(44, 0)": {
+          "croc_area_um2": 15.163599999999999,
+          "official_area_um2": 40.8657,
+          "xor_area_um2": 25.702099999999998
+        },
+        "(5, 0)": {
+          "croc_area_um2": 8.138,
+          "official_area_um2": 18.7985,
+          "xor_area_um2": 11.452499999999999
+        },
+        "(5, 2)": {
+          "croc_area_um2": 0.0,
+          "official_area_um2": 6.282,
+          "xor_area_um2": 6.282
+        },
+        "(51, 0)": {
+          "croc_area_um2": 0.0,
+          "official_area_um2": 5.31,
+          "xor_area_um2": 5.31
+        },
+        "(6, 0)": {
+          "croc_area_um2": 1889.1263999999999,
+          "official_area_um2": 1890.6624,
+          "xor_area_um2": 1.5872
+        },
+        "(8, 0)": {
+          "croc_area_um2": 9775.3879,
+          "official_area_um2": 9789.087125,
+          "xor_area_um2": 16.444875
+        },
+        "(8, 2)": {
+          "croc_area_um2": 445.91569999999996,
+          "official_area_um2": 448.40569999999997,
+          "xor_area_um2": 2.4899999999999998
+        }
+      },
+      "croc_lef": {
+        "pins": {
+          "iovdd": {
+            "direction": "INOUT",
+            "rects": [
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  93.5,
+                  80.0,
+                  119.0
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  66.0,
+                  80.0,
+                  91.5
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  93.5,
+                  80.0,
+                  119.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  66.0,
+                  80.0,
+                  91.5
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  93.5,
+                  80.0,
+                  119.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  66.0,
+                  80.0,
+                  91.5
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  93.5,
+                  80.0,
+                  119.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  66.0,
+                  80.0,
+                  91.5
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  95.0,
+                  80.0,
+                  117.5
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  67.5,
+                  80.0,
+                  90.0
+                ]
+              }
+            ],
+            "use": "POWER"
+          },
+          "iovss": {
+            "direction": "INOUT",
+            "rects": [
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  7.0,
+                  80.0,
+                  32.5
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  126.0,
+                  80.0,
+                  134.0
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  34.5,
+                  80.0,
+                  60.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  7.0,
+                  80.0,
+                  32.5
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  126.0,
+                  80.0,
+                  134.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  34.5,
+                  80.0,
+                  60.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  7.0,
+                  80.0,
+                  32.5
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  126.0,
+                  80.0,
+                  134.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  34.5,
+                  80.0,
+                  60.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  7.0,
+                  80.0,
+                  32.5
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  126.0,
+                  80.0,
+                  134.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  34.5,
+                  80.0,
+                  60.0
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  36.0,
+                  80.0,
+                  58.5
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  8.5,
+                  80.0,
+                  31.0
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  127.5,
+                  80.0,
+                  132.5
+                ]
+              }
+            ],
+            "use": "GROUND"
+          },
+          "p2c": {
+            "direction": "OUTPUT",
+            "rects": [
+              {
+                "layer": "Metal2",
+                "um": [
+                  39.83,
+                  157.81,
+                  40.12,
+                  180.0
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  39.725,
+                  179.71,
+                  40.225,
+                  180.0
+                ]
+              }
+            ],
+            "use": "SIGNAL"
+          },
+          "pad": {
+            "direction": "INOUT",
+            "rects": [
+              {
+                "layer": "Metal2",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              }
+            ],
+            "use": "SIGNAL"
+          },
+          "vdd": {
+            "direction": "INOUT",
+            "rects": [
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  160.0,
+                  80.0,
+                  178.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  140.0,
+                  80.0,
+                  155.8
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  140.0,
+                  80.0,
+                  158.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  140.0,
+                  80.0,
+                  158.0
+                ]
+              }
+            ],
+            "use": "POWER"
+          },
+          "vss": {
+            "direction": "INOUT",
+            "rects": [
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  140.0,
+                  80.0,
+                  158.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  162.2,
+                  80.0,
+                  178.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  160.0,
+                  80.0,
+                  178.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  160.0,
+                  80.0,
+                  178.0
+                ]
+              }
+            ],
+            "use": "GROUND"
+          }
+        },
+        "size_um": [
+          80.0,
+          180.0
+        ]
+      },
+      "export_geometry_equal": true,
+      "exported_gds_file": "sg13g2_IOPadIn.gds",
+      "exported_gds_sha256": "fd7689ed0753e4796fd1352a0b2288327394373283079b69323cdbc00e51afab",
+      "gds_bbox_um": {
+        "croc": [
+          -0.62,
+          0.0,
+          80.62,
+          180.0
+        ],
+        "official": [
+          -0.62,
+          0.0,
+          80.62,
+          180.0
+        ]
+      },
+      "official_gds_pin_labels": [
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            42.15,
+            24.18
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            41.35,
+            51.07
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            41.35,
+            82.08500000000001
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            42.15,
+            110.175
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            41.69,
+            132.01500000000001
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "vss",
+          "position_um": [
+            41.92,
+            151.395
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "vdd",
+          "position_um": [
+            41.12,
+            171.0
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "p2c",
+          "position_um": [
+            39.975,
+            179.855
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            48.455,
+            1.995
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            50.365,
+            1.565
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "vss",
+          "position_um": [
+            41.45,
+            172.27
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            39.615,
+            131.455
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "vdd",
+          "position_um": [
+            41.365,
+            150.595
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            42.24,
+            109.425
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            41.54,
+            82.07000000000001
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            41.275,
+            22.28
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            41.800000000000004,
+            50.075
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "vss",
+          "position_um": [
+            41.45,
+            170.695
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            48.97,
+            2.005
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "vdd",
+          "position_um": [
+            41.365,
+            151.03
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            41.365,
+            81.455
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            41.015,
+            109.075
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.84,
+            49.815
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            41.19,
+            131.455
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            42.065,
+            22.195
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            49.055,
+            1.83
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "vdd",
+          "position_um": [
+            41.19,
+            152.255
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "vss",
+          "position_um": [
+            41.275,
+            171.395
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            41.800000000000004,
+            81.805
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            41.1,
+            108.55
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            41.015,
+            50.34
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            42.15,
+            131.975
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            41.800000000000004,
+            22.545
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            47.22,
+            15.815
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            42.85,
+            75.25
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            41.45,
+            109.075
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            42.325,
+            43.17
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            54.125,
+            130.23
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            52.99,
+            1.655
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            3.365,
+            0.0
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vdd",
+          "position_um": [
+            3.365,
+            18.5
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vss",
+          "position_um": [
+            3.365,
+            8.5
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "p2c",
+          "position_um": [
+            39.955,
+            169.59
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            36.475,
+            1.7650000000000001
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            3.61,
+            -7.355
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            1.44,
+            -7.705
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            1.44,
+            0.625
+          ]
+        }
+      ],
+      "official_lef": {
+        "pins": {
+          "iovdd": {
+            "direction": "INOUT",
+            "rects": [
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  93.5,
+                  80.0,
+                  119.0
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  66.0,
+                  80.0,
+                  91.5
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  93.5,
+                  80.0,
+                  119.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  66.0,
+                  80.0,
+                  91.5
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  93.5,
+                  80.0,
+                  119.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  66.0,
+                  80.0,
+                  91.5
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  93.5,
+                  80.0,
+                  119.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  66.0,
+                  80.0,
+                  91.5
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  95.0,
+                  80.0,
+                  117.5
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  67.5,
+                  80.0,
+                  90.0
+                ]
+              }
+            ],
+            "use": "POWER"
+          },
+          "iovss": {
+            "direction": "INOUT",
+            "rects": [
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  7.0,
+                  80.0,
+                  32.5
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  126.0,
+                  80.0,
+                  134.0
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  34.5,
+                  80.0,
+                  60.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  7.0,
+                  80.0,
+                  32.5
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  126.0,
+                  80.0,
+                  134.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  34.5,
+                  80.0,
+                  60.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  7.0,
+                  80.0,
+                  32.5
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  126.0,
+                  80.0,
+                  134.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  34.5,
+                  80.0,
+                  60.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  7.0,
+                  80.0,
+                  32.5
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  126.0,
+                  80.0,
+                  134.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  34.5,
+                  80.0,
+                  60.0
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  36.0,
+                  80.0,
+                  58.5
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  8.5,
+                  80.0,
+                  31.0
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  127.5,
+                  80.0,
+                  132.5
+                ]
+              }
+            ],
+            "use": "GROUND"
+          },
+          "p2c": {
+            "direction": "OUTPUT",
+            "rects": [
+              {
+                "layer": "Metal2",
+                "um": [
+                  39.83,
+                  157.81,
+                  40.12,
+                  180.0
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  39.725,
+                  179.71,
+                  40.225,
+                  180.0
+                ]
+              }
+            ],
+            "use": "SIGNAL"
+          },
+          "pad": {
+            "direction": "INPUT",
+            "rects": [
+              {
+                "layer": "Metal2",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              }
+            ],
+            "use": "SIGNAL"
+          },
+          "vdd": {
+            "direction": "INOUT",
+            "rects": [
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  160.0,
+                  80.0,
+                  178.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  140.0,
+                  80.0,
+                  155.8
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  140.0,
+                  80.0,
+                  158.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  140.0,
+                  80.0,
+                  158.0
+                ]
+              }
+            ],
+            "use": "POWER"
+          },
+          "vss": {
+            "direction": "INOUT",
+            "rects": [
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  140.0,
+                  80.0,
+                  158.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  162.2,
+                  80.0,
+                  178.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  160.0,
+                  80.0,
+                  178.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  160.0,
+                  80.0,
+                  178.0
+                ]
+              }
+            ],
+            "use": "GROUND"
+          }
+        },
+        "size_um": [
+          80.0,
+          180.0
+        ]
+      },
+      "official_pin_metal_checks": [
+        {
+          "covered": true,
+          "layer": "Metal3",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            93.5,
+            80.0,
+            119.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal3",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            66.0,
+            80.0,
+            91.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal4",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            93.5,
+            80.0,
+            119.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal4",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            66.0,
+            80.0,
+            91.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal5",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            93.5,
+            80.0,
+            119.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal5",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            66.0,
+            80.0,
+            91.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal1",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            93.5,
+            80.0,
+            119.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal1",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            66.0,
+            80.0,
+            91.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal2",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            95.0,
+            80.0,
+            117.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal2",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            67.5,
+            80.0,
+            90.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal3",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            7.0,
+            80.0,
+            32.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal3",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            126.0,
+            80.0,
+            134.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal3",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            34.5,
+            80.0,
+            60.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal4",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            7.0,
+            80.0,
+            32.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal4",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            126.0,
+            80.0,
+            134.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal4",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            34.5,
+            80.0,
+            60.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal5",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            7.0,
+            80.0,
+            32.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal5",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            126.0,
+            80.0,
+            134.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal5",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            34.5,
+            80.0,
+            60.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal1",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            7.0,
+            80.0,
+            32.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal1",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            126.0,
+            80.0,
+            134.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal1",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            34.5,
+            80.0,
+            60.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal2",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            36.0,
+            80.0,
+            58.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal2",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            8.5,
+            80.0,
+            31.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal2",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            127.5,
+            80.0,
+            132.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal2",
+          "pin": "p2c",
+          "rect_um": [
+            39.83,
+            157.81,
+            40.12,
+            180.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal3",
+          "pin": "p2c",
+          "rect_um": [
+            39.725,
+            179.71,
+            40.225,
+            180.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal2",
+          "pin": "pad",
+          "rect_um": [
+            5.0,
+            0.0,
+            75.0,
+            3.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal3",
+          "pin": "pad",
+          "rect_um": [
+            5.0,
+            0.0,
+            75.0,
+            3.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal4",
+          "pin": "pad",
+          "rect_um": [
+            5.0,
+            0.0,
+            75.0,
+            3.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal5",
+          "pin": "pad",
+          "rect_um": [
+            5.0,
+            0.0,
+            75.0,
+            3.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal1",
+          "pin": "pad",
+          "rect_um": [
+            5.0,
+            0.0,
+            75.0,
+            3.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal2",
+          "pin": "pad",
+          "rect_um": [
+            5.0,
+            0.0,
+            75.0,
+            3.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal3",
+          "pin": "vdd",
+          "rect_um": [
+            0.0,
+            160.0,
+            80.0,
+            178.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal4",
+          "pin": "vdd",
+          "rect_um": [
+            0.0,
+            140.0,
+            80.0,
+            155.8
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal5",
+          "pin": "vdd",
+          "rect_um": [
+            0.0,
+            140.0,
+            80.0,
+            158.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal1",
+          "pin": "vdd",
+          "rect_um": [
+            0.0,
+            140.0,
+            80.0,
+            158.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal3",
+          "pin": "vss",
+          "rect_um": [
+            0.0,
+            140.0,
+            80.0,
+            158.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal4",
+          "pin": "vss",
+          "rect_um": [
+            0.0,
+            162.2,
+            80.0,
+            178.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal5",
+          "pin": "vss",
+          "rect_um": [
+            0.0,
+            160.0,
+            80.0,
+            178.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal1",
+          "pin": "vss",
+          "rect_um": [
+            0.0,
+            160.0,
+            80.0,
+            178.0
+          ],
+          "uncovered_um2": 0.0
+        }
+      ],
+      "pin_label_names_complete": true,
+      "same_lef_pin_names": true,
+      "same_lef_pin_shapes": false,
+      "same_lef_size": true,
+      "strict_LVS": "NOT_RUN_leaf_gate_unresolved"
+    },
+    "sg13g2_IOPadInOut30mA": {
+      "PG_connectivity": "NOT_PROVEN_by_geometry_overlap",
+      "all_LEF_pin_rectangles_covered_by_GDS_metal": true,
+      "changed_polygon_layers": {
+        "(1, 0)": {
+          "croc_area_um2": 6528.7795,
+          "official_area_um2": 6550.163,
+          "xor_area_um2": 21.383499999999998
+        },
+        "(10, 0)": {
+          "croc_area_um2": 1049.6532499999998,
+          "official_area_um2": 1054.49775,
+          "xor_area_um2": 9.189
+        },
+        "(14, 0)": {
+          "croc_area_um2": 5587.6411,
+          "official_area_um2": 5601.5680999999995,
+          "xor_area_um2": 13.927
+        },
+        "(19, 0)": {
+          "croc_area_um2": 68.5178,
+          "official_area_um2": 69.4203,
+          "xor_area_um2": 1.0469
+        },
+        "(31, 0)": {
+          "croc_area_um2": 3499.3097,
+          "official_area_um2": 3519.920975,
+          "xor_area_um2": 20.611275
+        },
+        "(40, 0)": {
+          "croc_area_um2": 4646.4077,
+          "official_area_um2": 4647.3917,
+          "xor_area_um2": 0.984
+        },
+        "(44, 0)": {
+          "croc_area_um2": 534.3308,
+          "official_area_um2": 560.0328999999999,
+          "xor_area_um2": 25.702099999999998
+        },
+        "(5, 0)": {
+          "croc_area_um2": 207.459,
+          "official_area_um2": 218.1195,
+          "xor_area_um2": 11.452499999999999
+        },
+        "(5, 2)": {
+          "croc_area_um2": 0.0,
+          "official_area_um2": 6.282,
+          "xor_area_um2": 6.282
+        },
+        "(51, 0)": {
+          "croc_area_um2": 0.0,
+          "official_area_um2": 5.31,
+          "xor_area_um2": 5.31
+        },
+        "(6, 0)": {
+          "croc_area_um2": 1200.2048,
+          "official_area_um2": 1203.3791999999999,
+          "xor_area_um2": 3.2256
+        },
+        "(8, 0)": {
+          "croc_area_um2": 6257.4695,
+          "official_area_um2": 6276.306525,
+          "xor_area_um2": 23.117774999999998
+        },
+        "(8, 2)": {
+          "croc_area_um2": 488.405376,
+          "official_area_um2": 489.962245,
+          "xor_area_um2": 3.4369609999999997
+        }
+      },
+      "croc_lef": {
+        "pins": {
+          "c2p": {
+            "direction": "INPUT",
+            "rects": [
+              {
+                "layer": "Metal2",
+                "um": [
+                  18.33,
+                  178.09,
+                  18.62,
+                  180.0
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  18.225,
+                  179.71,
+                  18.725,
+                  180.0
+                ]
+              }
+            ],
+            "use": "SIGNAL"
+          },
+          "c2p_en": {
+            "direction": "INPUT",
+            "rects": [
+              {
+                "layer": "Metal2",
+                "um": [
+                  21.38,
+                  174.045,
+                  21.67,
+                  180.0
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  21.275,
+                  179.71,
+                  21.775,
+                  180.0
+                ]
+              }
+            ],
+            "use": "SIGNAL"
+          },
+          "iovdd": {
+            "direction": "INOUT",
+            "rects": [
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  93.5,
+                  80.0,
+                  119.0
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  66.0,
+                  80.0,
+                  91.5
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  93.5,
+                  80.0,
+                  119.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  66.0,
+                  80.0,
+                  91.5
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  93.5,
+                  80.0,
+                  119.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  66.0,
+                  80.0,
+                  91.5
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  93.5,
+                  80.0,
+                  119.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  66.0,
+                  80.0,
+                  91.5
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  95.0,
+                  80.0,
+                  117.5
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  67.5,
+                  80.0,
+                  90.0
+                ]
+              }
+            ],
+            "use": "POWER"
+          },
+          "iovss": {
+            "direction": "INOUT",
+            "rects": [
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  7.0,
+                  80.0,
+                  32.5
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  126.0,
+                  80.0,
+                  134.0
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  34.5,
+                  80.0,
+                  60.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  7.0,
+                  80.0,
+                  32.5
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  126.0,
+                  80.0,
+                  134.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  34.5,
+                  80.0,
+                  60.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  7.0,
+                  80.0,
+                  32.5
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  126.0,
+                  80.0,
+                  134.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  34.5,
+                  80.0,
+                  60.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  7.0,
+                  80.0,
+                  32.5
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  126.0,
+                  80.0,
+                  134.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  34.5,
+                  80.0,
+                  60.0
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  36.0,
+                  80.0,
+                  58.5
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  8.5,
+                  80.0,
+                  31.0
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  127.5,
+                  80.0,
+                  132.5
+                ]
+              }
+            ],
+            "use": "GROUND"
+          },
+          "p2c": {
+            "direction": "OUTPUT",
+            "rects": [
+              {
+                "layer": "Metal2",
+                "um": [
+                  59.83,
+                  157.81,
+                  60.12,
+                  180.0
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  59.725,
+                  179.71,
+                  60.225,
+                  180.0
+                ]
+              }
+            ],
+            "use": "SIGNAL"
+          },
+          "pad": {
+            "direction": "INOUT",
+            "rects": [
+              {
+                "layer": "Metal2",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              }
+            ],
+            "use": "SIGNAL"
+          },
+          "vdd": {
+            "direction": "INOUT",
+            "rects": [
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  160.0,
+                  80.0,
+                  178.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  140.0,
+                  80.0,
+                  155.8
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  140.0,
+                  80.0,
+                  158.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  140.0,
+                  80.0,
+                  158.0
+                ]
+              }
+            ],
+            "use": "POWER"
+          },
+          "vss": {
+            "direction": "INOUT",
+            "rects": [
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  140.0,
+                  80.0,
+                  158.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  162.2,
+                  80.0,
+                  178.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  160.0,
+                  80.0,
+                  178.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  160.0,
+                  80.0,
+                  178.0
+                ]
+              }
+            ],
+            "use": "GROUND"
+          }
+        },
+        "size_um": [
+          80.0,
+          180.0
+        ]
+      },
+      "export_geometry_equal": true,
+      "exported_gds_file": "sg13g2_IOPadInOut30mA.gds",
+      "exported_gds_sha256": "e33129b67830697914c9a68f9597cc88b09301650f0ab6e0c00c94c0ea3f757f",
+      "gds_bbox_um": {
+        "croc": [
+          -0.62,
+          0.0,
+          80.62,
+          180.62
+        ],
+        "official": [
+          -0.62,
+          0.0,
+          80.62,
+          180.62
+        ]
+      },
+      "official_gds_pin_labels": [
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "p2c",
+          "position_um": [
+            59.975,
+            179.855
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "c2p_en",
+          "position_um": [
+            21.525000000000002,
+            179.855
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "c2p",
+          "position_um": [
+            18.475,
+            179.855
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            40.0,
+            1.5
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "vdd",
+          "position_um": [
+            40.0,
+            169.0
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "vss",
+          "position_um": [
+            40.0,
+            149.0
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            40.0,
+            78.75
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            40.0,
+            106.25
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            47.25
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            130.0
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            19.75
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            40.0,
+            1.5
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "vdd",
+          "position_um": [
+            40.0,
+            147.9
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "vss",
+          "position_um": [
+            40.0,
+            170.1
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            40.0,
+            78.75
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            40.0,
+            106.25
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            47.25
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            130.0
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            19.75
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            40.0,
+            1.5
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "vdd",
+          "position_um": [
+            40.0,
+            149.0
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "vss",
+          "position_um": [
+            40.0,
+            169.0
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            40.0,
+            78.75
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            40.0,
+            106.25
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            47.25
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            130.0
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            19.75
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            40.0,
+            1.5
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "vdd",
+          "position_um": [
+            40.0,
+            149.0
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "vss",
+          "position_um": [
+            40.0,
+            169.0
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            40.0,
+            78.75
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            40.0,
+            106.25
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            47.25
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            130.0
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            19.75
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            40.0,
+            1.5
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            40.0,
+            78.75
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            40.0,
+            106.25
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            130.0
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            19.75
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            47.25
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            1.669,
+            19.089
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            3.435,
+            17.287
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            4.11,
+            -19.5
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vdd",
+          "position_um": [
+            4.11,
+            11.28
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vss",
+          "position_um": [
+            4.11,
+            0.72
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vdd",
+          "position_um": [
+            0.6,
+            11.28
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vss",
+          "position_um": [
+            0.6,
+            0.72
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            1.7550000000000001,
+            0.0
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vss",
+          "position_um": [
+            1.7550000000000001,
+            8.5
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vdd",
+          "position_um": [
+            1.7550000000000001,
+            18.5
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            1.7550000000000001,
+            0.0
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vss",
+          "position_um": [
+            1.7550000000000001,
+            8.5
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vdd",
+          "position_um": [
+            1.7550000000000001,
+            18.5
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vdd",
+          "position_um": [
+            1.2,
+            11.28
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vss",
+          "position_um": [
+            1.2,
+            0.72
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vss",
+          "position_um": [
+            0.6,
+            0.72
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vdd",
+          "position_um": [
+            0.6,
+            11.28
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vdd",
+          "position_um": [
+            1.2,
+            11.28
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vss",
+          "position_um": [
+            1.2,
+            0.72
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            3.365,
+            0.0
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vdd",
+          "position_um": [
+            3.365,
+            18.5
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vss",
+          "position_um": [
+            3.365,
+            8.5
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            3.122,
+            7.934
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "p2c",
+          "position_um": [
+            59.975,
+            168.905
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "c2p_en",
+          "position_um": [
+            21.525000000000002,
+            177.023
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "c2p",
+          "position_um": [
+            18.475,
+            179.04500000000002
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            40.0,
+            1.5
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            48.28,
+            13.755
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            45.275,
+            13.755
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            42.29,
+            13.875
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            39.245,
+            13.895
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            36.125,
+            13.855
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            33.195,
+            13.875
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            30.19,
+            13.975
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            51.285000000000004,
+            13.795
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            3.61,
+            -7.355
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            1.44,
+            -7.705
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            1.44,
+            0.625
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            51.345,
+            8.22
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            48.305,
+            7.825
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            45.230000000000004,
+            7.67
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            42.22,
+            7.57
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            39.235,
+            7.375
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            33.14,
+            7.42
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            36.2,
+            7.3100000000000005
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            30.185000000000002,
+            6.328
+          ]
+        }
+      ],
+      "official_lef": {
+        "pins": {
+          "c2p": {
+            "direction": "INPUT",
+            "rects": [
+              {
+                "layer": "Metal2",
+                "um": [
+                  18.33,
+                  178.09,
+                  18.62,
+                  180.0
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  18.225,
+                  179.71,
+                  18.725,
+                  180.0
+                ]
+              }
+            ],
+            "use": "SIGNAL"
+          },
+          "c2p_en": {
+            "direction": "INPUT",
+            "rects": [
+              {
+                "layer": "Metal2",
+                "um": [
+                  21.38,
+                  174.045,
+                  21.67,
+                  180.0
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  21.275,
+                  179.71,
+                  21.775,
+                  180.0
+                ]
+              }
+            ],
+            "use": "SIGNAL"
+          },
+          "iovdd": {
+            "direction": "INOUT",
+            "rects": [
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  93.5,
+                  80.0,
+                  119.0
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  66.0,
+                  80.0,
+                  91.5
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  93.5,
+                  80.0,
+                  119.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  66.0,
+                  80.0,
+                  91.5
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  93.5,
+                  80.0,
+                  119.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  66.0,
+                  80.0,
+                  91.5
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  93.5,
+                  80.0,
+                  119.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  66.0,
+                  80.0,
+                  91.5
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  95.0,
+                  80.0,
+                  117.5
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  67.5,
+                  80.0,
+                  90.0
+                ]
+              }
+            ],
+            "use": "POWER"
+          },
+          "iovss": {
+            "direction": "INOUT",
+            "rects": [
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  7.0,
+                  80.0,
+                  32.5
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  126.0,
+                  80.0,
+                  134.0
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  34.5,
+                  80.0,
+                  60.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  7.0,
+                  80.0,
+                  32.5
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  126.0,
+                  80.0,
+                  134.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  34.5,
+                  80.0,
+                  60.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  7.0,
+                  80.0,
+                  32.5
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  126.0,
+                  80.0,
+                  134.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  34.5,
+                  80.0,
+                  60.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  7.0,
+                  80.0,
+                  32.5
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  126.0,
+                  80.0,
+                  134.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  34.5,
+                  80.0,
+                  60.0
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  36.0,
+                  80.0,
+                  58.5
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  8.5,
+                  80.0,
+                  31.0
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  127.5,
+                  80.0,
+                  132.5
+                ]
+              }
+            ],
+            "use": "GROUND"
+          },
+          "p2c": {
+            "direction": "OUTPUT",
+            "rects": [
+              {
+                "layer": "Metal2",
+                "um": [
+                  59.83,
+                  157.81,
+                  60.12,
+                  180.0
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  59.725,
+                  179.71,
+                  60.225,
+                  180.0
+                ]
+              }
+            ],
+            "use": "SIGNAL"
+          },
+          "pad": {
+            "direction": "INOUT",
+            "rects": [
+              {
+                "layer": "Metal2",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              }
+            ],
+            "use": "SIGNAL"
+          },
+          "vdd": {
+            "direction": "INOUT",
+            "rects": [
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  160.0,
+                  80.0,
+                  178.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  140.0,
+                  80.0,
+                  155.8
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  140.0,
+                  80.0,
+                  158.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  140.0,
+                  80.0,
+                  158.0
+                ]
+              }
+            ],
+            "use": "POWER"
+          },
+          "vss": {
+            "direction": "INOUT",
+            "rects": [
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  140.0,
+                  80.0,
+                  158.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  162.2,
+                  80.0,
+                  178.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  160.0,
+                  80.0,
+                  178.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  160.0,
+                  80.0,
+                  178.0
+                ]
+              }
+            ],
+            "use": "GROUND"
+          }
+        },
+        "size_um": [
+          80.0,
+          180.0
+        ]
+      },
+      "official_pin_metal_checks": [
+        {
+          "covered": true,
+          "layer": "Metal2",
+          "pin": "c2p",
+          "rect_um": [
+            18.33,
+            178.09,
+            18.62,
+            180.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal3",
+          "pin": "c2p",
+          "rect_um": [
+            18.225,
+            179.71,
+            18.725,
+            180.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal2",
+          "pin": "c2p_en",
+          "rect_um": [
+            21.38,
+            174.045,
+            21.67,
+            180.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal3",
+          "pin": "c2p_en",
+          "rect_um": [
+            21.275,
+            179.71,
+            21.775,
+            180.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal3",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            93.5,
+            80.0,
+            119.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal3",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            66.0,
+            80.0,
+            91.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal4",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            93.5,
+            80.0,
+            119.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal4",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            66.0,
+            80.0,
+            91.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal5",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            93.5,
+            80.0,
+            119.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal5",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            66.0,
+            80.0,
+            91.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal1",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            93.5,
+            80.0,
+            119.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal1",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            66.0,
+            80.0,
+            91.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal2",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            95.0,
+            80.0,
+            117.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal2",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            67.5,
+            80.0,
+            90.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal3",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            7.0,
+            80.0,
+            32.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal3",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            126.0,
+            80.0,
+            134.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal3",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            34.5,
+            80.0,
+            60.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal4",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            7.0,
+            80.0,
+            32.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal4",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            126.0,
+            80.0,
+            134.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal4",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            34.5,
+            80.0,
+            60.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal5",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            7.0,
+            80.0,
+            32.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal5",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            126.0,
+            80.0,
+            134.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal5",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            34.5,
+            80.0,
+            60.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal1",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            7.0,
+            80.0,
+            32.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal1",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            126.0,
+            80.0,
+            134.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal1",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            34.5,
+            80.0,
+            60.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal2",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            36.0,
+            80.0,
+            58.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal2",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            8.5,
+            80.0,
+            31.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal2",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            127.5,
+            80.0,
+            132.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal2",
+          "pin": "p2c",
+          "rect_um": [
+            59.83,
+            157.81,
+            60.12,
+            180.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal3",
+          "pin": "p2c",
+          "rect_um": [
+            59.725,
+            179.71,
+            60.225,
+            180.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal2",
+          "pin": "pad",
+          "rect_um": [
+            5.0,
+            0.0,
+            75.0,
+            3.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal3",
+          "pin": "pad",
+          "rect_um": [
+            5.0,
+            0.0,
+            75.0,
+            3.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal4",
+          "pin": "pad",
+          "rect_um": [
+            5.0,
+            0.0,
+            75.0,
+            3.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal5",
+          "pin": "pad",
+          "rect_um": [
+            5.0,
+            0.0,
+            75.0,
+            3.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal1",
+          "pin": "pad",
+          "rect_um": [
+            5.0,
+            0.0,
+            75.0,
+            3.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal2",
+          "pin": "pad",
+          "rect_um": [
+            5.0,
+            0.0,
+            75.0,
+            3.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal3",
+          "pin": "vdd",
+          "rect_um": [
+            0.0,
+            160.0,
+            80.0,
+            178.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal4",
+          "pin": "vdd",
+          "rect_um": [
+            0.0,
+            140.0,
+            80.0,
+            155.8
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal5",
+          "pin": "vdd",
+          "rect_um": [
+            0.0,
+            140.0,
+            80.0,
+            158.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal1",
+          "pin": "vdd",
+          "rect_um": [
+            0.0,
+            140.0,
+            80.0,
+            158.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal3",
+          "pin": "vss",
+          "rect_um": [
+            0.0,
+            140.0,
+            80.0,
+            158.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal4",
+          "pin": "vss",
+          "rect_um": [
+            0.0,
+            162.2,
+            80.0,
+            178.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal5",
+          "pin": "vss",
+          "rect_um": [
+            0.0,
+            160.0,
+            80.0,
+            178.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal1",
+          "pin": "vss",
+          "rect_um": [
+            0.0,
+            160.0,
+            80.0,
+            178.0
+          ],
+          "uncovered_um2": 0.0
+        }
+      ],
+      "pin_label_names_complete": true,
+      "same_lef_pin_names": true,
+      "same_lef_pin_shapes": true,
+      "same_lef_size": true,
+      "strict_LVS": "NOT_RUN_leaf_gate_unresolved"
+    },
+    "sg13g2_IOPadOut16mA": {
+      "PG_connectivity": "NOT_PROVEN_by_geometry_overlap",
+      "all_LEF_pin_rectangles_covered_by_GDS_metal": true,
+      "changed_polygon_layers": {},
+      "croc_lef": {
+        "pins": {
+          "c2p": {
+            "direction": "INPUT",
+            "rects": [
+              {
+                "layer": "Metal2",
+                "um": [
+                  38.145,
+                  167.0,
+                  41.855,
+                  180.0
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  38.145,
+                  179.71,
+                  41.855,
+                  180.0
+                ]
+              }
+            ],
+            "use": "SIGNAL"
+          },
+          "iovdd": {
+            "direction": "INOUT",
+            "rects": [
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  93.5,
+                  80.0,
+                  119.0
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  66.0,
+                  80.0,
+                  91.5
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  93.5,
+                  80.0,
+                  119.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  66.0,
+                  80.0,
+                  91.5
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  93.5,
+                  80.0,
+                  119.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  66.0,
+                  80.0,
+                  91.5
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  93.5,
+                  80.0,
+                  119.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  66.0,
+                  80.0,
+                  91.5
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  95.0,
+                  80.0,
+                  117.5
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  67.5,
+                  80.0,
+                  90.0
+                ]
+              }
+            ],
+            "use": "POWER"
+          },
+          "iovss": {
+            "direction": "INOUT",
+            "rects": [
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  7.0,
+                  80.0,
+                  32.5
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  126.0,
+                  80.0,
+                  134.0
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  34.5,
+                  80.0,
+                  60.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  7.0,
+                  80.0,
+                  32.5
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  126.0,
+                  80.0,
+                  134.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  34.5,
+                  80.0,
+                  60.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  7.0,
+                  80.0,
+                  32.5
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  126.0,
+                  80.0,
+                  134.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  34.5,
+                  80.0,
+                  60.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  7.0,
+                  80.0,
+                  32.5
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  126.0,
+                  80.0,
+                  134.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  34.5,
+                  80.0,
+                  60.0
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  36.0,
+                  80.0,
+                  58.5
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  8.5,
+                  80.0,
+                  31.0
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  127.5,
+                  80.0,
+                  132.5
+                ]
+              }
+            ],
+            "use": "GROUND"
+          },
+          "pad": {
+            "direction": "INOUT",
+            "rects": [
+              {
+                "layer": "Metal2",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              }
+            ],
+            "use": "SIGNAL"
+          },
+          "vdd": {
+            "direction": "INOUT",
+            "rects": [
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  160.0,
+                  80.0,
+                  178.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  140.0,
+                  80.0,
+                  155.8
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  140.0,
+                  80.0,
+                  158.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  140.0,
+                  80.0,
+                  158.0
+                ]
+              }
+            ],
+            "use": "POWER"
+          },
+          "vss": {
+            "direction": "INOUT",
+            "rects": [
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  140.0,
+                  80.0,
+                  158.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  162.2,
+                  80.0,
+                  178.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  160.0,
+                  80.0,
+                  178.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  160.0,
+                  80.0,
+                  178.0
+                ]
+              }
+            ],
+            "use": "GROUND"
+          }
+        },
+        "size_um": [
+          80.0,
+          180.0
+        ]
+      },
+      "export_geometry_equal": true,
+      "exported_gds_file": "sg13g2_IOPadOut16mA.gds",
+      "exported_gds_sha256": "01f7af2faec1ca7ba2bba813658c41043eb237971023974be8bd9ca28d144b2c",
+      "gds_bbox_um": {
+        "croc": [
+          -0.62,
+          0.0,
+          80.62,
+          180.0
+        ],
+        "official": [
+          -0.62,
+          0.0,
+          80.62,
+          180.0
+        ]
+      },
+      "official_gds_pin_labels": [
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "c2p",
+          "position_um": [
+            40.435,
+            179.845
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            40.0,
+            1.5
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "vdd",
+          "position_um": [
+            40.0,
+            169.0
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "vss",
+          "position_um": [
+            40.0,
+            149.0
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            40.0,
+            78.75
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            40.0,
+            106.25
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            47.25
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            130.0
+          ]
+        },
+        {
+          "layer": [
+            30,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            19.75
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            40.0,
+            1.5
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "vdd",
+          "position_um": [
+            40.0,
+            147.9
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "vss",
+          "position_um": [
+            40.0,
+            170.1
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            40.0,
+            78.75
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            40.0,
+            106.25
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            47.25
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            130.0
+          ]
+        },
+        {
+          "layer": [
+            50,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            19.75
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            40.0,
+            1.5
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "vdd",
+          "position_um": [
+            40.0,
+            149.0
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "vss",
+          "position_um": [
+            40.0,
+            169.0
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            40.0,
+            78.75
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            40.0,
+            106.25
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            47.25
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            130.0
+          ]
+        },
+        {
+          "layer": [
+            67,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            19.75
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            40.0,
+            1.5
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "vdd",
+          "position_um": [
+            45.96,
+            148.95000000000002
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            40.0,
+            78.75
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            40.0,
+            106.25
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            47.25
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            130.0
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            19.75
+          ]
+        },
+        {
+          "layer": [
+            126,
+            25
+          ],
+          "name": "vss",
+          "position_um": [
+            45.625,
+            168.70000000000002
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            40.0,
+            78.75
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            40.0,
+            106.25
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            130.0
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            19.75
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            40.0,
+            47.25
+          ]
+        },
+        {
+          "layer": [
+            134,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            46.615,
+            1.425
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            3.5100000000000002,
+            -19.5
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vdd",
+          "position_um": [
+            3.5100000000000002,
+            -1.0
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vss",
+          "position_um": [
+            3.5100000000000002,
+            -11.0
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            1.7550000000000001,
+            0.0
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vss",
+          "position_um": [
+            1.7550000000000001,
+            8.5
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vdd",
+          "position_um": [
+            1.7550000000000001,
+            18.5
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            1.7550000000000001,
+            0.0
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vss",
+          "position_um": [
+            1.7550000000000001,
+            8.5
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "vdd",
+          "position_um": [
+            1.7550000000000001,
+            18.5
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "iovdd",
+          "position_um": [
+            6.59,
+            17.29
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            6.42,
+            19.09
+          ]
+        },
+        {
+          "layer": [
+            8,
+            25
+          ],
+          "name": "iovss",
+          "position_um": [
+            4.21,
+            7.930000000000001
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "c2p",
+          "position_um": [
+            40.0,
+            173.5
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            40.0,
+            1.5
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            44.525,
+            13.445
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            41.480000000000004,
+            13.465
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            35.47,
+            11.163
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            38.44,
+            13.425
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            44.56,
+            8.745000000000001
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            41.505,
+            8.235
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            38.45,
+            7.55
+          ]
+        },
+        {
+          "layer": [
+            10,
+            25
+          ],
+          "name": "pad",
+          "position_um": [
+            35.47,
+            6.328
+          ]
+        }
+      ],
+      "official_lef": {
+        "pins": {
+          "c2p": {
+            "direction": "INPUT",
+            "rects": [
+              {
+                "layer": "Metal2",
+                "um": [
+                  38.145,
+                  167.0,
+                  41.855,
+                  180.0
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  38.145,
+                  179.71,
+                  41.855,
+                  180.0
+                ]
+              }
+            ],
+            "use": "SIGNAL"
+          },
+          "iovdd": {
+            "direction": "INOUT",
+            "rects": [
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  93.5,
+                  80.0,
+                  119.0
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  66.0,
+                  80.0,
+                  91.5
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  93.5,
+                  80.0,
+                  119.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  66.0,
+                  80.0,
+                  91.5
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  93.5,
+                  80.0,
+                  119.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  66.0,
+                  80.0,
+                  91.5
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  93.5,
+                  80.0,
+                  119.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  66.0,
+                  80.0,
+                  91.5
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  95.0,
+                  80.0,
+                  117.5
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  67.5,
+                  80.0,
+                  90.0
+                ]
+              }
+            ],
+            "use": "POWER"
+          },
+          "iovss": {
+            "direction": "INOUT",
+            "rects": [
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  7.0,
+                  80.0,
+                  32.5
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  126.0,
+                  80.0,
+                  134.0
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  34.5,
+                  80.0,
+                  60.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  7.0,
+                  80.0,
+                  32.5
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  126.0,
+                  80.0,
+                  134.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  34.5,
+                  80.0,
+                  60.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  7.0,
+                  80.0,
+                  32.5
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  126.0,
+                  80.0,
+                  134.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  34.5,
+                  80.0,
+                  60.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  7.0,
+                  80.0,
+                  32.5
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  126.0,
+                  80.0,
+                  134.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  34.5,
+                  80.0,
+                  60.0
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  36.0,
+                  80.0,
+                  58.5
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  8.5,
+                  80.0,
+                  31.0
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  0.0,
+                  127.5,
+                  80.0,
+                  132.5
+                ]
+              }
+            ],
+            "use": "GROUND"
+          },
+          "pad": {
+            "direction": "OUTPUT",
+            "rects": [
+              {
+                "layer": "Metal2",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "Metal3",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              },
+              {
+                "layer": "TopMetal2",
+                "um": [
+                  5.0,
+                  0.0,
+                  75.0,
+                  3.0
+                ]
+              }
+            ],
+            "use": "SIGNAL"
+          },
+          "vdd": {
+            "direction": "INOUT",
+            "rects": [
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  160.0,
+                  80.0,
+                  178.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  140.0,
+                  80.0,
+                  155.8
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  140.0,
+                  80.0,
+                  158.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  140.0,
+                  80.0,
+                  158.0
+                ]
+              }
+            ],
+            "use": "POWER"
+          },
+          "vss": {
+            "direction": "INOUT",
+            "rects": [
+              {
+                "layer": "Metal3",
+                "um": [
+                  0.0,
+                  140.0,
+                  80.0,
+                  158.0
+                ]
+              },
+              {
+                "layer": "Metal4",
+                "um": [
+                  0.0,
+                  162.2,
+                  80.0,
+                  178.0
+                ]
+              },
+              {
+                "layer": "Metal5",
+                "um": [
+                  0.0,
+                  160.0,
+                  80.0,
+                  178.0
+                ]
+              },
+              {
+                "layer": "TopMetal1",
+                "um": [
+                  0.0,
+                  160.0,
+                  80.0,
+                  178.0
+                ]
+              }
+            ],
+            "use": "GROUND"
+          }
+        },
+        "size_um": [
+          80.0,
+          180.0
+        ]
+      },
+      "official_pin_metal_checks": [
+        {
+          "covered": true,
+          "layer": "Metal2",
+          "pin": "c2p",
+          "rect_um": [
+            38.145,
+            167.0,
+            41.855,
+            180.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal3",
+          "pin": "c2p",
+          "rect_um": [
+            38.145,
+            179.71,
+            41.855,
+            180.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal3",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            93.5,
+            80.0,
+            119.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal3",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            66.0,
+            80.0,
+            91.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal4",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            93.5,
+            80.0,
+            119.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal4",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            66.0,
+            80.0,
+            91.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal5",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            93.5,
+            80.0,
+            119.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal5",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            66.0,
+            80.0,
+            91.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal1",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            93.5,
+            80.0,
+            119.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal1",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            66.0,
+            80.0,
+            91.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal2",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            95.0,
+            80.0,
+            117.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal2",
+          "pin": "iovdd",
+          "rect_um": [
+            0.0,
+            67.5,
+            80.0,
+            90.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal3",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            7.0,
+            80.0,
+            32.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal3",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            126.0,
+            80.0,
+            134.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal3",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            34.5,
+            80.0,
+            60.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal4",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            7.0,
+            80.0,
+            32.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal4",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            126.0,
+            80.0,
+            134.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal4",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            34.5,
+            80.0,
+            60.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal5",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            7.0,
+            80.0,
+            32.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal5",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            126.0,
+            80.0,
+            134.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal5",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            34.5,
+            80.0,
+            60.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal1",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            7.0,
+            80.0,
+            32.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal1",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            126.0,
+            80.0,
+            134.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal1",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            34.5,
+            80.0,
+            60.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal2",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            36.0,
+            80.0,
+            58.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal2",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            8.5,
+            80.0,
+            31.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal2",
+          "pin": "iovss",
+          "rect_um": [
+            0.0,
+            127.5,
+            80.0,
+            132.5
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal2",
+          "pin": "pad",
+          "rect_um": [
+            5.0,
+            0.0,
+            75.0,
+            3.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal3",
+          "pin": "pad",
+          "rect_um": [
+            5.0,
+            0.0,
+            75.0,
+            3.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal4",
+          "pin": "pad",
+          "rect_um": [
+            5.0,
+            0.0,
+            75.0,
+            3.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal5",
+          "pin": "pad",
+          "rect_um": [
+            5.0,
+            0.0,
+            75.0,
+            3.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal1",
+          "pin": "pad",
+          "rect_um": [
+            5.0,
+            0.0,
+            75.0,
+            3.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal2",
+          "pin": "pad",
+          "rect_um": [
+            5.0,
+            0.0,
+            75.0,
+            3.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal3",
+          "pin": "vdd",
+          "rect_um": [
+            0.0,
+            160.0,
+            80.0,
+            178.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal4",
+          "pin": "vdd",
+          "rect_um": [
+            0.0,
+            140.0,
+            80.0,
+            155.8
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal5",
+          "pin": "vdd",
+          "rect_um": [
+            0.0,
+            140.0,
+            80.0,
+            158.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal1",
+          "pin": "vdd",
+          "rect_um": [
+            0.0,
+            140.0,
+            80.0,
+            158.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal3",
+          "pin": "vss",
+          "rect_um": [
+            0.0,
+            140.0,
+            80.0,
+            158.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal4",
+          "pin": "vss",
+          "rect_um": [
+            0.0,
+            162.2,
+            80.0,
+            178.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "Metal5",
+          "pin": "vss",
+          "rect_um": [
+            0.0,
+            160.0,
+            80.0,
+            178.0
+          ],
+          "uncovered_um2": 0.0
+        },
+        {
+          "covered": true,
+          "layer": "TopMetal1",
+          "pin": "vss",
+          "rect_um": [
+            0.0,
+            160.0,
+            80.0,
+            178.0
+          ],
+          "uncovered_um2": 0.0
+        }
+      ],
+      "pin_label_names_complete": true,
+      "same_lef_pin_names": true,
+      "same_lef_pin_shapes": false,
+      "same_lef_size": true,
+      "strict_LVS": "NOT_RUN_leaf_gate_unresolved"
+    }
+  },
+  "chip_layout_modified": false,
+  "classification": "matched_IO_physical_views_not_connectivity_or_signoff",
+  "full_chip_lvs_performed": false,
+  "official_pdk_modified": false,
+  "source_sha256": {
+    "upstream/croc/technology/gds/sg13g2_io.gds": "8bb45016e5a99e48b1df1ea52c97d6813d96f6afeb905a72a956ddc2c018565f",
+    "upstream/croc/technology/lef/sg13g2_io.lef": "8b3dc3960960c08e07a1cde3dd9cd0484f5b12df07c4628726fff551bb775c0c",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/gds/sg13g2_io.gds": "4281a855377b6a1ca46356e9391258dc14e8efc3b8051a65befc0fe9db3c7825",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io.lef": "1100f050cd477b0db6072e1b2b53ee1e13d7e5473e7b5d20f27534cc27806320"
+  }
+}

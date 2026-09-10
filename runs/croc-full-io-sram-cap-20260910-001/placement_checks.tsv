@@ -1,0 +1,4 @@
+check	tcl_catch_code	message
+check_placement	0	
+check_power_grid_VDD	0	1
+check_power_grid_VSS	0	1

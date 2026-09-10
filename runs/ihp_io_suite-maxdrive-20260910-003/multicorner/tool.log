@@ -1,0 +1,20 @@
+[INFO] Final PATH variable: /foss/tools/bin:/foss/tools/sak:/usr/local/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/foss/tools/kactus2:/foss/tools/klayout:/foss/tools/osic-multitool
+[INFO] Final PYTHONPATH variable: /usr/lib/python312.zip:/usr/lib/python3.12:/usr/lib/python3.12/lib-dynload:/usr/local/lib/python3.12/dist-packages:/usr/lib/python3/dist-packages:/foss/tools/ngspyce/local/lib/python3.12/dist-packages:/foss/tools/openems/local/lib/python3.12/dist-packages:/foss/tools/yosys/share/yosys/python3:/foss/tools/klayout/pymod
+OpenROAD v2.0-27244-gfecb04286 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 2 thread(s).
+[INFO ODB-0227] LEF file: /work/upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef, created 19 layers, 70 vias
+[INFO ODB-0227] LEF file: /work/upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io.lef, created 22 library cells
+[INFO ODB-0127] Reading DEF file: /output/input.def
+[INFO ODB-0128] Design: ihp_io_suite_tiny
+[INFO ODB-0130]     Created 22 pins.
+[INFO ODB-0131]     Created 6 components and 42 component-terminals.
+[INFO ODB-0132]     Created 4 special nets and 24 connections.
+[INFO ODB-0133]     Created 18 nets and 18 connections.
+[INFO ODB-0134] Finished DEF file: /output/input.def
+IHP_IO_SUITE_CORNER_COMPLETE_tt
+IHP_IO_SUITE_CORNER_COMPLETE_ff
+IHP_IO_SUITE_CORNER_COMPLETE_ss
+IHP_IO_SUITE_STA_COMPLETE

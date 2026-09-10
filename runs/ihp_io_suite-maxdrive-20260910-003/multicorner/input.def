@@ -1,0 +1,65 @@
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN ihp_io_suite_tiny ;
+UNITS DISTANCE MICRONS 1000 ;
+DIEAREA ( 0 0 ) ( 700000 300000 ) ;
+COMPONENTS 6 ;
+- out16 sg13g2_IOPadOut30mA + FIXED ( 0 0 ) N ;
+- bi_tx sg13g2_IOPadInOut30mA + FIXED ( 100000 0 ) N ;
+- bi_rx sg13g2_IOPadInOut30mA + FIXED ( 200000 0 ) N ;
+- bi_z sg13g2_IOPadInOut30mA + FIXED ( 300000 0 ) N ;
+- in_data sg13g2_IOPadIn + FIXED ( 400000 0 ) N ;
+- in_clock sg13g2_IOPadIn + FIXED ( 500000 0 ) N ;
+END COMPONENTS
+PINS 22 ;
+- out_pad + NET out_pad + DIRECTION OUTPUT + USE SIGNAL + PORT + LAYER Metal2 ( 0 0 ) ( 1000 1000 ) + FIXED ( 0 250000 ) N ;
+- out_core + NET out_core + DIRECTION INPUT + USE SIGNAL + PORT + LAYER Metal2 ( 0 0 ) ( 1000 1000 ) + FIXED ( 0 250000 ) N ;
+- bi_tx_pad + NET bi_tx_pad + DIRECTION OUTPUT + USE SIGNAL + PORT + LAYER Metal2 ( 0 0 ) ( 1000 1000 ) + FIXED ( 0 250000 ) N ;
+- bi_tx_core + NET bi_tx_core + DIRECTION INPUT + USE SIGNAL + PORT + LAYER Metal2 ( 0 0 ) ( 1000 1000 ) + FIXED ( 0 250000 ) N ;
+- bi_tx_rx + NET bi_tx_rx + DIRECTION OUTPUT + USE SIGNAL + PORT + LAYER Metal2 ( 0 0 ) ( 1000 1000 ) + FIXED ( 0 250000 ) N ;
+- bi_tx_en + NET bi_tx_en + DIRECTION INPUT + USE SIGNAL + PORT + LAYER Metal2 ( 0 0 ) ( 1000 1000 ) + FIXED ( 0 250000 ) N ;
+- bi_rx_pad + NET bi_rx_pad + DIRECTION INPUT + USE SIGNAL + PORT + LAYER Metal2 ( 0 0 ) ( 1000 1000 ) + FIXED ( 0 250000 ) N ;
+- bi_rx_core + NET bi_rx_core + DIRECTION INPUT + USE SIGNAL + PORT + LAYER Metal2 ( 0 0 ) ( 1000 1000 ) + FIXED ( 0 250000 ) N ;
+- bi_rx_rx + NET bi_rx_rx + DIRECTION OUTPUT + USE SIGNAL + PORT + LAYER Metal2 ( 0 0 ) ( 1000 1000 ) + FIXED ( 0 250000 ) N ;
+- bi_rx_en + NET bi_rx_en + DIRECTION INPUT + USE SIGNAL + PORT + LAYER Metal2 ( 0 0 ) ( 1000 1000 ) + FIXED ( 0 250000 ) N ;
+- bi_z_pad + NET bi_z_pad + DIRECTION OUTPUT + USE SIGNAL + PORT + LAYER Metal2 ( 0 0 ) ( 1000 1000 ) + FIXED ( 0 250000 ) N ;
+- bi_z_core + NET bi_z_core + DIRECTION INPUT + USE SIGNAL + PORT + LAYER Metal2 ( 0 0 ) ( 1000 1000 ) + FIXED ( 0 250000 ) N ;
+- bi_z_rx + NET bi_z_rx + DIRECTION OUTPUT + USE SIGNAL + PORT + LAYER Metal2 ( 0 0 ) ( 1000 1000 ) + FIXED ( 0 250000 ) N ;
+- bi_z_en + NET bi_z_en + DIRECTION INPUT + USE SIGNAL + PORT + LAYER Metal2 ( 0 0 ) ( 1000 1000 ) + FIXED ( 0 250000 ) N ;
+- in_pad + NET in_pad + DIRECTION INPUT + USE SIGNAL + PORT + LAYER Metal2 ( 0 0 ) ( 1000 1000 ) + FIXED ( 0 250000 ) N ;
+- in_core + NET in_core + DIRECTION OUTPUT + USE SIGNAL + PORT + LAYER Metal2 ( 0 0 ) ( 1000 1000 ) + FIXED ( 0 250000 ) N ;
+- clk_pad + NET clk_pad + DIRECTION INPUT + USE SIGNAL + PORT + LAYER Metal2 ( 0 0 ) ( 1000 1000 ) + FIXED ( 0 250000 ) N ;
+- clk_core + NET clk_core + DIRECTION OUTPUT + USE SIGNAL + PORT + LAYER Metal2 ( 0 0 ) ( 1000 1000 ) + FIXED ( 0 250000 ) N ;
+- vdd + NET vdd + DIRECTION INOUT + USE POWER + PORT + LAYER Metal3 ( 0 0 ) ( 1000 1000 ) + FIXED ( 0 260000 ) N ;
+- vss + NET vss + DIRECTION INOUT + USE GROUND + PORT + LAYER Metal3 ( 0 0 ) ( 1000 1000 ) + FIXED ( 0 260000 ) N ;
+- iovdd + NET iovdd + DIRECTION INOUT + USE POWER + PORT + LAYER Metal3 ( 0 0 ) ( 1000 1000 ) + FIXED ( 0 260000 ) N ;
+- iovss + NET iovss + DIRECTION INOUT + USE GROUND + PORT + LAYER Metal3 ( 0 0 ) ( 1000 1000 ) + FIXED ( 0 260000 ) N ;
+END PINS
+NETS 18 ;
+- out_pad ( PIN out_pad ) ( out16 pad ) + USE SIGNAL ;
+- out_core ( PIN out_core ) ( out16 c2p ) + USE SIGNAL ;
+- bi_tx_pad ( PIN bi_tx_pad ) ( bi_tx pad ) + USE SIGNAL ;
+- bi_tx_core ( PIN bi_tx_core ) ( bi_tx c2p ) + USE SIGNAL ;
+- bi_tx_rx ( PIN bi_tx_rx ) ( bi_tx p2c ) + USE SIGNAL ;
+- bi_tx_en ( PIN bi_tx_en ) ( bi_tx c2p_en ) + USE SIGNAL ;
+- bi_rx_pad ( PIN bi_rx_pad ) ( bi_rx pad ) + USE SIGNAL ;
+- bi_rx_core ( PIN bi_rx_core ) ( bi_rx c2p ) + USE SIGNAL ;
+- bi_rx_rx ( PIN bi_rx_rx ) ( bi_rx p2c ) + USE SIGNAL ;
+- bi_rx_en ( PIN bi_rx_en ) ( bi_rx c2p_en ) + USE SIGNAL ;
+- bi_z_pad ( PIN bi_z_pad ) ( bi_z pad ) + USE SIGNAL ;
+- bi_z_core ( PIN bi_z_core ) ( bi_z c2p ) + USE SIGNAL ;
+- bi_z_rx ( PIN bi_z_rx ) ( bi_z p2c ) + USE SIGNAL ;
+- bi_z_en ( PIN bi_z_en ) ( bi_z c2p_en ) + USE SIGNAL ;
+- in_pad ( PIN in_pad ) ( in_data pad ) + USE SIGNAL ;
+- in_core ( PIN in_core ) ( in_data p2c ) + USE SIGNAL ;
+- clk_pad ( PIN clk_pad ) ( in_clock pad ) + USE SIGNAL ;
+- clk_core ( PIN clk_core ) ( in_clock p2c ) + USE SIGNAL ;
+END NETS
+SPECIALNETS 4 ;
+- vdd ( PIN vdd ) ( out16 vdd ) ( bi_tx vdd ) ( bi_rx vdd ) ( bi_z vdd ) ( in_data vdd ) ( in_clock vdd ) + USE POWER ;
+- vss ( PIN vss ) ( out16 vss ) ( bi_tx vss ) ( bi_rx vss ) ( bi_z vss ) ( in_data vss ) ( in_clock vss ) + USE GROUND ;
+- iovdd ( PIN iovdd ) ( out16 iovdd ) ( bi_tx iovdd ) ( bi_rx iovdd ) ( bi_z iovdd ) ( in_data iovdd ) ( in_clock iovdd ) + USE POWER ;
+- iovss ( PIN iovss ) ( out16 iovss ) ( bi_tx iovss ) ( bi_rx iovss ) ( bi_z iovss ) ( in_data iovss ) ( in_clock iovss ) + USE GROUND ;
+END SPECIALNETS
+END DESIGN

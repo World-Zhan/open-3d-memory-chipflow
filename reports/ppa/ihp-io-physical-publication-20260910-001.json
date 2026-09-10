@@ -1,0 +1,161 @@
+{
+  "classification": "exact_small_IO_physical_evidence_inventory",
+  "also_publish_this_inventory": "reports/ppa/ihp-io-physical-publication-20260910-001.json",
+  "files": [
+    {
+      "path": "reports/ppa/ihp-io-physical-20260910-001.json",
+      "bytes": 18812,
+      "sha256": "27bd22462348badb5b6090d08ebcc9bd7b96f8b902bcf9bd25ab36548ab7ed6e"
+    },
+    {
+      "path": "reports/ppa/ihp-io-physical-final-20260910-001.json",
+      "bytes": 21501,
+      "sha256": "0d502dd49a466df7ceb9a58376002647cc5e3a31705dcc93dc73bf4bcb1c6a84"
+    },
+    {
+      "path": "runs/ihp-io-physical-20260910-001/geometry/execution.json",
+      "bytes": 1302,
+      "sha256": "bb36eddce023e86ff579efa3569fdf11d0f0e4959ec5d657857f6a4cdddaf844"
+    },
+    {
+      "path": "runs/ihp-io-physical-20260910-001/geometry/geometry.json",
+      "bytes": 133251,
+      "sha256": "d1905be13ccd919c52f66b46ddfb9d69e6435908c3741f28d8a1e8c847f9e4c6"
+    },
+    {
+      "path": "runs/ihp-io-physical-20260910-001/geometry/terminal_observation.json",
+      "bytes": 715,
+      "sha256": "2e329f9bbab50bd4f97ad429d9a7fdc36793e143ba064520d4e511fbef54d486"
+    },
+    {
+      "path": "runs/ihp-io-physical-20260910-001/geometry/tool.log",
+      "bytes": 903,
+      "sha256": "c6379b51c7503be663e2de3d6f4319586abad32b7446eed4bff96570cee96e96"
+    },
+    {
+      "path": "runs/ihp-io-physical-20260910-001/manifest.json",
+      "bytes": 21897,
+      "sha256": "a66fb40e20fd6166ac07536a2118f73c0cfae64776f122dcabf2585335f7c168"
+    },
+    {
+      "path": "runs/ihp-io-physical-20260910-001/sg13g2_IOPadInOut30mA/drc_run_2026_09_10_12_30_29.log",
+      "bytes": 1760,
+      "sha256": "3d1c342ae68ffa238d418d2beb6493b2ac11bbe1e688f32b6055916c30335c4f"
+    },
+    {
+      "path": "runs/ihp-io-physical-20260910-001/sg13g2_IOPadInOut30mA/execution.json",
+      "bytes": 1520,
+      "sha256": "fbd8e12cab708ce701a060c60b730a2f60d6ca25531c27bec1c9f8a614e17295"
+    },
+    {
+      "path": "runs/ihp-io-physical-20260910-001/sg13g2_IOPadInOut30mA/sg13g2_IOPadInOut30mA_sg13g2_IOPadInOut30mA_antenna.log",
+      "bytes": 9262,
+      "sha256": "40a3dedfcff5b3cba3402f5532ab548b37f72ce89c5a5f1f074c5322dbc5233c"
+    },
+    {
+      "path": "runs/ihp-io-physical-20260910-001/sg13g2_IOPadInOut30mA/sg13g2_IOPadInOut30mA_sg13g2_IOPadInOut30mA_density.log",
+      "bytes": 11967,
+      "sha256": "49143e8ac684c88a1baa06ca2d5f8fa75d9a7b1e775ac63e61cc0b9d0804d9b9"
+    },
+    {
+      "path": "runs/ihp-io-physical-20260910-001/sg13g2_IOPadInOut30mA/sg13g2_IOPadInOut30mA_sg13g2_IOPadInOut30mA_full.lyrdb",
+      "bytes": 173885,
+      "sha256": "45491b09932fe01e434d6a607960bec7c0ad0f0023876ff8ca8777520f5d3adb"
+    },
+    {
+      "path": "runs/ihp-io-physical-20260910-001/sg13g2_IOPadInOut30mA/sg13g2_IOPadInOut30mA_sg13g2_IOPadInOut30mA_main.log",
+      "bytes": 78365,
+      "sha256": "83b24a0415a74bd0866f6d1a6abdac578a4e201fa441ab320669099b2ec0e157"
+    },
+    {
+      "path": "runs/ihp-io-physical-20260910-001/sg13g2_IOPadInOut30mA/sg13g2_IOPadInOut30mA_sg13g2_IOPadInOut30mA_sg13g2_maximal.log",
+      "bytes": 968,
+      "sha256": "93dcf398033252f178a7b1aefaa4050117f6f407ee1efa3bd060f0872a20a09d"
+    },
+    {
+      "path": "runs/ihp-io-physical-20260910-001/sg13g2_IOPadInOut30mA/terminal_observation.json",
+      "bytes": 741,
+      "sha256": "6a02b3cecec85cf6e88de3d1d3eb66725325802e016057c41f3dfda285c2e0e0"
+    },
+    {
+      "path": "runs/ihp-io-physical-20260910-001/sg13g2_IOPadInOut30mA/tool.log",
+      "bytes": 110025,
+      "sha256": "541f096324714c20f242452bcec4498062ba5c0d555f21b772470f319aba2626"
+    },
+    {
+      "path": "runs/ihp-io-physical-20260910-001/sg13g2_IOPadOut16mA/drc_run_2026_09_10_12_30_07.log",
+      "bytes": 1744,
+      "sha256": "a32a29e645cacf464fe39e7f5a02666e796f2b258becef4f1f820fa806cd4f0b"
+    },
+    {
+      "path": "runs/ihp-io-physical-20260910-001/sg13g2_IOPadOut16mA/execution.json",
+      "bytes": 1512,
+      "sha256": "2dde653750bfaf471bfdd27722e8fc084763f2ab80232890465f08b36f2a4b8d"
+    },
+    {
+      "path": "runs/ihp-io-physical-20260910-001/sg13g2_IOPadOut16mA/sg13g2_IOPadOut16mA_sg13g2_IOPadOut16mA_antenna.log",
+      "bytes": 9261,
+      "sha256": "db9b02884a0d28df5d17051733fd49ae05b4010c6d2731a6b2d432ab1e63fc32"
+    },
+    {
+      "path": "runs/ihp-io-physical-20260910-001/sg13g2_IOPadOut16mA/sg13g2_IOPadOut16mA_sg13g2_IOPadOut16mA_density.log",
+      "bytes": 11972,
+      "sha256": "ab1ff0b810b3017897e1c13f111e5962297002a35c357ea27fc9eb30681cc2b5"
+    },
+    {
+      "path": "runs/ihp-io-physical-20260910-001/sg13g2_IOPadOut16mA/sg13g2_IOPadOut16mA_sg13g2_IOPadOut16mA_full.lyrdb",
+      "bytes": 173833,
+      "sha256": "118d0bb67f9b110ff7a8bfebc004edf82007a1d66ec2a3fdb462f4c493a30dab"
+    },
+    {
+      "path": "runs/ihp-io-physical-20260910-001/sg13g2_IOPadOut16mA/sg13g2_IOPadOut16mA_sg13g2_IOPadOut16mA_main.log",
+      "bytes": 78362,
+      "sha256": "81d5386b2efe4a9055fd04faf887b1d6f6f734ef77ea4b5d78282ba7b91ed0c6"
+    },
+    {
+      "path": "runs/ihp-io-physical-20260910-001/sg13g2_IOPadOut16mA/sg13g2_IOPadOut16mA_sg13g2_IOPadOut16mA_sg13g2_maximal.log",
+      "bytes": 962,
+      "sha256": "2d2f7008d8350b9ab589419990a727e767043890651b7e1b2345dd7b8762f550"
+    },
+    {
+      "path": "runs/ihp-io-physical-20260910-001/sg13g2_IOPadOut16mA/terminal_observation.json",
+      "bytes": 737,
+      "sha256": "db9a866eb774ab310bbeeb62140de4a3ccb1595bfbc0b06e2a8700c307fc3514"
+    },
+    {
+      "path": "runs/ihp-io-physical-20260910-001/sg13g2_IOPadOut16mA/tool.log",
+      "bytes": 110004,
+      "sha256": "1428c8f3ee4d07ecc3b34dd3478fdd0136146c9c5a7456adee0ad60f3b0ed1fa"
+    },
+    {
+      "path": "scripts/audit_ihp_io_physical.py",
+      "bytes": 7307,
+      "sha256": "901f055913ed5e4ad8805cedbdcf4b2e69c76189f0c3ad2b71926446c3b975ea"
+    },
+    {
+      "path": "scripts/audit_ihp_io_physical_final.py",
+      "bytes": 5200,
+      "sha256": "94b05b3b821aae4605c4e647213b23d3bbe118e7888bbeeeb8687ef335b4127f"
+    },
+    {
+      "path": "scripts/probe_ihp_io_physical.py",
+      "bytes": 7028,
+      "sha256": "1269cc910a5d0b1798cffdcac3896c34b1327ab49ab9d58bbfc967f756172901"
+    },
+    {
+      "path": "scripts/run_ihp_io_physical.py",
+      "bytes": 6860,
+      "sha256": "1d57bdba6d6f646360940dbe693d31185fc0ff36290e4916679c8befb86dfccd"
+    },
+    {
+      "path": "tests/test_ihp_io_physical.py",
+      "bytes": 2948,
+      "sha256": "703d32e1c5e0da31f20cfd5f9c7c9bbdf9c3c02f277b24f95a7be6802879519f"
+    },
+    {
+      "path": "tests/test_ihp_io_physical_final.py",
+      "bytes": 2252,
+      "sha256": "8d6bdb1b3ad484e86977cb2c0fc1cd3cd6fe38230c042057091d20230463545f"
+    }
+  ]
+}

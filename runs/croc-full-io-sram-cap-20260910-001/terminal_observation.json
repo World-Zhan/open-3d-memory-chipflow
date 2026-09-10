@@ -1,0 +1,29 @@
+{
+  "observed_at": "2026-09-10T12:31:23.094632+00:00",
+  "resources": {
+    "BlockIO": "0B / 0B",
+    "CPUPerc": "0.00%",
+    "Container": "croc-full-io-sram-cap-20260910-001",
+    "ID": "50e798b98c55",
+    "MemPerc": "0.00%",
+    "MemUsage": "0B / 0B",
+    "Name": "croc-full-io-sram-cap-20260910-001",
+    "NetIO": "0B / 0B",
+    "PIDs": "0"
+  },
+  "resources_returncode": 0,
+  "state": {
+    "Dead": false,
+    "Error": "",
+    "ExitCode": 0,
+    "FinishedAt": "2026-09-10T12:31:22.853426788Z",
+    "OOMKilled": false,
+    "Paused": false,
+    "Pid": 0,
+    "Restarting": false,
+    "Running": false,
+    "StartedAt": "2026-09-10T12:30:48.18872343Z",
+    "Status": "exited"
+  },
+  "state_returncode": 0
+}

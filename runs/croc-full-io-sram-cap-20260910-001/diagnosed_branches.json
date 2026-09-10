@@ -1,0 +1,1564 @@
+{
+  "branches": [
+    {
+      "bank": 0,
+      "bit": 0,
+      "buffer": "eco_sram_cap_b0_d00",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6015_/B2",
+        "i_croc_soc/i_croc/_6677_/B2",
+        "i_croc_soc/i_croc/_6871_/B2",
+        "i_croc_soc/i_croc/_7261_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5481",
+      "pin": "A_DOUT[0]",
+      "pin_center_x_dbu": 383070,
+      "pin_local_rectangle_um": [
+        10.62,
+        0.0,
+        10.88,
+        0.26
+      ],
+      "reported_actual_pf": 0.11,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 1,
+      "buffer": "eco_sram_cap_b0_d01",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6195_/B2",
+        "i_croc_soc/i_croc/_6684_/B2",
+        "i_croc_soc/i_croc/_6878_/B2",
+        "i_croc_soc/i_croc/_7259_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5470",
+      "pin": "A_DOUT[1]",
+      "pin_center_x_dbu": 394310,
+      "pin_local_rectangle_um": [
+        21.86,
+        0.0,
+        22.12,
+        0.26
+      ],
+      "reported_actual_pf": 0.11,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 2,
+      "buffer": "eco_sram_cap_b0_d02",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6338_/B2",
+        "i_croc_soc/i_croc/_6688_/B2",
+        "i_croc_soc/i_croc/_6882_/B2",
+        "i_croc_soc/i_croc/_7251_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5459",
+      "pin": "A_DOUT[2]",
+      "pin_center_x_dbu": 405550,
+      "pin_local_rectangle_um": [
+        33.1,
+        0.0,
+        33.36,
+        0.26
+      ],
+      "reported_actual_pf": 0.11,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 3,
+      "buffer": "eco_sram_cap_b0_d03",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6375_/B2",
+        "i_croc_soc/i_croc/_6692_/B2",
+        "i_croc_soc/i_croc/_6886_/B2",
+        "i_croc_soc/i_croc/_7247_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5456",
+      "pin": "A_DOUT[3]",
+      "pin_center_x_dbu": 416790,
+      "pin_local_rectangle_um": [
+        44.34,
+        0.0,
+        44.6,
+        0.26
+      ],
+      "reported_actual_pf": 0.11,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 4,
+      "buffer": "eco_sram_cap_b0_d04",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6387_/B2",
+        "i_croc_soc/i_croc/_6696_/B2",
+        "i_croc_soc/i_croc/_6890_/B2",
+        "i_croc_soc/i_croc/_7243_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5455",
+      "pin": "A_DOUT[4]",
+      "pin_center_x_dbu": 428030,
+      "pin_local_rectangle_um": [
+        55.58,
+        0.0,
+        55.84,
+        0.26
+      ],
+      "reported_actual_pf": 0.11,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 5,
+      "buffer": "eco_sram_cap_b0_d05",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6391_/B2",
+        "i_croc_soc/i_croc/_6534_/B2",
+        "i_croc_soc/i_croc/_6727_/B2",
+        "i_croc_soc/i_croc/_7235_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5454",
+      "pin": "A_DOUT[5]",
+      "pin_center_x_dbu": 439270,
+      "pin_local_rectangle_um": [
+        66.82,
+        0.0,
+        67.08,
+        0.26
+      ],
+      "reported_actual_pf": 0.11,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 6,
+      "buffer": "eco_sram_cap_b0_d06",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6404_/B2",
+        "i_croc_soc/i_croc/_6546_/B2",
+        "i_croc_soc/i_croc/_6739_/B2",
+        "i_croc_soc/i_croc/_7230_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5453",
+      "pin": "A_DOUT[6]",
+      "pin_center_x_dbu": 450510,
+      "pin_local_rectangle_um": [
+        78.06,
+        0.0,
+        78.32,
+        0.26
+      ],
+      "reported_actual_pf": 0.11,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 7,
+      "buffer": "eco_sram_cap_b0_d07",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6417_/B2",
+        "i_croc_soc/i_croc/_6551_/B2",
+        "i_croc_soc/i_croc/_6744_/B2",
+        "i_croc_soc/i_croc/_7225_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5452",
+      "pin": "A_DOUT[7]",
+      "pin_center_x_dbu": 461750,
+      "pin_local_rectangle_um": [
+        89.3,
+        0.0,
+        89.56,
+        0.26
+      ],
+      "reported_actual_pf": 0.11,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 8,
+      "buffer": "eco_sram_cap_b0_d08",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6438_/B2",
+        "i_croc_soc/i_croc/_6566_/B2",
+        "i_croc_soc/i_croc/_6759_/B2",
+        "i_croc_soc/i_croc/_7223_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5451",
+      "pin": "A_DOUT[8]",
+      "pin_center_x_dbu": 472990,
+      "pin_local_rectangle_um": [
+        100.54,
+        0.0,
+        100.8,
+        0.26
+      ],
+      "reported_actual_pf": 0.11,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 9,
+      "buffer": "eco_sram_cap_b0_d09",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6450_/B2",
+        "i_croc_soc/i_croc/_6571_/B2",
+        "i_croc_soc/i_croc/_6764_/B2",
+        "i_croc_soc/i_croc/_7219_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5450",
+      "pin": "A_DOUT[9]",
+      "pin_center_x_dbu": 484230,
+      "pin_local_rectangle_um": [
+        111.78,
+        0.0,
+        112.04,
+        0.26
+      ],
+      "reported_actual_pf": 0.1,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 10,
+      "buffer": "eco_sram_cap_b0_d10",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6040_/B2",
+        "i_croc_soc/i_croc/_6573_/B2",
+        "i_croc_soc/i_croc/_6766_/B2",
+        "i_croc_soc/i_croc/_7210_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5480",
+      "pin": "A_DOUT[10]",
+      "pin_center_x_dbu": 495470,
+      "pin_local_rectangle_um": [
+        123.02,
+        0.0,
+        123.28,
+        0.26
+      ],
+      "reported_actual_pf": 0.1,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 11,
+      "buffer": "eco_sram_cap_b0_d11",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6079_/B2",
+        "i_croc_soc/i_croc/_6580_/B2",
+        "i_croc_soc/i_croc/_6773_/B2",
+        "i_croc_soc/i_croc/_7208_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5479",
+      "pin": "A_DOUT[11]",
+      "pin_center_x_dbu": 506710,
+      "pin_local_rectangle_um": [
+        134.26,
+        0.0,
+        134.52,
+        0.26
+      ],
+      "reported_actual_pf": 0.1,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 12,
+      "buffer": "eco_sram_cap_b0_d12",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6083_/B2",
+        "i_croc_soc/i_croc/_6582_/B2",
+        "i_croc_soc/i_croc/_6775_/B2",
+        "i_croc_soc/i_croc/_7195_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5478",
+      "pin": "A_DOUT[12]",
+      "pin_center_x_dbu": 517950,
+      "pin_local_rectangle_um": [
+        145.5,
+        0.0,
+        145.76,
+        0.26
+      ],
+      "reported_actual_pf": 0.1,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 13,
+      "buffer": "eco_sram_cap_b0_d13",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6104_/B2",
+        "i_croc_soc/i_croc/_6589_/B2",
+        "i_croc_soc/i_croc/_6782_/B2",
+        "i_croc_soc/i_croc/_7193_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5477",
+      "pin": "A_DOUT[13]",
+      "pin_center_x_dbu": 529190,
+      "pin_local_rectangle_um": [
+        156.74,
+        0.0,
+        157.0,
+        0.26
+      ],
+      "reported_actual_pf": 0.1,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 14,
+      "buffer": "eco_sram_cap_b0_d14",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6108_/B2",
+        "i_croc_soc/i_croc/_6591_/B2",
+        "i_croc_soc/i_croc/_6784_/B2",
+        "i_croc_soc/i_croc/_7185_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5476",
+      "pin": "A_DOUT[14]",
+      "pin_center_x_dbu": 540430,
+      "pin_local_rectangle_um": [
+        167.98,
+        0.0,
+        168.24,
+        0.26
+      ],
+      "reported_actual_pf": 0.1,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 15,
+      "buffer": "eco_sram_cap_b0_d15",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6130_/B2",
+        "i_croc_soc/i_croc/_6598_/B2",
+        "i_croc_soc/i_croc/_6791_/B2",
+        "i_croc_soc/i_croc/_7183_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5475",
+      "pin": "A_DOUT[15]",
+      "pin_center_x_dbu": 551670,
+      "pin_local_rectangle_um": [
+        179.22,
+        0.0,
+        179.48,
+        0.26
+      ],
+      "reported_actual_pf": 0.1,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 16,
+      "buffer": "eco_sram_cap_b0_d16",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6134_/B2",
+        "i_croc_soc/i_croc/_6600_/B2",
+        "i_croc_soc/i_croc/_6793_/B2",
+        "i_croc_soc/i_croc/_7176_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5474",
+      "pin": "A_DOUT[16]",
+      "pin_center_x_dbu": 609610,
+      "pin_local_rectangle_um": [
+        237.16,
+        0.0,
+        237.42,
+        0.26
+      ],
+      "reported_actual_pf": 0.09,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 17,
+      "buffer": "eco_sram_cap_b0_d17",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6148_/B2",
+        "i_croc_soc/i_croc/_6605_/B2",
+        "i_croc_soc/i_croc/_6798_/B2",
+        "i_croc_soc/i_croc/_7171_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5473",
+      "pin": "A_DOUT[17]",
+      "pin_center_x_dbu": 620850,
+      "pin_local_rectangle_um": [
+        248.4,
+        0.0,
+        248.66,
+        0.26
+      ],
+      "reported_actual_pf": 0.09,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 18,
+      "buffer": "eco_sram_cap_b0_d18",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6169_/B2",
+        "i_croc_soc/i_croc/_6612_/B2",
+        "i_croc_soc/i_croc/_6805_/B2",
+        "i_croc_soc/i_croc/_7169_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5472",
+      "pin": "A_DOUT[18]",
+      "pin_center_x_dbu": 632090,
+      "pin_local_rectangle_um": [
+        259.64,
+        0.0,
+        259.9,
+        0.26
+      ],
+      "reported_actual_pf": 0.09,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 19,
+      "buffer": "eco_sram_cap_b0_d19",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6182_/B2",
+        "i_croc_soc/i_croc/_6616_/B2",
+        "i_croc_soc/i_croc/_6809_/B2",
+        "i_croc_soc/i_croc/_7165_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5471",
+      "pin": "A_DOUT[19]",
+      "pin_center_x_dbu": 643330,
+      "pin_local_rectangle_um": [
+        270.88,
+        0.0,
+        271.14,
+        0.26
+      ],
+      "reported_actual_pf": 0.09,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 20,
+      "buffer": "eco_sram_cap_b0_d20",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6208_/B2",
+        "i_croc_soc/i_croc/_6621_/B2",
+        "i_croc_soc/i_croc/_6814_/B2",
+        "i_croc_soc/i_croc/_7161_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5469",
+      "pin": "A_DOUT[20]",
+      "pin_center_x_dbu": 654570,
+      "pin_local_rectangle_um": [
+        282.12,
+        0.0,
+        282.38,
+        0.26
+      ],
+      "reported_actual_pf": 0.09,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 21,
+      "buffer": "eco_sram_cap_b0_d21",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6212_/B2",
+        "i_croc_soc/i_croc/_6623_/B2",
+        "i_croc_soc/i_croc/_6816_/B2",
+        "i_croc_soc/i_croc/_7153_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5468",
+      "pin": "A_DOUT[21]",
+      "pin_center_x_dbu": 665810,
+      "pin_local_rectangle_um": [
+        293.36,
+        0.0,
+        293.62,
+        0.26
+      ],
+      "reported_actual_pf": 0.09,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 22,
+      "buffer": "eco_sram_cap_b0_d22",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6236_/B2",
+        "i_croc_soc/i_croc/_6630_/B2",
+        "i_croc_soc/i_croc/_6823_/B2",
+        "i_croc_soc/i_croc/_7312_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5467",
+      "pin": "A_DOUT[22]",
+      "pin_center_x_dbu": 677050,
+      "pin_local_rectangle_um": [
+        304.6,
+        0.0,
+        304.86,
+        0.26
+      ],
+      "reported_actual_pf": 0.09,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 23,
+      "buffer": "eco_sram_cap_b0_d23",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6248_/B2",
+        "i_croc_soc/i_croc/_6637_/B2",
+        "i_croc_soc/i_croc/_6830_/B2",
+        "i_croc_soc/i_croc/_7308_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5466",
+      "pin": "A_DOUT[23]",
+      "pin_center_x_dbu": 688290,
+      "pin_local_rectangle_um": [
+        315.84,
+        0.0,
+        316.1,
+        0.26
+      ],
+      "reported_actual_pf": 0.09,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 24,
+      "buffer": "eco_sram_cap_b0_d24",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6252_/B2",
+        "i_croc_soc/i_croc/_6639_/B2",
+        "i_croc_soc/i_croc/_6832_/B2",
+        "i_croc_soc/i_croc/_7301_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5465",
+      "pin": "A_DOUT[24]",
+      "pin_center_x_dbu": 699530,
+      "pin_local_rectangle_um": [
+        327.08,
+        0.0,
+        327.34,
+        0.26
+      ],
+      "reported_actual_pf": 0.09,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 25,
+      "buffer": "eco_sram_cap_b0_d25",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6277_/B2",
+        "i_croc_soc/i_croc/_6646_/B2",
+        "i_croc_soc/i_croc/_6839_/B2",
+        "i_croc_soc/i_croc/_7299_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5464",
+      "pin": "A_DOUT[25]",
+      "pin_center_x_dbu": 710770,
+      "pin_local_rectangle_um": [
+        338.32,
+        0.0,
+        338.58,
+        0.26
+      ],
+      "reported_actual_pf": 0.08,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 26,
+      "buffer": "eco_sram_cap_b0_d26",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6281_/B2",
+        "i_croc_soc/i_croc/_6648_/B2",
+        "i_croc_soc/i_croc/_6841_/B2",
+        "i_croc_soc/i_croc/_7292_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5463",
+      "pin": "A_DOUT[26]",
+      "pin_center_x_dbu": 722010,
+      "pin_local_rectangle_um": [
+        349.56,
+        0.0,
+        349.82,
+        0.26
+      ],
+      "reported_actual_pf": 0.08,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 27,
+      "buffer": "eco_sram_cap_b0_d27",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6302_/B2",
+        "i_croc_soc/i_croc/_6655_/B2",
+        "i_croc_soc/i_croc/_6848_/B2",
+        "i_croc_soc/i_croc/_7290_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5462",
+      "pin": "A_DOUT[27]",
+      "pin_center_x_dbu": 733250,
+      "pin_local_rectangle_um": [
+        360.8,
+        0.0,
+        361.06,
+        0.26
+      ],
+      "reported_actual_pf": 0.08,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 28,
+      "buffer": "eco_sram_cap_b0_d28",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6314_/B2",
+        "i_croc_soc/i_croc/_6659_/B2",
+        "i_croc_soc/i_croc/_6852_/B2",
+        "i_croc_soc/i_croc/_7255_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5461",
+      "pin": "A_DOUT[28]",
+      "pin_center_x_dbu": 744490,
+      "pin_local_rectangle_um": [
+        372.04,
+        0.0,
+        372.3,
+        0.26
+      ],
+      "reported_actual_pf": 0.08,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 29,
+      "buffer": "eco_sram_cap_b0_d29",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6326_/B2",
+        "i_croc_soc/i_croc/_6663_/B2",
+        "i_croc_soc/i_croc/_6856_/B2",
+        "i_croc_soc/i_croc/_7203_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5460",
+      "pin": "A_DOUT[29]",
+      "pin_center_x_dbu": 755730,
+      "pin_local_rectangle_um": [
+        383.28,
+        0.0,
+        383.54,
+        0.26
+      ],
+      "reported_actual_pf": 0.08,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 30,
+      "buffer": "eco_sram_cap_b0_d30",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6342_/B2",
+        "i_croc_soc/i_croc/_6665_/B2",
+        "i_croc_soc/i_croc/_6858_/B2",
+        "i_croc_soc/i_croc/_7143_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5458",
+      "pin": "A_DOUT[30]",
+      "pin_center_x_dbu": 766970,
+      "pin_local_rectangle_um": [
+        394.52,
+        0.0,
+        394.78,
+        0.26
+      ],
+      "reported_actual_pf": 0.08,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 0,
+      "bit": 31,
+      "buffer": "eco_sram_cap_b0_d31",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[0\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6363_/B2",
+        "i_croc_soc/i_croc/_6672_/B2",
+        "i_croc_soc/i_croc/_6865_/B2",
+        "i_croc_soc/i_croc/_7138_/B2"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5457",
+      "pin": "A_DOUT[31]",
+      "pin_center_x_dbu": 778210,
+      "pin_local_rectangle_um": [
+        405.76,
+        0.0,
+        406.02,
+        0.26
+      ],
+      "reported_actual_pf": 0.08,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 0,
+      "buffer": "eco_sram_cap_b1_d00",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6037_/A1",
+        "i_croc_soc/i_croc/_6678_/A1",
+        "i_croc_soc/i_croc/_6872_/A1",
+        "i_croc_soc/i_croc/_7262_/A1"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5448",
+      "pin": "A_DOUT[0]",
+      "pin_center_x_dbu": 1196030,
+      "pin_local_rectangle_um": [
+        10.62,
+        0.0,
+        10.88,
+        0.26
+      ],
+      "reported_actual_pf": 0.09,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 1,
+      "buffer": "eco_sram_cap_b1_d01",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6197_/A1",
+        "i_croc_soc/i_croc/_6682_/A",
+        "i_croc_soc/i_croc/_6876_/A",
+        "i_croc_soc/i_croc/_7257_/A"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5437",
+      "pin": "A_DOUT[1]",
+      "pin_center_x_dbu": 1207270,
+      "pin_local_rectangle_um": [
+        21.86,
+        0.0,
+        22.12,
+        0.26
+      ],
+      "reported_actual_pf": 0.08,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 2,
+      "buffer": "eco_sram_cap_b1_d02",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6340_/A1",
+        "i_croc_soc/i_croc/_6686_/A",
+        "i_croc_soc/i_croc/_6880_/A",
+        "i_croc_soc/i_croc/_7249_/A"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5426",
+      "pin": "A_DOUT[2]",
+      "pin_center_x_dbu": 1218510,
+      "pin_local_rectangle_um": [
+        33.1,
+        0.0,
+        33.36,
+        0.26
+      ],
+      "reported_actual_pf": 0.08,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 3,
+      "buffer": "eco_sram_cap_b1_d03",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6377_/A1",
+        "i_croc_soc/i_croc/_6690_/A",
+        "i_croc_soc/i_croc/_6884_/A",
+        "i_croc_soc/i_croc/_7245_/A"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5423",
+      "pin": "A_DOUT[3]",
+      "pin_center_x_dbu": 1229750,
+      "pin_local_rectangle_um": [
+        44.34,
+        0.0,
+        44.6,
+        0.26
+      ],
+      "reported_actual_pf": 0.08,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 4,
+      "buffer": "eco_sram_cap_b1_d04",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6389_/A1",
+        "i_croc_soc/i_croc/_6694_/A",
+        "i_croc_soc/i_croc/_6888_/A",
+        "i_croc_soc/i_croc/_7240_/A"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5422",
+      "pin": "A_DOUT[4]",
+      "pin_center_x_dbu": 1240990,
+      "pin_local_rectangle_um": [
+        55.58,
+        0.0,
+        55.84,
+        0.26
+      ],
+      "reported_actual_pf": 0.08,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 5,
+      "buffer": "eco_sram_cap_b1_d05",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6402_/A1",
+        "i_croc_soc/i_croc/_6537_/A1",
+        "i_croc_soc/i_croc/_6730_/A1",
+        "i_croc_soc/i_croc/_7236_/A1"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5421",
+      "pin": "A_DOUT[5]",
+      "pin_center_x_dbu": 1252230,
+      "pin_local_rectangle_um": [
+        66.82,
+        0.0,
+        67.08,
+        0.26
+      ],
+      "reported_actual_pf": 0.09,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 6,
+      "buffer": "eco_sram_cap_b1_d06",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6415_/A1",
+        "i_croc_soc/i_croc/_6547_/A1",
+        "i_croc_soc/i_croc/_6740_/A1",
+        "i_croc_soc/i_croc/_7231_/A1"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5420",
+      "pin": "A_DOUT[6]",
+      "pin_center_x_dbu": 1263470,
+      "pin_local_rectangle_um": [
+        78.06,
+        0.0,
+        78.32,
+        0.26
+      ],
+      "reported_actual_pf": 0.09,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 7,
+      "buffer": "eco_sram_cap_b1_d07",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6428_/A1",
+        "i_croc_soc/i_croc/_6552_/A1",
+        "i_croc_soc/i_croc/_6745_/A1",
+        "i_croc_soc/i_croc/_7226_/A1"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5419",
+      "pin": "A_DOUT[7]",
+      "pin_center_x_dbu": 1274710,
+      "pin_local_rectangle_um": [
+        89.3,
+        0.0,
+        89.56,
+        0.26
+      ],
+      "reported_actual_pf": 0.1,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 8,
+      "buffer": "eco_sram_cap_b1_d08",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6440_/A1",
+        "i_croc_soc/i_croc/_6558_/A",
+        "i_croc_soc/i_croc/_6751_/A",
+        "i_croc_soc/i_croc/_7221_/A"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5418",
+      "pin": "A_DOUT[8]",
+      "pin_center_x_dbu": 1285950,
+      "pin_local_rectangle_um": [
+        100.54,
+        0.0,
+        100.8,
+        0.26
+      ],
+      "reported_actual_pf": 0.09,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 9,
+      "buffer": "eco_sram_cap_b1_d09",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6452_/A1",
+        "i_croc_soc/i_croc/_6568_/A",
+        "i_croc_soc/i_croc/_6761_/A",
+        "i_croc_soc/i_croc/_7215_/A"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5417",
+      "pin": "A_DOUT[9]",
+      "pin_center_x_dbu": 1297190,
+      "pin_local_rectangle_um": [
+        111.78,
+        0.0,
+        112.04,
+        0.26
+      ],
+      "reported_actual_pf": 0.09,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 10,
+      "buffer": "eco_sram_cap_b1_d10",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6054_/A1",
+        "i_croc_soc/i_croc/_6574_/A1",
+        "i_croc_soc/i_croc/_6767_/A1",
+        "i_croc_soc/i_croc/_7211_/A1"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5447",
+      "pin": "A_DOUT[10]",
+      "pin_center_x_dbu": 1308430,
+      "pin_local_rectangle_um": [
+        123.02,
+        0.0,
+        123.28,
+        0.26
+      ],
+      "reported_actual_pf": 0.1,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 11,
+      "buffer": "eco_sram_cap_b1_d11",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6081_/A1",
+        "i_croc_soc/i_croc/_6578_/A",
+        "i_croc_soc/i_croc/_6771_/A",
+        "i_croc_soc/i_croc/_7206_/A"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5446",
+      "pin": "A_DOUT[11]",
+      "pin_center_x_dbu": 1319670,
+      "pin_local_rectangle_um": [
+        134.26,
+        0.0,
+        134.52,
+        0.26
+      ],
+      "reported_actual_pf": 0.09,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 12,
+      "buffer": "eco_sram_cap_b1_d12",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6094_/A1",
+        "i_croc_soc/i_croc/_6583_/A1",
+        "i_croc_soc/i_croc/_6776_/A1",
+        "i_croc_soc/i_croc/_7196_/A1"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5445",
+      "pin": "A_DOUT[12]",
+      "pin_center_x_dbu": 1330910,
+      "pin_local_rectangle_um": [
+        145.5,
+        0.0,
+        145.76,
+        0.26
+      ],
+      "reported_actual_pf": 0.1,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 13,
+      "buffer": "eco_sram_cap_b1_d13",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6106_/A1",
+        "i_croc_soc/i_croc/_6587_/A",
+        "i_croc_soc/i_croc/_6780_/A",
+        "i_croc_soc/i_croc/_7191_/A"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5444",
+      "pin": "A_DOUT[13]",
+      "pin_center_x_dbu": 1342150,
+      "pin_local_rectangle_um": [
+        156.74,
+        0.0,
+        157.0,
+        0.26
+      ],
+      "reported_actual_pf": 0.09,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 14,
+      "buffer": "eco_sram_cap_b1_d14",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6119_/A1",
+        "i_croc_soc/i_croc/_6592_/A1",
+        "i_croc_soc/i_croc/_6785_/A1",
+        "i_croc_soc/i_croc/_7186_/A1"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5443",
+      "pin": "A_DOUT[14]",
+      "pin_center_x_dbu": 1353390,
+      "pin_local_rectangle_um": [
+        167.98,
+        0.0,
+        168.24,
+        0.26
+      ],
+      "reported_actual_pf": 0.1,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 15,
+      "buffer": "eco_sram_cap_b1_d15",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6132_/A1",
+        "i_croc_soc/i_croc/_6596_/A",
+        "i_croc_soc/i_croc/_6789_/A",
+        "i_croc_soc/i_croc/_7181_/A"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5442",
+      "pin": "A_DOUT[15]",
+      "pin_center_x_dbu": 1364630,
+      "pin_local_rectangle_um": [
+        179.22,
+        0.0,
+        179.48,
+        0.26
+      ],
+      "reported_actual_pf": 0.09,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 16,
+      "buffer": "eco_sram_cap_b1_d16",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6146_/A1",
+        "i_croc_soc/i_croc/_6601_/A1",
+        "i_croc_soc/i_croc/_6794_/A1",
+        "i_croc_soc/i_croc/_7177_/A1"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5441",
+      "pin": "A_DOUT[16]",
+      "pin_center_x_dbu": 1422570,
+      "pin_local_rectangle_um": [
+        237.16,
+        0.0,
+        237.42,
+        0.26
+      ],
+      "reported_actual_pf": 0.11,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 17,
+      "buffer": "eco_sram_cap_b1_d17",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6159_/A1",
+        "i_croc_soc/i_croc/_6606_/A1",
+        "i_croc_soc/i_croc/_6799_/A1",
+        "i_croc_soc/i_croc/_7172_/A1"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5440",
+      "pin": "A_DOUT[17]",
+      "pin_center_x_dbu": 1433810,
+      "pin_local_rectangle_um": [
+        248.4,
+        0.0,
+        248.66,
+        0.26
+      ],
+      "reported_actual_pf": 0.11,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 18,
+      "buffer": "eco_sram_cap_b1_d18",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6171_/A1",
+        "i_croc_soc/i_croc/_6610_/A",
+        "i_croc_soc/i_croc/_6803_/A",
+        "i_croc_soc/i_croc/_7167_/A"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5439",
+      "pin": "A_DOUT[18]",
+      "pin_center_x_dbu": 1445050,
+      "pin_local_rectangle_um": [
+        259.64,
+        0.0,
+        259.9,
+        0.26
+      ],
+      "reported_actual_pf": 0.1,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 19,
+      "buffer": "eco_sram_cap_b1_d19",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6184_/A1",
+        "i_croc_soc/i_croc/_6614_/A",
+        "i_croc_soc/i_croc/_6807_/A",
+        "i_croc_soc/i_croc/_7163_/A"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5438",
+      "pin": "A_DOUT[19]",
+      "pin_center_x_dbu": 1456290,
+      "pin_local_rectangle_um": [
+        270.88,
+        0.0,
+        271.14,
+        0.26
+      ],
+      "reported_actual_pf": 0.11,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 20,
+      "buffer": "eco_sram_cap_b1_d20",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6210_/A1",
+        "i_croc_soc/i_croc/_6619_/A",
+        "i_croc_soc/i_croc/_6812_/A",
+        "i_croc_soc/i_croc/_7158_/A"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5436",
+      "pin": "A_DOUT[20]",
+      "pin_center_x_dbu": 1467530,
+      "pin_local_rectangle_um": [
+        282.12,
+        0.0,
+        282.38,
+        0.26
+      ],
+      "reported_actual_pf": 0.11,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 21,
+      "buffer": "eco_sram_cap_b1_d21",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6223_/A1",
+        "i_croc_soc/i_croc/_6624_/A1",
+        "i_croc_soc/i_croc/_6817_/A1",
+        "i_croc_soc/i_croc/_7154_/A1"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5435",
+      "pin": "A_DOUT[21]",
+      "pin_center_x_dbu": 1478770,
+      "pin_local_rectangle_um": [
+        293.36,
+        0.0,
+        293.62,
+        0.26
+      ],
+      "reported_actual_pf": 0.11,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 22,
+      "buffer": "eco_sram_cap_b1_d22",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6238_/A1",
+        "i_croc_soc/i_croc/_6628_/A",
+        "i_croc_soc/i_croc/_6821_/A",
+        "i_croc_soc/i_croc/_7310_/A"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5434",
+      "pin": "A_DOUT[22]",
+      "pin_center_x_dbu": 1490010,
+      "pin_local_rectangle_um": [
+        304.6,
+        0.0,
+        304.86,
+        0.26
+      ],
+      "reported_actual_pf": 0.11,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 23,
+      "buffer": "eco_sram_cap_b1_d23",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6250_/A1",
+        "i_croc_soc/i_croc/_6633_/A",
+        "i_croc_soc/i_croc/_6826_/A",
+        "i_croc_soc/i_croc/_7306_/A"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5433",
+      "pin": "A_DOUT[23]",
+      "pin_center_x_dbu": 1501250,
+      "pin_local_rectangle_um": [
+        315.84,
+        0.0,
+        316.1,
+        0.26
+      ],
+      "reported_actual_pf": 0.11,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 24,
+      "buffer": "eco_sram_cap_b1_d24",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6263_/A1",
+        "i_croc_soc/i_croc/_6640_/A1",
+        "i_croc_soc/i_croc/_6833_/A1",
+        "i_croc_soc/i_croc/_7302_/A1"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5432",
+      "pin": "A_DOUT[24]",
+      "pin_center_x_dbu": 1512490,
+      "pin_local_rectangle_um": [
+        327.08,
+        0.0,
+        327.34,
+        0.26
+      ],
+      "reported_actual_pf": 0.12,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 25,
+      "buffer": "eco_sram_cap_b1_d25",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6279_/A1",
+        "i_croc_soc/i_croc/_6644_/A",
+        "i_croc_soc/i_croc/_6837_/A",
+        "i_croc_soc/i_croc/_7297_/A"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5431",
+      "pin": "A_DOUT[25]",
+      "pin_center_x_dbu": 1523730,
+      "pin_local_rectangle_um": [
+        338.32,
+        0.0,
+        338.58,
+        0.26
+      ],
+      "reported_actual_pf": 0.11,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 26,
+      "buffer": "eco_sram_cap_b1_d26",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6292_/A1",
+        "i_croc_soc/i_croc/_6649_/A1",
+        "i_croc_soc/i_croc/_6842_/A1",
+        "i_croc_soc/i_croc/_7293_/A1"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5430",
+      "pin": "A_DOUT[26]",
+      "pin_center_x_dbu": 1534970,
+      "pin_local_rectangle_um": [
+        349.56,
+        0.0,
+        349.82,
+        0.26
+      ],
+      "reported_actual_pf": 0.12,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 27,
+      "buffer": "eco_sram_cap_b1_d27",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6304_/A1",
+        "i_croc_soc/i_croc/_6653_/A",
+        "i_croc_soc/i_croc/_6846_/A",
+        "i_croc_soc/i_croc/_7288_/A"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5429",
+      "pin": "A_DOUT[27]",
+      "pin_center_x_dbu": 1546210,
+      "pin_local_rectangle_um": [
+        360.8,
+        0.0,
+        361.06,
+        0.26
+      ],
+      "reported_actual_pf": 0.11,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 28,
+      "buffer": "eco_sram_cap_b1_d28",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6316_/A1",
+        "i_croc_soc/i_croc/_6657_/A",
+        "i_croc_soc/i_croc/_6850_/A",
+        "i_croc_soc/i_croc/_7253_/A"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5428",
+      "pin": "A_DOUT[28]",
+      "pin_center_x_dbu": 1557450,
+      "pin_local_rectangle_um": [
+        372.04,
+        0.0,
+        372.3,
+        0.26
+      ],
+      "reported_actual_pf": 0.11,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 29,
+      "buffer": "eco_sram_cap_b1_d29",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6328_/A1",
+        "i_croc_soc/i_croc/_6661_/A",
+        "i_croc_soc/i_croc/_6854_/A",
+        "i_croc_soc/i_croc/_7201_/A"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5427",
+      "pin": "A_DOUT[29]",
+      "pin_center_x_dbu": 1568690,
+      "pin_local_rectangle_um": [
+        383.28,
+        0.0,
+        383.54,
+        0.26
+      ],
+      "reported_actual_pf": 0.11,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 30,
+      "buffer": "eco_sram_cap_b1_d30",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6353_/A1",
+        "i_croc_soc/i_croc/_6666_/A1",
+        "i_croc_soc/i_croc/_6859_/A1",
+        "i_croc_soc/i_croc/_7146_/A1"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5425",
+      "pin": "A_DOUT[30]",
+      "pin_center_x_dbu": 1579930,
+      "pin_local_rectangle_um": [
+        394.52,
+        0.0,
+        394.78,
+        0.26
+      ],
+      "reported_actual_pf": 0.12,
+      "reported_limit_pf": 0.06
+    },
+    {
+      "bank": 1,
+      "bit": 31,
+      "buffer": "eco_sram_cap_b1_d31",
+      "instance": "i_croc_soc/i_croc/gen_sram_bank\\[1\\].i_sram/gen_512x32xBx1.i_cut",
+      "loads": [
+        "i_croc_soc/i_croc/_6365_/A1",
+        "i_croc_soc/i_croc/_6670_/A",
+        "i_croc_soc/i_croc/_6863_/A",
+        "i_croc_soc/i_croc/_7131_/A"
+      ],
+      "macro_bottom_y_dbu": 1410280,
+      "net": "net5424",
+      "pin": "A_DOUT[31]",
+      "pin_center_x_dbu": 1591170,
+      "pin_local_rectangle_um": [
+        405.76,
+        0.0,
+        406.02,
+        0.26
+      ],
+      "reported_actual_pf": 0.11,
+      "reported_limit_pf": 0.06
+    }
+  ],
+  "buffer_master": "sg13g2_buf_4",
+  "library_files": [
+    "upstream/croc/technology/lef/RM_IHPSG13_1P_512x32_c2_bm_bist.lef",
+    "upstream/croc/technology/lib/sg13g2_stdcell_typ_1p20V_25C.lib",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_512x32_c2_bm_bist_typ_1p20V_25C.lib",
+    "upstream/croc/technology/lib/sg13g2_stdcell_fast_1p32V_m40C.lib",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_512x32_c2_bm_bist_fast_1p32V_m55C.lib"
+  ],
+  "library_limits": {
+    "ff": {
+      "buffer_area_um2": 14.5152,
+      "buffer_function": "A",
+      "buffer_max_input_cap_pf": 0.00411337,
+      "buffer_max_output_cap_pf": 1.2,
+      "sram_max_cap_pf": 0.064
+    },
+    "tt": {
+      "buffer_area_um2": 14.5152,
+      "buffer_function": "A",
+      "buffer_max_input_cap_pf": 0.0038592,
+      "buffer_max_output_cap_pf": 1.2,
+      "sram_max_cap_pf": 0.064
+    }
+  }
+}

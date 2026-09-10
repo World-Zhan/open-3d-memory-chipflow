@@ -1,0 +1,154 @@
+{
+  "audit_result": "PASS",
+  "classification": "physical_perimeter_explained_model_contract_unresolved",
+  "findings": {
+    "cdl": {
+      "area_um2": 141.253,
+      "guard_device_references": 0,
+      "perimeter_um": 47.53999999999999,
+      "statement": "XR0 anode sub! ptap1 A=141.253p P=47.54u"
+    },
+    "equivalent_square_hypothesis": {
+      "actual_area_square_side_um": 11.886816226391321,
+      "area_um2": 141.253225,
+      "classification": "arithmetic_consistency_not_authorship_proof",
+      "nearest_grid_side_um": 11.885,
+      "official_grid_um": 0.005,
+      "original_IO_schematic_generator_proven": false,
+      "perimeter_matches_CDL": true,
+      "perimeter_um": 47.54,
+      "rounded_area_matches_CDL": true
+    },
+    "guard_model_findings": {
+      "contact_count": 288,
+      "guard_is_real_geometry_but_unloaded_boundary_in_device_model": true,
+      "ntap1_device_expected_from_current_marker_rules": false,
+      "ordinary_ntap_component_count": 1,
+      "schematic_guard_device_references": 0,
+      "well_marker_count": 0
+    },
+    "model_sensitivity_not_measured_resistance": {
+      "CDL_parameter_R_ohm": 5.190870424221238,
+      "formula": "R = 1 / (A / raspec + P / rpspec), with consistent SI units",
+      "layout_geometric_parameter_R_ohm": 2.6993051217386608,
+      "parameter_substitution_changes_model": true,
+      "silicon_resistance_qualified": false,
+      "source_parameters_ohm_m2_and_ohm_m": [
+        9.800000000000001e-10,
+        0.00098
+      ]
+    },
+    "parameter_residuals": {
+      "area_fraction": 0.000307250111502233,
+      "area_um2": 0.043400000000019645,
+      "perimeter_ratio": 4.66470340765671,
+      "perimeter_um": 174.22
+    },
+    "physical_geometry_proven": {
+      "area_um2": 141.2964,
+      "connected_components": 1,
+      "hole_perimeter_sum_um": 135.12,
+      "hole_sizes_um": [
+        [
+          30.54,
+          3.24
+        ],
+        [
+          30.54,
+          3.24
+        ]
+      ],
+      "holes": 2,
+      "hull_perimeter_um": 86.64,
+      "matches_raw_strict_extraction": true,
+      "outer_size_um": [
+        33.06,
+        10.26
+      ],
+      "total_perimeter_um": 221.76
+    },
+    "rejected_explanations": {
+      "duplicated_components_required": true,
+      "hole_perimeter_only": true,
+      "missing_holes_only": true,
+      "shared_area_perimeter_unit_multiplier": true,
+      "tap_exclusions_changed_the_actual_tie": true
+    }
+  },
+  "geometry_and_device_deck_sources_match_archived_strict_control": true,
+  "limitations": [
+    "The equivalent-square arithmetic matches but does not prove the original IO generator or designer intent.",
+    "The flat single-leaf geometry probe is independently matched to existing strict deep raw extraction; it is not a parent or full-chip result.",
+    "Guard geometry and a device terminal are different evidence scopes. Original CDL GUARD is a formal with no local device references.",
+    "Numeric-overflow rejection for the already archived reader is a separate future gate; adapter unchanged.",
+    "No new chip PPA, DRC, LVS, silicon resistance, or signoff qualification."
+  ],
+  "new_LVS_performed": false,
+  "next_gate": "Obtain or reconstruct the intended IO schematic tap A/P convention and unloaded guard boundary semantics; do not change parameters, tolerances, or introduce ntap1 markers solely to force a match.",
+  "run_id": "tap-geometry-20260910-001",
+  "schema_version": 1,
+  "source_formula_fragments": {
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/python/sg13g2_pycell_lib/ihp/ptap1_code.py": [
+      "defA       = Numeric(defL)*Numeric(defW)",
+      "defP       = 2*Numeric(defL)+2*Numeric(defW)"
+    ],
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/python/sg13g2_pycell_lib/ihp/utility_functions.py": [
+      "a = l*w",
+      "p = 2.0*(l+w)",
+      "result = 1.0/(1.0/(raspec/a) + 1.0/(rpspec/p))"
+    ],
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/xschem/sg13g2_pr/ptap1.sym": [
+      "lvs_format=",
+      "@w * @l",
+      "2 * ( @w + @l )"
+    ]
+  },
+  "source_pdk_modified": false,
+  "source_sha256": {
+    "reports/lvs/run_tap_reader_ab.py": "e8eeb93288785ba55b33ebe6d8afa275c591ff8be97c877d6b5dba0e4acb1d96",
+    "reports/lvs/tap-geometry-20260910-probe.py": "62d379976ab12a4a1d87f2bfde797b1c8f3152cc0ab3064c3d5d7255d87a3918",
+    "reports/lvs/tap-geometry-20260910-run.py": "50a1b5e7905a0c43780cff0c9e8e035f25f825b04a15611700720864a38f9a73",
+    "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/layout_netlist_after_rf_purge.inventory.json": "79a8226c05d6278d9dc371311a2975ac168e7d2d6897de5663628cbc585675c7",
+    "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/layout_netlist_raw_before_rf_mapping.inventory.json": "c2059eb39373a261ddbdd0f70eb11a3a71db02aa5dd26b7701747dfcdc18b3af",
+    "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/schematic_after_compare.inventory.json": "fabe89f16747b5a4426e0c8251b6e09d2c231dd9b8101e383df1c489763a661f",
+    "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/schematic_after_reader.inventory.json": "52a48a8e2128c7aa28f983e6c27649e5e47466f4228f7b7fc75a9c578aa6cdbd",
+    "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_combiner.lvs": "2e9f341023b96ab64ef83110d0a57d5f8be8a6906e67db60edbb62cfadeed56d",
+    "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_devices.lvs": "b062c2ed0bb15a41fd21b38e5e6e74a1a5cf3abf463f8535b946a2f662453b63",
+    "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/diode_derivations.lvs": "aa366ee04f0ab5030131d12d26e421c9bdf7dc4d7b0840f0ac43309557b411bf",
+    "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/diode_extraction.lvs": "9d060ddb655bf8fce7363aabb02800ffe8138b745aa9cff724b34c248770e006",
+    "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/general_connections.lvs": "bb61656b3564cf08558b83cf27d09854049eb30b5b7ade6610045d43c4b53e97",
+    "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/general_derivations.lvs": "d386598b10809388bfa690644b5a6a8f49c532b9d04caf9d2d014f4de12db043",
+    "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/layers_definitions.lvs": "2165a344d178eff60c2c79ad73108d74b8a1d2b1a5183e8b3492aa249887e58c",
+    "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/tap_connections.lvs": "b78c5b3cf4e328c915d52f210c6457790ec7ef56eb08d88dedb825ca3bc59b3b",
+    "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/tap_derivations.lvs": "b6e9ff382b6f8c392ab699d09832ea7e0ad120bc1b35b51a778e8b188b0ce6c2",
+    "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/tap_extraction.lvs": "e17c779eacdcab3bfa2287ca265d7836dde0e9e7fec4b4e7bf79bf2b2dd9120b",
+    "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/inputs/sg13g2_DCNDiode.cdl": "e6beb7b9b6eb3ac828ae597aebb68e8773ee5c0408ab3f0ca1867f652d930e43",
+    "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/inputs/sg13g2_DCNDiode.gds": "88b37db301c78b051f74fd8d7c851fb8fb237964bde4b7b6a60657faa2ed11e4",
+    "runs/tap-geometry-20260910-001/execution.json": "f218a97af0b85ac6de1d1c16ccd95f3b36743e89700d7d4de91f47494fce4ba6",
+    "runs/tap-geometry-20260910-001/geometry.json": "419d8780c833d57a2d3e4a19040ba05032969c432c997b5a820cc7a65870000a",
+    "runs/tap-geometry-20260910-001/tap-geometry-20260910-probe.py": "62d379976ab12a4a1d87f2bfde797b1c8f3152cc0ab3064c3d5d7255d87a3918",
+    "runs/tap-geometry-20260910-001/tap-geometry-20260910-run.py": "50a1b5e7905a0c43780cff0c9e8e035f25f825b04a15611700720864a38f9a73",
+    "runs/tap-geometry-20260910-001/terminal_observation.json": "178200f35cc2fde812e70f9a6ff7f4e0340eaf6e397fd68b9de9c2648c524591",
+    "runs/tap-geometry-20260910-001/tool.log": "a9c8a0d518580b11e887a1a6026ea3bc908fa1e6263fda27699392477dc97353",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/cdl/sg13g2_io.cdl": "7a30e902099e8a8f85e0ae853167904df3793357a793a7b4dc82237b72b3eec4",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/python/sg13g2_pycell_lib/ihp/ptap1_code.py": "f2772537417ee992a5ecea8539f5e96732b38c086826b16c8a21eb1a1096f500",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/python/sg13g2_pycell_lib/ihp/utility_functions.py": "0d5c287ede8decd8b69c8f94bfe72231758e607c02b64650951fcb5be269c861",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/python/sg13g2_pycell_lib/sg13g2_tech.json": "193f2af37d2d80ea28f88052298e91ed7650413dc6ca774cae6f8ed6a95e35ba",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_classes.lvs": "65eb31e73784b6d5df279b6e9f4a0beca378b4c0ddccc105f6c4312faf8215b1",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_combiner.lvs": "2e9f341023b96ab64ef83110d0a57d5f8be8a6906e67db60edbb62cfadeed56d",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_devices.lvs": "b062c2ed0bb15a41fd21b38e5e6e74a1a5cf3abf463f8535b946a2f662453b63",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_reader.lvs": "c71b6713d8a62055d3d8e9e75a7f5f78140001bf76e3fa573b9883fab5e49f06",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/diode_derivations.lvs": "aa366ee04f0ab5030131d12d26e421c9bdf7dc4d7b0840f0ac43309557b411bf",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/diode_extraction.lvs": "9d060ddb655bf8fce7363aabb02800ffe8138b745aa9cff724b34c248770e006",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/general_connections.lvs": "bb61656b3564cf08558b83cf27d09854049eb30b5b7ade6610045d43c4b53e97",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/general_derivations.lvs": "d386598b10809388bfa690644b5a6a8f49c532b9d04caf9d2d014f4de12db043",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/layers_definitions.lvs": "2165a344d178eff60c2c79ad73108d74b8a1d2b1a5183e8b3492aa249887e58c",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/rfmos_model_mapping.lvs": "9cba1b823a1b805bb82dacb31cc5f18b3135da44db1b87f683b248713cde8584",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/tap_connections.lvs": "b78c5b3cf4e328c915d52f210c6457790ec7ef56eb08d88dedb825ca3bc59b3b",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/tap_derivations.lvs": "b6e9ff382b6f8c392ab699d09832ea7e0ad120bc1b35b51a778e8b188b0ce6c2",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/tap_extraction.lvs": "e17c779eacdcab3bfa2287ca265d7836dde0e9e7fec4b4e7bf79bf2b2dd9120b",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/xschem/sg13g2_pr/ptap1.sym": "ca93ba7e1aefc330edfa3735186977289b77594f8f137b000e8f432634a8ecb9"
+  },
+  "strict_LVS_status_unchanged": "FAIL",
+  "tool_version": "0.30.5"
+}

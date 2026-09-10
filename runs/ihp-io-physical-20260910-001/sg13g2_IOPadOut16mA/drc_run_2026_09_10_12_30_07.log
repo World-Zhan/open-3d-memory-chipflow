@@ -1,0 +1,15 @@
+10-Sep-2026 14:30:07 | INFO    | KLayout version detected: 0.30.5 (required >= 0.30.5)
+10-Sep-2026 14:30:07 | INFO    | Using DRC JSON file: /work/upstream/ihp-open-pdk/ihp-sg13g2/libs.tech/klayout/python/sg13g2_pycell_lib/sg13g2_tech_mod.json
+10-Sep-2026 14:30:07 | INFO    | Running IHP-SG13G2 main checks on design /work/runs/ihp-io-physical-20260910-001/geometry/sg13g2_IOPadOut16mA.gds, topcell: sg13g2_IOPadOut16mA
+10-Sep-2026 14:30:14 | INFO    | Running IHP-SG13G2 antenna checks on design /work/runs/ihp-io-physical-20260910-001/geometry/sg13g2_IOPadOut16mA.gds, topcell: sg13g2_IOPadOut16mA
+10-Sep-2026 14:30:18 | INFO    | Completed running Antenna checks.
+10-Sep-2026 14:30:18 | INFO    | Running IHP-SG13G2 density checks on design /work/runs/ihp-io-physical-20260910-001/geometry/sg13g2_IOPadOut16mA.gds, topcell: sg13g2_IOPadOut16mA
+10-Sep-2026 14:30:19 | INFO    | Completed running Density checks.
+10-Sep-2026 14:30:19 | INFO    | Running IHP-SG13G2 sg13g2_maximal checks on design /work/runs/ihp-io-physical-20260910-001/geometry/sg13g2_IOPadOut16mA.gds, topcell: sg13g2_IOPadOut16mA
+10-Sep-2026 14:30:28 | INFO    | Completed running Sg13g2_maximal checks.
+10-Sep-2026 14:30:28 | ERROR   | ==================================================================================
+10-Sep-2026 14:30:28 | ERROR   | ❌ --- KLayout DRC Check Failed: Violations were detected in the layout. --- ❌
+10-Sep-2026 14:30:28 | ERROR   | ==================================================================================
+10-Sep-2026 14:30:28 | ERROR   | Violated rules are : {'TM1.d', 'GFil.g', 'M2.j', 'M3.k', 'M5.k', 'M4.k'}
+
+10-Sep-2026 14:30:28 | INFO    | Total DRC Run time: 20.87 seconds (including execution, analysis, and reporting)

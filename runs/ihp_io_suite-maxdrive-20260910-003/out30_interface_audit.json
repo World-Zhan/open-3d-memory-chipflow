@@ -1,0 +1,135 @@
+{
+  "cell": "sg13g2_IOPadOut30mA",
+  "result": "PASS",
+  "scope": "cross_view_Out30_interface_not_new_digital_simulation_or_LVS",
+  "view": {
+    "lef": {
+      "c2p": {
+        "direction": "INPUT",
+        "use": "SIGNAL"
+      },
+      "iovdd": {
+        "direction": "INOUT",
+        "use": "POWER"
+      },
+      "iovss": {
+        "direction": "INOUT",
+        "use": "GROUND"
+      },
+      "pad": {
+        "direction": "OUTPUT",
+        "use": "SIGNAL"
+      },
+      "vdd": {
+        "direction": "INOUT",
+        "use": "POWER"
+      },
+      "vss": {
+        "direction": "INOUT",
+        "use": "GROUND"
+      }
+    },
+    "liberty": {
+      "ff": {
+        "pg_types": {
+          "iovdd": "primary_power",
+          "iovss": "primary_ground",
+          "vdd": "primary_power",
+          "vss": "primary_ground"
+        },
+        "signals": {
+          "c2p": {
+            "clock": null,
+            "direction": "input",
+            "function": null,
+            "max_capacitance": null,
+            "related_ground_pin": "vss",
+            "related_power_pin": "vdd",
+            "three_state": null
+          },
+          "pad": {
+            "clock": null,
+            "direction": "output",
+            "function": "c2p",
+            "max_capacitance": "40",
+            "related_ground_pin": "iovss",
+            "related_power_pin": "iovdd",
+            "three_state": null
+          }
+        }
+      },
+      "ss": {
+        "pg_types": {
+          "iovdd": "primary_power",
+          "iovss": "primary_ground",
+          "vdd": "primary_power",
+          "vss": "primary_ground"
+        },
+        "signals": {
+          "c2p": {
+            "clock": null,
+            "direction": "input",
+            "function": null,
+            "max_capacitance": null,
+            "related_ground_pin": "vss",
+            "related_power_pin": "vdd",
+            "three_state": null
+          },
+          "pad": {
+            "clock": null,
+            "direction": "output",
+            "function": "c2p",
+            "max_capacitance": "40",
+            "related_ground_pin": "iovss",
+            "related_power_pin": "iovdd",
+            "three_state": null
+          }
+        }
+      },
+      "tt": {
+        "pg_types": {
+          "iovdd": "primary_power",
+          "iovss": "primary_ground",
+          "vdd": "primary_power",
+          "vss": "primary_ground"
+        },
+        "signals": {
+          "c2p": {
+            "clock": null,
+            "direction": "input",
+            "function": null,
+            "max_capacitance": null,
+            "related_ground_pin": "vss",
+            "related_power_pin": "vdd",
+            "three_state": null
+          },
+          "pad": {
+            "clock": null,
+            "direction": "output",
+            "function": "c2p",
+            "max_capacitance": "40",
+            "related_ground_pin": "iovss",
+            "related_power_pin": "iovdd",
+            "three_state": null
+          }
+        }
+      }
+    },
+    "ordered_verilog_cdl_ports": [
+      "pad",
+      "c2p",
+      "vdd",
+      "vss",
+      "iovdd",
+      "iovss"
+    ],
+    "verilog_directions": {
+      "c2p": "INPUT",
+      "iovdd": "INOUT",
+      "iovss": "INOUT",
+      "pad": "OUTPUT",
+      "vdd": "INOUT",
+      "vss": "INOUT"
+    }
+  }
+}

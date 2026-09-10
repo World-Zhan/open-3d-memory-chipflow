@@ -1,0 +1,29 @@
+{
+  "observed_at": "2026-09-10T12:30:21.690008+00:00",
+  "resources": {
+    "BlockIO": "0B / 0B",
+    "CPUPerc": "0.00%",
+    "Container": "ihp_io_suite-digital-sta-20260910-001-simulation",
+    "ID": "c18922aec50b",
+    "MemPerc": "0.00%",
+    "MemUsage": "0B / 0B",
+    "Name": "ihp_io_suite-digital-sta-20260910-001-simulation",
+    "NetIO": "0B / 0B",
+    "PIDs": "0"
+  },
+  "resources_returncode": 0,
+  "state": {
+    "Dead": false,
+    "Error": "",
+    "ExitCode": 0,
+    "FinishedAt": "2026-09-10T12:30:21.537697153Z",
+    "OOMKilled": false,
+    "Paused": false,
+    "Pid": 0,
+    "Restarting": false,
+    "Running": false,
+    "StartedAt": "2026-09-10T12:30:21.387876506Z",
+    "Status": "exited"
+  },
+  "state_returncode": 0
+}

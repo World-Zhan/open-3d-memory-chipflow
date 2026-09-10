@@ -1,0 +1,29 @@
+{
+  "active_area_delta_um2": 928.9728,
+  "critical_path_slack_ns": {
+    "after": 0.1394,
+    "before": 0.1394
+  },
+  "eda_result": "completed_actual_exit_0_no_oom",
+  "eda_runs_performed": 1,
+  "electrical_acceptance": "FAIL",
+  "full_repository_validation": "root_agent_to_perform_after_integration",
+  "full_route_drc_lvs_performed": false,
+  "remaining_non_sram_cap_endpoints_and_values_unchanged": true,
+  "run_id": "croc-full-io-sram-cap-20260910-001",
+  "slew_rows_unchanged": true,
+  "source_sha256": {
+    "scripts/audit_croc_sram_cap.py": "e2ccef49f31d7b46ec73fb68f27a620d8690a2769479146dd2c436212d6fd8c7",
+    "scripts/run_croc_sram_cap.py": "7cb9bbc09a8cc6af480a576f0b498fa018d27d660a14c8463d90aaaafb4a334e",
+    "tests/test_croc_sram_cap.py": "3066b8d811078b651bb82738ce00c60f98a3ad84aa428dd076e0eb6b8ddf398c"
+  },
+  "structural_audit": "reports/placement/full-io-sram-cap-audit-20260910-001.json",
+  "unit_tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p test_croc_sram_cap.py -v",
+    "elapsed_seconds": 0.039,
+    "evidence": "actual exec_command result da8545",
+    "result": "PASS",
+    "returncode": 0,
+    "tests_run": 12
+  }
+}

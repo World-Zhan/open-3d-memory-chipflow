@@ -11,10 +11,22 @@ SPDX-License-Identifier: Apache-2.0
 | 架构分析 | 复用原 Croc；非新架构 PPA 达标证明 | GCD/F2F 研究；HBT 真实 pitch/容量合同已验证 | 最小 C1/C2/C3 规格与验收矩阵已建立 |
 | RTL 与功能验证 | 原 Hello World RTL/门级仿真通过；不等于新增 IP 完整覆盖 | 复用 GCD；无自研 3D memory RTL | C1 OBI endpoint 尚未实现/仿真 |
 | 综合 | 原版 Yosys+Slang 通过 | 研究 flow 的既有网表 | not_run |
-| 后端 | 原 APR/GDS 电气 FAIL；新完整 placement/CTS 已执行，setup/hold=0，slew/cap/fanout=71/135/0；新 route 未执行 | strict pin access 已修复；旧 route DRC=642；新容量 A/B 未布线 | not_run |
+| 后端 | 原 APR/GDS 电气 FAIL；新完整 placement/CTS 已执行，setup/hold=0，slew/cap/fanout=71/71/0；新 route 未执行 | strict pin access 已修复；旧 route DRC=642；新容量 A/B 未布线 | not_run |
 | 验证/签核 | merged DRC=1585/12 类；maximal raw=652；LVS mismatch | research_only；route/3D closure 未完成 | 测试计划已写，RTL/综合/物理结果均未产生 |
 
-## 2026-09-10 最新推进
+## 2026-09-10 第二轮最新推进
+
+**64 个 SRAM cap 违规清零，整体仍未签核。** 新增 64 个局部 buffer，原 34,886 个实例几何/状态和全部原连接保持；setup/hold/slew/cap/fanout=0/0/71/71/0。43 条 15 pF 命令及 CLOCK/NDR 保持。
+
+- 同 CTS active 面积 0.721789488→0.7227184608 mm²（+0.128704%）；原始 5.46 mW 仍不合格，workload 功耗/Fmax 未知。
+- 新版官方 IO 行为 42 断言通过，但三角 STA 仍不满足 15 pF/1.2 ns；进一步单换 Out30mA 后 FF/TT/SS slew=1.579/2.192/3.322 ns，仍失败。未迁移完整 IO 环。
+- Out16/InOut30 两宏全部公开 DRC 实际完成，各 6 个全局 density marker，其它 merged marker=0；严格 macro DRC 仍 FAIL，不代表整芯片。三宏 GDS/LEF 金属覆盖与正确标签回读通过，不能替代 PG/LVS。
+- tap 的实际周长 221.76 µm 已精确分解为一个外边界加两个孔洞；CDL 47.54 µm 的等效正方形约定仍待证明，不能改数凑匹配。无新 LVS，既有严格 FAIL 保持。
+- 同类对照仍为 MLEM/Croc 24 KiB、4.995225 mm²、典型 80 MHz；本地 4 KiB、100 MHz 约束，暂无可比功耗或签核优势。
+
+详情：[本轮说明](docs/14_sram_io_contract_zh.md)、[PPA](reports/ppa/croc-ppa-sram-io-contract-20260910-001.json)。15 pF 与 1.2 ns 均未放宽。以下保留历史结果。
+
+## 2026-09-10 第一轮推进记录
 
 **fanout 已清零，整体仍未签核。** 新增八颗时钟 buffer 后 setup/hold/slew/cap/fanout=0/0/71/135/0。独立结构、普通放置/核心 PG、完整 SDC 与原 CLOCK/NDR 元数据检查通过；43 条 15 pF 命令保持，NDR 布线政策仍 UNVERIFIED。
 
@@ -76,7 +88,7 @@ SPDX-License-Identifier: Apache-2.0
 ## 当前最需要改进的内容
 
 1. **补齐验收质量。** 本次已堵住电气违规漏检。还需逐 corner/mode 审核时序约束、例外、未约束路径和寄生来源。历史 finishing 中 RCX/SPEF 被注释；本轮独立补做单 typ RC 提取/读回，但 TT/FF 库并不等于完整 MMMC。仍需验证真实 corner/mode、约束覆盖及 RC 模型资格。VDD/VSS connected 也不等于 IR-drop/EM 通过。
-2. **按根因处理 A 轨。** 电气上保留 15 pF IO 负载：71 个 slew 违规集中在输出 pad，提取后还观察到 25 个 SRAM 输出 cap 违规；不能静默降低负载或放宽库限制。DRC 的 1585 merged 包含 1577 个 Pad 类 marker 和 8 个 density marker，先做独立焊盘几何/规则 fixture，再考虑整芯片重跑。 [IHP #1130](https://github.com/IHP-GmbH/IHP-Open-PDK/issues/1130)本次检索仍 open，无评论。现已证实叶重复电极依赖真实父级金属闭合；已定位 guard/tap 的提取与清理阶段，需先完成 tap reader/参数和 guard 模型回归，再用受支持、保留真实层次连接的最小 fixture 达到 strict exact，才考虑 full-chip attempt 3。历史 flat 的 52/135057 端口问题与 IO leaf mismatch 分别记录。未完成这些门槛前，不重跑 full-chip。
+2. **按根因处理 A 轨。** 最新 SRAM ECO 已清除 placement 估计下的 64 个 SRAM cap 违规，剩余 slew/cap=71/71；原版 9 月 5 日 RCX 的 25 个 SRAM cap 是历史结果，不能代替新候选提取后验收。保留 15 pF/1.2 ns，已测新版 Out16/InOut30/Out30 仍不满足边沿门槛；先明确接口/驱动方案，见[本轮门槛](docs/14_sram_io_contract_zh.md)。原版 DRC 1585 merged（1577 Pad、8 density）保持为历史记录；新官方宏各 6 个 density marker 也保留为 FAIL。tap reader 缺失已修复，参数约定及 guard 模型仍待解决，需受支持的严格 leaf/parent exact 后才考虑 full-chip attempt 3。历史 flat 的 52/135057 端口问题与 IO leaf mismatch 分别记录。[IHP #1130](https://github.com/IHP-GmbH/IHP-Open-PDK/issues/1130) 的 open/无评论来自此前检索，本轮未刷新其在线状态。
 3. **推进 B 轨几何合法性。** 530/642 个 cut-spacing 已有逐对几何证据；容量扩展解决了可容纳数量的问题，但未证明 HBT 落在 1.6 µm legal lattice 和合法访问窗口。下一步做受限 lattice/window 检查，再决定 placement；不直接 full route/full smoke，剩余 112 个金属 marker 仍须独立处理。
 4. **让 C 轨开始形成自己的功能证据。** 下一实施单元是 C1 OBI CSR endpoint，先独立测试与模块综合，再以 patch/新 run 集成。无需等 A/B 全部通过才能编写模块；物理整合仍受对应门槛约束。
 

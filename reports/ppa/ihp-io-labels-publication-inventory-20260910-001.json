@@ -1,0 +1,55 @@
+{
+  "file_count": 9,
+  "files": [
+    {
+      "bytes": 72386,
+      "path": "reports/ppa/ihp-io-labels-20260910-001.json",
+      "sha256": "21c5e962c273ca9dfab7a06d7d8b72be209919dae3e80e4260e2dcf6d6946fdf"
+    },
+    {
+      "bytes": 1278,
+      "path": "runs/ihp-io-labels-20260910-001/execution.json",
+      "sha256": "8131cc84252d2e87e5ad617d2aa27d361b5331be5975a39ce9581195ed1bcd69"
+    },
+    {
+      "bytes": 169609,
+      "path": "runs/ihp-io-labels-20260910-001/labels.json",
+      "sha256": "4216f7d064dc76dcbca2ce14b1697e0acf74eee075cab0b72744a2ae8dd1e34c"
+    },
+    {
+      "bytes": 3516,
+      "path": "runs/ihp-io-labels-20260910-001/manifest.json",
+      "sha256": "57ab80d38b83e88ed2d91ba7f03b3439a93f83956ddac70a4d6f40d9be28abdc"
+    },
+    {
+      "bytes": 7426,
+      "path": "runs/ihp-io-labels-20260910-001/probe_ihp_io_labels.py",
+      "sha256": "02de245138ffbc7725e74b75255bf3262902e3906cb5a9415b326af1d0a36199"
+    },
+    {
+      "bytes": 693,
+      "path": "runs/ihp-io-labels-20260910-001/terminal_observation.json",
+      "sha256": "c7fd5012b8229b7226e93387e6a78cb0fd0366a1794fee66b38275bf020c073b"
+    },
+    {
+      "bytes": 1393,
+      "path": "runs/ihp-io-labels-20260910-001/tool.log",
+      "sha256": "4c98ff5f0ed3f1338e8b4ba6d68cb406b1912345e85c693440ea38f37adc60a5"
+    },
+    {
+      "bytes": 7426,
+      "path": "scripts/probe_ihp_io_labels.py",
+      "sha256": "02de245138ffbc7725e74b75255bf3262902e3906cb5a9415b326af1d0a36199"
+    },
+    {
+      "bytes": 4746,
+      "path": "scripts/summarize_ihp_io_labels.py",
+      "sha256": "92ff55b2f70527e82e08e05690dafff4c744f5fad7d76bd2d3e1c7308e5356f0"
+    }
+  ],
+  "raw_evidence_preserve_bytes": true,
+  "schema_version": 1,
+  "staging_performed": false,
+  "total_bytes": 268473,
+  "whitelist_self_included": false
+}

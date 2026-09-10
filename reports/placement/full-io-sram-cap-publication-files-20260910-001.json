@@ -1,0 +1,175 @@
+{
+  "also_publish_this_inventory": "reports/placement/full-io-sram-cap-publication-files-20260910-001.json",
+  "classification": "exact_publication_inventory_not_signoff",
+  "files": [
+    {
+      "bytes": 50003,
+      "path": "reports/placement/full-io-sram-cap-audit-20260910-001.json",
+      "sha256": "9389338575172f8bc8ea2c4758504e6bb3670cbf1d730abc30a9d157cd907fe4"
+    },
+    {
+      "bytes": 1192,
+      "path": "reports/placement/full-io-sram-cap-validation-20260910-001.json",
+      "sha256": "dc6597615b8ef8a8756c51559f84299d23df140c433785dfd418bb79b0e5e2e1"
+    },
+    {
+      "bytes": 102365,
+      "path": "runs/croc-full-io-sram-cap-20260910-001/after.sdc",
+      "sha256": "ad5998176b5980480b3410ac3c37a98903217cb927a5e5a19d2ae0f6248b9c9f"
+    },
+    {
+      "bytes": 167,
+      "path": "runs/croc-full-io-sram-cap-20260910-001/after_area.tsv",
+      "sha256": "7d1b0e1fd64442b57ccfe5bea86b4315bda9939e45361b97190c6ed5de0823c4"
+    },
+    {
+      "bytes": 76,
+      "path": "runs/croc-full-io-sram-cap-20260910-001/after_bounds.tsv",
+      "sha256": "728054cc5f17e9563984ed7a38bade3a5ca17faef5a346e4e3b5925034a720fa"
+    },
+    {
+      "bytes": 3954,
+      "path": "runs/croc-full-io-sram-cap-20260910-001/after_bpin_boxes.tsv",
+      "sha256": "c78c64b6deef91d4cc6538e91367ae75ea62262adcecf83c8d15b490fc456578"
+    },
+    {
+      "bytes": 1690,
+      "path": "runs/croc-full-io-sram-cap-20260910-001/after_bterms.tsv",
+      "sha256": "02f8c709a1f6687acc17593e8e833a8e5ca568b6e38f34e71793ca5b2fec1de9"
+    },
+    {
+      "bytes": 98726,
+      "path": "runs/croc-full-io-sram-cap-20260910-001/after_cts.rpt",
+      "sha256": "c707888296dc607aef0beedfc72088cbfd880a9da9ea1e3e6d8e43d4fe1a8220"
+    },
+    {
+      "bytes": 902,
+      "path": "runs/croc-full-io-sram-cap-20260910-001/after_placement.tcl",
+      "sha256": "d482fe246e74fe8d00a9d497889114d3652361e0595450ef56cc8f5ee8755c16"
+    },
+    {
+      "bytes": 102365,
+      "path": "runs/croc-full-io-sram-cap-20260910-001/before.sdc",
+      "sha256": "b0ff426d5a85a1708c4f6452498d06dfbd1136e4ab62c5d56e48dd1a9dbe7d22"
+    },
+    {
+      "bytes": 167,
+      "path": "runs/croc-full-io-sram-cap-20260910-001/before_area.tsv",
+      "sha256": "dae84e7b00b1eec36b3e751754b836f6efbdec83f5ea2bb8e64f5ca9ac056b70"
+    },
+    {
+      "bytes": 76,
+      "path": "runs/croc-full-io-sram-cap-20260910-001/before_bounds.tsv",
+      "sha256": "728054cc5f17e9563984ed7a38bade3a5ca17faef5a346e4e3b5925034a720fa"
+    },
+    {
+      "bytes": 3954,
+      "path": "runs/croc-full-io-sram-cap-20260910-001/before_bpin_boxes.tsv",
+      "sha256": "c78c64b6deef91d4cc6538e91367ae75ea62262adcecf83c8d15b490fc456578"
+    },
+    {
+      "bytes": 1690,
+      "path": "runs/croc-full-io-sram-cap-20260910-001/before_bterms.tsv",
+      "sha256": "02f8c709a1f6687acc17593e8e833a8e5ca568b6e38f34e71793ca5b2fec1de9"
+    },
+    {
+      "bytes": 98760,
+      "path": "runs/croc-full-io-sram-cap-20260910-001/before_cts.rpt",
+      "sha256": "c56c002db473757acf18f1f7d2057ca48275b9d92ef47a113e17d0dd301c157d"
+    },
+    {
+      "bytes": 17453,
+      "path": "runs/croc-full-io-sram-cap-20260910-001/before_electrical_violators.rpt",
+      "sha256": "df68cda667ebbe348651e9e08b5e12d673753dcf1f30ebce6a4f19359cf45851"
+    },
+    {
+      "bytes": 2709,
+      "path": "runs/croc-full-io-sram-cap-20260910-001/capture_placement.tcl",
+      "sha256": "90304060bec159de6fc45c962a144bf0f7b747bafa909c09348bf695bfa4aa3c"
+    },
+    {
+      "bytes": 835,
+      "path": "runs/croc-full-io-sram-cap-20260910-001/check.tcl",
+      "sha256": "0c9224bdad6af4bafe2cb625ce46ea007af8892be112c3dd6b9a979c9731667b"
+    },
+    {
+      "bytes": 41973,
+      "path": "runs/croc-full-io-sram-cap-20260910-001/diagnosed_branches.json",
+      "sha256": "bb9daa3d48e7ffcd2864e99ad156266902aa3ea1e56ce3a7f1b85c1b3fa57255"
+    },
+    {
+      "bytes": 14308,
+      "path": "runs/croc-full-io-sram-cap-20260910-001/eco_loads.tsv",
+      "sha256": "dd23b00e7f8701a5dd6cec78bf2fe9255ca81a05d95f84c93ee6620dbfc6ec5c"
+    },
+    {
+      "bytes": 3160,
+      "path": "runs/croc-full-io-sram-cap-20260910-001/edit.tcl",
+      "sha256": "86e24c059932550873cdb2b106af3dfe6b00bd9bd2fbdc4bd8a3d94a91a59b2d"
+    },
+    {
+      "bytes": 10497,
+      "path": "runs/croc-full-io-sram-cap-20260910-001/electrical_violators.rpt",
+      "sha256": "da48a69348085a22311d88bdaab244bd7fc535b6d3a9c9d8df52d64ef86dbf9f"
+    },
+    {
+      "bytes": 106,
+      "path": "runs/croc-full-io-sram-cap-20260910-001/execute.sh",
+      "sha256": "be1266b44b7b2ee92aee6bba7c344cfc24bff64cc6c8e05c4485be7f4e98eaad"
+    },
+    {
+      "bytes": 102365,
+      "path": "runs/croc-full-io-sram-cap-20260910-001/inputs/cts.sdc",
+      "sha256": "59d60a0c7f159f96de9c2ab46630f98f75a073db5471d2502643df3c11c25063"
+    },
+    {
+      "bytes": 18694,
+      "path": "runs/croc-full-io-sram-cap-20260910-001/manifest.json",
+      "sha256": "34533f8519822b548d72f14c017e9bd95832b23b6be867945df91b6312c90c89"
+    },
+    {
+      "bytes": 98,
+      "path": "runs/croc-full-io-sram-cap-20260910-001/placement_checks.tsv",
+      "sha256": "8299e9324bf6ed3d2e0e3e9456af07bbe2f55b34c735312b154e4be27821f6cd"
+    },
+    {
+      "bytes": 7688,
+      "path": "runs/croc-full-io-sram-cap-20260910-001/planned_branches.tsv",
+      "sha256": "0386c83a8ea8f54d682c9200cb8baeb35d9725cfb66d91f6e5ae7db3da46ca9e"
+    },
+    {
+      "bytes": 784,
+      "path": "runs/croc-full-io-sram-cap-20260910-001/resource_samples.json",
+      "sha256": "e6037a50bfca9309723c865193fd2a3143236e517bed2a6cd773ffdcf642160b"
+    },
+    {
+      "bytes": 708,
+      "path": "runs/croc-full-io-sram-cap-20260910-001/terminal_observation.json",
+      "sha256": "fbbf1960d1cfe9df74353f9487f9776c1fe1fdf7c538500fe44b408dae2f78f0"
+    },
+    {
+      "bytes": 5115,
+      "path": "runs/croc-full-io-sram-cap-20260910-001/tool.log",
+      "sha256": "86cc0ad03b977a8e6f9b91abe0617ea67bfea7d57199f84566610faf376b2fba"
+    },
+    {
+      "bytes": 10520,
+      "path": "scripts/audit_croc_sram_cap.py",
+      "sha256": "e2ccef49f31d7b46ec73fb68f27a620d8690a2769479146dd2c436212d6fd8c7"
+    },
+    {
+      "bytes": 16978,
+      "path": "scripts/run_croc_sram_cap.py",
+      "sha256": "7cb9bbc09a8cc6af480a576f0b498fa018d27d660a14c8463d90aaaafb4a334e"
+    },
+    {
+      "bytes": 6078,
+      "path": "tests/test_croc_sram_cap.py",
+      "sha256": "3066b8d811078b651bb82738ce00c60f98a3ad84aa428dd076e0eb6b8ddf398c"
+    }
+  ],
+  "large_odb_def_verilog_complete_instances_iterms_original_core_status_remain_local_hash_bound": true,
+  "run_id": "croc-full-io-sram-cap-20260910-001",
+  "stage_commit_push_owner": "root agent",
+  "total_file_bytes_excluding_inventory": 726156
+}

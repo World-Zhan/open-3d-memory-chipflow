@@ -1,0 +1,13 @@
+Warning: There are 2 input ports missing set_input_delay.
+  bi_rx_core
+  bi_z_core
+Warning: There are 4 output ports missing set_output_delay.
+  bi_tx_rx
+  bi_z_pad
+  bi_z_rx
+  clk_core
+Warning: There are 4 unconstrained endpoints.
+  bi_tx_rx
+  bi_z_pad
+  bi_z_rx
+  clk_core

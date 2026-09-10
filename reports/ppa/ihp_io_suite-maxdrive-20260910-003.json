@@ -1,0 +1,395 @@
+{
+  "actual_candidate_instance_name": "out16",
+  "actual_candidate_master": "sg13g2_IOPadOut30mA",
+  "audit_result": "PASS",
+  "baseline_run": "runs/ihp_io_suite-sta-readback-20260910-002",
+  "chip_ppa_changed": false,
+  "conclusion": "None of the tested official drivers meets 15 pF with the retained 1.2 ns slew limit in all tested corners. Out30 still fails even FF and has negative SS max-path slack. This is not a claim about untested circuits or architectures.",
+  "corners": {
+    "ff": {
+      "execution_complete": true,
+      "explicit_limit_ns": 1.2,
+      "out16_slew_ns": 2.50765538,
+      "out30_path": {
+        "max": {
+          "slack_ns": 1.79470706,
+          "status": "MET"
+        },
+        "min": {
+          "slack_ns": 3.57270169,
+          "status": "MET"
+        },
+        "path_found": true
+      },
+      "out30_slew_ns": 1.5789969,
+      "pvt": "fast_1p32V_3p6V_m40C",
+      "qualification_result": "FAIL"
+    },
+    "ss": {
+      "execution_complete": true,
+      "explicit_limit_ns": 1.2,
+      "out16_slew_ns": 5.46863604,
+      "out30_path": {
+        "max": {
+          "slack_ns": -0.76430994,
+          "status": "VIOLATED"
+        },
+        "min": {
+          "slack_ns": 6.25564671,
+          "status": "MET"
+        },
+        "path_found": true
+      },
+      "out30_slew_ns": 3.32169247,
+      "pvt": "slow_1p08V_3p0V_125C",
+      "qualification_result": "FAIL"
+    },
+    "tt": {
+      "execution_complete": true,
+      "explicit_limit_ns": 1.2,
+      "out16_slew_ns": 3.56007743,
+      "out30_path": {
+        "max": {
+          "slack_ns": 0.98957998,
+          "status": "MET"
+        },
+        "min": {
+          "slack_ns": 4.38795757,
+          "status": "MET"
+        },
+        "path_found": true
+      },
+      "out30_slew_ns": 2.19179201,
+      "pvt": "typ_1p2V_3p3V_25C",
+      "qualification_result": "FAIL"
+    }
+  },
+  "digital_simulation": {
+    "analog_voltage_ESD_power_off_behavior_proven": false,
+    "assertions": 42,
+    "bidirectional_binary_cases": 16,
+    "elapsed_seconds": 1.19068830599997,
+    "enable_active_high": true,
+    "failures": 0,
+    "four_state_transfer": true,
+    "high_impedance_and_contention_checked": true,
+    "result": "PASS",
+    "tool": "Icarus Verilog version 13.0 (devel) (s20251012-46-gaad14df3-dirty)"
+  },
+  "evidence_sha256": {
+    "reports/ppa/ihp-io-suite-candidate-20260910-001.json": "1207cff2915e84544da8e19e6731caf157cb6611d1b32255f04856d2bc864efb",
+    "runs/croc-placement-sta-readback-20260909-001/candidate/work/openroad/scripts/reports.tcl": "3637b95c8ad6952b4c9c41e7e94beac8b48d05142a6828c1a0b04d7f91535cb2",
+    "runs/ihp_io_suite-digital-sta-20260910-001/interface_audit.json": "546e88bcb2c123ff36606c3eb0af33e0d7b812283efa96bd3b76456d3b7dbd8e",
+    "runs/ihp_io_suite-digital-sta-20260910-001/manifest.json": "383833a04f49a2f4601150bed6340565372378f48b5673b694fbcfc3c5c44223",
+    "runs/ihp_io_suite-digital-sta-20260910-001/simulation/compiler_version.txt": "d0aeeb5d0e54926f7e61dcd8a3f4025d1700e193b87dc35ff336e9fa567d79a7",
+    "runs/ihp_io_suite-digital-sta-20260910-001/simulation/sim.vvp": "74f344bc9cc2f6cdccb0d7fb292b0aade6e66d86d29154c6e4761d840a5aabcd",
+    "runs/ihp_io_suite-digital-sta-20260910-001/simulation/tb.sv": "3517081b55924e9096488d17aa5955241bd033c30ac488218bb28840f8fdf930",
+    "runs/ihp_io_suite-digital-sta-20260910-001/simulation/terminal_observation.json": "b3b67bdbe9e8c21fe9d47b79929597cccc0cc9685d88092cc5ec2ec9970df320",
+    "runs/ihp_io_suite-digital-sta-20260910-001/simulation/tool.log": "e8691cfac5fe4d1dda1987ee2d857ce4d648c3530d7dd11f747483ed544fd629",
+    "runs/ihp_io_suite-digital-sta-20260910-001/simulation/wave.vcd": "8e278ef1fa9801a684d9195cd462c1b675f3d0b4f0c5f648ceac9417ddeafeb4",
+    "runs/ihp_io_suite-digital-sta-20260910-001/tt/bidir_highz_path.rpt": "f5a05b71b72236dfdea1b7eefa9c4944bfc9eb457ec43e2f4c03f52f84f4050d",
+    "runs/ihp_io_suite-digital-sta-20260910-001/tt/bidir_rx_path.rpt": "1869a6476088ae70b711cc4dc34d7e98ba1a51038c25b3fe2d5d065f1d4651b4",
+    "runs/ihp_io_suite-digital-sta-20260910-001/tt/bidir_tx_path.rpt": "7033457198e6645bd542040099b3a892c76492ccc9370d77e872c889a727e27f",
+    "runs/ihp_io_suite-digital-sta-20260910-001/tt/check_help.rpt": "961112966a86416370824935e134ebf92bc0640ba2233542a6478d313913f989",
+    "runs/ihp_io_suite-digital-sta-20260910-001/tt/clocks.rpt": "06b064be8c86103837da6ddafb8402234773e622e02d8717414c01c9dc87af3a",
+    "runs/ihp_io_suite-digital-sta-20260910-001/tt/electrical_all.rpt": "590708ab76b6a22b6bfe6833ca14623602070e4c94646e4ff448904f81be4ae4",
+    "runs/ihp_io_suite-digital-sta-20260910-001/tt/electrical_violators.rpt": "f536cf355046c14a2fc37eedd49cfeb1c9f05eec8e98265edd0cffbc5f68fe6f",
+    "runs/ihp_io_suite-digital-sta-20260910-001/tt/input.def": "157973d6d79048702bcee762e44162f475e646921951d79724c9251c25e4ce92",
+    "runs/ihp_io_suite-digital-sta-20260910-001/tt/input.sdc": "9d04ecb5fa3b5b4e34194b86321b38b090dec32dc1047b94b30cbbe76e70e609",
+    "runs/ihp_io_suite-digital-sta-20260910-001/tt/input_path.rpt": "d51d7e4e27f17ae69dc4838fcc741131d11ae6b650f03f6fbc9ef3e0c3f42360",
+    "runs/ihp_io_suite-digital-sta-20260910-001/tt/out16_path.rpt": "3e739a01df7dc3b1b580170ceec06cd760e232cfe0c8153fa832053ed5c3df2d",
+    "runs/ihp_io_suite-digital-sta-20260910-001/tt/run.tcl": "137e7e6024c3159b4c1ea2be46d280197f2f6e652ae4932476715ee2ad2f9b76",
+    "runs/ihp_io_suite-digital-sta-20260910-001/tt/terminal_observation.json": "cfc251293b095e085eb1f0acaba39659e503c5da73da6bf0753686e731453069",
+    "runs/ihp_io_suite-digital-sta-20260910-001/tt/tool.log": "a9779f94e07aa40ef63a541138bd7f3faa39c414f24d1c39ac3da21ebf5772e8",
+    "runs/ihp_io_suite-maxdrive-20260910-003/manifest.json": "633a3ff9ee2e0337f8baa9bcdae60d711a3cae75f3d032fead75f08abc2beffa",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/combined_counts.tsv": "858a10e2bdd4a7ab983764aae147193b6ada6900a949fae66655d9f144a38364",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/ff/actual_terms.tsv": "54f3377e1a524c85f92740c6da19baecace7b4a15817a2dec9e51c2acad18138",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/ff/bidir_highz_path.rpt": "f5a05b71b72236dfdea1b7eefa9c4944bfc9eb457ec43e2f4c03f52f84f4050d",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/ff/bidir_rx_path.rpt": "51589bac5ffd09c0856958a5681a60d9342fa839869416018e5532771fecb173",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/ff/bidir_tx_path.rpt": "40d535ecddefa8e14eb0dca77cc9481653996031cde41c4178cf8c364334186e",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/ff/check_help.rpt": "961112966a86416370824935e134ebf92bc0640ba2233542a6478d313913f989",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/ff/clocks.rpt": "06b064be8c86103837da6ddafb8402234773e622e02d8717414c01c9dc87af3a",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/ff/constraints.rpt": "f8362514204ee616a10433bb90a424122991cacb45142f1dfb042fbb5669ef7b",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/ff/electrical_all.rpt": "ad1e968cdc757ef57e986fa93908987afe1d3e7bccb2a5658dd1a6b0db32e609",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/ff/electrical_violators.rpt": "2155acad1342c2fdb9fc7d451ca328c65347fe16472da2c0e0697954ac5e79f5",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/ff/input_path.rpt": "f77f5f0cd7dbecd221946e4737b77bf4e521db45fb36a34091b97edeeda3e4fd",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/ff/out16_path.rpt": "5fb5032c1f304287dbbdc36a3162abbc1b6729f8db64282e6c2706287b9343ad",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/ff/raw_default_power.rpt": "d00ef5881d4d6c57bc66b8fcdff099aa5bf8a62c0cf378fd5d88f539805615c9",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/ff/readback.def": "a7b7c95b75fa819faeb359f09975306608f9e558345210d190fc7f978ac31908",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/ff/readback.sdc": "7880cbc1a5532364f9c47aafe850c77ceb8901bd95188209e486f7e452ed5b6e",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/input.def": "04a4a37f1750066a0c6b158723229844d19a139dabb39d095626975bd12030d2",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/input.sdc": "9d04ecb5fa3b5b4e34194b86321b38b090dec32dc1047b94b30cbbe76e70e609",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/run.tcl": "6949311cbf65c690f44348d37624c2904d9f8f297cdb8a7967ca37062a8a2d4f",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/ss/actual_terms.tsv": "54f3377e1a524c85f92740c6da19baecace7b4a15817a2dec9e51c2acad18138",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/ss/bidir_highz_path.rpt": "f5a05b71b72236dfdea1b7eefa9c4944bfc9eb457ec43e2f4c03f52f84f4050d",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/ss/bidir_rx_path.rpt": "176f52fa89096cf20093bdbb9279ad83fa234c6675961bf90236e80db672bf29",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/ss/bidir_tx_path.rpt": "d0daaa42019a5c93ca04f49bf0943d913b240824530eec9c02177ad12da32911",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/ss/check_help.rpt": "961112966a86416370824935e134ebf92bc0640ba2233542a6478d313913f989",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/ss/clocks.rpt": "06b064be8c86103837da6ddafb8402234773e622e02d8717414c01c9dc87af3a",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/ss/constraints.rpt": "f8362514204ee616a10433bb90a424122991cacb45142f1dfb042fbb5669ef7b",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/ss/electrical_all.rpt": "81e48158f8aebea4ed47327cd64f8be364fdd486f5b409c8dea714a6b9e1f5cc",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/ss/electrical_violators.rpt": "8cc8af9e47839ca5862e1a5c7eabc160269b0f74fa6c6d90ed60d6c908e37727",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/ss/input_path.rpt": "9db08f9181cc9b3a319d846d74f911ba9718c5fddf13a870ad42f582584ae2db",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/ss/out16_path.rpt": "88cbd7992fccc205df3f0263664c3d5408202ee98735897a49391d4f8a307422",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/ss/raw_default_power.rpt": "829e00e6ef929845e4740d7cfa070b38ea5182a270901d977e8321566bac9918",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/ss/readback.def": "a7b7c95b75fa819faeb359f09975306608f9e558345210d190fc7f978ac31908",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/ss/readback.sdc": "7880cbc1a5532364f9c47aafe850c77ceb8901bd95188209e486f7e452ed5b6e",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/terminal_observation.json": "c03d4220b1ae4df20a62fec407e3a4bf4a14202c328b302a3e8a47537063a47d",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/tool.log": "29c092678e6345fa7dbc91e85e1b69999992ca2a987e9d530631edd5d3056b23",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/tt/actual_terms.tsv": "54f3377e1a524c85f92740c6da19baecace7b4a15817a2dec9e51c2acad18138",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/tt/bidir_highz_path.rpt": "f5a05b71b72236dfdea1b7eefa9c4944bfc9eb457ec43e2f4c03f52f84f4050d",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/tt/bidir_rx_path.rpt": "7ac8af2c37d4876c05697df3bafd1a9e64cc95c54124c3db5be7be0ccba668b1",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/tt/bidir_tx_path.rpt": "bbf7da25856922af796022b504cc0d01ce011a6d666fff2c64e2788bbe479c14",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/tt/check_help.rpt": "961112966a86416370824935e134ebf92bc0640ba2233542a6478d313913f989",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/tt/clocks.rpt": "06b064be8c86103837da6ddafb8402234773e622e02d8717414c01c9dc87af3a",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/tt/constraints.rpt": "f8362514204ee616a10433bb90a424122991cacb45142f1dfb042fbb5669ef7b",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/tt/electrical_all.rpt": "590708ab76b6a22b6bfe6833ca14623602070e4c94646e4ff448904f81be4ae4",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/tt/electrical_violators.rpt": "3789e48c3f51c760921850e06ddbf5adc8ea94a4320b731bbfecfb834a95699a",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/tt/input_path.rpt": "d64a50a74b818427f31a0c4c9629ed40e9a96c3542c265604c2cd27566f7da2b",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/tt/out16_path.rpt": "6b7f67f3f04d8a08eb022a7744e07032feb5892180a820115b7e9c7f43de7ae6",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/tt/raw_default_power.rpt": "961552a129dcca4bf31174883c809f104322f9aeffd73dbd6ae8efe1dbb9c112",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/tt/readback.def": "a7b7c95b75fa819faeb359f09975306608f9e558345210d190fc7f978ac31908",
+    "runs/ihp_io_suite-maxdrive-20260910-003/multicorner/tt/readback.sdc": "7880cbc1a5532364f9c47aafe850c77ceb8901bd95188209e486f7e452ed5b6e",
+    "runs/ihp_io_suite-maxdrive-20260910-003/out30_interface_audit.json": "1de6c2a0a7ce9e9ce27e3147ed7fec32ac19c482f9e94c51dc279750404c6880",
+    "runs/ihp_io_suite-sta-readback-20260910-002/manifest.json": "ad63a9c59dab9ba7c833cd3e8946a5cabb2bbb8ee050ffbeaf2a2a33c9ce9d82",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/combined_counts.tsv": "858a10e2bdd4a7ab983764aae147193b6ada6900a949fae66655d9f144a38364",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/ff/actual_terms.tsv": "e0f4c219afca5e5c9a8a7897ea2d642f797091dfcb8b283738e912e991754389",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/ff/bidir_highz_path.rpt": "f5a05b71b72236dfdea1b7eefa9c4944bfc9eb457ec43e2f4c03f52f84f4050d",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/ff/bidir_rx_path.rpt": "51589bac5ffd09c0856958a5681a60d9342fa839869416018e5532771fecb173",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/ff/bidir_tx_path.rpt": "40d535ecddefa8e14eb0dca77cc9481653996031cde41c4178cf8c364334186e",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/ff/check_help.rpt": "961112966a86416370824935e134ebf92bc0640ba2233542a6478d313913f989",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/ff/clocks.rpt": "06b064be8c86103837da6ddafb8402234773e622e02d8717414c01c9dc87af3a",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/ff/constraints.rpt": "f8362514204ee616a10433bb90a424122991cacb45142f1dfb042fbb5669ef7b",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/ff/electrical_all.rpt": "ad1e968cdc757ef57e986fa93908987afe1d3e7bccb2a5658dd1a6b0db32e609",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/ff/electrical_violators.rpt": "8681a49bb090a0f4eb8ae3452cf5caefd32087c2649f305404be2d98ff98de1e",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/ff/input_path.rpt": "f77f5f0cd7dbecd221946e4737b77bf4e521db45fb36a34091b97edeeda3e4fd",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/ff/out16_path.rpt": "2c07ea5f6b36251bd1758b67f8328ed229e3f1b7123bf9c348ca9e612939a497",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/ff/raw_default_power.rpt": "2ec99da9d5cac821a968aaf465bb6f3ebc11299e579315eed1d93db4048a76c8",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/ff/readback.def": "f2afb39cac1b9911fffe4bf8d7e76e9fcfbaaaf06b2091f77c02049b6b79442a",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/ff/readback.sdc": "816256d9ddc39eab84837536331e9b3d1e446050bac209947c45fe48169bec75",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/input.def": "157973d6d79048702bcee762e44162f475e646921951d79724c9251c25e4ce92",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/input.sdc": "9d04ecb5fa3b5b4e34194b86321b38b090dec32dc1047b94b30cbbe76e70e609",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/run.tcl": "6949311cbf65c690f44348d37624c2904d9f8f297cdb8a7967ca37062a8a2d4f",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/ss/actual_terms.tsv": "e0f4c219afca5e5c9a8a7897ea2d642f797091dfcb8b283738e912e991754389",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/ss/bidir_highz_path.rpt": "f5a05b71b72236dfdea1b7eefa9c4944bfc9eb457ec43e2f4c03f52f84f4050d",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/ss/bidir_rx_path.rpt": "176f52fa89096cf20093bdbb9279ad83fa234c6675961bf90236e80db672bf29",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/ss/bidir_tx_path.rpt": "d0daaa42019a5c93ca04f49bf0943d913b240824530eec9c02177ad12da32911",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/ss/check_help.rpt": "961112966a86416370824935e134ebf92bc0640ba2233542a6478d313913f989",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/ss/clocks.rpt": "06b064be8c86103837da6ddafb8402234773e622e02d8717414c01c9dc87af3a",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/ss/constraints.rpt": "f8362514204ee616a10433bb90a424122991cacb45142f1dfb042fbb5669ef7b",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/ss/electrical_all.rpt": "81e48158f8aebea4ed47327cd64f8be364fdd486f5b409c8dea714a6b9e1f5cc",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/ss/electrical_violators.rpt": "444f88f17f8ced826dc04b66f03e3d7cd23338633710aea49b1d0e3dabcc8bb1",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/ss/input_path.rpt": "9db08f9181cc9b3a319d846d74f911ba9718c5fddf13a870ad42f582584ae2db",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/ss/out16_path.rpt": "5819386c9347760b268fd1691c03fa9ec473e29e1c7b7588f07d8cd42ad99e5e",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/ss/raw_default_power.rpt": "0e64d683c163367eb50a2be4e795afba05345b5004369e9229d46d436e20b0b8",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/ss/readback.def": "f2afb39cac1b9911fffe4bf8d7e76e9fcfbaaaf06b2091f77c02049b6b79442a",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/ss/readback.sdc": "816256d9ddc39eab84837536331e9b3d1e446050bac209947c45fe48169bec75",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/terminal_observation.json": "30d41338cea5af890c43ab2f752975294343b6cfe71cc81d70d6c3ecc3ac4e33",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/tool.log": "29c092678e6345fa7dbc91e85e1b69999992ca2a987e9d530631edd5d3056b23",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/tt/actual_terms.tsv": "e0f4c219afca5e5c9a8a7897ea2d642f797091dfcb8b283738e912e991754389",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/tt/bidir_highz_path.rpt": "f5a05b71b72236dfdea1b7eefa9c4944bfc9eb457ec43e2f4c03f52f84f4050d",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/tt/bidir_rx_path.rpt": "7ac8af2c37d4876c05697df3bafd1a9e64cc95c54124c3db5be7be0ccba668b1",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/tt/bidir_tx_path.rpt": "bbf7da25856922af796022b504cc0d01ce011a6d666fff2c64e2788bbe479c14",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/tt/check_help.rpt": "961112966a86416370824935e134ebf92bc0640ba2233542a6478d313913f989",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/tt/clocks.rpt": "06b064be8c86103837da6ddafb8402234773e622e02d8717414c01c9dc87af3a",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/tt/constraints.rpt": "f8362514204ee616a10433bb90a424122991cacb45142f1dfb042fbb5669ef7b",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/tt/electrical_all.rpt": "590708ab76b6a22b6bfe6833ca14623602070e4c94646e4ff448904f81be4ae4",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/tt/electrical_violators.rpt": "f536cf355046c14a2fc37eedd49cfeb1c9f05eec8e98265edd0cffbc5f68fe6f",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/tt/input_path.rpt": "d64a50a74b818427f31a0c4c9629ed40e9a96c3542c265604c2cd27566f7da2b",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/tt/out16_path.rpt": "dea975f8580d007372f0fb49d44ad5b0fd693631cc689d5792c61afc28045577",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/tt/raw_default_power.rpt": "10ae0e618665c958a7138fbec00bcccfcc866974cc25ed31d93e7b8db380976a",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/tt/readback.def": "f2afb39cac1b9911fffe4bf8d7e76e9fcfbaaaf06b2091f77c02049b6b79442a",
+    "runs/ihp_io_suite-sta-readback-20260910-002/multicorner/tt/readback.sdc": "816256d9ddc39eab84837536331e9b3d1e446050bac209947c45fe48169bec75",
+    "scripts/audit_croc_placement_structure.py": "1920878b2dc306c829beda80755eff02fb338a31930369bbaa9555ce08a92333",
+    "scripts/audit_ihp_io_suite_digital_sta.py": "27ebf8ea9b224e6e45369d4acc4fa9968711feac211b1d75cc4ac48c3de1f38e",
+    "scripts/audit_ihp_io_suite_maxdrive.py": "d332afa7da1ba9e80d03b6613fef9b95943b77acb99a6de50bd3ea37106056e2",
+    "scripts/run_ihp_io_suite_digital_sta.py": "b94aec012af8aa296f23de645e4a67b9d24d594920c9475a5ac2a636991ec26d",
+    "scripts/run_ihp_io_suite_maxdrive.py": "02ca2e478947eb51c4d3cfc100d268b4edc6e590defc0af8a68f2faebbfccba0",
+    "scripts/run_ihp_io_suite_sta_readback.py": "cddb01639d3b6c83e3ecf38001425fc77b351dfd993bd32a9c7782f7d94a90e6",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/cdl/sg13g2_io.cdl": "7a30e902099e8a8f85e0ae853167904df3793357a793a7b4dc82237b72b3eec4",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/gds/sg13g2_io.gds": "4281a855377b6a1ca46356e9391258dc14e8efc3b8051a65befc0fe9db3c7825",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io.lef": "1100f050cd477b0db6072e1b2b53ee1e13d7e5473e7b5d20f27534cc27806320",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_fast_1p32V_3p6V_m40C.lib": "3a960b8338343f631d7f154988ac4d6a09216dcc5b19de91f1844b7965138181",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_slow_1p08V_3p0V_125C.lib": "fefb19df14f6a440ce8bb7f396531638b6ea00bab6747d8a604d9cbb7ff3c8e7",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib": "85d56d20c9295dcd62ad8f90fdeb699e96d34174835c71cf157ad5171624eb09",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/verilog/sg13g2_io.v": "94a4573f6b79187753ba74e9ee8babe0a64eaf0d5b4a4e40df162639e144f3ae",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef": "054f5b7b24d72365b4b1088be1331e04c1c2e3805de9f99c37e71938ed231efc"
+  },
+  "execution": {
+    "complete": true,
+    "elapsed_seconds": 1.486566780999965,
+    "exit_code": 0,
+    "oom_killed": false
+  },
+  "explicit_max_transition_ns": 1.2,
+  "external_GPIO_input_driver_unchanged": "sg13g2_IOPadOut16mA",
+  "fixed_image": "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+  "fixed_pdk_commit": "331c00484213b13414777eec1336ef5c29b969bd",
+  "generated_at": "2026-09-10T12:43:43.329280+00:00",
+  "limitations": [
+    "1.2 ns remains explicit despite the new library default of 3.5 ns.",
+    "Three limiting signal nets produce six STA pin/port violation rows; these are not six independent physical failures.",
+    "SS output and bidirectional TX max paths fail the chosen 100 MHz local delay budget.",
+    "Two inactive core inputs lack input delays; four observation/high-Z/clock outputs lack output delays. Complete chip timing qualification is not claimed.",
+    "Core observation load 0.05 pF is an explicit tiny-fixture assumption, not a measured whole-core load.",
+    "No GDS/route/DRC/LVS/IR/EM or analog characterization performed by this digital/STA branch.",
+    "Out30 interface/PG and three-corner STA checked; no extra Out30 Verilog simulation, GDS or LVS performed in this fourth process.",
+    "The instance name out16 is retained intentionally; the actual candidate master is Out30."
+  ],
+  "load_pf": 15,
+  "main_design_modified": false,
+  "new_liberty_applied_to_old_gds": false,
+  "out30_behavior_simulation_performed": false,
+  "out30_interface_audit": {
+    "cell": "sg13g2_IOPadOut30mA",
+    "result": "PASS",
+    "scope": "cross_view_Out30_interface_not_new_digital_simulation_or_LVS",
+    "view": {
+      "lef": {
+        "c2p": {
+          "direction": "INPUT",
+          "use": "SIGNAL"
+        },
+        "iovdd": {
+          "direction": "INOUT",
+          "use": "POWER"
+        },
+        "iovss": {
+          "direction": "INOUT",
+          "use": "GROUND"
+        },
+        "pad": {
+          "direction": "OUTPUT",
+          "use": "SIGNAL"
+        },
+        "vdd": {
+          "direction": "INOUT",
+          "use": "POWER"
+        },
+        "vss": {
+          "direction": "INOUT",
+          "use": "GROUND"
+        }
+      },
+      "liberty": {
+        "ff": {
+          "pg_types": {
+            "iovdd": "primary_power",
+            "iovss": "primary_ground",
+            "vdd": "primary_power",
+            "vss": "primary_ground"
+          },
+          "signals": {
+            "c2p": {
+              "clock": null,
+              "direction": "input",
+              "function": null,
+              "max_capacitance": null,
+              "related_ground_pin": "vss",
+              "related_power_pin": "vdd",
+              "three_state": null
+            },
+            "pad": {
+              "clock": null,
+              "direction": "output",
+              "function": "c2p",
+              "max_capacitance": "40",
+              "related_ground_pin": "iovss",
+              "related_power_pin": "iovdd",
+              "three_state": null
+            }
+          }
+        },
+        "ss": {
+          "pg_types": {
+            "iovdd": "primary_power",
+            "iovss": "primary_ground",
+            "vdd": "primary_power",
+            "vss": "primary_ground"
+          },
+          "signals": {
+            "c2p": {
+              "clock": null,
+              "direction": "input",
+              "function": null,
+              "max_capacitance": null,
+              "related_ground_pin": "vss",
+              "related_power_pin": "vdd",
+              "three_state": null
+            },
+            "pad": {
+              "clock": null,
+              "direction": "output",
+              "function": "c2p",
+              "max_capacitance": "40",
+              "related_ground_pin": "iovss",
+              "related_power_pin": "iovdd",
+              "three_state": null
+            }
+          }
+        },
+        "tt": {
+          "pg_types": {
+            "iovdd": "primary_power",
+            "iovss": "primary_ground",
+            "vdd": "primary_power",
+            "vss": "primary_ground"
+          },
+          "signals": {
+            "c2p": {
+              "clock": null,
+              "direction": "input",
+              "function": null,
+              "max_capacitance": null,
+              "related_ground_pin": "vss",
+              "related_power_pin": "vdd",
+              "three_state": null
+            },
+            "pad": {
+              "clock": null,
+              "direction": "output",
+              "function": "c2p",
+              "max_capacitance": "40",
+              "related_ground_pin": "iovss",
+              "related_power_pin": "iovdd",
+              "three_state": null
+            }
+          }
+        }
+      },
+      "ordered_verilog_cdl_ports": [
+        "pad",
+        "c2p",
+        "vdd",
+        "vss",
+        "iovdd",
+        "iovss"
+      ],
+      "verilog_directions": {
+        "c2p": "INPUT",
+        "iovdd": "INOUT",
+        "iovss": "INOUT",
+        "pad": "OUTPUT",
+        "vdd": "INOUT",
+        "vss": "INOUT"
+      }
+    }
+  },
+  "prior_failed_TT_run_preserved": true,
+  "public_rule_signoff": false,
+  "qualification_result": "FAIL",
+  "report_id": "ihp_io_suite-maxdrive-20260910-003",
+  "same_constraints_load_and_endpoints": true,
+  "schema_version": "1.0.0",
+  "scope": "one_official_Out16_to_Out30_master_change_in_local_fixture_only",
+  "source_pdk_modified": false,
+  "source_run": "runs/ihp_io_suite-maxdrive-20260910-003",
+  "tested_drivers": [
+    "sg13g2_IOPadOut16mA",
+    "sg13g2_IOPadInOut30mA",
+    "sg13g2_IOPadOut30mA"
+  ],
+  "total_eda_processes_this_branch": 4,
+  "unique_hash_count": 137,
+  "workload_power_w": null
+}
