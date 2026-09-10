@@ -1,0 +1,5 @@
+       Internal      Switching        Leakage          Total
+          Power          Power          Power          Power (Watts)
+------------------------------------------------------------
+ 0.00000000e+00 0.00000000e+00 1.98015499e-07 1.98015499e-07 i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut
+ 0.00000000e+00 0.00000000e+00 1.98015499e-07 1.98015499e-07 i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut

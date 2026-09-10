@@ -1,0 +1,22 @@
+{
+  "eda_result": "completed_actual_exit_0_no_oom",
+  "eda_runs_performed": 1,
+  "electrical_acceptance": "FAIL",
+  "full_repository_validation": "root_agent_to_perform_after_integration",
+  "full_route_drc_lvs_performed": false,
+  "run_id": "croc-full-io-cts-fanout-20260910-001",
+  "source_sha256": {
+    "scripts/audit_croc_full_cts_fanout.py": "49a9139cfae0743adef6565dd2c3afae6bb0b1abc3215bfe7322d6da233a2cae",
+    "scripts/run_croc_full_cts_fanout.py": "2ca9da4724e4897dc4f5b0f83b9ccae63fdf05b0c9036c3d84d40e1777f4961e",
+    "tests/test_croc_full_cts_fanout.py": "2318416aa69a802cfb83a241b7f9933377521b1d7a1c2ba7558cdabf1ec6a97b"
+  },
+  "structural_audit": "reports/placement/full-io-cts-fanout-audit-20260910-001.json",
+  "unit_tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p test_croc_full_cts_fanout.py -v",
+    "elapsed_seconds": 0.004,
+    "evidence": "actual exec_command result 36a35b; single-test-module import-path failure fixed before this run",
+    "result": "PASS",
+    "returncode": 0,
+    "tests_run": 11
+  }
+}

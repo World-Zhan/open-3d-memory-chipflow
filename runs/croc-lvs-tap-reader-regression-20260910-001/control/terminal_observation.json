@@ -1,0 +1,262 @@
+[
+    {
+        "Id": "6125cd89944a70801765130b09800f70a6bf28a6fd127a5f07cdc6feec358800",
+        "Created": "2026-09-10T12:01:08.093041612Z",
+        "Path": "/usr/bin/timeout",
+        "Args": [
+            "--signal=TERM",
+            "--kill-after=3s",
+            "60s",
+            "/bin/bash",
+            "-lc",
+            "ulimit -c 0\nklayout -b -r /output/regression.rb"
+        ],
+        "State": {
+            "Status": "exited",
+            "Running": false,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 0,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-09-10T12:01:08.217630438Z",
+            "FinishedAt": "2026-09-10T12:01:10.654290045Z"
+        },
+        "Image": "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+        "ResolvConfPath": "/var/lib/docker/containers/6125cd89944a70801765130b09800f70a6bf28a6fd127a5f07cdc6feec358800/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/6125cd89944a70801765130b09800f70a6bf28a6fd127a5f07cdc6feec358800/hostname",
+        "HostsPath": "/var/lib/docker/containers/6125cd89944a70801765130b09800f70a6bf28a6fd127a5f07cdc6feec358800/hosts",
+        "LogPath": "/var/lib/docker/containers/6125cd89944a70801765130b09800f70a6bf28a6fd127a5f07cdc6feec358800/6125cd89944a70801765130b09800f70a6bf28a6fd127a5f07cdc6feec358800-json.log",
+        "Name": "/croc-lvs-tap-reader-regression-20260910-001-control",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/home/james_zhan/projects/open-3d-memory-chipflow/runs/croc-lvs-tap-reader-regression-20260910-001/control:/output:rw",
+                "/home/james_zhan/projects/open-3d-memory-chipflow:/work:ro"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "bridge",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 4294967296,
+            "NanoCpus": 2000000000,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 8589934592,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/james_zhan/projects/open-3d-memory-chipflow/runs/croc-lvs-tap-reader-regression-20260910-001/control",
+                "Destination": "/output",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/home/james_zhan/projects/open-3d-memory-chipflow",
+                "Destination": "/work",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "6125cd89944a",
+            "Domainname": "",
+            "User": "1000:1000",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "5901/tcp": {},
+                "80/tcp": {},
+                "8888/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "HOME=/tmp",
+                "PYTHONDONTWRITEBYTECODE=1",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBIAN_FRONTEND=noninteractive",
+                "TZ=Europe/Vienna",
+                "LC_ALL=en_US.UTF-8",
+                "LANG=en_US.UTF-8",
+                "TOOLS=/foss/tools",
+                "PDK_ROOT=/foss/pdks",
+                "DESIGNS=/foss/designs",
+                "EXAMPLES=/foss/examples",
+                "VNC_PORT=5901",
+                "NO_VNC_PORT=80",
+                "JUPYTER_PORT=8888",
+                "TERM=xterm",
+                "STARTUPDIR=/dockerstartup",
+                "NO_VNC_HOME=/usr/share/novnc",
+                "VNC_COL_DEPTH=24",
+                "VNC_RESOLUTION=1680x1050",
+                "VNC_PW=abc123",
+                "VNC_VIEW_ONLY=false",
+                "OMPI_MCA_btl_vader_single_copy_mechanism=none",
+                "IIC_OSIC_TOOLS_VERSION=2025.12"
+            ],
+            "Cmd": [
+                "--signal=TERM",
+                "--kill-after=3s",
+                "60s",
+                "/bin/bash",
+                "-lc",
+                "ulimit -c 0\nklayout -b -r /output/regression.rb"
+            ],
+            "Image": "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+            "Volumes": null,
+            "WorkingDir": "/foss/designs",
+            "Entrypoint": [
+                "/usr/bin/timeout"
+            ],
+            "Labels": {
+                "org.opencontainers.image.authors": "Harald Pretl <harald.pretl@jku.at>; Georg Zachl <georg.zachl@jku.at>",
+                "org.opencontainers.image.description": "IIC-OSIC-TOOLS (Integrated Infrastructure for Collaborative Open Source IC Tools) is an all-in-one Docker container for open-source-based integrated circuit designs for analog and digital circuit flows.",
+                "org.opencontainers.image.documentation": "https://github.com/iic-jku/IIC-OSIC-TOOLS/blob/main/README.md",
+                "org.opencontainers.image.licenses": " Apache-2.0",
+                "org.opencontainers.image.ref.name": "2025.12",
+                "org.opencontainers.image.source": "https://github.com/iic-jku/IIC-OSIC-TOOLS",
+                "org.opencontainers.image.title": "IIC Open Source Integrated Circuit Tools",
+                "org.opencontainers.image.url": "https://github.com/iic-jku/iic-osic-tools",
+                "org.opencontainers.image.vendor": "Department for Integrated Circuits",
+                "org.opencontainers.image.version": "2025.12"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "",
+            "SandboxKey": "",
+            "Ports": {},
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "367d45f1236b6b7f120257b2acec12b0498e3c835a90295596886010a20e4753",
+                    "EndpointID": "",
+                    "Gateway": "",
+                    "IPAddress": "",
+                    "MacAddress": "",
+                    "IPPrefixLen": 0,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": null
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:82903a5580d7810a984c5001750f1217442837fe7f69b4486fc636ac95f34678",
+            "size": 10089,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    }
+]

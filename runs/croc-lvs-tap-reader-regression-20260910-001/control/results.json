@@ -1,0 +1,788 @@
+{
+  "schema_version": 1,
+  "tool_version": "KLayout 0.30.5",
+  "cases": {
+    "ptap_si": {
+      "status": "read",
+      "inventory": [
+        {
+          "name": "TOP",
+          "pins": [
+            "T",
+            "W",
+            "Z"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+            {
+              "name": "ONE",
+              "circuit_ref": "PTAP1(A=0.141253N,P=47.54U)",
+              "nets": [
+                "T",
+                "W"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PTAP1(A=0.141253N,P=47.54U)",
+          "pins": [
+            "1",
+            "2"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+
+          ]
+        }
+      ]
+    },
+    "ntap_mixed": {
+      "status": "read",
+      "inventory": [
+        {
+          "name": "TOP",
+          "pins": [
+            "T",
+            "W",
+            "Z"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+            {
+              "name": "TWO",
+              "circuit_ref": "NTAP1(A=2P,P=6U)",
+              "nets": [
+                "W",
+                "T"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NTAP1(A=2P,P=6U)",
+          "pins": [
+            "1",
+            "2"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+
+          ]
+        }
+      ]
+    },
+    "tap_dimensions": {
+      "status": "read",
+      "inventory": [
+        {
+          "name": "TOP",
+          "pins": [
+            "T",
+            "W",
+            "Z"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+            {
+              "name": "THREE",
+              "circuit_ref": "PTAP1(L=3U,W=2U)",
+              "nets": [
+                "T",
+                "W"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PTAP1(L=3U,W=2U)",
+          "pins": [
+            "1",
+            "2"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+
+          ]
+        }
+      ]
+    },
+    "tap_perim": {
+      "status": "read",
+      "inventory": [
+        {
+          "name": "TOP",
+          "pins": [
+            "T",
+            "W",
+            "Z"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+            {
+              "name": "FOUR",
+              "circuit_ref": "NTAP1(A=6P,PERIM=10U)",
+              "nets": [
+                "T",
+                "W"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NTAP1(A=6P,PERIM=10U)",
+          "pins": [
+            "1",
+            "2"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+
+          ]
+        }
+      ]
+    },
+    "tap_r": {
+      "status": "read",
+      "inventory": [
+        {
+          "name": "TOP",
+          "pins": [
+            "T",
+            "W",
+            "Z"
+          ],
+          "devices": [
+            {
+              "name": "FIVE",
+              "class": "PTAP1",
+              "ruby_class": "CustomTap",
+              "terminals": {
+                "TIE": "T",
+                "WELL": "W"
+              },
+              "parameters": {
+                "A": 141.25300000000001,
+                "P": 47.53999999999999
+              }
+            }
+          ],
+          "subcircuits": [
+
+          ]
+        }
+      ]
+    },
+    "ordinary_r": {
+      "status": "read",
+      "inventory": [
+        {
+          "name": "TOP",
+          "pins": [
+            "T",
+            "W",
+            "Z"
+          ],
+          "devices": [
+            {
+              "name": "PLAIN",
+              "class": "",
+              "ruby_class": "RBA::DeviceClassResistor",
+              "terminals": {
+                "A": "T",
+                "B": "W"
+              },
+              "parameters": {
+                "R": 10000.0,
+                "L": 0.0,
+                "W": 0.0,
+                "A": 0.0,
+                "P": 0.0
+              }
+            }
+          ],
+          "subcircuits": [
+
+          ]
+        }
+      ]
+    },
+    "unknown_defined": {
+      "status": "read",
+      "inventory": [
+        {
+          "name": "TOP",
+          "pins": [
+            "T",
+            "W",
+            "Z"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+            {
+              "name": "CHILD",
+              "circuit_ref": "MY_CHILD",
+              "nets": [
+                "T",
+                "W"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MY_CHILD",
+          "pins": [
+            "A",
+            "B"
+          ],
+          "devices": [
+            {
+              "name": "CHILD",
+              "class": "",
+              "ruby_class": "RBA::DeviceClassResistor",
+              "terminals": {
+                "A": "A",
+                "B": "B"
+              },
+              "parameters": {
+                "R": 3000.0,
+                "L": 0.0,
+                "W": 0.0,
+                "A": 0.0,
+                "P": 0.0
+              }
+            }
+          ],
+          "subcircuits": [
+
+          ]
+        }
+      ]
+    },
+    "unknown_near_name": {
+      "status": "read",
+      "inventory": [
+        {
+          "name": "TOP",
+          "pins": [
+            "T",
+            "W",
+            "Z"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+            {
+              "name": "CHILD",
+              "circuit_ref": "PTAP1_EXTRA(A=1P,P=4U)",
+              "nets": [
+                "T",
+                "W"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PTAP1_EXTRA(A=1P,P=4U)",
+          "pins": [
+            "1",
+            "2"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+
+          ]
+        }
+      ]
+    },
+    "bad_one_terminal": {
+      "status": "read",
+      "inventory": [
+        {
+          "name": "TOP",
+          "pins": [
+            "T",
+            "W",
+            "Z"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+            {
+              "name": "BAD",
+              "circuit_ref": "PTAP1(A=1P,P=4U)",
+              "nets": [
+                "T"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PTAP1(A=1P,P=4U)",
+          "pins": [
+            "1"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+
+          ]
+        }
+      ]
+    },
+    "bad_three_terminals": {
+      "status": "read",
+      "inventory": [
+        {
+          "name": "TOP",
+          "pins": [
+            "T",
+            "W",
+            "Z"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+            {
+              "name": "BAD",
+              "circuit_ref": "PTAP1(A=1P,P=4U)",
+              "nets": [
+                "T",
+                "W",
+                "Z"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PTAP1(A=1P,P=4U)",
+          "pins": [
+            "1",
+            "2",
+            "3"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+
+          ]
+        }
+      ]
+    },
+    "bad_missing_area": {
+      "status": "read",
+      "inventory": [
+        {
+          "name": "TOP",
+          "pins": [
+            "T",
+            "W",
+            "Z"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+            {
+              "name": "BAD",
+              "circuit_ref": "PTAP1(P=4U)",
+              "nets": [
+                "T",
+                "W"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PTAP1(P=4U)",
+          "pins": [
+            "1",
+            "2"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+
+          ]
+        }
+      ]
+    },
+    "bad_missing_perimeter": {
+      "status": "read",
+      "inventory": [
+        {
+          "name": "TOP",
+          "pins": [
+            "T",
+            "W",
+            "Z"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+            {
+              "name": "BAD",
+              "circuit_ref": "PTAP1(A=1P)",
+              "nets": [
+                "T",
+                "W"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PTAP1(A=1P)",
+          "pins": [
+            "1",
+            "2"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+
+          ]
+        }
+      ]
+    },
+    "bad_zero_area": {
+      "status": "read",
+      "inventory": [
+        {
+          "name": "TOP",
+          "pins": [
+            "T",
+            "W",
+            "Z"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+            {
+              "name": "BAD",
+              "circuit_ref": "PTAP1(A=0,P=4U)",
+              "nets": [
+                "T",
+                "W"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PTAP1(A=0,P=4U)",
+          "pins": [
+            "1",
+            "2"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+
+          ]
+        }
+      ]
+    },
+    "bad_negative_perimeter": {
+      "status": "read",
+      "inventory": [
+        {
+          "name": "TOP",
+          "pins": [
+            "T",
+            "W",
+            "Z"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+            {
+              "name": "BAD",
+              "circuit_ref": "PTAP1(A=1P,P=-4U)",
+              "nets": [
+                "T",
+                "W"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PTAP1(A=1P,P=-4U)",
+          "pins": [
+            "1",
+            "2"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+
+          ]
+        }
+      ]
+    },
+    "bad_non_numeric": {
+      "status": "read",
+      "inventory": [
+        {
+          "name": "TOP",
+          "pins": [
+            "T",
+            "W",
+            "Z"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+            {
+              "name": "BAD",
+              "circuit_ref": "PTAP1(A=UNKNOWN,P=4U)",
+              "nets": [
+                "T",
+                "W"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PTAP1(A=UNKNOWN,P=4U)",
+          "pins": [
+            "1",
+            "2"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+
+          ]
+        }
+      ]
+    },
+    "bad_multiplier": {
+      "status": "read",
+      "inventory": [
+        {
+          "name": "TOP",
+          "pins": [
+            "T",
+            "W",
+            "Z"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+            {
+              "name": "BAD",
+              "circuit_ref": "PTAP1(A=1P,M=2,P=4U)",
+              "nets": [
+                "T",
+                "W"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PTAP1(A=1P,M=2,P=4U)",
+          "pins": [
+            "1",
+            "2"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+
+          ]
+        }
+      ]
+    },
+    "bad_model_override": {
+      "status": "read",
+      "inventory": [
+        {
+          "name": "TOP",
+          "pins": [
+            "T",
+            "W",
+            "Z"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+            {
+              "name": "BAD",
+              "circuit_ref": "PTAP1(A=1P,MODEL=NTAP1,P=4U)",
+              "nets": [
+                "T",
+                "W"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PTAP1(A=1P,MODEL=NTAP1,P=4U)",
+          "pins": [
+            "1",
+            "2"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+
+          ]
+        }
+      ]
+    },
+    "bad_incomplete_dimensions": {
+      "status": "read",
+      "inventory": [
+        {
+          "name": "TOP",
+          "pins": [
+            "T",
+            "W",
+            "Z"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+            {
+              "name": "BAD",
+              "circuit_ref": "PTAP1(W=2U)",
+              "nets": [
+                "T",
+                "W"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PTAP1(W=2U)",
+          "pins": [
+            "1",
+            "2"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+
+          ]
+        }
+      ]
+    },
+    "bad_conflicting_perimeter": {
+      "status": "read",
+      "inventory": [
+        {
+          "name": "TOP",
+          "pins": [
+            "T",
+            "W",
+            "Z"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+            {
+              "name": "BAD",
+              "circuit_ref": "PTAP1(A=1P,P=4U,PERIM=5U)",
+              "nets": [
+                "T",
+                "W"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PTAP1(A=1P,P=4U,PERIM=5U)",
+          "pins": [
+            "1",
+            "2"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+
+          ]
+        }
+      ]
+    },
+    "bad_scale": {
+      "status": "read",
+      "inventory": [
+        {
+          "name": "TOP",
+          "pins": [
+            "T",
+            "W",
+            "Z"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+            {
+              "name": "BAD",
+              "circuit_ref": "PTAP1(A=1P,P=4U)",
+              "nets": [
+                "T",
+                "W"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PTAP1(A=1P,P=4U)",
+          "pins": [
+            "1",
+            "2"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1602 @@
+{
+  "schema_version": "1.0.0",
+  "classification": "static_model_load_contract_not_physical_drive_or_signoff",
+  "source_run": "croc-full-io-cts-20260909-001",
+  "source_sha256": {
+    "runs/croc-full-io-cts-20260909-001/manifest.json": "231cdaf6d6f2543a64d99ae3cf93d1bbe88cafa3e623fbfac973412abb8072e7",
+    "scripts/audit_croc_io_load_contract.py": "46a6d8b6610ae39295b8aa91c8fc616e8bf82a4964c6923f79846777ef63b175",
+    "scripts/audit_croc_placement_structure.py": "1920878b2dc306c829beda80755eff02fb338a31930369bbaa9555ce08a92333",
+    "runs/croc-full-io-cts-20260909-001/after.sdc": "678f98d218b741631a8f21f9c4eaebadc79c97cf934eb86d8e92fe6a37787904",
+    "upstream/croc/technology/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib": "e9af7d440c807799de55d16a126467e27d3235e7f53a928e014cdabee98369c9",
+    "upstream/croc/technology/lib/sg13g2_io_fast_1p32V_3p6V_m40C.lib": "0dbc28e762ac820f9db193a2736f408cf1cbf521547fef850083a585c70f212f",
+    "runs/croc-full-io-cts-20260909-001/electrical_violators.rpt": "1fb0cb342de1612367cb9edd5a4ce8a9a55ea74c1820877f35b12c3eb2035d86",
+    "upstream/croc/openroad/src/constraints.sdc": "997fc044a82e49b8ed2932c4ab413439a0d7f9904eee0732f7c2d31e36dcbb53"
+  },
+  "required_output_loads_pf": {
+    "gpio0_io": 15.0,
+    "gpio10_io": 15.0,
+    "gpio11_io": 15.0,
+    "gpio12_io": 15.0,
+    "gpio13_io": 15.0,
+    "gpio14_io": 15.0,
+    "gpio15_io": 15.0,
+    "gpio16_io": 15.0,
+    "gpio17_io": 15.0,
+    "gpio18_io": 15.0,
+    "gpio19_io": 15.0,
+    "gpio1_io": 15.0,
+    "gpio20_io": 15.0,
+    "gpio21_io": 15.0,
+    "gpio22_io": 15.0,
+    "gpio23_io": 15.0,
+    "gpio24_io": 15.0,
+    "gpio25_io": 15.0,
+    "gpio26_io": 15.0,
+    "gpio27_io": 15.0,
+    "gpio28_io": 15.0,
+    "gpio29_io": 15.0,
+    "gpio2_io": 15.0,
+    "gpio30_io": 15.0,
+    "gpio31_io": 15.0,
+    "gpio3_io": 15.0,
+    "gpio4_io": 15.0,
+    "gpio5_io": 15.0,
+    "gpio6_io": 15.0,
+    "gpio7_io": 15.0,
+    "gpio8_io": 15.0,
+    "gpio9_io": 15.0,
+    "jtag_tdo_o": 15.0,
+    "status_o": 15.0,
+    "uart_tx_o": 15.0,
+    "unused0_o": 15.0,
+    "unused1_o": 15.0,
+    "unused2_o": 15.0,
+    "unused3_o": 15.0
+  },
+  "libraries": {
+    "tt": {
+      "max_capacitance_pf": {
+        "sg13g2_IOPadInOut16mA": 4.19976,
+        "sg13g2_IOPadInOut30mA": 4.83452,
+        "sg13g2_IOPadInOut4mA": 1.07593,
+        "sg13g2_IOPadOut16mA": 4.21305,
+        "sg13g2_IOPadOut30mA": 4.53171,
+        "sg13g2_IOPadOut4mA": 1.11146,
+        "sg13g2_IOPadTriOut16mA": 4.21412,
+        "sg13g2_IOPadTriOut30mA": 4.86346,
+        "sg13g2_IOPadTriOut4mA": 1.11181
+      },
+      "largest_catalog_limit_pf": 4.86346,
+      "all_catalog_limits_below_15pf": true
+    },
+    "ff": {
+      "max_capacitance_pf": {
+        "sg13g2_IOPadInOut16mA": 6.47325,
+        "sg13g2_IOPadInOut30mA": 9.99915,
+        "sg13g2_IOPadInOut4mA": 1.65074,
+        "sg13g2_IOPadOut16mA": 6.49552,
+        "sg13g2_IOPadOut30mA": 9.69355,
+        "sg13g2_IOPadOut4mA": 1.6895,
+        "sg13g2_IOPadTriOut16mA": 6.49603,
+        "sg13g2_IOPadTriOut30mA": 10.0761,
+        "sg13g2_IOPadTriOut4mA": 1.68907
+      },
+      "largest_catalog_limit_pf": 10.0761,
+      "all_catalog_limits_below_15pf": true
+    }
+  },
+  "violations": {
+    "max slew": {
+      "count": 71,
+      "by_category": {
+        "external_gpio_driver": 32,
+        "chip_io_pad": 39
+      },
+      "rows": [
+        {
+          "pin": "gpio0_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio10_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio11_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio12_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio13_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio14_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio15_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio16_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio17_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio18_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio19_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio1_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio20_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio21_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio22_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio23_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio24_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio25_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio26_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio27_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio28_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio29_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio2_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio30_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio31_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio3_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio4_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio5_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio6_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio7_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio8_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "gpio9_io",
+          "category": "external_gpio_driver",
+          "limit": 1.2,
+          "actual": 3.63,
+          "slack": -2.43
+        },
+        {
+          "pin": "pad_status_o/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 3.55,
+          "slack": -2.35
+        },
+        {
+          "pin": "pad_uart_tx_o/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 3.55,
+          "slack": -2.35
+        },
+        {
+          "pin": "pad_jtag_tdo_o/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 3.55,
+          "slack": -2.35
+        },
+        {
+          "pin": "pad_unused0_o/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 3.55,
+          "slack": -2.35
+        },
+        {
+          "pin": "pad_unused1_o/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 3.55,
+          "slack": -2.35
+        },
+        {
+          "pin": "pad_unused2_o/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 3.55,
+          "slack": -2.35
+        },
+        {
+          "pin": "pad_unused3_o/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 3.55,
+          "slack": -2.35
+        },
+        {
+          "pin": "pad_gpio25_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio17_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio18_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio23_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio19_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio20_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio11_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio29_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio10_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio12_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio13_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio22_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio28_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio31_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio0_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio14_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio15_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio16_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio1_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio21_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio24_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio26_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio27_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio2_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio30_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio3_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio4_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio5_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio6_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio7_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio8_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        },
+        {
+          "pin": "pad_gpio9_io/pad",
+          "category": "chip_io_pad",
+          "limit": 1.2,
+          "actual": 2.23,
+          "slack": -1.03
+        }
+      ]
+    },
+    "max fanout": {
+      "count": 4,
+      "by_category": {
+        "clock_buffer": 4
+      },
+      "rows": [
+        {
+          "pin": "clkbuf_2_0_0_soc_clk_i_regs/X",
+          "category": "clock_buffer",
+          "limit": 8.0,
+          "actual": 16.0,
+          "slack": -8.0
+        },
+        {
+          "pin": "clkbuf_2_1_0_soc_clk_i_regs/X",
+          "category": "clock_buffer",
+          "limit": 8.0,
+          "actual": 16.0,
+          "slack": -8.0
+        },
+        {
+          "pin": "clkbuf_2_2_0_soc_clk_i_regs/X",
+          "category": "clock_buffer",
+          "limit": 8.0,
+          "actual": 16.0,
+          "slack": -8.0
+        },
+        {
+          "pin": "clkbuf_2_3_0_soc_clk_i_regs/X",
+          "category": "clock_buffer",
+          "limit": 8.0,
+          "actual": 16.0,
+          "slack": -8.0
+        }
+      ]
+    },
+    "max capacitance": {
+      "count": 135,
+      "by_category": {
+        "external_gpio_driver": 32,
+        "chip_io_pad": 39,
+        "sram_output": 64
+      },
+      "rows": [
+        {
+          "pin": "gpio0_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio10_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio11_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio12_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio13_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio14_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio15_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio16_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio17_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio18_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio19_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio1_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio20_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio21_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio22_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio23_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio24_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio25_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio26_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio27_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio28_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio29_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio2_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio30_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio31_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio3_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio4_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio5_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio6_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio7_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio8_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "gpio9_io",
+          "category": "external_gpio_driver",
+          "limit": 4.21,
+          "actual": 15.37,
+          "slack": -11.16
+        },
+        {
+          "pin": "pad_jtag_tdo_o/pad",
+          "category": "chip_io_pad",
+          "limit": 4.21,
+          "actual": 15.0,
+          "slack": -10.79
+        },
+        {
+          "pin": "pad_status_o/pad",
+          "category": "chip_io_pad",
+          "limit": 4.21,
+          "actual": 15.0,
+          "slack": -10.79
+        },
+        {
+          "pin": "pad_uart_tx_o/pad",
+          "category": "chip_io_pad",
+          "limit": 4.21,
+          "actual": 15.0,
+          "slack": -10.79
+        },
+        {
+          "pin": "pad_unused0_o/pad",
+          "category": "chip_io_pad",
+          "limit": 4.21,
+          "actual": 15.0,
+          "slack": -10.79
+        },
+        {
+          "pin": "pad_unused1_o/pad",
+          "category": "chip_io_pad",
+          "limit": 4.21,
+          "actual": 15.0,
+          "slack": -10.79
+        },
+        {
+          "pin": "pad_unused2_o/pad",
+          "category": "chip_io_pad",
+          "limit": 4.21,
+          "actual": 15.0,
+          "slack": -10.79
+        },
+        {
+          "pin": "pad_unused3_o/pad",
+          "category": "chip_io_pad",
+          "limit": 4.21,
+          "actual": 15.0,
+          "slack": -10.79
+        },
+        {
+          "pin": "pad_gpio0_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio10_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio11_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio12_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio13_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio14_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio15_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio16_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio17_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio18_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio19_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio1_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio20_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio21_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio22_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio23_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio24_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio25_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio26_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio27_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio28_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio29_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio2_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio30_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio31_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio3_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio4_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio5_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio6_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio7_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio8_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "pad_gpio9_io/pad",
+          "category": "chip_io_pad",
+          "limit": 4.83,
+          "actual": 15.37,
+          "slack": -10.54
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[30]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.12,
+          "slack": -0.06
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[26]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.12,
+          "slack": -0.06
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[24]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.12,
+          "slack": -0.06
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[21]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.11,
+          "slack": -0.05
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[1]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.11,
+          "slack": -0.05
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[0]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.11,
+          "slack": -0.05
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[28]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.11,
+          "slack": -0.05
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[29]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.11,
+          "slack": -0.05
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[25]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.11,
+          "slack": -0.05
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[31]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.11,
+          "slack": -0.05
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[2]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.11,
+          "slack": -0.05
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[27]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.11,
+          "slack": -0.05
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[3]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.11,
+          "slack": -0.05
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[4]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.11,
+          "slack": -0.05
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[7]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.11,
+          "slack": -0.05
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[17]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.11,
+          "slack": -0.04
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[20]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.11,
+          "slack": -0.04
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[16]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.11,
+          "slack": -0.04
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[5]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.11,
+          "slack": -0.04
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[19]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.11,
+          "slack": -0.04
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[8]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.11,
+          "slack": -0.04
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[22]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.11,
+          "slack": -0.04
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[6]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.11,
+          "slack": -0.04
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[23]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.11,
+          "slack": -0.04
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[9]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.1,
+          "slack": -0.04
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[18]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.1,
+          "slack": -0.04
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[14]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.1,
+          "slack": -0.04
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[10]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.1,
+          "slack": -0.04
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[12]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.1,
+          "slack": -0.04
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[11]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.1,
+          "slack": -0.04
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[14]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.1,
+          "slack": -0.04
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[13]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.1,
+          "slack": -0.04
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[12]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.1,
+          "slack": -0.04
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[10]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.1,
+          "slack": -0.04
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[7]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.1,
+          "slack": -0.03
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[15]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.1,
+          "slack": -0.03
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[6]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.09,
+          "slack": -0.03
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[5]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.09,
+          "slack": -0.03
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[9]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.09,
+          "slack": -0.03
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[8]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.09,
+          "slack": -0.03
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[13]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.09,
+          "slack": -0.03
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[15]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.09,
+          "slack": -0.03
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[17]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.09,
+          "slack": -0.03
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[16]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.09,
+          "slack": -0.03
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[19]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.09,
+          "slack": -0.03
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[21]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.09,
+          "slack": -0.03
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[11]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.09,
+          "slack": -0.02
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[18]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.09,
+          "slack": -0.02
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[20]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.09,
+          "slack": -0.02
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[0]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.09,
+          "slack": -0.02
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[22]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.09,
+          "slack": -0.02
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[23]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.09,
+          "slack": -0.02
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[24]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.09,
+          "slack": -0.02
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[26]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.08,
+          "slack": -0.02
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[28]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.08,
+          "slack": -0.02
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[3]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.08,
+          "slack": -0.02
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[1]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.08,
+          "slack": -0.02
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[29]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.08,
+          "slack": -0.02
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[30]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.08,
+          "slack": -0.02
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[25]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.08,
+          "slack": -0.02
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[4]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.08,
+          "slack": -0.02
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[1].i_sram/gen_512x32xBx1.i_cut/A_DOUT[2]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.08,
+          "slack": -0.01
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[31]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.08,
+          "slack": -0.01
+        },
+        {
+          "pin": "i_croc_soc/i_croc/gen_sram_bank[0].i_sram/gen_512x32xBx1.i_cut/A_DOUT[27]",
+          "category": "sram_output",
+          "limit": 0.06,
+          "actual": 0.08,
+          "slack": -0.01
+        }
+      ]
+    }
+  },
+  "io_load_pf_unchanged": 15,
+  "existing_catalog_drop_in_IO_satisfies_15pf_cap_limit": false,
+  "contract_result": "INCOMPATIBLE_WITH_PINNED_DIGITAL_IO_MAX_CAP_LIMITS",
+  "scope": "Digital characterized IO macros only; Analog passive pad is not a replacement digital output driver.",
+  "source_pdk_modified": false,
+  "layout_modified": false,
+  "electrical_acceptance": "FAIL",
+  "next_actions": [
+    "Keep 15 pF unless actual product/board requirements establish a different approved contract.",
+    "Seek qualified IO timing models compatible with actual external load; larger existing drive variants alone cannot meet current limits.",
+    "Separate 32 external GPIO driver, 39 chip IO and 64 SRAM output capacitance records; qualify receiver/loading constraints for bidirectional modes.",
+    "Treat SRAM output buffering as a distinct local ECO; it does not fix the IO model/load mismatch."
+  ],
+  "public_rule_signoff": false,
+  "foundry_signoff": false
+}

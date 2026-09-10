@@ -1,0 +1,2 @@
+set_power_activity [-global] [-input] [-input_ports ports] [-pins pins]
+   [-activity activity | -density density] [-duty duty] [-clock clock] 

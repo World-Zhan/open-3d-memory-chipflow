@@ -1,0 +1,1341 @@
+{
+  "classification": "reviewed_exact_small_artifact_inventory_not_chip_signoff",
+  "also_publish_this_inventory": "reports/ppa/cts-reader-power-publication-20260910-001.json",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "8d198ea2103ff7be3d40563ce0a720d2ec8da2f93e9245ab0c030c164c64ff6e",
+      "bytes": 28082
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "e59eb55fa1f1858726cb4e7b7e2a7a87170706f12cc1cc73fd90e97911c61dee",
+      "bytes": 50875
+    },
+    {
+      "path": "CURRENT_STATUS.md",
+      "sha256": "3c8408f412ec9010d080643bb558a89ffbf090f0b6eb4a9550f0c5b152ee6f0b",
+      "bytes": 15250
+    },
+    {
+      "path": "docs/13_cts_reader_power_zh.md",
+      "sha256": "895f02940e08b8b995c4a7fa90de82a1ab471c3938d41a2b3ecc836c66eefb8f",
+      "bytes": 7680
+    },
+    {
+      "path": "reports/current_status.json",
+      "sha256": "9bcef2cd50d2535addebce657a27052a87943cd38b1f07471be8f3d64caf0cd4",
+      "bytes": 13906
+    },
+    {
+      "path": "reports/lvs/run_tap_reader_ab.py",
+      "sha256": "e8eeb93288785ba55b33ebe6d8afa275c591ff8be97c877d6b5dba0e4acb1d96",
+      "bytes": 11645
+    },
+    {
+      "path": "reports/lvs/tap-reader-20260910-001.md",
+      "sha256": "55046a686802aee24e69b84cd15644e3bd2e99c464561150e26c1eb68da89f36",
+      "bytes": 4224
+    },
+    {
+      "path": "reports/lvs/tap-reader-ab-20260910-001.json",
+      "sha256": "98b983cdc1815f15b37dd92255ecdef14bf30f43aaaa617a21a5e727b2756291",
+      "bytes": 123649
+    },
+    {
+      "path": "reports/lvs/tap-reader-publication-inventory-20260910-001.json",
+      "sha256": "dc26aa933784a61a0a69bc9a165b7ad631f75e6930d81750902e299e75d81010",
+      "bytes": 33985
+    },
+    {
+      "path": "reports/lvs/tap_reader_adapter.rb",
+      "sha256": "bc005d7e7d24461f6fad8707914a3cdb39d3b613087c5af6fde2253c28d4f0b8",
+      "bytes": 1724
+    },
+    {
+      "path": "reports/lvs/tap_reader_regression.rb",
+      "sha256": "2c2137c1f074d658ec35b1925cbdc0f59761075a133c233873b31925c967d558",
+      "bytes": 2114
+    },
+    {
+      "path": "reports/lvs/tap_reader_xref_readback.py",
+      "sha256": "6a011efec4fcb74322a908820c55c85beb5e5181a760789400321aca449c2dcc",
+      "bytes": 822
+    },
+    {
+      "path": "reports/placement/full-io-cts-fanout-audit-20260910-001.json",
+      "sha256": "8a5892887b31f54353823a85eeddc0012cce00bc1c787d3322a6b97ac26f51a1",
+      "bytes": 21392
+    },
+    {
+      "path": "reports/placement/full-io-cts-fanout-publication-files-20260910-001.json",
+      "sha256": "e775b1a61842b37de6b640b2acfe36582a63d198100dfab6d7c5626cbd7108cf",
+      "bytes": 6546
+    },
+    {
+      "path": "reports/placement/full-io-cts-fanout-validation-20260910-001.json",
+      "sha256": "ac24e264f219ab5970ae3668a9cfa8c7e0fa767c8ff2a79219a42eca3632e3c1",
+      "bytes": 1076
+    },
+    {
+      "path": "reports/ppa/croc-io-load-contract-20260910-001.json",
+      "sha256": "dcb0ac4b20916e6bb2bdd05e2c5e435b630c3076ec3e0367fd4b94890d5bc281",
+      "bytes": 44437
+    },
+    {
+      "path": "reports/ppa/croc-power-direction-ab-20260910-001.json",
+      "sha256": "40314e66c0a89a8df37a5c806a163707403f6390d8b9f066fdbb8fb279eda67b",
+      "bytes": 44799
+    },
+    {
+      "path": "reports/ppa/croc-power-direction-publication-20260910-001.json",
+      "sha256": "2b5d06140b3e612a394b44de09e14299899902ab0cb437d749d948c4591f2203",
+      "bytes": 14504
+    },
+    {
+      "path": "reports/ppa/croc-ppa-cts-reader-power-20260910-001.json",
+      "sha256": "afe25bbce4585e3c03d82203bacc75f7323d787bad1006362527d19b1c5f28d7",
+      "bytes": 3198
+    },
+    {
+      "path": "reports/ppa/ihp-io-suite-candidate-20260910-001.json",
+      "sha256": "1207cff2915e84544da8e19e6731caf157cb6611d1b32255f04856d2bc864efb",
+      "bytes": 3725
+    },
+    {
+      "path": "reports/ppa/ihp-io-update-source-20260910-001.json",
+      "sha256": "0dafb6a60bb746124b0ee82d5d97afc6adaa35cb04449c742c27354ee9de20bd",
+      "bytes": 244978
+    },
+    {
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/after.sdc",
+      "sha256": "59d60a0c7f159f96de9c2ab46630f98f75a073db5471d2502643df3c11c25063",
+      "bytes": 102365
+    },
+    {
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/after_area.tsv",
+      "sha256": "dae84e7b00b1eec36b3e751754b836f6efbdec83f5ea2bb8e64f5ca9ac056b70",
+      "bytes": 167
+    },
+    {
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/after_bounds.tsv",
+      "sha256": "728054cc5f17e9563984ed7a38bade3a5ca17faef5a346e4e3b5925034a720fa",
+      "bytes": 76
+    },
+    {
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/after_bpin_boxes.tsv",
+      "sha256": "c78c64b6deef91d4cc6538e91367ae75ea62262adcecf83c8d15b490fc456578",
+      "bytes": 3954
+    },
+    {
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/after_bterms.tsv",
+      "sha256": "02f8c709a1f6687acc17593e8e833a8e5ca568b6e38f34e71793ca5b2fec1de9",
+      "bytes": 1690
+    },
+    {
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/after_cts.rpt",
+      "sha256": "2230bceb8cc67cbbfd607e6a8cdce3c1f7827749a33e87000c2bf37c975b2c86",
+      "bytes": 98732
+    },
+    {
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/after_placement.tcl",
+      "sha256": "d482fe246e74fe8d00a9d497889114d3652361e0595450ef56cc8f5ee8755c16",
+      "bytes": 902
+    },
+    {
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/before.sdc",
+      "sha256": "603fc4f0228a17464a17d0524962139b754a99dbf265cc6ec53d99a1423eb812",
+      "bytes": 102365
+    },
+    {
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/before_area.tsv",
+      "sha256": "74fdbeee1fe4f9a0f5f30cafd8bdd84d00e6f6cabaaf11c32b49fefc4acc7eb7",
+      "bytes": 167
+    },
+    {
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/before_bounds.tsv",
+      "sha256": "728054cc5f17e9563984ed7a38bade3a5ca17faef5a346e4e3b5925034a720fa",
+      "bytes": 76
+    },
+    {
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/before_bpin_boxes.tsv",
+      "sha256": "c78c64b6deef91d4cc6538e91367ae75ea62262adcecf83c8d15b490fc456578",
+      "bytes": 3954
+    },
+    {
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/before_bterms.tsv",
+      "sha256": "02f8c709a1f6687acc17593e8e833a8e5ca568b6e38f34e71793ca5b2fec1de9",
+      "bytes": 1690
+    },
+    {
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/before_cts.rpt",
+      "sha256": "7c565cf6c75ab49dcae3522c5d125f142b91c5668975ebcb7dd0422531c469f9",
+      "bytes": 97315
+    },
+    {
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/before_electrical_violators.rpt",
+      "sha256": "1fb0cb342de1612367cb9edd5a4ce8a9a55ea74c1820877f35b12c3eb2035d86",
+      "bytes": 17858
+    },
+    {
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/capture_placement.tcl",
+      "sha256": "90304060bec159de6fc45c962a144bf0f7b747bafa909c09348bf695bfa4aa3c",
+      "bytes": 2709
+    },
+    {
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/check.tcl",
+      "sha256": "b4c9331f3705a0dc4922587f5526a9d1e0bd19477dbe4d46dca17756585660cd",
+      "bytes": 500
+    },
+    {
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/diagnosed_branches.json",
+      "sha256": "9f24a56f5f3f33073a726b95e5e900f8198abb0ab28024b95d522f50dfa4907e",
+      "bytes": 3161
+    },
+    {
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/eco_groups.tsv",
+      "sha256": "4db9948bb31e647ce7f92cd372559708c8ac9f2273527e2c490f010b5edea83a",
+      "bytes": 4685
+    },
+    {
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/edit.tcl",
+      "sha256": "f0a88654df779736fe2e6168cebb61d92cbdbfc69a3bf19163d0a6a6ca89b8a9",
+      "bytes": 2857
+    },
+    {
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/electrical_violators.rpt",
+      "sha256": "df68cda667ebbe348651e9e08b5e12d673753dcf1f30ebce6a4f19359cf45851",
+      "bytes": 17453
+    },
+    {
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/execute.sh",
+      "sha256": "be1266b44b7b2ee92aee6bba7c344cfc24bff64cc6c8e05c4485be7f4e98eaad",
+      "bytes": 106
+    },
+    {
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/inputs/cts.sdc",
+      "sha256": "43491661eb21b024f13375f8f376f8a343eccedceaba20cf5e75d751f006fa02",
+      "bytes": 102365
+    },
+    {
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/manifest.json",
+      "sha256": "f4d58546a353881cb837646e4d6cfa0ded0afad6b16fe189eb0a62208d88ae4d",
+      "bytes": 18065
+    },
+    {
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/placement_checks.tsv",
+      "sha256": "8299e9324bf6ed3d2e0e3e9456af07bbe2f55b34c735312b154e4be27821f6cd",
+      "bytes": 98
+    },
+    {
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/resource_samples.json",
+      "sha256": "d9393f4f1fb87c9e18488bf37d6ff4873a6eaf4c4285921451f46bc25bdf6cf6",
+      "bytes": 787
+    },
+    {
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/terminal_observation.json",
+      "sha256": "da8fe6229d20037faa3f21d89d0a56a7ffb3eb410122a141aa915b7aa978c613",
+      "bytes": 712
+    },
+    {
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/tool.log",
+      "sha256": "2ee255cd0959c6a43f00a670dde58e12aae61ff194e24ca3d7a95f4baeb3f27f",
+      "bytes": 5487
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/execution.json",
+      "sha256": "94222dc51a7ab1805c9c8bb896df85cfda799e046008fd91ed58f636ea4a25c0",
+      "bytes": 1483
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/inputs/sg13g2_DCNDiode.cdl",
+      "sha256": "e6beb7b9b6eb3ac828ae597aebb68e8773ee5c0408ab3f0ca1867f652d930e43",
+      "bytes": 349
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/result/sg13g2_DCNDiode.log",
+      "sha256": "2fb24f99c7ff5b80efd8e4471825bdd20c66044c3ba6244383432af40ca78cd3",
+      "bytes": 36680
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/result/sg13g2_DCNDiode_extracted.cir",
+      "sha256": "73ee477aeac655ef0739728c656de6baacbf2e492d9a9c5f6884884f441b0694",
+      "bytes": 281
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/layout_after_align.inventory.json",
+      "sha256": "5786b53a17d59ba369cffd7e921afcd7b4efc4f4f890c8fbb33f7bbdca17640a",
+      "bytes": 5294
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/layout_after_compare.inventory.json",
+      "sha256": "3ded400288b5152dc80370718358004b6a5ee9d7ba4fd813a59993c9afd90de1",
+      "bytes": 5990
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/layout_before_align.inventory.json",
+      "sha256": "cafb830e6b593077a3c65d19a399a7188ec1c5590cb579cdf33f021ed3b0db8a",
+      "bytes": 5295
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/layout_netlist_after_combine_devices.inventory.json",
+      "sha256": "54b970ba9cd93e233609bfe7266987a0b6c426aaeb115d5274f175e2074bdde5",
+      "bytes": 6006
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/layout_netlist_after_make_top_level_pins.inventory.json",
+      "sha256": "3559a0ce27d814a76c92604b1ee5817683f181f075e6c94b58d706563ac42a61",
+      "bytes": 6010
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/layout_netlist_after_purge.inventory.json",
+      "sha256": "fd2b1baff360470f2322e62847c0160b3e432bc1c7cb3d88ffd324abb4aa2d34",
+      "bytes": 5996
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/layout_netlist_after_purge_nets.inventory.json",
+      "sha256": "454b50c2b30fdca191b5e3b1eea1ee816d994fd0405f631630d9a0b06ea5c48f",
+      "bytes": 6001
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/layout_netlist_after_rf_mapping.inventory.json",
+      "sha256": "b2e00b710ec99e424a8d1a12be3ad94cdf875b941abe3bc76695635d7a373b7d",
+      "bytes": 5583
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/layout_netlist_after_rf_purge.inventory.json",
+      "sha256": "79a8226c05d6278d9dc371311a2975ac168e7d2d6897de5663628cbc585675c7",
+      "bytes": 5305
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/layout_netlist_after_rf_purge_devices.inventory.json",
+      "sha256": "8b6414f395642cb9c881de08afff368507577e9de4cad4c0bf453c05aef4791e",
+      "bytes": 5589
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/layout_netlist_after_simplify.inventory.json",
+      "sha256": "7b333540917cdb484e87d36aa552ea13d1009a38e56e192ea12c5377e66b1dd0",
+      "bytes": 5999
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/layout_netlist_before_combine_devices.inventory.json",
+      "sha256": "177b201c005ae7aab43e4af0e40d85286a8f7eb37b70f9d079dc61c079fa15b3",
+      "bytes": 6007
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/layout_netlist_before_make_top_level_pins.inventory.json",
+      "sha256": "96ce04a01e0587f985ae3a614a526caa30eedf50654bf194341209da9b12dbdd",
+      "bytes": 6011
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/layout_netlist_before_purge.inventory.json",
+      "sha256": "38b82fe1ab08eb4517f47fe5b76b2801f704e77cabf693dab3bc55078c8294af",
+      "bytes": 5997
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/layout_netlist_before_purge_nets.inventory.json",
+      "sha256": "29ab4a01acfc69398eecfd50c6c594aac064d87ca260ab1051f8c617c11a6070",
+      "bytes": 6002
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/layout_netlist_before_simplify.inventory.json",
+      "sha256": "7b322b4b52804c83e3d28f3a462b3a3dfe5d947d1e22c93951036e19163595df",
+      "bytes": 5306
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/layout_netlist_raw_before_rf_mapping.inventory.json",
+      "sha256": "c2059eb39373a261ddbdd0f70eb11a3a71db02aa5dd26b7701747dfcdc18b3af",
+      "bytes": 5588
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/schematic_after_align.inventory.json",
+      "sha256": "f2a1e6d9842a8fad06efb62de92640fb7a179f72c78b9174f6e5b2e3a94f825f",
+      "bytes": 6062
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/schematic_after_compare.inventory.json",
+      "sha256": "fabe89f16747b5a4426e0c8251b6e09d2c231dd9b8101e383df1c489763a661f",
+      "bytes": 4267
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/schematic_after_reader.inventory.json",
+      "sha256": "52a48a8e2128c7aa28f983e6c27649e5e47466f4228f7b7fc75a9c578aa6cdbd",
+      "bytes": 6063
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/schematic_before_align.inventory.json",
+      "sha256": "9a58b12cf8722dd96c5b3f46ce993afe3a3e515ef8303bd111a42f475fc34478",
+      "bytes": 6063
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/schematic_netlist_after_combine_devices.inventory.json",
+      "sha256": "f0612a3d13568b827d983a5cb70739092f57ace6bbb963252a1ba672b5079c98",
+      "bytes": 4283
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/schematic_netlist_after_make_top_level_pins.inventory.json",
+      "sha256": "29d3977d46418c6e823b1ccf00136946b32f89a1f52da2e9889d50f026c11808",
+      "bytes": 4287
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/schematic_netlist_after_purge.inventory.json",
+      "sha256": "d3e85f49bbae361442589942c25010eafc506032c1c2152723136aeb4af9f00d",
+      "bytes": 4273
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/schematic_netlist_after_purge_nets.inventory.json",
+      "sha256": "2a439ef612d9431f49526c30b2bfefb7de86bcab4a8d048a6d313ffc605d8f75",
+      "bytes": 4278
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/schematic_netlist_after_simplify.inventory.json",
+      "sha256": "ddf7bee58bd901d6c9f36cfd43f1ca99f66f498d210b4baef4cdcdefd43ac8eb",
+      "bytes": 4276
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/schematic_netlist_before_combine_devices.inventory.json",
+      "sha256": "aa21283784b82c5bcafccd222c5025d7ed25e4c57997b0bcf5dcc44534514207",
+      "bytes": 4284
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/schematic_netlist_before_make_top_level_pins.inventory.json",
+      "sha256": "7d4fbb907ae94fa1e089500abdcccdaaee42a05e5515a8fed0da4a7fac3a66b2",
+      "bytes": 4288
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/schematic_netlist_before_purge.inventory.json",
+      "sha256": "52c809005f299678a52ea4d0155c90f9c0191322ca0ee373d80ebc21f7731ce7",
+      "bytes": 4274
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/schematic_netlist_before_purge_nets.inventory.json",
+      "sha256": "569581a7f819c7cb064a487239cb2a195b7e64ef4adb3a257b1ee16fb0b47c21",
+      "bytes": 4279
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/snapshots/schematic_netlist_before_simplify.inventory.json",
+      "sha256": "fa0b3b7c557c23f234de8958933f4adb402762b3a9ab13fbd4296cfcb05c69c9",
+      "bytes": 6074
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/terminal_observation.json",
+      "sha256": "a64eaf863908ae062a32f4001c04b54fd8256087437d5ffdbc0f7bcda277d0c9",
+      "bytes": 10309
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/candidate/tool.log",
+      "sha256": "663fea7b593870bc539df9f5f59b21a353532d4697d31ef8a0c0cd288f61891b",
+      "bytes": 41405
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/execution.json",
+      "sha256": "9af1c52aa66d678def0b8841cb76adbe645c7db1848bd1d6f5073c767c6755f2",
+      "bytes": 1479
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/inputs/sg13g2_DCNDiode.cdl",
+      "sha256": "e6beb7b9b6eb3ac828ae597aebb68e8773ee5c0408ab3f0ca1867f652d930e43",
+      "bytes": 349
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/result/sg13g2_DCNDiode.log",
+      "sha256": "9a2fe7479fee0fb842bb46d0c989d057012d457f2cbdbf942aa06c4ee7574e37",
+      "bytes": 36680
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/result/sg13g2_DCNDiode_extracted.cir",
+      "sha256": "73ee477aeac655ef0739728c656de6baacbf2e492d9a9c5f6884884f441b0694",
+      "bytes": 281
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/layout_after_align.inventory.json",
+      "sha256": "5786b53a17d59ba369cffd7e921afcd7b4efc4f4f890c8fbb33f7bbdca17640a",
+      "bytes": 5294
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/layout_after_compare.inventory.json",
+      "sha256": "3ded400288b5152dc80370718358004b6a5ee9d7ba4fd813a59993c9afd90de1",
+      "bytes": 5990
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/layout_before_align.inventory.json",
+      "sha256": "cafb830e6b593077a3c65d19a399a7188ec1c5590cb579cdf33f021ed3b0db8a",
+      "bytes": 5295
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/layout_netlist_after_combine_devices.inventory.json",
+      "sha256": "54b970ba9cd93e233609bfe7266987a0b6c426aaeb115d5274f175e2074bdde5",
+      "bytes": 6006
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/layout_netlist_after_make_top_level_pins.inventory.json",
+      "sha256": "3559a0ce27d814a76c92604b1ee5817683f181f075e6c94b58d706563ac42a61",
+      "bytes": 6010
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/layout_netlist_after_purge.inventory.json",
+      "sha256": "fd2b1baff360470f2322e62847c0160b3e432bc1c7cb3d88ffd324abb4aa2d34",
+      "bytes": 5996
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/layout_netlist_after_purge_nets.inventory.json",
+      "sha256": "454b50c2b30fdca191b5e3b1eea1ee816d994fd0405f631630d9a0b06ea5c48f",
+      "bytes": 6001
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/layout_netlist_after_rf_mapping.inventory.json",
+      "sha256": "b2e00b710ec99e424a8d1a12be3ad94cdf875b941abe3bc76695635d7a373b7d",
+      "bytes": 5583
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/layout_netlist_after_rf_purge.inventory.json",
+      "sha256": "79a8226c05d6278d9dc371311a2975ac168e7d2d6897de5663628cbc585675c7",
+      "bytes": 5305
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/layout_netlist_after_rf_purge_devices.inventory.json",
+      "sha256": "8b6414f395642cb9c881de08afff368507577e9de4cad4c0bf453c05aef4791e",
+      "bytes": 5589
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/layout_netlist_after_simplify.inventory.json",
+      "sha256": "7b333540917cdb484e87d36aa552ea13d1009a38e56e192ea12c5377e66b1dd0",
+      "bytes": 5999
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/layout_netlist_before_combine_devices.inventory.json",
+      "sha256": "177b201c005ae7aab43e4af0e40d85286a8f7eb37b70f9d079dc61c079fa15b3",
+      "bytes": 6007
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/layout_netlist_before_make_top_level_pins.inventory.json",
+      "sha256": "96ce04a01e0587f985ae3a614a526caa30eedf50654bf194341209da9b12dbdd",
+      "bytes": 6011
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/layout_netlist_before_purge.inventory.json",
+      "sha256": "38b82fe1ab08eb4517f47fe5b76b2801f704e77cabf693dab3bc55078c8294af",
+      "bytes": 5997
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/layout_netlist_before_purge_nets.inventory.json",
+      "sha256": "29ab4a01acfc69398eecfd50c6c594aac064d87ca260ab1051f8c617c11a6070",
+      "bytes": 6002
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/layout_netlist_before_simplify.inventory.json",
+      "sha256": "7b322b4b52804c83e3d28f3a462b3a3dfe5d947d1e22c93951036e19163595df",
+      "bytes": 5306
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/layout_netlist_raw_before_rf_mapping.inventory.json",
+      "sha256": "c2059eb39373a261ddbdd0f70eb11a3a71db02aa5dd26b7701747dfcdc18b3af",
+      "bytes": 5588
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/schematic_after_align.inventory.json",
+      "sha256": "f1a108676952f9913bf563912e1c484789f52f65b2c7364b6f3113ff908d8962",
+      "bytes": 4876
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/schematic_after_compare.inventory.json",
+      "sha256": "5b814227311e5dd64b7ffae19e0929375a63bddfb5fbd7f94f76526c6d3cbe52",
+      "bytes": 2577
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/schematic_after_reader.inventory.json",
+      "sha256": "f0b457c8734bdd7ea79180eb0cd4c2cc9060a16b581fc162f670ad5faa88ba84",
+      "bytes": 6772
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/schematic_before_align.inventory.json",
+      "sha256": "71cb0135ae4a9c061cd73139206420d953d09ab8a542a5f6a79f780df84303cc",
+      "bytes": 6772
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/schematic_netlist_after_combine_devices.inventory.json",
+      "sha256": "b0e2bbc3809d59b8b5972ef2da426a688bb6870ae09fcc0727b4b0b7fefee9f9",
+      "bytes": 2593
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/schematic_netlist_after_make_top_level_pins.inventory.json",
+      "sha256": "0912727ce25bfdd3b215679b970cbec5cdef3bcee6cd95d68e308f12546b38b9",
+      "bytes": 2597
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/schematic_netlist_after_purge.inventory.json",
+      "sha256": "4bceb6d27920b4c49c148d5cd4839bbd32f876aad055e5e4bf2e5a6dd542d1ca",
+      "bytes": 2583
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/schematic_netlist_after_purge_nets.inventory.json",
+      "sha256": "65f921dd22d535b15cd946c6534e609662865640ead93f6ad14d0b93dd48931b",
+      "bytes": 2588
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/schematic_netlist_after_simplify.inventory.json",
+      "sha256": "687efdb9d3a09a750fa2ca7ef9c53a47986c102ee72b7389a74de4398be4a322",
+      "bytes": 2586
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/schematic_netlist_before_combine_devices.inventory.json",
+      "sha256": "bce54783997c54bf56918b817117db1a28d1127c88d263216e47468c7f5b037d",
+      "bytes": 2594
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/schematic_netlist_before_make_top_level_pins.inventory.json",
+      "sha256": "10e3e58dc8314f0e592ce255df518ef8985b9d45c1c37d47f3d01a2801e2830f",
+      "bytes": 2598
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/schematic_netlist_before_purge.inventory.json",
+      "sha256": "b686a7049892a8afeb719c457e2f0afd4bbd1c17d3fa73db007f6b4f3812a71d",
+      "bytes": 2584
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/schematic_netlist_before_purge_nets.inventory.json",
+      "sha256": "8121f8ae4eddc575c536b47f9cd3ee3cb2470b4b53047df66d3706f36bd48523",
+      "bytes": 2589
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/snapshots/schematic_netlist_before_simplify.inventory.json",
+      "sha256": "47436178291800ca738248eb556d9324aeddec811d95a684b7e8ca824b493864",
+      "bytes": 4888
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/terminal_observation.json",
+      "sha256": "ff27ec39c77858925c0697ac6447ea197997bba50f9fe54f124aacdfcd5d0698",
+      "bytes": 10303
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/control/tool.log",
+      "sha256": "6be599bd3e3ddf1d1c45e98639f7b660f09736e7f49cf83aa9e8a8e95b9a5014",
+      "bytes": 41403
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/manifest.json",
+      "sha256": "7eb9aee454c4dae96d9431a80695842d3d21ecf6a18a1ef7175ba20dcf0f255f",
+      "bytes": 59251
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/run_tap_reader_ab.py",
+      "sha256": "e8eeb93288785ba55b33ebe6d8afa275c591ff8be97c877d6b5dba0e4acb1d96",
+      "bytes": 11645
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/tap_reader_adapter.patch",
+      "sha256": "1f2e3405762260135ffb0b89d8bcf1556352d1174bb1d245523fcfbf04b279ee",
+      "bytes": 1944
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/tap_reader_adapter.rb",
+      "sha256": "bc005d7e7d24461f6fad8707914a3cdb39d3b613087c5af6fde2253c28d4f0b8",
+      "bytes": 1724
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-dcn-ab-20260910-001/tap_reader_regression.rb",
+      "sha256": "2c2137c1f074d658ec35b1925cbdc0f59761075a133c233873b31925c967d558",
+      "bytes": 2114
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/candidate/cases.json",
+      "sha256": "3733760fda53842941bf56f92f82556f4ee58834d5167d1475bb3d8ba807aa6d",
+      "bytes": 2998
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/candidate/execution.json",
+      "sha256": "d20f5335a591bf05ef6c839ba6547914aebaa49eb90ff845bf8a22dc59be30f9",
+      "bytes": 1301
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/candidate/inputs/bad_conflicting_perimeter.cdl",
+      "sha256": "a96526f18f7f63cb694e515843caa295af4055c9c0f631bf85bbf1a95a45d65b",
+      "bytes": 93
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/candidate/inputs/bad_incomplete_dimensions.cdl",
+      "sha256": "d91d45a9c3d245d6b5ca5af61fc49d71542469fe1d8978da072eaa721b683712",
+      "bytes": 79
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/candidate/inputs/bad_missing_area.cdl",
+      "sha256": "2694a35bcecb7c296ae9be0a2ba5e73b7a759d948e398194d6d4e2e12fe1306b",
+      "bytes": 79
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/candidate/inputs/bad_missing_perimeter.cdl",
+      "sha256": "1b65e30d9b6c0777afd65d36424929c83fff3f3bf0d504a1ec822d3dbd6c5e93",
+      "bytes": 79
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/candidate/inputs/bad_model_override.cdl",
+      "sha256": "01851bf5823c5c0acae7ecfb21ddeab691a7ef8bb6ab5bc624a79877de7affed",
+      "bytes": 96
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/candidate/inputs/bad_multiplier.cdl",
+      "sha256": "fa73b12098d189d422998a07ac27be04140e578acef7547f4758102400af5cab",
+      "bytes": 88
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/candidate/inputs/bad_negative_perimeter.cdl",
+      "sha256": "325cc70a8a8b41216803f0d7a58dd0cf471cb792d7955b2024c98f9c402874e5",
+      "bytes": 85
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/candidate/inputs/bad_non_numeric.cdl",
+      "sha256": "0a098a0e7c50c31526553de099f8929566eac8f748fa464e988e90af2996e11c",
+      "bytes": 89
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/candidate/inputs/bad_one_terminal.cdl",
+      "sha256": "980fa5374e6bea4ac66a5b0f53c133382daedf6a44ab56e35d5324d078d7fd10",
+      "bytes": 82
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/candidate/inputs/bad_scale.cdl",
+      "sha256": "6dfe9b6725032d96ad23af56dad005adf765fa66b0f23958009fb03adc966797",
+      "bytes": 104
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/candidate/inputs/bad_three_terminals.cdl",
+      "sha256": "a56e5823b186beae96d1226dd94f13114f6949aa108beccd0ad0371c78412225",
+      "bytes": 86
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/candidate/inputs/bad_zero_area.cdl",
+      "sha256": "62d23ef8978060812b9bd260cffd596f87d7611fa83679cfa4b5326e8b515787",
+      "bytes": 83
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/candidate/inputs/ntap_mixed.cdl",
+      "sha256": "16b555b23f50aa596597910c275df0177cef8127dab7cd69b8cc692283179cb0",
+      "bytes": 89
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/candidate/inputs/ordinary_r.cdl",
+      "sha256": "e3cd5d4feed824891e64cf9e5cfdfa5fa5fa793352faffe4ee117fdd686cd48c",
+      "bytes": 80
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/candidate/inputs/ptap_si.cdl",
+      "sha256": "da0c5544ae440d8657188604920765679acf5a0d355eb7213dc5229cc2de664b",
+      "bytes": 94
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/candidate/inputs/tap_dimensions.cdl",
+      "sha256": "80ac565c4fda03bd540d4b06faf80c825e9fe479dff4560c2cacfb12f648348b",
+      "bytes": 86
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/candidate/inputs/tap_perim.cdl",
+      "sha256": "af029cc097c21d39395e5d6f077aea6766e596566f11d96292fe531ccefe3b77",
+      "bytes": 90
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/candidate/inputs/tap_r.cdl",
+      "sha256": "9d7b4e0c8293b95d8dc8b101c3eab1aff8ddb8ce716bd1603bf62b585436534a",
+      "bytes": 103
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/candidate/inputs/unknown_defined.cdl",
+      "sha256": "6e8474a0881f40a1a26ad992f0db3166e2bc05a4297f8134d1bac5d7c5987521",
+      "bytes": 134
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/candidate/inputs/unknown_near_name.cdl",
+      "sha256": "739aae746d7dde61ae0f67f4c752aac4ee09064987afd033d2b5f3081ea44839",
+      "bytes": 92
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/candidate/regression.rb",
+      "sha256": "2c2137c1f074d658ec35b1925cbdc0f59761075a133c233873b31925c967d558",
+      "bytes": 2114
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/candidate/results.json",
+      "sha256": "e9abf9c63a87469f88b7fc7e108a8133c4ea80aadf9b75b0ea8a0083a0c4b454",
+      "bytes": 12785
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/candidate/terminal_observation.json",
+      "sha256": "b931cd6bdb4656108191d26a4c633bb0024cca5549be8eac5b9dadd0cc407720",
+      "bytes": 9941
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/candidate/tool.log",
+      "sha256": "e5d3ef61411e276bc7e500a3034757143a4d5cd20ed9adb841aa0d2853a6255a",
+      "bytes": 643
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/control/cases.json",
+      "sha256": "3733760fda53842941bf56f92f82556f4ee58834d5167d1475bb3d8ba807aa6d",
+      "bytes": 2998
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/control/execution.json",
+      "sha256": "63cecadf8132208d48cf32b65d2d6e203ab7864da1626747a60d0684d4826448",
+      "bytes": 1297
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/control/inputs/bad_conflicting_perimeter.cdl",
+      "sha256": "a96526f18f7f63cb694e515843caa295af4055c9c0f631bf85bbf1a95a45d65b",
+      "bytes": 93
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/control/inputs/bad_incomplete_dimensions.cdl",
+      "sha256": "d91d45a9c3d245d6b5ca5af61fc49d71542469fe1d8978da072eaa721b683712",
+      "bytes": 79
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/control/inputs/bad_missing_area.cdl",
+      "sha256": "2694a35bcecb7c296ae9be0a2ba5e73b7a759d948e398194d6d4e2e12fe1306b",
+      "bytes": 79
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/control/inputs/bad_missing_perimeter.cdl",
+      "sha256": "1b65e30d9b6c0777afd65d36424929c83fff3f3bf0d504a1ec822d3dbd6c5e93",
+      "bytes": 79
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/control/inputs/bad_model_override.cdl",
+      "sha256": "01851bf5823c5c0acae7ecfb21ddeab691a7ef8bb6ab5bc624a79877de7affed",
+      "bytes": 96
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/control/inputs/bad_multiplier.cdl",
+      "sha256": "fa73b12098d189d422998a07ac27be04140e578acef7547f4758102400af5cab",
+      "bytes": 88
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/control/inputs/bad_negative_perimeter.cdl",
+      "sha256": "325cc70a8a8b41216803f0d7a58dd0cf471cb792d7955b2024c98f9c402874e5",
+      "bytes": 85
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/control/inputs/bad_non_numeric.cdl",
+      "sha256": "0a098a0e7c50c31526553de099f8929566eac8f748fa464e988e90af2996e11c",
+      "bytes": 89
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/control/inputs/bad_one_terminal.cdl",
+      "sha256": "980fa5374e6bea4ac66a5b0f53c133382daedf6a44ab56e35d5324d078d7fd10",
+      "bytes": 82
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/control/inputs/bad_scale.cdl",
+      "sha256": "6dfe9b6725032d96ad23af56dad005adf765fa66b0f23958009fb03adc966797",
+      "bytes": 104
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/control/inputs/bad_three_terminals.cdl",
+      "sha256": "a56e5823b186beae96d1226dd94f13114f6949aa108beccd0ad0371c78412225",
+      "bytes": 86
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/control/inputs/bad_zero_area.cdl",
+      "sha256": "62d23ef8978060812b9bd260cffd596f87d7611fa83679cfa4b5326e8b515787",
+      "bytes": 83
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/control/inputs/ntap_mixed.cdl",
+      "sha256": "16b555b23f50aa596597910c275df0177cef8127dab7cd69b8cc692283179cb0",
+      "bytes": 89
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/control/inputs/ordinary_r.cdl",
+      "sha256": "e3cd5d4feed824891e64cf9e5cfdfa5fa5fa793352faffe4ee117fdd686cd48c",
+      "bytes": 80
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/control/inputs/ptap_si.cdl",
+      "sha256": "da0c5544ae440d8657188604920765679acf5a0d355eb7213dc5229cc2de664b",
+      "bytes": 94
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/control/inputs/tap_dimensions.cdl",
+      "sha256": "80ac565c4fda03bd540d4b06faf80c825e9fe479dff4560c2cacfb12f648348b",
+      "bytes": 86
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/control/inputs/tap_perim.cdl",
+      "sha256": "af029cc097c21d39395e5d6f077aea6766e596566f11d96292fe531ccefe3b77",
+      "bytes": 90
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/control/inputs/tap_r.cdl",
+      "sha256": "9d7b4e0c8293b95d8dc8b101c3eab1aff8ddb8ce716bd1603bf62b585436534a",
+      "bytes": 103
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/control/inputs/unknown_defined.cdl",
+      "sha256": "6e8474a0881f40a1a26ad992f0db3166e2bc05a4297f8134d1bac5d7c5987521",
+      "bytes": 134
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/control/inputs/unknown_near_name.cdl",
+      "sha256": "739aae746d7dde61ae0f67f4c752aac4ee09064987afd033d2b5f3081ea44839",
+      "bytes": 92
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/control/regression.rb",
+      "sha256": "2c2137c1f074d658ec35b1925cbdc0f59761075a133c233873b31925c967d558",
+      "bytes": 2114
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/control/results.json",
+      "sha256": "483682825e94df9368069e3f3b7965b1d0d418cd9d6d1f47f389c985b3b39dab",
+      "bytes": 14119
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/control/terminal_observation.json",
+      "sha256": "9940530e18e2a58ea60336934e63b1b407188863c5bb2584ea5dd60b346aa7ad",
+      "bytes": 9935
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/control/tool.log",
+      "sha256": "bdd555e6f512bee8f5112ca11875b8132bba759254525bab5c263a57815c6428",
+      "bytes": 641
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/manifest.json",
+      "sha256": "8ee07270eb1978b38ae6b117500c92a07976c942b8b8347bd586a2bae0af65d8",
+      "bytes": 41506
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/run_tap_reader_ab.py",
+      "sha256": "e8eeb93288785ba55b33ebe6d8afa275c591ff8be97c877d6b5dba0e4acb1d96",
+      "bytes": 11645
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/tap_reader_adapter.patch",
+      "sha256": "1f2e3405762260135ffb0b89d8bcf1556352d1174bb1d245523fcfbf04b279ee",
+      "bytes": 1944
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/tap_reader_adapter.rb",
+      "sha256": "bc005d7e7d24461f6fad8707914a3cdb39d3b613087c5af6fde2253c28d4f0b8",
+      "bytes": 1724
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-regression-20260910-001/tap_reader_regression.rb",
+      "sha256": "2c2137c1f074d658ec35b1925cbdc0f59761075a133c233873b31925c967d558",
+      "bytes": 2114
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-xref-20260910-001/candidate.json",
+      "sha256": "f05a84a2e9d2b795bef8cda0a59c7d93c7af85d6eded822963b33c90cc65a943",
+      "bytes": 6404
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-xref-20260910-001/control.json",
+      "sha256": "db3acfb6955fe67aa723930912e1624d2b1536a36164c1ef91ffb5391fa7ef53",
+      "bytes": 5745
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-xref-20260910-001/execution.json",
+      "sha256": "b6b1230239d2de766a52bf21d50cceb3bc0f55e71e6a39e752684b7bbc8e6f87",
+      "bytes": 1277
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-xref-20260910-001/manifest.json",
+      "sha256": "c254acce7a53c1af034fee06c2d54d130b616f237f4cdbe866f205fbd678da98",
+      "bytes": 2692
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-xref-20260910-001/tap_reader_xref_readback.py",
+      "sha256": "6a011efec4fcb74322a908820c55c85beb5e5181a760789400321aca449c2dcc",
+      "bytes": 822
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-xref-20260910-001/terminal_observation.json",
+      "sha256": "ba862bf97f7f6aea26c2f5eb40e8ecea85ca290edb4122a932bb4e9ec1be14b5",
+      "bytes": 9909
+    },
+    {
+      "path": "runs/croc-lvs-tap-reader-xref-20260910-001/tool.log",
+      "sha256": "a372cd90f67f9d1452a369b35a840f7b6367796f91eadcb7bd4edc5190164e22",
+      "bytes": 2322
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/activity_annotation.rpt",
+      "sha256": "6b5ac1e38185e6200eb0f42b53290c64375646585fa6498f9410ead6aa5223fb",
+      "bytes": 35
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/activity_command_body.tcl",
+      "sha256": "48ce7adff96404d4f720d177f20d4a574baad9d280306a62be9ff2b5788aad5a",
+      "bytes": 2031
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/activity_command_help.rpt",
+      "sha256": "3277a38cf7e03ad3ebd939737b2041bae85888c2e2bc121421e0a8d4c49ea686",
+      "bytes": 144
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/bondpad.lef",
+      "sha256": "8d717917dc1e1c15efc677c0f61af0ab82d3f47c15b5c8f392de7e475ec5117f",
+      "bytes": 1568
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/bondpad_directions.tsv",
+      "sha256": "1f4816e2d1ea3a5d4adf7d3c476e6b7d88488e2cc44b6413449e26599012198a",
+      "bytes": 3710
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/clocks.rpt",
+      "sha256": "86b67f4fd9bd528c11936bbacbe7996230338986145bc4df8930e99d3ac33853",
+      "bytes": 261
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/electrical_violators.rpt",
+      "sha256": "df68cda667ebbe348651e9e08b5e12d673753dcf1f30ebce6a4f19359cf45851",
+      "bytes": 17453
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/power_command_help.rpt",
+      "sha256": "656008e6d34b2589b3c9117b4cfa04990255ac315bcebccf2fb30fdc58a4d287",
+      "bytes": 135
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/power_ff.rpt",
+      "sha256": "5c81a43f63c7d06f67aa914f9e4e5ef287fa4dbd746bc02de1b2b1d707d4f87b",
+      "bytes": 926
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/power_tt.rpt",
+      "sha256": "60fd1a57b1be21149f8da7fd0c4cff5dd96c47e104ea6b71e515644087b704a5",
+      "bytes": 926
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/probe.tcl",
+      "sha256": "c740e458d7e947c35d5c727dbb53b2574123390ad7e718d1669b6ffce1bd95c9",
+      "bytes": 1739
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/readback.sdc",
+      "sha256": "c04e6f25527339f173313dc096114598fd152188064e92feaa5cdde477e18e1a",
+      "bytes": 102233
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/sram_power_tt.rpt",
+      "sha256": "9d0436de0d396f5408c8511abb3d02d425c88a829cf7a0613b15070ad6bd0c3a",
+      "bytes": 439
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/terminal_observation.json",
+      "sha256": "ea0595fc6455aa72f2ab3125176502934217d260db00c738ac86f34ee918bc1f",
+      "bytes": 729
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/tool.log",
+      "sha256": "79b128fc217cc774bdff06b5d3b8372520dbfb616ad8759ea4974a08661129cc",
+      "bytes": 3617
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/activity_annotation.rpt",
+      "sha256": "6b5ac1e38185e6200eb0f42b53290c64375646585fa6498f9410ead6aa5223fb",
+      "bytes": 35
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/activity_command_body.tcl",
+      "sha256": "48ce7adff96404d4f720d177f20d4a574baad9d280306a62be9ff2b5788aad5a",
+      "bytes": 2031
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/activity_command_help.rpt",
+      "sha256": "3277a38cf7e03ad3ebd939737b2041bae85888c2e2bc121421e0a8d4c49ea686",
+      "bytes": 144
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/bondpad.lef",
+      "sha256": "08212fdb06f3a1f66f2fc8c605bc8d0d436d697039e71ba5a70e33639f74fe1a",
+      "bytes": 1568
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/bondpad_directions.tsv",
+      "sha256": "7aad28a792b531cdda48c08efa78338d2de1b020a2828ae58bf77ee4ae392bab",
+      "bytes": 3710
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/clocks.rpt",
+      "sha256": "86b67f4fd9bd528c11936bbacbe7996230338986145bc4df8930e99d3ac33853",
+      "bytes": 261
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/electrical_violators.rpt",
+      "sha256": "71255713330f937304d6c11a1abf65dcd7d3ceeaf4af8bf97a4a5b55a66e41f8",
+      "bytes": 17453
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/power_command_help.rpt",
+      "sha256": "656008e6d34b2589b3c9117b4cfa04990255ac315bcebccf2fb30fdc58a4d287",
+      "bytes": 135
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/power_ff.rpt",
+      "sha256": "5b96a579002309ca66211c2fb7a311f2e242c08021e44e7a24a168e2664b3d64",
+      "bytes": 926
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/power_tt.rpt",
+      "sha256": "ba803719cafe82d113c4996de18dbfd6fb44767119c240df2e350ff6728faf48",
+      "bytes": 926
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/probe.tcl",
+      "sha256": "c740e458d7e947c35d5c727dbb53b2574123390ad7e718d1669b6ffce1bd95c9",
+      "bytes": 1739
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/readback.sdc",
+      "sha256": "9baa02ef3822b410a8d43b88272f6aeb7fbd3d3b6d6e981fc17f6653724f70a4",
+      "bytes": 102233
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/sram_power_tt.rpt",
+      "sha256": "4e6b8090ecc8ca72fd918fe18ba494e484952ab6f115ad78edbd03d3f6731004",
+      "bytes": 439
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/terminal_observation.json",
+      "sha256": "9c9d642491467bb781b00e58c0deb99a4404d3faee7dbd8a6e62cd4440092948",
+      "bytes": 729
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/tool.log",
+      "sha256": "79b128fc217cc774bdff06b5d3b8372520dbfb616ad8759ea4974a08661129cc",
+      "bytes": 3617
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/manifest.json",
+      "sha256": "52c3cbb5164187d56428242558286b8558a509df93c6df18793c765e3e16be1b",
+      "bytes": 27521
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/activity_annotation.rpt",
+      "sha256": "a83c023aec756b4bee3ca4b40443383aad1b0e752d346b71f0ea8f98d0121350",
+      "bytes": 34
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/activity_command_body.tcl",
+      "sha256": "48ce7adff96404d4f720d177f20d4a574baad9d280306a62be9ff2b5788aad5a",
+      "bytes": 2031
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/activity_command_help.rpt",
+      "sha256": "3277a38cf7e03ad3ebd939737b2041bae85888c2e2bc121421e0a8d4c49ea686",
+      "bytes": 144
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/bondpad.lef",
+      "sha256": "8d717917dc1e1c15efc677c0f61af0ab82d3f47c15b5c8f392de7e475ec5117f",
+      "bytes": 1568
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/bondpad_directions.tsv",
+      "sha256": "5bfd20c3f4e7b45a4b6e6eef433d4b9b68214eba55ca98ff8c6e19d22ba7d016",
+      "bytes": 71
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/clocks.rpt",
+      "sha256": "5fcf77aa591aa4a8aa99d4d8c3405d29e4183a4223fe1eb4e94256964e0a7fdf",
+      "bytes": 155
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/ff_power_tt.rpt",
+      "sha256": "2985664b795e3b0ef6e8bffb64aa6dc30322c0b723f6eb8c2e53cb15e1c87189",
+      "bytes": 255
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/input.def",
+      "sha256": "d0486a8a9c17a5b2f30a2454bd069558e72149f826de79ef822fff4d9e7beef4",
+      "bytes": 1059
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/input.sdc",
+      "sha256": "3716f1cf1fab5557fa46465a16259bd876c7fa8c2f6f705e0b43bc41e9f9b7cf",
+      "bytes": 241
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/power_command_help.rpt",
+      "sha256": "656008e6d34b2589b3c9117b4cfa04990255ac315bcebccf2fb30fdc58a4d287",
+      "bytes": 135
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/power_tt.rpt",
+      "sha256": "040362a8438fea63903fe368d715c5a51da8c6f319acd73348d9c86b177740cf",
+      "bytes": 926
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/probe.tcl",
+      "sha256": "492d44e3be12564f2c40230199e207a246cf6ca58dc3cd5354a88b662fee5208",
+      "bytes": 1633
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/readback.def",
+      "sha256": "72e3d0b7f9d7e1960740b2d0138ee3ce8e3464153baece3f179896043bc8d9e3",
+      "bytes": 1203
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/readback.sdc",
+      "sha256": "a292e31c010674a01d00305d003f0370fbfced21681696a1aeae17819f711d68",
+      "bytes": 1108
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/readback.v",
+      "sha256": "a6d0d9614ad6fea199a19b56eef80a8ac85638fd687ba5c6e339260e93912c49",
+      "bytes": 287
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/terminal_observation.json",
+      "sha256": "cbf38c40d4e885ddf114215292bb990866e366f29d7a5484d6a819e2b749e4d7",
+      "bytes": 729
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/tool.log",
+      "sha256": "b4ed59bd094ece6a6224ff995cec8b0b831010d0365f8559a91e34a66c01b078",
+      "bytes": 2178
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/activity_annotation.rpt",
+      "sha256": "a83c023aec756b4bee3ca4b40443383aad1b0e752d346b71f0ea8f98d0121350",
+      "bytes": 34
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/activity_command_body.tcl",
+      "sha256": "48ce7adff96404d4f720d177f20d4a574baad9d280306a62be9ff2b5788aad5a",
+      "bytes": 2031
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/activity_command_help.rpt",
+      "sha256": "3277a38cf7e03ad3ebd939737b2041bae85888c2e2bc121421e0a8d4c49ea686",
+      "bytes": 144
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/bondpad.lef",
+      "sha256": "08212fdb06f3a1f66f2fc8c605bc8d0d436d697039e71ba5a70e33639f74fe1a",
+      "bytes": 1568
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/bondpad_directions.tsv",
+      "sha256": "fd029204fd0c55b20e7fafc354aa7e6ed1ec44f763e9dce649ac3462a0f9fcb8",
+      "bytes": 71
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/clocks.rpt",
+      "sha256": "5fcf77aa591aa4a8aa99d4d8c3405d29e4183a4223fe1eb4e94256964e0a7fdf",
+      "bytes": 155
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/ff_power_tt.rpt",
+      "sha256": "5e315ca69949f578e6306b9c485c675c18ab4c7ef049da6fc0d0619b65e0b5e3",
+      "bytes": 255
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/input.def",
+      "sha256": "d0486a8a9c17a5b2f30a2454bd069558e72149f826de79ef822fff4d9e7beef4",
+      "bytes": 1059
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/input.sdc",
+      "sha256": "3716f1cf1fab5557fa46465a16259bd876c7fa8c2f6f705e0b43bc41e9f9b7cf",
+      "bytes": 241
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/power_command_help.rpt",
+      "sha256": "656008e6d34b2589b3c9117b4cfa04990255ac315bcebccf2fb30fdc58a4d287",
+      "bytes": 135
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/power_tt.rpt",
+      "sha256": "e1e37ae64ea013ba12a55f0ceb2f91fdea89cba5a11adf08e8793447b2bc5a45",
+      "bytes": 926
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/probe.tcl",
+      "sha256": "492d44e3be12564f2c40230199e207a246cf6ca58dc3cd5354a88b662fee5208",
+      "bytes": 1633
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/readback.def",
+      "sha256": "72e3d0b7f9d7e1960740b2d0138ee3ce8e3464153baece3f179896043bc8d9e3",
+      "bytes": 1203
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/readback.sdc",
+      "sha256": "b8af5a17f95253586271cc10c23ed2856dd7458b5727b9f05eaa0a9a6b16373c",
+      "bytes": 1108
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/readback.v",
+      "sha256": "a6d0d9614ad6fea199a19b56eef80a8ac85638fd687ba5c6e339260e93912c49",
+      "bytes": 287
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/terminal_observation.json",
+      "sha256": "76cc971a172b6bfd36c642bb51962692132e20a5ed6eb33a75019ed16b609835",
+      "bytes": 729
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/tool.log",
+      "sha256": "b4ed59bd094ece6a6224ff995cec8b0b831010d0365f8559a91e34a66c01b078",
+      "bytes": 2178
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/manifest.json",
+      "sha256": "23b4c25a3e95d85663e27dec2c2f1b6f1b9f4903de8907f06cb085d826e9ebb4",
+      "bytes": 11129
+    },
+    {
+      "path": "scripts/audit_croc_full_cts_fanout.py",
+      "sha256": "49a9139cfae0743adef6565dd2c3afae6bb0b1abc3215bfe7322d6da233a2cae",
+      "bytes": 8241
+    },
+    {
+      "path": "scripts/audit_croc_io_load_contract.py",
+      "sha256": "46a6d8b6610ae39295b8aa91c8fc616e8bf82a4964c6923f79846777ef63b175",
+      "bytes": 6764
+    },
+    {
+      "path": "scripts/audit_croc_power_direction_ab.py",
+      "sha256": "066191a06565b68ec1936bf1fd8ac7c9f35933120974982d703fbcd46485bc73",
+      "bytes": 10927
+    },
+    {
+      "path": "scripts/audit_lvs_tap_reader.py",
+      "sha256": "8f07216955eb75a2e6587a827f969ccaea8d2ee6d97245312ccfee779b6b6b07",
+      "bytes": 11145
+    },
+    {
+      "path": "scripts/run_croc_full_cts_fanout.py",
+      "sha256": "2ca9da4724e4897dc4f5b0f83b9ccae63fdf05b0c9036c3d84d40e1777f4961e",
+      "bytes": 9888
+    },
+    {
+      "path": "scripts/run_croc_power_direction_ab.py",
+      "sha256": "f651fa0b40f187d7a36e74b051e4621f3a76097d6c804bb3de21cc2ceb42f74b",
+      "bytes": 11374
+    },
+    {
+      "path": "tests/test_croc_full_cts_fanout.py",
+      "sha256": "2318416aa69a802cfb83a241b7f9933377521b1d7a1c2ba7558cdabf1ec6a97b",
+      "bytes": 4144
+    },
+    {
+      "path": "tests/test_croc_io_load_contract.py",
+      "sha256": "59b49c8caf408e8ad4de601cb99a23d6d79eb4f70d0c5df9df587473affbcad5",
+      "bytes": 2119
+    },
+    {
+      "path": "tests/test_croc_power_direction_ab.py",
+      "sha256": "fb7eea68c1ce525c0299ed13b3fafeed365f51d9b0eebde427a4598420adf4fc",
+      "bytes": 4171
+    },
+    {
+      "path": "tests/test_lvs_tap_reader.py",
+      "sha256": "c1f39d82f0af7271dd73254e0306aaa2c3ed8f1e87a54d5d2469c75c17ae2a4b",
+      "bytes": 5242
+    }
+  ]
+}

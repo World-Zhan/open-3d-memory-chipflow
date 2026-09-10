@@ -1,0 +1,5 @@
+* tap X reader regression
+.subckt TOP T W Z
+Xtwo W T nTaP1 a=2e-12 p=6e-6
+.ends TOP
+.end

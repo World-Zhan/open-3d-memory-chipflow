@@ -1,0 +1,5 @@
+* tap X reader regression
+.subckt TOP T W Z
+Xone T W ptap1 A=141.253p P=47.54u
+.ends TOP
+.end

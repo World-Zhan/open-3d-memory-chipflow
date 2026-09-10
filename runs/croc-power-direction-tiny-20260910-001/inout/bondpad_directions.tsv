@@ -1,0 +1,2 @@
+instance	master	pin	direction	net
+bond	bondpad70_m2_ring	pad	INOUT	clk

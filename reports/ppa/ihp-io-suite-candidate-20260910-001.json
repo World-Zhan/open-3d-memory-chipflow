@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "classification": "matched_official_IO_view_candidate_inventory_not_integrated_or_qualified",
+  "fixed_pdk_commit": "331c00484213b13414777eec1336ef5c29b969bd",
+  "official_merged_pr": "https://github.com/IHP-GmbH/IHP-Open-PDK/pull/1033",
+  "merge_commit": "4362df2ed1a93f712c1167afab21a1430445204a",
+  "merge_is_ancestor_of_fixed_pdk": true,
+  "source_sha256": {
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib": "85d56d20c9295dcd62ad8f90fdeb699e96d34174835c71cf157ad5171624eb09",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_fast_1p32V_3p6V_m40C.lib": "3a960b8338343f631d7f154988ac4d6a09216dcc5b19de91f1844b7965138181",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io.lef": "1100f050cd477b0db6072e1b2b53ee1e13d7e5473e7b5d20f27534cc27806320",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/cdl/sg13g2_io.cdl": "7a30e902099e8a8f85e0ae853167904df3793357a793a7b4dc82237b72b3eec4",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/verilog/sg13g2_io.v": "94a4573f6b79187753ba74e9ee8babe0a64eaf0d5b4a4e40df162639e144f3ae",
+    "upstream/ihp-open-pdk/ihp-sg13g2/libs.ref/sg13g2_io/gds/sg13g2_io.gds": "4281a855377b6a1ca46356e9391258dc14e8efc3b8051a65befc0fe9db3c7825",
+    "reports/ppa/ihp-io-update-source-20260910-001.json": "0dafb6a60bb746124b0ee82d5d97afc6adaa35cb04449c742c27354ee9de20bd",
+    "reports/ppa/croc-io-load-contract-20260910-001.json": "dcb0ac4b20916e6bb2bdd05e2c5e435b630c3076ec3e0367fd4b94890d5bc281",
+    "upstream/croc/technology/lib/RM_IHPSG13_1P_512x32_c2_bm_bist_typ_1p20V_25C.lib": "1a7409f75c7107385d01f8b2e9cde5d22ee54e1e914643b70e19833e03f3e9b0"
+  },
+  "corners": {
+    "tt": {
+      "pad_max_capacitance_pf": {
+        "sg13g2_IOPadInOut16mA": 20.0,
+        "sg13g2_IOPadInOut30mA": 40.0,
+        "sg13g2_IOPadInOut4mA": 12.0,
+        "sg13g2_IOPadOut16mA": 20.0,
+        "sg13g2_IOPadOut30mA": 40.0,
+        "sg13g2_IOPadOut4mA": 12.0,
+        "sg13g2_IOPadTriOut16mA": 20.0,
+        "sg13g2_IOPadTriOut30mA": 40.0,
+        "sg13g2_IOPadTriOut4mA": 12.0
+      },
+      "default_max_transition_ns": 3.5
+    },
+    "ff": {
+      "pad_max_capacitance_pf": {
+        "sg13g2_IOPadInOut16mA": 20.0,
+        "sg13g2_IOPadInOut30mA": 40.0,
+        "sg13g2_IOPadInOut4mA": 12.0,
+        "sg13g2_IOPadOut16mA": 20.0,
+        "sg13g2_IOPadOut30mA": 40.0,
+        "sg13g2_IOPadOut4mA": 12.0,
+        "sg13g2_IOPadTriOut16mA": 20.0,
+        "sg13g2_IOPadTriOut30mA": 40.0,
+        "sg13g2_IOPadTriOut4mA": 12.0
+      },
+      "default_max_transition_ns": 3.5
+    }
+  },
+  "digital_cells_with_cap_limit_at_least_15pf_in_both_corners": [
+    "sg13g2_IOPadInOut16mA",
+    "sg13g2_IOPadInOut30mA",
+    "sg13g2_IOPadOut16mA",
+    "sg13g2_IOPadOut30mA",
+    "sg13g2_IOPadTriOut16mA",
+    "sg13g2_IOPadTriOut30mA"
+  ],
+  "selected_current_design_cell_limits_tt_pf": {
+    "sg13g2_IOPadOut16mA": 20.0,
+    "sg13g2_IOPadInOut30mA": 40.0
+  },
+  "pdk_modified": false,
+  "current_chip_IO_views_replaced": false,
+  "new_liberty_applied_to_old_layout": false,
+  "new_suite_dynamic_STA_DRC_LVS_performed": false,
+  "15pf_contract_changed": false,
+  "sram_local_max_capacitance_pf": 0.064,
+  "sram_historical_farads_bug_is_current_cause": false,
+  "limitations": [
+    "Cap-limit compatibility alone does not establish actual slew/cap timing or all-corner qualification.",
+    "PR also changes GDS,CDL,LEF,receiver circuits and Verilog; matching Liberty cannot be substituted onto the old physical IO.",
+    "A fresh consistent IO fixture, pin/PG/function/view checks and strict LVS/DRC precede full-chip migration."
+  ],
+  "public_rule_signoff": false,
+  "foundry_signoff": false
+}

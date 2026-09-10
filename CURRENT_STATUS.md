@@ -2,7 +2,7 @@
 
 SPDX-License-Identifier: Apache-2.0
 
-更新：2026-09-09。**原版 Croc 已完成 RTL→综合→物理实现→GDS 的执行，但电气验收、DRC 和 LVS 尚未闭环；自研存储扩展现处于规格/验证计划阶段。** 验证贯穿全流程，不能只放在 GDS 之后。
+更新：2026-09-10。**原版 Croc 已完成 RTL→综合→物理实现→GDS 的执行，但电气验收、DRC 和 LVS 尚未闭环；自研存储扩展现处于规格/验证计划阶段。** 验证贯穿全流程，不能只放在 GDS 之后。
 
 ## 各阶段实际进度
 
@@ -11,10 +11,22 @@ SPDX-License-Identifier: Apache-2.0
 | 架构分析 | 复用原 Croc；非新架构 PPA 达标证明 | GCD/F2F 研究；HBT 真实 pitch/容量合同已验证 | 最小 C1/C2/C3 规格与验收矩阵已建立 |
 | RTL 与功能验证 | 原 Hello World RTL/门级仿真通过；不等于新增 IP 完整覆盖 | 复用 GCD；无自研 3D memory RTL | C1 OBI endpoint 尚未实现/仿真 |
 | 综合 | 原版 Yosys+Slang 通过 | 研究 flow 的既有网表 | not_run |
-| 后端 | 原 APR/GDS 电气 FAIL；新完整 placement/CTS 已执行，setup/hold=0，slew/cap/fanout=71/135/4；新 route 未执行 | strict pin access 已修复；旧 route DRC=642；新容量 A/B 未布线 | not_run |
+| 后端 | 原 APR/GDS 电气 FAIL；新完整 placement/CTS 已执行，setup/hold=0，slew/cap/fanout=71/135/0；新 route 未执行 | strict pin access 已修复；旧 route DRC=642；新容量 A/B 未布线 | not_run |
 | 验证/签核 | merged DRC=1585/12 类；maximal raw=652；LVS mismatch | research_only；route/3D closure 未完成 | 测试计划已写，RTL/综合/物理结果均未产生 |
 
-## 2026-09-09 最新推进
+## 2026-09-10 最新推进
+
+**fanout 已清零，整体仍未签核。** 新增八颗时钟 buffer 后 setup/hold/slew/cap/fanout=0/0/71/135/0。独立结构、普通放置/核心 PG、完整 SDC 与原 CLOCK/NDR 元数据检查通过；43 条 15 pF 命令保持，NDR 布线政策仍 UNVERIFIED。
+
+- 同 CTS 阶段 active 面积 0.7216007904→0.721789488 mm²（+188.6976 µm²）；原始 TT 仍为异常 5.46 mW。电气 die 3.896676 mm²、封环规划 4.235364 mm²。
+- 功耗单因素 tiny/full 对照证实无库 bondpad 方向引发低功耗失真：同 placement 的 INOUT→INPUT 分析视图为 5.45198→37.47741 mW，SRAM 动态功耗恢复。但 GPIO slew 同时变化，未作为设计修复，workload 功耗仍未知。
+- tap reader 已通过 20 用例/40 断言（12 负例），真实单叶中 tap/ANODE 得以保留；严格 LVS 两臂仍 FAIL，未配对器件 4→5，不称违规减少。周长和 guard 问题保留，无新 parent/full-chip LVS。
+- IO 模型问题有官方推进路径：本地固定 PDK 已包含 IHP PR #1033，更新后的 Out16/InOut30 TT cap=20/40 pF；需 GDS/CDL/LEF/Verilog/Liberty 成套验证和迁移，未套用到旧 IO 版图。当前 SRAM 已是 0.064 pF，剩余 64 个 SRAM cap 需独立处理。
+- 对照仍为 MLEM/Croc：24 KiB、4.995225 mm²、典型 80 MHz；本地 4 KiB、100 MHz 约束，不能宣称 PPA 优势。
+
+详情：[本轮说明](docs/13_cts_reader_power_zh.md)、[PPA](reports/ppa/croc-ppa-cts-reader-power-20260910-001.json)。以下按日期保留此前阶段结果；15 pF 未降低，仍无 public/foundry signoff。
+
+## 2026-09-09 推进记录
 
 新完整 IO 环候选现已完成 placement 与 CTS，**电气仍 FAIL，尚不可流片**。placement 的结构审计通过；CTS 独立审计见下文链接，不能继承原 placement 或旧 ECO 的结果。原布局运行在 9 月 5 日已经正常结束，本轮只恢复核实，没有重复运行。
 

@@ -1,0 +1,5 @@
+* tap X reader regression
+.subckt TOP T W Z
+Xbad T W PTAP1 A=0 P=4u
+.ends TOP
+.end

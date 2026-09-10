@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0.0",
+  "as_of": "2026-09-10",
+  "source_sha256": {
+    "reports/placement/full-io-cts-fanout-audit-20260910-001.json": "8a5892887b31f54353823a85eeddc0012cce00bc1c787d3322a6b97ac26f51a1",
+    "reports/ppa/croc-power-direction-ab-20260910-001.json": "40314e66c0a89a8df37a5c806a163707403f6390d8b9f066fdbb8fb279eda67b",
+    "reports/lvs/tap-reader-ab-20260910-001.json": "98b983cdc1815f15b37dd92255ecdef14bf30f43aaaa617a21a5e727b2756291",
+    "reports/ppa/croc-io-load-contract-20260910-001.json": "dcb0ac4b20916e6bb2bdd05e2c5e435b630c3076ec3e0367fd4b94890d5bc281",
+    "reports/ppa/ihp-io-suite-candidate-20260910-001.json": "1207cff2915e84544da8e19e6731caf157cb6611d1b32255f04856d2bc864efb",
+    "reports/ppa/comparison_sources_20260905.json": "d0406baa7db243590b57ed592f65bf41ac72a79eb34d30e2abf73c6f38adc6ae"
+  },
+  "classification": "CTS_fanout_ECO_and_analysis_reader_repairs_not_signoff",
+  "source_run": "croc-full-io-cts-fanout-20260910-001",
+  "reports": {
+    "cts": "reports/placement/full-io-cts-fanout-audit-20260910-001.json",
+    "power": "reports/ppa/croc-power-direction-ab-20260910-001.json",
+    "lvs": "reports/lvs/tap-reader-ab-20260910-001.json",
+    "load": "reports/ppa/croc-io-load-contract-20260910-001.json",
+    "suite": "reports/ppa/ihp-io-suite-candidate-20260910-001.json"
+  },
+  "same_stage": "CTS_with_placement_parasitics",
+  "active_area_mm2": {
+    "after": 0.7217894879999175,
+    "before": 0.7216007903999179
+  },
+  "active_area_delta_um2": 188.6976,
+  "active_area_delta_percent": 0.026149860492119537,
+  "timing": {
+    "after": {
+      "hold_violations": 0,
+      "max_capacitance_violations": 135,
+      "max_fanout_violations": 0,
+      "max_slew_violations": 71,
+      "setup_violations": 0,
+      "tns_ns": 0.0,
+      "wns_ns": 0.0
+    },
+    "before": {
+      "hold_violations": 0,
+      "max_capacitance_violations": 135,
+      "max_fanout_violations": 4,
+      "max_slew_violations": 71,
+      "setup_violations": 0,
+      "tns_ns": 0.0,
+      "wns_ns": 0.0
+    }
+  },
+  "electrical_acceptance": "FAIL",
+  "raw_tt_power_mw": {
+    "after": 5.46,
+    "before": 5.46
+  },
+  "raw_cts_power_activity_qualified": false,
+  "workload_power_mw": null,
+  "achieved_fmax_mhz": null,
+  "electrical_die_mm2": 3.896676,
+  "planned_sealed_area_mm2": 4.235364,
+  "new_sealed_gds": false,
+  "local_sram_kib": 4,
+  "clock_constraint_mhz": 100,
+  "io_load_pf": 15,
+  "distinct_placement_analysis_power_mw": {
+    "inout": 5.45198005,
+    "input": 37.4774076
+  },
+  "placement_analysis_is_not_CTS_candidate_power": true,
+  "direction_analysis_also_changes_GPIO_slew": true,
+  "reader_control_and_candidate_strict_LVS": "FAIL",
+  "new_signal_route": "not_run",
+  "new_full_chip_DRC": "not_run",
+  "new_full_chip_LVS": "not_run",
+  "peer_reference": {
+    "source_index": "reports/ppa/comparison_sources_20260905.json",
+    "checked_at": "2026-09-05",
+    "name": "ETH MLEM/Croc",
+    "process": "IHP130",
+    "sram_kib": 24,
+    "area_mm2": 4.995225,
+    "reported_typical_mhz": 80,
+    "reported_voltage_v": 1.2,
+    "comparable_power_mw": null,
+    "local_advantage_ratio": null
+  },
+  "public_rule_signoff": false,
+  "foundry_signoff": false
+}

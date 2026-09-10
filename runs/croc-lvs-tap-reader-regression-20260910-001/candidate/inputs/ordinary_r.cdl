@@ -1,0 +1,5 @@
+* tap X reader regression
+.subckt TOP T W Z
+Rplain T W 10k R=10k
+.ends TOP
+.end

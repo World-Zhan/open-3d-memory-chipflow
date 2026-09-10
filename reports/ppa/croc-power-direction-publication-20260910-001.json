@@ -1,0 +1,359 @@
+{
+  "classification": "exact_small_file_publication_inventory",
+  "exclude_full_def_and_verilog": true,
+  "files": [
+    {
+      "path": "reports/ppa/croc-power-direction-ab-20260910-001.json",
+      "sha256": "40314e66c0a89a8df37a5c806a163707403f6390d8b9f066fdbb8fb279eda67b",
+      "size_bytes": 44799
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/activity_annotation.rpt",
+      "sha256": "6b5ac1e38185e6200eb0f42b53290c64375646585fa6498f9410ead6aa5223fb",
+      "size_bytes": 35
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/activity_command_body.tcl",
+      "sha256": "48ce7adff96404d4f720d177f20d4a574baad9d280306a62be9ff2b5788aad5a",
+      "size_bytes": 2031
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/activity_command_help.rpt",
+      "sha256": "3277a38cf7e03ad3ebd939737b2041bae85888c2e2bc121421e0a8d4c49ea686",
+      "size_bytes": 144
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/bondpad.lef",
+      "sha256": "8d717917dc1e1c15efc677c0f61af0ab82d3f47c15b5c8f392de7e475ec5117f",
+      "size_bytes": 1568
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/bondpad_directions.tsv",
+      "sha256": "1f4816e2d1ea3a5d4adf7d3c476e6b7d88488e2cc44b6413449e26599012198a",
+      "size_bytes": 3710
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/clocks.rpt",
+      "sha256": "86b67f4fd9bd528c11936bbacbe7996230338986145bc4df8930e99d3ac33853",
+      "size_bytes": 261
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/electrical_violators.rpt",
+      "sha256": "df68cda667ebbe348651e9e08b5e12d673753dcf1f30ebce6a4f19359cf45851",
+      "size_bytes": 17453
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/power_command_help.rpt",
+      "sha256": "656008e6d34b2589b3c9117b4cfa04990255ac315bcebccf2fb30fdc58a4d287",
+      "size_bytes": 135
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/power_ff.rpt",
+      "sha256": "5c81a43f63c7d06f67aa914f9e4e5ef287fa4dbd746bc02de1b2b1d707d4f87b",
+      "size_bytes": 926
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/power_tt.rpt",
+      "sha256": "60fd1a57b1be21149f8da7fd0c4cff5dd96c47e104ea6b71e515644087b704a5",
+      "size_bytes": 926
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/probe.tcl",
+      "sha256": "c740e458d7e947c35d5c727dbb53b2574123390ad7e718d1669b6ffce1bd95c9",
+      "size_bytes": 1739
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/readback.sdc",
+      "sha256": "c04e6f25527339f173313dc096114598fd152188064e92feaa5cdde477e18e1a",
+      "size_bytes": 102233
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/sram_power_tt.rpt",
+      "sha256": "9d0436de0d396f5408c8511abb3d02d425c88a829cf7a0613b15070ad6bd0c3a",
+      "size_bytes": 439
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/terminal_observation.json",
+      "sha256": "ea0595fc6455aa72f2ab3125176502934217d260db00c738ac86f34ee918bc1f",
+      "size_bytes": 729
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/inout/tool.log",
+      "sha256": "79b128fc217cc774bdff06b5d3b8372520dbfb616ad8759ea4974a08661129cc",
+      "size_bytes": 3617
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/activity_annotation.rpt",
+      "sha256": "6b5ac1e38185e6200eb0f42b53290c64375646585fa6498f9410ead6aa5223fb",
+      "size_bytes": 35
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/activity_command_body.tcl",
+      "sha256": "48ce7adff96404d4f720d177f20d4a574baad9d280306a62be9ff2b5788aad5a",
+      "size_bytes": 2031
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/activity_command_help.rpt",
+      "sha256": "3277a38cf7e03ad3ebd939737b2041bae85888c2e2bc121421e0a8d4c49ea686",
+      "size_bytes": 144
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/bondpad.lef",
+      "sha256": "08212fdb06f3a1f66f2fc8c605bc8d0d436d697039e71ba5a70e33639f74fe1a",
+      "size_bytes": 1568
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/bondpad_directions.tsv",
+      "sha256": "7aad28a792b531cdda48c08efa78338d2de1b020a2828ae58bf77ee4ae392bab",
+      "size_bytes": 3710
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/clocks.rpt",
+      "sha256": "86b67f4fd9bd528c11936bbacbe7996230338986145bc4df8930e99d3ac33853",
+      "size_bytes": 261
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/electrical_violators.rpt",
+      "sha256": "71255713330f937304d6c11a1abf65dcd7d3ceeaf4af8bf97a4a5b55a66e41f8",
+      "size_bytes": 17453
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/power_command_help.rpt",
+      "sha256": "656008e6d34b2589b3c9117b4cfa04990255ac315bcebccf2fb30fdc58a4d287",
+      "size_bytes": 135
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/power_ff.rpt",
+      "sha256": "5b96a579002309ca66211c2fb7a311f2e242c08021e44e7a24a168e2664b3d64",
+      "size_bytes": 926
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/power_tt.rpt",
+      "sha256": "ba803719cafe82d113c4996de18dbfd6fb44767119c240df2e350ff6728faf48",
+      "size_bytes": 926
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/probe.tcl",
+      "sha256": "c740e458d7e947c35d5c727dbb53b2574123390ad7e718d1669b6ffce1bd95c9",
+      "size_bytes": 1739
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/readback.sdc",
+      "sha256": "9baa02ef3822b410a8d43b88272f6aeb7fbd3d3b6d6e981fc17f6653724f70a4",
+      "size_bytes": 102233
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/sram_power_tt.rpt",
+      "sha256": "4e6b8090ecc8ca72fd918fe18ba494e484952ab6f115ad78edbd03d3f6731004",
+      "size_bytes": 439
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/terminal_observation.json",
+      "sha256": "9c9d642491467bb781b00e58c0deb99a4404d3faee7dbd8a6e62cd4440092948",
+      "size_bytes": 729
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/input/tool.log",
+      "sha256": "79b128fc217cc774bdff06b5d3b8372520dbfb616ad8759ea4974a08661129cc",
+      "size_bytes": 3617
+    },
+    {
+      "path": "runs/croc-power-direction-full-20260910-001/manifest.json",
+      "sha256": "52c3cbb5164187d56428242558286b8558a509df93c6df18793c765e3e16be1b",
+      "size_bytes": 27521
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/activity_annotation.rpt",
+      "sha256": "a83c023aec756b4bee3ca4b40443383aad1b0e752d346b71f0ea8f98d0121350",
+      "size_bytes": 34
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/activity_command_body.tcl",
+      "sha256": "48ce7adff96404d4f720d177f20d4a574baad9d280306a62be9ff2b5788aad5a",
+      "size_bytes": 2031
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/activity_command_help.rpt",
+      "sha256": "3277a38cf7e03ad3ebd939737b2041bae85888c2e2bc121421e0a8d4c49ea686",
+      "size_bytes": 144
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/bondpad.lef",
+      "sha256": "8d717917dc1e1c15efc677c0f61af0ab82d3f47c15b5c8f392de7e475ec5117f",
+      "size_bytes": 1568
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/bondpad_directions.tsv",
+      "sha256": "5bfd20c3f4e7b45a4b6e6eef433d4b9b68214eba55ca98ff8c6e19d22ba7d016",
+      "size_bytes": 71
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/clocks.rpt",
+      "sha256": "5fcf77aa591aa4a8aa99d4d8c3405d29e4183a4223fe1eb4e94256964e0a7fdf",
+      "size_bytes": 155
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/ff_power_tt.rpt",
+      "sha256": "2985664b795e3b0ef6e8bffb64aa6dc30322c0b723f6eb8c2e53cb15e1c87189",
+      "size_bytes": 255
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/input.def",
+      "sha256": "d0486a8a9c17a5b2f30a2454bd069558e72149f826de79ef822fff4d9e7beef4",
+      "size_bytes": 1059
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/input.sdc",
+      "sha256": "3716f1cf1fab5557fa46465a16259bd876c7fa8c2f6f705e0b43bc41e9f9b7cf",
+      "size_bytes": 241
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/power_command_help.rpt",
+      "sha256": "656008e6d34b2589b3c9117b4cfa04990255ac315bcebccf2fb30fdc58a4d287",
+      "size_bytes": 135
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/power_tt.rpt",
+      "sha256": "040362a8438fea63903fe368d715c5a51da8c6f319acd73348d9c86b177740cf",
+      "size_bytes": 926
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/probe.tcl",
+      "sha256": "492d44e3be12564f2c40230199e207a246cf6ca58dc3cd5354a88b662fee5208",
+      "size_bytes": 1633
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/readback.def",
+      "sha256": "72e3d0b7f9d7e1960740b2d0138ee3ce8e3464153baece3f179896043bc8d9e3",
+      "size_bytes": 1203
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/readback.sdc",
+      "sha256": "a292e31c010674a01d00305d003f0370fbfced21681696a1aeae17819f711d68",
+      "size_bytes": 1108
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/readback.v",
+      "sha256": "a6d0d9614ad6fea199a19b56eef80a8ac85638fd687ba5c6e339260e93912c49",
+      "size_bytes": 287
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/terminal_observation.json",
+      "sha256": "cbf38c40d4e885ddf114215292bb990866e366f29d7a5484d6a819e2b749e4d7",
+      "size_bytes": 729
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/inout/tool.log",
+      "sha256": "b4ed59bd094ece6a6224ff995cec8b0b831010d0365f8559a91e34a66c01b078",
+      "size_bytes": 2178
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/activity_annotation.rpt",
+      "sha256": "a83c023aec756b4bee3ca4b40443383aad1b0e752d346b71f0ea8f98d0121350",
+      "size_bytes": 34
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/activity_command_body.tcl",
+      "sha256": "48ce7adff96404d4f720d177f20d4a574baad9d280306a62be9ff2b5788aad5a",
+      "size_bytes": 2031
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/activity_command_help.rpt",
+      "sha256": "3277a38cf7e03ad3ebd939737b2041bae85888c2e2bc121421e0a8d4c49ea686",
+      "size_bytes": 144
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/bondpad.lef",
+      "sha256": "08212fdb06f3a1f66f2fc8c605bc8d0d436d697039e71ba5a70e33639f74fe1a",
+      "size_bytes": 1568
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/bondpad_directions.tsv",
+      "sha256": "fd029204fd0c55b20e7fafc354aa7e6ed1ec44f763e9dce649ac3462a0f9fcb8",
+      "size_bytes": 71
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/clocks.rpt",
+      "sha256": "5fcf77aa591aa4a8aa99d4d8c3405d29e4183a4223fe1eb4e94256964e0a7fdf",
+      "size_bytes": 155
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/ff_power_tt.rpt",
+      "sha256": "5e315ca69949f578e6306b9c485c675c18ab4c7ef049da6fc0d0619b65e0b5e3",
+      "size_bytes": 255
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/input.def",
+      "sha256": "d0486a8a9c17a5b2f30a2454bd069558e72149f826de79ef822fff4d9e7beef4",
+      "size_bytes": 1059
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/input.sdc",
+      "sha256": "3716f1cf1fab5557fa46465a16259bd876c7fa8c2f6f705e0b43bc41e9f9b7cf",
+      "size_bytes": 241
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/power_command_help.rpt",
+      "sha256": "656008e6d34b2589b3c9117b4cfa04990255ac315bcebccf2fb30fdc58a4d287",
+      "size_bytes": 135
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/power_tt.rpt",
+      "sha256": "e1e37ae64ea013ba12a55f0ceb2f91fdea89cba5a11adf08e8793447b2bc5a45",
+      "size_bytes": 926
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/probe.tcl",
+      "sha256": "492d44e3be12564f2c40230199e207a246cf6ca58dc3cd5354a88b662fee5208",
+      "size_bytes": 1633
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/readback.def",
+      "sha256": "72e3d0b7f9d7e1960740b2d0138ee3ce8e3464153baece3f179896043bc8d9e3",
+      "size_bytes": 1203
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/readback.sdc",
+      "sha256": "b8af5a17f95253586271cc10c23ed2856dd7458b5727b9f05eaa0a9a6b16373c",
+      "size_bytes": 1108
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/readback.v",
+      "sha256": "a6d0d9614ad6fea199a19b56eef80a8ac85638fd687ba5c6e339260e93912c49",
+      "size_bytes": 287
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/terminal_observation.json",
+      "sha256": "76cc971a172b6bfd36c642bb51962692132e20a5ed6eb33a75019ed16b609835",
+      "size_bytes": 729
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/input/tool.log",
+      "sha256": "b4ed59bd094ece6a6224ff995cec8b0b831010d0365f8559a91e34a66c01b078",
+      "size_bytes": 2178
+    },
+    {
+      "path": "runs/croc-power-direction-tiny-20260910-001/manifest.json",
+      "sha256": "23b4c25a3e95d85663e27dec2c2f1b6f1b9f4903de8907f06cb085d826e9ebb4",
+      "size_bytes": 11129
+    },
+    {
+      "path": "scripts/audit_croc_power_direction_ab.py",
+      "sha256": "066191a06565b68ec1936bf1fd8ac7c9f35933120974982d703fbcd46485bc73",
+      "size_bytes": 10927
+    },
+    {
+      "path": "scripts/run_croc_power_direction_ab.py",
+      "sha256": "f651fa0b40f187d7a36e74b051e4621f3a76097d6c804bb3de21cc2ceb42f74b",
+      "size_bytes": 11374
+    },
+    {
+      "path": "tests/test_croc_power_direction_ab.py",
+      "sha256": "fb7eea68c1ce525c0299ed13b3fafeed365f51d9b0eebde427a4598420adf4fc",
+      "size_bytes": 4171
+    }
+  ],
+  "includes_endpoint_sta_differences": true,
+  "schema_version": "1.0.0",
+  "total_bytes": 409327
+}

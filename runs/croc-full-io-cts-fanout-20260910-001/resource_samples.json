@@ -1,0 +1,31 @@
+[
+  {
+    "observed_at": "2026-09-10T12:00:05.701024+00:00",
+    "resources": {
+      "BlockIO": "229MB / 100MB",
+      "CPUPerc": "100.10%",
+      "Container": "croc-full-io-cts-fanout-20260910-001",
+      "ID": "c4922b4fa7ac",
+      "MemPerc": "7.26%",
+      "MemUsage": "595MiB / 8GiB",
+      "Name": "croc-full-io-cts-fanout-20260910-001",
+      "NetIO": "1.18kB / 126B",
+      "PIDs": "5"
+    },
+    "resources_returncode": 0,
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 660,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-10T11:59:42.037901157Z",
+      "Status": "running"
+    },
+    "state_returncode": 0
+  }
+]

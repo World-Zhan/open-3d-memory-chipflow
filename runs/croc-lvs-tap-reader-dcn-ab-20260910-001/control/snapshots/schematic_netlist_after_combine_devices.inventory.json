@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "stage": "schematic_netlist_after_combine_devices",
+  "observation_preserved_inventory": true,
+  "before_sha256": "8266f04d2f75473bc3f90ca8641573c6abaa74069ff00930592d9907d883d238",
+  "after_sha256": "8266f04d2f75473bc3f90ca8641573c6abaa74069ff00930592d9907d883d238",
+  "inventory": {
+    "circuits": [
+      {
+        "name": "SG13G2_DCNDIODE",
+        "nets": [
+          {
+            "ordinal": 0,
+            "name": "CATHODE",
+            "expanded_name": "CATHODE",
+            "cluster_id": 0,
+            "pins": [
+              {
+                "id": 1,
+                "name": "CATHODE"
+              }
+            ],
+            "terminals": [
+              {
+                "device_id": 1,
+                "device_name": "D1",
+                "class": "DANTENNA",
+                "terminal_id": 1,
+                "terminal_name": "C"
+              }
+            ],
+            "subcircuit_pins": [
+
+            ]
+          },
+          {
+            "ordinal": 1,
+            "name": "SUB!",
+            "expanded_name": "SUB!",
+            "cluster_id": 0,
+            "pins": [
+
+            ],
+            "terminals": [
+              {
+                "device_id": 1,
+                "device_name": "D1",
+                "class": "DANTENNA",
+                "terminal_id": 0,
+                "terminal_name": "A"
+              }
+            ],
+            "subcircuit_pins": [
+
+            ]
+          }
+        ],
+        "pins": [
+          {
+            "id": 1,
+            "name": "CATHODE",
+            "net_name": "CATHODE",
+            "net_cluster_id": 0
+          }
+        ],
+        "devices": [
+          {
+            "id": 1,
+            "name": "D1",
+            "class": "DANTENNA",
+            "terminals": [
+              {
+                "id": 0,
+                "name": "A",
+                "net_name": "SUB!",
+                "net_cluster_id": 0
+              },
+              {
+                "id": 1,
+                "name": "C",
+                "net_name": "CATHODE",
+                "net_cluster_id": 0
+              }
+            ],
+            "parameters": [
+              {
+                "id": 0,
+                "name": "A",
+                "value": 35.003
+              },
+              {
+                "id": 1,
+                "name": "P",
+                "value": 58.07999999999999
+              },
+              {
+                "id": 2,
+                "name": "m",
+                "value": 2.0
+              }
+            ]
+          }
+        ],
+        "subcircuits": [
+
+        ]
+      }
+    ]
+  }
+}

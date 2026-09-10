@@ -1,0 +1,58 @@
+VERSION 5.8 ;
+MACRO bondpad70_m2_ring
+  CLASS COVER ;
+  ORIGIN 0 0 ;
+  FOREIGN bondpad70_m2_ring 0 0 ;
+  SIZE 70 BY 70 ;
+  SYMMETRY X Y R90 ;
+  SITE sg13g2_ioSite ;
+  PIN pad
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.000 0.000 70.000 4.070 ;
+        RECT 0.000 4.070 4.070 65.930 ;
+        RECT 65.930 4.070 70.000 65.930 ;
+        RECT 0.000 65.930 70.000 70.000 ;
+      LAYER Metal3 ;
+        RECT 0.000 0.000 70.000 4.070 ;
+        RECT 0.000 4.070 4.070 65.930 ;
+        RECT 65.930 4.070 70.000 65.930 ;
+        RECT 0.000 65.930 70.000 70.000 ;
+      LAYER Metal4 ;
+        RECT 0.000 0.000 70.000 4.070 ;
+        RECT 0.000 4.070 4.070 65.930 ;
+        RECT 65.930 4.070 70.000 65.930 ;
+        RECT 0.000 65.930 70.000 70.000 ;
+      LAYER Metal5 ;
+        RECT 0.000 0.000 70.000 4.070 ;
+        RECT 0.000 4.070 4.070 65.930 ;
+        RECT 65.930 4.070 70.000 65.930 ;
+        RECT 0.000 65.930 70.000 70.000 ;
+      LAYER TopMetal1 ;
+        RECT 0.000 0.000 70.000 4.070 ;
+        RECT 0.000 4.070 4.070 65.930 ;
+        RECT 65.930 4.070 70.000 65.930 ;
+        RECT 0.000 65.930 70.000 70.000 ;
+      LAYER TopMetal2 ;
+        RECT 0.000 0.000 70.000 70.000 ;
+    END
+  END pad
+  OBS
+    LAYER Metal1 ;
+      RECT 0 0 70 70 ;
+    LAYER Metal2 ;
+      RECT 0 0 70 70 ;
+    LAYER Metal3 ;
+      RECT 0 0 70 70 ;
+    LAYER Metal4 ;
+      RECT 0 0 70 70 ;
+    LAYER Metal5 ;
+      RECT 0 0 70 70 ;
+    LAYER TopMetal1 ;
+      RECT 0 0 70 70 ;
+    LAYER TopMetal2 ;
+      RECT 0 0 70 70 ;
+  END
+END bondpad70_m2_ring

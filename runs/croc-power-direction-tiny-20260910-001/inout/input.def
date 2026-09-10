@@ -1,0 +1,29 @@
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN direction_fixture ;
+UNITS DISTANCE MICRONS 1000 ;
+DIEAREA ( 0 0 ) ( 250000 250000 ) ;
+COMPONENTS 3 ;
+- bond bondpad70_m2_ring + FIXED ( 0 0 ) N ;
+- io sg13g2_IOPadIn + FIXED ( 0 75000 ) N ;
+- ff sg13g2_dfrbpq_1 + PLACED ( 100000 75000 ) N ;
+END COMPONENTS
+PINS 4 ;
+- clk + NET clk + DIRECTION INPUT + USE SIGNAL
+  + PORT + LAYER Metal2 ( 0 0 ) ( 1000 1000 ) + FIXED ( 30000 30000 ) N ;
+- d + NET d + DIRECTION INPUT + USE SIGNAL
+  + PORT + LAYER Metal2 ( 0 0 ) ( 1000 1000 ) + FIXED ( 120000 75000 ) N ;
+- r + NET r + DIRECTION INPUT + USE SIGNAL
+  + PORT + LAYER Metal2 ( 0 0 ) ( 1000 1000 ) + FIXED ( 120000 80000 ) N ;
+- q + NET q + DIRECTION OUTPUT + USE SIGNAL
+  + PORT + LAYER Metal2 ( 0 0 ) ( 1000 1000 ) + FIXED ( 120000 85000 ) N ;
+END PINS
+NETS 5 ;
+- clk ( PIN clk ) ( bond pad ) ( io pad ) + USE CLOCK ;
+- coreclk ( io p2c ) ( ff CLK ) + USE CLOCK ;
+- d ( PIN d ) ( ff D ) + USE SIGNAL ;
+- r ( PIN r ) ( ff RESET_B ) + USE SIGNAL ;
+- q ( PIN q ) ( ff Q ) + USE SIGNAL ;
+END NETS
+END DESIGN

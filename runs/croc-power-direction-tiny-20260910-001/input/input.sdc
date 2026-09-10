@@ -1,0 +1,6 @@
+create_clock -name sys -period 10 [get_ports clk]
+set_clock_transition 0.2 [get_clocks sys]
+set_input_delay 1 -clock sys [get_ports d]
+set_output_delay 1 -clock sys [get_ports q]
+set_case_analysis 1 [get_ports r]
+set_load 0.01 [get_ports q]

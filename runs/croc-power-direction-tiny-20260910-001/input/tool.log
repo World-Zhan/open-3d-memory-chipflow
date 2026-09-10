@@ -1,0 +1,29 @@
+[INFO] Final PATH variable: /foss/tools/bin:/foss/tools/sak:/usr/local/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/foss/tools/kactus2:/foss/tools/klayout:/foss/tools/osic-multitool
+[INFO] Final PYTHONPATH variable: /usr/lib/python312.zip:/usr/lib/python3.12:/usr/lib/python3.12/lib-dynload:/usr/local/lib/python3.12/dist-packages:/usr/lib/python3/dist-packages:/foss/tools/ngspyce/local/lib/python3.12/dist-packages:/foss/tools/openems/local/lib/python3.12/dist-packages:/foss/tools/yosys/share/yosys/python3:/foss/tools/klayout/pymod
+[INFO][ENV] Croc root: /work/upstream/croc
+[INFO][ENV] Skipping technology setup
+[INFO][ENV] PDK root: /work/upstream/croc/technology
+[INFO][ENV] Croc PDK: sg13g2
+[INFO][ENV] Active technology view: public mirror
+[INFO][ENV] KLayout path: /work/upstream/croc/ihp13/sg13g2/ihp-sg13g2/libs.tech/klayout
+[INFO][ENV] Bender PDK args: <none>
+[INFO][ENV] Tech LEF: sg13g2_tech.lef
+[INFO][ENV] IO LEF/GDS: sg13g2_io.lef/sg13g2_io.gds
+[INFO][ENV] IO Liberty tt/ff: sg13g2_io_typ_1p2V_3p3V_25C.lib/sg13g2_io_fast_1p32V_3p6V_m40C.lib
+[INFO][ENV] Bondpad cell: bondpad_70x70 (bondpad_70x70.lef/bondpad_70x70.gds)
+OpenROAD v2.0-27244-gfecb04286 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 2 thread(s).
+[INFO ODB-0227] LEF file: /work/upstream/croc/technology/lef/sg13g2_tech.lef, created 19 layers, 70 vias
+[INFO ODB-0227] LEF file: /work/upstream/croc/technology/lef/sg13g2_stdcell.lef, created 84 library cells
+[INFO ODB-0227] LEF file: /work/upstream/croc/technology/lef/sg13g2_io.lef, created 22 library cells
+[INFO ODB-0227] LEF file: /output/bondpad.lef, created 1 library cells
+[INFO ODB-0127] Reading DEF file: /output/input.def
+[INFO ODB-0128] Design: direction_fixture
+[INFO ODB-0130]     Created 4 pins.
+[INFO ODB-0131]     Created 3 components and 13 component-terminals.
+[INFO ODB-0133]     Created 5 nets and 7 connections.
+[INFO ODB-0134] Finished DEF file: /output/input.def
+POWER_DIRECTION_AB_COMPLETE

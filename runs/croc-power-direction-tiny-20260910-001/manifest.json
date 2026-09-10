@@ -1,0 +1,267 @@
+{
+  "activity": "tool_default_no_workload",
+  "arms": {
+    "inout": {
+      "cleanup_returncode": 0,
+      "command": [
+        "docker",
+        "run",
+        "--name",
+        "croc-power-direction-tiny-20260910-001-inout",
+        "--cpus",
+        "2",
+        "--memory",
+        "4g",
+        "--ulimit",
+        "core=0",
+        "--user",
+        "1000:1000",
+        "-e",
+        "HOME=/tmp",
+        "-e",
+        "CROC_PDK=sg13g2",
+        "-e",
+        "CROC_SKIP_TECH_SETUP=1",
+        "--entrypoint",
+        "/bin/bash",
+        "-v",
+        "/home/james_zhan/projects/open-3d-memory-chipflow:/work:ro",
+        "-v",
+        "/home/james_zhan/projects/open-3d-memory-chipflow/runs/croc-power-direction-tiny-20260910-001/inout:/output:rw",
+        "-w",
+        "/output",
+        "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+        "-lc",
+        "source /work/upstream/croc/env.sh && timeout --verbose --signal=TERM --kill-after=10s 30s openroad -exit /output/probe.tcl"
+      ],
+      "container": "croc-power-direction-tiny-20260910-001-inout",
+      "elapsed_seconds": 1.6551774669999872,
+      "execution_complete": true,
+      "generated_input_sha256": {
+        "bondpad.lef": "8d717917dc1e1c15efc677c0f61af0ab82d3f47c15b5c8f392de7e475ec5117f",
+        "input.def": "d0486a8a9c17a5b2f30a2454bd069558e72149f826de79ef822fff4d9e7beef4",
+        "input.sdc": "3716f1cf1fab5557fa46465a16259bd876c7fa8c2f6f705e0b43bc41e9f9b7cf",
+        "probe.tcl": "492d44e3be12564f2c40230199e207a246cf6ca58dc3cd5354a88b662fee5208"
+      },
+      "outer_timeout_expired": false,
+      "outputs_sha256": {
+        "activity_annotation.rpt": "a83c023aec756b4bee3ca4b40443383aad1b0e752d346b71f0ea8f98d0121350",
+        "activity_command_body.tcl": "48ce7adff96404d4f720d177f20d4a574baad9d280306a62be9ff2b5788aad5a",
+        "activity_command_help.rpt": "3277a38cf7e03ad3ebd939737b2041bae85888c2e2bc121421e0a8d4c49ea686",
+        "bondpad.lef": "8d717917dc1e1c15efc677c0f61af0ab82d3f47c15b5c8f392de7e475ec5117f",
+        "bondpad_directions.tsv": "5bfd20c3f4e7b45a4b6e6eef433d4b9b68214eba55ca98ff8c6e19d22ba7d016",
+        "clocks.rpt": "5fcf77aa591aa4a8aa99d4d8c3405d29e4183a4223fe1eb4e94256964e0a7fdf",
+        "ff_power_tt.rpt": "2985664b795e3b0ef6e8bffb64aa6dc30322c0b723f6eb8c2e53cb15e1c87189",
+        "input.def": "d0486a8a9c17a5b2f30a2454bd069558e72149f826de79ef822fff4d9e7beef4",
+        "input.sdc": "3716f1cf1fab5557fa46465a16259bd876c7fa8c2f6f705e0b43bc41e9f9b7cf",
+        "power_command_help.rpt": "656008e6d34b2589b3c9117b4cfa04990255ac315bcebccf2fb30fdc58a4d287",
+        "power_tt.rpt": "040362a8438fea63903fe368d715c5a51da8c6f319acd73348d9c86b177740cf",
+        "probe.tcl": "492d44e3be12564f2c40230199e207a246cf6ca58dc3cd5354a88b662fee5208",
+        "readback.def": "72e3d0b7f9d7e1960740b2d0138ee3ce8e3464153baece3f179896043bc8d9e3",
+        "readback.sdc": "a292e31c010674a01d00305d003f0370fbfced21681696a1aeae17819f711d68",
+        "readback.v": "a6d0d9614ad6fea199a19b56eef80a8ac85638fd687ba5c6e339260e93912c49",
+        "terminal_observation.json": "cbf38c40d4e885ddf114215292bb990866e366f29d7a5484d6a819e2b749e4d7",
+        "tool.log": "b4ed59bd094ece6a6224ff995cec8b0b831010d0365f8559a91e34a66c01b078"
+      },
+      "raw_power_tt": {
+        "Clock": {
+          "internal_w": 0.0,
+          "leakage_w": 0.0,
+          "switching_w": 0.0,
+          "total_w": 0.0
+        },
+        "Combinational": {
+          "internal_w": 0.0,
+          "leakage_w": 0.0,
+          "switching_w": 0.0,
+          "total_w": 0.0
+        },
+        "Macro": {
+          "internal_w": 0.0,
+          "leakage_w": 0.0,
+          "switching_w": 0.0,
+          "total_w": 0.0
+        },
+        "Pad": {
+          "internal_w": 0.0,
+          "leakage_w": 3.06046993e-10,
+          "switching_w": 0.0,
+          "total_w": 3.06046993e-10
+        },
+        "Sequential": {
+          "internal_w": 1.46975214e-08,
+          "leakage_w": 4.78073747e-10,
+          "switching_w": 7.2000006e-08,
+          "total_w": 8.71756001e-08
+        },
+        "Total": {
+          "internal_w": 1.46975214e-08,
+          "leakage_w": 7.84120768e-10,
+          "switching_w": 7.2000006e-08,
+          "total_w": 8.7481645e-08
+        }
+      },
+      "returncode": 0,
+      "status": "completed",
+      "terminal_container_state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-10T12:01:27.351315203Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-10T12:01:26.944869141Z",
+        "Status": "exited"
+      }
+    },
+    "input": {
+      "cleanup_returncode": 0,
+      "command": [
+        "docker",
+        "run",
+        "--name",
+        "croc-power-direction-tiny-20260910-001-input",
+        "--cpus",
+        "2",
+        "--memory",
+        "4g",
+        "--ulimit",
+        "core=0",
+        "--user",
+        "1000:1000",
+        "-e",
+        "HOME=/tmp",
+        "-e",
+        "CROC_PDK=sg13g2",
+        "-e",
+        "CROC_SKIP_TECH_SETUP=1",
+        "--entrypoint",
+        "/bin/bash",
+        "-v",
+        "/home/james_zhan/projects/open-3d-memory-chipflow:/work:ro",
+        "-v",
+        "/home/james_zhan/projects/open-3d-memory-chipflow/runs/croc-power-direction-tiny-20260910-001/input:/output:rw",
+        "-w",
+        "/output",
+        "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+        "-lc",
+        "source /work/upstream/croc/env.sh && timeout --verbose --signal=TERM --kill-after=10s 30s openroad -exit /output/probe.tcl"
+      ],
+      "container": "croc-power-direction-tiny-20260910-001-input",
+      "elapsed_seconds": 1.3454560320000155,
+      "execution_complete": true,
+      "generated_input_sha256": {
+        "bondpad.lef": "08212fdb06f3a1f66f2fc8c605bc8d0d436d697039e71ba5a70e33639f74fe1a",
+        "input.def": "d0486a8a9c17a5b2f30a2454bd069558e72149f826de79ef822fff4d9e7beef4",
+        "input.sdc": "3716f1cf1fab5557fa46465a16259bd876c7fa8c2f6f705e0b43bc41e9f9b7cf",
+        "probe.tcl": "492d44e3be12564f2c40230199e207a246cf6ca58dc3cd5354a88b662fee5208"
+      },
+      "outer_timeout_expired": false,
+      "outputs_sha256": {
+        "activity_annotation.rpt": "a83c023aec756b4bee3ca4b40443383aad1b0e752d346b71f0ea8f98d0121350",
+        "activity_command_body.tcl": "48ce7adff96404d4f720d177f20d4a574baad9d280306a62be9ff2b5788aad5a",
+        "activity_command_help.rpt": "3277a38cf7e03ad3ebd939737b2041bae85888c2e2bc121421e0a8d4c49ea686",
+        "bondpad.lef": "08212fdb06f3a1f66f2fc8c605bc8d0d436d697039e71ba5a70e33639f74fe1a",
+        "bondpad_directions.tsv": "fd029204fd0c55b20e7fafc354aa7e6ed1ec44f763e9dce649ac3462a0f9fcb8",
+        "clocks.rpt": "5fcf77aa591aa4a8aa99d4d8c3405d29e4183a4223fe1eb4e94256964e0a7fdf",
+        "ff_power_tt.rpt": "5e315ca69949f578e6306b9c485c675c18ab4c7ef049da6fc0d0619b65e0b5e3",
+        "input.def": "d0486a8a9c17a5b2f30a2454bd069558e72149f826de79ef822fff4d9e7beef4",
+        "input.sdc": "3716f1cf1fab5557fa46465a16259bd876c7fa8c2f6f705e0b43bc41e9f9b7cf",
+        "power_command_help.rpt": "656008e6d34b2589b3c9117b4cfa04990255ac315bcebccf2fb30fdc58a4d287",
+        "power_tt.rpt": "e1e37ae64ea013ba12a55f0ceb2f91fdea89cba5a11adf08e8793447b2bc5a45",
+        "probe.tcl": "492d44e3be12564f2c40230199e207a246cf6ca58dc3cd5354a88b662fee5208",
+        "readback.def": "72e3d0b7f9d7e1960740b2d0138ee3ce8e3464153baece3f179896043bc8d9e3",
+        "readback.sdc": "b8af5a17f95253586271cc10c23ed2856dd7458b5727b9f05eaa0a9a6b16373c",
+        "readback.v": "a6d0d9614ad6fea199a19b56eef80a8ac85638fd687ba5c6e339260e93912c49",
+        "terminal_observation.json": "76cc971a172b6bfd36c642bb51962692132e20a5ed6eb33a75019ed16b609835",
+        "tool.log": "b4ed59bd094ece6a6224ff995cec8b0b831010d0365f8559a91e34a66c01b078"
+      },
+      "raw_power_tt": {
+        "Clock": {
+          "internal_w": 0.0,
+          "leakage_w": 0.0,
+          "switching_w": 0.0,
+          "total_w": 0.0
+        },
+        "Combinational": {
+          "internal_w": 0.0,
+          "leakage_w": 0.0,
+          "switching_w": 0.0,
+          "total_w": 0.0
+        },
+        "Macro": {
+          "internal_w": 0.0,
+          "leakage_w": 0.0,
+          "switching_w": 0.0,
+          "total_w": 0.0
+        },
+        "Pad": {
+          "internal_w": 5.25527548e-06,
+          "leakage_w": 1.28800498e-10,
+          "switching_w": 4.5635187e-07,
+          "total_w": 5.71175588e-06
+        },
+        "Sequential": {
+          "internal_w": 4.47522825e-06,
+          "leakage_w": 4.77735018e-10,
+          "switching_w": 7.2000006e-08,
+          "total_w": 4.54770634e-06
+        },
+        "Total": {
+          "internal_w": 9.73050373e-06,
+          "leakage_w": 6.06535489e-10,
+          "switching_w": 5.28351848e-07,
+          "total_w": 1.02594622e-05
+        }
+      },
+      "returncode": 0,
+      "status": "completed",
+      "terminal_container_state": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-09-10T12:01:29.149580444Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-09-10T12:01:28.919936917Z",
+        "Status": "exited"
+      }
+    }
+  },
+  "classification": "single_factor_direction_analysis_not_design_fix_or_workload_power",
+  "finished_at": "2026-09-10T12:01:30.134202+00:00",
+  "fixed_image": "sha256:92961478ad3c4f508efb42d9ccdba12ab262eb42a14926d2bd49862230ba8521",
+  "fixed_tool_expected": "v2.0-27244-gfecb04286",
+  "limits_per_arm": {
+    "cpus": 2,
+    "inner_seconds": 30,
+    "memory_gb": 4,
+    "outer_seconds": 65
+  },
+  "mode": "tiny",
+  "original_layout_modified": false,
+  "public_rule_signoff": false,
+  "run_id": "croc-power-direction-tiny-20260910-001",
+  "schema_version": "1.0.0",
+  "source_hashes_unchanged": true,
+  "source_pdk_modified": false,
+  "source_sha256": {
+    "runs/croc-bondpad-io-ab-20260905-001/inputs/bondpad70_m2_ring.lef": "8d717917dc1e1c15efc677c0f61af0ab82d3f47c15b5c8f392de7e475ec5117f",
+    "scripts/run_croc_power_direction_ab.py": "f651fa0b40f187d7a36e74b051e4621f3a76097d6c804bb3de21cc2ceb42f74b",
+    "upstream/croc/env.sh": "79f17eba9acc962cdd7953dffa20f42826ca5346bf3ccad76d0c1722b427fa6d",
+    "upstream/croc/technology/lef/sg13g2_io.lef": "8b3dc3960960c08e07a1cde3dd9cd0484f5b12df07c4628726fff551bb775c0c",
+    "upstream/croc/technology/lef/sg13g2_stdcell.lef": "c9bbc02d0c2cba3b15cd89a208750d25de882f02a2927ae78ba6422109fb01d0",
+    "upstream/croc/technology/lef/sg13g2_tech.lef": "a12fecdead5721dc3bd14fb75bd0915c61afba064e38af8c7b69d59d9da05080",
+    "upstream/croc/technology/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib": "e9af7d440c807799de55d16a126467e27d3235e7f53a928e014cdabee98369c9",
+    "upstream/croc/technology/lib/sg13g2_stdcell_typ_1p20V_25C.lib": "7677a8918689f452e80405ad16a83e744709342574f2aedcc507c2758986b396"
+  },
+  "started_at": "2026-09-10T12:01:26.484828+00:00",
+  "status": "completed",
+  "workload_power_w": null
+}

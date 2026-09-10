@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "stage": "schematic_netlist_after_simplify",
+  "observation_preserved_inventory": true,
+  "before_sha256": "72cc1d9be730090e46efd0bc8373f0106892dd2fd93b005811b9b9806174d818",
+  "after_sha256": "72cc1d9be730090e46efd0bc8373f0106892dd2fd93b005811b9b9806174d818",
+  "inventory": {
+    "circuits": [
+      {
+        "name": "SG13G2_DCNDIODE",
+        "nets": [
+          {
+            "ordinal": 0,
+            "name": "ANODE",
+            "expanded_name": "ANODE",
+            "cluster_id": 0,
+            "pins": [
+              {
+                "id": 0,
+                "name": "ANODE"
+              }
+            ],
+            "terminals": [
+              {
+                "device_id": 3,
+                "device_name": "R0",
+                "class": "PTAP1",
+                "terminal_id": 0,
+                "terminal_name": "TIE"
+              }
+            ],
+            "subcircuit_pins": [
+
+            ]
+          },
+          {
+            "ordinal": 1,
+            "name": "CATHODE",
+            "expanded_name": "CATHODE",
+            "cluster_id": 0,
+            "pins": [
+              {
+                "id": 1,
+                "name": "CATHODE"
+              }
+            ],
+            "terminals": [
+              {
+                "device_id": 1,
+                "device_name": "D1",
+                "class": "DANTENNA",
+                "terminal_id": 1,
+                "terminal_name": "C"
+              }
+            ],
+            "subcircuit_pins": [
+
+            ]
+          },
+          {
+            "ordinal": 2,
+            "name": "SUB!",
+            "expanded_name": "SUB!",
+            "cluster_id": 0,
+            "pins": [
+
+            ],
+            "terminals": [
+              {
+                "device_id": 1,
+                "device_name": "D1",
+                "class": "DANTENNA",
+                "terminal_id": 0,
+                "terminal_name": "A"
+              },
+              {
+                "device_id": 3,
+                "device_name": "R0",
+                "class": "PTAP1",
+                "terminal_id": 1,
+                "terminal_name": "WELL"
+              }
+            ],
+            "subcircuit_pins": [
+
+            ]
+          }
+        ],
+        "pins": [
+          {
+            "id": 0,
+            "name": "ANODE",
+            "net_name": "ANODE",
+            "net_cluster_id": 0
+          },
+          {
+            "id": 1,
+            "name": "CATHODE",
+            "net_name": "CATHODE",
+            "net_cluster_id": 0
+          }
+        ],
+        "devices": [
+          {
+            "id": 1,
+            "name": "D1",
+            "class": "DANTENNA",
+            "terminals": [
+              {
+                "id": 0,
+                "name": "A",
+                "net_name": "SUB!",
+                "net_cluster_id": 0
+              },
+              {
+                "id": 1,
+                "name": "C",
+                "net_name": "CATHODE",
+                "net_cluster_id": 0
+              }
+            ],
+            "parameters": [
+              {
+                "id": 0,
+                "name": "A",
+                "value": 35.003
+              },
+              {
+                "id": 1,
+                "name": "P",
+                "value": 58.07999999999999
+              },
+              {
+                "id": 2,
+                "name": "m",
+                "value": 2.0
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "name": "R0",
+            "class": "PTAP1",
+            "terminals": [
+              {
+                "id": 0,
+                "name": "TIE",
+                "net_name": "ANODE",
+                "net_cluster_id": 0
+              },
+              {
+                "id": 1,
+                "name": "WELL",
+                "net_name": "SUB!",
+                "net_cluster_id": 0
+              }
+            ],
+            "parameters": [
+              {
+                "id": 0,
+                "name": "A",
+                "value": 141.25300000000001
+              },
+              {
+                "id": 1,
+                "name": "P",
+                "value": 47.53999999999999
+              }
+            ]
+          }
+        ],
+        "subcircuits": [
+
+        ]
+      }
+    ]
+  }
+}

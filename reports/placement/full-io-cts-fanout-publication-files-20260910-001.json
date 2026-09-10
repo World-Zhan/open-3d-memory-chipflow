@@ -1,0 +1,170 @@
+{
+  "also_publish_this_inventory": "reports/placement/full-io-cts-fanout-publication-files-20260910-001.json",
+  "classification": "exact_publication_inventory_not_signoff",
+  "files": [
+    {
+      "bytes": 21392,
+      "path": "reports/placement/full-io-cts-fanout-audit-20260910-001.json",
+      "sha256": "8a5892887b31f54353823a85eeddc0012cce00bc1c787d3322a6b97ac26f51a1"
+    },
+    {
+      "bytes": 1076,
+      "path": "reports/placement/full-io-cts-fanout-validation-20260910-001.json",
+      "sha256": "ac24e264f219ab5970ae3668a9cfa8c7e0fa767c8ff2a79219a42eca3632e3c1"
+    },
+    {
+      "bytes": 102365,
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/after.sdc",
+      "sha256": "59d60a0c7f159f96de9c2ab46630f98f75a073db5471d2502643df3c11c25063"
+    },
+    {
+      "bytes": 167,
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/after_area.tsv",
+      "sha256": "dae84e7b00b1eec36b3e751754b836f6efbdec83f5ea2bb8e64f5ca9ac056b70"
+    },
+    {
+      "bytes": 76,
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/after_bounds.tsv",
+      "sha256": "728054cc5f17e9563984ed7a38bade3a5ca17faef5a346e4e3b5925034a720fa"
+    },
+    {
+      "bytes": 3954,
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/after_bpin_boxes.tsv",
+      "sha256": "c78c64b6deef91d4cc6538e91367ae75ea62262adcecf83c8d15b490fc456578"
+    },
+    {
+      "bytes": 1690,
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/after_bterms.tsv",
+      "sha256": "02f8c709a1f6687acc17593e8e833a8e5ca568b6e38f34e71793ca5b2fec1de9"
+    },
+    {
+      "bytes": 98732,
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/after_cts.rpt",
+      "sha256": "2230bceb8cc67cbbfd607e6a8cdce3c1f7827749a33e87000c2bf37c975b2c86"
+    },
+    {
+      "bytes": 902,
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/after_placement.tcl",
+      "sha256": "d482fe246e74fe8d00a9d497889114d3652361e0595450ef56cc8f5ee8755c16"
+    },
+    {
+      "bytes": 102365,
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/before.sdc",
+      "sha256": "603fc4f0228a17464a17d0524962139b754a99dbf265cc6ec53d99a1423eb812"
+    },
+    {
+      "bytes": 167,
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/before_area.tsv",
+      "sha256": "74fdbeee1fe4f9a0f5f30cafd8bdd84d00e6f6cabaaf11c32b49fefc4acc7eb7"
+    },
+    {
+      "bytes": 76,
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/before_bounds.tsv",
+      "sha256": "728054cc5f17e9563984ed7a38bade3a5ca17faef5a346e4e3b5925034a720fa"
+    },
+    {
+      "bytes": 3954,
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/before_bpin_boxes.tsv",
+      "sha256": "c78c64b6deef91d4cc6538e91367ae75ea62262adcecf83c8d15b490fc456578"
+    },
+    {
+      "bytes": 1690,
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/before_bterms.tsv",
+      "sha256": "02f8c709a1f6687acc17593e8e833a8e5ca568b6e38f34e71793ca5b2fec1de9"
+    },
+    {
+      "bytes": 97315,
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/before_cts.rpt",
+      "sha256": "7c565cf6c75ab49dcae3522c5d125f142b91c5668975ebcb7dd0422531c469f9"
+    },
+    {
+      "bytes": 17858,
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/before_electrical_violators.rpt",
+      "sha256": "1fb0cb342de1612367cb9edd5a4ce8a9a55ea74c1820877f35b12c3eb2035d86"
+    },
+    {
+      "bytes": 2709,
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/capture_placement.tcl",
+      "sha256": "90304060bec159de6fc45c962a144bf0f7b747bafa909c09348bf695bfa4aa3c"
+    },
+    {
+      "bytes": 500,
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/check.tcl",
+      "sha256": "b4c9331f3705a0dc4922587f5526a9d1e0bd19477dbe4d46dca17756585660cd"
+    },
+    {
+      "bytes": 3161,
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/diagnosed_branches.json",
+      "sha256": "9f24a56f5f3f33073a726b95e5e900f8198abb0ab28024b95d522f50dfa4907e"
+    },
+    {
+      "bytes": 4685,
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/eco_groups.tsv",
+      "sha256": "4db9948bb31e647ce7f92cd372559708c8ac9f2273527e2c490f010b5edea83a"
+    },
+    {
+      "bytes": 2857,
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/edit.tcl",
+      "sha256": "f0a88654df779736fe2e6168cebb61d92cbdbfc69a3bf19163d0a6a6ca89b8a9"
+    },
+    {
+      "bytes": 17453,
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/electrical_violators.rpt",
+      "sha256": "df68cda667ebbe348651e9e08b5e12d673753dcf1f30ebce6a4f19359cf45851"
+    },
+    {
+      "bytes": 106,
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/execute.sh",
+      "sha256": "be1266b44b7b2ee92aee6bba7c344cfc24bff64cc6c8e05c4485be7f4e98eaad"
+    },
+    {
+      "bytes": 102365,
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/inputs/cts.sdc",
+      "sha256": "43491661eb21b024f13375f8f376f8a343eccedceaba20cf5e75d751f006fa02"
+    },
+    {
+      "bytes": 18065,
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/manifest.json",
+      "sha256": "f4d58546a353881cb837646e4d6cfa0ded0afad6b16fe189eb0a62208d88ae4d"
+    },
+    {
+      "bytes": 98,
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/placement_checks.tsv",
+      "sha256": "8299e9324bf6ed3d2e0e3e9456af07bbe2f55b34c735312b154e4be27821f6cd"
+    },
+    {
+      "bytes": 787,
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/resource_samples.json",
+      "sha256": "d9393f4f1fb87c9e18488bf37d6ff4873a6eaf4c4285921451f46bc25bdf6cf6"
+    },
+    {
+      "bytes": 712,
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/terminal_observation.json",
+      "sha256": "da8fe6229d20037faa3f21d89d0a56a7ffb3eb410122a141aa915b7aa978c613"
+    },
+    {
+      "bytes": 5487,
+      "path": "runs/croc-full-io-cts-fanout-20260910-001/tool.log",
+      "sha256": "2ee255cd0959c6a43f00a670dde58e12aae61ff194e24ca3d7a95f4baeb3f27f"
+    },
+    {
+      "bytes": 8241,
+      "path": "scripts/audit_croc_full_cts_fanout.py",
+      "sha256": "49a9139cfae0743adef6565dd2c3afae6bb0b1abc3215bfe7322d6da233a2cae"
+    },
+    {
+      "bytes": 9888,
+      "path": "scripts/run_croc_full_cts_fanout.py",
+      "sha256": "2ca9da4724e4897dc4f5b0f83b9ccae63fdf05b0c9036c3d84d40e1777f4961e"
+    },
+    {
+      "bytes": 4144,
+      "path": "tests/test_croc_full_cts_fanout.py",
+      "sha256": "2318416aa69a802cfb83a241b7f9933377521b1d7a1c2ba7558cdabf1ec6a97b"
+    }
+  ],
+  "large_odb_def_verilog_complete_instances_iterms_remain_local_hash_bound": true,
+  "run_id": "croc-full-io-cts-fanout-20260910-001",
+  "stage_commit_push_owner": "root agent",
+  "total_file_bytes_excluding_inventory": 635037
+}

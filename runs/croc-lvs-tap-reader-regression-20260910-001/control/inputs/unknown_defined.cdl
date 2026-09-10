@@ -1,0 +1,8 @@
+* tap X reader regression
+.subckt MY_CHILD A B
+Rchild A B 3k R=3k
+.ends MY_CHILD
+.subckt TOP T W Z
+Xchild T W MY_CHILD
+.ends TOP
+.end

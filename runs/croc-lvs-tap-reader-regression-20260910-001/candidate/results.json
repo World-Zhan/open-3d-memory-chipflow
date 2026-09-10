@@ -1,0 +1,348 @@
+{
+  "schema_version": 1,
+  "tool_version": "KLayout 0.30.5",
+  "cases": {
+    "ptap_si": {
+      "status": "read",
+      "inventory": [
+        {
+          "name": "TOP",
+          "pins": [
+            "T",
+            "W",
+            "Z"
+          ],
+          "devices": [
+            {
+              "name": "ONE",
+              "class": "PTAP1",
+              "ruby_class": "CustomTap",
+              "terminals": {
+                "TIE": "T",
+                "WELL": "W"
+              },
+              "parameters": {
+                "A": 141.25300000000001,
+                "P": 47.53999999999999
+              }
+            }
+          ],
+          "subcircuits": [
+
+          ]
+        }
+      ]
+    },
+    "ntap_mixed": {
+      "status": "read",
+      "inventory": [
+        {
+          "name": "TOP",
+          "pins": [
+            "T",
+            "W",
+            "Z"
+          ],
+          "devices": [
+            {
+              "name": "TWO",
+              "class": "NTAP1",
+              "ruby_class": "CustomTap",
+              "terminals": {
+                "TIE": "W",
+                "WELL": "T"
+              },
+              "parameters": {
+                "A": 2.0,
+                "P": 6.0
+              }
+            }
+          ],
+          "subcircuits": [
+
+          ]
+        }
+      ]
+    },
+    "tap_dimensions": {
+      "status": "read",
+      "inventory": [
+        {
+          "name": "TOP",
+          "pins": [
+            "T",
+            "W",
+            "Z"
+          ],
+          "devices": [
+            {
+              "name": "THREE",
+              "class": "PTAP1",
+              "ruby_class": "CustomTap",
+              "terminals": {
+                "TIE": "T",
+                "WELL": "W"
+              },
+              "parameters": {
+                "A": 6.0,
+                "P": 10.0
+              }
+            }
+          ],
+          "subcircuits": [
+
+          ]
+        }
+      ]
+    },
+    "tap_perim": {
+      "status": "read",
+      "inventory": [
+        {
+          "name": "TOP",
+          "pins": [
+            "T",
+            "W",
+            "Z"
+          ],
+          "devices": [
+            {
+              "name": "FOUR",
+              "class": "NTAP1",
+              "ruby_class": "CustomTap",
+              "terminals": {
+                "TIE": "T",
+                "WELL": "W"
+              },
+              "parameters": {
+                "A": 6.0,
+                "P": 10.0
+              }
+            }
+          ],
+          "subcircuits": [
+
+          ]
+        }
+      ]
+    },
+    "tap_r": {
+      "status": "read",
+      "inventory": [
+        {
+          "name": "TOP",
+          "pins": [
+            "T",
+            "W",
+            "Z"
+          ],
+          "devices": [
+            {
+              "name": "FIVE",
+              "class": "PTAP1",
+              "ruby_class": "CustomTap",
+              "terminals": {
+                "TIE": "T",
+                "WELL": "W"
+              },
+              "parameters": {
+                "A": 141.25300000000001,
+                "P": 47.53999999999999
+              }
+            }
+          ],
+          "subcircuits": [
+
+          ]
+        }
+      ]
+    },
+    "ordinary_r": {
+      "status": "read",
+      "inventory": [
+        {
+          "name": "TOP",
+          "pins": [
+            "T",
+            "W",
+            "Z"
+          ],
+          "devices": [
+            {
+              "name": "PLAIN",
+              "class": "",
+              "ruby_class": "RBA::DeviceClassResistor",
+              "terminals": {
+                "A": "T",
+                "B": "W"
+              },
+              "parameters": {
+                "R": 10000.0,
+                "L": 0.0,
+                "W": 0.0,
+                "A": 0.0,
+                "P": 0.0
+              }
+            }
+          ],
+          "subcircuits": [
+
+          ]
+        }
+      ]
+    },
+    "unknown_defined": {
+      "status": "read",
+      "inventory": [
+        {
+          "name": "TOP",
+          "pins": [
+            "T",
+            "W",
+            "Z"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+            {
+              "name": "CHILD",
+              "circuit_ref": "MY_CHILD",
+              "nets": [
+                "T",
+                "W"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MY_CHILD",
+          "pins": [
+            "A",
+            "B"
+          ],
+          "devices": [
+            {
+              "name": "CHILD",
+              "class": "",
+              "ruby_class": "RBA::DeviceClassResistor",
+              "terminals": {
+                "A": "A",
+                "B": "B"
+              },
+              "parameters": {
+                "R": 3000.0,
+                "L": 0.0,
+                "W": 0.0,
+                "A": 0.0,
+                "P": 0.0
+              }
+            }
+          ],
+          "subcircuits": [
+
+          ]
+        }
+      ]
+    },
+    "unknown_near_name": {
+      "status": "read",
+      "inventory": [
+        {
+          "name": "TOP",
+          "pins": [
+            "T",
+            "W",
+            "Z"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+            {
+              "name": "CHILD",
+              "circuit_ref": "PTAP1_EXTRA(A=1P,P=4U)",
+              "nets": [
+                "T",
+                "W"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PTAP1_EXTRA(A=1P,P=4U)",
+          "pins": [
+            "1",
+            "2"
+          ],
+          "devices": [
+
+          ],
+          "subcircuits": [
+
+          ]
+        }
+      ]
+    },
+    "bad_one_terminal": {
+      "status": "rejected",
+      "error_class": "RuntimeError",
+      "error": "ArgumentError: tap X requires exactly two terminals (TIE, WELL) in NetlistSpiceReaderDelegate::element\n  /output/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_reader.lvs:685:in `element'\n  /output/regression.rb:38:in `read'\n  /output/regression.rb:38:in `block in <main>'\n  /output/regression.rb:33:in `each'\n  /output/regression.rb:33:in `<main>' in /output/inputs/bad_one_terminal.cdl, line 3 in Netlist::read"
+    },
+    "bad_three_terminals": {
+      "status": "rejected",
+      "error_class": "RuntimeError",
+      "error": "ArgumentError: tap X requires exactly two terminals (TIE, WELL) in NetlistSpiceReaderDelegate::element\n  /output/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_reader.lvs:685:in `element'\n  /output/regression.rb:38:in `read'\n  /output/regression.rb:38:in `block in <main>'\n  /output/regression.rb:33:in `each'\n  /output/regression.rb:33:in `<main>' in /output/inputs/bad_three_terminals.cdl, line 3 in Netlist::read"
+    },
+    "bad_missing_area": {
+      "status": "rejected",
+      "error_class": "RuntimeError",
+      "error": "ArgumentError: tap X requires area and perimeter or W/L in NetlistSpiceReaderDelegate::element\n  /output/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_reader.lvs:697:in `element'\n  /output/regression.rb:38:in `read'\n  /output/regression.rb:38:in `block in <main>'\n  /output/regression.rb:33:in `each'\n  /output/regression.rb:33:in `<main>' in /output/inputs/bad_missing_area.cdl, line 3 in Netlist::read"
+    },
+    "bad_missing_perimeter": {
+      "status": "rejected",
+      "error_class": "RuntimeError",
+      "error": "ArgumentError: tap X requires area and perimeter or W/L in NetlistSpiceReaderDelegate::element\n  /output/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_reader.lvs:697:in `element'\n  /output/regression.rb:38:in `read'\n  /output/regression.rb:38:in `block in <main>'\n  /output/regression.rb:33:in `each'\n  /output/regression.rb:33:in `<main>' in /output/inputs/bad_missing_perimeter.cdl, line 3 in Netlist::read"
+    },
+    "bad_zero_area": {
+      "status": "rejected",
+      "error_class": "RuntimeError",
+      "error": "ArgumentError: tap X A must be finite and positive in NetlistSpiceReaderDelegate::element\n  /output/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_reader.lvs:692:in `block in element'\n  /output/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_reader.lvs:690:in `each'\n  /output/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_reader.lvs:690:in `element'\n  /output/regression.rb:38:in `read'\n  /output/regression.rb:38:in `block in <main>'\n  /output/regression.rb:33:in `each'\n  /output/regression.rb:33:in `<main>' in /output/inputs/bad_zero_area.cdl, line 3 in Netlist::read"
+    },
+    "bad_negative_perimeter": {
+      "status": "rejected",
+      "error_class": "RuntimeError",
+      "error": "ArgumentError: tap X P must be finite and positive in NetlistSpiceReaderDelegate::element\n  /output/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_reader.lvs:692:in `block in element'\n  /output/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_reader.lvs:690:in `each'\n  /output/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_reader.lvs:690:in `element'\n  /output/regression.rb:38:in `read'\n  /output/regression.rb:38:in `block in <main>'\n  /output/regression.rb:33:in `each'\n  /output/regression.rb:33:in `<main>' in /output/inputs/bad_negative_perimeter.cdl, line 3 in Netlist::read"
+    },
+    "bad_non_numeric": {
+      "status": "rejected",
+      "error_class": "RuntimeError",
+      "error": "ArgumentError: tap X A must be finite and positive in NetlistSpiceReaderDelegate::element\n  /output/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_reader.lvs:692:in `block in element'\n  /output/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_reader.lvs:690:in `each'\n  /output/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_reader.lvs:690:in `element'\n  /output/regression.rb:38:in `read'\n  /output/regression.rb:38:in `block in <main>'\n  /output/regression.rb:33:in `each'\n  /output/regression.rb:33:in `<main>' in /output/inputs/bad_non_numeric.cdl, line 3 in Netlist::read"
+    },
+    "bad_multiplier": {
+      "status": "rejected",
+      "error_class": "RuntimeError",
+      "error": "ArgumentError: unsupported tap X parameters: M in NetlistSpiceReaderDelegate::element\n  /output/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_reader.lvs:689:in `element'\n  /output/regression.rb:38:in `read'\n  /output/regression.rb:38:in `block in <main>'\n  /output/regression.rb:33:in `each'\n  /output/regression.rb:33:in `<main>' in /output/inputs/bad_multiplier.cdl, line 3 in Netlist::read"
+    },
+    "bad_model_override": {
+      "status": "rejected",
+      "error_class": "RuntimeError",
+      "error": "ArgumentError: unsupported tap X parameters: MODEL in NetlistSpiceReaderDelegate::element\n  /output/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_reader.lvs:689:in `element'\n  /output/regression.rb:38:in `read'\n  /output/regression.rb:38:in `block in <main>'\n  /output/regression.rb:33:in `each'\n  /output/regression.rb:33:in `<main>' in /output/inputs/bad_model_override.cdl, line 3 in Netlist::read"
+    },
+    "bad_incomplete_dimensions": {
+      "status": "rejected",
+      "error_class": "RuntimeError",
+      "error": "ArgumentError: tap X requires area and perimeter or W/L in NetlistSpiceReaderDelegate::element\n  /output/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_reader.lvs:697:in `element'\n  /output/regression.rb:38:in `read'\n  /output/regression.rb:38:in `block in <main>'\n  /output/regression.rb:33:in `each'\n  /output/regression.rb:33:in `<main>' in /output/inputs/bad_incomplete_dimensions.cdl, line 3 in Netlist::read"
+    },
+    "bad_conflicting_perimeter": {
+      "status": "rejected",
+      "error_class": "RuntimeError",
+      "error": "ArgumentError: tap X P and PERIM disagree in NetlistSpiceReaderDelegate::element\n  /output/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_reader.lvs:699:in `element'\n  /output/regression.rb:38:in `read'\n  /output/regression.rb:38:in `block in <main>'\n  /output/regression.rb:33:in `each'\n  /output/regression.rb:33:in `<main>' in /output/inputs/bad_conflicting_perimeter.cdl, line 3 in Netlist::read"
+    },
+    "bad_scale": {
+      "status": "rejected",
+      "error_class": "RuntimeError",
+      "error": "ArgumentError: tap X does not support nonunit .options scale in NetlistSpiceReaderDelegate::element\n  /output/deck/ihp-sg13g2/libs.tech/klayout/tech/lvs/rule_decks/custom_reader.lvs:686:in `element'\n  /output/regression.rb:38:in `read'\n  /output/regression.rb:38:in `block in <main>'\n  /output/regression.rb:33:in `each'\n  /output/regression.rb:33:in `<main>' in /output/inputs/bad_scale.cdl, line 4 in Netlist::read"
+    }
+  }
+}

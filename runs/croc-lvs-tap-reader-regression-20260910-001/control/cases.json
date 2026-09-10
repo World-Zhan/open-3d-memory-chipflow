@@ -1,0 +1,82 @@
+[
+  {
+    "id": "ptap_si",
+    "spice": "* tap X reader regression\n.subckt TOP T W Z\nXone T W ptap1 A=141.253p P=47.54u\n.ends TOP\n.end\n"
+  },
+  {
+    "id": "ntap_mixed",
+    "spice": "* tap X reader regression\n.subckt TOP T W Z\nXtwo W T nTaP1 a=2e-12 p=6e-6\n.ends TOP\n.end\n"
+  },
+  {
+    "id": "tap_dimensions",
+    "spice": "* tap X reader regression\n.subckt TOP T W Z\nXthree T W PTAP1 W=2u L=3u\n.ends TOP\n.end\n"
+  },
+  {
+    "id": "tap_perim",
+    "spice": "* tap X reader regression\n.subckt TOP T W Z\nXfour T W NTAP1 A=6p PERIM=10u\n.ends TOP\n.end\n"
+  },
+  {
+    "id": "tap_r",
+    "spice": "* tap X reader regression\n.subckt TOP T W Z\nRfive T W 0 MODEL=PTAP1 A=141.253p P=47.54u\n.ends TOP\n.end\n"
+  },
+  {
+    "id": "ordinary_r",
+    "spice": "* tap X reader regression\n.subckt TOP T W Z\nRplain T W 10k R=10k\n.ends TOP\n.end\n"
+  },
+  {
+    "id": "unknown_defined",
+    "spice": "* tap X reader regression\n.subckt MY_CHILD A B\nRchild A B 3k R=3k\n.ends MY_CHILD\n.subckt TOP T W Z\nXchild T W MY_CHILD\n.ends TOP\n.end\n"
+  },
+  {
+    "id": "unknown_near_name",
+    "spice": "* tap X reader regression\n.subckt TOP T W Z\nXchild T W PTAP1_EXTRA A=1p P=4u\n.ends TOP\n.end\n"
+  },
+  {
+    "id": "bad_one_terminal",
+    "spice": "* tap X reader regression\n.subckt TOP T W Z\nXbad T PTAP1 A=1p P=4u\n.ends TOP\n.end\n"
+  },
+  {
+    "id": "bad_three_terminals",
+    "spice": "* tap X reader regression\n.subckt TOP T W Z\nXbad T W Z PTAP1 A=1p P=4u\n.ends TOP\n.end\n"
+  },
+  {
+    "id": "bad_missing_area",
+    "spice": "* tap X reader regression\n.subckt TOP T W Z\nXbad T W PTAP1 P=4u\n.ends TOP\n.end\n"
+  },
+  {
+    "id": "bad_missing_perimeter",
+    "spice": "* tap X reader regression\n.subckt TOP T W Z\nXbad T W PTAP1 A=1p\n.ends TOP\n.end\n"
+  },
+  {
+    "id": "bad_zero_area",
+    "spice": "* tap X reader regression\n.subckt TOP T W Z\nXbad T W PTAP1 A=0 P=4u\n.ends TOP\n.end\n"
+  },
+  {
+    "id": "bad_negative_perimeter",
+    "spice": "* tap X reader regression\n.subckt TOP T W Z\nXbad T W PTAP1 A=1p P=-4u\n.ends TOP\n.end\n"
+  },
+  {
+    "id": "bad_non_numeric",
+    "spice": "* tap X reader regression\n.subckt TOP T W Z\nXbad T W PTAP1 A=UNKNOWN P=4u\n.ends TOP\n.end\n"
+  },
+  {
+    "id": "bad_multiplier",
+    "spice": "* tap X reader regression\n.subckt TOP T W Z\nXbad T W PTAP1 A=1p P=4u M=2\n.ends TOP\n.end\n"
+  },
+  {
+    "id": "bad_model_override",
+    "spice": "* tap X reader regression\n.subckt TOP T W Z\nXbad T W PTAP1 A=1p P=4u MODEL=NTAP1\n.ends TOP\n.end\n"
+  },
+  {
+    "id": "bad_incomplete_dimensions",
+    "spice": "* tap X reader regression\n.subckt TOP T W Z\nXbad T W PTAP1 W=2u\n.ends TOP\n.end\n"
+  },
+  {
+    "id": "bad_conflicting_perimeter",
+    "spice": "* tap X reader regression\n.subckt TOP T W Z\nXbad T W PTAP1 A=1p P=4u PERIM=5u\n.ends TOP\n.end\n"
+  },
+  {
+    "id": "bad_scale",
+    "spice": "* tap X reader regression\n.options scale=1e-6\n.subckt TOP T W Z\nXbad T W PTAP1 A=1p P=4u\n.ends TOP\n.end\n"
+  }
+]

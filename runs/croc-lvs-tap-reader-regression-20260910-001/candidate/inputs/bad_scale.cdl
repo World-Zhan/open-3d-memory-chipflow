@@ -1,0 +1,6 @@
+* tap X reader regression
+.options scale=1e-6
+.subckt TOP T W Z
+Xbad T W PTAP1 A=1p P=4u
+.ends TOP
+.end

@@ -1,0 +1,5 @@
+* tap X reader regression
+.subckt TOP T W Z
+Xfour T W NTAP1 A=6p PERIM=10u
+.ends TOP
+.end

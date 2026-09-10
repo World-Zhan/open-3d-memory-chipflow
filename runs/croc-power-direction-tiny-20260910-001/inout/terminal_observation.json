@@ -1,0 +1,29 @@
+{
+  "observed_at": "2026-09-10T12:01:27.526747+00:00",
+  "resources": {
+    "BlockIO": "0B / 0B",
+    "CPUPerc": "0.00%",
+    "Container": "croc-power-direction-tiny-20260910-001-inout",
+    "ID": "876eb27b2681",
+    "MemPerc": "0.00%",
+    "MemUsage": "0B / 0B",
+    "Name": "croc-power-direction-tiny-20260910-001-inout",
+    "NetIO": "0B / 0B",
+    "PIDs": "0"
+  },
+  "resources_returncode": 0,
+  "state": {
+    "Dead": false,
+    "Error": "",
+    "ExitCode": 0,
+    "FinishedAt": "2026-09-10T12:01:27.351315203Z",
+    "OOMKilled": false,
+    "Paused": false,
+    "Pid": 0,
+    "Restarting": false,
+    "Running": false,
+    "StartedAt": "2026-09-10T12:01:26.944869141Z",
+    "Status": "exited"
+  },
+  "state_returncode": 0
+}
